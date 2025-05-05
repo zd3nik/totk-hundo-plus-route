@@ -11,26 +11,26 @@ _route:
       - _Warp::ROA:
          level: Sky
          line-color: dodgerblue
-         notes: Collect all the things along the route!
+         notes: Collect all the things along the route, including killing nearby enemies.  Only some enemy types are explicitly included in the route, that does not mean avoid all other enemies. Non boss-boko enemy camps are an exception to this rule.
       - _Special::StartPos Sky
       - _Chest::ArchaicLegwear
-      - _Enemy<Soldier Construct>:
+      - _Enemy<Soldier Construct I>:
          coord: [391.37, 1640.55, -1333.67]
       - _Npc::Steward Construct_07
-      - _Enemy<Soldier Construct>:
+      - _Enemy<Soldier Construct I>:
          coord: [431.96, 1523.61, -1199.08]
-      - _Enemy<Soldier Construct>:
+      - _Enemy<Soldier Construct I>:
          coord: [452.12, 1520.48, -1092.24]
-      - _Enemy<Soldier Construct>:
+      - _Enemy<Soldier Construct I>:
          coord: [450.66, 1520.26, -1086.93]
-      - _Enemy<Soldier Construct>:
+      - _Enemy<Soldier Construct I>:
          coord: [486.95, 1518.59, -1064.1]
-      - _Enemy<Soldier Construct>:
+      - _Enemy<Soldier Construct I>:
          coord: [453.3, 1552.01, -897.25]
       - _MainQuest::TheClosedDoor
-      - _Enemy<Soldier Construct>:
+      - _Enemy<Soldier Construct I>:
          coord: [359.96, 1535.2, -923.68]
-      - _Enemy<Soldier Construct>:
+      - _Enemy<Soldier Construct I>:
          coord: [312.12, 1531.64, -930.73]
       - _Korok::GSI01
       - _Shrine::Ukouh
@@ -40,32 +40,32 @@ _route:
             - to: [381.5, 1540.64, -945.5]
       - _Chest<Wings>:
          coord: [513.34, 1540.64, -1100.15]
-      - _Enemy<Soldier Construct>:
+      - _Enemy<Soldier Construct I>:
          coord: [568.48, 1522.16, -1169.92]
-      - _Special<Cook Speedfood and Peppers>:
+      - _Special<Cook Speed Food and Peppers>:
          coord: [572.05, 1522.93, -1177.96]
       - Eat Speed Food:
          coord: [615.5, 1540.34, -1218.5]
       - _Chest<Arrows>:
          coord: [738.97, 1540.34, -1204.38]
-      - _Enemy<Soldier Construct>:
+      - _Enemy<Soldier Construct I>:
          coord: [717.86, 1538.53, -1189.79]
-      - _Enemy<Soldier Construct>:
+      - _Enemy<Soldier Construct I>:
          coord: [715.76, 1538.6, -1178.32]
       - Shield Surf to Maker Construct:
          coord: [629.59, 1539.47, -1271.64]
       - _Npc::Maker Construct_06
-      - _Enemy<Soldier Construct>:
+      - _Enemy<Soldier Construct I>:
          coord: [561.52, 1559.12, -1404.45]
-      - _Enemy<Soldier Construct>:
+      - _Enemy<Soldier Construct I>:
          coord: [555.03, 1559.07, -1400.64]
-      - _Enemy<Soldier Construct>:
+      - _Enemy<Soldier Construct I>:
          coord: [547.67, 1558.93, -1396.94]
       - _Chest<Fans>:
          coord: [542.9, 1561.27, -1418.87]
       - Cross River on Raft:
          coord: [823.5, 1627.1, -1301.5]
-      - _Enemy<Soldier Construct>:
+      - _Enemy<Soldier Construct I>:
          coord: [858.96, 1627.1, -1329.88]
       - Climb Behind Waterfall:
          coord: [815, 1627.1, -1410]
@@ -77,7 +77,7 @@ _route:
          notes: Offer 15 Zonai Charges
       - _Chest<Wings>:
          coord: [830.38, 1701.84, -1236.37]
-         notes: Long glider ride to next chest
+         notes: Long Wing Glide to Next Chest
       - _Chest<Amber>:
          coord: [80.95, 1524.43, -991.21]
       - _Korok::GSI03
@@ -87,16 +87,16 @@ _route:
             - to: [159.61, 1528.78, -1163.38]
             - to: [159.86, 1526.57, -1168.88]
             - to: [151.11, 1525.90, -1170.15]
-      - _Special<Cook Speedfood>:
+      - _Special<Cook Speed Food>:
          coord: [114.81, 1522.64, -1172.22]
-         notes: Eat Speedfood
-      - _Enemy<Soldier Construct>:
+         notes: Eat Speed Food
+      - _Enemy<Soldier Construct I>:
          coord: [138.68, 1532.35, -1244.05]
-      - _Enemy<Soldier Construct>:
+      - _Enemy<Soldier Construct I>:
          coord: [138.08, 1522.35, -1271.17]
-      - _Enemy<Soldier Construct>:
+      - _Enemy<Soldier Construct I>:
          coord: [128.86, 1521.3, -1264.05]
-      - _Enemy<Soldier Construct>:
+      - _Enemy<Soldier Construct I>:
          coord: [112.26, 1521.27, -1261.96]
       - _Chest<Opal>:
          coord: [121.2, 1522.36, -1272.49] 
@@ -105,7 +105,7 @@ _route:
          movements:
             - to: [-90, 1521.26, -1245.5]
             - to: [-46, 1521.26, -1314]
-      - _Enemy<Soldier Construct>:
+      - _Enemy<Soldier Construct I>:
          coord: [19.72, 1495.37, -1307.63]
       - Run to Tunnel Under Waterfall:
          movements:
@@ -116,8 +116,160 @@ _route:
       - Ascend Out of Tunnel:
          coord: [111, 1521.26, -1498]
       - _Shrine::In-isa
-
-
+      - _Chest<Arrows>:
+         coord: [24.3, 1513.76, -1527.69]
+      - _Korok::GSI11
+      - _Enemy<Soldier Construct I>:
+         coord: [83.71, 1498.03, -1527.29]
+      - _Enemy<Soldier Construct I>:
+         coord: [80.77, 1489.19, -1586.9]
+      - _Enemy<Soldier Construct I>:
+         coord: [82.25, 1489.23, -1592.2]
+      - _Enemy<Soldier Construct I>:
+         coord: [134.34, 1483.97, -1639.5]
+      - _Enemy<Soldier Construct I>:
+         coord: [147.18, 1482.68, -1603.16]
+      - _Enemy<Soldier Construct I>:
+         coord: [137.58, 1482.84, -1599.97]
+      - _Chest<Weapon>:
+         coord: [141.79, 1484.95, -1586.4]
+      - _Cave::Pondside01
+      - _Bubbulfrog::PondsideCave
+      - _Chest::ArchaicTunic
+      - _Cave::Pondside00:
+         notes: Ascend out of cave
+      - _Korok::GSI13
+      - _Chest<Amber>:
+         coord: [275.43, 1460.65, -1716.12]
+      - _Enemy<Captain Construct I>:
+         coord: [278.35, 1453.82, -1699.25]
+      - Ascend:
+         movements:
+            - to: [261, 1453.65, -1685.25]
+            - to: [283.75, 1453.65, -1662.75]
+      - _Chest<Energizing Elixir>:
+         coord: [314.88, 1522.67, -1627.82]
+      - _Dispenser::S06:
+         notes: 5 Zonai Charges
+      - _Korok::GSI17:
+         movements:
+            - to: [468.75, 1522.67, -1696]
+            - to: [445.4375, 1522.67, -1788.3125]
+      - _Chest<Arrows>:
+         coord: [431.96, 1554.57, -1807.92]
+      - Fuse Mining Carts to Shields:
+         movements:
+            - to: [470.5, 1554.57, -1780.25]
+            - to: [462.75, 1554.57, -1665]
+      - _Enemy<Soldier Construct I>:
+         coord: [453.81, 1513.81, -1613.17]
+      - _Enemy<Captain Construct I>:
+         coord: [462.75, 1514.09, -1605.19]
+      - _Enemy<Soldier Construct I>:
+         coord: [465.74, 1514.77, -1597.34]
+      - _Chest<Opal>:
+         coord: [472.06, 1516.06, -1605.33]
+      - Collect Frogs and Chu Chu Jelly:
+         movements:
+            - to: [484.75, 1510.00, -1577.25]
+            - to: [452.75, 1510.00, -1549.5]
+      -  _Korok::GSI09
+      - _Special<Cook Speed Food>:
+         notes:
+            - Shrooms High Up on Cliffside
+            - Recipe = 3 shrooms, 1 frog, 1 eyeball
+         coord: [424.33, 1470.34, -1544.17]
+      - Ascend:
+         notes: Shield Surf on Cart Rail
+         coord: [410.5, 1470.34, -1591.75]
+      - _Cave::Mining00
+      - _Npc::Mining Construct_01:
+         notes: Hit Giant Brightbloom Seed First
+      - _Bubbulfrog::MiningCave
+      - _Npc::Forge Construct:
+         notes:
+            - Collect Zonaite First
+            - Purchase Crystalized Charges
+      - _Npc::Mining Construct:
+         notes: Obtain 3 Fans
+      - _Cave::Mining01
+      - Ascend:
+         movements:
+            - to: [554, 1515.00, -1653.25]
+            - to: [556, 1515.00, -1676.25]
+      - _Chest<Portable Pot>:
+         coord: [571.6, 1574.48, -1674.44]
+      - Shield Jump Into Water from Chest Platform:
+         coord: [547, 1554.48, -1658.5]
+      - _Cave::Pit00
+      - _Special<Cook Speed and Stamina Food>:
+         coord: [600.7, 1550.19, -1627.08]
+      - _Bubbulfrog::PitCave
+      - _Cave::Pit01
+      - _Korok::GSI14
+      - Shield Surf:
+         coord: [588, 1600, -1604]
+      - _Korok::GSI12:
+         notes: Ride  Wing Down to Next Korok
+      - _Korok::GSI10:
+         notes: Ascend
+      - _Enemy<Soldier Construct I>:
+         coord: [652.14, 1594.37, -1550.2]
+      - _Enemy<Soldier Construct I>:
+         coord: [651.39, 1595.22, -1541.27]
+      - _Enemy<Captain Construct I>:
+         coord: [681.01, 1593.72, -1443.63]
+         notes: Shoot Nearby Ice Chus for Ice Attack
+      - _Cave::Bottomless00
+      - _Bubbulfrog::BottomlessCave
+      - _Chest<Amber>:
+         coord: [758.59, 1597.68, -1377.07]
+      - _Cave::Bottomless01
+      - _Chest<Flame Emitter>:
+         coord: [768.3, 1650.36, -1369.63]
+         notes: Ascend
+      - Shield Surf:
+         movements:
+            - to: [799, 1700, -1420.5]
+            - to: [845, 1700, -1430.5]
+      - _Chest<Amber>:
+         coord: [853.82, 1656.75, -1444.36]
+      - Ascend:
+         coord: [837.75, 1656.75, -1433.5]
+      - _Enemy<Captin Construct I>:
+         coord: [828.6, 1670.11, -1447.48]
+      - _Enemy<Captin Construct I>:
+         coord: [816.21, 1670.1, -1455.54]
+      - _Chest<Opal>:
+         coord: [833.9, 1672.2, -1458]
+      - Shield Surf:
+         coord: [733.25, 1600, -1455.25]
+      - Ascend:
+         coord: [733.25, 1600, -1396.75]
+      - _Korok::GSI08:
+         notes: Wing Glide to Next Korok
+      - _Enemy::FluxConstruct::SC02:
+         notes:
+            - 1 Bomb Arrow, 2 Ruby Arrows to Kill From Above
+            - Stalled Wing Glide to Lower Platform
+      - Wing Glide and Ascend:
+         coord: [518, 1560, -1337]
+      - _Korok::GSI05
+      - Ascend:
+         coord: [367, 1500, -1147]
+      - _Chest<Zonaite>:
+         coord: [389.25, 1579.53, -1183.83]
+      - Ascend:
+         coord: [348, 1600, -1135]
+      - _Chest<Large Zonain Charge>:
+         coord: [341.23, 1620.88, -1096.79]
+         notes: Wing Glide to Next Chest
+      - _Chest<Opal>:
+         coord: [280.25, 1498.3, -922.77]
+         notes: Ascend
+      - _Korok::GSI02
+         
+         
 
 
 
