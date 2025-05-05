@@ -1,8 +1,17 @@
+---
 _config:
 _project:
+  authors:
+    - Shawn Chidester
   name: TOTK Hundo+ Route
-  
-_route:    
-  - GSI:
-    - _Warp::ROA<Start>:
-      line-color: dodgerblue
+  description: "Standard" Hundo plus some extra requirements, such as all GSI chests, all old maps, all locked chests, and all lynels.
+  version: 1.0.0
+_route:
+  - Great Sky Island:
+    - _Warp::ROA:
+       level: Sky
+       line-color: dodgerblue
+    - _Special::StartPos Sky
+    - _Chest:
+        coord: [361.13, 2334.30, -1631.99]
+    - _Location::TempleofTime
