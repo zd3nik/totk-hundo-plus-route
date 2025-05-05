@@ -1,17 +1,141 @@
 ---
 _config:
 _project:
-  authors:
-    - Shawn Chidester
-  name: TOTK Hundo+ Route
-  description: "Standard" Hundo plus some extra requirements, such as all GSI chests, all old maps, all locked chests, and all lynels.
-  version: 1.0.0
+   authors:
+      - Shawn Chidester
+   name: TOTK Hundo+ Route
+   description: Standard Hundo plus some extra requirements such as all GSI chests, all old maps, all locked chests, and all lynels.
+   version: 1.0.0
 _route:
-  - Great Sky Island:
-    - _Warp::ROA:
-       level: Sky
-       line-color: dodgerblue
-    - _Special::StartPos Sky
-    - _Chest:
-        coord: [361.13, 2334.30, -1631.99]
-    - _Location::TempleofTime
+   - Great Sky Island:
+      - _Warp::ROA:
+         level: Sky
+         line-color: dodgerblue
+         notes: Collect all the things along the route!
+      - _Special::StartPos Sky
+      - _Chest::ArchaicLegwear
+      - _Enemy<Soldier Construct>:
+         coord: [391.37, 1640.55, -1333.67]
+      - _Npc::Steward Construct_07
+      - _Enemy<Soldier Construct>:
+         coord: [431.96, 1523.61, -1199.08]
+      - _Enemy<Soldier Construct>:
+         coord: [452.12, 1520.48, -1092.24]
+      - _Enemy<Soldier Construct>:
+         coord: [450.66, 1520.26, -1086.93]
+      - _Enemy<Soldier Construct>:
+         coord: [486.95, 1518.59, -1064.1]
+      - _Enemy<Soldier Construct>:
+         coord: [453.3, 1552.01, -897.25]
+      - _MainQuest::TheClosedDoor
+      - _Enemy<Soldier Construct>:
+         coord: [359.96, 1535.2, -923.68]
+      - _Enemy<Soldier Construct>:
+         coord: [312.12, 1531.64, -930.73]
+      - _Korok::GSI01
+      - _Shrine::Ukouh
+      - Collect Shrooms:
+         movements:
+            - to: [303, 1540.64, -941.5]
+            - to: [381.5, 1540.64, -945.5]
+      - _Chest<Wings>:
+         coord: [513.34, 1540.64, -1100.15]
+      - _Enemy<Soldier Construct>:
+         coord: [568.48, 1522.16, -1169.92]
+      - _Special<Cook Speedfood and Peppers>:
+         coord: [572.05, 1522.93, -1177.96]
+      - Eat Speed Food:
+         coord: [615.5, 1540.34, -1218.5]
+      - _Chest<Arrows>:
+         coord: [738.97, 1540.34, -1204.38]
+      - _Enemy<Soldier Construct>:
+         coord: [717.86, 1538.53, -1189.79]
+      - _Enemy<Soldier Construct>:
+         coord: [715.76, 1538.6, -1178.32]
+      - Shield Surf to Maker Construct:
+         coord: [629.59, 1539.47, -1271.64]
+      - _Npc::Maker Construct_06
+      - _Enemy<Soldier Construct>:
+         coord: [561.52, 1559.12, -1404.45]
+      - _Enemy<Soldier Construct>:
+         coord: [555.03, 1559.07, -1400.64]
+      - _Enemy<Soldier Construct>:
+         coord: [547.67, 1558.93, -1396.94]
+      - _Chest<Fans>:
+         coord: [542.9, 1561.27, -1418.87]
+      - Cross River on Raft:
+         coord: [823.5, 1627.1, -1301.5]
+      - _Enemy<Soldier Construct>:
+         coord: [858.96, 1627.1, -1329.88]
+      - Climb Behind Waterfall:
+         coord: [815, 1627.1, -1410]
+      - _Shrine::Gutanbac
+      - _Chest::ArchaicWarmGreaves:
+         notes: Equip the Greaves
+      - _Korok::GSI06
+      - _Dispenser::S03:
+         notes: Offer 15 Zonai Charges
+      - _Chest<Wings>:
+         coord: [830.38, 1701.84, -1236.37]
+         notes: Long glider ride to next chest
+      - _Chest<Amber>:
+         coord: [80.95, 1524.43, -991.21]
+      - _Korok::GSI03
+      - Collect Shrooms:
+         movements:
+            - to: [146.81, 1526.72, -1164.02]
+            - to: [159.61, 1528.78, -1163.38]
+            - to: [159.86, 1526.57, -1168.88]
+            - to: [151.11, 1525.90, -1170.15]
+      - _Special<Cook Speedfood>:
+         coord: [114.81, 1522.64, -1172.22]
+         notes: Eat Speedfood
+      - _Enemy<Soldier Construct>:
+         coord: [138.68, 1532.35, -1244.05]
+      - _Enemy<Soldier Construct>:
+         coord: [138.08, 1522.35, -1271.17]
+      - _Enemy<Soldier Construct>:
+         coord: [128.86, 1521.3, -1264.05]
+      - _Enemy<Soldier Construct>:
+         coord: [112.26, 1521.27, -1261.96]
+      - _Chest<Opal>:
+         coord: [121.2, 1522.36, -1272.49] 
+      - _Korok::GSI04
+      - Shield Surf the Rail:
+         movements:
+            - to: [-90, 1521.26, -1245.5]
+            - to: [-46, 1521.26, -1314]
+      - _Enemy<Soldier Construct>:
+         coord: [19.72, 1495.37, -1307.63]
+      - Run to Tunnel Under Waterfall:
+         movements:
+            - to: [168, 1521.26, -1336]
+            - to: [185.5, 1521.26, -1379]
+      - _Chest<Amber>:
+         coord: [130.65, 1480.4, -1450.24]
+      - Ascend Out of Tunnel:
+         coord: [111, 1521.26, -1498]
+      - _Shrine::In-isa
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
