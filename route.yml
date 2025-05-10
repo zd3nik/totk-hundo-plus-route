@@ -76,7 +76,7 @@ _route:
       - _Chest::ArchaicWarmGreaves:
          notes: Equip the Greaves, Ascend
       - _Korok::GSI06
-      - _Dispenser::S03:
+      - _Dispenser::S03
       - _Chest<Wings>:
          coord: [830.38, 1701.84, -1236.37]
          notes: Long Wing Glide to Next Chest
@@ -139,7 +139,7 @@ _route:
             - to: [283.75, 1453.65, -1662.75]
       - _Chest<Energizing Elixir>:
          coord: [314.88, 1522.67, -1627.82]
-      - _Dispenser::S06:
+      - _Dispenser::S06
       - _Korok::GSI17:
          movements:
             - to: [468.75, 1522.67, -1696]
