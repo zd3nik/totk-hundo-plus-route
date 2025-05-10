@@ -17,7 +17,7 @@ _route:
       - _Enemy<Construct>:
          coord: [391.37, 1640.55, -1333.67]
       - _Npc::Steward Construct_07
-      - _Special<Terminal>:
+      - _MainQuest::FindPrincessZelda<Terminal>:
          coord: [457.5, 1640, -1310]
       - Collect Frogs:
          coord: [474, 1523, -1238]
@@ -29,13 +29,16 @@ _route:
          coord: [486.95, 1518.59, -1064.1]
       - _Enemy<Construct>:
          coord: [453.3, 1552.01, -897.25]
-      - _MainQuest::TheClosedDoor
+      - _MainQuest::TheClosedDoor:
+         coord: [453.51, 1556.17, -849.75]
       - _Enemy<Construct>:
          coord: [359.96, 1535.2, -923.68]
       - _Enemy<Construct>:
          coord: [312.12, 1531.64, -930.73]
       - _Korok::GSI01
       - _Shrine::Ukouh
+      
+   - GSI Segment 2:
       - Collect Shrooms:
          movements:
             - to: [303, 1540.64, -941.5]
@@ -68,8 +71,10 @@ _route:
       - Climb Wall Behind Waterfall:
          coord: [815, 1627.1, -1410]
       - _Shrine::Gutanbac
+      
+   - GSI Segment 3:
       - _Chest::ArchaicWarmGreaves:
-         notes: Equip the Greaves
+         notes: Equip the Greaves, Ascend
       - _Korok::GSI06
       - _Dispenser::S03:
       - _Chest<Wings>:
@@ -89,11 +94,10 @@ _route:
          coord: [128.86, 1521.3, -1264.05]
       - _Chest<Opal>:
          coord: [121.2, 1522.36, -1272.49] 
-      - _Korok::GSI04
+      - _Korok::GSI04:
+         coord: [-90, 1521.26, -1245.5]
       - Shield Surf the Rail:
-         movements:
-            - to: [-90, 1521.26, -1245.5]
-            - to: [-46, 1521.26, -1314]
+         coord: [-65, 1521.26, -1310]
       - _Enemy<Construct>:
          coord: [19.72, 1495.37, -1307.63]
       - Run to Tunnel Under Waterfall:
@@ -105,6 +109,8 @@ _route:
       - Ascend Out of Tunnel:
          coord: [111, 1521.26, -1498]
       - _Shrine::In-isa
+      
+   - GSI Segment 4:
       - _Chest<Arrows>:
          coord: [24.3, 1513.76, -1527.69]
          notes: Ascend
@@ -140,6 +146,8 @@ _route:
             - to: [445.4375, 1522.67, -1788.3125]
       - _Chest<Arrows>:
          coord: [431.96, 1554.57, -1807.92]
+         
+   - GSI Segment 5:
       - Fuse Mining Carts to Shields:
          movements:
             - to: [470.5, 1554.57, -1780.25]
@@ -171,14 +179,15 @@ _route:
             - Purchase Crystalized Charges
       - _Npc::Mining Construct:
          notes: Obtain 3 Fans
-      - _Cave::Mining01
-      - Ascend:
+      - _Cave::Mining01:
+         notes: Ascend Out of Cave
+      - Ascend to Platform With Chest:
          movements:
             - to: [554, 1515.00, -1653.25]
             - to: [556, 1515.00, -1676.25]
       - _Chest<Portable Pot>:
          coord: [571.6, 1574.48, -1674.44]
-      - Shield Jump Into Water from Chest Platform:
+      - Shield Jump Into Water from Platform:
          coord: [547, 1554.48, -1658.5]
       - _Cave::Pit00
       - _Special<Cook Speed and Stamina Food>:
@@ -186,7 +195,7 @@ _route:
       - _Bubbulfrog::PitCave
       - _Cave::Pit01
       - _Korok::GSI14
-      - Shield Surf:
+      - Shield Surf to Next Korok:
          coord: [588, 1600, -1604]
       - _Korok::GSI12:
          notes: Ride  Wing Down to Next Korok
@@ -205,6 +214,8 @@ _route:
       - _Chest<Flame Emitter>:
          coord: [768.3, 1650.36, -1369.63]
          notes: Ascend
+         
+   - GSI Segment 6:
       - Shield Surf:
          movements:
             - to: [799, 1700, -1420.5]
@@ -221,13 +232,13 @@ _route:
          coord: [733.25, 1600, -1455.25]
       - Ascend:
          coord: [733.25, 1600, -1396.75]
-      - _Korok::GSI08:
          notes: Wing Glide to Next Korok
+      - _Korok::GSI08
       - _Enemy::FluxConstruct::SC02:
          notes:
             - 1 Bomb Arrow, 2 Ruby Arrows to Kill From Above
             - Stalled Wing Glide to Lower Platform
-      - Wing Glide and Ascend:
+      - Wing Glide Below Island and Ascend:
          coord: [518, 1560, -1337]
       - _Korok::GSI05
       - Ascend:
@@ -236,13 +247,46 @@ _route:
          coord: [389.25, 1579.53, -1183.83]
       - Ascend:
          coord: [348, 1600, -1135]
-      - _Chest<Large Zonain Charge>:
+      - _Chest<Large Zonai Charge>:
          coord: [341.23, 1620.88, -1096.79]
          notes: Wing Glide to Next Chest
       - _Chest<Opal>:
          coord: [280.25, 1498.3, -922.77]
          notes: Ascend
       - _Korok::GSI02
+      - _Location::TempleofTime
+      - _GoddessStatue::TempleofTime
+      
+   - GSI Segment 7:
+      - _Warp::ROA:
+         notes: Warp Here
+      - Ascend:
+         coord: [349.5, 2400, -1750.5]
+      - _Korok::GSI15
+      - _Chest<Wings>:
+         coord: [379.57, 2441.25, -1698.74]
+      - Shield Surf:
+         coord: [380.5, 2374, -1617.5]
+      - _Shop::CrystalRefinery
+      - _Shrine::Nachoyah
+      - Wing Glide to Next Korok:
+         coord: [379, 2374, -1571.5]
+      - _Korok::GSI07:
+         notes: Wing Glide to Next Chest
+      - _Chest<Large Zonai Charge>:
+         coord: [501.28, 1893.86, -1613.06]
+         notes: Wing Glide to Next Chest
+      - _Chest<Large Zonaite>:
+         coord: [588.93, 1579.45, -912.35]
+      - Wing Glide to Temple of Time:
+         coord: [453.5, 1490, -922]
+      - _GoddessStatue::TempleofTime
+      - _MainQuest::TotheKingdomofHyrule:
+         coord: [454, 1500, -636]
+         
+
+
+
          
          
 
