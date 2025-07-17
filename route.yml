@@ -9,10 +9,10 @@ _project:
 _route:
    - Great Sky Island:
       - _Warp::ROA:
-         level: Sky
          line-color: dodgerblue
-         notes: Collect all the things along the route, including killing nearby enemies.  Only some enemy types are explicitly included in the route, that does not mean avoid all other enemies. Non boss-boko enemy camps are an exception to this rule.
-      - _Special::StartPos Sky
+         notes:
+            - Collect all the things along the route, including killing nearby enemies
+            - Enemy camps without a locked chest or a boss boko are an exception to this rule
       - _Chest::ArchaicLegwear
       - _Enemy<Construct>:
          coord: [391.37, 1640.55, -1333.67]
@@ -72,22 +72,24 @@ _route:
       - _Shrine::Gutanbac
    - GSI Segment 3:
       - _Chest::ArchaicWarmGreaves:
-         notes: Equip the Greaves, Ascend
+         notes:
+            - Equip the greaves
+            - Ascend
       - _Korok::GSI06
       - _Dispenser::S03
       - _Chest<Wings>:
          coord: [830.38, 1701.84, -1236.37]
-         notes: Long Wing Glide to Next Chest
+         notes: Long wing glide to next chest
       - _Chest<Amber>:
          coord: [80.95, 1524.43, -991.21]
       - _Korok::GSI03
-      - Collect Shrooms x4:
+      - Collect Shrooms:
          movements:
             - to: [146.81, 1526.72, -1164.02]
             - to: [159.86, 1526.57, -1168.88]
       - _Special<Cook Speed Food>:
          coord: [114.81, 1522.64, -1172.22]
-         notes: Eat Speed Food
+         notes: Eat speed food
       - _Enemy<Constructs x4>:
          coord: [128.86, 1521.3, -1264.05]
       - _Chest<Opal>:
@@ -124,7 +126,7 @@ _route:
       - _Bubbulfrog::PondsideCave
       - _Chest::ArchaicTunic
       - _Cave::Pondside00:
-         notes: Ascend Out of Cave
+         notes: Ascend out of cave
       - _Korok::GSI13
       - _Chest<Amber>:
          coord: [275.43, 1460.65, -1716.12]
@@ -163,19 +165,19 @@ _route:
             - Recipe = 3 shrooms, 1 frog, 1 eyeball
          coord: [424.33, 1470.34, -1544.17]
       - Ascend:
-         notes: Shield Surf on Cart Rail
+         notes: Shield surf on mine cart rail
          coord: [410.5, 1470.34, -1591.75]
       - _Cave::Mining00
-      - _Npc::Mining Construct_01:
+      - _Npc::Mining Construct_01
       - _Bubbulfrog::MiningCave
       - _Npc::Forge Construct:
          notes:
-            - Collect Zonaite First
-            - Purchase Crystalized Charges
+            - Collect zonaite first
+            - Purchase crystalized charges
       - _Npc::Mining Construct:
-         notes: Obtain 3 Fans
+         notes: Obtain 3 fans
       - _Cave::Mining01:
-         notes: Ascend Out of Cave
+         notes: Ascend out of cave
       - Ascend to Platform With Chest:
          movements:
             - to: [554, 1515.00, -1653.25]
@@ -193,14 +195,14 @@ _route:
       - Shield Surf to Next Korok:
          coord: [588, 1600, -1604]
       - _Korok::GSI12:
-         notes: Ride  Wing Down to Next Korok
+         notes: Ride wing down to next korok
       - _Korok::GSI10:
          notes: Ascend
       - _Enemy<Constructs x2>:
          coord: [652.14, 1594.37, -1550.2]
       - _Enemy<Construct>:
          coord: [681.01, 1593.72, -1443.63]
-         notes: Shoot Nearby Ice Chus for Ice Attack
+         notes: Shoot nearby ice chus to freeze the construct
       - _Cave::Bottomless00
       - _Bubbulfrog::BottomlessCave
       - _Chest<Amber>:
@@ -210,7 +212,7 @@ _route:
          coord: [768.3, 1650.36, -1369.63]
          notes: Ascend
    - GSI Segment 6:
-      - Shield Surf:
+      - Shield Surf to Next Chest:
          movements:
             - to: [799, 1700, -1420.5]
             - to: [845, 1700, -1430.5]
@@ -226,12 +228,12 @@ _route:
          coord: [733.25, 1600, -1455.25]
       - Ascend:
          coord: [733.25, 1600, -1396.75]
-         notes: Wing Glide to Next Korok
+         notes: Wing glide to next korok
       - _Korok::GSI08
       - _Enemy::FluxConstruct::SC02:
          notes:
-            - 1 Bomb Arrow, 2 Ruby Arrows to Kill From Above
-            - Stalled Wing Glide to Lower Platform
+            - 1 bomb arrow, 2 ruby arrows to kill from above
+            - Stalled wing glide to lower platform
       - Wing Glide Below Island and Ascend:
          coord: [518, 1560, -1337]
       - _Korok::GSI05
@@ -243,7 +245,7 @@ _route:
          coord: [348, 1600, -1135]
       - _Chest<Large Zonai Charge>:
          coord: [341.23, 1620.88, -1096.79]
-         notes: Wing Glide to Next Chest
+         notes: Wing glide to next chest
       - _Chest<Opal>:
          coord: [280.25, 1498.3, -922.77]
          notes: Ascend
@@ -252,7 +254,7 @@ _route:
       - _GoddessStatue::TempleofTime
    - GSI Segment 7:
       - _Warp::ROA:
-         notes: Warp Here
+         notes: Warp here
       - Ascend:
          coord: [349.5, 2400, -1750.5]
       - _Korok::GSI15
@@ -265,10 +267,10 @@ _route:
       - Wing Glide to Next Korok:
          coord: [379, 2374, -1571.5]
       - _Korok::GSI07:
-         notes: Wing Glide to Next Chest
+         notes: Wing glide to next chest
       - _Chest<Large Zonai Charge>:
          coord: [501.28, 1893.86, -1613.06]
-         notes: Wing Glide to Next Chest
+         notes: Wing glide to next chest
       - _Chest<Large Zonaite>:
          coord: [588.93, 1579.45, -912.35]
       - Wing Glide to Temple of Time:
@@ -282,9 +284,9 @@ _route:
       - _Korok::LL56
       - _Shrine::Jiosin
       - _Korok::LL50:
-         notes: Tame Horse Along the Way
+         notes: Tame a horse along the way
       - _Npc::Josha:
-         notes: Use north entrance to avoid NPC chatter.
+         notes: Use north entrance to avoid NPC chatter
       - _Addison::A30
       - _Korok::LL37
       - _Shrine::Kyononis
@@ -292,16 +294,21 @@ _route:
       - _Korok::LL20
       - _Korok::LL16
       - _Korok::LL22:
-         notes: Leave horse in the gatehouse, ascend to roof for korok.
+         notes:
+            - Leave horse in the gatehouse
+            - Ascend to roof for korok
       - _Korok::LL26
       - _Korok::LL21
       - _Npc::Hoz:
-         notes: Get back on horse in the gatehouse.
-   - Hyrule Kingdom Segment 2:
+         notes: Get back on horse in the gatehouse
       - _Korok::LL42
       - _Npc::Purah_Normal:
-         notes: Leave horse outside north entrance, NOT TOO CLOSE to the bridge.
-      - _Tower::LookoutLanding
+         notes:
+            - Leave horse outside north entrance
+            - NOT TOO CLOSE to the bridge
+      - _Tower::LookoutLanding:
+         notes: Wing glide to next korok
+   - Hyrule Kingdom Segment 2:
       - _Korok::LL07
       - _Equipment::Bow<Dusk Bow>:
          coord: [-256.03, 616.32, 1062.02]
@@ -327,6 +334,7 @@ _route:
       - _Chest<Royal Broadsword>:
          coord: [-235.55, 484.76, 1051.45]
       - _Shrine::Serutabomac
+   - Hyrule Kingdom Segment 3:
       - _Equipment::Weapon<Soldier Claymore>:
          coord: [-166.52, 386.46, 1158.79]
       - _Enemy<Moblin x3>:
@@ -335,6 +343,7 @@ _route:
          coord: [-178.92, 378.58, 1054.35]
       - _Chest<Royal Claymore>:
          coord: [-164.76, 375.07, 1051.94]
+         notes: Drop down through library roof
       - _Enemy<Lizalfos>:
          coord: [-193.64, 345.37, 995.75]
          notes: Break royal guard sword
@@ -351,25 +360,84 @@ _route:
          notes: Light sconces
       - _Equipment::Weapon<Knight Broadsword>:
          coord: [-182.05, 335.91, 1144.42]
-         notes: Equip blizard rod, Ascend
+         notes:
+            - Equip blizzard rod
+            - Ascend
       - _Enemy<Horriblin x7>:
          coord: [-274.17, 381.12, 1133.01]
-         notes: Break Claymores, RGC first
+         notes: Break claymores (RGC first)
       - _Enemy<Like Like>:
          coord: [-323.34, 353.09, 1100.74]
-         notes: Use Royal Guard Spear
+         notes: Use royal guard spear
       - _Enemy<Ice Like>:
          coord: [-346.88, 374.32, 968.09]
-         notes: Break Royal Guard Spear
+         notes:
+            - Shoot lizalfos on upper level first
+            - Break royal guard spear
+            - Drop down to entrance below tower
       - _Chest<Royal Guard Claymore>:
          coord: [-387.18, 345.59, 999.75]
-         notes: Fuse black lizalfos horns to royal broadsword and RGC, equip RGC
+         notes:
+            - Fuse black lizalfos horns to royal broadsword and RGC
+            - Equip RGC
+            - STOP USING RGC when it is 1 hit away from breaking
       - _Equipment::Bow<Royal Guard Bow>:
          coord: [-387.31, 421.03, 996]
+         notes: Ascend
+      - _Enemy<Moblin>:
+         coord: [-390.63, 356.55, 972.53]
+      - _Enemy<Moblin>:
+         coord: [-366.06, 379.13, 965.18]
+      - _Enemy<Lizalfos x2>:
+         coord: [-322.31, 394.48, 965.17]
+      - _Equipment::Shield<Soldier Shield>:
+         coord: [-361.5, 390.78, 912.87]
+      - _Equipment::Weapon<Traveler Sword>:
+         coord: [-362, 390.78, 914.37]
+      - _Korok::LL17
+      - _Enemy<Fire Like>:
+         coord: [-318.58, 378.37, 892.04]
+         notes: Ascend
+      - _Chest::RoyalGuardCap
+      - _Korok::LL09:
+         notes: Ascend
+      - _Korok::LL10
+      - _Enemy<Boko x2>:
+         coord: [-306.47, 436.84, 967.58]
+         notes:
+            - RGC should be at breaking point here (DO NOT BREAK IT)
+            - Equip next weapon in line for breaking
+      - _Enemy<Boko>:
+         coord: [-210.02, 443.86, 968.16]
+      - _Korok::LL13:
+         notes: Ascend
+      - _Chest<Royal Halberd>:
+         coord: [-153.5, 388.78, 895.37]
+         notes: Ascend
+      - Arrows:
+         coord: [-98.5, 430.78, 931.37]
+      - _Korok::LL14
+      - _Enemy<Lizalfos x2>:
+         coord: [-71.64, 397.28, 949.27]
+         notes: Break knight broadsword and royal halberd
+      - _Equipment::Weapon<Soldier Spear>:
+         coord: [-90.23, 408.21, 1011.37]
+      - _Korok::LL11:
+         notes: Paraglide to next korok
+      - _Korok::LL02
+      - _Korok::LL03
+      - _Equipment::Weapon<Traveler Claymore>:
+         coord: [-268.24, 131.21, 1153.31]
+      - _Enemy<Phantom Ganon>:
+         coord: [-207.16, 129.45, 1199.97]
+         notes: Fuse gloom spear to soldier spear
+      - _Chest<Royal Broadsword>:
+         coord: [-231.99, 114.65, 1176.44]
+         notes: Break roal broadsword on crates
+      - _Chest<Hylian Shield>:
+         coord: [-154, 141.78, 1157.37]
+         notes: Fuse black moblin horn to royal broadsword
          
-      
-      
-      
 
 
 
