@@ -3,8 +3,8 @@ _config:
 _project:
    authors:
       - Shawn Chidester
-   name: TOTK Hundo+ Route
-   description: Standard Hundo plus some extra requirements such as all GSI chests, all old maps, all locked chests, and all lynels.
+   name: Glitchless TOTK Hundo+ (Turkey Leg Route)
+   description: Standard Hundo plus all GSI chests & constructs, all old maps, all locked chests, all boss bokos, and all lynels.
    version: 1.0.0
 _route:
    - Great Sky Island:
@@ -37,7 +37,6 @@ _route:
          coord: [312.12, 1531.64, -930.73]
       - _Korok::GSI01
       - _Shrine::Ukouh
-      
    - GSI Segment 2:
       - Collect Shrooms:
          movements:
@@ -71,7 +70,6 @@ _route:
       - Climb Wall Behind Waterfall:
          coord: [815, 1627.1, -1410]
       - _Shrine::Gutanbac
-      
    - GSI Segment 3:
       - _Chest::ArchaicWarmGreaves:
          notes: Equip the Greaves, Ascend
@@ -109,7 +107,6 @@ _route:
       - Ascend Out of Tunnel:
          coord: [111, 1521.26, -1498]
       - _Shrine::In-isa
-      
    - GSI Segment 4:
       - _Chest<Arrows>:
          coord: [24.3, 1513.76, -1527.69]
@@ -146,7 +143,6 @@ _route:
             - to: [445.4375, 1522.67, -1788.3125]
       - _Chest<Arrows>:
          coord: [431.96, 1554.57, -1807.92]
-         
    - GSI Segment 5:
       - Fuse Mining Carts to Shields:
          movements:
@@ -171,7 +167,6 @@ _route:
          coord: [410.5, 1470.34, -1591.75]
       - _Cave::Mining00
       - _Npc::Mining Construct_01:
-         notes: Hit Giant Brightbloom Seed First
       - _Bubbulfrog::MiningCave
       - _Npc::Forge Construct:
          notes:
@@ -214,7 +209,6 @@ _route:
       - _Chest<Flame Emitter>:
          coord: [768.3, 1650.36, -1369.63]
          notes: Ascend
-         
    - GSI Segment 6:
       - Shield Surf:
          movements:
@@ -256,7 +250,6 @@ _route:
       - _Korok::GSI02
       - _Location::TempleofTime
       - _GoddessStatue::TempleofTime
-      
    - GSI Segment 7:
       - _Warp::ROA:
          notes: Warp Here
@@ -283,12 +276,112 @@ _route:
       - _GoddessStatue::TempleofTime
       - _MainQuest::TotheKingdomofHyrule:
          coord: [454, 1500, -636]
+   - Hyrule Kingdom Segment 1:
+      - Dive to Lake West of Bottomless Pond:
+         coord: [176, 128, -520]
+      - _Korok::LL56
+      - _Shrine::Jiosin
+      - _Korok::LL50:
+         notes: Tame Horse Along the Way
+      - _Npc::Josha:
+         notes: Use north entrance to avoid NPC chatter.
+      - _Addison::A30
+      - _Korok::LL37
+      - _Shrine::Kyononis
+      - _Korok::LL25
+      - _Korok::LL20
+      - _Korok::LL16
+      - _Korok::LL22:
+         notes: Leave horse in the gatehouse, ascend to roof for korok.
+      - _Korok::LL26
+      - _Korok::LL21
+      - _Npc::Hoz:
+         notes: Get back on horse in the gatehouse.
+   - Hyrule Kingdom Segment 2:
+      - _Korok::LL42
+      - _Npc::Purah_Normal:
+         notes: Leave horse outside north entrance, NOT TOO CLOSE to the bridge.
+      - _Tower::LookoutLanding
+      - _Korok::LL07
+      - _Equipment::Bow<Dusk Bow>:
+         coord: [-256.03, 616.32, 1062.02]
+      - _Chest<Royal Guard Spear>:
+         coord: [-259.63, 570.85, 1065.04]
+         notes: Drop all weapons, shields, and bows (except the dusk bow) before opening
+      - _Chest<Sapphire>:
+         coord: [-248.34, 570.85, 1065.05]
+      - _Korok::LL06
+      - _Chest<Gold Rupee>:
+         coord: [-254, 526.78, 1068.9]
+      - _Equipment::Shield<Royal Guard Shield>:
+         coord: [-223.73, 462.63, 1056.89]
+      - _Equipment::Weapon<Royal Guard Sword>:
+         coord: [-223.5, 462.53, 1056.09]
+      - _Chest::ChampionsLeathers:
+         notes: Light sconces
+      - _Equipment::Bow<Royal Guard Bow>:
+         coord: [-265, 462.47, 1081.37]
+      - _Equipment::Weapon<Royal Guard Claymore>:
+         coord: [-283.2, 462.47, 1085.05]
+         notes: Ascend at base of stairs
+      - _Chest<Royal Broadsword>:
+         coord: [-235.55, 484.76, 1051.45]
+      - _Shrine::Serutabomac
+      - _Equipment::Weapon<Soldier Claymore>:
+         coord: [-166.52, 386.46, 1158.79]
+      - _Enemy<Moblin x3>:
+         coord: [-165.82, 380.84, 1076.01]
+      - _Chest<Arrows>:
+         coord: [-178.92, 378.58, 1054.35]
+      - _Chest<Royal Claymore>:
+         coord: [-164.76, 375.07, 1051.94]
+      - _Enemy<Lizalfos>:
+         coord: [-193.64, 345.37, 995.75]
+         notes: Break royal guard sword
+      - _Enemy<Lizalfos>:
+         coord: [-202.7, 345.36, 908.5]
+      - _Chest<Dinraal Spike>:
+         coord: [-189.71, 325.73, 1083.42]
+      - _Equipment::Weapon<Royal Broadsword>:
+         coord: [-168.73, 321.58, 1118.19]
+      - _Chest::RoyalGuardBoots:
+         notes: Ascend
+      - _Chest<Gold Rupee>:
+         coord: [-168.67, 330.76, 1116.28]
+         notes: Light sconces
+      - _Equipment::Weapon<Knight Broadsword>:
+         coord: [-182.05, 335.91, 1144.42]
+         notes: Equip blizard rod, Ascend
+      - _Enemy<Horriblin x7>:
+         coord: [-274.17, 381.12, 1133.01]
+         notes: Break Claymores, RGC first
+      - _Enemy<Like Like>:
+         coord: [-323.34, 353.09, 1100.74]
+         notes: Use Royal Guard Spear
+      - _Enemy<Ice Like>:
+         coord: [-346.88, 374.32, 968.09]
+         notes: Break Royal Guard Spear
+      - _Chest<Royal Guard Claymore>:
+         coord: [-387.18, 345.59, 999.75]
+         notes: Fuse black lizalfos horns to royal broadsword and RGC, equip RGC
+      - _Equipment::Bow<Royal Guard Bow>:
+         coord: [-387.31, 421.03, 996]
          
+      
+      
+      
 
 
 
-         
-         
+
+
+
+
+
+
+
+
+
 
 
 
