@@ -468,6 +468,91 @@ _route:
          coord: [-690.05, -410.82, -1504.47]
       - Add flying machines to autobuild:
          coord: [-635.05, -410.82, -1522.47]
+   - Majoras Mask:
+      - _Equipment::Weapon<Claymore>:
+         coord: [-752.7, -402.69, -1634.27]
+      - _Chest<Large Crystallized Charge>:
+         coord: [-962.56, -426.63, -1695.87]
+      - _Lightroot::Kogoir
+      - Pillage Enemy Camp:
+         coord: [-1510, -453, -1515]
+      - _Lightroot::Mu-ustust
+      - _Enemy<Lynel>:
+         coord: [-1438.63, -379.5, -1261.72]
+      - _Chest::MajorasMask
+   - Camera Segment 1:
+      - __icons::Warp<Warp to Lookout Landing Tower>:
+         coord: [-298.85, 123.94, 142.85]
+      - _MainQuest::RegionalPhenomena:
+         coord: [-248.72, 126.36, 148.83]
+      - _Shop::CrystalRefinery01
+      - _Shop::BargainerStatue06
+      - _MainQuest::CameraWorkintheDepths:
+         coord: [-253.5, 144, 145.5]
+      - __icons::Warp<Warp to Jiosin Shrine>:
+         coord: [-240.74, 145.9, -371.03]
+      - _Chasm::HyruleField
+   - Camera Segment 2:
+      - _Lightroot::Nisoij
+      - _Lightroot::Iayusus
+   - Hyrule Field Depths:
+      - _Chest::MinersTop
+      - _Chest<Large Crustallized Charge>:
+         coord: [-1146.81, -375.47, -204.44]
+      - _Enemy::Hinox::DC03
+      - _Enemy::Hinox::DC01
+      - _Chest<Large Crystallized Charge>:
+         coord: [-977.93, -421.39, 248.88]
+      - _Lightroot::Gadohsi
+      - _Enemy::Frox::DC05
+      - _Equipment::Weapon:
+         coord: [-399.57, -365.06, 370.8]
+      - _Equipment::Weapon:
+         coord: [-405.9, -365.02, 435.64]
+      - _Equipment::Weapon:
+         coord: [-361.87, -361.56, 400.84]
+      - _Lightroot::Sinonoyk
+      - _Equipment::Weapon:
+         coord: [-237.87, -341, 358.39]
+         notes: Visit additional weapon pilars along the route, as needed, to get pics of all travelor and soldier weapons
+      - _Enemy<Boss Bokoblin>:
+         coord: [78.33, -373.95, 371.74]
+      - _Lightroot::Oyimay
+      - _Chest<Large Crystallized Charge>:
+         coord: [555.21, -365.97, 281.18]
+      - _Enemy::Hinox::DC02
+      - _Enemy::Talus::DC01
+      - _Enemy<Boss Bokoblin>:
+         coord: [-182.55, -366.73, -37.18]
+      - _Enemy::Talus::GC06
+      - _Enemy::Frox::DC08
+      - _Shop::BargainerStatue01
+      - _Enemy::FluxConstruct::DC03
+      - _Lightroot::Stakijat
+      - _Enemy<Lynel>:
+         coord: [253.33, -367.93, -1186.69]
+      - _Lightroot::Netinet
+      - _Enemy::Hinox::DC05
+      - _Lightroot::Nuzimak
+      - _Enemy<Yiga>:
+         coord: [-225, -355.53, -1575]
+         notes: Get and break eightfold blade
+      - _Enemy::Frox::DC10
+      - _Chest<Large Crystallized Charge>:
+         coord: [-374.13, -367.18, -1575.87]
+      - _Equipment::Weapon:
+         coord: [-577.72, -339.73, -1498.67]
+      - _Equipment::Bow<Duplex Bow>:
+         coord: [-565.54, -367.44, -1403.5]
+         notes: Break wooden crate for bow
+      - _Enemy::Frox::DC09
+      - _Enemy::Talus::DC04
+      - _Lightroot::Nihcayam
+      - _Enemy::Hinox::DC04
+      
+      
+      
+         
          
          
 
