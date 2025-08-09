@@ -4,7 +4,7 @@ _project:
    authors:
       - Shawn Chidester
    name: Glitchless TOTK Hundo+ (Turkey Leg Route)
-   description: Standard Hundo plus all GSI chests & constructs, all old maps, all locked chests, all boss bokos, and all lynels.
+   description: Standard Hundo (no amiibo) plus all GSI chests & constructs, all armor, all armor set abilities unlocked, all old maps, all locked chests, all boss bokos, all lynels, all chests within shrines, read all Zora stone monuments, and capture all compendium pics (no pic purchases).
    version: 1.0.0
 _route:
    - Great Sky Island:
@@ -48,7 +48,7 @@ _route:
          coord: [568.48, 1522.16, -1169.92]
       - _Special<Cook Speed Food and Peppers>:
          coord: [572.05, 1522.93, -1177.96]
-      - Eat Speed Food:
+      - Shield Surf to Next Chest:
          coord: [615.5, 1540.34, -1218.5]
       - _Chest<Arrows>:
          coord: [738.97, 1540.34, -1204.38]
@@ -262,7 +262,6 @@ _route:
          coord: [379.57, 2441.25, -1698.74]
       - Shield Surf:
          coord: [380.5, 2374, -1617.5]
-      - _Shop::CrystalRefinery
       - _Shrine::Nachoyah
       - Wing Glide to Next Korok:
          coord: [379, 2374, -1571.5]
@@ -307,7 +306,7 @@ _route:
             - Leave horse outside north entrance
             - NOT TOO CLOSE to the bridge
       - _Tower::LookoutLanding:
-         notes: Wing glide to next korok
+         notes: Wing glide to castle spire
    - Hyrule Kingdom Segment 2:
       - _Korok::LL07
       - _Equipment::Bow<Dusk Bow>:
@@ -349,6 +348,8 @@ _route:
          notes: Break royal guard sword
       - _Enemy<Lizalfos>:
          coord: [-202.7, 345.36, 908.5]
+      - _Equipment::Weapon<Knight Claymore>:
+         coord: [-180.72, 327.48, 1059.98]
       - _Chest<Dinraal Spike>:
          coord: [-189.71, 325.73, 1083.42]
       - _Equipment::Weapon<Royal Broadsword>:
@@ -365,7 +366,7 @@ _route:
             - Ascend
       - _Enemy<Horriblin x7>:
          coord: [-274.17, 381.12, 1133.01]
-         notes: Break claymores (RGC first)
+         notes: Break claymores
       - _Enemy<Like Like>:
          coord: [-323.34, 353.09, 1100.74]
          notes: Use royal guard spear
@@ -399,6 +400,7 @@ _route:
          coord: [-318.58, 378.37, 892.04]
          notes: Ascend
       - _Chest::RoyalGuardCap
+   - Hyrule Kingdom Segment 4:
       - _Korok::LL09:
          notes: Ascend
       - _Korok::LL10
@@ -436,7 +438,37 @@ _route:
          notes: Break roal broadsword on crates
       - _Chest<Hylian Shield>:
          coord: [-154, 141.78, 1157.37]
-         notes: Fuse black moblin horn to royal broadsword
+         notes:
+            - Fuse black moblin horn to royal broadsword
+            - Warp to In-Isa
+   - Auto-Build:
+      - __icons::Warp<Warp to In-isa on GSI>:
+         coord: [ 26.07, 1527.75, -1503.6 ]
+         notes: Wing glide down to east chasm on great plateau
+      - _Chasm::GreatPlateauEast:
+         notes: Glide to autobuild terminal
+      - _KeyItem::Autobuild:
+         coord: [-808.44, -415.18, -1928.65]
+      - _Npc::Master_Kohga_Central_Mine
+      - _Chest<Huge crystallized charge>:
+         coord: [-815.27, -415.18, -1934.66]
+      - _SchemaStone::CentralMine
+      - Ascend to next chest:
+         coord: [-808.44, -361.24, -1908.48]         
+      - _Chest<Large Zonaite>:
+         coord: [-799.43, -361.24, -1920.48]
+      - _Poe::Grand:
+         coord: [-658, -410.28, -1794.7]
+      - _Poe::Grand:
+         coord: [-648.6, -412.91, -1784.9]
+      - _Chest<Arrows>:
+         coord: [-658.62, -412.17, -1683.34]
+      - _Lightroot::Nogukoyk
+      - Collect poes:
+         coord: [-690.05, -410.82, -1504.47]
+      - Add flying machines to autobuild:
+         coord: [-635.05, -410.82, -1522.47]
+         
          
 
 
