@@ -549,12 +549,94 @@ _route:
       - _Enemy::Talus::DC04
       - _Lightroot::Nihcayam
       - _Enemy::Hinox::DC04
-      
-      
-      
-         
-         
-         
+   - Finish Camera Quest:
+      - __icons::Warp<Warp to Lookout Landing Tower>:
+         coord: [-298.85, 123.94, 142.85]
+      - _MainQuest<Talk to Robbie>:
+         coord: [-253.5, 144, 145.5]
+      - _Special<Pic of tree branch>:
+         coord: [-249.72, 125.2, 170.51]
+      - _Special<Pic of horse>:
+         coord: [-255, 125, 198]
+      - _Shop::CrystalRefinery01
+   - Wasteland Kohga:
+      - __icons::Warp<Warp to Central Mine>:
+         coord: [-821.82, -417.75, -1940.61]
+      - _Shop::ForgeConstruct10
+      - _Lightroot::Koradat
+      - _Enemy::Hinox::DF02
+      - _Equipment::Weapon:
+         coord: [-1671.26, -325.84, -2143.42]
+      - _Chest<Large Crystallized Charge>:
+         coord: [-1814.59, -424.73, -2137.14]
+      - Fuse rockets to shields:
+         coord: [-1838.93, -428.26, -2067]
+      - _Lightroot::Jadukakar
+      - _Enemy::Frox::DG03
+      - _Lightroot::Kimakarut
+      - _Enemy<Lynel>:
+         coord: [-2798.87, -376.93, -2238.38]
+      - _Enemy::Frox::DG06
+      - _Poe::Large:
+         coord: [-3190.32, -370.16, -2515.13]
+         notes: On top of forge chimney
+      - _Chest<Large Crystallized Charge>:
+         coord: [-3201.91, -335.38, -2441.42]
+      - _Poe::Grand:
+         coord: [-3231.68, -346.85, -2477.36]
+      - _Poe::Large:
+         coord: [-3280.84, -351.25, -2441.48]
+      - _Chest::MinersMask
+      - _SchemaStone::KaraKaraMine
+      - _Shop::ForgeConstruct02
+      - _Poe::Large:
+         coord: [-3177.13, -357.14, -2533.32]
+         notes: Ascend to 1st level above forge construct
+      - _Lightroot::Tatayam
+      - _Enemy::Talus::DG03
+      - _Equipment::Weapon:
+         coord: [-3592.32, -371.85, -2422.74]
+      - _Equipment::Weapon:
+         coord: [-3715.12, -370.21, -2380.04]
+      - _Enemy::Frox::DG04
+      - _Enemy::FluxConstruct::DG03
+      - _Lightroot::Gonatoyros
+      - _Poe::Large:
+         coord: [-3870.49, -352.82, -2942.33]
+         notes: Collect zonai charge atop mine
+      - _Poe::Large:
+         coord: [-3889.34, -369.49, -2922.81]
+         notes:
+            - Break crates next to hideout
+            - Collect zonai charge in front of forge
+      - _Chest<Large Crystallized Charge>:
+         coord: [-3908.89, -384.29, -3067.14]
+      - _Poe::Grand:
+         coord: [-3664.74, -376.83, -2965.63]
+      - _Poe::Grand:
+         coord: [-3708.42, -383.13, -2958.77]
+      - _Enemy<Yiga soldiers x2>:
+         coord: [-3768.14, -369.4, -2834.51]
+         notes: Carry rocket over near Kohga, for fusing to shield after fighting Kohga
+      - _Npc::Master Kohga_01:
+         notes:
+            - Cook attack up food
+            - Fuse rocket to shield after the fight
+      - _Chest<Huge Crystallized Charge>:
+         coord: [-3841.99, -382.35, -2914.71]
+      - _Shop::ForgeConstruct01
+      - _SchemaStone::GerudoMine
+      - __icons::Warp<Warp to Nachoyah on GSI>:
+         coord: [389.63, 2417.91, -1661.45]
+      - _Shop::CrystalRefinery
+      - __icons::Warp<Warp to Serutabomac shrine near castle>:
+         coord: [-178.78, 399.1, 1170.12]
+
+
+
+
+
+
 
 
 
