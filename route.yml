@@ -4,7 +4,7 @@ _project:
    authors:
       - Shawn Chidester
    name: Glitchless TOTK Hundo+ (Turkey Leg Route)
-   description: Standard Hundo (no amiibo) plus all GSI chests & constructs, all armor, all armor set abilities unlocked, all old maps, all locked chests, all boss bokos, all lynels, all chests within shrines, read all Zora stone monuments, and capture all compendium pics (no pic purchases).
+   description: Standard Hundo (no amiibo) plus all GSI chests & constructs, all armor, all armor set abilities unlocked, all old maps, all locked chests, all boss bokos, all lynels, all chests within shrines, read all Zora stone monuments, all compendium pics (no pic purchases), all phantom ganons, and rescue all Hinos.
    version: 1.0.0
 _route:
    - Great Sky Island:
@@ -676,6 +676,8 @@ _route:
       - _Korok::UZ24
       - _MainQuest::TheSludgeCoveredStatue:
          coord: [3300, 139, 463]
+      - _Shop::GeneralStore17:
+         notes: Buy rice
       - _Korok::UZ23
       - _Shrine<Activate Mogawak shrine>:
          coord: [3299.95, 231.25, 423.79]
@@ -761,8 +763,130 @@ _route:
          coord: [3335.9, 1818.4, 729.33]
       - _Special<Pic of mucktorok>:
          coord: [3365, 1848.1, 750]
+   - Zora Kohga Segment 1:
+      - _SideQuest::TheNeverEndingLecture:
+         coord: [3321, 163, 549]
+      - _SideQuest::TheMoonlitPrincess:
+         coord: [3274, 155, 543]
+      - _SideQuest::ATokenofFriendship:
+         coord: [3310, 150, 488]
+      - _SideQuest::TrueTreasure:
+         coord: [3295, 140, 512]
+      - _SideQuest::ACrabulousDeal:
+         coord: [3323, 139, 492]
+      - _SideQuest::AWifeWaftedAway:
+         coord: [3290, 139, 441]
+      - _Shrine::Mogawak
+      - _Korok::UZ35
+      - _Cave::UnderZora'sDomain00
+      - _Chest::VahRutaDivineHelm
+      - _Bubbulfrog::CaveUnderZora'sDomain
+      - _Chasm::UnderZorasDomain
+   - Zora Kohga Segment 2:
+      - _Poe::Grand:
+         coord: [3326.7, -585.19, 357.89]
+      - _Poe::Grand:
+         coord: [3331.09, -584.7, 347.29]
+      - _Lightroot::Kawagom
+      - _Chest<Large Crystallized Charge>:
+         coord: [3189.77, -644.41, 535.19]
+      - _Poe::Large:
+         coord: [3221.33, -631.89, 553.02]
+      - _Poe::Grand:
+         coord: [3215.03, -624.72, 625.15]
+      - _Poe::Grand:
+         coord: [3207.1, -624.68, 624.86]
+      - _Poe::Grand:
+         coord: [3342.36, -635.31, 640.43]
+      - _Npc::Master Kohga_02
+      - _Shop::ForgeConstruct03
+      - _SchemaStone::LanayruMine
+   - Hetsu Upgrades:
+      - _Shop::GeneralStore:
+         notes: Buy rice
+      - _SideAdv::HestusConcerns:
+         coord: [-229.49, 127.2, 80.14]
+         notes:
+            - Weapon x5
+            - Bow x3
+            - Shield x6
+      - _SideAdv::MessagesfromanAncientEra:
+         coord: [-270.35, 124, 66.24]
+      - _Equipment::Weapon<Collect swords from Aja>:
+         coord: [-300.53, 126.4, 106.26]
+   - Lynel Run 1:
+      - __icons::Warp<Warp to Kimakarut shrine>:
+         coord: [-2656.33, -403.64, -2237.69]
+      - _Enemy<Lynel>:
+         coord: [-2798.87, -376.93, -2238.38]
+      - __icons::Warp<Warp to Mu-ustust shrine>:
+         coord: [-1423.25, -433.22, -1351.75]
+      - _Enemy<Lynel>:
+         coord: [-1438.63, -379.5, -1261.72]
+      - _Enemy<Lynel x5>:
+         coord: [-1151.85, -393.54, -1263.46]
+   - Ishodag:
+      - __icons::Warp<Warp to Jiosin shrine>:
+         coord: [-240.74, 145.9, -371.03]
+      - _Npc::Suzuna:
+         notes: Collect elixir
+      - _Korok::HF07
+      - _SideAdv::BringPeacetoHyruleField:
+         coord: [-441.12, 156.17, -624.38]
+      - _Shop<Find Parga>:
+         coord: [-429.28, 125.36, -810.78]
+         notes: Buy milk, butter, etc
+      - _Enemy<Moblin x1 and Bokoblin x2>:
+         coord: [-576.86, 129.53, -520.24]
+      - _Korok::LL60
+      - _Chest<Purple rupee>:
+         coord: [-630.93, 129.6, -571.73]
+      - _Enemy<Bokoblin x3>:
+         coord: [-675.5, 127.55, -420.12]
+      - _Shrine<Activate Susuyai shrine>:
+         coord: [-785.41, 137.38, -434.05]
+      - _Enemy<Phantom Ganon>:
+         coord: [-750.95, 127.05, -328.16]
+         notes: Move on if he does not spawn
+      - _Korok::HF22
+      - _Korok::HF13
+      - _Chest<Large Zonai Charge>:
+         coord: [-719.32, 139.29, -889.84]
+      - _Enemy<Boss Bokoblin>:
+         coord: [-718.08, 166.6, -987.92]
+         notes: Fuse savage lynel horn to thick stick for upcoming gleeok fight
+      - _Tower<Activate Hyrule Field tower>:
+         coord: [-761.28, 163.42, -1019.23]
+      - _Well::AquameLake
+      - _Enemy::Gleeok::G07
+      - _Cave::ColiseumRuins00
+      - _SideQuest::MiskosTreasureofAwakeningIII:
+         coord: [-1160, 34, -1271]
+      - _Bubbulfrog::ColiseumRuinsCave
+      - _Korok::HF25
+      - _Enemy<Boss Bokoblin>:
+         coord: [-985.91, 131.7, -800.54]
+      - _Korok::LL61
+      - _Cave::AncientTreeStump00
+      - _Bubbulfrog::AncientTreeStumpCave
+      - _Chest::FierceDeityBoots:
+         notes: Ascend
+      - _Korok::LL59
+      - _Korok::LL55:
+         notes: Get a stamonika bass from ancient tree stump lake
+      - _Enemy<Phantom Ganon>:
+         coord: [-750.95, 127.05, -328.16]
+         notes: Skip if you already got him
+      - _Korok::LL48
+      - _Enemy<Boss Bokoblin>:
+         coord: [-923.69, 194.5, -56.32]
+      - _Npc::Hino
+      - _Korok::LL47
+      - _Korok::LL44
+      - _Addison::A31
+      - _Shrine::Ishodag
 
-      
+
 
 
 
