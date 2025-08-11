@@ -284,7 +284,8 @@ _route:
       - _Shrine::Jiosin
       - _Korok::LL50:
          notes: Tame a horse along the way
-      - _Npc::Josha:
+      - _MainQuest::CrisisatHyruleCastle:
+         coord: [-238.97, 132.32, 147.92]
          notes: Use north entrance to avoid NPC chatter
       - _Addison::A30
       - _Korok::LL37
@@ -301,7 +302,8 @@ _route:
       - _Npc::Hoz:
          notes: Get back on horse in the gatehouse
       - _Korok::LL42
-      - _Npc::Purah_Normal:
+      - _MainQuest::RegionalPhenomena:
+         coord: [-253.42, 132.01, 156.0]
          notes:
             - Leave horse outside north entrance
             - NOT TOO CLOSE to the bridge
@@ -483,7 +485,7 @@ _route:
    - Camera Segment 1:
       - __icons::Warp<Warp to Lookout Landing Tower>:
          coord: [-298.85, 123.94, 142.85]
-      - _MainQuest::RegionalPhenomena:
+      - _MainQuest<Complete Regional Phenomena>:
          coord: [-248.72, 126.36, 148.83]
       - _Shop::CrystalRefinery01
       - _Shop::BargainerStatue06
@@ -495,6 +497,8 @@ _route:
    - Camera Segment 2:
       - _Lightroot::Nisoij
       - _Lightroot::Iayusus
+      - _Special<Pic of statue>:
+         coord: [-826.85, -364.91, -461.7]
    - Hyrule Field Depths:
       - _Chest::MinersTop
       - _Chest<Large Crustallized Charge>:
@@ -504,15 +508,17 @@ _route:
       - _Chest<Large Crystallized Charge>:
          coord: [-977.93, -421.39, 248.88]
       - _Lightroot::Gadohsi
+      - _Special<Pic of frox>:
+         coord: [-590, -358.61, 222.5]
       - _Enemy::Frox::DC05
-      - _Equipment::Weapon:
+      - _Equipment::Weapon<Weapon pilar>:
          coord: [-399.57, -365.06, 370.8]
-      - _Equipment::Weapon:
+      - _Equipment::Weapon<Weapon pilar>:
          coord: [-405.9, -365.02, 435.64]
-      - _Equipment::Weapon:
+      - _Equipment::Weapon<Weapon pilar>:
          coord: [-361.87, -361.56, 400.84]
       - _Lightroot::Sinonoyk
-      - _Equipment::Weapon:
+      - _Equipment::Weapon<Weapon pilar>:
          coord: [-237.87, -341, 358.39]
          notes: Visit additional weapon pilars along the route, as needed, to get pics of all travelor and soldier weapons
       - _Enemy<Boss Bokoblin>:
@@ -540,7 +546,7 @@ _route:
       - _Enemy::Frox::DC10
       - _Chest<Large Crystallized Charge>:
          coord: [-374.13, -367.18, -1575.87]
-      - _Equipment::Weapon:
+      - _Equipment::Weapon<Weapon pilar>:
          coord: [-577.72, -339.73, -1498.67]
       - _Equipment::Bow<Duplex Bow>:
          coord: [-565.54, -367.44, -1403.5]
@@ -552,7 +558,7 @@ _route:
    - Finish Camera Quest:
       - __icons::Warp<Warp to Lookout Landing Tower>:
          coord: [-298.85, 123.94, 142.85]
-      - _MainQuest<Talk to Robbie>:
+      - _MainQuest<Complete Camera Work in the Depths>:
          coord: [-253.5, 144, 145.5]
       - _Special<Pic of tree branch>:
          coord: [-249.72, 125.2, 170.51]
@@ -565,7 +571,7 @@ _route:
       - _Shop::ForgeConstruct10
       - _Lightroot::Koradat
       - _Enemy::Hinox::DF02
-      - _Equipment::Weapon:
+      - _Equipment::Weapon<Weapon pilar>:
          coord: [-1671.26, -325.84, -2143.42]
       - _Chest<Large Crystallized Charge>:
          coord: [-1814.59, -424.73, -2137.14]
@@ -594,9 +600,9 @@ _route:
          notes: Ascend to 1st level above forge construct
       - _Lightroot::Tatayam
       - _Enemy::Talus::DG03
-      - _Equipment::Weapon:
+      - _Equipment::Weapon<Weapon pilar>:
          coord: [-3592.32, -371.85, -2422.74]
-      - _Equipment::Weapon:
+      - _Equipment::Weapon<Weapon pilar>:
          coord: [-3715.12, -370.21, -2380.04]
       - _Enemy::Frox::DG04
       - _Enemy::FluxConstruct::DG03
@@ -631,7 +637,132 @@ _route:
       - _Shop::CrystalRefinery
       - __icons::Warp<Warp to Serutabomac shrine near castle>:
          coord: [-178.78, 399.1, 1170.12]
+   - Sindon Segment 1:
+      - _Shrine<Activate Sepapa>:
+         coord: [221.75, 147.03, 1085.05]
+      - _Cave::CrenelHills00
+      - _Enemy::Talus::GK01
+      - _Bubbulfrog::CrenelHillsCave
+      - _Chest::BarbarianArmor:
+         notes: Ascend
+      - _Special<Pic of aerocuda>:
+         coord: [620, -403.82, 782.13]
+      - _Korok::SS04
+      - _Chest<Rockets>:
+         coord: [1038.57, 177.68, 1253.27]
+      - _Shrine<Activate Ekochiu shrine>:
+         coord: [1062.65, 164.78, 1280.46]
+      - _SideAdv::TheHuntforBubbulGems:
+         coord: [1222, 130.46, 1207]
+      - _Cave::PicoPond00
+      - _Bubbulfrog::PicoPondCave
+      - _Enemy::Hinox::GZ01
+      - _Chest<Locked Chest>:
+         coord: [1337.91, 167.95, 1059.69]
+      - _Tower<Activate Eldin Canyon Tower>:
+         coord: [1641.81, 324.42, 1190.82]
+      - _Korok::EC57
+      - _Tear::G02
+      - _Enemy<Boss Bokoblin>:
+         coord: [2284.96, 206.1, 386.74]
+      - _Korok::UZ32
+      - _Korok::UZ26
+      - _Special<Pic of chuchu>:
+         coord: [2838.24, 483.63, 539.35]
+      - _SideQuest::MiredinMuck:
+         coord: [2840, 483.63, 590]
+      - _Tower<Activate Upland Zora tower>:
+         coord: [2866.06, 478.33, 581.19]
+      - _Korok::UZ24
+      - _MainQuest::TheSludgeCoveredStatue:
+         coord: [3300, 139, 463]
+      - _Korok::UZ23
+      - _Shrine<Activate Mogawak shrine>:
+         coord: [3299.95, 231.25, 423.79]
+      - _Special<Pic of moonlit princess>:
+         coord: [3758.86, 654.62, 417.38]
+      - _Korok::UZ22
+      - _Shrine::Ihen-a
+   - Sindon Segment 2:
+      - _MainQuest::SidonoftheZora:
+         coord: [3847, 591.92, 568.5]
+      - Walk up steps to collect frogs and crabs:
+         coord: [3758.86, 654.62, 417.38]
+      - _Chest<Locked chest>:
+         coord: [3656.86, 550.16, 803.36]
+      - _MainQuest::TheBrokenSlate:
+         coord: [3405, 400, 883]
+      - _Cave::PloymusMountain00
+      - _Bubbulfrog::PloymusMountainCave
+      - _Chest::ClimbersBandanna:
+         notes: Ascend
+      - _Cave::PristineSanctum01
+      - _Bubbulfrog::PristineSanctum
+      - _Cave::PristineSanctum00
+      - _Korok::UZ31
+      - _Korok::UZ30
+      - _MainQuest<Shoot kings mark through teardrop>:
+         coord: [4074, 587, 528]
+      - _Chest::ZoraHelm:
+         notes: Ascend
+      - _Special<Pic of sludge like>:
+         coord: [3899.97, 590.9, 590.81]
+      - _MainQuest<Talk to Sidon>:
+         coord: [3678.97, 340.9, 131.84]
+      - _Cave::AncientZoraWaterworks00:
+         notes:
+            - Collect zora sword
+            - Activate terminal
+   - Sidon Segment 3:
+      - Swim up waterfall:
+         coord: [3671.8, 320.99, 259.86]
+      - _Chest<Large zonai charge>:
+         coord: [3559.66, 1396.85, 481.48]
+      - _Shrine<Activate Igoshon shrine>:
+         coord: [3480.71, 1444.63, 665.88]
+      - _Dispenser::S08
+      - _Enemy::FluxConstruct::SL01:
+         notes: Collect sages will
+      - _Enemy<Construct>:
+         coord: [3433.44, 1653.38, 565.58]
+      - _Korok::UZS01
+      - _Temple::Water
+      - _Enemy<Fire like>:
+         coord: [3459.16, 1888.9, 776.43]
+      - _Enemy<Construct>:
+         coord: [3512.42, 1898.4, 744.92]
+      - _Enemy<Construct>:
+         coord: [3485.73, 1897.9, 702.75]
+      - _Special<Open valve>:
+         coord: [3515.1, 1892.39, 717.39]
+      - _Chest<Large Zonai Charge>:
+         coord: [3524.93, 1914.88, 643.04]
+      - _Chest<Opal>:
+         coord: [3498.95, 1892.39, 751.99]
+      - _Special<Open valve>:
+         coord: [3444.95, 1896.9, 882.51]
+      - _Enemy<Construct>:
+         coord: [3372.52, 1848.1, 730.18]
+      - _Enemy<Construct>:
+         coord: [3297.01, 1865.9, 622.45]
+      - _Enemy<Construct>:
+         coord: [3284.17, 1865.9, 642.29]
+      - _Enemy<Construct>:
+         coord: [3261.43, 1865.9, 648.32]
+      - _Special<Open valve>:
+         coord: [3237.49, 1879.39, 752.05]
+      - _Chest<Zora shield>:
+         coord: [3280.32, 1894.4, 577.33]
+      - _Chest<Sapphire>:
+         coord: [3310.81, 1819.9, 672.06]
+      - _Chest<Large Zonaite>:
+         coord: [3379.3, 1824.84, 715.54]
+      - _Special<Open valve>:
+         coord: [3335.9, 1818.4, 729.33]
+      - _Special<Pic of mucktorok>:
+         coord: [3365, 1848.1, 750]
 
+      
 
 
 
