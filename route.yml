@@ -13,6 +13,8 @@ _route:
          notes:
             - Collect all the things along the route, including killing nearby enemies
             - Enemy camps without a locked chest or a boss boko are an exception to this rule
+            - Take pics of all the things along the route
+            - Reminders to collect highly important items/pics will be noted in the route
       - _Chest::ArchaicLegwear
       - _Enemy<Construct>:
          coord: [391.37, 1640.55, -1333.67]
@@ -825,7 +827,7 @@ _route:
          coord: [-1438.63, -379.5, -1261.72]
       - _Enemy<Lynel x5>:
          coord: [-1151.85, -393.54, -1263.46]
-   - Ishodag:
+   - Coliseum Gleeok:
       - __icons::Warp<Warp to Jiosin shrine>:
          coord: [-240.74, 145.9, -371.03]
       - _Npc::Suzuna:
@@ -834,7 +836,7 @@ _route:
       - _SideAdv::BringPeacetoHyruleField:
          coord: [-441.12, 156.17, -624.38]
       - _Shop<Find Parga>:
-         coord: [-429.28, 125.36, -810.78]
+         coord: [-520, 125.36, -580.78]
          notes: Buy milk, butter, etc
       - _Enemy<Moblin x1 and Bokoblin x2>:
          coord: [-576.86, 129.53, -520.24]
@@ -852,6 +854,9 @@ _route:
       - _Korok::HF13
       - _Chest<Large Zonai Charge>:
          coord: [-719.32, 139.29, -889.84]
+      - _Shrine<Activate Mayachin shrine>:
+         coord: [-705.5, 150.61, -868.5]
+      - _Addison::A32
       - _Enemy<Boss Bokoblin>:
          coord: [-718.08, 166.6, -987.92]
          notes: Fuse savage lynel horn to thick stick for upcoming gleeok fight
@@ -863,12 +868,14 @@ _route:
       - _SideQuest::MiskosTreasureofAwakeningIII:
          coord: [-1160, 34, -1271]
       - _Bubbulfrog::ColiseumRuinsCave
+   - Ishodag:
       - _Korok::HF25
       - _Enemy<Boss Bokoblin>:
          coord: [-985.91, 131.7, -800.54]
       - _Korok::LL61
       - _Cave::AncientTreeStump00
-      - _Bubbulfrog::AncientTreeStumpCave
+      - _Bubbulfrog::AncientTreeStumpCave:
+         notes: Collect glowing cave fish
       - _Chest::FierceDeityBoots:
          notes: Ascend
       - _Korok::LL59
