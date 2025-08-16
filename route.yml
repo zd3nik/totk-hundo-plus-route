@@ -4,7 +4,7 @@ _project:
    authors:
       - Shawn Chidester
    name: Glitchless TOTK Hundo+ (Turkey Leg Route)
-   description: Standard Hundo (no amiibo) plus all GSI chests & constructs, all armor, all armor set abilities unlocked, all old maps, all locked chests, all boss bokos, all lynels, all chests within shrines, read all Zora stone monuments, all compendium pics (no pic purchases), all phantom ganons, and rescue all Hinos.
+   description: Standard Hundo (no amiibo) plus all GSI chests & constructs, all minigames, all armor, all armor set abilities unlocked, all old maps, all locked chests, all boss bokos, all lynels, all chests within shrines, read all Zora stone monuments, all compendium pics (no pic purchases), all phantom ganons, and rescue all Hinos.
    version: 1.0.0
 _route:
    - Great Sky Island:
@@ -892,8 +892,138 @@ _route:
       - _Korok::LL44
       - _Addison::A31
       - _Shrine::Ishodag
-
-
+   - Sinikawak:
+      - _Well::MountGustaf
+      - _Korok::LL40
+      - _Well::CarokBridge
+      - _Enemy::Hinox::GC01
+      - _Korok::LB42
+      - _Cave::NorthHyrulePlain01
+      - _Bubbulfrog::NorthHyrulePlainCave
+      - _Cave::NorthHyrulePlain00
+      - _Korok::LB35
+      - _Korok::LB25
+      - _Enemy<Boss Bokoblin>:
+         coord: [-1272.89, 207.67, 1046.79]
+         notes: Freeze meat and fuze to 2 shields
+      - _Tear::G00
+      - _MainQuest::TheDragonsTears:
+         coord: [-1313.14, 201.35, 823.5]
+         notes:
+            - Use hoverstone while falling from balloon to get pic of glyph
+            - Land on horse for side quest
+      - _SideQuest::HorseDrawnDreams:
+         coord: [-1327.81, 190.99, 724.63]
+      - _Well::NewSerenneStable
+      - Sleep at cooking pot until noon:
+         coord: [-1365, 191.14, 745]
+      - _Shrine<Activate Sinikawak shrine>:
+         coord: [-1414.62, 191.14, 756.85]
+   - Collect the Sand-Seals:
+      - _Enemy::Talus::GR03:
+         notes: Take pic
+      - _Addison::A21
+      - _Korok::LB18
+      - _Cave::Lindor'sBrow00
+      - _Enemy<Phantom Ganon>:
+         coord: [-1798.42, 239.86, 1204.69]
+      - _Shrine::Taki-ihaban
+      - _Bubbulfrog::Lindor'sBrowCave
+      - _Tower<Activate Lindors Brow tower>:
+         coord: [-1909.59, 395.71, 1245.3]
+      - _Korok::LB15
+      - _Chest<Locked Chest>:
+         coord: [-2154.15, 342.54, 1230.48]
+      - _Enemy<Lynel>:
+         coord: [-2169.75, 322.7, 1551.75]
+      - _Korok::LB07
+      - _Cave::TanagarCanyonEast00
+      - _Enemy::Hinox::GR03
+      - _Bubbulfrog::TanagarCanyonEastCave:
+         notes: Ascend
+      - _Well::MarittaExchangeRuins
+      - _Enemy<Phantom Ganon>:
+         coord: [-1781.06, 211.97, 1682.36]
+      - _Enemy<Boss Bokoblin>:
+         coord: [-1697.26, 211.94, 1765.66]
+      - _Special<Collect the Sand-Seals minigame>:
+         coord: [-1542, 106, 1794]
+   - Kiuyoyou:
+      - _Chest<Locked Chest>:
+         coord: [-1488.69, 279.04, 1487.59]
+      - _Korok::TR17
+      - _Korok::LB08
+      - _Well::IrchPlain
+      - _Chest<Locked Chest Inside Well>:
+         coord: [-926.57, 174.27, 1613.76]
+         notes: Ascend out of well
+      - _Chest<Shield>:
+         coord: [-931.5, 210.8, 1626]
+      - _Korok::LB17:
+         notes: Collect frogs and fleet lotus
+      - _Item<Korok>:
+         coord: [-768, 137, 1414]
+      - _Chasm::ElmaKnolls
+      - _Korok::TR15
+      - _Korok::TR16
+      - _Enemy::Hinox::GR02
+      - _Enemy<Phantom Ganon>:
+         coord: [-264.19, 247.72, 2205.43]
+         notes: Skip if wizrobe appears
+      - _Korok::LB03:
+         notes: Drop off flying machine above cave
+      - _Cave::YigaClanMarittaBranch00
+      - _Chest::YigaTights:
+         notes: Ascend
+      - _Korok::LB02
+      - _Item<Korok>:
+         coord: [-981, 121, 2240]
+      - _Addison::A20
+      - _Shrine::Kiuyoyou:
+         notes: Equip rocket shield
+   - The Mother Goddess Statue:
+      - _Enemy::Hinox::GR01
+      - _Well::RowanPlain
+      - _Korok::PS15
+      - _Chest<Locked Chest>:
+         coord: [-1317.53, 247.54, 2610.81]
+      - _Korok::PS20
+      - _Korok::PS26
+      - _Korok::LB01
+      - _Korok::PS18
+      - _Shrine::Mayausiy
+      - _SideQuest::TheMotherGoddessStatue:
+         coord: [-1056, -84, 2689]
+         notes: Ascend
+      - _Addison::A19
+   - Lucky Clover Gazette:
+      - __icons::Warp<Warp to Lindors Brow tower>:
+         coord: [-1909.59, 395.71, 1245.3]
+      - _Tear::G01
+      - _Korok::PS30
+      - _Korok::LB05
+      - _SideQuest::OpentheDoor:
+         coord: [-2680, 256, 1676]
+      - _Enemy<Lynel>:
+         coord: [-2799.32, 413.92, 1839.56]
+      - _Cave::TabanthaHills00
+      - _Bubbulfrog::TabanthaHillsCave
+      - _Chest<Locked Chest>:
+         coord: [-2948.36, 355.92, 1813.31]
+      - _SideQuest::CaveMushroomsThatGlow:
+         coord: [-2985, 199, 1657]
+      - _Cave::Brightcap00
+      - _Chest::FrostbiteShirt
+      - _Bubbulfrog::BrightcapCave
+      - _Enemy<Boss Bokoblin>:
+         coord: [-2961.93, 355.86, 1561.78]
+         notes: Cut grass fro frogs and wheat
+      - _Chest<Shield>:
+         coord: [-3063.5, 387.48, 1582.11]
+      - _Shrine<Activate Oromuwak shrine>:
+         coord: [-3078.52, 355.06, 1617.27]
+      - _SideAdv::PotentialPrincessSightings:
+         coord: [-3258.5, 224.96, 1762.5]
 
 
 
