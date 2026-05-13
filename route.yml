@@ -301,11 +301,11 @@ _route:
          notes: Get back on horse in the gatehouse
    - Paraglider:
       - _Korok::LL42
+      - _Special<Leave horse>:
+         coord: [-255, 125, 198]
+         notes: Not too close to water
       - _MainQuest::RegionalPhenomena:
          coord: [-253.42, 132.01, 156.0]
-         notes:
-            - Leave horse outside north entrance
-            - NOT TOO CLOSE to the bridge
       - _Tower::LookoutLanding:
          notes:
             - Drop all weapons, shields, and bows mid-air
@@ -462,15 +462,23 @@ _route:
          coord: [-635.05, -410.82, -1522.47]
       - _Equipment::Weapon<Claymore>:
          coord: [-752.7, -402.69, -1634.27]
+      - _Poe::Normal:
+         coord: [-886.77, -421.85, -1674.73]
       - _Chest<Large Crystallized Charge>:
          coord: [-962.56, -426.63, -1695.87]
       - _Lightroot::Kogoir
       - __icons::Material<Pillage Enemy Camp>:
          coord: [-1510, -453, -1515]
          notes: Un-fuse soldier broadsword and break it
+      - _Poe::Normal:
+         coord: [-1480, 138.74, -1410.66]
       - _Lightroot::Mu-ustust
-      - _Enemy<Lynel>:
-         coord: [-1438.63, -379.5, -1261.72]
+      - _Enemy::Lynel::D03<Lynel>
+      - _Enemy::Lynel::D07<Lynel>
+      - _Enemy::Lynel::D05<Lynel>
+      - _Enemy::Lynel::D04<Lynel>
+      - _Enemy::Lynel::D06<Lynel>
+      - _Enemy::Lynel::D08<Lynel>
       - _Chest::MajorasMask
       - __icons::Material<Pillage Enemy Camp>:
          coord: [-1213, 127.11, -1538]
@@ -487,7 +495,7 @@ _route:
       - _Warp::Special<Warp to Central Mine>:
          coord: [-821.82, -417.75, -1940.61]
       - _Shop::ForgeConstruct10
-   - Camera Segment 1:
+   - Camera:
       - _Warp::Tower<Warp to Lookout Landing Tower>:
          coord: [-298.85, 123.94, 142.85]
       - _MainQuest<Regional Phenomena>:
@@ -499,12 +507,11 @@ _route:
       - _Warp::Shrine<Warp to Jiosin Shrine>:
          coord: [-240.74, 145.9, -371.03]
       - _Chasm::HyruleField
-   - Camera Segment 2:
+   - Hyrule Field Depths:
       - _Lightroot::Nisoij
       - _Lightroot::Iayusus
       - _Special<Pic of statue>:
          coord: [-826.85, -364.91, -461.7]
-   - Hyrule Field Depths:
       - _Chest::MinersTop
       - _Chest<Large Crustallized Charge>:
          coord: [-1146.81, -375.47, -204.44]
@@ -525,23 +532,20 @@ _route:
       - _Equipment::Weapon<Weapon pilar>:
          coord: [-237.87, -341, 358.39]
          notes: Add or skip weapon pilars along the route as needed
-      - _Enemy<Boss Bokoblin>:
-         coord: [78.33, -373.95, 371.74]
+      - _Enemy::BokoBoss::D22<Boss>
       - _Lightroot::Oyimay
       - _Chest<Large Crystallized Charge>:
          coord: [555.21, -365.97, 281.18]
       - _Enemy::Hinox::DC02
       - _Enemy::Talus::DC01
-      - _Enemy<Boss Bokoblin>:
-         coord: [-182.55, -366.73, -37.18]
+      - _Enemy::BokoBoss::D16<Boss>:
          notes: Use 1 large zonai charge for long flight to next enemy
       - _Enemy::Talus::GC06
       - _Enemy::Frox::DC08
       - _Shop::BargainerStatue01
       - _Enemy::FluxConstruct::DC03
       - _Lightroot::Stakijat
-      - _Enemy<Lynel>:
-         coord: [253.33, -367.93, -1186.69]
+      - _Enemy::Lynel::D11<Lynel>
       - _Lightroot::Netinet
       - _Enemy::Hinox::DC05
       - _Lightroot::Nuzimak
@@ -595,8 +599,7 @@ _route:
       - _Lightroot::Jadukakar
       - _Enemy::Frox::DG03
       - _Lightroot::Kimakarut
-      - _Enemy<Lynel>:
-         coord: [-2798.87, -376.93, -2238.38]
+      - _Enemy::Lynel::D00<Lynel>
       - _Enemy::Frox::DG06:
          notes: Take pic of Frox
       - _Poe::Large:
@@ -681,8 +684,7 @@ _route:
          coord: [1641.81, 324.42, 1190.82]
       - _Korok::EC57
       - _Tear::G02
-      - _Enemy<Boss Bokoblin>:
-         coord: [2284.96, 206.1, 386.74]
+      - _Enemy::BokoBoss::G42<Boss>:
          notes: Break weapons
       - _Korok::UZ32
       - _Korok::UZ26
@@ -713,7 +715,7 @@ _route:
          coord: [3847, 591.92, 568.5]
       - _Shrine<Activate Ihen-a shrine>:
          coord: [3786.22, 597.97, 577.78]
-      - _Chest<Locked chest>:
+      - _Chest<Locked Chest>:
          coord: [3656.86, 550.16, 803.36]
       - _MainQuest::TheBrokenSlate:
          coord: [3405, 400, 883]
@@ -858,13 +860,13 @@ _route:
    - Lynel Run 1:
       - _Warp::Shrine<Warp to Kimakarut shrine>:
          coord: [-2656.33, -403.64, -2237.69]
-      - _Enemy<Lynel>:
+      - _Enemy::Lynel<x1>:
          coord: [-2798.87, -376.93, -2238.38]
       - _Warp::Shrine<Warp to Mu-ustust shrine>:
          coord: [-1423.25, -433.22, -1351.75]
-      - _Enemy<Lynel>:
+      - _Enemy::Lynel<x1>:
          coord: [-1438.63, -379.5, -1261.72]
-      - _Enemy<Lynel x5>:
+      - _Enemy::Lynel<x5>:
          coord: [-1151.85, -393.54, -1263.46]
    - Coliseum Gleeok:
       - _Warp::Shrine<Warp to Jiosin shrine>:
@@ -898,8 +900,7 @@ _route:
       - _Shrine<Activate Mayachin shrine>:
          coord: [-705.5, 150.61, -868.5]
       - _Addison::A32
-      - _Enemy<Boss Bokoblin>:
-         coord: [-718.08, 166.6, -987.92]
+      - _Enemy::BokoBoss::G19<Boss>:
          notes: Fuse savage lynel horn to thick stick for upcoming gleeok fight
       - _Tower<Activate Hyrule Field Tower>:
          coord: [-761.28, 163.42, -1019.23]
@@ -912,8 +913,7 @@ _route:
       - _Bubbulfrog::ColiseumRuinsCave:
          notes: Ascend
       - _Korok::HF25
-      - _Enemy<Boss Bokoblin>:
-         coord: [-985.91, 131.7, -800.54]
+      - _Enemy::BokoBoss::G18<Boss>
       - _Korok::LL61
       - _Korok::LL59
       - _Cave::AncientTreeStump00
@@ -925,8 +925,7 @@ _route:
       - _Enemy::Hinox::GC03
       - _Korok::LL45
       - _Korok::LL48
-      - _Enemy<Boss Bokoblin>:
-         coord: [-923.69, 194.5, -56.32]
+      - _Enemy::BokoBoss::G20<Boss>
       - _Npc::Hino
       - _Korok::LL47
       - _Korok::LL44
@@ -945,8 +944,7 @@ _route:
       - _Cave::NorthHyrulePlain00
       - _Korok::LB35
       - _Korok::LB25
-      - _Enemy<Boss Bokoblin>:
-         coord: [-1272.89, 207.67, 1046.79]
+      - _Enemy::BokoBoss::G11<Boss>:
          notes: Freeze meat and fuse to 2 shields
       - _Tear::G00
       - _MainQuest::TheDragonsTears:
@@ -969,12 +967,12 @@ _route:
    - Forgotten Temple:
       - _Enemy::Talus::GR03
       - _Addison::A21
-      - _Enemy<Locked Chest>:
+      - _Chest<Locked Chest>:
          coord: [-1488.69, 279.04, 1487.59]
       - _Korok::TR17::Start
       - _Korok::LB08
       - _Well::IrchPlain
-      - _Enemy<Locked Chest>:
+      - _Chest<Locked Chest>:
          coord: [-912.06, 190.61, 1609.99]
          notes: Ascend
       - _Chest<Shield>:
@@ -1025,15 +1023,14 @@ _route:
          notes: Ascend
       - _Addison::A19
       - _Korok::PS15
-      - _Enemy<Locked Chest>:
+      - _Chest<Locked Chest>:
          coord: [-1317.53, 247.54, 2610.81]
          notes: Sit at campfire until night
       - _Korok::PS20
       - _Korok::PS26
       - _Special<Collect the Sand-Seals minigame>:
          coord: [-1542, 106, 1794]
-      - _Enemy<Boss Bokoblin>:
-         coord: [-1697.26, 211.94, 1765.66]
+      - _Enemy::BokoBoss::G12<Boss>
       - _Enemy<Phantom Ganon>:
          coord: [-1781.06, 211.97, 1682.36]
       - _Well::MarittaExchangeRuins
@@ -1047,10 +1044,9 @@ _route:
       - _Tower<Activate Lindors Brow tower>:
          coord: [-1909.59, 395.71, 1245.3]
       - _Korok::LB15
-      - _Enemy<Locked Chest>:
+      - _Chest<Locked Chest>:
          coord: [-2154.15, 342.54, 1230.48]
-      - _Enemy<Lynel>:
-         coord: [-2169.75, 322.7, 1551.75]
+      - _Enemy::Lynel::G03<Lynel>:
          notes: Leave flying machine near lynel
       - _Korok::LB07
       - _Cave::TanagarCanyonEast00
@@ -1061,19 +1057,17 @@ _route:
       - _Korok::PS30:
          notes: Shoot from air while approaching dragon tear
       - _Tear::G01
-      - _Enemy<Lynel>:
-         coord: [-2799.32, 413.92, 1839.56]
+      - _Enemy::Lynel::G04<Lynel>
       - _Cave::TabanthaHills00:
          notes: Leave flying machine above cave
       - _Bubbulfrog::TabanthaHillsCave
-      - _Enemy<Locked Chest>:
+      - _Chest<Locked Chest>:
          coord: [-2948.36, 355.92, 1813.31]
          notes:
             - Get feather spear from locked chest
             - Take pic of feather spear
             - Equip spear
-      - _Enemy<Boss Bokoblin>:
-         coord: [-2961.93, 355.86, 1561.78]
+      - _Enemy::BokoBoss::G06<Boss>:
          notes:
             - Drop flying machine in canyon east of boko camp
             - Break feather spear
