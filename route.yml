@@ -4,8 +4,22 @@ _project:
    authors:
       - Shawn Chidester
    name: Glitchless No Amiibo TOTK Hundo+ (Turkey Leg Route)
-   description: Standard speedrun hundo (no amiibo) + all GSI chests & constructs, all minigames, all armor, all armor set abilities unlocked, all old maps, all locked chests, all boss bokos, all lynels, all chests within shrines, read all Zora stone monuments, all compendium pics (no pic purchases), all static phantom ganons (this excludes the 2 in castle town, the 1 on Mekar island, and the 1 near Susuyai shrine), clear ??? from all device dispensers, and get a diamond from Hino (by rescuing him from all locations). Dog treasures are intentionally excluded. Micro-management of weapons, health, armor, how to defeat enemies, etc is not detailed in this route doc. Dragon farming is highly time sensitive, but there are more dragon farming encounters than are strictly necessary so you can skip some if you don't make it to them in time. Just don't skip any star fragment farming (which is routed to happen in tandem with dragon farming).
-   version: 1.0.0
+   description:
+      - Standard TOTK hundo (glitchless, no amiibo) plus
+      - All chests within shrines (chest icon must appear next to shrine on map)
+      - All GSI chests & constructs * Clear all ??? from all device dispensers
+      - All old maps * All locked chests * All mini-games
+      - All armor and all armor set abilities unlocked
+      - All boss bokos
+      - All lynels
+      - Read all Zora stone monuments
+      - Capture All compendium pics yourself (no pic purchases)
+      - Get a diamond from Hino (by rescuing him from all locations)
+      - Attend both Ashai classes (get a smiling face in the adult class)
+      - All static spawn Phantom Ganons (the 2 in castle town, the 1 on Mekar island, and the 1 near Susuyai shrine are not static)
+      - Dog treasures are intentionally excluded
+      - Micro-management of weapons, health, armor, how to defeat enemies, etc is not detailed in this route doc. Dragon farming is highly time sensitive, but there are more dragon farming encounters than are strictly necessary so you can skip some if you don't make it to them in time. Just don't skip any star fragment farming (which is routed to happen in tandem with dragon farming)
+   version: 1.1.0
 _route:
    - Great Sky Island:
       - _Warp::ROA:
@@ -666,16 +680,24 @@ _route:
       - _Chest::BarbarianArmor:
          notes: Ascend
       - _Korok::SS04
+      - _Enemy<Phantom Ganon>:
+         coord: [682.28, 179.01, 753.88]
+         notes: Skip if running behind, we come back here later
       - _Korok::SS02
       - _Korok::SS01
       - _Chest<Rockets>:
          coord: [1038.57, 177.68, 1253.27]
       - _Shrine<Activate Ekochiu shrine>:
          coord: [1062.65, 164.78, 1280.46]
+      - _Enemy::BokoBoss::G36
+      - _Korok::EC48:
+         notes: Drop off flying machine near Addison
       - _SideAdv::TheHuntforBubbulGems:
          coord: [1222, 130.46, 1207]
       - _Cave::PicoPond00
-      - _Bubbulfrog::PicoPondCave
+      - _Bubbulfrog::PicoPondCave:
+         notes: Ascend
+      - _Addison::A48
       - _Enemy::Hinox::GZ01:
          notes: Take pic
       - _Chest<Locked Chest>:
@@ -700,6 +722,10 @@ _route:
       - _Korok::UZ24
       - _MainQuest::TheSludgeCoveredStatue:
          coord: [3300, 139, 463]
+         notes:
+            - Collect fleet lotus and crabs
+            - Cook speed food
+            - Take pic of torch
       - _Shop::GeneralStore17:
          notes: Buy rice and swift violet
       - _Korok::UZ23
@@ -753,7 +779,7 @@ _route:
       - _Shrine<Activate Igoshon shrine>:
          coord: [3480.71, 1444.63, 665.88]
       - _Dispenser::S08:
-         notes: Offer extra charges to get more hoverstones
+         notes: Offer as many charges as needed to get 12+ hoverstones
       - _Enemy::FluxConstruct::SL01:
          notes: Collect sages will
       - _Enemy<Construct>:
