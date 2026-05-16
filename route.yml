@@ -698,10 +698,9 @@ _route:
       - _Bubbulfrog::PicoPondCave:
          notes: Ascend
       - _Addison::A48
+      - _LockedChest::G26
       - _Enemy::Hinox::GZ01:
          notes: Take pic
-      - _Chest<Locked Chest>:
-         coord: [1337.91, 167.95, 1059.69]
       - _Tower<Activate Eldin Canyon Tower>:
          coord: [1641.81, 324.42, 1190.82]
       - _Korok::EC57
@@ -741,16 +740,14 @@ _route:
          coord: [3847, 591.92, 568.5]
       - _Shrine<Activate Ihen-a shrine>:
          coord: [3786.22, 597.97, 577.78]
-      - _Chest<Locked Chest>:
-         coord: [3656.86, 550.16, 803.36]
+      - _LockedChest::G39
       - _MainQuest::TheBrokenSlate:
          coord: [3405, 400, 883]
       - _Cave::PloymusMountain00
       - _Bubbulfrog::PloymusMountainCave
       - _Chest::ClimbersBandanna:
          notes: Ascend
-      - _Special<Zora Monument>:
-         coord: [3720.59, 461.92, 532.05]
+      - _ZoraMonument::Z03
       - _Cave::PristineSanctum01
       - _Bubbulfrog::PristineSanctum
       - _Cave::PristineSanctum00
@@ -993,13 +990,11 @@ _route:
    - Forgotten Temple:
       - _Enemy::Talus::GR03
       - _Addison::A21
-      - _Chest<Locked Chest>:
-         coord: [-1488.69, 279.04, 1487.59]
+      - _LockedChest::G12
       - _Korok::TR17::Start
       - _Korok::LB08
       - _Well::IrchPlain
-      - _Chest<Locked Chest>:
-         coord: [-912.06, 190.61, 1609.99]
+      - _LockedChest::G59:
          notes: Ascend
       - _Chest<Shield>:
          coord: [-931.5, 210.8, 1626]
@@ -1049,8 +1044,7 @@ _route:
          notes: Ascend
       - _Addison::A19
       - _Korok::PS15
-      - _Chest<Locked Chest>:
-         coord: [-1317.53, 247.54, 2610.81]
+      - _LockedChest::G11:
          notes: Sit at campfire until night
       - _Korok::PS20
       - _Korok::PS26
@@ -1070,8 +1064,7 @@ _route:
       - _Tower<Activate Lindors Brow tower>:
          coord: [-1909.59, 395.71, 1245.3]
       - _Korok::LB15
-      - _Chest<Locked Chest>:
-         coord: [-2154.15, 342.54, 1230.48]
+      - _LockedChest::G10
       - _Enemy::Lynel::G03<Lynel>:
          notes: Leave flying machine near lynel
       - _Korok::LB07
@@ -1087,8 +1080,7 @@ _route:
       - _Cave::TabanthaHills00:
          notes: Leave flying machine above cave
       - _Bubbulfrog::TabanthaHillsCave
-      - _Chest<Locked Chest>:
-         coord: [-2948.36, 355.92, 1813.31]
+      - _LockedChest::G53:
          notes:
             - Get feather spear from locked chest
             - Take pic of feather spear
