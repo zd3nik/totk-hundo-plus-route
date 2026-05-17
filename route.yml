@@ -324,6 +324,7 @@ _route:
          notes:
             - Drop all weapons, shields, and bows mid-air
             - Wing glide to castle spire
+   - Castle Segment 1:
       - _Korok::LL07
       - _Equipment::Bow<Dusk Bow>:
          coord: [-256.03, 616.32, 1062.02]
@@ -348,7 +349,7 @@ _route:
       - _Chest<Royal Broadsword>:
          coord: [-235.55, 484.76, 1051.45]
       - _Shrine::Serutabomac
-   - Castle:
+   - Castle Segment 2:
       - _Equipment::Weapon<Soldier Claymore>:
          coord: [-166.52, 386.46, 1158.79]
       - _Enemy<Moblin x3>:
@@ -447,8 +448,7 @@ _route:
       - _Chest<Hylian Shield>:
          coord: [-154, 141.78, 1157.37]
    - Auto-Build:
-      - _Warp::Shrine<Warp to In-isa on GSI>:
-         coord: [ 26.07, 1527.75, -1503.6 ]
+      - _Warp::Shrine::In-isa:
          notes: Wing glide down to east chasm on great plateau
       - _Chasm::GreatPlateauEast:
          notes: Glide to autobuild terminal
@@ -510,16 +510,14 @@ _route:
          coord: [-821.82, -417.75, -1940.61]
       - _Shop::ForgeConstruct10
    - Camera:
-      - _Warp::Tower<Warp to Lookout Landing Tower>:
-         coord: [-298.85, 123.94, 142.85]
+      - _Warp::Tower::LookoutLanding
       - _MainQuest<Regional Phenomena>:
          coord: [-248.72, 126.36, 148.83]
       - _Shop::CrystalRefinery01
       - _Shop::BargainerStatue06
       - _MainQuest::CameraWorkintheDepths:
          coord: [-253.5, 144, 145.5]
-      - _Warp::Shrine<Warp to Jiosin Shrine>:
-         coord: [-240.74, 145.9, -371.03]
+      - _Warp::Shrine::Jiosin
       - _Chasm::HyruleField
    - Hyrule Field Depths:
       - _Lightroot::Nisoij
@@ -590,8 +588,7 @@ _route:
       - _Lightroot::Nihcayam
       - _Enemy::Hinox::DC04
    - Finish Camera Quest:
-      - _Warp::Tower<Warp to Lookout Landing Tower>:
-         coord: [-298.85, 123.94, 142.85]
+      - _Warp::Tower::LookoutLanding
       - _MainQuest<Complete Camera Work in the Depths>:
          coord: [-253.5, 144, 145.5]
       - _Special<Pic of tree branch>:
@@ -662,8 +659,7 @@ _route:
       - _Shop::ForgeConstruct01
       - _SchemaStone::GerudoMine
    - Kotlin:
-      - _Warp::Shrine<Warp to Serutabomac shrine>:
-         coord: [-178.78, 399.1, 1170.12]
+      - _Warp::Shrine::Serutabomac
       - _Shrine<Activate Sepapa shrine>:
          coord: [221.75, 147.03, 1085.05]
       - __icons::Enemy<Phantom Ganon>:
@@ -790,11 +786,11 @@ _route:
          coord: [3512.42, 1898.4, 744.92]
       - _Enemy<Construct>:
          coord: [3485.73, 1897.9, 702.75]
-      - _Special<Open valve>:
+      - _Special<Valve>:
          coord: [3515.1, 1892.39, 717.39]
       - _Chest<Opal>:
          coord: [3498.95, 1892.39, 751.99]
-      - _Special<Open valve>:
+      - _Special<Valve>:
          coord: [3444.95, 1896.9, 882.51]
       - _Enemy<Construct>:
          coord: [3372.52, 1848.1, 730.18]
@@ -804,7 +800,7 @@ _route:
          coord: [3284.17, 1865.9, 642.29]
       - _Enemy<Construct>:
          coord: [3261.43, 1865.9, 648.32]
-      - _Special<Open valve>:
+      - _Special<Valve>:
          coord: [3237.49, 1879.39, 752.05]
       - _Chest<Zora shield>:
          coord: [3280.32, 1894.4, 577.33]
@@ -812,11 +808,14 @@ _route:
          coord: [3310.81, 1819.9, 672.06]
       - _Chest<Large Zonaite>:
          coord: [3379.3, 1824.84, 715.54]
-      - _Special<Open valve>:
+      - _Special<Valve>:
          coord: [3335.9, 1818.4, 729.33]
-      - _Special<Pic of mucktorok>:
+      - _Enemy<Mucktorok>:
          coord: [3365, 1848.1, 750]
+         notes: Take pic
    - Zora Domain:
+      - _Warp::Special<Zora Domain>:
+         coord: [3333, 269.46, 542]
       - _SideQuest::TheNeverEndingLecture:
          coord: [3321, 163, 549]
       - _SideQuest::TheMoonlitPrincess:
@@ -851,11 +850,12 @@ _route:
       - _Poe::Grand:
          coord: [3342.36, -635.31, 640.43]
       - _Npc::Master Kohga_02
+      - _Chest<Huge Crystallized Charge>:
+         coord: [3296.97, -644.88, 574.83]
       - _Shop::ForgeConstruct03
       - _SchemaStone::LanayruMine
    - Hestu Upgrades:
-      - _Warp::Tower<Warp to Lookout Landing Tower>:
-         coord: [-298.85, 123.94, 142.85]
+      - _Warp::Tower::LookoutLanding
       - _MainQuest::AMysteryintheDepths:
          coord: [-255, 18, 134]
       - _Special<Talk to Scorpis>:
@@ -881,19 +881,16 @@ _route:
       - _SideAdv::HatenoVillageResearchLab:
          coord: [-247.84, 124.64, 136.6]
    - Lynel Run 1:
-      - _Warp::Shrine<Warp to Kimakarut shrine>:
-         coord: [-2656.33, -403.64, -2237.69]
+      - _Warp::Lightroot::Kimakarut
       - _Enemy::Lynel<x1>:
          coord: [-2798.87, -376.93, -2238.38]
-      - _Warp::Shrine<Warp to Mu-ustust shrine>:
-         coord: [-1423.25, -433.22, -1351.75]
+      - _Warp::Lightroot::Mu-ustust
       - _Enemy::Lynel<x1>:
          coord: [-1438.63, -379.5, -1261.72]
       - _Enemy::Lynel<x5>:
          coord: [-1151.85, -393.54, -1263.46]
    - Coliseum Gleeok:
-      - _Warp::Shrine<Warp to Jiosin shrine>:
-         coord: [-240.74, 145.9, -371.03]
+      - _Warp::Shrine::Jiosin:
          notes:
             - Find Parga the merchant between here and Hyrule Field Tower
             - Buy milk, butter, etc
@@ -1022,6 +1019,7 @@ _route:
       - _Chest::YigaTights:
          notes: Ascend
       - _Korok::LB02::Start
+      - _Korok::TR14
       - _Well::RowanPlain:
          notes: Take pic of rusty claymore
       - _Korok::LB02::End
@@ -1070,9 +1068,9 @@ _route:
       - _Korok::LB07
       - _Cave::TanagarCanyonEast00
       - _Enemy::Hinox::GR03
+   - Lucky Clover Gazette:
       - _Bubbulfrog::TanagarCanyonEastCave:
          notes: Ascend
-   - Lucky Clover Gazette:
       - _Korok::PS30:
          notes: Shoot from air while approaching dragon tear
       - _Tear::G01
@@ -1104,6 +1102,234 @@ _route:
          notes: Fuse rockets to shields
       - _SideAdv::PotentialPrincessSightings:
          coord: [-3258.5, 224.96, 1762.5]
+      - _Special<Cook>:
+         coord: [-3589.07, 296.55, 1805.50]
+         notes:
+            - 4x (lizard + 4 hooves)
+            - (Frog + 4 linel guts)
+            - (Sunflower poridge)
+            - (Stamina food if needed)
+      - _Shop::ArmorShop05
+   - Tulin Surface:
+      - _MainQuest::TulinofRitoVillage:
+         coord: [-3594.84, 318.5, 1805.23]
+      - _Addison::A02
+      - _Korok::RP41
+      - _Tower<Activate Rspro Pass Tower>:
+         coord: [-3679.58, 331.74, 2346.4]
+      - _Shrine<Activate Sahirow Shrine>:
+         coord: [-3354.12, 473, 2386.29]
+      - _Special<Goal Ring Start>:
+         coord: [-3330, 600, 2300]
+      - _Korok::RP37
+      - _Enemy::BokoBoss::G00
+      - _MainQuest<Tulin Bow>:
+         coord: [-3036, 800, 2742]
+         notes: Take pic of boko and falcon bow
+   - Tulin Sky:
+      - _Shrine<Activate Mayaumekis Shrine>:
+         coord: [-2947.92, 1008.97, 3050.67]
+      - _Shrine<Activate Kahatanaum Shrine>:
+         coord: [-3296.01, 1459.85, 3431.51]
+      - _Korok::RPS01
+      - _Temple::Wind
+      - _Special<Turbine>:
+         coord: [-2859.5, 1604.43, 3114]
+      - _Chest<Zonai Longsword>:
+         coord: [-2859.5, 1587.43, 3067]
+      - _Special<Turbine>:
+         coord: [-2830.5, 1623.43, 3047.5]
+      - _Special<Turbine>:
+         coord: [-2865.53, 1587.43, 3024.5]
+      - _Special<Turbine>:
+         coord: [-2859.5, 1564.93, 2982]
+      - _Chest<Zonai Sword>:
+         coord: [-2891.03, 1609.43, 2966.29]
+      - _Special<Turbine>:
+         coord: [-2857, 1623.43, 2905.5]
+      - _Enemy<Colgera>:
+         coord: [-2859.5, 1623.43, 2971.5]
+   - Rito Village:
+      - _Warp::Special<Rito Village>:
+         coord: [-3594.84, 318.5, 1805.23]
+      - _Korok::RP56
+      - _Chest<Purple Rupee>:
+         coord: [-3497.2, -311.19, 1849.1]
+         notes: Get staminoka bass
+      - _GoddessStatue::RitoVillage:
+         notes: 2x Stamina
+      - _SideQuest::GenlisHomeCooking:
+         coord: [-3644.61, 289.88, 1820.46]
+      - _Korok::RP53
+      - _Shrine::Gatakis
+      - _Chasm::RitoVillage:
+         movements:
+            - to: [-3608, 249.64, 1752]
+            - to: [-3571.25, -512, 1803.08]
+   - Final Kohga Fight:
+      - _Lightroot::Sikatag
+      - _Poe::Normal:
+         coord: [-3573.42, -314.30, 1792.85]
+      - _Npc::Master Kohga:
+         coord: [-3459.56, -311.49, 1861.13]
+         notes: Take pic
+      - _Chest<Diamond>:
+         coord: [-3497.72, -311.19, 1851.07]
+      - _Chest<Huge Crystallized Charge>:
+         coord: [-3497.2, -311.19, 1849.1]
+      - _SchemaStone::HebraMine
+      - _Chest<Large Crystallized Charge>:
+         coord: [-3466.66, -243.36, 1918.63]
+      - _Poe::Grand:
+         coord: [-3517.18, -265.7, 1844.93]
+      - _Poe::Large:
+         coord: [-3465.53, -293.82, 1886.04]
+      - _Shop::ForgeConstruct04
+   - Lake Tatori:
+      - _Warp::Shrine<Warp to Oromuwak Shrine>:
+         coord: [-3078.52, 361.96, 1617.27]
+      - _Shrine::Oromuwak
+      - _SideQuest::TheRitoRopeBridge:
+         coord: [-3296.8, 227.18, 1807.36]
+      - _Special<Sleep until night>:
+         coord: [-3266.05, 224.58, 1775.64]
+      - _Addison::A05
+      - _Korok::LB10
+      - _Enemy::Hinox::DH03
+      - _Korok::RP60
+      - _Korok::RP55
+      - _Korok::RP58
+      - _Korok::RP61
+      - _CherryBlossom::Hebra:
+         notes:
+            - Take pic of gerudo shield
+            - Take pic of carrot
+      - _Korok::RP54
+      - _Chest<Rockets>:
+         coord: [-4156.87, 245.69, 1734.43]
+      - _Korok::RP59
+      - _Korok::RP57
+      - _Korok::RP49
+      - _Enemy::Talus::GH04
+      - _Korok::RP45
+      - _Korok::RP50
+      - _LockedChest::G01
+      - _Korok::RP47
+      - _Korok::RP46
+      - _Cave::WestLakeTotori00
+      - _Bubbulfrog::WestLakeTotoriCave
+      - _Shrine::Wao-os
+   - North Necluda Archipelago:
+      - _Warp::Shrine::Gutanbac
+      - _Enemy<Construct>:
+         coord: [816.21, 1670.1, -1455.54]
+      - _Enemy<Construct>:
+         coord: [828.6, 1670.11, -1447.48]
+         notes: Take pic of bird below
+      - _Special<Turn Platform>:
+         coord: [1777.11, 1034.53, -1243.12]
+      - _Chest<Old Map>:
+         coord: [1765.79, 1007.66, -1310.74]
+      - _Special<Key Crystal>:
+         coord: [1827.31, 1030.72, -1370.25]
+      - _Shrine::Josiu
+      - _Dispenser::S14
+      - _Special<Launcher>:
+         coord: [1823.35, 1043.8, -1129.39]
+      - _Chest<Sage Will>:
+         coord: [1933.78, 1066.83, -1064.56]
+      - _Chest<Old Map>:
+         coord: [1851.51, 1044.21, -979]
+         notes: Ascend, Take pics
+      - _Korok::SSS01
+   - Kakariko:
+      - _Korok::SS38
+      - _Item<Rocket>:
+         coord: [1631.52, 336.09, -1178.75]
+         notes: Fuse to shield
+      - _Enemy<Boko x4>:
+         coord: [1651.5, 320.47, -1176.78]
+      - _Special<Read Notes>:
+         coord: [1634.51, 323.95, -1177.73]
+      - _SideQuest::CodgersQuarrel:
+         coord: [1649.09, 317.91, -1123.84]
+      - _Special<Take Pic of Ring Ruins>:
+         coord: [1738.07, 300.08, -1117.63]
+      - _Shrine<Activate Makasura Shrine>:
+         coord: [1769.9, 278.15, -1051.93]
+      - _Npc::Koko
+      - _Special<Take Pic of Calamity Scene>:
+         coord: [1773.18, 235.31, -981.2]
+         notes: Ascend
+      - _Korok::SS41
+      - _Korok::SS42
+      - _Special<Sanke Carp>:
+         coord: [1789.44, 214.4, -1005.38]
+         notes: Take Pic
+      - _Special<Cucco>:
+         coord: [1805.57, 218.48, -1018.59]
+         notes: Take Pic
+      - _Shop::GeneralStore09
+      - _Well::KakarikoVillage
+      - _Npc::Cottla_01:
+         notes:
+            - Take Pic of Carrot and Pumpkin
+            - Ascend
+      - _Cave::CuccoHideaway00
+      - _Bubbulfrog::CuccoHideaway
+      - _Dispenser::G02
+      - _Special<Read Notes>:
+         coord: [1937.84, 272.63, -1080.23]
+      - _Cave::KakarikoVillage00
+      - _Item<Fairy x2>:
+         notes: Only collect up to 2
+      - _Bubbulfrog::KakarikoVillageCave:
+         notes: Ascend
+      - _Korok::SS40
+      - _Chasm::EastHill:
+         notes: Collect Honeycomb Along the Way
+      - _Special<Read Notes>:
+         notes:
+            - Collect Honeycomb Along the Way
+            - Rocket Shield Up to Top of Hill
+         movements:
+            - to: [1897.82, 291.72, -895.54]
+            - to: [1901.46, 305.32, -810.25]
+      - _Special<Flower Pics>:
+         coord: [1872.33, 344.24, -815.26]
+      - _Special<Read Notes>:
+         coord: [1737.12, 305.96, -900.39]
+      - _SideQuest::OutoftheInn:
+         coord: [1733.95, 305.69, -901.37]
+      - _Item<Bladed Rhino Beetle>:
+         coord: [1791.89, 219.25, -857.22]
+         notes: Take Pic
+      - _Korok::SS36
+      - _MainQuest::SecretoftheRingRuins:
+         coord: [1816.5, 218.5, -949]
+      - _Npc::Wortsworth_01
+      - _GoddessStatue::Kakariko:
+         notes: 1x Stamina
+      - _SideQuest::ATripthroughhistory:
+         coord: [1823.87, 223.11, -1011.98]
+      - _SideQuest<Complete Out of the Inn>:
+         coord: [1835.57, 240, -1021.77]
+      - _SideQuest::FollowtheCuccos:
+         coord: [1794.48, 235.03, -1029.26]
+      - _Item<Energetic Rhino Beetle>:
+         coord: [1811.23, 221.34, -1050.06]
+         notes: Take Pic
+      - _SideQuest::GloomBorneIllness:
+         coord: [1910.09, 233.02, -1002.36]
+      - _Shop::ArmorShop04:
+         notes: Buy Stealth Set
+
+
+
+
+
+
+
 
 
 
