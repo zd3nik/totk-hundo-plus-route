@@ -110,7 +110,7 @@ _route:
       - _Enemy<Constructs x4>:
          coord: [128.86, 1521.3, -1264.05]
       - _Chest<Opal>:
-         coord: [121.2, 1522.36, -1272.49] 
+         coord: [121.2, 1522.36, -1272.49]
       - _Korok::GSI04::Start
       - _Korok::GSI04::End
       - Shield Surf the Rail:
@@ -448,7 +448,7 @@ _route:
       - _Chest<Hylian Shield>:
          coord: [-154, 141.78, 1157.37]
    - Auto-Build:
-      - _Warp::Shrine::In-isa:
+      - _Warp::Shrine::In-isa<Warp to In-isa Shrine>:
          notes: Wing glide down to east chasm on great plateau
       - _Chasm::GreatPlateauEast:
          notes: Glide to autobuild terminal
@@ -459,7 +459,7 @@ _route:
          coord: [-815.27, -415.18, -1934.66]
       - _SchemaStone::CentralMine
       - Ascend:
-         coord: [-808.44, -361.24, -1908.48]         
+         coord: [-808.44, -361.24, -1908.48]
       - _Chest<Large Zonaite>:
          coord: [-799.43, -361.24, -1920.48]
       - _Poe::Grand:
@@ -481,7 +481,7 @@ _route:
       - _Chest<Large Crystallized Charge>:
          coord: [-962.56, -426.63, -1695.87]
       - _Lightroot::Kogoir
-      - __icons::Material<Pillage Enemy Camp>:
+      - _Enemy<Pillage Enemy Camp>:
          coord: [-1510, -453, -1515]
          notes: Un-fuse soldier broadsword and break it
       - _Poe::Normal:
@@ -494,9 +494,9 @@ _route:
       - _Enemy::Lynel::D06<Lynel>
       - _Enemy::Lynel::D08<Lynel>
       - _Chest::MajorasMask
-      - __icons::Material<Pillage Enemy Camp>:
+      - _Enemy<Pillage Enemy Camp>:
          coord: [-1213, 127.11, -1538]
-      - __icons::Material<Pillage Enemy Camp>:
+      - _Enemy<Pillage Enemy Camp>:
          coord: [-1089.57, 183.28, -1655.69]
       - _Poe::Grand:
          coord: [-1160.64, -428.48, -1813.99]
@@ -510,14 +510,14 @@ _route:
          coord: [-821.82, -417.75, -1940.61]
       - _Shop::ForgeConstruct10
    - Camera:
-      - _Warp::Tower::LookoutLanding
+      - _Warp::Tower::LookoutLanding<Warp to Lookout Landing Tower>
       - _MainQuest<Regional Phenomena>:
          coord: [-248.72, 126.36, 148.83]
       - _Shop::CrystalRefinery01
       - _Shop::BargainerStatue06
       - _MainQuest::CameraWorkintheDepths:
          coord: [-253.5, 144, 145.5]
-      - _Warp::Shrine::Jiosin
+      - _Warp::Shrine::Jiosin<Warp to Jiosin Shrine>
       - _Chasm::HyruleField
    - Hyrule Field Depths:
       - _Lightroot::Nisoij
@@ -588,7 +588,7 @@ _route:
       - _Lightroot::Nihcayam
       - _Enemy::Hinox::DC04
    - Finish Camera Quest:
-      - _Warp::Tower::LookoutLanding
+      - _Warp::Tower::LookoutLanding<Warp to Lookout Landing Tower>
       - _MainQuest<Complete Camera Work in the Depths>:
          coord: [-253.5, 144, 145.5]
       - _Special<Pic of tree branch>:
@@ -659,7 +659,7 @@ _route:
       - _Shop::ForgeConstruct01
       - _SchemaStone::GerudoMine
    - Kotlin:
-      - _Warp::Shrine::Serutabomac
+      - _Warp::Shrine::Serutabomac<Warp to Serutabomac Shrine>
       - _Shrine<Activate Sepapa shrine>:
          coord: [221.75, 147.03, 1085.05]
       - __icons::Enemy<Phantom Ganon>:
@@ -753,7 +753,7 @@ _route:
          coord: [4074, 587, 528]
       - _Chest::ZoraHelm:
          notes: Ascend
-      - _Special<Sludge Like>:
+      - _Enemy<Sludge Like>:
          coord: [3899.97, 590.9, 590.81]
          notes: Take pic
       - _MainQuest::RestoringtheZoraArmor:
@@ -766,7 +766,7 @@ _route:
             - Activate terminal
    - Water Temple Segment 1:
       - Swim up waterfall:
-         coord: [3671.8, 320.99, 259.86]
+         coord: [3652.77, 1288.77, 280.7]
       - _Chest<Large zonai charge>:
          coord: [3559.66, 1396.85, 481.48]
       - _Shrine<Activate Igoshon shrine>:
@@ -777,9 +777,14 @@ _route:
          notes: Collect sages will
       - _Enemy<Construct>:
          coord: [3433.44, 1653.38, 565.58]
-      - _Korok::UZS01
+      - _Korok::UZS01:
+         notes: Ascend, Talk to Sidon
+      - Swim up Waterfall:
+         coord: [3394.27, 1841.9, 670.42]
       - _Temple::Water
    - Water Temple Segment 2:
+      - Swim up Waterfall:
+         coord: [3416.75, 1878.94, 789.11]
       - _Enemy<Fire like>:
          coord: [3459.16, 1888.9, 776.43]
       - _Enemy<Construct>:
@@ -855,11 +860,10 @@ _route:
       - _Shop::ForgeConstruct03
       - _SchemaStone::LanayruMine
    - Hestu Upgrades:
-      - _Warp::Tower::LookoutLanding
+      - _Warp::Tower::LookoutLanding<Warp to Lookout Landing Tower>
       - _MainQuest::AMysteryintheDepths:
          coord: [-255, 18, 134]
-      - _Special<Talk to Scorpis>:
-         coord: [-258.32, 127.4, 100.7]
+      - _Npc::Scorpis
       - _SideAdv::MessagesfromanAncientEra:
          coord: [-270.35, 124, 66.24]
       - _SideQuest::TheIncompleteStable:
@@ -881,16 +885,16 @@ _route:
       - _SideAdv::HatenoVillageResearchLab:
          coord: [-247.84, 124.64, 136.6]
    - Lynel Run 1:
-      - _Warp::Lightroot::Kimakarut
+      - _Warp::Lightroot::Kimakarut<Warp to Kimakarut Lightroot>
       - _Enemy::Lynel<x1>:
          coord: [-2798.87, -376.93, -2238.38]
-      - _Warp::Lightroot::Mu-ustust
+      - _Warp::Lightroot::Mu-ustust<Warp to Mu-ustust Lightroot>
       - _Enemy::Lynel<x1>:
          coord: [-1438.63, -379.5, -1261.72]
       - _Enemy::Lynel<x5>:
          coord: [-1151.85, -393.54, -1263.46]
    - Coliseum Gleeok:
-      - _Warp::Shrine::Jiosin:
+      - _Warp::Shrine::Jiosin<Warp to Jiosin Shrine>:
          notes:
             - Find Parga the merchant between here and Hyrule Field Tower
             - Buy milk, butter, etc
@@ -1046,7 +1050,7 @@ _route:
          notes: Sit at campfire until night
       - _Korok::PS20
       - _Korok::PS26
-      - _Special<Collect the Sand-Seals minigame>:
+      - _Special<Sand-Seals Mminigame>:
          coord: [-1542, 106, 1794]
       - _Enemy::BokoBoss::G12<Boss>
       - _Enemy<Phantom Ganon>:
@@ -1120,7 +1124,7 @@ _route:
       - _Shrine<Activate Sahirow Shrine>:
          coord: [-3354.12, 473, 2386.29]
       - _Special<Goal Ring Start>:
-         coord: [-3330, 600, 2300]
+         coord: [-3328.79, 508.49, 2301.97]
       - _Korok::RP37
       - _Enemy::BokoBoss::G00
       - _MainQuest<Tulin Bow>:
@@ -1186,12 +1190,11 @@ _route:
          coord: [-3465.53, -293.82, 1886.04]
       - _Shop::ForgeConstruct04
    - Lake Tatori:
-      - _Warp::Shrine<Warp to Oromuwak Shrine>:
-         coord: [-3078.52, 361.96, 1617.27]
+      - _Warp::Shrine::Oromuwak<Warp to Oromuwak Shrine>
       - _Shrine::Oromuwak
       - _SideQuest::TheRitoRopeBridge:
          coord: [-3296.8, 227.18, 1807.36]
-      - _Special<Sleep until night>:
+      - _Special<Rest at Cooking Pot Until Night>:
          coord: [-3266.05, 224.58, 1775.64]
       - _Addison::A05
       - _Korok::LB10
@@ -1220,7 +1223,7 @@ _route:
       - _Bubbulfrog::WestLakeTotoriCave
       - _Shrine::Wao-os
    - North Necluda Archipelago:
-      - _Warp::Shrine::Gutanbac
+      - _Warp::Shrine::Gutanbac<Warp to Gutanbac Shrine>
       - _Enemy<Construct>:
          coord: [816.21, 1670.1, -1455.54]
       - _Enemy<Construct>:
@@ -1230,7 +1233,7 @@ _route:
          coord: [1777.11, 1034.53, -1243.12]
       - _Chest<Old Map>:
          coord: [1765.79, 1007.66, -1310.74]
-      - _Special<Key Crystal>:
+      - __icons::Shrine::Start<Activate Crystal>:
          coord: [1827.31, 1030.72, -1370.25]
       - _Shrine::Josiu
       - _Dispenser::S14
@@ -1242,14 +1245,14 @@ _route:
          coord: [1851.51, 1044.21, -979]
          notes: Ascend, Take pics
       - _Korok::SSS01
-   - Kakariko:
+   - Kakariko Segment 1:
       - _Korok::SS38
       - _Item<Rocket>:
          coord: [1631.52, 336.09, -1178.75]
          notes: Fuse to shield
       - _Enemy<Boko x4>:
          coord: [1651.5, 320.47, -1176.78]
-      - _Special<Read Notes>:
+      - _Special<Read Book>:
          coord: [1634.51, 323.95, -1177.73]
       - _SideQuest::CodgersQuarrel:
          coord: [1649.09, 317.91, -1123.84]
@@ -1257,16 +1260,17 @@ _route:
          coord: [1738.07, 300.08, -1117.63]
       - _Shrine<Activate Makasura Shrine>:
          coord: [1769.9, 278.15, -1051.93]
-      - _Npc::Koko
+      - _Npc::Koko:
+         notes: Buy Garland, Fuse it to a Shield
       - _Special<Take Pic of Calamity Scene>:
          coord: [1773.18, 235.31, -981.2]
          notes: Ascend
       - _Korok::SS41
       - _Korok::SS42
-      - _Special<Sanke Carp>:
+      - Sanke Carp:
          coord: [1789.44, 214.4, -1005.38]
          notes: Take Pic
-      - _Special<Cucco>:
+      - Cucco:
          coord: [1805.57, 218.48, -1018.59]
          notes: Take Pic
       - _Shop::GeneralStore09
@@ -1278,17 +1282,17 @@ _route:
       - _Cave::CuccoHideaway00
       - _Bubbulfrog::CuccoHideaway
       - _Dispenser::G02
-      - _Special<Read Notes>:
+      - _Special<Read Book>:
          coord: [1937.84, 272.63, -1080.23]
       - _Cave::KakarikoVillage00
-      - _Item<Fairy x2>:
-         notes: Only collect up to 2
+      - Collect 2 Faries:
+         coord: [1991.88, 244.16, -961.2]
       - _Bubbulfrog::KakarikoVillageCave:
          notes: Ascend
       - _Korok::SS40
       - _Chasm::EastHill:
          notes: Collect Honeycomb Along the Way
-      - _Special<Read Notes>:
+      - _Special<Read Book>:
          notes:
             - Collect Honeycomb Along the Way
             - Rocket Shield Up to Top of Hill
@@ -1297,14 +1301,16 @@ _route:
             - to: [1901.46, 305.32, -810.25]
       - _Special<Flower Pics>:
          coord: [1872.33, 344.24, -815.26]
-      - _Special<Read Notes>:
+      - _Special<Read Book>:
          coord: [1737.12, 305.96, -900.39]
       - _SideQuest::OutoftheInn:
          coord: [1733.95, 305.69, -901.37]
+         notes: Offer Hearty Truffle
       - _Item<Bladed Rhino Beetle>:
          coord: [1791.89, 219.25, -857.22]
          notes: Take Pic
       - _Korok::SS36
+   - Kakariko Segment 2:
       - _MainQuest::SecretoftheRingRuins:
          coord: [1816.5, 218.5, -949]
       - _Npc::Wortsworth_01
@@ -1323,6 +1329,142 @@ _route:
          coord: [1910.09, 233.02, -1002.36]
       - _Shop::ArmorShop04:
          notes: Buy Stealth Set
+   - Zonai Forge:
+      - _Warp::Shrine::Josiu<Warp to Josiu Shrine>:
+         notes: Get Naydra Pic and Claw and warp back to Josiu
+      - _Special<Baloon Platform>:
+         coord: [1936.91, 1284.44, -1204.89]
+         notes:
+            - Equip Zora Armor
+            - Wing glide to waterfall
+      - Ascend Waterfall:
+         coord: [2667.8, 275.85, -1390.83]
+      - _Chest<Old Map>:
+         coord: [2644.91, 1581.15, -1414.08]
+         notes: Ride floating platform, via rockets, to next korok
+      - _Korok::SSS05
+      - _Korok::SSS04
+      - _Korok::SSS02
+      - _Special<Terminal>:
+         coord: [2420.1, 1580.78, -1680.22]
+      - _Shrine::Yansamin:
+         movements:
+            - to: [2377.87, 1587.95, -1670.76]
+            - to: [2315.6, 1669.45, -1670.05]
+            - to: [2268.78, 1737.01, -1709.66]
+            - to: [2260.09, 1839.58, -1771.33]
+            - to: [2350.99, 1587.86, -1782.81]
+   - Light Dragon:
+      - _Korok::SSS03:
+         notes: Get Pic and Horn from Light Dragon
+      - _Warp::Shrine::Yansamin<Warp to Yansamin Shrine>
+      - _Chest::ZonaiteWaistguard
+      - _Equipment::Weapon<Zonaite Longsword>:
+         coord: [2377.56, 1590.92, -1791.81]
+         notes: Get Pic
+      - _Equipment::Weapon<Zonaite Sword>:
+         coord: [2374.63, 1590.87, -1793.45]
+         notes: Get Pic
+      - _Equipment::Shield<Zonaite Shield>:
+         coord: [2366.99, 1590.82, -1794.78]
+         notes: Get Pic
+      - _Equipment::Weapon<Zonaite Spear>:
+         coord: [2315.12, 1580.97, -1753.01]
+         notes: Get Pic
+      - _Dispenser::S01
+   - Sahasra Slope:
+      - _Warp::Shrine::Makasura<Warp to Wakasura Shrine>
+      - _Korok::SS45
+      - _Addison::A51
+      - _Korok::SS44
+      - _Enemy::Talus::GK04
+      - _Cave::SahasraSlope01
+      - _Cave::SahasraSlope00
+      - _Chest<Shield>:
+         coord: [1388.84, 241.41, -1142.45]
+         Notes: Get Pic
+      - _Bubbulfrog::SahasraSlopeCave
+      - _Tower::SahasraSlope
+   - Necluda Sky Segment 1:
+      - Merge with other segment 1 when figure out how to get this to register as SKY
+      - Shock Fruit:
+         coord: [1661.49, 798.67, -1843.27]
+         notes: Get Pic
+      - Golden Apples:
+         coord: [1692.39, 802.67, -1852.74]
+      - _Korok::SSS06
+      - __icons::Shrine::Start<Activate Crystal>:
+         coord: [1700.01, 757.98, -1841.51]
+      - _Shrine::Ukoojisi
+      - _Dispenser::S05
+   - Necluda Sky Segment 1:
+      - _Korok::SSS07
+      - Platform:
+         coord: [1467.44, 633.17, -2005.41]
+      - _Chest<Old Map>:
+         coord: [1651.63, 679.41, -2190.7]
+         notes: Ascend
+      - Build Flying Machine:
+         coord: [1619.41, 701.07, -2148.91]
+      - _Chest<OldMap>:
+         coord: [2159.54, 1368.36, -2592.08]
+      - _Tablet<Drop Tablet>:
+         coord: [2082.85, 1447.83, -2731.13]
+      - _Enemy::FluxConstruct::SF03:
+         notes: Enter Archipelago from West Side
+   - Rabella Wetlands:
+      - _Warp::Shrine::Yansamin<Warp to Yansamin Shrine>:
+         notes:
+            - Gide to Naydra
+            - Collect Star Fragment
+            - Collect Claw
+      - _Chasm::MedaMountain
+      - _Korok::RW09
+      - _Addison::A63:
+         notes:
+            - Skip if not Present
+            - Collect Nearby Fleet Lotus
+      - _Special<Starting Block>:
+         coord: [2410.07, 363.24, -2671.19]
+      - _Korok::RW17
+      - Frogs:
+         coord: [2390.4, 319.54, -2858.28]
+      - Fleet Lotus:
+         coord: [2369.43, 320.41, -2824.62]
+      - _Tower::RabellaWetlands
+   - More Necluda Sky Segment 2:
+      - _Korok::RWS01
+      - _Special<Launcher>:
+         coord: [2854.5, 1337.71, -2902.88]
+      - _Korok::RWS02
+      - _Dispenser::S17
+      - _Special<Launcher>:
+         coord: [2854.5, 1337.71, -2902.88]
+      - _Enemy::FluxConstruct::SF01
+      - __icons::Shrine::Start<Activate Crystal>:
+         coord: [3051.21, 1307.92, -2762.53]
+      - Launch Crystal With Aparatus:
+         coord: [3034.23, 1313.38, -2907.69]
+      - _Shrine::Kumamayn
+      - _Tablet<Drop Tablet>:
+         coord: [3918.64, 1301.6, -2471.2]
+      - _Shrine<Activate Terminal>:
+         coord: [3959.56, 1224.77, -1537.83]
+   - Mount Lanayru:
+      - _Shrine::Zakusu
+      - _Korok::ML08::Start
+      - _Korok::ML08::End
+      - _Korok::ML14
+      - _Korok::ML15
+      - _Enemy::BokoBoss::G56
+      - _Korok::ML13
+      - _Enemy<Phantom Ganon>:
+         coord: [4030.14, 505.57, -1411.35]
+         notes: Collect Claw from Naydra
+      - _Npc::Nazbi
+      - _SideQuest::GoddessStatueofWisdom:
+         coord: [3910.78, 574.69, -1328.3]
+      - _Tower::MountLanayru
 
 
 
