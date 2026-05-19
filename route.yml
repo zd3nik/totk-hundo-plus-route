@@ -472,7 +472,7 @@ _route:
    - Majoras Mask:
       - _Poe::Normal:
          coord: [-690.05, -410.82, -1504.47]
-      - __icons::KeyItem<Add flying machines to autobuild>:
+      - _KeyItem<Add flying machines to autobuild>:
          coord: [-635.05, -410.82, -1522.47]
       - _Equipment::Weapon<Claymore>:
          coord: [-752.7, -402.69, -1634.27]
@@ -662,11 +662,11 @@ _route:
       - _Warp::Shrine::Serutabomac<Warp to Serutabomac Shrine>
       - _Shrine<Activate Sepapa shrine>:
          coord: [221.75, 147.03, 1085.05]
-      - __icons::Enemy<Phantom Ganon>:
+      - _Enemy<Phantom Ganon>:
          coord: [126.58, 136.86, 953.94]
       - _Korok::LL15
       - _Korok::LL27
-      - __icons::Special<Pic of fire wizrobe>:
+      - _Special<Pic of fire wizrobe>:
          coord: [421.69, 128.04, 683.5]
          notes: Also collect keese eyes/wings
       - _Cave::CrenelHills00:
@@ -1233,8 +1233,7 @@ _route:
          coord: [1777.11, 1034.53, -1243.12]
       - _Chest<Old Map>:
          coord: [1765.79, 1007.66, -1310.74]
-      - __icons::Shrine::Start<Activate Crystal>:
-         coord: [1827.31, 1030.72, -1370.25]
+      - _Shrine::Josiu::Start
       - _Shrine::Josiu
       - _Dispenser::S14
       - _Special<Launcher>:
@@ -1386,21 +1385,20 @@ _route:
       - _Bubbulfrog::SahasraSlopeCave
       - _Tower::SahasraSlope
    - Necluda Sky Segment 1:
-      - Merge with other segment 1 when figure out how to get this to register as SKY
       - Shock Fruit:
          coord: [1661.49, 798.67, -1843.27]
          notes: Get Pic
+         level: Sky
       - Golden Apples:
          coord: [1692.39, 802.67, -1852.74]
       - _Korok::SSS06
-      - __icons::Shrine::Start<Activate Crystal>:
-         coord: [1700.01, 757.98, -1841.51]
+      - _Shrine::Ukoojisi::Start
       - _Shrine::Ukoojisi
       - _Dispenser::S05
-   - Necluda Sky Segment 1:
       - _Korok::SSS07
       - Platform:
          coord: [1467.44, 633.17, -2005.41]
+         notes: Fuse rockets to platform to move toward next objective
       - _Chest<Old Map>:
          coord: [1651.63, 679.41, -2190.7]
          notes: Ascend
@@ -1432,7 +1430,7 @@ _route:
       - Fleet Lotus:
          coord: [2369.43, 320.41, -2824.62]
       - _Tower::RabellaWetlands
-   - More Necluda Sky Segment 2:
+   - Necluda Sky Segment 2:
       - _Korok::RWS01
       - _Special<Launcher>:
          coord: [2854.5, 1337.71, -2902.88]
@@ -1441,8 +1439,7 @@ _route:
       - _Special<Launcher>:
          coord: [2854.5, 1337.71, -2902.88]
       - _Enemy::FluxConstruct::SF01
-      - __icons::Shrine::Start<Activate Crystal>:
-         coord: [3051.21, 1307.92, -2762.53]
+      - _Shrine::Kumamayn::Start
       - Launch Crystal With Aparatus:
          coord: [3034.23, 1313.38, -2907.69]
       - _Shrine::Kumamayn
