@@ -1349,17 +1349,16 @@ _route:
       - _Warp::Shrine::Josiu<Warp to Josiu Shrine>
       - _Special<Baloon Platform>:
          coord: [1936.91, 1284.44, -1204.89]
+      - _Material<Naydra Claw>:
+         coord: [2400, 1800, -1400]
          notes:
-            - Equip Zora Armor
-            - Glide to Naydra
-            - Get Pic
-            - Get Claw
+            - Get pic
             - Continue to waterfall if raining, otherwise warp back to Josiu to get height need to reach waterfall
       - Ascend Waterfall:
          coord: [2667.8, 275.85, -1390.83]
          notes:
-            - Zelda should be visible to the east
-            - If she is right of waterfall you are behind and will need to go up to get zelda pic & horn immediately after activating Yansamin shrine, then warp back to forge island to finish it
+            - While gliding toward waterfall Zelda should be visible to the east
+            - If she is right of the waterfall you are running behind and will need to get Zelda pic & horn immediately after activating Yansamin shrine, then warp back to forge island to finish it
       - _Chest<Old Map>:
          coord: [2644.91, 1581.15, -1414.08]
          notes: Ride floating platform, via rockets, to next korok
@@ -1389,8 +1388,10 @@ _route:
          coord: [2315.12, 1580.97, -1753.01]
          notes: Get Pic
       - _Dispenser::S01
-      - _Korok::SSS03:
-         notes: Get Pic and Horn from Light Dragon
+      - _Korok::SSS03
+      - _Material<Light Dragon Horn>:
+         coord: [2720, 2000, -1668]
+         notes: Get Pic
    - Sahasra Slope:
       - _Warp::Shrine::Makasura<Warp to Wakasura Shrine>
       - _Shrine::Makasura:
@@ -1434,12 +1435,15 @@ _route:
          coord: [2082.85, 1447.83, -2731.13]
       - _Enemy::FluxConstruct::SF03:
          notes: Enter Archipelago from West Side
-   - Rabella Wetlands:
+   - Naydra Farming 1:
       - _Warp::Shrine::Yansamin<Warp to Yansamin Shrine>:
-         notes:
-            - Gide to Naydra
-            - Collect Star Fragment
-            - Collect Claw
+         level: Sky
+      - _Material<Star Fragment>:
+         coord: [2500, 1500, -2000]
+         notes: Sky dive
+      - _Material<Naydra Claw>:
+         coord: [2900, 500, -2600]
+   - Rabella Wetlands:
       - _Korok::RW16
       - _LockedChest::G37
       - _Addison::A63
@@ -1480,11 +1484,252 @@ _route:
       - _Korok::ML13
       - _Enemy<Phantom Ganon>:
          coord: [4030.14, 505.57, -1411.35]
-         notes: Collect Claw from Naydra who should be emerging from chasm
+      - _Material<Naydra Claw>:
+         coord: [3826,600, -1421]
       - _Npc::Nazbi
       - _SideQuest::GoddessStatueofWisdom:
          coord: [3910.78, 574.69, -1328.3]
       - _Tower::MountLanayru
+   - Valor Island:
+      - Build Flying Machine:
+         coord: [4165.08, 1724.69, -1084.63]
+      - _Dispenser::S07
+      - Collect Frogs, Etc:
+         coord: [4722.8, 1898.71, -866.25]
+      - _Chest<Old Map>:
+         coord: [4659.19, 1873.97, -869.84]
+      - _Korok::MLS01
+      - _Chest<Old Map>:
+         coord: [4752.22, 2022.34, -777.56]
+      - _Shrine::Mayanas::Start
+      - _Shrine::Mayanas
+      - _Special<Launcher>:
+         coord: [4641.75, 1915.58, -985.13]
+      - _Korok::MLS03
+      - _Npc::Steward Construct_05
+      - _Shrine::Sihajog
+      - _Korok::MLS02
+   - Wellspring Island:
+      - _Warp::Tower::UplandZorana:
+         level: Sky
+      - _Tower::UplandZorana
+      - _Chest<Sages Will>:
+         coord: [2910.59, 1035.44, 525]
+         notes: Ascend
+      - _Shrine::Jirutagumac
+      - _Dispenser::S22
+      - _Tablet<Drop Tablet>:
+         coord: [2914.96, 901.6, 203.16]
+      - _Enemy::FluxConstruct::SL02
+      - _Warp::Shrine::Igoshon<Warp to Igoshon Shrine>
+      - _Shrine::Igoshon
+      - _Chest<Hover Stones>:
+         coord: [3613.16, 1401.69, 757.73]
+      - _Chest<Old Map>:
+         coord: [3692.78, 1350.65, 593.25]
+      - _Npc::Mei_05:
+         notes: Get pic of Hearty Bass
+      - _Enemy<Construct x2>:
+         coord: [3631.26, 1353.69, 552.37]
+         notes: Get pic
+      - _Chest<Battery>:
+         coord: [3877.16, 1285, 566.73]
+      - _Enemy<Construct>:
+         coord: [3853.7, 1264.06, 540.31]
+         notes: Get pic
+      - _Enemy<Construct>:
+         coord: [3775.41, 1289.71, 533.23]
+      - _Enemy<Construct>:
+         coord: [3739.66, 1289.71, 527.98]
+      - _Enemy<Construct>:
+         coord: [3650.91, 1295.6, 526.48]
+      - _Enemy<Construct x2>:
+         coord: [3624.46, 1295.71, 522.31]
+         notes: Build flying machine
+      - _Korok::UZS02
+      - _Enemy<Construct>:
+         coord: [3335.57, 1458.7, 541.76]
+      - _Equipment::Weapon<Zonaite Spear>:
+         coord: [3330.69, 1458.79, 527.19]
+         notes: Get pic
+      - _Chest<Old Map>:
+         coord: [3200.16, 1522.58, 598.47]
+      - _Chest<Old Map>:
+         coord: [3167.95, 1041.18, 459.37]
+      - _Korok::UZS03:
+         notes: Wing glide to next korok
+   - Ulri Mountain Tower:
+      - _Korok::UM35
+      - _Enemy<Phantom Ganon>:
+         coord: [3332.34, 518.57, 1521.81]
+      - _Cave::AkkalaCitadelRuinsSummit00
+      - _Chest::FierceDeityArmor
+      - _Bubbulfrog::AkkalaCitadelRuinsSummitCave:
+         notes: Ascend
+      - _Shrine<Activate Domizuin Shrine>:
+         coord: [3304.88, 538.2, 1442.98]
+      - Build Flying Machine:
+         coord: [3258.99, 531.44, 1499.94]
+      - _Tower::UlriMountain
+   - Akkala Sky:
+      - _Tablet::S11:
+         notes: Use wings and rocket shields to get up to tablet
+      - _Shrine::Natak::Start
+      - _Chest<Sages Will>:
+         coord: [3810.99, 1250.06, 1581.71]
+      - _Dispenser::S20
+      - _Shrine::Natak
+      - _Special<Launcher>:
+         coord: [3709.68, 1283.58, 1510.77]
+      - _Korok::UMS03
+      - _Enemy::FluxConstruct::SA02
+      - Build Flying Mahcine:
+         coord: [3706.68, 1095.22, 1823.7]
+      - _Special<Terminal>:
+         coord: [4494.03, 1260.67, 2104.8]
+      - _Dispenser::S12
+      - _Special<Launcher>:
+         coord: [4529.51, 1265.52, 2125.29]
+      - _Special<Starting Block>:
+         coord: [4613.21, 1404.4, 2283.76]
+      - _Korok::UMS02
+      - _Special<Rocket Platform>:
+         coord: [4616.58, 1347.3, 2138.79]
+      - _Special<Rocket Platform>:
+         coord: [4622.11, 1486.52, 2060.39]
+      - _Special<Launcher>:
+         coord: [4645.9, 1459.46, 2056.85]
+      - _Chest::ZonaiteShinGuards
+      - _Shrine::Gikaku::Start
+      - _Shrine::Gikaku:
+         notes: Dinraal should be flying along north Akkala Beach
+      - _Chest<Old Map>:
+         coord: [4269.17, 889.46, 3107.88]
+      - _Shrine<Activate Mogisari Shrine>:
+         coord: [4655, 1122.87, 3499.54]
+      - _Enemy::FluxConstruct::SA01:
+         notes: Drop flying machine next to Kamatukis below
+      - _Material<Dinraal Claw>:
+         coord: [3650, 900, 3400]
+   - Fierce Diety Mask:
+      - _Cave::SkullLake00:
+         notes: Get pic of moblin and boko stalls
+      - _Enemy::Hinox::GA02
+      - _Chest::FierceDeityMask
+      - _Bubbulfrog::SkullLakeCave:
+         notes: Ascend
+      - _Shrine<Activate Kamatukis Shrine>:
+         coord: [3431.07, 183.07, 3356.72]
+      - _Korok::UM04
+      - _Chasm::SkullLake
+   - Big Goron Sword:
+      - _Enemy::Hinox::DE01
+      - _LockedChest::D79
+      - _Lightroot::Sikutamak
+      - _Chest<LargeCrystallizedCharge>:
+         coord: [3355.19, -403.93, 3078.17]
+      - _Enemy::BokoBoss::D35
+      - _Enemy::FluxConstruct::DA02
+      - _Enemy::Lynel::D18
+      - _Lightroot::Ui-ihcoj
+      - _Enemy::Talus::DA01
+      - _Equipment::Weapon<Sword or Boomerang>:
+         coord: [4675.26, -339.29, 3105.11]
+         notes: Get pic
+      - _Enemy::BokoBoss::D39
+      - _Lightroot::Kawisar
+      - _YigaSchema::HeadlightRaft
+      - _Special<Ascend>:
+         movements:
+            - to: [4272, -312, 3100]
+            - to: [4514.68, -311.7, 3159.75]
+   - Akkala:
+      - _Warp::Special<Akkala Tech Lab>:
+         coord: [4514.68, 352, 3159.75]
+      - _Enemy<Yiga x2>:
+         coord: [4502.12, 351.39, 3148.26]
+      - _Korok::UM12
+      - _Chest::YigaArmor
+      - _Chest<Travel Medallion Prototype>:
+         coord: [4523.45, 352.99, 3163.68]
+         notes: Ascend
+      - _Korok::UM11
+      - _Korok::UM08
+      - _Addison::A74
+      - _Shrine::Jochi-iu
+      - _SideQuest::EldinsColossalFossil:
+         coord: [4339.78, 247.76, 2815.68]
+      - _Special<Cook Speed Food>:
+         coord: [4249.96, 231.44, 2757.39]
+         notes: Get pic of sheep
+      - _Place::EastAkkalaStable:
+         notes: Go inside and start picture quest
+      - _Npc::Khini:
+         coord: [4223.61, 231.32, 2724.5]
+         notes: Buy a bun
+      - _Npc::Penn_26
+      - _Npc::Beedle_13:
+         coord: [4237.41, 228.91, 2712.26]
+      - _Addison::A75:
+         notes: Build flying machine
+      - _Korok::UM21::Start
+      - _SideQuest::StrongestintheWorld:
+         coord: [4201.68, 232.8, 2766.36]
+      - _Korok::UM21::End
+      - _Korok::UM20
+      - _SideQuest::GoddessStatueofPower:
+         coord: [3760.55, 111.16, 2679.37]
+      - _Korok::UM22
+      - _Enemy<Phantom Ganon>:
+         coord: [3646.56, 107.32, 2513.18]
+      - _Enemy::BokoBoss::G51
+      - _Korok::UM25::Start
+      - _Shrine<Activate Sinatanika Shrine>:
+         coord: [3841.97, 160.5, 2300.29]
+      - _Addison::A66
+      - _Korok::UM24
+      - _Special<Pic of Octorok Lake>:
+         coord: [4150, 300, 2530]
+      - _Enemy::Talus::GA03
+      - _Korok::UM25::End
+      - _Korok::UM23:
+         notes: Get pic of forest octorok
+      - _Korok::UM17::Start
+      - _Korok::UM19
+      - _Korok::UM17::End
+      - _Enemy::Talus::GA01:
+         notes: Get pic
+      - _Enemy::BokoBoss::G60
+      - _Chest<Sapphire>:
+         coord: [4830.84, 113.48, 2757.21]
+      - _Equipment::Weapon<Long Stick>:
+         coord: [4811.44, 110.46, 2804.63]
+         notes: Get pic
+      - _Chest<Bow>:
+         coord: [4774.49, 110.18, 2773.74]
+         notes: Get pic of porgies
+   - Melania:
+      - _Warp::Shrine::Jochi-iu
+      - _SideQuest::TheGatheringPirates:
+         coord: [4234.08, 231.92, 2738.65]
+      - _SideQuest::APictureforEastAkkalaStable:
+         coord: [4230.52, 275.28, 2745.64]
+      - _Well::EastAkkalaStable
+      - _SideQuest::WhereAretheWells:
+         coord: [4245.58, 211.74, 2787.89]
+      - _GoddessStatue::EastAkkala:
+         notes: Ascend
+      - _Korok::UM18
+      - _Korok::UM16
+      - _Enemy::Talus::GA02:
+         notes: Get pic
+      - _Korok::UM10
+      - _Korok::UM06
+      - _LockedChest::G44
+      - _Korok::UM07::Start
+      - _Fairy::MalanyaSpring
+      - _Korok::UM07::End
+      - _Shrine::Rasiwak
 
 
 
