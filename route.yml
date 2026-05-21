@@ -600,7 +600,8 @@ _route:
       - _Warp::Special<Warp to Central Mine>:
          coord: [-821.82, -417.75, -1940.61]
       - _Lightroot::Koradat
-      - _Enemy::Hinox::DF02
+      - _Enemy::Hinox::DF02:
+         notes: Farosh should be visible to the south
       - _Equipment::Weapon<Weapon pilar>:
          coord: [-1671.26, -325.84, -2143.42]
       - _Chest<Large Crystallized Charge>:
@@ -678,7 +679,9 @@ _route:
       - _Korok::SS04
       - _Enemy<Phantom Ganon>:
          coord: [682.28, 179.01, 753.88]
-         notes: Skip if running behind, we come back here later
+         notes:
+            - Should be about 11 PM
+            - Skip if running behind, we come back here later
       - _Korok::SS02
       - _Korok::SS01
       - _Chest<Rockets>:
@@ -717,14 +720,16 @@ _route:
       - _Korok::UZ24
       - _MainQuest::TheSludgeCoveredStatue:
          coord: [3300, 139, 463]
+      - _Special<Cook Speedfood>:
+         coord: [3303.9, 245.31, 496.23]
          notes:
             - Collect fleet lotus and crabs
-            - Cook speed food
             - Take pic of torch
       - _Shop::GeneralStore17:
          notes: Buy rice and swift violet
       - _Korok::UZ23
-      - _Shrine::Mogawak
+      - _Shrine::Mogawak:
+         notes: It should be about 9 or 10 PM
    - Sidon:
       - _Enemy::Hinox::GZ02
       - _Special<Pic of moonlit princess>:
@@ -734,9 +739,11 @@ _route:
       - _Korok::UZ22::End
       - _MainQuest::SidonoftheZora:
          coord: [3847, 591.92, 568.5]
+         notes: Take pic of Trident before triggering cut scene
       - _Shrine<Activate Ihen-a shrine>:
          coord: [3786.22, 597.97, 577.78]
-      - _LockedChest::G39
+      - _LockedChest::G39:
+         notes: Get lots of pics
       - _MainQuest::TheBrokenSlate:
          coord: [3405, 400, 883]
       - _Cave::PloymusMountain00
@@ -900,7 +907,8 @@ _route:
             - Buy milk, butter, etc
       - _Npc::Suzuna:
          notes: Collect elixir
-      - _Korok::HF07
+      - _Korok::HF07:
+         notes: Farosh should be visible to the south east
       - _SideAdv::BringPeacetoHyruleField:
          coord: [-441.12, 156.17, -624.38]
          notes: Take pics
@@ -913,6 +921,9 @@ _route:
       - _Enemy<Bokoblin x3>:
          coord: [-675.5, 127.55, -420.12]
          notes: Take pics of nearby honey and collect honey
+      - Dazzlefruit:
+         coord: [-713.04, 134.58, -307.55]
+         notes: Skip if running behind
       - _Shrine<Activate Susuyai shrine>:
          coord: [-785.41, 137.38, -434.05]
       - _Korok::HF22::Start
@@ -1033,10 +1044,11 @@ _route:
       - _Enemy::Hinox::GR01
       - Enter Forgotten Temple:
          coord: [-1440,100,2250]
-      - _Korok::LB01:
-         notes: In tree
+      - _Korok::LB01
       - _Korok::PS18:
-         notes: Take pic of ice fruit
+         notes:
+            - Take pic of ice fruit
+            - Cook speed food if needed
       - _Shrine::Mayausiy
    - Dragon Tears:
       - _SideQuest::TheMotherGoddessStatue:
@@ -1047,7 +1059,9 @@ _route:
       - _Addison::A19
       - _Korok::PS15
       - _LockedChest::G11:
-         notes: Sit at campfire until night
+         notes:
+            - It should be close to midnight
+            - Sit at campfire to make it night
       - _Korok::PS20
       - _Korok::PS26
       - _Special<Sand-Seals Mminigame>:
@@ -1106,17 +1120,19 @@ _route:
          notes: Fuse rockets to shields
       - _SideAdv::PotentialPrincessSightings:
          coord: [-3258.5, 224.96, 1762.5]
+         notes: Drop flying machine on level near Teba
       - _Special<Cook>:
          coord: [-3589.07, 296.55, 1805.50]
          notes:
             - 4x (lizard + 4 hooves)
             - (Frog + 4 linel guts)
             - (Sunflower poridge)
-            - (Stamina food if needed)
+            - (Speed food)
       - _Shop::ArmorShop05
    - Tulin Surface:
       - _MainQuest::TulinofRitoVillage:
          coord: [-3594.84, 318.5, 1805.23]
+         notes: Take pic of Great Eagle Bow before triggering cut scene
       - _Addison::A02
       - _Korok::RP41
       - _Tower<Activate Rspro Pass Tower>:
@@ -1300,6 +1316,7 @@ _route:
             - to: [1901.46, 305.32, -810.25]
       - _Special<Flower Pics>:
          coord: [1872.33, 344.24, -815.26]
+         notes: Naydra should be visible to the south
       - _Special<Read Book>:
          coord: [1737.12, 305.96, -900.39]
       - _SideQuest::OutoftheInn:
@@ -1329,15 +1346,20 @@ _route:
       - _Shop::ArmorShop04:
          notes: Buy Stealth Set
    - Zonai Forge:
-      - _Warp::Shrine::Josiu<Warp to Josiu Shrine>:
-         notes: Get Naydra Pic and Claw and warp back to Josiu
+      - _Warp::Shrine::Josiu<Warp to Josiu Shrine>
       - _Special<Baloon Platform>:
          coord: [1936.91, 1284.44, -1204.89]
          notes:
             - Equip Zora Armor
-            - Wing glide to waterfall
+            - Glide to Naydra
+            - Get Pic
+            - Get Claw
+            - Continue to waterfall if raining, otherwise warp back to Josiu to get height need to reach waterfall
       - Ascend Waterfall:
          coord: [2667.8, 275.85, -1390.83]
+         notes:
+            - Zelda should be visible to the east
+            - If she is right of waterfall you are behind and will need to go up to get zelda pic & horn immediately after activating Yansamin shrine, then warp back to forge island to finish it
       - _Chest<Old Map>:
          coord: [2644.91, 1581.15, -1414.08]
          notes: Ride floating platform, via rockets, to next korok
@@ -1353,10 +1375,6 @@ _route:
             - to: [2268.78, 1737.01, -1709.66]
             - to: [2260.09, 1839.58, -1771.33]
             - to: [2350.99, 1587.86, -1782.81]
-   - Light Dragon:
-      - _Korok::SSS03:
-         notes: Get Pic and Horn from Light Dragon
-      - _Warp::Shrine::Yansamin<Warp to Yansamin Shrine>
       - _Chest::ZonaiteWaistguard
       - _Equipment::Weapon<Zonaite Longsword>:
          coord: [2377.56, 1590.92, -1791.81]
@@ -1371,8 +1389,14 @@ _route:
          coord: [2315.12, 1580.97, -1753.01]
          notes: Get Pic
       - _Dispenser::S01
+      - _Korok::SSS03:
+         notes: Get Pic and Horn from Light Dragon
    - Sahasra Slope:
       - _Warp::Shrine::Makasura<Warp to Wakasura Shrine>
+      - _Shrine::Makasura:
+         notes:
+            - Skip completing shrine if running behind
+            - We come back here one more time later
       - _Korok::SS45
       - _Addison::A51
       - _Korok::SS44
@@ -1416,12 +1440,11 @@ _route:
             - Gide to Naydra
             - Collect Star Fragment
             - Collect Claw
-      - _Chasm::MedaMountain
+      - _Korok::RW16
+      - _LockedChest::G37
+      - _Addison::A63
       - _Korok::RW09
-      - _Addison::A63:
-         notes:
-            - Skip if not Present
-            - Collect Nearby Fleet Lotus
+      - _Chasm::MedaMountain
       - _Special<Starting Block>:
          coord: [2410.07, 363.24, -2671.19]
       - _Korok::RW17
@@ -1457,7 +1480,7 @@ _route:
       - _Korok::ML13
       - _Enemy<Phantom Ganon>:
          coord: [4030.14, 505.57, -1411.35]
-         notes: Collect Claw from Naydra
+         notes: Collect Claw from Naydra who should be emerging from chasm
       - _Npc::Nazbi
       - _SideQuest::GoddessStatueofWisdom:
          coord: [3910.78, 574.69, -1328.3]
