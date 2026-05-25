@@ -1467,7 +1467,7 @@ _route:
          coord: [2854.5, 1337.71, -2902.88]
       - _Enemy::FluxConstruct::SF01
       - _Shrine::Kumamayn::Start
-      - Launch Crystal With Aparatus:
+      - Launch Crystal with Aparatus:
          coord: [3034.23, 1313.38, -2907.69]
       - _Shrine::Kumamayn
       - _Tablet<Drop Tablet>:
@@ -1727,9 +1727,207 @@ _route:
       - _Korok::UM06
       - _LockedChest::G44
       - _Korok::UM07::Start
-      - _Fairy::MalanyaSpring
+      - _Fairy::MalanyaSpring<Malanya>
       - _Korok::UM07::End
       - _Shrine::Rasiwak
+   - Akkala Sea:
+      - _Cave::NorthAkkalaBeach00:
+         level: Surface
+      - _Enemy::Hinox::GA01
+      - _Bubbulfrog::NorthAkkalaBeachCave:
+         notes: Ascend
+      - _Chest<Battery>:
+         coord: [4654.9, -295.47, 3624.5]
+      - _Enemy<Phantom Ganon>:
+         coord: [4655, 155.5, 3660]
+         notes: Ascend
+      - _Chest<Shield>:
+         coord: [4597.51, 195.62, 3722.45]
+      - _Shrine::Igashuk
+      - _Special<Terminal>:
+         coord: [4655.02, 235.09, 3680.97]
+         notes: If you see Dinaraal you are running a little behind
+   - Lomei Sky Labyrinth:
+      - _Warp::Shrine::Mogisari
+      - _Shrine::Mogisari
+      - _Special<Terminal>:
+         coord: [4655, 1119.96, 3534.39]
+      - _Special<Terminal>:
+         coord: [4602.5, 1167.6, 3639]
+         notes: Ascend
+      - _Special<Terminal>:
+         coord: [4749, 1167.66, 3602.5]
+         notes: Ascend
+      - _Special<Terminal>:
+         coord: [4780.02, 1167.59, 3743.5]
+         notes: Rocket Shield
+      - _Special<Terminal>:
+         coord: [4527.77, 1167.59, 3739.93]
+      - _Special<Terminal>:
+         coord: [4655, 1285.48, 3698.5]
+      - _Korok::UMS01
+      - _Korok::UM01
+      - _Warp::Shrine::Mogisari
+      - _Material<Dinraal Claw>:
+         coord: [4636,1200, 3288]
+   - Lomei Depths Lanyrinth:
+      - _Warp::Shrine::Igashuk:
+         level: Depths
+      - _Enemy::FluxConstruct::DA01
+      - _Special<Terminal>:
+         coord: [4684.4, -340.47, 3697]
+      - _Chest::EvilSpiritArmor
+      - Ascend:
+         coord: [4655, -295.47, 3720]
+      - _Lightroot::Kuhsagi
+   - Lynel Run 2:
+      - _Warp::Lightroot::Kimakarut<Warp to Kimakarut Lightroot>
+      - _Enemy::Lynel<x1>:
+         coord: [-2798.87, -376.93, -2238.38]
+      - _Warp::Lightroot::Mu-ustust<Warp to Mu-ustust Lightroot>
+      - _Enemy::Lynel<x1>:
+         coord: [-1438.63, -379.5, -1261.72]
+      - _Enemy::Lynel<x5>:
+         coord: [-1151.85, -393.54, -1263.46]
+   - Eldin Sky:
+      - _Warp::Tower::EldinCanyon:
+         level: Sky
+      - _Korok::ECS02
+      - _Equipment::Weapon<Zonaite Sword>:
+         coord: [1710.5, 1269.68, 1167.12]
+      - _Enemy<Construct>:
+         coord: [1699.82, 1269.23, 1167.89]
+         notes: Take its mine cart
+      - Ride the Rail:
+         movements:
+            - to: [1680, 1260, 1170]
+            - to: [1790, 1280, 1125]
+            - to: [1792, 1300, 1005]
+      - _Enemy<Construct>:
+         coord: [1803.79, 1305.08, 992.25]
+      - _Chest<Old Map>:
+         coord: [1810.73, 1309.84, 1013.62]
+      - _Chest<Sages Will>:
+         coord: [1781.15, 1331.58, 981.56]
+         notes: Ascend
+      - Ride the Rail:
+         movements:
+            - to: [1850, 1350, 992]
+            - to: [1964, 1400, 1037]
+            - to: [1945, 1450, 1105]
+      - Decayed Construct:
+         coord: [1945.72, 1356.89, 1170.16]
+      - _Dispenser::S19
+      - _Shrine::Kadaunar
+      - _Special<Launcher>:
+         coord: [1928.63, 1376.79, 1211.52]
+      - _Korok::ECS01
+      - _Tablet::S00
+      - _Enemy::Gleeok::G04
+   - Underpants:
+      - _Warp::Special<Gleeok>:
+         coord: [2238.5, 200, 693.5]
+      - _Korok::UZ14
+      - _Enemy::Talus::GZ02
+      - _Korok::EC56
+      - _Korok::EC53
+      - _Korok::EC49
+      - _SideAdv::ForOurPrincess:
+         coord: [2594, 253.8, 1164.15]
+         notes: Get pic of rainbow sparrow
+      - _Shrine<Activate Kisinona Shrine>:
+         coord: [2567.85, 285.17, 1245.94]
+      - _SideQuest::MiskosCaveofChests:
+         coord: [2603.96, 255.83, 1325.47]
+      - _Cave::CephlaLake00
+      - _Bubbulfrog::CephlaLakeCave
+      - _Chest::EmberTrousers
+      - _SideQuest::MiskosTreasureTheFierceDiety
+      - _Chest<Fierce Deity Sword>:
+         coord: [2624.09, 241.94, 1417.55]
+         notes: Ascend
+      - _SideQuest::MiskosTreasureTwinsManuscript:
+         coord: [2612, 254.81, 1315.07]
+      - _SideQuest::MiskosTreasurePirateManuscript:
+         coord: [2612, 254.81, 1315.07]
+      - _SideQuest::MiskosTreasureHeroinesManuscript:
+         coord: [2612, 254.81, 1315.07]
+      - _Special<Starting Block>:
+         coord: [2678.45, 232.61, 1351.02]
+      - _Korok::EC47
+      - _Korok::EC38:
+         notes: Cook fireproof elixir
+      - _Cave::LakeIntenoch00
+      - _Bubbulfrog::LakeIntenochCave
+      - _Shrine::Moshapin::Start
+      - _Shrine::Moshapin:
+         notes: Ascend
+      - _Enemy<Phantom Ganon>:
+         coord: [2729.99, 346.54, 1868.09]
+      - _Korok::EC40
+      - _Special<Get Pic of Ostrich>:
+         coord: [2296.06, 260.32, 1525.04]
+      - _Cave::FoothillMonsterDen00
+      - _Bubbulfrog::FoothillMonsterDen
+      - _Korok::EC54::Start
+      - _Korok::EC54::End
+      - _Korok::EC50
+      - _Cave::LakeFerona00
+      - _Cave::LakeFerona01:
+         notes: Ascend
+      - _Special<Make Noon>:
+         coord: [1932, 250, 1315]
+         notes: Get full moon pic
+      - _Bubbulfrog::LakeFeronaCave
+   - Approaching Goron City:
+      - _Warp::Tower::EldinCanyon:
+         level: Sky
+         notes: Wing glide to next objective
+      - _Enemy<Construct>:
+         coord: [1778.12, 932.37, 2270.8]
+      - _Chest<Sages Will>:
+         coord: [1764.17, 933.06, 2266.85]
+   - Yunobo:
+      - _Special<Starting Block>:
+         coord: [1799.11, 602.53, 2210.18]
+      - _Korok::EC28
+      - _Special<Fire Chuchu Pic>:
+         coord: [1714.46, 574.64, 2321.71]
+      - _Special<Daruk Pic>:
+         coord: [1720, 578, 2342]
+      - _Korok::EC21
+      - _Korok::EC19:
+         notes: Ascend
+      - _Korok::EC16
+      - _Korok::EC20
+      - _Shop::GeneralStore06:
+         notes: Buy Sugar and Spice
+      - _Special<Cook>:
+         coord: [1652.27, 489.92, 2461.24]
+         notes:
+            - (Lynel Hoof Elixir x4)
+            - (Lynel Gut Elixir x1)
+            - (Lots of Speed Food)
+      - _Shop::ArmorShop02:
+         notes:
+            - Sell stuff
+            - Buy All Armor
+      - _MainQuest::YunoboofGoronCity:
+         coord: [1648.01, 487.5, 2439.43]
+      - _Shrine<Activate Marakuguc Shrine>:
+         coord: [1762.49, 549, 2509.65]
+      - _SideQuest::TheAncientCityGorondia!:
+         coord: [1744, 531.5, 2585]
+      - Ride the Rail:
+         movements:
+            - to: [1750, 531, 2590]
+            - to: [1740, 525, 2712]
+            - to: [1656.68, 520.62, 2788.02]
+      - _MainQuest<Yunobo>:
+         movements:
+            - to: [1640.53, 518.5, 2862.36]
+            - to: [1642.65, 510.5, 2908.4]
+
 
 
 
