@@ -20,6 +20,23 @@ _project:
       - Dog treasures are intentionally excluded
       - Micro-management of weapons, health, armor, how to defeat enemies, etc is not detailed in this route doc. Dragon farming is highly time sensitive, but there are more dragon farming encounters than are strictly necessary so you can skip some if you don't make it to them in time. Just don't skip any star fragment farming (which is routed to happen in tandem with dragon farming)
    version: 1.1.0
+   progress: [
+      "Tower", "Shrine", "Lightroot", "Korok",
+      "Bubbulfrog", "Addison",
+      "Cave", "Well", "Chasm",
+      "Enemy::Talus",
+      "Enemy::Gleeok",
+      "Enemy::Hinox",
+      "Enemy::Frox",
+      "Enemy::Molduga",
+      "Enemy::FluxConstruct",
+      "Enemy::Lynel",
+      "Enemy::BokoBoss",
+      "LockedChest",
+      "ZoraMonument",
+      "CherryBlossom",
+      "mappct"
+   ]
 _route:
    - Great Sky Island:
       - _Warp::ROA:
@@ -29,10 +46,12 @@ _route:
             - Take pics of all the things along the route
             - Reminders to collect rare items/pics will be noted in the route
       - _Chest::ArchaicLegwear
+      - _Location::GreatSkyIsland:
+         hide-icon-on-map: true
       - _Enemy<Construct>:
          coord: [391.37, 1640.55, -1333.67]
       - _Npc::Steward Construct_07
-      - _MainQuest::FindPrincessZelda<Terminal>:
+      - _MainQuest::FindPrincessZelda:
          coord: [457.5, 1640, -1310]
       - Collect Frogs:
          coord: [474, 1523, -1238]
@@ -52,6 +71,7 @@ _route:
          coord: [312.12, 1531.64, -930.73]
       - _Korok::GSI01
       - _Shrine::Ukouh
+
    - GSI Segment 2:
       - Collect Shrooms:
          movements:
@@ -63,8 +83,10 @@ _route:
          coord: [522.35, 1530.25, -1203.7]
       - _Enemy<Construct>:
          coord: [568.48, 1522.16, -1169.92]
-      - _Special<Cook Speed Food and Peppers>:
+         comment: Collect nearby peppers
+      - _Special<Cook>:
          coord: [572.05, 1522.93, -1177.96]
+         comment: Speed food and peppers
       - Shield Surf to Next Chest:
          coord: [615.5, 1540.34, -1218.5]
       - _Chest<Arrows>:
@@ -87,17 +109,16 @@ _route:
       - Climb Wall Behind Waterfall:
          coord: [815, 1627.1, -1410]
       - _Shrine::Gutanbac
+
    - GSI Segment 3:
       - _Chest::ArchaicWarmGreaves:
-         notes:
-            - Equip the greaves
-            - Ascend
+         comment: Equip the greaves, Ascend
       - _Korok::GSI06
       - _Dispenser::S03:
-         notes: 15 zonai charges
+         comment: 15 zonai charges
       - _Chest<Wings>:
          coord: [830.38, 1701.84, -1236.37]
-         notes: Long wing glide to next chest
+         comment: Long wing glide to next chest
       - _Chest<Amber>:
          coord: [80.95, 1524.43, -991.21]
       - _Korok::GSI03
@@ -105,8 +126,9 @@ _route:
          movements:
             - to: [146.81, 1526.72, -1164.02]
             - to: [159.86, 1526.57, -1168.88]
-      - _Special<Cook Speed Food>:
+      - _Special<Cook>:
          coord: [114.81, 1522.64, -1172.22]
+         comment: Speed food
       - _Enemy<Constructs x4>:
          coord: [128.86, 1521.3, -1264.05]
       - _Chest<Opal>:
@@ -123,13 +145,14 @@ _route:
             - to: [185.5, 1521.26, -1379]
       - _Chest<Amber>:
          coord: [130.65, 1480.4, -1450.24]
-      - Ascend Out of Tunnel:
+      - Ascend:
          coord: [111, 1521.26, -1498]
       - _Shrine::In-isa
+
    - GSI Segment 4:
       - _Chest<Arrows>:
          coord: [24.3, 1513.76, -1527.69]
-         notes: Ascend
+         comment: Ascend
       - _Korok::GSI11
       - _Enemy<Construct>:
          coord: [83.71, 1498.03, -1527.29]
@@ -139,12 +162,14 @@ _route:
          coord: [137.58, 1482.84, -1599.97]
       - _Chest<Weapon>:
          coord: [141.79, 1484.95, -1586.4]
+      - Collect Ancient Arowana:
+         coord: [152.84, 1482.16, -1616.95]
       - _Cave::Pondside01
       - _Bubbulfrog::PondsideCave:
-         notes: Break nearby wall and ore to get ruby
+         comment: Break nearby wall and ore to get ruby
       - _Chest::ArchaicTunic
       - _Cave::Pondside00:
-         notes: Ascend out of cave
+         comment: Ascend
       - _Korok::GSI13
       - _Chest<Amber>:
          coord: [275.43, 1460.65, -1716.12]
@@ -156,13 +181,16 @@ _route:
             - to: [283.75, 1453.65, -1662.75]
       - _Chest<Energizing Elixir>:
          coord: [314.88, 1522.67, -1627.82]
-      - _Dispenser::S06
+      - _Dispenser::S06:
+         comment: 15 zonai charges
       - _Korok::GSI17::Start
       - _Korok::GSI17::End
       - _Chest<Arrows>:
          coord: [431.96, 1554.57, -1807.92]
+
    - GSI Segment 5:
       - Fuse Mining Carts to Shields:
+         comment: Cross rail with minecart shield
          movements:
             - to: [470.5, 1554.57, -1780.25]
             - to: [462.75, 1554.57, -1665]
@@ -175,26 +203,22 @@ _route:
             - to: [484.75, 1510.00, -1577.25]
             - to: [452.75, 1510.00, -1549.5]
       -  _Korok::GSI09
-      - _Special<Cook Speed Food>:
-         notes:
-            - Shrooms High Up on Cliffside
-            - Recipe = 3 shrooms, 1 frog, 1 eyeball
+      - _Special<Cook>:
+         notes: Collect shrooms high up on cliff
+         comment: Speed food
          coord: [424.33, 1470.34, -1544.17]
       - Ascend:
-         notes: Shield surf on mine cart rail
+         comment: Shield surf on mine cart rail
          coord: [410.5, 1470.34, -1591.75]
       - _Cave::Mining00
       - _Npc::Mining Construct_01
       - _Bubbulfrog::MiningCave
-      - _Shop::ForgeConstruct:
-         notes:
-            - Collect zonaite first
-            - Purchase crystalized charges
+      - _Shop::ForgeConstruct
       - _Npc::Mining Construct:
-         notes: Obtain 3 fans
+         comment: Obtain fans from construct
       - _Cave::Mining01:
-         notes: Ascend out of cave
-      - Ascend to Platform With Chest:
+         comment: Ascend
+      - Ascend:
          movements:
             - to: [554, 1515.00, -1653.25]
             - to: [556, 1515.00, -1676.25]
@@ -203,7 +227,8 @@ _route:
       - Shield Jump Into Water from Platform:
          coord: [547, 1554.48, -1658.5]
       - _Cave::Pit00
-      - _Special<Cook Speed and Stamina Food>:
+      - _Special<Cook>:
+         comment: Speed and stamina food
          coord: [600.7, 1550.19, -1627.08]
       - _Bubbulfrog::PitCave
       - _Cave::Pit01
@@ -211,9 +236,9 @@ _route:
       - Shield Surf to Next Korok:
          coord: [588, 1600, -1604]
       - _Korok::GSI12:
-         notes: Ride wing down to next korok
+         comment: Ride wing down to next korok
       - _Korok::GSI10:
-         notes: Ascend
+         comment: Ascend
       - _Enemy<Constructs x2>:
          coord: [652.14, 1594.37, -1550.2]
       - _Enemy<Construct>:
@@ -225,7 +250,8 @@ _route:
       - _Cave::Bottomless01
       - _Chest<Flame Emitter>:
          coord: [768.3, 1650.36, -1369.63]
-         notes: Ascend
+         comment: Ascend
+
    - GSI Segment 6:
       - Shield Surf to Next Chest:
          movements:
@@ -243,12 +269,12 @@ _route:
          coord: [733.25, 1600, -1455.25]
       - Ascend:
          coord: [733.25, 1600, -1396.75]
-         notes: Wing glide to next korok
+         comment: Wing glide to next korok
       - _Korok::GSI08
       - _Enemy::FluxConstruct::SC02
       - Wing Glide Below Island and Ascend:
          coord: [518, 1560, -1337]
-      - _Korok::GSI05
+      - _Korok::GSI05::Trail
       - Ascend:
          coord: [367, 1500, -1147]
       - _Chest<Zonaite>:
@@ -257,16 +283,16 @@ _route:
          coord: [348, 1600, -1135]
       - _Chest<Large Zonai Charge>:
          coord: [341.23, 1620.88, -1096.79]
-         notes: Wing glide to next chest
+         comment: Wing glide to next chest
       - _Chest<Opal>:
          coord: [280.25, 1498.3, -922.77]
-         notes: Ascend
+         comment: Ascend
       - _Korok::GSI02
       - _Location::TempleofTime
       - _GoddessStatue::TempleofTime
+
    - GSI Segment 7:
-      - _Warp::ROA:
-         notes: Warp to ROA
+      - _Warp::ROA<Warp to ROA>
       - Ascend:
          coord: [349.5, 2400, -1750.5]
       - _Korok::GSI15
@@ -278,10 +304,10 @@ _route:
       - Wing Glide to Next Korok:
          coord: [379, 2374, -1571.5]
       - _Korok::GSI07:
-         notes: Wing glide to next chest
+         comment: Wing glide to next chest
       - _Chest<Large Zonai Charge>:
          coord: [501.28, 1893.86, -1613.06]
-         notes: Wing glide to next chest
+         comment: Wing glide to next chest
       - _Chest<Large Zonaite>:
          coord: [588.93, 1579.45, -912.35]
       - Wing Glide to Temple of Time:
@@ -289,42 +315,51 @@ _route:
       - _GoddessStatue::TempleofTime
       - _MainQuest::TotheKingdomofHyrule:
          coord: [454, 1500, -636]
+      - _Location::CentralHyruleSkyArchipelago:
+         hide-icon-on-map: true
+
    - Hyrule Kingdom:
       - Dive to Lake West of Bottomless Pond:
          coord: [176, 128, -520]
       - _Korok::LL56
       - _Shrine::Jiosin
-      - _Korok::LL50:
-         notes: Tame a horse along the way
+      - _Special<Get a Horse>:
+         comment: Tame the lead horse
+         coord: [-381.53, 128.69, -271.44]
+      - _Korok::LL50
+      - _Place::LookoutLanding:
+         comment: Use north entrance to avoid NPC chatter
       - _MainQuest::CrisisatHyruleCastle:
          coord: [-238.97, 132.32, 147.92]
-         notes: Use north entrance to avoid NPC chatter
+      - _Location::HyruleCastleTownRuins
       - _Addison::A30
+      - _Location::CentralSquare
       - _Korok::LL37
       - _Shrine::Kyononis
       - _Korok::LL25
       - _Korok::LL20
-      - _Korok::LL16
-      - _Korok::LL22:
-         notes:
-            - Leave horse in the gatehouse
-            - Ascend to roof for korok
+      - _Korok::LL16::Trail
+      - _Location::FirstGatehouse
+      - _Korok::LL22
       - _Korok::LL26
       - _Korok::LL21
-      - _Npc::Hoz:
-         notes: Get back on horse in the gatehouse
+      - _Npc::Hoz
+
    - Paraglider:
       - _Korok::LL42
       - _Special<Leave horse>:
          coord: [-255, 125, 198]
-         notes: Not too close to water
+         comment: Not too close to water
       - _MainQuest::RegionalPhenomena:
          coord: [-253.42, 132.01, 156.0]
       - _Tower::LookoutLanding:
          notes:
             - Drop all weapons, shields, and bows mid-air
             - Wing glide to castle spire
-   - Castle Segment 1:
+
+   - Castle Spire:
+      - _Place::HyruleCastle:
+         hide-icon-on-map: true
       - _Korok::LL07
       - _Equipment::Bow<Dusk Bow>:
          coord: [-256.03, 616.32, 1062.02]
@@ -335,21 +370,25 @@ _route:
       - _Korok::LL06
       - _Chest<Gold Rupee>:
          coord: [-254, 526.78, 1068.9]
+
+   - Castle Sanctum:
       - _Equipment::Shield<Royal Guard Shield>:
          coord: [-223.73, 462.63, 1056.89]
       - _Equipment::Weapon<Royal Guard Sword>:
          coord: [-223.5, 462.53, 1056.09]
-      - _Chest::ChampionsLeathers:
-         notes: Light sconces
+      - _Location::Sanctum:
+         comment: Light sconces
+      - _Chest::ChampionsLeathers
       - _Equipment::Bow<Royal Guard Bow>:
          coord: [-265, 462.47, 1081.37]
       - _Equipment::Weapon<Royal Guard Claymore>:
          coord: [-283.2, 462.47, 1085.05]
-         notes: Ascend at base of stairs
+         comment: Ascend at base of stairs
       - _Chest<Royal Broadsword>:
          coord: [-235.55, 484.76, 1051.45]
       - _Shrine::Serutabomac
-   - Castle Segment 2:
+
+   - Castle Library:
       - _Equipment::Weapon<Soldier Claymore>:
          coord: [-166.52, 386.46, 1158.79]
       - _Enemy<Moblin x3>:
@@ -358,44 +397,49 @@ _route:
          coord: [-178.92, 378.58, 1054.35]
       - _Chest<Royal Claymore>:
          coord: [-164.76, 375.07, 1051.94]
-         notes: Drop down through library roof
+      - _Location::Library:
+         comment: Drop down through hole in roof
       - _Enemy<Lizalfos>:
          coord: [-193.64, 345.37, 995.75]
       - _Enemy<Lizalfos>:
          coord: [-202.7, 345.36, 908.5]
+
+   - King's Study:
       - _Equipment::Weapon<Knight Claymore>:
          coord: [-180.72, 327.48, 1059.98]
+         comment: In cave behind bookshelf
       - _Chest<Dinraal Spike>:
          coord: [-189.71, 325.73, 1083.42]
+      - _Location::KingsStudy
       - _Equipment::Weapon<Royal Broadsword>:
          coord: [-168.73, 321.58, 1118.19]
       - _Chest::RoyalGuardBoots:
-         notes: Ascend
+         comment: Ascend
       - _Chest<Gold Rupee>:
          coord: [-168.67, 330.76, 1116.28]
-         notes: Light sconces
+         comment: Light sconces
       - _Equipment::Weapon<Knight Broadsword>:
          coord: [-182.05, 335.91, 1144.42]
-         notes:
-            - Equip blizzard rod
-            - Ascend
+         comment: Equip blizzard rod, Ascend
+
+   - Breaking Weapons:
       - _Enemy<Horriblin x7>:
          coord: [-274.17, 381.12, 1133.01]
+         comment: Break weapons
       - _Enemy<Like Like>:
          coord: [-323.34, 353.09, 1100.74]
       - _Enemy<Ice Like>:
          coord: [-346.88, 374.32, 968.09]
-         notes:
-            - Drop down to entrance below tower
       - _Chest<Royal Guard Claymore>:
          coord: [-387.18, 345.59, 999.75]
+         comment: Drop down to entrance below tower
          notes:
             - Fuse black lizalfos horns to royal broadsword and RGC
             - Equip RGC
             - STOP USING RGC when it is 1 hit away from breaking
       - _Equipment::Bow<Royal Guard Bow>:
          coord: [-387.31, 421.03, 996]
-         notes: Ascend
+         comment: Ascend
       - _Enemy<Moblin>:
          coord: [-390.63, 356.55, 972.53]
       - _Enemy<Moblin>:
@@ -409,24 +453,34 @@ _route:
       - _Korok::LL17
       - _Enemy<Fire Like>:
          coord: [-318.58, 378.37, 892.04]
-         notes: Ascend
+         comment: Ascend
+
+   - Zelda's Study:
+      - _Location::PrincessZeldasRoom
+      - _Equipment::Bow<Royal Guard's Bow>:
+         coord: [-310.02, 411.14, 995.25]
       - _Chest::RoyalGuardCap
-   - Castle Segment 3:
-      - _Korok::LL09:
-         notes: Ascend
+      - _Location::PrincessZeldasStudy
+      - _Korok::LL09
+      - _Equipment::Bow<Royal Guard's Bow>:
+         coord: [-387.31, 421.03, 996]
+         comment: Ascend
       - _Korok::LL10
+
+   - Breaking More Weapons:
       - _Enemy<Boko x2>:
          coord: [-306.47, 436.84, 967.58]
       - _Enemy<Boko>:
          coord: [-210.02, 443.86, 968.16]
       - _Korok::LL13:
-         notes: Ascend
+         comment: Ascend
+      - _Location::SecondGatehouse
       - _Chest<Halberd>:
          coord: [-153.5, 388.78, 895.37]
-         notes: Ascend
+         comment: Ascend
       - _Chest<Shield>:
          coord: [-96, 400.63, 932.87]
-         notes: Ascend
+         comment: Ascend
       - _Chest<Claymore>:
          coord: [-98.5, 430.78, 931.37]
       - _Korok::LL14
@@ -435,11 +489,14 @@ _route:
       - _Equipment::Weapon<Soldier Spear>:
          coord: [-90.23, 408.21, 1011.37]
       - _Korok::LL11:
-         notes: Paraglide to next korok
+         comment: Paraglide to next korok
+
+   - Hylian Shield:
       - _Korok::LL02
       - _Korok::LL03
       - _Equipment::Weapon<Traveler Claymore>:
          coord: [-268.24, 131.21, 1153.31]
+      - _Location::Docks
       - _Enemy<Phantom Ganon>:
          coord: [-207.16, 129.45, 1199.97]
          notes: Fuse gloom spear to soldier spear
@@ -447,14 +504,16 @@ _route:
          coord: [-231.99, 114.65, 1176.44]
       - _Chest<Hylian Shield>:
          coord: [-154, 141.78, 1157.37]
+
    - Auto-Build:
-      - _Warp::Shrine::In-isa<Warp to In-isa Shrine>:
-         notes: Wing glide down to east chasm on great plateau
-      - _Chasm::GreatPlateauEast:
-         notes: Glide to autobuild terminal
+      - _Warp::Shrine::In-isa<Warp to In-isa Shrine>
+      - _Chasm::GreatPlateauEast
+      - _Location::GreatAbandonedCentralMine:
+         hide-icon-on-map: true
       - _KeyItem::Autobuild:
          coord: [-808.44, -415.18, -1928.65]
-      - _Npc::Master_Kohga_Central_Mine
+      - _Npc::Master_Kohga_Central_Mine:
+         hide-icon-on-map: true
       - _Chest<Huge crystallized charge>:
          coord: [-815.27, -415.18, -1934.66]
       - _SchemaStone::CentralMine
@@ -466,9 +525,10 @@ _route:
          coord: [-658, -410.28, -1794.7]
       - _Poe::Grand:
          coord: [-648.6, -412.91, -1784.9]
-      - _Chest<Arrows>:
+      - _Enemy<Pillage Enemy Camp>:
          coord: [-658.62, -412.17, -1683.34]
       - _Lightroot::Nogukoyk
+
    - Majoras Mask:
       - _Poe::Normal:
          coord: [-690.05, -410.82, -1504.47]
@@ -480,10 +540,11 @@ _route:
          coord: [-886.77, -421.85, -1674.73]
       - _Chest<Large Crystallized Charge>:
          coord: [-962.56, -426.63, -1695.87]
+      - _Poe::Normal:
+         coord: [-1073.99, -427.87, -1725.16]
       - _Lightroot::Kogoir
       - _Enemy<Pillage Enemy Camp>:
          coord: [-1510, -453, -1515]
-         notes: Un-fuse soldier broadsword and break it
       - _Poe::Normal:
          coord: [-1480, 138.74, -1410.66]
       - _Lightroot::Mu-ustust
@@ -509,6 +570,7 @@ _route:
       - _Warp::Special<Warp to Central Mine>:
          coord: [-821.82, -417.75, -1940.61]
       - _Shop::ForgeConstruct10
+
    - Camera:
       - _Warp::Tower::LookoutLanding<Warp to Lookout Landing Tower>
       - _MainQuest<Regional Phenomena>:
@@ -519,12 +581,15 @@ _route:
          coord: [-253.5, 144, 145.5]
       - _Warp::Shrine::Jiosin<Warp to Jiosin Shrine>
       - _Chasm::HyruleField
+
    - Hyrule Field Depths:
       - _Lightroot::Nisoij
       - _Lightroot::Iayusus
       - _Special<Pic of statue>:
          coord: [-826.85, -364.91, -461.7]
       - _Chest::MinersTop
+      - _Poe::Normal:
+         coord: [-1066.27, -389.57, -275.49]
       - _Chest<Large Crustallized Charge>:
          coord: [-1146.81, -375.47, -204.44]
       - _Enemy::Hinox::DC03
@@ -533,7 +598,7 @@ _route:
          coord: [-977.93, -421.39, 248.88]
       - _Lightroot::Gadohsi
       - _Enemy::Frox::DC05:
-         notes: Take pic of Frox
+         comment: Take pic
       - _Equipment::Weapon<Weapon pilar>:
          coord: [-399.57, -365.06, 370.8]
       - _Equipment::Weapon<Weapon pilar>:
@@ -2068,6 +2133,7 @@ _route:
       - _Enemy<Gohma>:
          coord: [1208.5, -694.99, 2847.5]
          notes: Get pic
+
 
 
 
