@@ -608,39 +608,45 @@ _route:
       - _Lightroot::Iayusus
       - _Special<Pic of statue>:
          coord: [-826.85, -364.91, -461.7]
+      - _Location::DaphnesCanyonMine
       - _Chest::MinersTop
       - _Poe::Normal:
          coord: [-1066.27, -389.57, -275.49]
       - _Chest<Large Crustallized Charge>:
          coord: [-1146.81, -375.47, -204.44]
+      - _Location::GiantsGrove
       - _Enemy::Hinox::DC03
       - _Enemy::Hinox::DC01
+      - _Location::GustafCanyonMine
       - _Chest<Large Crystallized Charge>:
          coord: [-977.93, -421.39, 248.88]
       - _Lightroot::Gadohsi
       - _Enemy::Frox::DC05:
          comment: Take pic
-      - _Equipment::Weapon<Weapon pilar>:
+      - _Equipment::Weapon<Weapon Pillar>:
          coord: [-399.57, -365.06, 370.8]
-      - _Equipment::Weapon<Weapon pilar>:
+      - _Equipment::Weapon<Weapon Pillar>:
          coord: [-405.9, -365.02, 435.64]
-      - _Equipment::Weapon<Weapon pilar>:
+      - _Equipment::Weapon<Weapon Pillar>:
          coord: [-361.87, -361.56, 400.84]
       - _Lightroot::Sinonoyk
-      - _Equipment::Weapon<Weapon pilar>:
+      - _Equipment::Weapon<Weapon Pillar>:
          coord: [-237.87, -341, 358.39]
-         notes: Add or skip weapon pilars along the route as needed
+         comment: Add or skip weapon pillars along the route as needed
       - _Enemy::BokoBoss::D22<Boss>
       - _Lightroot::Oyimay
       - _Chest<Large Crystallized Charge>:
          coord: [555.21, -365.97, 281.18]
+      - _Location::AppleanGrove
       - _Enemy::Hinox::DC02
       - _Enemy::Talus::DC01
       - _Enemy::BokoBoss::D16<Boss>:
-         notes: Use 1 large zonai charge for long flight to next enemy
+         comment: Use 1 large zonai charge for long flight to next enemy
       - _Enemy::Talus::GC06
       - _Enemy::Frox::DC08
       - _Shop::BargainerStatue01
+      - _Location::PlainsBargainerStatue:
+         hide-icon-on-map: true
       - _Enemy::FluxConstruct::DC03
       - _Lightroot::Stakijat
       - _Enemy::Lynel::D11<Lynel>
@@ -649,30 +655,33 @@ _route:
       - _Lightroot::Nuzimak
       - _Enemy<Yiga>:
          coord: [-225, -355.53, -1575]
-         notes:
-            - Take pic of Yiga footsoldier
-            - Get and break eightfold blade
+         notes: Take pic of Yiga Footsoldier and Eightfold Blade
+         comment: Break Eightfold Blade
+      - _Location::GroveofTime:
+         hide-icon-on-map: true
       - _Chest<Large Crystallized Charge>:
          coord: [-374.13, -367.18, -1575.87]
       - _Enemy::Frox::DC10
       - _Warp::Special<Warp to Central Mine>:
          coord: [-821.82, -417.75, -1940.61]
-      - _Shop::ForgeConstruct10
+      - _Shop::ForgeConstruct10:
+         comment: Purchase crystallized charges
       - _Poe::Grand:
          coord: [-658, -410.28, -1794.7]
-         notes: Skip if not present
+         comment: Skip if not present
       - _Poe::Grand:
          coord: [-648.6, -412.91, -1784.9]
-         notes: Skip if not present
-      - _Equipment::Weapon<Weapon pilar>:
+         comment: Skip if not present
+      - _Equipment::Weapon<Weapon Pillar>:
          coord: [-577.72, -339.73, -1498.67]
       - _Equipment::Bow<Duplex Bow>:
          coord: [-565.54, -367.44, -1403.5]
-         notes: Break wooden crate for bow
+         comment: Break wooden crate for bow
       - _Enemy::Frox::DC09
       - _Enemy::Talus::DC04
       - _Lightroot::Nihcayam
       - _Enemy::Hinox::DC04
+
    - Finish Camera Quest:
       - _Warp::Tower::LookoutLanding<Warp to Lookout Landing Tower>
       - _MainQuest<Complete Camera Work in the Depths>:
@@ -682,14 +691,19 @@ _route:
       - _Special<Pic of horse>:
          coord: [-255, 125, 198]
       - _Shop::CrystalRefinery01
-   - Wasteland Kohga:
+
+   - Kara Kara Mine:
       - _Warp::Special<Warp to Central Mine>:
          coord: [-821.82, -417.75, -1940.61]
       - _Lightroot::Koradat
       - _Enemy::Hinox::DF02:
-         notes: Farosh should be visible to the south
-      - _Equipment::Weapon<Weapon pilar>:
+         comment: Farosh should be visible to the south
+      - _Equipment::Weapon<Weapon Pillar>:
+         coord: [-1402.08, -441.76, -2393.61]
+      - _Equipment::Weapon<Weapon Pillar>:
          coord: [-1671.26, -325.84, -2143.42]
+      - _Location::NabooruCanyonMine:
+         hide-icon-on-map: true
       - _Chest<Large Crystallized Charge>:
          coord: [-1814.59, -424.73, -2137.14]
       - Fuse rockets to shields:
@@ -699,31 +713,34 @@ _route:
       - _Lightroot::Kimakarut
       - _Enemy::Lynel::D00<Lynel>
       - _Enemy::Frox::DG06:
-         notes: Take pic of Frox
+         comment: Take pic
       - _Poe::Large:
          coord: [-3190.32, -370.16, -2515.13]
-         notes: On top of forge chimney
+         comment: On top of forge chimney
       - _Chest<Large Crystallized Charge>:
          coord: [-3201.91, -335.38, -2441.42]
       - _Poe::Grand:
          coord: [-3231.68, -346.85, -2477.36]
       - _Poe::Large:
          coord: [-3280.84, -351.25, -2441.48]
+      - _Location::AbandonedKaraKaraMine
+
+   - Wasteland Kohga:
       - _Chest::MinersMask
       - _SchemaStone::KaraKaraMine
       - _Shop::ForgeConstruct02
       - _Poe::Large:
          coord: [-3177.13, -357.14, -2533.32]
-         notes: Ascend to 1st level above forge construct
+         comment: Ascend to 1st level above forge construct
       - _Lightroot::Tatayam
       - _Enemy::Talus::DG03
-      - _Equipment::Weapon<Weapon pilar>:
+      - _Equipment::Weapon<Weapon Pillar>:
          coord: [-3592.32, -371.85, -2422.74]
-      - _Equipment::Weapon<Weapon pilar>:
+      - _Equipment::Weapon<Weapon Pillar>:
          coord: [-3715.12, -370.21, -2380.04]
       - _Enemy::Frox::DG04
       - _Enemy::FluxConstruct::DG03
-      - _Equipment::Weapon<Weapon Pilar>:
+      - _Equipment::Weapon<Weapon Pillar>:
          coord: [-4055.86, -377.7, -3005.2]
       - _Lightroot::Gonatoyros
       - _Poe::Large:
@@ -738,11 +755,11 @@ _route:
          coord: [-3708.42, -383.13, -2958.77]
       - _Enemy<Yiga soldiers x2>:
          coord: [-3768.14, -369.4, -2834.51]
-         notes: Carry 1 rocket over near Kohga
+         comment: Carry 1 rocket over near Kohga
+      - _Location::AbandonedGerudoMine
       - _Npc::Master Kohga_01:
-         notes: Fuse rocket to shield after the fight
-      - _Chest<Huge Crystallized Charge>:
-         coord: [-3841.99, -382.35, -2914.71]
+         comment: Fuse rocket to shield after the fight
+      - _LockedChest::D17
       - _Shop::ForgeConstruct01
       - _SchemaStone::GerudoMine
    - Kotlin:
