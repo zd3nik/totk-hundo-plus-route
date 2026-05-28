@@ -44,7 +44,6 @@ _route:
          notes:
             - Collect all the things along the route
             - Take pics of all the things along the route
-            - Reminders to collect rare items/pics will be noted in the route
       - _Chest::ArchaicLegwear
       - _Location::GreatSkyIsland:
          hide-icon-on-map: true
@@ -65,6 +64,8 @@ _route:
          coord: [453.3, 1552.01, -897.25]
       - _MainQuest::TheClosedDoor:
          coord: [453.51, 1556.17, -849.75]
+
+   - Ukouh Shrine:
       - _Enemy<Construct>:
          coord: [359.96, 1535.2, -923.68]
       - _Enemy<Construct>:
@@ -72,7 +73,7 @@ _route:
       - _Korok::GSI01
       - _Shrine::Ukouh
 
-   - GSI Segment 2:
+   - Battery Belt:
       - Collect Shrooms:
          movements:
             - to: [303, 1540.64, -941.5]
@@ -98,6 +99,8 @@ _route:
             - to: [661.5, 1539.47, -1217]
             - to: [633.59, 1539.47, -1271.64]
       - _Npc::Maker Construct_06
+
+   - Gutanbac Shrine:
       - _Enemy<Constructs x3>:
          coord: [555.03, 1559.07, -1400.64]
       - _Chest<Fans>:
@@ -110,7 +113,7 @@ _route:
          coord: [815, 1627.1, -1410]
       - _Shrine::Gutanbac
 
-   - GSI Segment 3:
+   - In-isa Shrine:
       - _Chest::ArchaicWarmGreaves:
          comment: Equip the greaves, Ascend
       - _Korok::GSI06
@@ -149,7 +152,7 @@ _route:
          coord: [111, 1521.26, -1498]
       - _Shrine::In-isa
 
-   - GSI Segment 4:
+   - Pondside Cave:
       - _Chest<Arrows>:
          coord: [24.3, 1513.76, -1527.69]
          comment: Ascend
@@ -188,7 +191,7 @@ _route:
       - _Chest<Arrows>:
          coord: [431.96, 1554.57, -1807.92]
 
-   - GSI Segment 5:
+   - Mining Cart Shields:
       - Fuse Mining Carts to Shields:
          comment: Cross rail with minecart shield
          movements:
@@ -207,6 +210,8 @@ _route:
          notes: Collect shrooms high up on cliff
          comment: Speed food
          coord: [424.33, 1470.34, -1544.17]
+
+   - Mining Cave:
       - Ascend:
          comment: Shield surf on mine cart rail
          coord: [410.5, 1470.34, -1591.75]
@@ -233,6 +238,8 @@ _route:
       - _Bubbulfrog::PitCave
       - _Cave::Pit01
       - _Korok::GSI14
+
+   - Bottomless Cave:
       - Shield Surf to Next Korok:
          coord: [588, 1600, -1604]
       - _Korok::GSI12:
@@ -252,7 +259,7 @@ _route:
          coord: [768.3, 1650.36, -1369.63]
          comment: Ascend
 
-   - GSI Segment 6:
+   - Temple of Time:
       - Shield Surf to Next Chest:
          movements:
             - to: [799, 1700, -1420.5]
@@ -291,7 +298,7 @@ _route:
       - _Location::TempleofTime
       - _GoddessStatue::TempleofTime
 
-   - GSI Segment 7:
+   - Nachoyah Shrine:
       - _Warp::ROA<Warp to ROA>
       - Ascend:
          coord: [349.5, 2400, -1750.5]
@@ -301,6 +308,8 @@ _route:
       - Shield Surf:
          coord: [380.5, 2374, -1617.5]
       - _Shrine::Nachoyah
+
+   - Open the Closed Door:
       - Wing Glide to Next Korok:
          coord: [379, 2374, -1571.5]
       - _Korok::GSI07:
@@ -425,7 +434,6 @@ _route:
    - Breaking Weapons:
       - _Enemy<Horriblin x7>:
          coord: [-274.17, 381.12, 1133.01]
-         comment: Break weapons
       - _Enemy<Like Like>:
          coord: [-323.34, 353.09, 1100.74]
       - _Enemy<Ice Like>:
@@ -484,8 +492,10 @@ _route:
       - _Chest<Claymore>:
          coord: [-98.5, 430.78, 931.37]
       - _Korok::LL14
-      - _Enemy<Lizalfos x2>:
+      - _Enemy<Lizalfos>:
          coord: [-71.64, 397.28, 949.27]
+      - _Enemy<Lizalfos>:
+         coord: [-81.17, 400.42, 972.83]
       - _Equipment::Weapon<Soldier Spear>:
          coord: [-90.23, 408.21, 1011.37]
       - _Korok::LL11:
@@ -506,16 +516,17 @@ _route:
          coord: [-154, 141.78, 1157.37]
 
    - Auto-Build:
-      - _Warp::Shrine::In-isa<Warp to In-isa Shrine>
+      - _Warp::Shrine::In-isa<Warp to In-isa Shrine>:
+         level: Depths
       - _Chasm::GreatPlateauEast
-      - _Location::GreatAbandonedCentralMine:
-         hide-icon-on-map: true
+      - _Location::GreatAbandonedCentralMine
       - _KeyItem::Autobuild:
          coord: [-808.44, -415.18, -1928.65]
       - _Npc::Master_Kohga_Central_Mine:
          hide-icon-on-map: true
-      - _Chest<Huge crystallized charge>:
-         coord: [-815.27, -415.18, -1934.66]
+      - _LockedChest::D49
+
+   - Nogukoyk Lightroot:
       - _SchemaStone::CentralMine
       - Ascend:
          coord: [-808.44, -361.24, -1908.48]
@@ -529,7 +540,7 @@ _route:
          coord: [-658.62, -412.17, -1683.34]
       - _Lightroot::Nogukoyk
 
-   - Majoras Mask:
+   - Floating Coliseum:
       - _Poe::Normal:
          coord: [-690.05, -410.82, -1504.47]
       - _KeyItem<Add flying machines to autobuild>:
@@ -538,6 +549,7 @@ _route:
          coord: [-752.7, -402.69, -1634.27]
       - _Poe::Normal:
          coord: [-886.77, -421.85, -1674.73]
+      - _Location::GroveofSpirits
       - _Chest<Large Crystallized Charge>:
          coord: [-962.56, -426.63, -1695.87]
       - _Poe::Normal:
@@ -549,12 +561,18 @@ _route:
          coord: [-1480, 138.74, -1410.66]
       - _Lightroot::Mu-ustust
       - _Enemy::Lynel::D03<Lynel>
+      - _Location::FloatingColiseum
+
+   - Majora's Mask:
       - _Enemy::Lynel::D07<Lynel>
       - _Enemy::Lynel::D05<Lynel>
       - _Enemy::Lynel::D04<Lynel>
       - _Enemy::Lynel::D06<Lynel>
-      - _Enemy::Lynel::D08<Lynel>
-      - _Chest::MajorasMask
+      - _Enemy::Lynel::D08<Lynel>:
+         comment: Fuse weapons
+      - _LockedChest::D42
+
+   - Secret Spring of Revival:
       - _Enemy<Pillage Enemy Camp>:
          coord: [-1213, 127.11, -1538]
       - _Enemy<Pillage Enemy Camp>:
@@ -567,9 +585,12 @@ _route:
          coord: [-1024.29, -485.79, -1812.08]
       - _Poe::Grand:
          coord: [-1031.94, -508.81, -1917.7]
+      - _Location::SecretSpringofRevival:
+         hide-icon-on-map: true
       - _Warp::Special<Warp to Central Mine>:
          coord: [-821.82, -417.75, -1940.61]
-      - _Shop::ForgeConstruct10
+      - _Shop::ForgeConstruct10:
+         comment: Purchase crystallized charges
 
    - Camera:
       - _Warp::Tower::LookoutLanding<Warp to Lookout Landing Tower>
