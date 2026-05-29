@@ -762,23 +762,26 @@ _route:
       - _LockedChest::D17
       - _Shop::ForgeConstruct01
       - _SchemaStone::GerudoMine
+
    - Kotlin:
       - _Warp::Shrine::Serutabomac<Warp to Serutabomac Shrine>
       - _Shrine<Activate Sepapa shrine>:
          coord: [221.75, 147.03, 1085.05]
       - _Enemy<Phantom Ganon>:
          coord: [126.58, 136.86, 953.94]
+      - _Location::HyruleForestPark
       - _Korok::LL15
+      - _Location::BoneyardBridge
       - _Korok::LL27
+      - _Location::HyliaRiver02
       - _Special<Pic of fire wizrobe>:
          coord: [421.69, 128.04, 683.5]
-         notes: Also collect keese eyes/wings
       - _Cave::CrenelHills00:
-         notes: Drop off flying machine at top of hill
+         comment: Drop off flying machine at top of hill
       - _Enemy::Talus::GK01
       - _Bubbulfrog::CrenelHillsCave
       - _Chest::BarbarianArmor:
-         notes: Ascend
+         comment: Ascend
       - _Korok::SS04
       - _Enemy<Phantom Ganon>:
          coord: [682.28, 179.01, 753.88]
@@ -792,77 +795,110 @@ _route:
       - _Shrine<Activate Ekochiu shrine>:
          coord: [1062.65, 164.78, 1280.46]
       - _Enemy::BokoBoss::G36
-      - _Korok::EC48:
-         notes: Drop off flying machine near Addison
+      - _Korok::EC48
+      - _Location::PicoPond:
+         comment: Drop off flying machine near Addison
       - _SideAdv::TheHuntforBubbulGems:
          coord: [1222, 130.46, 1207]
+      - _SideAdv::TheSearchforKoltin
       - _Cave::PicoPond00
       - _Bubbulfrog::PicoPondCave:
-         notes: Ascend
+         comment: Ascend
       - _Addison::A48
-      - _LockedChest::G26
+      - _LockedChest::G26:
+         notes: Collect cobble crusher
       - _Enemy::Hinox::GZ01:
-         notes: Take pic
+         comment: Take pic
+      - _Location::TrilbyPlain
       - _Tower<Activate Eldin Canyon Tower>:
          coord: [1641.81, 324.42, 1190.82]
+
+   - Mineru's Counsel:
       - _Korok::EC57
       - _Tear::G02
       - _Enemy::BokoBoss::G42<Boss>:
-         notes: Break weapons
+         comment: Break cobble crusher
+         notes: Collect Zora longsword
       - _Korok::UZ32
-      - _Korok::UZ26
+      - _Special<Starting Block>:
+         coord: [2565.43, 289.57, 467.49]
+      - _Korok::UZ26:
+         comment: Get pic of aerocuda
       - _Cave::UplandZoranaMountainside00
       - _Bubbulfrog::UplandZoranaMountainsideCave
       - _Cave::UplandZoranaMountainside01
       - _Cave::UplandZoranaByroad00:
-         notes: Just get the cave entrance
+         comment: Just get the cave entrance
+      - _Chest<Opal>:
+         coord: [2818, 489.75, 554]
+      - _Special<Pic of Chuchu>:
+         coord: [2838.24, 483.63, 539.35]
+         comment: Break Zora longsword
       - _SideQuest::MiredinMuck:
          coord: [2840, 483.63, 590]
+         comment: Get pic of Zora spear
       - _Tower<Activate Upland Zorana Tower>:
          coord: [2866.06, 478.33, 581.19]
+
+   - Sludge Covered Statue:
+      - _Place::ZorasDomain:
+         hide-icon-on-map: true
       - _Korok::UZ24
       - _MainQuest::TheSludgeCoveredStatue:
          coord: [3300, 139, 463]
-      - _Special<Cook Speedfood>:
+      - Collect Fleet-Lotus Seeds and Crabs:
+         coord: [3314.55, 239.92, 512.59]
+      - _Special<Cook>:
          coord: [3303.9, 245.31, 496.23]
-         notes:
-            - Collect fleet lotus and crabs
-            - Take pic of torch
+         comment: Speed food, attack food, lynel horn elixir
+         notes: Take pic of torch
       - _Shop::GeneralStore17:
-         notes: Buy rice and swift violet
+         comment: Buy rice and swift violet
+         notes: Take pic of swift violet
       - _Korok::UZ23
       - _Shrine::Mogawak:
-         notes: It should be about 9 or 10 PM
+         comment: It should be about 9 or 10 PM
+
    - Sidon:
       - _Enemy::Hinox::GZ02
       - _Special<Pic of moonlit princess>:
          coord: [3758.86, 654.62, 417.38]
-         notes: Traverse stairs to collect crabs and frogs
+         comment: Traverse stairs to collect crabs and frogs
       - _Korok::UZ22::Start
       - _Korok::UZ22::End
       - _MainQuest::SidonoftheZora:
          coord: [3847, 591.92, 568.5]
          notes: Take pic of Trident before triggering cut scene
+      - _Location::MiphaCourt
       - _Shrine<Activate Ihen-a shrine>:
          coord: [3786.22, 597.97, 577.78]
       - _LockedChest::G39:
+         comment: Break boomerang
          notes: Get lots of pics
       - _MainQuest::TheBrokenSlate:
          coord: [3405, 400, 883]
-      - _Cave::PloymusMountain00
+
+   - Climber's Bandana:
+      - _Cave::PloymusMountain00:
+         comment: Drop flying machine at bottom of waterfall
       - _Bubbulfrog::PloymusMountainCave
       - _Chest::ClimbersBandanna:
-         notes: Ascend
+         comment: Ascend
       - _ZoraMonument::Z03
       - _Cave::PristineSanctum01
       - _Bubbulfrog::PristineSanctum
       - _Cave::PristineSanctum00
       - _Korok::UZ31
-      - _Korok::UZ30
-      - _MainQuest<Shoot kings mark through teardrop>:
-         coord: [4074, 587, 528]
+      - _Korok::UZ30::Trail
+
+   - Zora Helm:
+      - _Location::FloatingScalesIsland:
+         comment: Shoot kings mark through teardrop
+         level: Sky
       - _Chest::ZoraHelm:
-         notes: Ascend
+         comment: Ascend
+
+   - Zora Armor:
       - _Enemy<Sludge Like>:
          coord: [3899.97, 590.9, 590.81]
          notes: Take pic
@@ -870,45 +906,57 @@ _route:
          coord: [3865, 591.74, 590]
       - _MainQuest<Talk to Sidon>:
          coord: [3678.97, 340.9, 131.84]
+      - _Location::EastReservoirLake
       - _Cave::AncientZoraWaterworks00:
-         notes:
-            - Collect zora sword
-            - Activate terminal
-   - Water Temple Segment 1:
+         comment: Collect zora sword, Activate terminal
+
+   - Hover Stones:
       - Swim up waterfall:
          coord: [3652.77, 1288.77, 280.7]
       - _Chest<Large zonai charge>:
          coord: [3559.66, 1396.85, 481.48]
+      - _Location::WellspringIsland
       - _Shrine<Activate Igoshon shrine>:
          coord: [3480.71, 1444.63, 665.88]
       - _Dispenser::S08:
-         notes: Offer as many charges as needed to get 12+ hoverstones
-      - _Enemy::FluxConstruct::SL01:
-         notes: Collect sages will
+         comment: Get 12+ hoverstones
+      - _Enemy::FluxConstruct::SL01
+      - _SagesWill::WellspringIsland<Sage's Will>
+
+   - Entering Water Temple:
       - _Enemy<Construct>:
          coord: [3433.44, 1653.38, 565.58]
+         notes: Take pic
       - _Korok::UZS01:
-         notes: Ascend, Talk to Sidon
-      - Swim up Waterfall:
-         coord: [3394.27, 1841.9, 670.42]
+         comment: Ascend
       - _Temple::Water
-   - Water Temple Segment 2:
+
+   - First Valve:
       - Swim up Waterfall:
          coord: [3416.75, 1878.94, 789.11]
       - _Enemy<Fire like>:
          coord: [3459.16, 1888.9, 776.43]
+         comment: Take pic, Ascend
       - _Enemy<Construct>:
          coord: [3512.42, 1898.4, 744.92]
+         comment: Take pic
       - _Enemy<Construct>:
          coord: [3485.73, 1897.9, 702.75]
       - _Special<Valve>:
          coord: [3515.1, 1892.39, 717.39]
+
+   - Second Valve:
       - _Chest<Opal>:
          coord: [3498.95, 1892.39, 751.99]
+      - _Item<Build Waterwheel>:
+         coord: [3483.19, 1892.4, 845.95]
       - _Special<Valve>:
          coord: [3444.95, 1896.9, 882.51]
+
+   - Third Valve:
       - _Enemy<Construct>:
          coord: [3372.52, 1848.1, 730.18]
+         comment: Take pic
       - _Enemy<Construct>:
          coord: [3297.01, 1865.9, 622.45]
       - _Enemy<Construct>:
@@ -917,24 +965,32 @@ _route:
          coord: [3261.43, 1865.9, 648.32]
       - _Special<Valve>:
          coord: [3237.49, 1879.39, 752.05]
+
+   - Fourth Valve:
+      - Swim up Waterfall:
+         coord: [3227.54, 1915.86, 712.77]
       - _Chest<Zora shield>:
          coord: [3280.32, 1894.4, 577.33]
+         comment: Take pic
       - _Chest<Sapphire>:
          coord: [3310.81, 1819.9, 672.06]
       - _Chest<Large Zonaite>:
          coord: [3379.3, 1824.84, 715.54]
       - _Special<Valve>:
          coord: [3335.9, 1818.4, 729.33]
+         comment: Ascend
       - _Enemy<Mucktorok>:
          coord: [3365, 1848.1, 750]
          notes: Take pic
-   - Zora Domain:
-      - _Warp::Special<Zora Domain>:
+
+   - Zora's Domain:
+      - _Warp::Special<Zora's Domain>:
          coord: [3333, 269.46, 542]
       - _SideQuest::TheNeverEndingLecture:
          coord: [3321, 163, 549]
       - _SideQuest::TheMoonlitPrincess:
          coord: [3274, 155, 543]
+         comment: Break Zora sword
       - _SideQuest::ATokenofFriendship:
          coord: [3310, 150, 488]
       - _SideQuest::TrueTreasure:
@@ -943,11 +999,15 @@ _route:
          coord: [3323, 139, 492]
       - _SideQuest::AWifeWaftedAway:
          coord: [3290, 139, 441]
+      - _Location::GreatZoraBridge
       - _Korok::UZ35
+
+   - Chasm Under Zora's Domain:
       - _Cave::UnderZora'sDomain00
       - _Chest::VahRutaDivineHelm
       - _Bubbulfrog::CaveUnderZora'sDomain
       - _Chasm::UnderZorasDomain
+
    - Zora Kohga:
       - _Poe::Grand:
          coord: [3326.7, -585.19, 357.89]
