@@ -1093,7 +1093,7 @@ _route:
       - _Shop::ForgeConstruct03
       - _SchemaStone::LanayruMine
 
-   - Hestu Upgrades:
+   - Hestu:
       - _Warp::Tower::LookoutLanding<Warp to Lookout Landing Tower>
       - _MainQuest::AMysteryintheDepths:
          coord: [-255, 18, 134]
@@ -1197,7 +1197,7 @@ _route:
       - _Location::AncientTreeStump:
          hide-icon-on-map: true
 
-   - Ishodag:
+   - Ishodag Shrine:
       - _Chest::FierceDeityBoots:
          notes: Ascend
       - _Special<Starting Block>:
@@ -1784,52 +1784,71 @@ _route:
             - We come back here one more time later
       - _Korok::SS45
       - _Addison::A51
-      - _Korok::SS44
+      - _Korok::SS44::Trail
       - _Enemy::Talus::GK04
       - _Cave::SahasraSlope01
       - _Cave::SahasraSlope00
       - _Chest<Shield>:
          coord: [1388.84, 241.41, -1142.45]
-         Notes: Get Pic
+         notes: Take pic
       - _Bubbulfrog::SahasraSlopeCave
       - _Tower::SahasraSlope
 
-   - Necluda Sky Segment 1:
-      - Shock Fruit:
-         coord: [1661.49, 798.67, -1843.27]
-         notes: Get Pic
+   - Ukoojisi Shrine:
+      - _Item<Shock Fruit>:
+         coord: [1660.67, 798.87, -1843.38]
+         notes: Take pic
          level: Sky
-      - Golden Apples:
-         coord: [1692.39, 802.67, -1852.74]
+      - _Item<Golden Apples>:
+         coord: [1692.82, 802.2, -1853.69]
       - _Korok::SSS06
+      - Cut Vines:
+         coord: [1706, 780, -1920]
       - _Shrine::Ukoojisi::Start
+      - Flying Wing:
+         coord: [1715, 780, -1920]
       - _Shrine::Ukoojisi
-      - _Dispenser::S05
+
+   - South Necluda Sky Archipelago:
+      - _Dispenser::S05:
+         level: Sky
+      - _Special<Launcher>:
+         coord: [1380.5, 711.08, -2109]
+      - _Special<Starting Block>:
+         coord: [1300.12, 733.69, -1977.47]
       - _Korok::SSS07
-      - Platform:
+      - _Special<Platform>:
          coord: [1467.44, 633.17, -2005.41]
-         notes: Fuse rockets to platform to move toward next objective
-      - _Chest<Old Map>:
-         coord: [1651.63, 679.41, -2190.7]
-         notes: Ascend
+         comment: Fuse rockets to platform to move toward next objective
+      - _OldMap::Necluda:
+         comment: Ascend
       - Build Flying Machine:
          coord: [1619.41, 701.07, -2148.91]
-      - _Chest<OldMap>:
-         coord: [2159.54, 1368.36, -2592.08]
+      - _OldMap::Necluda_01
       - _Tablet<Drop Tablet>:
          coord: [2082.85, 1447.83, -2731.13]
+      - _Location::SouthNecludaSkyArchipelago:
+         coord: [2480, 1000, -3600]
+         notes: Enter archipelago from west side to trigger location
       - _Enemy::FluxConstruct::SF03:
-         notes: Enter Archipelago from West Side
+         notes: Take pic
+      - _SagesWill::Faron
+
    - Naydra Farming 1:
       - _Warp::Shrine::Yansamin<Warp to Yansamin Shrine>:
          level: Sky
+      - _Item<Campfire>:
+         coord: [2389.04, 1588.74, -1712.46]
+         comment: Make night
       - _Material<Star Fragment>:
          coord: [2500, 1500, -2000]
-         notes: Sky dive
+         comment: Sky dive
       - _Material<Naydra Claw>:
-         coord: [2900, 500, -2600]
+         coord: [2900, 1000, -2600]
+
    - Rabella Wetlands:
       - _Korok::RW16
+      - _Enemy::Hinox::GL05
       - _LockedChest::G37
       - _Addison::A63
       - _Korok::RW09
@@ -1837,12 +1856,17 @@ _route:
       - _Special<Starting Block>:
          coord: [2410.07, 363.24, -2671.19]
       - _Korok::RW17
-      - Frogs:
+      - _Item<Hot-Footed Frogs>:
          coord: [2390.4, 319.54, -2858.28]
-      - Fleet Lotus:
+      - _Item<Fleet-Lotus Seeds>:
+         coord: [2380.68, 320.41, -2848.58]
+      - _Item<Fleet-Lotus Seeds>:
          coord: [2369.43, 320.41, -2824.62]
+      - _Item<Wood>:
+         coord: [2436.76, 323.03, -2789.73]
       - _Tower::RabellaWetlands
-   - Necluda Sky Segment 2:
+
+   - Kumamayn Shrine:
       - _Korok::RWS01
       - _Special<Launcher>:
          coord: [2854.5, 1337.71, -2902.88]
@@ -1855,12 +1879,16 @@ _route:
       - Launch Crystal with Aparatus:
          coord: [3034.23, 1313.38, -2907.69]
       - _Shrine::Kumamayn
+
+   - Zakusu Shrine:
       - _Tablet<Drop Tablet>:
          coord: [3918.64, 1301.6, -2471.2]
+         level: Sky
       - _Shrine<Activate Terminal>:
          coord: [3959.56, 1224.77, -1537.83]
-   - Mount Lanayru:
       - _Shrine::Zakusu
+
+   - Mount Lanayru:
       - _Korok::ML08::Start
       - _Korok::ML08::End
       - _Korok::ML14
@@ -1872,28 +1900,36 @@ _route:
       - _Material<Naydra Claw>:
          coord: [3826,600, -1421]
       - _Npc::Nazbi
+      - _Location::SpringofWisdom
       - _SideQuest::GoddessStatueofWisdom:
          coord: [3910.78, 574.69, -1328.3]
       - _Tower::MountLanayru
+
    - Valor Island:
       - Build Flying Machine:
          coord: [4165.08, 1724.69, -1084.63]
+      - _Location::ValorIsland:
+         hide-icon-on-map: true
       - _Dispenser::S07
-      - Collect Frogs, Etc:
+      - _Item<Hot-Footed Frogs>:
+         coord: [4725.76, 1898.71, -870.35]
+      - _Item<Tireless Frog>:
          coord: [4722.8, 1898.71, -866.25]
-      - _Chest<Old Map>:
-         coord: [4659.19, 1873.97, -869.84]
+      - _OldMap::ValorIsland_01
       - _Korok::MLS01
-      - _Chest<Old Map>:
-         coord: [4752.22, 2022.34, -777.56]
+      - _OldMap::ValorIsland
+
+   - Mayanas Shrine:
       - _Shrine::Mayanas::Start
       - _Shrine::Mayanas
       - _Special<Launcher>:
          coord: [4641.75, 1915.58, -985.13]
       - _Korok::MLS03
       - _Npc::Steward Construct_05
+      - _Dispenser::S24
       - _Shrine::Sihajog
       - _Korok::MLS02
+
    - Wellspring Island:
       - _Warp::Tower::UplandZorana:
          level: Sky
