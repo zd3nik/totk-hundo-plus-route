@@ -1414,7 +1414,6 @@ _route:
          comment: Fuse to shield
       - _Shrine<Activate Oromuwak shrine>:
          coord: [-3078.52, 355.06, 1617.27]
-         comment: Fuse rockets to shields
       - _Place::LuckyCloverGazette
       - _SideAdv::PotentialPrincessSightings:
          coord: [-3258.5, 224.96, 1762.5]
@@ -1429,6 +1428,7 @@ _route:
       - _Place::RitoVillage:
          hide-icon-on-map: true
       - _Shop::ArmorShop05
+
    - Tulin Surface:
       - _MainQuest::TulinofRitoVillage:
          coord: [-3594.84, 318.5, 1805.23]
@@ -1450,36 +1450,78 @@ _route:
       - _MainQuest<Tulin Bow>:
          coord: [-3036, 800, 2742]
          notes: Take pic of boko and falcon bow
+
    - Tulin Sky:
       - _Shrine<Activate Mayaumekis Shrine>:
          coord: [-2947.92, 1008.97, 3050.67]
+      - _Location::RisingIslandChain
       - _Shrine<Activate Kahatanaum Shrine>:
          coord: [-3296.01, 1459.85, 3431.51]
       - _Korok::RPS01
       - _Temple::Wind
+
+   - First Turbine:
+      - _Item<Door>:
+         coord: [-2854.15, 1699.93, 3087.75]
       - _Special<Turbine>:
          coord: [-2859.5, 1604.43, 3114]
+
+   - Second Turbine:
       - _Chest<Zonai Longsword>:
          coord: [-2859.5, 1587.43, 3067]
+         comment: Ascend
+      - _Item<Lever>:
+         coord: [-2845.5, 1623.43, 3039.92]
       - _Special<Turbine>:
          coord: [-2830.5, 1623.43, 3047.5]
+         comment: Ascend
+
+   - Third Turbine:
+      - _Item<Icicles>:
+         coord: [-2813.79, 1594.69, 2952.89]
+      - _Enemy<Soldier Construct II>:
+         coord: [-2846.5, 1587.43, 3027]
+         notes: Take pic of construct, horn, and shield
       - _Special<Turbine>:
          coord: [-2865.53, 1587.43, 3024.5]
+
+   - Fourth Turbine:
+      - _Item<Lever>:
+         coord: [-2821.5, 1587.43, 3029.2]
+      - _Enemy<Soldier Construct II>:
+         coord: [-2859.5, 1564.93, 2988]
+         notes: Take pic of shield
       - _Special<Turbine>:
          coord: [-2859.5, 1564.93, 2982]
+
+   - Fifth Turbine:
+      - _Enemy<Soldier Construct II>:
+         coord: [-2893.5, 1623.43, 2968]
+      - _Enemy<Captain Construct I>:
+         coord: [-2851.5, 1593.43, 2952.5]
+         notes: Take pic of horn and sword
       - _Chest<Zonai Sword>:
          coord: [-2891.03, 1609.43, 2966.29]
+      - _Item<Spin Gear>:
+         coord: [-2873.5, 1621.43, 2923.5]
+      - _Enemy<Soldier Construct II>:
+         coord: [-2861.35, 672.36, 2910.4]
       - _Special<Turbine>:
          coord: [-2857, 1623.43, 2905.5]
       - _Enemy<Colgera>:
          coord: [-2859.5, 1623.43, 2971.5]
+
    - Rito Village:
       - _Warp::Special<Rito Village>:
          coord: [-3594.84, 318.5, 1805.23]
       - _Korok::RP56
       - _Chest<Purple Rupee>:
          coord: [-3497.2, -311.19, 1849.1]
-         notes: Get staminoka bass
+      - _Item<Staminoka Bass>:
+         coord: [-3490.37, 258.08, 1853.66]
+         notes: Take pic
+      - _Item<Staminoka Bass>:
+         coord: [-3493.49, 258.08, 1853.66]
       - _GoddessStatue::RitoVillage:
          notes: 2x Stamina
       - _SideQuest::GenlisHomeCooking:
@@ -1490,17 +1532,18 @@ _route:
          movements:
             - to: [-3608, 249.64, 1752]
             - to: [-3571.25, -512, 1803.08]
+
    - Final Kohga Fight:
       - _Lightroot::Sikatag
       - _Poe::Normal:
          coord: [-3573.42, -314.30, 1792.85]
+      - _Location::AbandonedHebraMine:
+         hide-icon-on-map: true
       - _Npc::Master Kohga:
          coord: [-3459.56, -311.49, 1861.13]
          notes: Take pic
-      - _Chest<Diamond>:
-         coord: [-3497.72, -311.19, 1851.07]
-      - _Chest<Huge Crystallized Charge>:
-         coord: [-3497.2, -311.19, 1849.1]
+      - _LockedChest::D09
+      - _LockedChest::D08
       - _SchemaStone::HebraMine
       - _Chest<Large Crystallized Charge>:
          coord: [-3466.66, -243.36, 1918.63]
@@ -1509,17 +1552,21 @@ _route:
       - _Poe::Large:
          coord: [-3465.53, -293.82, 1886.04]
       - _Shop::ForgeConstruct04
+
    - Lake Tatori:
       - _Warp::Shrine::Oromuwak<Warp to Oromuwak Shrine>
-      - _Shrine::Oromuwak
+      - _Shrine::Oromuwak:
+         comment: Fuse rockets to shields
       - _SideQuest::TheRitoRopeBridge:
          coord: [-3296.8, 227.18, 1807.36]
       - _Special<Rest at Cooking Pot Until Night>:
          coord: [-3266.05, 224.58, 1775.64]
       - _Addison::A05
-      - _Korok::LB10
+      - _Korok::LB10::Trail
       - _Enemy::Hinox::DH03
       - _Korok::RP60
+      - _Location::LakeTotori:
+         hide-icon-on-map: true
       - _Korok::RP55
       - _Korok::RP58
       - _Korok::RP61
@@ -1530,10 +1577,13 @@ _route:
       - _Korok::RP54
       - _Chest<Rockets>:
          coord: [-4156.87, 245.69, 1734.43]
+      - _Location::DragonBoneMire:
+         hide-icon-on-map: true
       - _Korok::RP59
-      - _Korok::RP57
+      - _Korok::RP57::Trail
       - _Korok::RP49
       - _Enemy::Talus::GH04
+      - _LockedChest::G00
       - _Korok::RP45
       - _Korok::RP50
       - _LockedChest::G01
@@ -1542,6 +1592,7 @@ _route:
       - _Cave::WestLakeTotori00
       - _Bubbulfrog::WestLakeTotoriCave
       - _Shrine::Wao-os
+
    - North Necluda Archipelago:
       - _Warp::Shrine::Gutanbac<Warp to Gutanbac Shrine>
       - _Enemy<Construct>:
@@ -1549,26 +1600,27 @@ _route:
       - _Enemy<Construct>:
          coord: [828.6, 1670.11, -1447.48]
          notes: Take pic of bird below
+      - _Location::NorthNecludaSkyArchipelago:
+         hide-icon-on-map: true
       - _Special<Turn Platform>:
          coord: [1777.11, 1034.53, -1243.12]
-      - _Chest<Old Map>:
-         coord: [1765.79, 1007.66, -1310.74]
+      - _OldMap::Necluda_03
       - _Shrine::Josiu::Start
       - _Shrine::Josiu
       - _Dispenser::S14
       - _Special<Launcher>:
          coord: [1823.35, 1043.8, -1129.39]
-      - _Chest<Sage Will>:
-         coord: [1933.78, 1066.83, -1064.56]
-      - _Chest<Old Map>:
-         coord: [1851.51, 1044.21, -979]
-         notes: Ascend, Take pics
+      - _SagesWill::Necluda
+      - _OldMap::Necluda_04:
+         comment: Ascend
+         notes: Take lots of pics
       - _Korok::SSS01
-   - Kakariko Segment 1:
+
+   - Kakariko:
       - _Korok::SS38
       - _Item<Rocket>:
          coord: [1631.52, 336.09, -1178.75]
-         notes: Fuse to shield
+         comment: Fuse to shield
       - _Enemy<Boko x4>:
          coord: [1651.5, 320.47, -1176.78]
       - _Special<Read Book>:
@@ -1579,67 +1631,85 @@ _route:
          coord: [1738.07, 300.08, -1117.63]
       - _Shrine<Activate Makasura Shrine>:
          coord: [1769.9, 278.15, -1051.93]
+      - _Place::KakarikoVillage
+
+   - Cucco Hideaway:
       - _Npc::Koko:
-         notes: Buy Garland, Fuse it to a Shield
+         comment: Buy Garland, Fuse it to a Shield
       - _Special<Take Pic of Calamity Scene>:
          coord: [1773.18, 235.31, -981.2]
          notes: Ascend
       - _Korok::SS41
       - _Korok::SS42
-      - Sanke Carp:
+      - _Item<Sanke Carp>:
          coord: [1789.44, 214.4, -1005.38]
-         notes: Take Pic
-      - Cucco:
+         notes: Take pic
+      - _Item<Cucco>:
          coord: [1805.57, 218.48, -1018.59]
-         notes: Take Pic
+         notes: Take pic
       - _Shop::GeneralStore09
+      - _Shop::Inn03:
+         hide-icon-on-map: true
       - _Well::KakarikoVillage
       - _Npc::Cottla_01:
-         notes:
-            - Take Pic of Carrot and Pumpkin
-            - Ascend
+         notes: Take Pic of Carrot and Pumpkin
+         comment: Ascend
       - _Cave::CuccoHideaway00
       - _Bubbulfrog::CuccoHideaway
+
+   - Hearty Truffle:
       - _Dispenser::G02
       - _Special<Read Book>:
          coord: [1937.84, 272.63, -1080.23]
       - _Cave::KakarikoVillage00
-      - Collect 2 Faries:
+      - _Item<Fairy>:
          coord: [1991.88, 244.16, -961.2]
+         comment: Collect no more than 2
+      - _Item<Hearty Truffle>:
+            coord: [1991.89, 250.52, -915.75]
       - _Bubbulfrog::KakarikoVillageCave:
-         notes: Ascend
+         comment: Ascend
+
+   - East Hill:
       - _Korok::SS40
-      - _Chasm::EastHill:
-         notes: Collect Honeycomb Along the Way
+      - _Item<Courser Bee Honey>:
+         coord: [1947.34, 283.62, -911.11]
+      - _Chasm::EastHill
+      - _Item<Courser Bee Honey>:
+         coord: [1903.04, 274.66, -909.83]
       - _Special<Read Book>:
-         notes:
-            - Collect Honeycomb Along the Way
-            - Rocket Shield Up to Top of Hill
-         movements:
-            - to: [1897.82, 291.72, -895.54]
-            - to: [1901.46, 305.32, -810.25]
-      - _Special<Flower Pics>:
-         coord: [1872.33, 344.24, -815.26]
-         notes: Naydra should be visible to the south
+         coord: [1901.46, 305.32, -810.25]
+         comment: Rocket Shield Up to Top of Hill
+      - _Item<Silent Princess>:
+         coord: [1879.35, 342.35, -810.05]
+         comment: Naydra should be visible to the south
+         notes: Take pic
+      - _Item<Blue Nightshades>:
+         coord: [1874.43, 344.1, -813.61]
+         notes: Take pic
       - _Special<Read Book>:
          coord: [1737.12, 305.96, -900.39]
       - _SideQuest::OutoftheInn:
          coord: [1733.95, 305.69, -901.37]
-         notes: Offer Hearty Truffle
+         comment: Offer Hearty Truffle
       - _Item<Bladed Rhino Beetle>:
          coord: [1791.89, 219.25, -857.22]
          notes: Take Pic
       - _Korok::SS36
-   - Kakariko Segment 2:
+
+   - Paya:
+      - _Location::RingRuins
       - _MainQuest::SecretoftheRingRuins:
          coord: [1816.5, 218.5, -949]
+      - _Shop::ZonaiSurveyTeamBase
       - _Npc::Wortsworth_01
       - _GoddessStatue::Kakariko:
          notes: 1x Stamina
       - _SideQuest::ATripthroughhistory:
          coord: [1823.87, 223.11, -1011.98]
+      - _Shop::Inn03
       - _SideQuest<Complete Out of the Inn>:
-         coord: [1835.57, 240, -1021.77]
+         notes: Take pic of shield
       - _SideQuest::FollowtheCuccos:
          coord: [1794.48, 235.03, -1029.26]
       - _Item<Energetic Rhino Beetle>:
@@ -1648,36 +1718,45 @@ _route:
       - _SideQuest::GloomBorneIllness:
          coord: [1910.09, 233.02, -1002.36]
       - _Shop::ArmorShop04:
-         notes: Buy Stealth Set
-   - Zonai Forge:
+         comment: Buy Stealth Set
+
+   - Naydra:
       - _Warp::Shrine::Josiu<Warp to Josiu Shrine>
       - _Special<Baloon Platform>:
          coord: [1936.91, 1284.44, -1204.89]
       - _Material<Naydra Claw>:
          coord: [2400, 1800, -1400]
-         notes:
-            - Get pic
-            - Continue to waterfall if raining, otherwise warp back to Josiu to get height need to reach waterfall
+         comment: Continue to waterfall if raining, otherwise warp back to Josiu to get height needed to reach waterfall
+         notes: Get pic
       - Ascend Waterfall:
          coord: [2667.8, 275.85, -1390.83]
-         notes:
-            - While gliding toward waterfall Zelda should be visible to the east
-            - If she is right of the waterfall you are running behind and will need to get Zelda pic & horn immediately after activating Yansamin shrine, then warp back to forge island to finish it
-      - _Chest<Old Map>:
-         coord: [2644.91, 1581.15, -1414.08]
-         notes: Ride floating platform, via rockets, to next korok
-      - _Korok::SSS05
+         comment: While gliding toward waterfall Zelda should be visible to the east
+         notes: Shoot construct before landing
+      - _OldMap::Necluda_02:
+         notes: Get pic of fairy
+      - _Special<Platform>:
+         coord: [2612.1, 1586.72, -1455.05]
+         comment: Fuse rockets to platform to reach forge island
+      - _Location::ZonaiteForgeIsland
+
+   - Zonaite Forge:
+      - _Korok::SSS05::Trail
+      - _Special<Starting Block>:
+         coord: [2409.12, 1675.16, -1821.48]
       - _Korok::SSS04
       - _Korok::SSS02
       - _Special<Terminal>:
          coord: [2420.1, 1580.78, -1680.22]
       - _Shrine::Yansamin:
+         notes: Go get Light Dragon pic immediately after activating shrine if running behind, then warp back to finish shrine
          movements:
             - to: [2377.87, 1587.95, -1670.76]
             - to: [2315.6, 1669.45, -1670.05]
             - to: [2268.78, 1737.01, -1709.66]
             - to: [2260.09, 1839.58, -1771.33]
             - to: [2350.99, 1587.86, -1782.81]
+
+   - Zonaite Waist Guard:
       - _Chest::ZonaiteWaistguard
       - _Equipment::Weapon<Zonaite Longsword>:
          coord: [2377.56, 1590.92, -1791.81]
@@ -1696,6 +1775,7 @@ _route:
       - _Material<Light Dragon Horn>:
          coord: [2720, 2000, -1668]
          notes: Get Pic
+
    - Sahasra Slope:
       - _Warp::Shrine::Makasura<Warp to Wakasura Shrine>
       - _Shrine::Makasura:
@@ -1713,6 +1793,7 @@ _route:
          Notes: Get Pic
       - _Bubbulfrog::SahasraSlopeCave
       - _Tower::SahasraSlope
+
    - Necluda Sky Segment 1:
       - Shock Fruit:
          coord: [1661.49, 798.67, -1843.27]
