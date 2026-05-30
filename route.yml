@@ -2445,20 +2445,19 @@ _route:
          coord: [2400.12, 616.79, 2688.99]
       - _SideQuest<Finish Side Quest>:
          coord: [2345.72, 620.15, 2682.08]
+
    - Death Mountain:
       - _Warp::Cave<West Tunnel>:
          coord: [2238.61, 626.02, 2682.38]
       - _Korok::EC10::Start
       - _Shrine<Activate Sitsum Shrine>:
          coord: [2369.07, 902.5, 2596.35]
-         notes:
-            - Leave flying machine here
-            - Ascend
+         comment: Ascend
+         notes: Leave flying machine here
       - _Special<Trigger Yunobo>:
          coord: [2389.85, 898.62, 2587.7]
          notes:
-            - Leave him here
-            - DO NOT FOLLOW To NEXT TRIGGER
+            - DO NOT FOLLOW HIM TO NEXT TRIGGER
             - Drop back down to flying machine
       - _Korok::EC10::End
       - _Shrine<Activate Sibajitak Shrine>:
@@ -2469,49 +2468,60 @@ _route:
       - _SideAdv::BringPeacetoEldin:
          coord: [2413.94, 550.82, 2936.95]
       - _Bubbulfrog::LakeDarmanMonsterDen
+
    - Dinraal Pic:
       - _Warp::Cave<Lake Darman Monster Den>:
          coord: [2377.9, 598.4, 3029.97]
       - _Material<Dinraal Claw>:
          coord: [2738, 2000, 3536]
-         notes: Get pic
+         notes: Take pic
+
    - Moragia:
-      - _Warp::Shrine::Sitsum<Warp to Sitsum Shrine>
-      - _Special<Activate Yunobo>:
+      - _Warp::Shrine::Sitsum<Warp to Sitsum Shrine>:
+         comment: Ascend
+      - _MainQuest<Talk to Yunobo>:
          coord: [2396.5, 944, 2553.5]
-         notes: Get pic of Moragia
       - _Enemy<Moragia>:
          coord: [2536.37, 914.77, 2603.82]
+         notes: Take pic
+      - _Chasm::DeathMountain
+
    - Eldin Depths:
       - _Enemy::Talus::DE03
       - _Lightroot::Kisomom
       - _Equipment::Weapon<Longsword>:
          coord: [2808.18, -847.37, 2807.17]
-         notes: Get pic of Cobble Crusher
+         notes: Take pic of Cobble Crusher
       - _Warp::Lightroot::Sikutamak
       - _YigaSchema::AssaultCart
+      - _LockedChest::D81:
+         hide-icon-on-map: true
+      - _LockedChest::D80:
+         hide-icon-on-map: true
       - _Enemy::BokoBoss::D34
       - _Lightroot::Tayamik
       - _Enemy::FluxConstruct::DE02
-      - _Enemy::Talus::GE01
+      - _Enemy::Talus::DE01
       - _Lightroot::Katijabis
       - Fuse Rockets to Shields:
          coord: [2276.91, -726.86, 3238.62]
-      - _Chest::ZantsHelmet
+      - _Location::ScorchingColiseum:
+         hide-icon-on-map: true
+      - _LockedChest::D66
       - _Enemy::Hinox::DE02
       - _Lightroot::Katoij
       - _Enemy::Talus::DE02
       - _Lightroot::Misisi
       - _Enemy::BokoBoss::D26:
-         notes: Collect Cobble Crusher
+         comment: Collect Cobble Crusher
       - _Equipment::Weapon<Longsword>:
          coord: [2272.94, -850.58, 2896.03]
-         notes:
-            - Get pic of Cobble Crusher
-            - Skip if already have pic
+         comment: Skip if already have pic
+         notes: Take pic of Cobble Crusher
       - _Dispenser::D00
-      - _Lightroot::Mustis:
-         notes: Talk to Yunobo
+      - _Lightroot::Mustis
+      - _MainQuest<Talk to Yunobo>:
+         coord: [2343.54, -844.11, 2578.7]
       - _Lightroot::Cugukaram
       - _Poe::Grand:
          coord: [1709.32, -647.88, 2381.96]
@@ -2521,44 +2531,59 @@ _route:
          coord: [1726.9, -718.9, 2370.4]
       - _Shop::ForgeConstruct05
       - _SchemaStone::EldinMine
+      - _Location::AbandonedEldinMine:
+         hide-icon-on-map: true
       - _Chest<Large Crystallized Charge>:
          coord: [1626.61, -718.59, 2348.13]
       - _Equipment::Weapon<Longsword>:
          coord: [1472.71, -718.48, 2598.79]
-         notes:
-            - Get pic of Cobble Crusher
-            - Skip if already have pic
-      - _Special<Talk to Yunobo>:
+         comment: Skip if already have pic
+         notes: Take pic of Cobble Crusher
+      - _MainQuest<Talk to Yunobo>:
          coord: [1519.74, -727, 2847.48]
       - _Special<Terminal>:
          coord: [1301.58, -697.82, 2847.5]
+
+   - First Gong:
       - _Special<Gong>:
          coord: [1184.75, -581.57, 2729.54]
+
+   - Second Gong:
       - _Enemy<Construct>:
          coord: [1324.5, -678.96, 2645.5]
       - _Enemy<Construct>:
          coord: [1324.5, -678.96, 2629]
       - _Chest<Diamond>:
          coord: [1313.75, -679.52, 2614.25]
+      - _Enemy<Fire Like>:
+         coord: [1356.49, -691.21, 2621.58]
       - _Special<Gong>:
          coord: [1351.5, -699, 2525.5]
+
+   - Third Gong:
       - _Enemy<Construct>:
          coord: [1338, -682, 3067.5]
       - _Special<Gong>:
          coord: [1337.5, -682, 3080.5]
+
+   - Fourth Gong:
       - _Special<Gong>:
          coord: [1337.5, -614.49, 3040.99]
+
+   - Fifth Gong:
       - _Chest<Large Zonai Charge>:
          coord: [1286.27, -587.51, 2914.53]
       - _Chest<Zonaite Sword>:
          coord: [1299.94, -694.36, 2933.03]
       - _Special<Gong>:
          coord: [1275.88, -695, 2940.12]
+
+   - Gohma:
       - _Special<Terminal>:
          coord: [1289.13, -697.66, 2863.57]
       - _Enemy<Gohma>:
          coord: [1208.5, -694.99, 2847.5]
-         notes: Get pic
+         notes: Take pic
 
 
 
