@@ -1374,7 +1374,7 @@ _route:
       - _Shrine::Taki-ihaban
       - _Bubbulfrog::Lindor'sBrowCave:
          notes: Ascend
-      - _Tower<Activate Lindors Brow Tower>:
+      - _Tower<Activate Lindor's Brow Tower>:
          coord: [-1909.59, 395.71, 1245.3]
       - _Korok::LB15
       - _LockedChest::G10
@@ -2234,7 +2234,7 @@ _route:
       - _Korok::UM01
       - _Warp::Shrine::Mogisari<Warp to Mogisari Shrine>
       - _Material<Dinraal Claw>:
-         coord: [4636,1200, 3288]
+         coord: [4636, 1200, 3288]
 
    - Lomei Depths Lanyrinth:
       - _Warp::Shrine::Igashuk<Warp to Igashuk Shrine>:
@@ -2618,7 +2618,7 @@ _route:
    - Isle of Rabac:
       - _Enemy<Rock Octorok>:
          coord: [1634.83, 504.21, 2747.94]
-         comment: Upgrade hylian Shield
+         comment: Upgrade Hylian Shield
          notes: Take pic
       - _Korok::EC13
       - _Enemy<Phantom Ganon>:
@@ -2628,7 +2628,7 @@ _route:
       - _Korok::EC06::End
       - _Cave::IsleofRabacGallery00
 
-   - Lizard Lakes:
+   - Rudania Helm:
       - _Bubbulfrog::IsleofRabacGallery
       - _Shrine::Jiotak:
          comment: Ascend
@@ -2643,7 +2643,259 @@ _route:
       - _Bubbulfrog::Lizard'sBurrow
       - _Chest::VahRudaniaDivineHelm
 
+   - Dinraal Farming 1:
+      - _Warp::Shrine::Mogisari:
+         level: Sky
+      - _Material<Star Fragment>:
+         coord: [4643, 1200, 3380]
+      - _Material<Dinraal Claw>:
+         coord: [4636, 1200, 3288]
 
+   - Lynel Run 3:
+      - _Warp::Lightroot::Ui-ihcoj<Warp to Ui-ihcoj Lightroot>
+      - _Enemy::Lynel<x1>:
+         coord: [4212.09, -467.54, 2721.1]
+      - _Warp::Lightroot::Kimakarut<Warp to Kimakarut Lightroot>
+      - _Enemy::Lynel<x1>:
+         coord: [-2798.87, -376.93, -2238.38]
+      - _Warp::Lightroot::Mu-ustust<Warp to Mu-ustust Lightroot>
+      - _Enemy::Lynel<x1>:
+         coord: [-1438.63, -379.5, -1261.72]
+      - _Enemy::Lynel<x5>:
+         coord: [-1151.85, -393.54, -1263.46]
+
+   - Naydra Farming 2:
+      - _Warp::Shrine::Yansamin<Warp to Yansamin Shrine>:
+         level: Sky
+      - _Item<Campfire>:
+         coord: [2389.04, 1588.74, -1712.46]
+         comment: Make night
+      - _Material<Star Fragment>:
+         coord: [2500, 1500, -1690]
+      - _Material<Naydra Claw>:
+         coord: [2600, 1300, -1670]
+
+   - Rocket Reload 1:
+      - _Warp::Shrine::Ukoojisi<Warp to Ukoojisi Shrine>:
+         level: Sky
+      - _Item<Rocket>:
+         coord: [1477.13, 628.59, -2008.65]
+         comment: Fuse rockets to shields
+
+   - GSi Crystal Refinery:
+      - _Warp::Shrine::Nachoyah<Warp to Nachoyah Shrine>
+      - _Shop::CrystalRefinery
+
+   - Courage Island:
+      - _Warp::Tower::Lindor'sBrow<Warp to Lindor's Brow Tower>:
+         level: Sky
+      - _Tower::Lindor'sBrow
+      - _Location::CourageIsland:
+         hide-icon-on-map: true
+      - _Special<Terminal>:
+         coord: [-2215.91, 1746.12, 933.67]
+      - _Npc::Steward Construct_04:
+         comment: Do mini-game
+      - _Dispenser::S21
+      - _Shrine::Taunhiy
+      - _Korok::LBS04
+
+   - Mount Rhoam:
+      - _Addison::A10
+      - _Korok::LB26
+      - _Korok::LB34
+      - _Shrine::Makurukis
+
+   - West Hebra Sky Archipelago:
+      - _Warp::Tower::RosproPass<Warp to Rospro Pass Tower>:
+         level: Sky
+      - _Tower::RosproPass
+      - _Special<Starting Block>:
+         coord: [-3063.68, 798.42, 2136.81]
+      - _Korok::RPS04
+      - _Location::SouthHebraSkyArchipelago:
+         hide-icon-on-map: true
+      - _SagesWill::Hebra_01
+      - _Warp::Shrine::Kahatanaum<Warp to Kahatanaum Shrine>
+      - _Shrine::Kahatanaum
+      - _Enemy::FluxConstruct::SH01:
+         notes: Take pic
+      - _OldMap::Hebra
+      - _Tablet::S02
+      - _OldMap::Hebra_02
+      - _Location::WestHebraSkyArchipelago:
+         hide-icon-on-map: true
+      - _Korok::RPS03
+      - _Dispenser::S11
+      - _Enemy::FluxConstruct::SH02
+      - _OldMap::Hebra_03
+      - _Shrine::Ijo-o
+
+   - King Gleeok:
+      - _Enemy::Gleeok::S01:
+         notes: Take pic
+      - _SagesWill::Hebra
+      - _SagesWill::Tabantha_01
+      - _Location::NorthTabanthaSkyArchipelago:
+         hide-icon-on-map: true
+      - _OldMap::Tabantha
+      - _Dispenser::S00
+
+   - Lightcast Island:
+      - _Location::LightcastIsland
+      - _Special<Starting Block>:
+         coord: [-3612.4, 1919.96, 1030.28]
+      - _Korok::LBS01
+      - _Special<Terminal>:
+         coord: [-3684.8, 1902.41, 1060.34]
+      - _Item<Ancient Arowana>:
+         coord: [-3650.1, 1895.22, 1059.83]
+      - _Item<Ancient Arowana>:
+         coord: [-3628.92, 1895.22, 1067.59]
+      - _Item<Hearty Bass>:
+         coord: [-3618.44, 1895.22, 1064.22]
+      - _Item<Ancient Arowana>:
+         coord: [-3594.74, 1895.22, 1065.32]
+      - _Item<Hearty Bass>:
+         coord: [-3584.65, 1895.22, 1066.33]
+      - _Enemy<Soldier Construct II>:
+         coord: [-3556.69, 1899.47, 1013.01]
+      - _Item<Ancient Arowana>:
+         coord: [-3590.87, 1895.22, 957.34]
+      - _Korok::LBS03
+      - _Item<Hearty Bass>:
+         coord: [-3612.95, 1895.22, 953.55]
+      - _Enemy<Soldier Construct II>:
+         coord: [-3646.51, 1900.34, 957.12]
+      - _Item<Hearty Bass>:
+         coord: [-3645.07, 1895.22, 1016.06]
+      - _Enemy<Soldier Construct II>:
+         coord: [-3607, 1896.18, 1008.73]
+
+   - Zonaite Helm:
+      - _Item<Mirror>:
+         coord: [-3621.05, 1860.31, 1116.18]
+      - _Item<Mirror>:
+         coord: [-3651.86, 1858.68, 1089.87]
+      - _Item<Mirror>:
+         coord: [-3643.75, 1858.68, 1041.55]
+         comment: Ascend
+      - _Chest<Star Fragment>:
+         coord: [-3633.06, 1874.85, 1049.88]
+      - _Item<Mirror>:
+         coord: [-3607.11, 1858.67, 1030.6]
+      - _Chest::ZonaiteHelm
+      - _Enemy<Soldier Construct II>:
+         coord: [-3593.03, 1829.36, 940.96]
+         comment: Use construct mirror shield to activate plate
+
+   - Tabantha Sky Archipelago:
+      - _Shrine::Ga-ahisas
+      - _Korok::LBS02
+      - _Enemy<Soldier Construct I>:
+         coord: [-3830.12, 1634.08, 768.82]
+         comment: Fuse rocket to platform to reach next objective
+      - _OldMap::Tabantha_01
+      - _Special<Starting Block>:
+         coord: [-3960.01, 1610.81, 649.91]
+      - _Korok::LBS05
+      - _Enemy::FluxConstruct::SH03
+      - _Shrine::Ganos::Start
+      - _Special<Fuse Crystal to Flying Machine>:
+         coord: [-3553.72, 1543.97, 594.77]
+      - _Location::TabanthaSkyArchipelago:
+         hide-icon-on-map: true
+      - _OldMap::Tabantha_02:
+         comment: Drop flying machine near pillars
+      - _Item<Tireless Frog>:
+         coord: [-3617.96, 1800.85, 404.6]
+      - _Item<Hot-Footed Frog>:
+         coord: [-3617.32, 1800.85, 407.53]
+      - Get Back on Flying Machine:
+         coord: [-3615, 1798, 443]
+      - _Dispenser::S13:
+         comment: Drop flying machine near launcher
+      - Get Back on Flying Machine:
+         coord: [-3477, 1820, 448]
+      - _Shrine::Ganos:
+         comment: Drop flying machine at shrine
+
+   - North Gerudo Sky Archipelago:
+      - _Special<Starting Block>:
+         coord: [-3374.14, 2429.17, 12.18]
+      - _Korok::GHS01
+      - _OldMap::Tabantha_03
+      - _Dispenser::S23
+      - _SagesWill::Tabantha_02
+      - _Shrine::Mayasiar
+      - _Location::StarviewIsland:
+         comment: Ascend, Zelda should be approaching from the south
+      - _Enemy::FluxConstruct::SC01
+      - _SagesWill::Tabantha
+      - _Location::WestHyruleSkyArchipelago:
+         hide-icon-on-map: true
+
+   - Cherry Tree and Red Sparrow Pics:
+      - _Korok::HF03
+      - _CherryBlossom::Satori:
+         notes: Take pic
+      - _Shrine<Activate Sonapan Shrine>:
+         coord: [-1921.5, 347.5, -358.5]
+      - _Special<Red Sparrow Pic>:
+         coord: [-1948.16, 330.28, -338.34]
+         notes: Take pics of other things if convenient
+
+   - Light Dragon Farming 1:
+      - _Warp::Shrine::Mayasiar<Warp to Mayasiar Shrine>:
+         comment: Ascend
+         level: Sky
+      - _Location::NorthGerudoSkyArchipelago
+      - _Material<Light Dragon>:
+         coord: [-3573.1611, 2000, -607.9292]
+      - _Tablet<Drop Tablet>:
+         coord: [-3605.471, 1701.5275, -934.7554]
+
+   - Gerudo Highlands:
+      - _Special<Giant Sword Pic>:
+         coord: [-3980, 820.09, -1050]
+         notes: Also take pic of frost gleeok
+      - _Korok::GH18
+      - _Enemy::Gleeok::G06
+      - _Korok::GH20::Trail
+      - _Korok::GH17
+      - _Tablet::S08
+      - _Enemy::BokoBoss::G05:
+         notes: Take pic of Gerudo Claymore
+      - _Korok::GH26
+      - _Cave::Meadela'sMantle00
+      - _Bubbulfrog::Meadela'sMantleCave:
+         comment: Ascend
+      - _Tower::GerudoHighlands
+
+   - Gerudo King Gleeok:
+      - _Enemy<Soldier Construct I>:
+         coord: [-3734.75, 1819.6, -915.04]
+         level: Sky
+      - _Enemy<Soldier Construct I>:
+         coord: [-3661.05, 1818.29, -951.26]
+      - _Enemy::Gleeok::S02:
+         comment: Break Gerudo Claymore
+      - _SagesWill::Gerudo
+
+   - Save Isha:
+      - _Location::TorumaDunes:
+         hide-icon-on-map: true
+      - _Enemy::Molduga::SG04
+      - _Npc::Isha
+      - _Shrine<Activate Miryotanog Shrine>:
+         coord: [-4680.1, 173.72, -3086.44]
+      - _Special<Starting Block>:
+         coord: [-3859.3, 190.19, -3017.55]
+      - _Korok::GC32
+      - _Chest<Gerudo Shield>:
+         coord: [-3940.91, 191.46, -2934.61]
+      - _Shrine<Activate Soryotanog Shrine>:
+         coord: [-3882.2, 242.2, -2962.55]
 
 
 
