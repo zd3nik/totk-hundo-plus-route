@@ -2589,6 +2589,61 @@ _route:
          coord: [1208.5, -694.99, 2847.5]
          notes: Take pic
 
+   - Boulder Breaker:
+      - _Warp::Place::GoronCity
+      - _SideQuest::TheHiddenTeasureatLizardLakes:
+         coord: [1652.15, 487.3, 2443.18]
+      - _SideQuest::MoonGazingGorons:
+         coord: [1675.44, 488.75, 2433.4]
+      - _Shop::Inn01:
+         hide-icon-on-map: true
+      - _Shop::GeneralStore06:
+         comment: Buy sugar and spice
+      - _SideQuest::AmberDealer:
+         coord: [1660, 385, 2468]
+         comment: Sell everything except diamonds
+      - _SideQuest::SouloftheGorons:
+         coord: [1687.56, 502.14, 2497.22]
+         notes: Take pic of Boulder Breaker
+      - _Special<Take Pic of Soaking Gorons>:
+         coord: [1704, 497, 2460]
+      - _GoddessStatue::GoronCity
+      - _Korok::EC06::Start
+      - _Cave::YunoboCoHQSouth00:
+         comment: Drop flying machine northwest of cave
+      - _Chest::EmberHeaddress
+      - _Bubbulfrog::YunoboCoHQSouthCave:
+         comment: Ascend
+
+   - Isle of Rabac:
+      - _Enemy<Rock Octorok>:
+         coord: [1634.83, 504.21, 2747.94]
+         comment: Upgrade hylian Shield
+         notes: Take pic
+      - _Korok::EC13
+      - _Enemy<Phantom Ganon>:
+         coord: [1497.47, 499.07, 2824.16]
+      - _Korok::EC12
+      - _Korok::EC11
+      - _Korok::EC06::End
+      - _Cave::IsleofRabacGallery00
+
+   - Lizard Lakes:
+      - _Bubbulfrog::IsleofRabacGallery
+      - _Shrine::Jiotak:
+         comment: Ascend
+      - _Enemy::Talus::GE03:
+         notes: Take pic
+      - _Enemy::BokoBoss::G34
+      - _Korok::EC07
+      - _Korok::EC09
+      - _Enemy::Hinox::GE02
+      - _Korok::EC08
+      - _Cave::Lizard'sBurrow00
+      - _Bubbulfrog::Lizard'sBurrow
+      - _Chest::VahRudaniaDivineHelm
+
+
 
 
 
