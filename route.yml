@@ -7,29 +7,33 @@ _project:
    description:
       - Standard TOTK hundo (glitchless, no amiibo) plus
       - All chests within shrines (chest icon must appear next to shrine on map)
-      - All GSI chests & constructs * Clear all ??? from all device dispensers
-      - All old maps * All locked chests * All mini-games
-      - All armor and all armor set abilities unlocked
+      - All GSI chests & constructs
+      - Clear all ??? from all device dispensers
+      - All old maps
+      - All locked chests
+      - All mini-games
       - All boss bokos
       - All lynels
+      - All armor
+      - All armor set abilities unlocked
       - Read all Zora stone monuments
       - Capture All compendium pics yourself (no pic purchases)
       - Get a diamond from Hino (by rescuing him from all locations)
       - Attend both Ashai classes (get a smiling face in the adult class)
       - All static spawn Phantom Ganons (the 2 in castle town, the 1 on Mekar island, and the 1 near Susuyai shrine are not static)
       - Dog treasures are intentionally excluded
-      - Micro-management of weapons, health, armor, how to defeat enemies, etc is not detailed in this route doc. Dragon farming is highly time sensitive, but there are more dragon farming encounters than are strictly necessary so you can skip some if you don't make it to them in time. Just don't skip any star fragment farming (which is routed to happen in tandem with dragon farming)
+      - Micro-management of weapons, health, armor, how to defeat enemies, etc is not detailed in this route doc. Dragon farming is highly time sensitive, but there are more dragon farming encounters than are strictly necessary so you can skip some if you don't make it to them in time. Just don't skip any star fragment farming (which is typically routed to happen in tandem with dragon farming)
    version: 1.1.0
    progress: [
       "Tower", "Shrine", "Lightroot", "Korok",
       "Bubbulfrog", "Addison",
       "Cave", "Well", "Chasm",
-      "Enemy::Talus",
-      "Enemy::Gleeok",
       "Enemy::Hinox",
+      "Enemy::Talus",
       "Enemy::Frox",
-      "Enemy::Molduga",
       "Enemy::FluxConstruct",
+      "Enemy::Molduga",
+      "Enemy::Gleeok",
       "Enemy::Lynel",
       "Enemy::BokoBoss",
       "LockedChest",
