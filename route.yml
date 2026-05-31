@@ -3061,7 +3061,7 @@ _route:
       - _Enemy<Gibdo Nest>:
          coord: [-3946.63, 146.48, -2850.29]
 
-   - Thunder Temple:
+   - Unite the Pillars in Light:
       - _Warp::Special<Gerudo Town>:
          coord: [-3887.35, 157.48, -2962]
       - _Item<Orb>:
@@ -3072,19 +3072,119 @@ _route:
       - _MainQuest<Talk to Riju>:
          coord: [-3900.08, 140.73, -2978.17]
          comment: Ascend
+      - _Special<Mirror Pillar>:
+         coord: [-4056.82, 167.5, -3149.83]
+      - _Special<Mirror Pillar>:
+         coord: [-4595.64, 139.5, -3278.52]
+      - _Special<Mirror Pillar>:
+         coord: [-4185.51, 167.5, -3632.07]
+      - _Npc::Riju
+      - _MainQuest<Electric Switch>:
+         coord: [-4260.47, 145.83, -3353.47]
+
+   - Lightning Temple:
+      - _Enemy<Queen Gibdo>:
+         coord: [-4378.2, 130.7, -3470.78]
+         notes: Take pic
+      - _Item<Floor Switch>:
+         coord: [-4415.32, 132.67, -3508.32]
+         comment: Use Tulin to clear the sand off
+      - _Chest<Large Zonai Charge>:
+         coord: [-4513.95, 88.66, -3613.3]
+         comment: Ascend
+      - _Temple::Lightning
+      - _Special<Terminal>:
+         coord: [-4514.55, 134.47, -3607.56]
+
+   - First Battery:
+      - _Item<Stone Block x2>:
+         coord: [-4490.41, 132.84, -3605.68]
+         comment: Move stone blocks out of the way of room entrance
+      - _Special<Battery>:
+         coord: [-4491.19, 134.17, -3584.2]
+         comment: Ascend
+
+   - Second Battery:
+      - _Item<Light Source>:
+         coord: [-4460.57, 171.67, -3553.58]
+         comment: Move stone blocks out of the way
+      - _Item<Rotating Wall>:
+         coord: [-4479.66, 175.67, -3572.67]
+         comment: Use recall to synchronize rotating walls
+      - _Enemy<Soldier Construct III>:
+         coord: [-4499.46, 168.67, -3579.74]
+      - _Item<Floor Switch>:
+         coord: [-4535.74, 168.32, -3628.74]
+      - _Item<Floor Switch>:
+         coord: [-4573.72, 162.77, -3672.36]
+      - _Enemy<Soldier Construct II>:
+         coord: [-4563.51, 162.67, -3696.62]
+      - _Enemy<Soldier Construct III>:
+         coord: [-4583.19, 112.67, -3696.44]
+      - _Item<Light Source>:
+         coord: [-4553.91, 148.17, -3706.31]
+      - _Special<Battery>:
+         coord: [-4602.56, 164.1, -3657.67]
+
+   - Third Battery:
+      - Ascend to Next Level:
+         movements:
+            - to: [-4580, 162, -3672]
+            - to: [-4555, 194, -3650]
+      - _Item<Stone Block>:
+         coord: [-4553.2, 194.6, -3647.62]
+         comment: Place mirror on stone block
+      - _Enemy<Soldier Construct III>:
+         coord: [-4534.95, 192.67, -3637.59]
+      - _Item<Sliding Statue>:
+         coord: [-4534.82, 192.67, -3629.24]
+         notes: Move statues as needed to progress, their locations are shown here but they are not listed in the correct order
+      - _Item<Sliding Statue>:
+         coord: [-4541.18, 192.67, -3600.25]
+      - _Item<Sliding Statue>:
+         coord: [-4495.22, 192.67, -3600.95]
+      - _Item<Sliding Statue>:
+         coord: [-4495.93, 192.67, -3622.88]
+      - _Item<Floor Switch>:
+         coord: [-4501.37, 216.32, -3628.74]
+      - _Special<Battery>:
+         coord: [-4472.59, 146.12, -3657.52]
+
+   - Fourth Battery:
+      - _Item<Floor Switch>:
+         coord: [-4484.61, 144.67, -3651.16]
+      - _Enemy<Soldier Construct III>:
+         coord: [-4497.34, 144.67, -3644.09]
+      - _Enemy<Soldier Construct III>:
+         coord: [-4482.49, 144.67, -3640.55]
+      - _Item<Floor Switch>:
+         coord: [-4535.74, 144.32, -3594.38]
+      - _Item<Gibdo Nest>:
+         coord: [-4570.1, 150.67, -3565.67]
+      - _Item<Soldier Construct III>:
+         coord: [-4586.44, 150.67, -3554.99]
+      - _Item<Soldier Construct III>:
+         coord: [-4579.36, 150.67, -3536.61]
+      - _Item<Soldier Construct II>:
+         coord: [-4583.61, 160.67, -3536.61]
+      - _Item<Soldier Construct II>:
+         coord: [-4593.51, 160.67, -3546.51]
+      - _Special<Battery>:
+         coord: [-4605.32, 151.97, -3524.8]
+
+   - Gibdo Queen:
+      - _Chest<Diamond>:
+         coord: [-4535.51, 169.03, -3585.73]
+         comment: Ascend
+      - _Special<Terminal>:
+         coord: [-4514.55, 134.47, -3607.56]
+      - _Enemy<Queen Gibdo>:
+         coord: [-4494.77, 232.67, -3587.74]
 
 
 
 
 
-      #- _Shop::GeneralStore01
-      #- _Shop::GeneralStore05
-      #- _Shop::GeneralStore03
-      #- _Shop::GeneralStore02
-      #- _Shop::Inn
-      #- _Shop::JewelryShop
-      #- _Shop::GeneralStore04
-      #- _Shop::Canteen
 
 
 
