@@ -2934,6 +2934,7 @@ _route:
          coord: [-3794.3, 149.57, -2924.6]
       - _Item<Desert Voe Trousers>:
          coord: [-3792.6, 149.57, -2926.2]
+         comment: Ascend
       - _Special<Secret Entrance>:
          comment: Take orb with you
          movements:
@@ -2950,7 +2951,6 @@ _route:
             - to: [-3892.04, 137.4, -2995.5]
       - _Special<Monument to Seven Heroines>:
          coord: [-3889.34, 137.78, -2998.3]
-         comment: Behind bombed wall
          notes: Take pic
       - _Item<Radiant Shield>:
          coord: [-3899.29, 137.45, -2995.71]
@@ -2967,9 +2967,23 @@ _route:
       - _Special<Monument to Seven Heroines>:
          coord: [-3853.4, 135.1, -2944.33]
          notes: Take pic
+      - _Item<Light Source>:
+         comment: Shoot obstructing rubble with bomb arrow
+         movements:
+            - to: [-3802.27, 106.81, -2816.91]
+            - to: [-3823.76, 106.2, -2775]
+            - to: [-3879.23, 115.1, -2779.48]
+      - _Item<Wooden Box>:
+         coord: [-3823.76, 106.2, -2772.04]
+         comment: Place a mirror on box to charge bubbulfrog room sensor, leave it there
+      - _Item<Floor Switch>:
+         coord: [-3793.98, 104.49, -2773.23]
+         comment: Use a mirror to redirect light from box mirror to shock like room sensor
       - _Enemy<Shock Like>:
          coord: [-3767.83, 112.53, -2770.53]
          notes: Take pic
+      - _Item<Floor Switch>:
+         coord: [-3809.97, 105.35, -2746.82]
       - _Bubbulfrog::ValleyofSilentStatues
       - _Cave::ValleyofSilentStatues00
       - _Special<Patricia>:
@@ -2978,9 +2992,9 @@ _route:
       - _MainQuest::RijuofGerudoTown:
          coord: [-3782.48, 137.99, -2639.96]
          notes: Take pic of sword before talking to Riju
+      - _Place::KaraKaraBazaar
 
    - Kara Kara Bazaar:
-      - _Place::KaraKaraBazaar
       - _Equipment::Weapon<Gerudo Spear>:
          coord: [-3268.34, 131.97, -2599.84]
          comment: Fuse ruby
@@ -3127,7 +3141,7 @@ _route:
          coord: [-4602.56, 164.1, -3657.67]
 
    - Third Battery:
-      - Ascend to Next Level:
+      - Ascend to Room Above:
          movements:
             - to: [-4580, 162, -3672]
             - to: [-4555, 194, -3650]
@@ -3143,6 +3157,7 @@ _route:
          coord: [-4541.18, 192.67, -3600.25]
       - _Item<Sliding Statue>:
          coord: [-4495.22, 192.67, -3600.95]
+         comment: Use Tulin to clear sand from this statue
       - _Item<Sliding Statue>:
          coord: [-4495.93, 192.67, -3622.88]
       - _Item<Floor Switch>:
