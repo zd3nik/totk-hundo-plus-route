@@ -2882,7 +2882,7 @@ _route:
          comment: Break Gerudo Claymore
       - _SagesWill::Gerudo
 
-   - Save Isha:
+   - Gerudo Town:
       - _Location::TorumaDunes:
          hide-icon-on-map: true
       - _Enemy::Molduga::SG04
@@ -2896,6 +2896,195 @@ _route:
          coord: [-3940.91, 191.46, -2934.61]
       - _Shrine<Activate Soryotanog Shrine>:
          coord: [-3882.2, 242.2, -2962.55]
+      - _Place::GerudoTown:
+         hide-icon-on-map: true
+      - _Special<Drop Flying Machine Here>:
+         coord: [-3793.48, 137.72, -2641.96]
+         comment: Then paraglide back to next objective
+
+   - Gerudo Secret Club:
+      - _Korok::GC31
+      - Drop Into Hole:
+         movements:
+            - to: [-3840.98, 148.59, -2849.09]
+      - _Korok::GC30
+      - _Item<Orb>:
+         coord: [-3781.25, 153.03, -2899.79]
+         comment: Move it toward throne room
+      - _Equipment::Weapon<Gerudo Spear>:
+         coord: [-3781.71, 153.11, -2899.3]
+         comment: Fuse thunder gleeok horn
+         notes: Take pic
+      - _Enemy<Gibdo>:
+         coord: [-3768.5, 148.98, -2922.5]
+         notes: Take pic
+      - Drop Into Hole:
+         movements:
+            - to: [-3794.48, 148.59, -2906.16]
+         comment: Ascend into secret shop
+      - Ascend Into Secret Shop:
+         movements:
+            - to: [-3793, 149.36, -2920]
+      - _Npc::Greta
+      - _Item<Sand Boots>:
+         coord: [-3787.04, 149.57, -2918.65]
+      - _Item<Snow Boots>:
+         coord: [-3788.32, 149.57, -2917.33]
+      - _Item<Desert Voe Spaulder>:
+         coord: [-3794.3, 149.57, -2924.6]
+      - _Item<Desert Voe Trousers>:
+         coord: [-3792.6, 149.57, -2926.2]
+      - _Special<Secret Entrance>:
+         comment: Take orb with you
+         movements:
+            - to: [-3813, 151, -2917]
+            - to: [-3892.11, 150.93, -2972.66]
+
+   - Riju:
+      - _SideQuest::TheMissingOwner:
+         coord: [-3873.77, 139.43, -2965]
+      - _SideQuest::TheHeroinesSecret:
+         coord: [-3886, 33, -2971]
+      - Bomb Wall:
+         movements:
+            - to: [-3892.04, 137.4, -2995.5]
+      - _Special<Monument to Seven Heroines>:
+         coord: [-3889.34, 137.78, -2998.3]
+         comment: Behind bombed wall
+         notes: Take pic
+      - _Item<Radiant Shield>:
+         coord: [-3899.29, 137.45, -2995.71]
+         notes: Take pic
+      - _Special<Monument to Seven Heroines>:
+         coord: [-3865.1, 140.8, -2982.35]
+         comment: Stand at empty voe spot in classroom
+         notes: Take pic
+      - _Chest<Purple Rupee>:
+         coord: [-3841.14, 137.98, -2965.63]
+      - _Special<Sand Seal>:
+         coord: [-3853.2, 137.63, -2960.61]
+         notes: Take pic
+      - _Special<Monument to Seven Heroines>:
+         coord: [-3853.4, 135.1, -2944.33]
+         notes: Take pic
+      - _Enemy<Shock Like>:
+         coord: [-3767.83, 112.53, -2770.53]
+         notes: Take pic
+      - _Bubbulfrog::ValleyofSilentStatues
+      - _Cave::ValleyofSilentStatues00
+      - _Special<Patricia>:
+         coord: [-3793.48, 137.72, -2641.96]
+         notes: Take pic
+      - _MainQuest::RijuofGerudoTown:
+         coord: [-3782.48, 137.99, -2639.96]
+         notes: Take pic of sword before talking to Riju
+
+   - Kara Kara Bazaar:
+      - _Place::KaraKaraBazaar
+      - _Equipment::Weapon<Gerudo Spear>:
+         coord: [-3268.34, 131.97, -2599.84]
+         comment: Fuse ruby
+      - _Shop::GeneralStore12
+      - _Shop::ArmorShop01:
+         comment: Buy voe headband
+      - _Shop::GeneralStore13:
+         comment: Buy lizalfos tails
+      - _Shrine::Mayatat
+      - _Chest<Arrows>:
+         coord: [-3232.4, 128.88, -2518.94]
+      - _SideQuest::DecoratewithPassion:
+         coord: [-3226.39, 129.06, -2517.8]
+      - _Npc::Beedle
+      - _Shop::Inn05:
+         hide-icon-on-map: true
+      - _Shop::GeneralStore11:
+         comment: Rocket shield up to platform
+      - _Korok::GC25
+      - _Cave::OasisSource00
+
+   - Lost in the Dunes:
+      - _SideQuest::LostintheDunes:
+         coord: [-3335, 110.73, -2676.75]
+      - _Enemy<Stone Pebblit>:
+         coord: [-3273.12, 114.3, -2660.47]
+         notes: Take pic
+      - _Bubbulfrog::OasisSource
+      - _Well::KaraKaraBazaar
+      - _SideQuest<Complete Lost in the Dunes>:
+         coord: [-3274, 129.38, -2585.5]
+      - _Special<Build Fan Sled>:
+         coord: [-3297.8, 129.27, -2552.8]
+         comment: Fuse orb to sled
+      - Ride Sled to Gerudo Town:
+         movements:
+            - to: [-3612, 171, -2480]
+            - to: [-3791, 150, -2870]
+      - _MainQuest<Talk to Riju>:
+         coord: [-3862.07, 156.3, -2944.15]
+         comment: Move orb to throne room
+
+   - Battle at Gerudo Town:
+      - _Item<Stuff>:
+         coord: [-3844.28, 149.37, -2971.73]
+         comment: Collect all the stuff
+      - _Equipment::Bow<Gerudo Bow>:
+         coord: [-3860.02, 150.55, -2979.17]
+         notes: Take pic
+      - _Equipment::Weapon<Gerudo Scimitar>:
+         coord: [-3862.2, 150.33, -2981.21]
+         comment: Collect but DO NOT USE
+         notes: Take pic
+      - _Chest<Silver Rupee>:
+         coord: [-3864.97, 149.37, -2984.06]
+      - _Chest<Electric Lizalfos Horn>:
+         coord: [-3866.27, 149.37, -2985.35]
+      - _Chest<Topaz>:
+         coord: [-3867.6, 149.37, -2986.64]
+         comment: Fuse thunder gleeok horn to gerudo spear
+      - _Special<Electric Lizalfos Horn>:
+         coord: [-3909.62, 149.68, -2933.82]
+         notes: Take pic
+      - _Npc::Teake_01:
+         notes:
+            - Spear tropps at west gate
+            - Sword troops at east gate
+            - Canoneer at north gate
+      - _MainQuest<Start the Battle>:
+         coord: [-3887.35, 157.48, -2968]
+      - _Special<Farosh Horn>:
+         coord: [-3846.63, 149.68, -2925.29]
+         notes: Take pic
+      - _Enemy<Gibdo Nest>:
+         coord: [-3731.63, 146.48, -2973.29]
+      - _Enemy<Gibdo Nest>:
+         coord: [-3758.63, 146.48, -2837.29]
+      - _Enemy<Gibdo Nest>:
+         coord: [-3946.63, 146.48, -2850.29]
+
+   - Thunder Temple:
+      - _Warp::Special<Gerudo Town>:
+         coord: [-3887.35, 157.48, -2962]
+      - _Item<Orb>:
+         coord: [-3878, 156, -2960]
+      - _Special<Secret Entrance>:
+         comment: Take orb with you
+         coord: [-3892.11, 150.93, -2972.66]
+      - _MainQuest<Talk to Riju>:
+         coord: [-3900.08, 140.73, -2978.17]
+         comment: Ascend
+
+
+
+
+
+      #- _Shop::GeneralStore01
+      #- _Shop::GeneralStore05
+      #- _Shop::GeneralStore03
+      #- _Shop::GeneralStore02
+      #- _Shop::Inn
+      #- _Shop::JewelryShop
+      #- _Shop::GeneralStore04
+      #- _Shop::Canteen
 
 
 
