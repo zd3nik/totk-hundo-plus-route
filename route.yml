@@ -2992,6 +2992,8 @@ _route:
       - _MainQuest::RijuofGerudoTown:
          coord: [-3782.48, 137.99, -2639.96]
          notes: Take pic of sword before talking to Riju
+      - _Location::NorthGerudoRuins:
+         hide-icon-on-map: true
       - _Place::KaraKaraBazaar
 
    - Kara Kara Bazaar:
@@ -3196,6 +3198,118 @@ _route:
       - _Enemy<Queen Gibdo>:
          coord: [-4494.77, 232.67, -3587.74]
 
+   - Pride of the Gerudo:
+      - _Warp::Special<Gerudo Town>:
+         coord: [-3887.35, 157.48, -2968]
+      - Reload From Autosave:
+         comment: This rounds all the kids up for class
+      - _Npc::Ashai<Attend Class>:
+         comment: Ascend
+      - _Item<Gibdo Parts>:
+         coord: [-3851.66, 149.18, -2989.89]
+      - _Shop::GeneralStore01:
+         comment: Buy wheat and rice
+      - _Shop::GeneralStore05:
+         hide-icon-on-map: true
+      - _Shop::GeneralStore03:
+         hide-icon-on-map: true
+      - _Shop::GeneralStore02:
+         hide-icon-on-map: true
+      - _Shop::Inn:
+         hide-icon-on-map: true
+      - _SideQuest::PrideoftheGerudo:
+         coord: [-3828.5, 149.5, -2885]
+         comment: Take pic of shield
+      - _Shop::Canteen:
+         comment: Buy Noble Persuit, Ascend
+      - _Enemy<Boko x2>:
+         coord: [-3623.93, 144.69, -2857.45]
+      - _Special<Electric Chuchu>:
+         coord: [-3662.35, 145.61, -2854.38]
+         notes: Take pic
+      - _Chest<Large Zonai Charge>:
+         coord: [-3597.2, 145.8, -2834.54]
+         comment: Ascend
+      - _Korok::GC29
+      - _Location::DesertRift:
+         coord: [-3500, 146.86, -2850]
+      - _Korok::GC34::Trail
+      - _Chest<Large Zonai Charge>:
+         coord: [-3589.93, 135.64, -3023.71]
+
+   - Hide and Seek:
+      - _Warp::Shrine::Soryotanog<Warp to Soryotanog Shrine>
+      - _Shop::GeneralStore04:
+         hide-icon-on-map: true
+      - _SideQuest::DaliasGame:
+         coord: [-3813.5, 149.5, -2872.5]
+      - _SideQuest<Dalia's Game>:
+         coord: [-3879.5, 139.75, -2950.5]
+
+   - Orb Collector:
+      - _Item<Orb>:
+         coord: [-3813.5, 149.5, -2872.5]
+      - _Item<Orb>:
+         coord: [-3800.5, 164.5, -2970.5]
+         comment: Under sand pile above kitchen
+      - _Item<Orb>:
+         comment: In cubby above beds
+         movements:
+            - to: [-3866.94, 139.28, -2945.45]
+            - to: [-3876.5, 139.43, -2957]
+            - to: [-3910.88, 143.03, -2929.15]
+      - _Item<Orb>:
+         coord: [-3903.8, 136.08, -2914.92]
+         comment: In lounge area
+      - _Item<Monument to Seven Heroines>:
+         coord: [-3885, 139.95, -2925]
+         comment: Ascend into prison from underneath
+         notes: Take pic
+      - _Item<Orb>:
+         coord: [-3887.75, 139.87, -2973.25]
+         comment: Show Rotana your pics
+      - _Npc::Rotana:
+         coord: [-3834.19, 136.98, -2974.76]
+         comment: Place orbs on statues
+
+   - The Smiling Face:
+      - _SideQuest::TheMysteriousEighth:
+         coord: [-3805.15, 129.72, -2969.97]
+         comment: Make night
+      - Move ball toward the exit:
+         movements:
+            - to: [-3846.76, 137.86, -2962.07]
+            - to: [-3865, 139.26, -2975]
+      - _Npc::Ashai<Attend Adult Class>:
+         comment: Complete all lectures, Repeat 1 to get smiling face
+      - _GoddessStatue::GerudoTown
+      - Continue moving the ball:
+         movements:
+            - to: [-3866.94, 139.28, -2945.45]
+            - to: [-3781.75, 148.56, -2860.5]
+      - _Cave::GerudoSanctuary00:
+         comment: Leave ball somewhere north of cave
+      - _Bubbulfrog::GerudoSanctuary:
+         comment: Ascend, Retrieve ball
+      - _Cave::GerudoSanctuary01
+      - _SideQuest<Complete the Mysterious Eighth>:
+         coord: [-3763.38, 113.11, -2534.08]
+      - _Chest<Gold Rupee>:
+         coord: [-3762.92, 114.62, -2531.73]
+      - _Item<Gerudo Scimitar>:
+         coord: [-3768.98, 115.29, -2537.41]
+         comment: Ascend
+
+   - Ice House:
+      - _Korok::GC20
+      - _Item<Torch>:
+         coord: [-3751.87, 146.37, -2304.39]
+         comment: Use ultrahand to light it and move it inside
+      - _Location::NorthernIcehouse
+      - _SideQuest::TheIcelessIcehouse:
+         coord: [-3752, 139.5, -2277.5]
+         comment: Ascend
+      - _Korok::GC15
 
 
 
