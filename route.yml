@@ -2677,7 +2677,7 @@ _route:
          coord: [1477.13, 628.59, -2008.65]
          comment: Fuse rockets to shields
 
-   - GSi Crystal Refinery:
+   - GSI Crystal Refinery:
       - _Warp::Shrine::Nachoyah<Warp to Nachoyah Shrine>
       - _Shop::CrystalRefinery
 
@@ -3430,10 +3430,339 @@ _route:
          comment: Complete mini-game
       - _Shrine::Karahatag
 
+   - Dinraal Farming 2:
+      - _Warp::Shrine::Mogisari<Warp to Mogisari Shrine>:
+         comment: Make night
+         level: Sky
+      - _Material<Star Fragment>:
+         coord: [4643, 1200, 3380]
+      - _Material<Dinraal Claw>:
+         coord: [4636, 1200, 3288]
 
+   - Lotus Farming 1:
+      - _Warp::Tower::RabellaWetlands<Warp to Rabella Wetlands Tower>
+      - _Item<Wood>:
+         coord: [2437.92, 323.02, -2789.97]
+      - _Item<Fleet-Lotus Seeds>:
+         coord: [2470.18, 320.41, -2742.76]
+      - _Item<Fleet-Lotus Seeds>:
+         coord: [2368.33, 320.42, -2821.39]
+      - _Item<Fleet-Lotus Seeds and Frogs>:
+         coord: [2381.1, 320.41, -2856.94]
 
+   - Naydra Farming 3:
+      - _Warp::Shrine::Yansamin<Warp to Yansamin Shrine>:
+         level: Sky
+      - _Item<Campfire>:
+         coord: [2389.04, 1588.74, -1712.46]
+         comment: Make night
+      - _Material<Star Fragment>:
+         coord: [2500, 1500, -1690]
+      - _Material<Naydra Claw>:
+         coord: [2600, 1300, -1670]
 
+   - Lynel Run 4:
+      - _Warp::Lightroot::Ui-ihcoj<Warp to Ui-ihcoj Lightroot>
+      - _Enemy::Lynel<x1>:
+         coord: [4212.09, -467.54, 2721.1]
+      - _Warp::Lightroot::Mu-ustust<Warp to Mu-ustust Lightroot>
+      - _Enemy::Lynel<x1>:
+         coord: [-1438.63, -379.5, -1261.72]
+      - _Enemy::Lynel<x5>:
+         coord: [-1151.85, -393.54, -1263.46]
+      - _Warp::Lightroot::Kimakarut<Warp to Kimakarut Lightroot>
+      - _Enemy::Lynel<x1>:
+         coord: [-2798.87, -376.93, -2238.38]
 
+   - Rocket Reload 2:
+      - _Warp::Shrine::Rakashog<Warp to Rakashog Shrine>:
+         level: Sky
+      - _Item<Rockets>:
+         coord: [-1820.55, 1075.09, -2212.26]
+         comment: Fuse rockets to shields
+
+   - Farosh Farming 1:
+      - _Warp::Tower::GerudoCanyon<Warp to Gerudo Canyon Tower>:
+         level: Surface
+      - _Special<Cook>:
+         coord: [-2431.27, 407.04, -2195.22]
+         comment: Speed food, Make night
+      - _Warp::Tower<Use Gerudo Canyon Tower>:
+         coord: [-2438.85, 405.62, -2182.76]
+      - _Material<Star Fragment>:
+         coord: [-2500, 1200, -2300]
+      - _Material<Farosh Claw>:
+         coord: [-2600, 1000, -2450]
+
+   - Light Dragon Farming 2:
+      - _Warp::Shrine::Mayasiar<Warp to Mayasiar Shrine>:
+         comment: Ascend
+         level: Sky
+      - _Material<Light Dragon>:
+         coord: [-3573.1611, 2000, -607.9292]
+
+   - Faron Sky Archipelago:
+      - _Warp::Shrine::Nachoyah<Warp to Nachoyah Shrine>
+      - _Shop<Upgrade Battery>:
+         coord: [357.1684, 2410.9617, -1651.3439]
+         comment: Ascend
+      - _Item<Energetic Rhino Beetle>:
+         coord: [362.29, 2430.58, -1631.77]
+      - _Enemy::FluxConstruct::SC04
+      - _SagesWill::Faron_01
+      - _Location::FaronSkyArchipelago:
+         hide-icon-on-map: true
+      - _Korok::PFS01
+      - _Shrine::En-oma::Start
+      - _Tablet::S04:
+         notes: Take pic
+
+   - Lake Hylia Whirlpool:
+      - _Korok::HF75
+      - _Enemy::Gleeok::G08
+      - _Location::BridgeofHylia:
+         hide-icon-on-map: true
+         notes: Take pic of whirlpool
+      - _Korok::PF31
+      - _Korok::PF33
+      - _Location::LakeHylia03:
+         hide-icon-on-map: true
+      - _Cave::LakeHyliaWhirlpool00
+
+   - En-oma Shrine:
+      - _Shrine::En-oma
+      - _Bubbulfrog::LakeHyliaWhirlpoolCave
+      - Swim up Waterfall:
+         movements:
+            - to: [125.75, 15.91, -2501.45]
+
+   - Popla Foothills:
+      - _Item<Boulder>:
+         coord: [282.21, 95.93, -2404.09]
+      - _Korok::PF26
+      - _Location::FaroshHills:
+         hide-icon-on-map: true
+      - _Korok::PF28
+      - _Enemy::BokoBoss::G30
+      - _Npc::Hino_01
+      - _Korok::PF25
+      - _Well::PoplaFoothillsSouth
+      - _Cave::PoplaFoothillsExcavationSite00
+      - _Chest<Topaz>:
+         coord: [567.16, 158.42, -2149.95]
+      - _Bubbulfrog::PoplaFoothillsExcavationSite
+      - _Npc::Elmerson_02
+      - _Well::PoplaFoothillsNorth:
+         comment: Ascend
+      - _Tower::PoplaFoothills
+
+   - Dragonhead Isle:
+      - _Enemy<Soldier Construct I>:
+         coord: [945.43, 665.73, -2088.62]
+         level: Sky
+      - _Item<Fans>:
+         coord: [928.82, 665.44, -2134.68]
+         comment: Build flying machine
+      - _Shrine::Joku-u
+
+   - Guidance from Ages Past:
+      - _GoddessStatue::DragonHead:
+         level: Sky
+      - Open the Door:
+         movements:
+            - to: [1365.3, 534, -3281.16]
+      - _MainQuest::GuidancefromAgesPast:
+         coord: [1364, 431, -3262]
+      - _SagesWill::ThunderheadIsles_01
+      - _Korok::PFS03
+      - _Item<Decayed Construct>:
+         coord: [1342.51, 570.55, -3420.16]
+      - _Item<Big Hearty Radish>:
+         coord: [1357.27, 569.01, -3431.69]
+      - _Item<Zapshroom>:
+         coord: [1390.77, 574.49, -3405.8]
+      - _Item<Shock Fruit>:
+         coord: [1445.68, 569.36, -3326.41]
+      - _Dispenser::S02:
+         comment: Get LOTS of fans and steering sticks
+      - _Item<Rockets>:
+         coord: [1403.63, 523.91, -3225.72]
+         comment: Fuse rockets to shileds
+      - _Item<Wing>:
+         coord: [1389.36, 523.21, -3209.37]
+         comment: Build flying wing with Mineru head attached
+
+   - Tobio's Hollow Chasm:
+      - _Location::TobiosHollow:
+         coord: [1319.1, 188.22, -2465.91]
+      - _Chasm::TobiosHollow
+
+   - Construct Factory:
+      - _Warp::Special<Construct Factory>:
+         coord: [868, -446.25, -2227.2]
+      - _Lightroot::Muokuij
+      - _Location::ConstructFactory:
+         comment: Ascend
+      - _Poe::Large:
+         coord: [841.75, -420.39, -2141.98]
+      - _Enemy<Soldier Construct II>:
+         coord: [837.5, -436.06, -2132.97]
+      - _Poe::Large:
+         coord: [839, -434.21, -2109.73]
+      - _Poe::Grand:
+         coord: [854.5, -435.74, -2098.73]
+      - _Poe::Large:
+         coord: [880, -435.31, -2093.73]
+      - _Poe::Large:
+         coord: [894.24, -419.43, -2128.13]
+      - _Enemy<Soldier Construct II>:
+         coord: [897.5, -436.43, -2133.15]
+         comment: Ascend
+      - _Poe::Large:
+         coord: [882.5, -401.67, -2138.73]
+      - _Poe::Large:
+         coord: [852, -388.45, -2137.73]
+      - _Poe::Large:
+         coord: [857.5, -435.48, -2129.73]
+      - _Chest<Zonaite Shiled>:
+         coord: [863.01, -388.01, -2133.21]
+      - _Chest<Zonaite Sword>:
+         coord: [873.07, -388.01, -2133.17]
+         comment: Ascend
+      - _Poe::Grand:
+         coord: [868.01, -368.34, -2124.73]
+      - _Poe::Grand:
+         coord: [859, -368.18, -2115.73]
+      - _Poe::Grand:
+         coord: [881.27, -435.06, -2116.9]
+
+   - Wellspring of Courage:
+      - _Lightroot::Uisihcoj
+      - _Item<Steering Stick and Fans>:
+         coord: [868.11, -352.63, -1828.44]
+         comment: Build flying machine
+      - _Enemy::Hinox::DF01:
+         notes: Take pic of giant boomerang
+         comment: Collect giant boomerang
+      - Fly to Yiga Hideout:
+         movements:
+            - to: [450, -370, -1800]
+            - to: [200, -370, -1830]
+            - to: [236.8, -351.29, -2144.02]
+      - _Poe::Grand:
+         coord: [236.8, -351.29, -2144.02]
+      - _YigaSchema::BeamSpinner
+      - _LockedChest::D56:
+         hide-icon-on-map: true
+      - _LockedChest::D55:
+         hide-icon-on-map: true
+      - _Lightroot::Busus
+      - Fly to Bargainer Statue:
+         movements:
+            - to: [342.02, -362.13, -2361.88]
+            - to: [883.0049, -281.0164, -2398.976]
+      - _Shop::BargainerStatue04
+      - _Location::WellspringofCourage
+      - _Location::DracozuAltar
+
+   - Left Arm Depot:
+      - Fly to left arm depot:
+         coord: [903.53613, -252.98978, -2488.2598]
+      - _Location::LeftArmDepot:
+         comment: Drop flying machine near depot exit
+      - _Special<Deliver Left Arm>:
+         coord: [868.6846, -465.19604, -2174.232]
+
+   - Right Arm Depot:
+      - _Enemy::BokoBoss::D23:
+         comment: Break giant boomerang
+      - _Location::RightArmDepot:
+         comment: Drop flying machine near depot exit
+      - _Special<Deliver Right Arm>:
+         coord: [868.6846, -465.19604, -2174.232]
+
+   - Right Leg Depot:
+      - _Enemy<Soldier Construct II>:
+         coord: [938, -456, -2174]
+      - _Location::RightLegDepot:
+         comment: Drop flying machine near depot exit
+      - _Special<Deliver Right Leg>:
+         coord: [868.6846, -465.19604, -2174.232]
+
+   - Left Leg Depot:
+      - _Enemy<Boko x3>:
+         coord: [997.04, 219.96, -2233.08]
+      - _Location::LeftLegDepot:
+         comment: Drop flying machine near depot exit
+      - _Dispenser::D01
+      - _Special<Deliver Right Leg>:
+         coord: [868.6846, -465.19604, -2174.232]
+
+   - Another Farosh Claw:
+      - _Equipment::Weapon<Longsword>:
+         coord: [730.16, -349.61, -2734.63]
+      - _Equipment::Weapon<Sword>:
+         coord: [684.52, -345.57, -3052.95]
+      - _Lightroot::Kohsustu
+      - _Equipment::Weapon<Spear>:
+         coord: [626.82, -384.16, -3537.49]
+      - _Enemy::Lynel::D12
+      - _Enemy::BokoBoss::D25
+      - _Equipment::Weapon<Longsword>:
+         coord: [565, -385.32, -3318.06]
+      - _Equipment::Weapon<Sword>:
+         coord: [513.58, -374.43, -3152.49]
+      - _Material<Farosh Claw>:
+         coord: [550, -300, -3000]
+
+   - Spirit Temple:
+      - _YigaSchema::WaterFreezer
+      - _LockedChest::D58:
+         hide-icon-on-map: true
+      - _LockedChest::D57:
+         hide-icon-on-map: true
+      - _Enemy::BokoBoss::D24
+      - _Equipment::Weapon<Spear>:
+         coord: [131.79, -340.66, -3845.05]
+      - _Enemy::FluxConstruct::DF01
+      - _Warp::Lightroot::Kohsustu<Warp to Kohsustu Lightroot>
+      - _Enemy::Frox::DF03
+      - _Enemy::Talus::DF02
+      - _Equipment::Weapon<Sword>:
+         coord: [1110.06, -361.31, -3389.09]
+      - _Lightroot::U-u-ujoj
+      - _Enemy::Lynel::D15
+      - _Enemy::Hinox::DF07
+      - _Equipment::Weapon<Sword>:
+         coord: [2040, -340.17, -3782.74]
+      - _Equipment::Weapon<Sword>:
+         coord: [1998.39, -349.36, -3647.02]
+      - _Enemy::BokoBoss::D30
+      - _Equipment::Weapon<Sword>:
+         coord: [1936.3, -352.58, -3455.04]
+      - _Enemy::Frox::DL02:
+         notes: Take pic
+      - _Enemy::BokoBoss::D32
+      - _Chest<Large Crystallized Charge>:
+         coord: [1912.07, -687.67, -2808.08]
+      - _Location::FloriaCanyonMine:
+         hide-icon-on-map: true
+      - _Equipment::Weapon<Spear>:
+         coord: [1739.87, -574.46, -2900.96]
+      - _Enemy::Hinox::DF06
+      - _Enemy::BokoBoss::D29
+      - _Poe::Grand:
+         coord: [1418.56, -455.85, -3170.54]
+      - _Temple::Spirit:
+         comments: Cook gloom protection food
+      - _Enemy<Seized Construct>:
+         coord: [1372.35, -637, -3297.73]
+         notes: Take pic
+      - _MainQuest::TrailoftheMasterSword:
+         coord: [1348, -736, -3363]
+      - _Shop::SmithingConstruct
+      - _SideQuest::AncientBladesBelow:
+         coord: [1334, -632, -3367.41]
 
 
 
