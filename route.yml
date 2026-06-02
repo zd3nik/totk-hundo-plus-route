@@ -1990,6 +1990,7 @@ _route:
    - Sokkala Sky Archipelago:
       - _Tablet::S11:
          comment: Use wings and rocket shields to get up to tablet
+         notes: Take pic
       - _Location::SokkalaSkyArchipelago:
          hide-icon-on-map: true
       - _Shrine::Natak::Start
@@ -2281,7 +2282,8 @@ _route:
       - _Special<Launcher>:
          coord: [1928.63, 1376.79, 1211.52]
       - _Korok::ECS01
-      - _Tablet::S00
+      - _Tablet::S00:
+         notes: Take pic
       - _Enemy::Gleeok::G04:
          notes: Take pic
 
@@ -2714,7 +2716,8 @@ _route:
       - _Enemy::FluxConstruct::SH01:
          notes: Take pic
       - _OldMap::Hebra
-      - _Tablet::S02
+      - _Tablet::S02:
+         notes: Take pic
       - _OldMap::Hebra_02
       - _Location::WestHebraSkyArchipelago:
          hide-icon-on-map: true
@@ -2854,7 +2857,8 @@ _route:
       - _Enemy::Gleeok::G06
       - _Korok::GH20::Trail
       - _Korok::GH17
-      - _Tablet::S08
+      - _Tablet::S08:
+         notes: Take pic
       - _Enemy::BokoBoss::G05:
          notes: Take pic of Gerudo Claymore
       - _Korok::GH26
@@ -3301,6 +3305,130 @@ _route:
          comment: Ascend
       - _Korok::GC15
 
+   - South Hyrule Sky Archipelago:
+      - _Warp::Tower::HyruleField<Warp to Hyrule Field Tower>:
+         level: Sky
+      - _Tower::HyruleField
+      - _Korok::HFS02
+      - _Location::SouthHyruleSkyArchipelago:
+         hide-icon-on-map: true
+      - _Enemy<Soldier Construct I>:
+         coord: [-831.51, 1041.79, -1641.43]
+      - _OldMap::SouthHyrule_02
+      - _Enemy<Soldier Construct I>:
+         coord: [-838.56, 966.99, -1551.38]
+         comment: Fuse rocket to platform to reach next island
+      - _Enemy<Soldier Construct II>:
+         coord: [-900.97, 1111.67, -1730.36]
+      - _SagesWill::SouthHyrule
+      - _Item<Fans>:
+         coord: [-1019.56, 1124.02, -1720.11]
+         comment: Build flying machine
+      - _Tablet::S10:
+         notes: Take pic
+      - _OldMap::SouthHyrule_01
+      - _Korok::HFS01
+      - _Dispenser::S10
+      - _Item<Controller>:
+         coord: [-1273.35, 1121.28, -1448.08]
+      - _OldMap::SouthHyrule
+      - _Shrine::Jinodok::Start
+
+   - East Gerudo Sky Archipelago:
+      - _Shrine::Jinodok
+      - _Enemy::FluxConstruct::SC03
+      - _OldMap::SouthHyrule_03
+      - _Special<Starting Block>:
+         coord: [-1829.72, 1305.17, -1917.68]
+         comment: Leave flying machine here
+      - _Korok::GCS01
+      - _OldMap::SouthHyrule_04:
+         comment: Ascend
+
+   - Farosh:
+      - _SagesWill::SouthHyrule_01:
+         comment: Ascend
+      - Rocket Shield Up and Tulin Gust Over to Flying Machine:
+         movements:
+            - to: [-1829.72, 1305.17, -1917.68]
+      - _Dispenser::S16
+      - _Special<Take Pic of Smiling Spectacle Rock>:
+         coord: [-1845, 1254, -2111]
+      - _Shrine::Rakashog
+      - _Item<Rockets>:
+         coord: [-1820.33, 1075.18, -2213.3]
+         comment: Fuse rockets to shields
+      - _Location::EastGerudoSkyArchipelago:
+         hide-icon-on-map: true
+      - _Material<Farhos Claw>:
+         coord: [-2640, 1000, -2100]
+         notes: Take pic
+
+   - Gerudo Sky:
+      - _Tower::GerudoCanyon
+      - _Item<Fans>:
+         coord: [-2232.34, 1227, -2398.13]
+         comment: Build flying machine
+      - _Shrine<Activate Siyamotsus Shrine>:
+         coord: [-1795, 1130.29, -3294.6]
+      - _Location::SouthLomeiCastleTopFloor:
+         hide-icon-on-map: true
+      - _Tablet<Drop Tablet>:
+         coord: [-2446.8015, 1107.847, -3256.551]
+
+   - Siwakama Shrine:
+      - _Tablet::S05:
+         level: Surface
+         notes: Take pic
+      - _Korok::GC40
+      - _Chasm::EastGerudo
+      - _Shrine::Siwakama
+
+   - Sand Pits:
+      - _Enemy::Molduga::SG03:
+         notes: Take pic
+      - _Korok::GC50::Start
+      - _Cave::AncientAltarRuins04:
+         comment: Drop flying machine near south-west sand pit
+         notes: Take pic of sand pit
+      - _Bubbulfrog::AncientAltarRuins
+      - _Chest::PhantomGreaves:
+         comment: Ascend
+      - _Cave::AncientAltarRuins09
+      - _Cave::AncientAltarRuins03
+      - _Cave::AncientAltarRuins05
+      - _Cave::AncientAltarRuins01
+      - _Cave::AncientAltarRuins11
+      - _Cave::AncientAltarRuins08
+      - _Cave::AncientAltarRuins07
+      - _Cave::AncientAltarRuins10
+      - _Cave::AncientAltarRuins00
+      - _Cave::AncientAltarRuins06
+      - _Cave::AncientAltarRuins02
+      - _Enemy<Shock Like>:
+         coord: [-2617.82, 78.42, -3748.01]
+         comment: Ascend
+
+   - Desert Race:
+      - _Korok::GC50::End
+      - _Korok::GC51
+      - _Addison::A16
+      - _Cave::SouthGerudo00
+      - _LockedChest::G51
+      - _Bubbulfrog::SouthGerudoCave:
+         comment: Ascend
+      - _Enemy::Molduga::SG02
+      - _Special<Starting Block>:
+         coord: [-3422.28, 189.83, -3119.48]
+      - _Korok::GC37
+      - _Addison::A08
+      - _Korok::GC42::Start
+      - _Cave::CentralGerudo00
+      - _Bubbulfrog::CentralGerudoCave
+      - _Korok::GC42::End
+      - _Location::SouthernOasisTrainingArea:
+         comment: Complete mini-game
+      - _Shrine::Karahatag
 
 
 
