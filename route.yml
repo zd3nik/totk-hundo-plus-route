@@ -3785,7 +3785,7 @@ _route:
          comment: Fuse rockets to shields
       - _Material<Star Fragment>:
          coord: [-1900, 1050, -2100]
-      - _Material<Dinraal Claw>:
+      - _Material<Farosh Claw>:
          coord: [-2000, 1000, -2000]
 
    - Dinraal Farming 3:
@@ -3984,7 +3984,7 @@ _route:
          coord: [-253, 126.36, 155]
       - _MainQuest::DestroyGanondorf
 
-   - Sepapa Shrine:
+   - Ren-iz Shrine:
       - _Shop<Upgrade Bettery>:
          coord: [-219.2, 143.64, 191.85]
       - _Cave::PasseriGreenbelt00:
@@ -4030,9 +4030,101 @@ _route:
       - _Korok::LL32
       - _Location::HyruleCathedral
       - _Chasm::HyruleCastleMoatEast
-      - _Enemy::Frox::DC02
-      - _Shrine::Sepapa
 
+   - Apapes Lightroot:
+      - _Enemy::Frox::DC02
+      - _Lightroot::Apapes
+
+   - Naydra Farming 5:
+      - _Warp::Tower::MountLanayru<Warp to Mount Lanayru Tower>:
+         comment: Make night
+      - _Material<Star Fragment>:
+         coord: [3750, 1000, -1350]
+      - _Material<Naydra Claw>:
+         coord: [3660, 500, -1375]
+
+   - Dinraal Farming 4:
+      - _Warp::Shrine::Mogisari<Warp to Mogisari Shrine>:
+         comment: Make night
+         level: Sky
+      - _Material<Star Fragment>:
+         coord: [4643, 1200, 3380]
+      - _Material<Dinraal Claw>:
+         coord: [4636, 1200, 3288]
+
+   - Farosh Farming 3:
+      - _Warp::Shrine::Rakashog<Warp to Rakashog Shrine>:
+         comment: Make night
+         level: Sky
+      - _Item<Rockets>:
+         coord: [-1820.55, 1075.09, -2212.26]
+         comment: Fuse rockets to shields
+      - _Material<Star Fragment>:
+         coord: [-1900, 1050, -2300]
+      - _Enemy::Gleeok::G09
+      - _Material<Farosh Claw>:
+         coord: [-2490, 150, -3000]
+
+   - The Treasure Hunters:
+      - _Warp::Shrine::Sepapa<Warp to Sepapa Shrine>
+      - _Shrine::Sepapa
+      - _Location::HelmheadBridge
+      - _Korok::TR20
+      - _Korok::TR21::Start
+      - _Korok::TR21::End
+      - _Item<Treasure Chest>:
+         coord: [620, 147.66, 1316.99]
+         comment: Drop flying machine next to well
+      - _SideQuest::TheTreasureHunters:
+         coord: [601, 152, 1281.5]
+      - _Well::RauruSettlementRuins
+      - _Location::RauruSettlementRuins:
+         hide-icon-on-map: true
+      - _Korok::TR18
+      - _Cave::RauruHillside00
+      - _Bubbulfrog::RauruHillsideCave
+      - _LockedChest::G54
+
+   - Woodland Stable:
+      - _Warp::Shrine::Ekochiu<Warp to Ekochiu Shrine>
+      - _Shrine::Ekochiu
+      - _Item<White Goat>:
+         coord: [1071.75, 127.58, 1163.16]
+         notes: Take pic
+      - _Well::WoodlandStable
+      - _Place::WoodlandStable:
+         comment: Receive harness reward from Kish
+      - _SideQuest::APictureforWoodlandStable
+      - _Npc::Beedle_08
+
+   - Great Fairy Tera:
+      - _Npc::Kish:
+         comment: Take out Spot with harness
+      - _SideAdv::SerenadetoaGreatFairy:
+         coord: [1047.76, 127.66, 1146.54]
+      - _Fairy::GreatFairyFountain03<Tera>
+      - _Korok::EC46
+      - _Location::MilitaryTrainingCamp:
+         hide-icon-on-map: true
+      - _Korok::EC44
+      - _Special<Starting Block>:
+         coord: [778.39, 253.55, 1529.54]
+      - _Korok::EC41
+      - _Item<Stealthfin Trout>:
+         coord: [718.86, 230.31, 1635.6]
+         notes: Take pic
+      - _Item<Stealthfin Trout>:
+         coord: [730.45, 230.31, 1596.92]
+
+   - The Lost Woods:
+      - _Location::LostWoods:
+         movements:
+            - to: [880.35, 280.4, 1897.01]
+            - to: [744.8, 281.88, 1935.23]
+      - _Korok::EC35
+      - _Location::MinshiGrove:
+         hide-icon-on-map: true
+      - _Chasm::MinshiWoods
 
 
 
