@@ -1804,6 +1804,8 @@ _route:
       - Build Flying Wing:
          coord: [1715, 780, -1920]
       - _Shrine::Ukoojisi
+      - _Location::WestNecludaSkyArchipelago:
+         hide-icon-on-map: true
 
    - South Necluda Sky Archipelago:
       - _Dispenser::S05:
@@ -1861,6 +1863,8 @@ _route:
 
    - Kumamayn Shrine:
       - _Korok::RWS01
+      - _Location::NecludaSkyArchipelago:
+         hide-icon-on-map: true
       - _Special<Launcher>:
          coord: [2854.5, 1337.71, -2902.88]
       - _Korok::RWS02
@@ -1916,6 +1920,8 @@ _route:
       - _Special<Launcher>:
          coord: [4641.75, 1915.58, -985.13]
       - _Korok::MLS03
+      - _Location::SouthLanayruSkyArchipelago:
+         hide-icon-on-map: true
       - _Npc::Steward Construct_05:
          comment: Complete mini-game
       - _Dispenser::S24
@@ -3568,6 +3574,8 @@ _route:
          coord: [928.82, 665.44, -2134.68]
          comment: Build flying machine
       - _Shrine::Joku-u
+      - _Location::DragonheadIsland:
+         hide-icon-on-map: true
 
    - Guidance from Ages Past:
       - _GoddessStatue::DragonHead:
