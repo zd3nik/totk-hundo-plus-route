@@ -1108,6 +1108,7 @@ _route:
          coord: [-219.20, 143.64, 191.85]
       - _MainQuest<Complete Mystery In The Depths>:
          coord: [-255, 18, 150]
+      - _SchemaStone::Josha
       - _SideAdv::HatenoVillageResearchLab:
          coord: [-247.84, 124.64, 136.6]
 
@@ -1172,10 +1173,11 @@ _route:
       - _Enemy::Gleeok::G07:
          notes: Take pic
          comment: Drop flying mchine outside of colesium
+      - _Location::ColiseumRuins:
+         hide-icon-on-map: true
+      - _Cave::ColiseumRuins00
 
    - Ancient Tree Stump:
-      - _Location::ColiseumRuins
-      - _Cave::ColiseumRuins00
       - _SideQuest::MiskosTreasureofAwakeningIII:
          coord: [-1160, 34, -1271]
       - _Bubbulfrog::ColiseumRuinsCave:
@@ -3513,7 +3515,8 @@ _route:
       - _Location::FaronSkyArchipelago:
          hide-icon-on-map: true
       - _Korok::PFS01
-      - _Shrine::En-oma::Start
+      - _Shrine::En-oma::Start:
+         comment: Drop crystal into whirlpool
       - _Tablet::S04:
          notes: Take pic
 
@@ -3559,6 +3562,7 @@ _route:
    - Dragonhead Isle:
       - _Enemy<Soldier Construct I>:
          coord: [945.43, 665.73, -2088.62]
+         comment: Fuse rockets to shileds
          level: Sky
       - _Item<Fans>:
          coord: [928.82, 665.44, -2134.68]
@@ -3601,7 +3605,7 @@ _route:
       - _Warp::Special<Construct Factory>:
          coord: [868, -446.25, -2227.2]
       - _Lightroot::Muokuij
-      - _Location::ConstructFactory:
+      - _Location::ConstructFactory<Deliver Mineru Head>:
          comment: Ascend
       - _Poe::Large:
          coord: [841.75, -420.39, -2141.98]
@@ -3763,6 +3767,213 @@ _route:
       - _Shop::SmithingConstruct
       - _SideQuest::AncientBladesBelow:
          coord: [1334, -632, -3367.41]
+
+   - Farosh Farming 2:
+      - _Warp::Shrine::Rakashog<Warp to Rakashog Shrine>:
+         comment: Make night
+      - _Item<Rockets>:
+         coord: [-1820.55, 1075.09, -2212.26]
+         comment: Fuse rockets to shields
+      - _Material<Star Fragment>:
+         coord: [-1900, 1050, -2100]
+      - _Material<Dinraal Claw>:
+         coord: [-2000, 1000, -2000]
+
+   - Dinraal Farming 3:
+      - _Warp::Lightroot::Kawisar<Warp to Kawisar Lightroot>
+      - _Material<Dinraal Claw>:
+         coord: [4420, -368.81, 3200]
+
+   - Lotus Farming 2:
+      - _Warp::Tower::RabellaWetlands<Warp to Rabella Wetlands Tower>
+      - _Item<Wood>:
+         coord: [2437.92, 323.02, -2789.97]
+      - _Item<Fleet-Lotus Seeds>:
+         coord: [2470.18, 320.41, -2742.76]
+      - _Item<Fleet-Lotus Seeds>:
+         coord: [2368.33, 320.42, -2821.39]
+      - _Item<Fleet-Lotus Seeds and Frogs>:
+         coord: [2381.1, 320.41, -2856.94]
+      - _Special<Cook>:
+         coord: [2417.06, 321.57, -2871.03]
+         comment: Speed food
+
+   - Naydra Farming 4:
+      - _Warp::Shrine::Kumamayn<Warp to Kumamayn Shrine>:
+         comment: Make night
+         level: Sky
+      - _Material<Star Fragment>:
+         coord: [3200, 1100, -2725]
+      - _Material<Naydra Claw>:
+         coord: [3300, 1000, -2700]
+
+   - Register Spot:
+      - _Warp::Tower::LookoutLanding<Warp to Lookout Landing Tower>
+      - _MainQuest<Complete Regional Phenomena>:
+         coord: [-229.67, 155.57, 150.25]
+      - _SideQuest::VillageAttackedbyPirates:
+         coord: [-208.31, 124.75, 81.6]
+      - _Special<Hestu Upgrades>:
+         coord: [-229.49, 127.2, 80.14]
+      - _Item<Bird Eggs>:
+         coord: [-225.32, 133.96, 49.91]
+      - _Item<Spot>:
+         coord: [-337.56, 128.59, -53.05]
+      - _SideQuest::SpottingSpot:
+         coord: [-252.2, 124.6, 52.12]
+         comment: Register Spot
+
+   - Zelda Chase Boko Boss:
+      - _Warp::Shrine::Serutabomac<Warp to Serutabomac Shrine>
+      - _Enemy::BokoBoss::G70
+
+   - Zelda Chase Black Hinox:
+      - Drop Flying Machine Next to Serutabomac Shrine:
+         movements:
+            - to: [-171.7, 344.24, 1163.46]
+      - Drop in Through Library Roof:
+         movements:
+            - to: [-141, 330, 1095]
+      - _Enemy::Hinox::CC01
+
+   - Zelda Chase Gibdos:
+      - _Enemy<Gibdo>:
+         coord: [-162.07, 331.24, 1143.98]
+      - _Enemy<Gibdo x3>:
+         coord: [-171.7, 344.24, 1163.46]
+         comment: Ascend
+
+   - Zelda Chase Fire Lizalfos:
+      - Drop Lying Machine Near Base of Tower:
+         movements:
+            - to: [-275, 400, 1170]
+            - to: [-355, 400, 1110]
+            - to: [-372, 400, 980]
+      - _Enemy<Fire-Breath Lizalfos x3>:
+         coord: [-311.66, 406.47, 995.89]
+
+   - Zelda Chase Silver Moblin:
+      - _Equipment::Bow<Royal Guard's Bow>:
+         coord: [-310.02, 411.14, 995.25]
+      - _Equipment::Bow<Royal Guard's Bow>:
+         coord: [-387.31, 421.03, 996]
+      - Drop Down to Entrance at Base of Tower:
+         movements:
+            - to: [-398, 345, 984]
+      - _Enemy<Ice Keese x2>:
+         coord: [-352, 356.78, 991.37]
+      - _Equipment::Bow<Royal Guard's Bow>:
+         coord: [-352.82, 334.71, 991.82]
+      - _Enemy<Silver Moblin>:
+         coord: [-377.37, 345.44, 983.09]
+         comment: Ascend
+
+   - Zelda Chase Shock Likes:
+      - Fly to Hallway Entrance:
+         movements:
+            - to: [-380, 330, 870]
+            - to: [-327, 330, 880]
+            - to: [-325, 330, 890]
+      - _Enemy<Shock Likes x3>:
+            coord: [-314.25, 345.35, 940.44]
+
+   - Zelda Chase Sanctum:
+      - Fly to Sanctum:
+         movements:
+            - to: [-325, 330, 890]
+            - to: [-255, 450, 950]
+            - to: [-255, 450, 1030]
+      - _Enemy<Phantom Ganons>:
+         coord: [-254, 444.19, 1075.87]
+
+   - Equipment Collection:
+      - _Item<Gannon Bows and Weapons>:
+         coord: [-254, 441.32, 1061.37]
+      - _Equipment::Weapon<Royal Guard's Sword>:
+         coord: [-223.5, 462.53, 1056.09]
+         notes: Take pic
+      - _Equipment::Shield<Royal Guard's Shield>:
+         coord: [-223.73, 462.63, 1056.89]
+         notes: Take pic
+      - _Equipment::Weapon<Royal Guard's Spear>:
+         coord: [-226.06, 462.35, 1091.18]
+         notes: Take pic
+      - _Equipment::Bow<Royal Guard's Bow>:
+         coord: [-265, 462.47, 1081.37]
+         notes: Take pic
+      - _Equipment::Weapon<Royal Guard's Claymore>:
+         coord: [-283.2, 462.47, 1085.05]
+         notes: Take pic
+
+   - Castle Perimeter:
+      - _Location::EastPassage
+      - _Korok::LL01
+      - _Addison::A29
+      - _Location::Lockup:
+         coord: [-385, 140.5, 1120]
+         comment: Drop flying machine above lockup
+      - _Enemy<Shock Like x2>:
+         coord: [-425, 140.5, 1087]
+      - _Korok::LL04:
+         comment: Ascend
+      - _Enemy<Phantom Ganon>:
+         coord: [-501.49, 126.08, 1013.53]
+      - _Chest<Fabric>:
+         coord: [-489.72, 126.14, 1009.97]
+         comment: Ascend
+      - Drop Flying Above West Passage:
+         movements:
+            - to: [-490, 140, 900]
+      - _Location::WestPassage
+      - _Enemy::BokoBoss::G16:
+         comment: Ascend
+      - Drop Flying Machine in Moat:
+         movements:
+            - to: [-350, 100, 650]
+      - _Korok::LL30
+      - _Korok::LL31:
+         comment: Get back on flying machine
+      - _Korok::LL18
+      - _Korok::LL24
+
+   - Royal Hidden Passage:
+      - _Location::DiningHall
+      - _Enemy<Black Horriblin x2>:
+         coord: [-254, 208.44, 818.87]
+         notes: Take pic
+      - _Location::ObservationRoom
+      - _Cave::RoyalHiddenPassage01
+      - _Cave::RoyalHiddenPassage02:
+         comment: Ascend
+      - _Location::GuardsChamber
+      - _Chest::RoyalGuardUniform
+      - _Cave<Back Down into the Hidden Passage>:
+         coord: [-325.67, 159.57, 802.53]
+      - _Chest::SoldiersArmor
+      - _Chest::SoldiersHelm
+      - _Enemy::Hinox::GC02
+      - _Chest::SoldiersGreaves
+      - _SideAdv::ADealWiththeStatue:
+         coord: [-233.36, 110.21, 157.28]
+      - _Cave::RoyalHiddenPassage00
+      - _Location::EmergencyShelter<Emergency Shelter>:
+         hide-icon-on-map: True
+      - _SideAdv::WhoGoesThere:
+         coord: [-254.03, 114.3, 112.48]
+      - _SideQuest::TodaysMenu:
+         coord: [-267.22, 113.5, 100.23]
+      - _SideQuest::WANTEDStoneTalus:
+         coord: [-252.07, 113.63, 86.17]
+      - _SideQuest::WANTEDHinox
+      - _SideQuest::WANTEDMolduga
+      - _SideQuest::UnknownSkyGiant
+      - _SideQuest::UnknownThreeHeadedMonster
+      - _SideQuest::UnknownHugeSilhouette
+      - _GoddessStatue::LookoutLanding:
+         comment: Ascend
+      - _MainQuest::FindtheFifthSage:
+         coord: [-253, 126.36, 155]
+      - _MainQuest::DestroyGanondorf
 
 
 
