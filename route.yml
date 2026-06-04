@@ -3779,6 +3779,7 @@ _route:
    - Farosh Farming 2:
       - _Warp::Shrine::Rakashog<Warp to Rakashog Shrine>:
          comment: Make night
+         level: Sky
       - _Item<Rockets>:
          coord: [-1820.55, 1075.09, -2212.26]
          comment: Fuse rockets to shields
@@ -3982,6 +3983,55 @@ _route:
       - _MainQuest::FindtheFifthSage:
          coord: [-253, 126.36, 155]
       - _MainQuest::DestroyGanondorf
+
+   - Sepapa Shrine:
+      - _Shop<Upgrade Bettery>:
+         coord: [-219.2, 143.64, 191.85]
+      - _Cave::PasseriGreenbelt00:
+         comment: Drop flying machine by castle wall
+      - _LockedChest::G49
+      - _Bubbulfrog::PasseriGreenbeltCave:
+         comment: Ascend
+      - _Korok::LL43::Trail
+      - _Korok::LL41
+      - _Korok::LL38
+      - _Chest<Red Rupee>:
+         coord: [-105.23, 132.87, 334.61]
+      - _Location::CastleTownWatchtower
+      - _Addison::A37
+      - _LockedChest::G21
+      - _Enemy::BokoBoss::G27
+      - _Addison::A39
+      - _Korok::LL39
+      - _Korok::SS10
+      - _Korok::SS14
+      - _Cave::CrenelPeak00
+      - _Enemy::BokoBoss::G68
+      - _Cave<Exit Cave>:
+         coord: [1144.71, 163.02, 247.46]
+      - _Korok::SS05::Trail
+      - _Korok::SS03::Trail
+      - _Shrine::Ren-iz
+      - _Enemy<Phantom Ganon>:
+         coord: [765.72, 180.67, 750.97]
+         notes: Skip if you already got him in earlier segment
+      - _Korok::SS06
+      - _Enemy::Talus::GK02
+      - _Korok::SS08
+      - _Location::OrseddBridge
+      - _Korok::SS07::Start
+      - _Korok::SS07::End
+      - _CherryBlossom::CentralHyrule
+      - _Korok::LL36
+      - _Shrine::Yamiyo
+      - _Enemy::Talus::GC02
+      - _LockedChest::G22
+      - _Well::HyruleCastleTownRuins
+      - _Korok::LL32
+      - _Location::HyruleCathedral
+      - _Chasm::HyruleCastleMoatEast
+      - _Enemy::Frox::DC02
+      - _Shrine::Sepapa
 
 
 
