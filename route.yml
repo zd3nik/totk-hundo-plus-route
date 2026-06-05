@@ -4465,6 +4465,192 @@ _route:
       - _Chest<Forest Dweller's Bow>:
          coord: [63.81, 282.76, 1908.01]
 
+   - Farosh Farming 6:
+      - _Warp::Shrine::Rakashog<Warp to Rakashog Shrine>:
+         comment: Make night
+         level: Sky
+      - _Material<Star Fragment>:
+         coord: [-1900, 1050, -2100]
+      - _Material<Farosh Claw>:
+         coord: [-2000, 1000, -2000]
+
+   - Naydra Farming 8:
+      - _Warp::Tower::MountLanayru<Warp to Mount Lanayru Tower>:
+         comment: Make night
+      - _Material<Star Fragment>:
+         coord: [3750, 1000, -1350]
+      - _Material<Naydra Claw>:
+         coord: [3660, 500, -1375]
+
+   - Dinraal Farming 7:
+      - _Warp::Lightroot::Sikutamak<Warp to Sikutamak Lightroot>
+      - _Material<Dinraal Claw>:
+         coord: [3550, -350, 3450]
+   - Light Dragon Farming 4:
+      - _Warp::Shrine::Jinodok<Warp to Jinodok Shrine>:
+         comment: Make night
+         level: Sky
+      - _Material<Star Fragment>:
+         coord: [-1100, 1100, -1350]
+      - _Material<Light Dragon Claw>:
+         coord: [-1000, 1000, -1300]
+
+   - Tal Tal Peak:
+      - _Warp::Shrine::Ihen-a<Warp to Ihen-a Shrine>
+      - _Shrine::Ihen-a
+      - _Korok::UZ33:
+         comment: Drop flying machine next to boulder stand
+      - _Location::TalTalPeak:
+         hide-icon-on-map: true
+      - _Item<Boulder>:
+         coord: [4074.69, 482.28, 459.62]
+      - _Korok::UZ28
+      - _Enemy::Talus::DZ01
+      - _Korok::UZ25
+      - _Korok::UZ49
+      - _Enemy::BokoBoss::G61:
+         comment: Be sure to kill all enemies in and around the fort
+      - _Npc::Hino_03
+      - _Korok::UZ43
+      - _Korok::UZ46
+
+   - Hoverboard:
+      - _Shrine<Activate Apogek Shrine>:
+         coord: [3886.69, 283.2, -216.77]
+      - _Enemy::BokoBoss::G55
+      - _Korok::UZ62
+      - _ZoraMonument::Z08
+      - _KeyItem<Create Hoverboard Autobuild>:
+         coord: [3511, 317.47, -68.5]
+      - _Korok::UZ37::Start
+      - _Korok::UZ48
+      - _Enemy::BokoBoss::G52
+      - _Korok::UZ37::End
+      - _Cave::ReservoirLakefrontrn00
+      - _Bubbulfrog::ReservoirLakefrontCavern
+      - _Item<Blue Rock>:
+         coord: [3907.68, 316.91, 343.08]
+         comment: Build hoverboard and attack blue rock
+
+   - Ancient Zora Waterworks:
+      - _Cave::ReservoirLakefrontrn00
+      - _SideQuest::TheBlueStone:
+         coord: [3594.67, 316.5, 338.88]
+      - _Cave::AncientZoraWaterworks00
+
+   - Zora Greaves:
+      - _Enemy::Talus::SZ05
+      - _Chest::ZoraGreaves
+      - _Bubbulfrog::AncientZoraWaterworks
+      - Ascend at Pier:
+         movements:
+            - to: [3594.67, 316.5, 338.88]
+      - _Item<Steering Stick and Fans>:
+         coord: [3565.3, 316.55, 360.11]
+         comment: Build flying machine
+      - _SideQuest::TheFortatJaAbuRidge:
+         coord: [3482.48, 261.25, 484.99]
+      - _Korok::UZ34
+      - _Korok::UZ39
+      - _ZoraMonument::Z05
+      - _ZoraMonument::Z04
+      - _Item<Hot-Footed Frogs>:
+         coord: [3252.5, 249.5, 102]
+      - _Addison::A68
+      - _Special<Starting Block>:
+         coord: [3292.69, 399.33, -10.05]
+      - _Korok::UZ54
+      - _ZoraMonument::Z09
+      - _Enemy::BokoBoss::G53:
+         comment: Drop flying machine near trees southwest of bridge
+      - _Item<Hot-Footed Frogs>:
+         coord: [3075.15, 237.75, -74.28]
+      - _Location::LutosCrossing:
+         hide-icon-on-map: true
+      - _ZoraMonument::Z07
+
+   - Zora Bow:
+      - _Cave::Luto'sChannel00
+      - _Bubbulfrog::Luto'sChannel:
+         comment: Ascend
+      - _Korok::UZ58
+      - _ZoraMonument::Z02
+      - _Location::ZodobonHighlands:
+         hide-icon-on-map: true
+      - _ZoraMonument::Z01
+      - _Enemy<Lizalfos x4>:
+         coord: [2848.66, 188.89, 14.38]
+      - _Chest<Zora Bow>:
+         coord: [2849.96, 188.43, 26.76]
+         notes: Take pic
+
+   - Zora Tablet:
+      - _Location::OrenBridge
+      - _Korok::UZ55
+      - _Cave::OrenBridge00
+      - _Bubbulfrog::OrenBridgeCave:
+         comment: Ascend
+      - _Korok::UZ57:
+         comment: Flying machine should be nearby
+      - _ZoraMonument::Z00
+      - _Cave::RalisChannel01
+      - _Item<Hot-Footed Frogs>:
+         coord: [2952, 258.58, 127]
+      - _Special<Starting Block>:
+         coord: [3069.58, 367.53, 177.36]
+      - _Korok::UZ38
+      - _Location::RalisPond:
+         comment: Collect fleet lotus seeds
+      - _Tablet::S01:
+         notes: Take pic
+
+   - Climbing Boots:
+      - _Korok::UZ40
+      - _Cave::RalisChannel00
+      - _Shrine::Joniu::Start:
+         comment: Build hoverboard and attach crystal
+      - _Bubbulfrog::RalisChannel
+      - _Shrine::Joniu
+      - _Item<Ore deposits behind vines>:
+          coord: [2899.42, 258.69, 435.78]
+          comment: Ascend
+      - _Cave::UplandZoranaByroad01
+      - _Chest::ClimbingBoots
+      - _Bubbulfrog::UplandZoranaByroad:
+         comment: Ascend
+
+   - Zora Spear:
+      - _Cave::UplandZoranaSummit00
+      - _Bubbulfrog::UplandZoranaSummitCave:
+         comment: Ascend
+      - _Chest<Large Zonai Charge>:
+         coord: [2878.03, 477.38, 678.12]
+      - _Addison::A59
+      - _Korok::UZ08
+      - _Location::UplandZorana:
+         hide-icon-on-map: true
+      - _Enemy::BokoBoss::G54
+      - _Korok::UZ15
+      - _ZoraMonument::Z06
+      - _Cave::UplandZoranaFoothill00
+      - _Chest<Zora Spear>:
+         coord: [3062.41, 331.42, 723.99]
+      - _Bubbulfrog::UplandZoranaFoothillCave
+
+   - Zora Trident:
+      - _Cave::UplandZoranaFoothill00
+      - _Korok::UZ20
+      - _Special<Starting Block>:
+         coord: [3105.06, 278.17, 461.8]
+      - _Korok::UZ29
+      - _GoddessStatue::ZorasDomain
+      - _Shop<Buy Stuff>:
+         coord: [3322.85, 245.46, 490.74]
+         notes: Take pics of fish
+      - _SideQuest::GloryoftheZora:
+         coord: [3336.38, 245.86, 489.25]
+      - _SideQuest<Complete A Wife Wafted Away>:
+         coord: [3291.71, 244.86, 441.43]
 
 
 
