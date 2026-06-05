@@ -4350,6 +4350,121 @@ _route:
       - _Material<Naydra Claw>:
          coord: [3660, 500, -1375]
 
+   - Mayaumekis Shrine:
+      - _Warp::Shrine::Mayaumekis<Warp to Mayaumekis Shrine>:
+         level: Sky
+      - _Shrine::Mayaumekis
+      - _Special<Starting Block>:
+         coord: [-3103.9, 970.78, 3259.92]
+      - _Korok::RPS02
+
+   - Pikida Stonegrove Tower:
+      - _Korok::RP26::Start
+      - _Korok::RP26::End
+      - _Korok::RP30
+      - _Korok::PS16
+      - _Addison::A09
+      - _Korok::PS13::Start
+      - _Korok::PS13::End
+      - _Tower::PikidaStonegrove
+
+   - East Hebra Sky Archipelago:
+      - _Item<Steering Stick and Fans>:
+         coord: [-2120.2, 1055.83, 3188.46]
+         comment: Build flying machine
+         level: Sky
+      - _Location::EastHebraSkyArchipelago:
+         hide-icon-on-map: true
+      - _Korok::PSS03
+      - _Dispenser::S04
+      - _Korok::PSS01::Trail
+      - _OldMap::Hebra_01:
+         comment: Use hoverstone, recall, and ultrahand to get chest
+
+   - Taninoud Shrine:
+      - _Shrine::Taninoud::Start:
+         level: Sky
+      - _Shrine::Taninoud
+      - _Tablet::S03:
+         notes: Take pic
+      - _Shrine<Activate Tenbez Shrine>:
+         coord: [-970.18, 1130.75, 3535]
+      - _Location::NorthLomeiCastleTopFloor
+      - _Tablet<Drop Tablet>:
+         coord: [-44.98025, 1607.83, 2991.7605]
+      - _Material<Dinraal Claw>:
+         coord: [300, 1000, 3500]
+
+   - Thyphlo Ruins:
+      - _Tower<Activate Thyphlo Ruins Tower>:
+         coord: [343.67, 278.56, 3141.65]
+      - _Location::ThyphloRuins:
+         hide-icon-on-map: true
+      - _SideAdv::InvestigatetheThyphloRuins:
+         coord: [372.69, 280.02, 3095.62]
+      - _Korok::TR08
+      - _Special<Use Sidon Water Attack to Reveal Chest>:
+         coord: [185.32, 279.56, 3181.31]
+      - _Chest<Opal x5>:
+         coord: [167.64, 274.4, 3212.75]
+      - _Special<Starting Block>:
+         coord: [60.64, 295.65, 3113.63]
+
+   - Dusk Claymore:
+      - _Korok::TR06
+      - _Korok::TR05
+      - _Special<Use Yunobo Attack to Reveal Chest>:
+         coord: [138.45, 280.39, 3123.85]
+      - _Chest<Ruby x3>:
+         coord: [247.97, 274.48, 3121.14]
+      - _Korok::TR11
+      - _Special<Use Tulin Gust to Reveal Chest>:
+         coord: [364.26, 280.43, 3066.18]
+      - _Chest<Sapphire x3>:
+         coord: [364.1, 275.12, 3053.5]
+      - _Addison::A36
+      - _Korok::TR10::Start
+      - _Korok::TR10::End
+      - _Enemy<Captain Construct I>:
+         coord: [536.48, 297.95, 3241.8]
+      - _Enemy<Soldier Construct II>:
+         coord: [524.25, 299.97, 3242.31]
+      - _Special<Use Riju Lightning Attack to Reveal Chest>:
+         coord: [463.25, 280.52, 3084.3]
+      - _Chest<Topaz x3>:
+         coord: [450.3, 275.44, 3084.5]
+      - _Npc::Kazul_01
+      - _Chest<Dusk Claymore>:
+         coord: [386.03, 270.38, 3170.75]
+         notes: Take pic
+      - _Tower::ThyphloRuins
+
+   - North Hyrule Sky Archipelago:
+      - _Korok::TRS01
+      - _Dispenser::S09
+      - _Enemy::FluxConstruct::SE01
+      - _Shrine::Mayam::Start
+      - _Location::NorthHyruleSkyArchipelago:
+         hide-icon-on-map: true
+      - _Shrine::Mayam
+      - _OldMap::Eldin_01
+      - _Special<Terminal>:
+         coord: [229.56, 2089.86, 2069.67]
+      - _Location::BraveryIsland:
+         hide-icon-on-map: true
+      - _Npc::Steward Construct_03:
+         comment: Do mini-game
+      - _Dispenser::S15
+      - _Shrine::Simosiwak
+      - _Korok::TRS02
+
+   - Lake Saria:
+      - _Shrine::Ninjis
+      - _Location::LakeSaria:
+         comment: Follow the silent shrooms
+      - _Chest<Forest Dweller's Bow>:
+         coord: [63.81, 282.76, 1908.01]
+
 
 
 
