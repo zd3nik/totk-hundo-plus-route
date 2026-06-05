@@ -1150,8 +1150,7 @@ _route:
          coord: [-713.04, 134.58, -307.55]
          comment: Skip if running behind
          notes: Take pic
-      - _Shrine<Activate Susuyai shrine>:
-         coord: [-785.41, 137.38, -434.05]
+      - _Shrine::Susuyai
       - _Korok::HF22::Start
       - _Korok::HF13
       - _Item<Courser Bee Honey>:
@@ -2544,6 +2543,7 @@ _route:
          coord: [1519.74, -727, 2847.48]
       - _Special<Terminal>:
          coord: [1301.58, -697.82, 2847.5]
+      - _Temple::Fire
 
    - First Gong:
       - _Special<Gong>:
@@ -4652,6 +4652,151 @@ _route:
       - _SideQuest<Complete A Wife Wafted Away>:
          coord: [3291.71, 244.86, 441.43]
 
+   - Kyokugon Shrine:
+      - _Warp::Shrine::Mayachin<Warp to Mayachin Shrine>
+      - _Shrine::Mayachin
+      - _Korok::HF28
+      - _Korok::HF31
+      - _Enemy<Phantom Ganon>:
+         coord: [-416.76, 133.2, -1296.4]
+      - _Location::KolomoGarrisonRuins:
+         hide-icon-on-map: true
+      - _Korok::HF32
+      - _Enemy::BokoBoss::G21
+      - _Addison::A33
+      - _Cave::GreatPlateauFoothill00
+      - _Bubbulfrog::GreatPlateauFoothillCave
+      - _Shrine::Kyokugon
+
+   - Light Dragon Farming 5:
+      - _Warp::Shrine::Mayam<Warp to Mayam Shrine>:
+         comment: Make night
+      - _Material<Star Fragment>:
+         coord: [700, 1200, 3000]
+      - _Material<Light Dragon Claw>:
+         coord: [1000, 1000, 3000]
+
+   - Sikukuu Shrine:
+      - _CherryBlossom::Eldin
+      - _Korok::TR13::Start
+      - _Addison::A45
+      - _Enemy::BokoBoss::G33
+      - _Korok::TR04
+      - _Enemy::Hinox::GE01
+      - _Tear::G10
+      - _Korok::TR12:
+         comment: Drop flying machine next to korok smoke
+      - _Enemy::BokoBoss::G26
+      - _Korok::TR13::End
+      - _Shrine::Sikukuu
+
+   - Eldin Great Skeleton:
+      - _Warp::Shrine::Sibajitak<Warp to Sibajitak Shrine>
+      - _Shrine::Sibajitak
+      - _Korok::EC05
+      - _Enemy::Talus::GE01
+      - _Enemy<Fire-Breath Lizalfos>:
+         coord: [2240.63, 363.9, 3661.94]
+         comment: Drop flying machine near block puzzle
+      - _Enemy<Fire-Breath Lizalfos>:
+         coord: [2297.99, 348.68, 3703.13]
+      - _Korok::EC02
+      - _SideQuest<Complete Eldin's Colossal Fossil>:
+         coord: [1666.36, 206.58, 3649.95]
+      - _Location::EldinGreatSkeleton:
+         hide-icon-on-map: true
+      - _Korok::TR01
+      - _Shrine::Mayak
+      - _Korok::TR02::Start
+      - _LockedChest::G20
+      - _Enemy::Talus::GT01
+      - _Korok::TR02::End
+      - _Enemy::BokoBoss::G25
+      - _Cave::DeplianBadlands00
+      - _LockedChest::G56
+      - _Bubbulfrog::DeplianBadlandsCave
+      - _LockedChest::G55
+      - _Shrine::Minetak:
+         comment: Ascend
+      - _Korok::TR03::Start
+      - _Korok::TR03::End
+
+   - Star Fragment Farming:
+      - _Warp::Shrine::Mayam<Warp to Mayam Shrine>:
+         comment: Make night
+      - _Material<Star Fragment>:
+         coord: [200, 1200, 2800]
+
+   - Catch Dinraal:
+      - _Shrine::Kikakin
+      - _Enemy::Talus::DT02
+      - _Addison::A28
+      - _Korok::TR07
+      - _Korok::TR09::Start
+      - _Korok::TR09::End
+      - _Material<Dinraal Claw>:
+         comment: Skip if Dinraal is not nearby
+      - _Chasm::DrenanHighlands
+
+   - Gleeok Den:
+      - _Tablet::S09:
+         level: Depths
+         notes: Take pic
+      - _Enemy::Frox::DE02
+      - _Enemy::Talus::GT02
+      - _Equipment::Weapon<Sword>:
+         coord: [-455.6, -444.76, 3036.31]
+      - _Equipment::Weapon<Spear>:
+         coord: [-258.69, -427.64, 3184.25]
+      - _Equipment::Weapon<Claymore>:
+         coord: [-24.54, -486.08, 3169.92]
+      - _Enemy::Gleeok::D01
+      - _Location::GleeokDen:
+         hide-icon-on-map: true
+
+   - Eldin Dark Skeleton:
+      - _Chest::CapofTwilight
+      - _LockedChest::D50:
+         hide-icon-on-map: true
+      - _YigaSchema::AerialCannon:
+         movements:
+            - to: [98.91, -519.16, 3119.09]
+            - to: [131.04, -528.81, 2868.27]
+      - _LockedChest::D53:
+         hide-icon-on-map: true
+      - _LockedChest::D54:
+         hide-icon-on-map: true
+      - _Equipment::Weapon<Claymore>:
+         coord: [452.32, -531.94, 2862.32]
+      - _Equipment::Weapon<Spear>:
+         coord: [657.9, -543.5, 2873.49]
+      - _Lightroot::Uukukis
+      - _Equipment::Weapon<Sword>:
+         coord: [939.56, -584.94, 2836.8]
+      - _Enemy::Hinox::DE03
+      - _Enemy::Frox::DE01
+      - _Lightroot::Katenim
+      - _Equipment::Weapon<Claymore>:
+         coord: [222.68, -434.43, 3523.87]
+      - _Equipment::Weapon<Sword>:
+         coord: [111.61, -411.21, 3559.29]
+      - _Equipment::Weapon<Claymore>:
+         coord: [125.98, -405.75, 3620.42]
+      - _Enemy::FluxConstruct::DE01
+      - _YigaSchema::ChargedCharger
+      - _LockedChest::D51:
+         hide-icon-on-map: true
+      - _LockedChest::D52:
+         hide-icon-on-map: true
+      - _Enemy::Talus::DT01
+      - _Equipment::Weapon<Claymore>:
+         coord: [1156.69, -461.21, 3641.34]
+      - _Lightroot::Kayam
+      - _Location::EldinDarkSkeleton:
+         hide-icon-on-map: true
+      - _Enemy<Phantom Ganon>:
+         coord: [1589.49, -445.69, 3734.69]
+      - _Chest::TrousersoftheWild
 
 
 
