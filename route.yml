@@ -1921,6 +1921,8 @@ _route:
       - _Location::SpringofWisdom
       - _SideQuest::GoddessStatueofWisdom:
          coord: [3910.78, 574.69, -1328.3]
+      - _GoddessStatue::Wisdom:
+         hide-icon-on-map: true
       - _Tower::MountLanayru
 
    - Valor Island:
@@ -5483,10 +5485,105 @@ _route:
    - Light Dragon Farming 9:
       - _Warp::Tower::UlriMountain<Warp to Ulri Mountain Tower>:
          comment: Make night
-         notes: If light dragon is not close to this tower choose a closer warp point
+         notes: If light dragon is not close to this tower choose a closer warp point, or skip
       - _Material<Star Fragment 33/36>
       - _Material<Light Dragon Horn>
 
+   - Hateno Tech Lab:
+      - _Warp::Tower::MountLanayru<Warp to Mount Lanayru Tower>
+      - _Korok::ML06
+      - _Material<Naydra Horn>:
+         comment: Skip if Naydra is not nearby
+      - _Korok::ML05
+      - _Enemy::BokoBoss::G57
+      - _Korok::ML04
+      - _Enemy::Talus::DL01:
+         notes: Take pic
+      - _Addison::A79
+      - _Item<Boulder>:
+         coord: [4435.19, 137.13, -1432.99]
+      - _Korok::ML10
+      - _Korok::ML11::Trail
+      - _Korok::ML20
+      - _Shrine::Jikais
+      - _Cave::WalnotMountain01
+      - _Enemy::BokoBoss::G67
+      - _Bubbulfrog::WalnotMountainCave
+      - _Chest::BarbarianLegWraps
+      - _Cave::WalnotMountain00
+      - _Korok::ML25
+      - _Location::RetsamGrove
+      - _Korok::ML21
+      - _Item<Bottled Letter>:
+         coord: [3655.39, 279.89, -2010.5]
+      - _Item<Hateno Cow>:
+         coord: [3612.95, 282.46, -2014.38]
+         notes: Take pic
+      - _SideAdv::ALettertoKoyin:
+         coord: [3632, 174, -2051]
+      - _SideQuest::DantzsPriceCows:
+         coord: [3623.63, 283.43, -2078.87]
+      - _Shop::HatenoPasture:
+         comment: Complete side adventure, Buy cheese
+      - _Item<Bushy-Tailed Squirrel>:
+         coord: [3620, 278.65, -2138.8]
+         notes: Take pic
+      - _Cave::RetsamForest01
+      - _Shrine::Mayahisik
+      - _Bubbulfrog::RetsamForestCave:
+         comment: Ascend
+      - _Cave::RetsamForest00:
+         comment: Ascend
+      - _TechLab::Hateno
+      - _SideAdv::PresentingTheTravelMedallion
+      - _SideAdv::PresentingHerosPathMode
+      - _SideAdv::PresentingSensor+
+      - _Item<Restless Cricket>:
+         coord: [3795.09, 355.83, -2134.51]
+         notes: Take pic
+      - _Item<Sunshroom>:
+         coord: [3777.1, 356.42, -2136.88]
+      - _Item<Hightail Lizard>:
+         coord: [3765.43, 356, -2136.75]
+      - _Item<Farmer's Pitchfork>:
+         coord: [3764.83, 356.67, -2130.5]
+         notes: Take pic
+
+   - Kitano Bay:
+      - _Korok::ML29
+      - _Korok::ML33
+      - _Korok::ML42::Start
+      - _Korok::ML45:
+         comment: Place travel medallion
+      - _Korok::ML41
+      - _Tablet::S07:
+         notes: Take pic
+
+   - Mapla Point:
+      - _Korok::ML42::End
+      - _Korok::ML37
+      - _Item<Giant Horse>:
+         coord: [4142.98, 109.34, -2454.07]
+         notes: Take pic
+      - _Korok::ML44
+      - _Cave::DeepbackBay00
+      - _Shrine::Anedamimik
+      - _Bubbulfrog::DeepbackBayCave:
+         comment: Ascend
+      - _Korok::ML40
+      - _Korok::ML36
+      - _Addison::A80:
+         comment: Build hoverboard
+
+   - A Bottled Cry for Help:
+      - _Korok::ML30
+      - _Cave::MaplaPoint00
+      - _Chest<Purple Rupee>:
+         coord: [4560.27, 105.63, -2301.78]
+         comment: Ascend
+      - _Bubbulfrog::MaplaPointCave
+      - _SideQuest::ABottleCryforHelp:
+         coord: [4515.1, 106.79, -2310.12]
 
 
 
