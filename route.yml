@@ -5036,10 +5036,137 @@ _route:
 
    - Eventide Gleeok:
       - _Enemy::Gleeok::S03
-      - _SagesWill::Eventide
+      - _SagesWill::Eventide:
+         comment: Make night
 
+   - Farosh Farming 8:
+      - _Warp::Shrine::Rakashog<Warp to Rakashog Shrine>:
+         comment: Make night
+         level: Sky
+      - _Item<Rockets>:
+         coord: [-1820.55, 1075.09, -2212.26]
+         comment: Fuse rockets to shields
+      - _Material<Star Fragment>:
+         coord: [-1900, 1050, -2100]
+      - _Material<Farosh Claw>:
+         coord: [-2000, 1000, -2000]
 
+   - Dinraal Farming 9:
+      - _Warp::Lightroot::Tayamik<Warp to Tayamik Lightroot>
+      - _Material<Dinraal Claw>:
+         coord: [2700, -500, 3650]
 
+   - Naydra Farming 10:
+      - _Warp::Tower::MountLanayru<Warp to Mount Lanayru Tower>:
+         comment: Make night
+      - _Material<Star Fragment>:
+         coord: [3750, 1000, -1350]
+      - _Material<Naydra Claw>:
+         coord: [3660, 500, -1375]
+
+   - Light Dragon Farming 7:
+      - _Warp::Tower::Lindor'sBrow<Warp to Lindor's Brow Tower>
+      - _Material<Light Dragon Horn>:
+         coord: [-1400, 1000, 1100]
+
+   - Lurelin Village Pirates:
+      - _Warp::Shrine::Bamitok<Warp to Bamitok Shrine>:
+         comment: Ascend
+      - _Enemy::Talus::GL04
+      - _LockedChest::G43
+      - _Tear::G06
+      - _Addison::A73
+      - _Korok::RW28
+      - _Location::PalmoraeRuins:
+         hide-icon-on-map: true
+      - _Korok::RW40::Start
+      - _Korok::RW35
+      - _Chest<Star Fragment>:
+         coord: [3795.07, 105.31, -3615.98]
+      - _Enemy::BokoBoss::G59
+      - _Korok::RW40::End
+      - _Korok::RW39
+      - _Special<Starting Block>:
+         coord: [3081.93, 154.2, -3385.91]
+      - _Korok::RW29
+      - _Enemy<Lizalfos x1>:
+         coord: [2986.99, 107.12, -3451]
+      - _Equipment::Weapon<Fishing Harpoon>:
+         coord: [2981.87, 106.65, -3452.63]
+         comment: Collect Roasted Porgies
+         notes: Take pic
+      - _Enemy<Boko x3>:
+         coord: [2981.12, 106.84, -3448.28]
+      - _Enemy<Boko x2>:
+         coord: [2978.19, 116.47, -3386.94]
+      - _Enemy<Boko x1>:
+         coord: [2958.14, 113.23, -3395.89]
+      - _Well::LurelinVillage
+      - _Enemy<Boko x1>:
+         coord: [2940.36, 99.3, -3373.64]
+         comment: Ascend
+      - _Enemy<Boko x3>:
+         coord: [2893.95, 112.4, -3392.9]
+      - _Enemy<Boko x1>:
+         coord: [2901.19, 112.39, -3415.15]
+      - _Enemy<Lizalfos x1>:
+         coord: [2957.11, 123.76, -3532.68]
+      - _Enemy::BokoBoss::G49
+      - _Enemy<Boko x4>:
+         coord: [2925.43, 113.39, -3521.19]
+      - _Enemy<Boko x1>:
+         coord: [2912.9, 120.98, -3502.78]
+      - _Enemy<Lizalfos x1>:
+         coord: [2859.65, 111.63, -3476.71]
+      - _Enemy<Boko x2>:
+         coord: [2857.08, 111.14, -3468.91]
+      - _Enemy<Boko x1>:
+         coord: [2850.69, 109.99, -3447.92]
+
+   - Gathering Wood:
+      - _SideAdv::LurelinVillageRestorationProject:
+         coord: [2875, 0, -3443]
+      - _Chest::IslandLobsterShirt
+      - _Shrine::Sifumim
+      - _Item<Trees>:
+         coord: [2761.53, 187.37, -3201.23]
+         comment: Collect logs
+      - _Item<Trees>:
+         coord: [2854.76, 181.57, -3231.26]
+         comment: Collect logs
+      - _Item<Logs>:
+         coord: [2913.41, 119.5, -3343.8]
+         comment: Collect logs
+
+   - Lurelin Village Restoration Project:
+      - _SideAdv<Give Wood to Bolson>:
+         coord: [2875, 0, -3443]
+         comment: Complete village restoration
+
+   - Lurelin Village:
+      - _Warp::Place::LurelinVillage:
+         coord: [2927, 106.25, -3415]
+      - _Place::LurelinVillage:
+         hide-icon-on-map: true
+      - _Shop::LuckyTreasureShop:
+         comment: Open all chests, Take Rewards
+      - _Shop::Inn08:
+         hide-icon-on-map: true
+      - _GoddessStatue::Lurelin
+      - _SideQuest::DadsBlueShirt:
+         coord: [2892, 0, -3435]
+      - _Npc<Kinav>:
+         coord: [2876.02, 111.96, -3421.13]
+         comment: Answer his questions to get items
+      - _Shop::Restaurant:
+         comment: Get free food
+      - _Special<Cook>:
+         coord: [2894.99, 112.44, -3411.22]
+         comment: Spicy porgy curry
+      - _SideQuest<Rattled Ralera>:
+         coord: [2844.93, 110.22, -3462.89]
+      - _SideQuest::LurelinResortProject:
+         coord: [2859, 0, -3518]
 
 
 
