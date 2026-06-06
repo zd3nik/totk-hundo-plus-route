@@ -1722,7 +1722,7 @@ _route:
       - _Warp::Shrine::Josiu<Warp to Josiu Shrine>
       - _Special<Baloon Platform>:
          coord: [1936.91, 1284.44, -1204.89]
-      - _Material<Naydra Claw>:
+      - _Material<Naydra Claw 1/4>:
          coord: [2400, 1800, -1400]
          comment: Continue to waterfall if raining, otherwise warp back to Josiu to get height needed to reach waterfall
          notes: Get pic
@@ -1840,9 +1840,9 @@ _route:
       - _Item<Campfire>:
          coord: [2389.04, 1588.74, -1712.46]
          comment: Make night
-      - _Material<Star Fragment>:
+      - _Material<Star Fragment 1/36>:
          coord: [2500, 1500, -2000]
-      - _Material<Naydra Claw>:
+      - _Material<Naydra Claw 2/4>:
          coord: [2900, 1000, -2600]
 
    - Rabella Wetlands:
@@ -1908,7 +1908,7 @@ _route:
       - _Korok::ML13
       - _Enemy<Phantom Ganon>:
          coord: [4030.14, 505.57, -1411.35]
-      - _Material<Naydra Claw>:
+      - _Material<Naydra Claw 3/4>:
          coord: [3826,600, -1421]
       - _Npc::Nazbi
       - _Location::SpringofWisdom
@@ -2059,7 +2059,7 @@ _route:
          hide-icon-on-map: true
       - _Enemy::FluxConstruct::SA01
       - _OldMap::Akkala_02
-      - _Material<Dinraal Claw>:
+      - _Material<Dinraal Claw 1/4>:
          coord: [3650, 900, 3400]
          comment: Drop flying machine next to Kamatukis below
 
@@ -2243,7 +2243,7 @@ _route:
       - _Korok::UMS01
       - _Korok::UM01
       - _Warp::Shrine::Mogisari<Warp to Mogisari Shrine>
-      - _Material<Dinraal Claw>:
+      - _Material<Dinraal Claw 2/4>:
          coord: [4636, 1200, 3288]
 
    - Lomei Depths Lanyrinth:
@@ -2487,7 +2487,7 @@ _route:
    - Dinraal Pic:
       - _Warp::Cave<Lake Darman Monster Den>:
          coord: [2377.9, 598.4, 3029.97]
-      - _Material<Dinraal Claw>:
+      - _Material<Dinraal Claw 3/4>:
          coord: [2738, 2000, 3536]
          notes: Take pic
 
@@ -2666,9 +2666,9 @@ _route:
    - Dinraal Farming 1:
       - _Warp::Shrine::Mogisari<Warp to Mogisari Shrine>:
          level: Sky
-      - _Material<Star Fragment>:
+      - _Material<Star Fragment 2/36>:
          coord: [4643, 1200, 3380]
-      - _Material<Dinraal Claw>:
+      - _Material<Dinraal Claw 4/4>:
          coord: [4636, 1200, 3288]
 
    - Lynel Run 3:
@@ -2690,9 +2690,9 @@ _route:
       - _Item<Campfire>:
          coord: [2389.04, 1588.74, -1712.46]
          comment: Make night
-      - _Material<Star Fragment>:
+      - _Material<Star Fragment 3/36>:
          coord: [2500, 1500, -1690]
-      - _Material<Naydra Claw>:
+      - _Material<Naydra Claw 4/4>:
          coord: [2600, 1300, -1670]
 
    - Rocket Reload 1:
@@ -2801,7 +2801,7 @@ _route:
       - _Item<Mirror>:
          coord: [-3643.75, 1858.68, 1041.55]
          comment: Ascend
-      - _Chest<Star Fragment>:
+      - _Chest<Star Fragment 4/36>:
          coord: [-3633.06, 1874.85, 1049.88]
       - _Item<Mirror>:
          coord: [-3607.11, 1858.67, 1030.6]
@@ -3082,7 +3082,7 @@ _route:
          notes: Take pic
       - _Npc::Teake_01:
          notes:
-            - Spear tropps at west gate
+            - Spear troops at west gate
             - Sword troops at east gate
             - Canoneer at north gate
       - _MainQuest<Start the Battle>:
@@ -3385,7 +3385,7 @@ _route:
          comment: Fuse rockets to shields
       - _Location::EastGerudoSkyArchipelago:
          hide-icon-on-map: true
-      - _Material<Farhos Claw>:
+      - _Material<Farosh Claw 1/4>:
          coord: [-2640, 1000, -2100]
          notes: Take pic
 
@@ -3459,9 +3459,9 @@ _route:
       - _Warp::Shrine::Mogisari<Warp to Mogisari Shrine>:
          comment: Make night
          level: Sky
-      - _Material<Star Fragment>:
+      - _Material<Star Fragment 5/36>:
          coord: [4643, 1200, 3380]
-      - _Material<Dinraal Claw>:
+      - _Material<Dinraal Fang>:
          coord: [4636, 1200, 3288]
 
    - Lotus Farming 1:
@@ -3481,9 +3481,9 @@ _route:
       - _Item<Campfire>:
          coord: [2389.04, 1588.74, -1712.46]
          comment: Make night
-      - _Material<Star Fragment>:
+      - _Material<Star Fragment 6/36>:
          coord: [2500, 1500, -1690]
-      - _Material<Naydra Claw>:
+      - _Material<Naydra Fang>:
          coord: [2600, 1300, -1670]
 
    - Lynel Run 4:
@@ -3514,9 +3514,9 @@ _route:
          comment: Speed food, Make night
       - _Warp::Tower<Use Gerudo Canyon Tower>:
          coord: [-2438.85, 405.62, -2182.76]
-      - _Material<Star Fragment>:
+      - _Material<Star Fragment 7/36>:
          coord: [-2500, 1200, -2300]
-      - _Material<Farosh Claw>:
+      - _Material<Farosh Claw 2/4>:
          coord: [-2600, 1000, -2450]
 
    - Light Dragon Farming 2:
@@ -3727,7 +3727,7 @@ _route:
       - _Special<Deliver Right Leg>:
          coord: [868.6846, -465.19604, -2174.232]
 
-   - Another Farosh Claw:
+   - Kohsustu Lightroot:
       - _Equipment::Weapon<Longsword>:
          coord: [730.16, -349.61, -2734.63]
       - _Equipment::Weapon<Sword>:
@@ -3741,7 +3741,7 @@ _route:
          coord: [565, -385.32, -3318.06]
       - _Equipment::Weapon<Sword>:
          coord: [513.58, -374.43, -3152.49]
-      - _Material<Farosh Claw>:
+      - _Material<Farosh Claw 3/4>:
          coord: [550, -300, -3000]
 
    - Spirit Temple:
@@ -3800,14 +3800,14 @@ _route:
       - _Item<Rockets>:
          coord: [-1820.55, 1075.09, -2212.26]
          comment: Fuse rockets to shields
-      - _Material<Star Fragment>:
+      - _Material<Star Fragment 8/36>:
          coord: [-1900, 1050, -2100]
-      - _Material<Farosh Claw>:
+      - _Material<Farosh Claw 4/4>:
          coord: [-2000, 1000, -2000]
 
    - Dinraal Farming 3:
       - _Warp::Lightroot::Kawisar<Warp to Kawisar Lightroot>
-      - _Material<Dinraal Claw>:
+      - _Material<Dinraal Scale>:
          coord: [4420, -368.81, 3200]
 
    - Lotus Farming 2:
@@ -3828,9 +3828,9 @@ _route:
       - _Warp::Shrine::Kumamayn<Warp to Kumamayn Shrine>:
          comment: Make night
          level: Sky
-      - _Material<Star Fragment>:
+      - _Material<Star Fragment 9/36>:
          coord: [3200, 1100, -2725]
-      - _Material<Naydra Claw>:
+      - _Material<Naydra Scale>:
          coord: [3300, 1000, -2700]
 
    - Register Spot:
@@ -4074,18 +4074,18 @@ _route:
    - Naydra Farming 5:
       - _Warp::Tower::MountLanayru<Warp to Mount Lanayru Tower>:
          comment: Make night
-      - _Material<Star Fragment>:
+      - _Material<Star Fragment 10/36>:
          coord: [3750, 1000, -1350]
-      - _Material<Naydra Claw>:
+      - _Material<Naydra Horn>:
          coord: [3660, 500, -1375]
 
    - Dinraal Farming 4:
       - _Warp::Shrine::Mogisari<Warp to Mogisari Shrine>:
          comment: Make night
          level: Sky
-      - _Material<Star Fragment>:
+      - _Material<Star Fragment 11/36>:
          coord: [4643, 1200, 3380]
-      - _Material<Dinraal Claw>:
+      - _Material<Dinraal Horn>:
          coord: [4636, 1200, 3288]
 
    - Farosh Farming 3:
@@ -4095,10 +4095,10 @@ _route:
       - _Item<Rockets>:
          coord: [-1820.55, 1075.09, -2212.26]
          comment: Fuse rockets to shields
-      - _Material<Star Fragment>:
+      - _Material<Star Fragment 12/36>:
          coord: [-1900, 1050, -2300]
       - _Enemy::Gleeok::G09
-      - _Material<Farosh Claw>:
+      - _Material<Farosh Fang>:
          coord: [-2490, 150, -3000]
 
    - The Treasure Hunters:
@@ -4201,7 +4201,7 @@ _route:
 
    - Farosh Farming 4:
       - _Warp::Lightroot::Kohsustu<Warp to Kohsustu Lightroot>
-      - _Material<Farosh Claw>:
+      - _Material<Farosh Scale>:
          coord: [550, -300, -3000]
 
    - Lynel Run 5:
@@ -4222,7 +4222,7 @@ _route:
 
    - Dinraal Farming 5:
       - _Warp::Lightroot::Tayamik<Warp to Tayamik Lightroot>
-      - _Material<Dinraal Claw>:
+      - _Material<Dinraal Horn>:
          coord: [2700, -500, 3650]
 
    - Naydra Farming 6:
@@ -4231,9 +4231,9 @@ _route:
       - _Item<Campfire>:
          coord: [2389.04, 1588.74, -1712.46]
          comment: Make night
-      - _Material<Star Fragment>:
+      - _Material<Star Fragment 13/36>:
          coord: [2500, 1500, -1690]
-      - _Material<Naydra Claw>:
+      - _Material<Naydra Horn>:
          coord: [2600, 1300, -1670]
 
    - Rocket Reload 3:
@@ -4334,16 +4334,16 @@ _route:
       - _Warp::Shrine::Rakashog<Warp to Rakashog Shrine>:
          comment: Make night
          level: Sky
-      - _Material<Star Fragment>:
+      - _Material<Star Fragment 14/36>:
          coord: [-1900, 1050, -2100]
-      - _Material<Farosh Claw>:
+      - _Material<Farosh Horn>:
          coord: [-2000, 1000, -2000]
 
    - Light Dragon Farming 3:
       - _Warp::Shrine::Kadaunar<Warp to Kadaunar Shrine>:
          comment: Make night
          level: Sky
-      - _Material<Star Fragment>:
+      - _Material<Star Fragment 15/36>:
          coord: [1700, 1300, 1325]
       - _Material<Light Dragon Claw>:
          coord: [1600, 1000, 1400]
@@ -4352,9 +4352,9 @@ _route:
       - _Warp::Shrine::Gikaku<Warp to Gikaku Shrine>:
          comment: Make night
          level: Sky
-      - _Material<Star Fragment>:
+      - _Material<Star Fragment 16/36>:
          coord: [4400, 1100, 2200]
-      - _Material<Dinraal Claw>:
+      - _Material<Dinraal Horn>:
          coord: [4100, 1000, 2300]
 
    - Shopping 1:
@@ -4382,9 +4382,9 @@ _route:
 
    - Naydra Farming 7:
       - _Warp::Tower::MountLanayru<Warp to Mount Lanayru Tower>
-      - _Material<Star Fragment>:
+      - _Material<Star Fragment 17/36>:
          coord: [3750, 1000, -1350]
-      - _Material<Naydra Claw>:
+      - _Material<Naydra Horn>:
          coord: [3660, 500, -1375]
 
    - Mayaumekis Shrine:
@@ -4429,7 +4429,7 @@ _route:
       - _Location::NorthLomeiCastleTopFloor
       - _Tablet<Drop Tablet>:
          coord: [-44.98025, 1607.83, 2991.7605]
-      - _Material<Dinraal Claw>:
+      - _Material<Dinraal Horn>:
          coord: [300, 1000, 3500]
 
    - Thyphlo Ruins:
@@ -4507,31 +4507,31 @@ _route:
       - _Warp::Shrine::Rakashog<Warp to Rakashog Shrine>:
          comment: Make night
          level: Sky
-      - _Material<Star Fragment>:
+      - _Material<Star Fragment 18/36>:
          coord: [-1900, 1050, -2100]
-      - _Material<Farosh Claw>:
+      - _Material<Farosh Horn>:
          coord: [-2000, 1000, -2000]
 
    - Naydra Farming 8:
       - _Warp::Tower::MountLanayru<Warp to Mount Lanayru Tower>:
          comment: Make night
-      - _Material<Star Fragment>:
+      - _Material<Star Fragment 19/36>:
          coord: [3750, 1000, -1350]
-      - _Material<Naydra Claw>:
+      - _Material<Naydra Horn>:
          coord: [3660, 500, -1375]
 
    - Dinraal Farming 7:
       - _Warp::Lightroot::Sikutamak<Warp to Sikutamak Lightroot>
-      - _Material<Dinraal Claw>:
+      - _Material<Dinraal Horn>:
          coord: [3550, -350, 3450]
 
    - Light Dragon Farming 4:
       - _Warp::Shrine::Jinodok<Warp to Jinodok Shrine>:
          comment: Make night
          level: Sky
-      - _Material<Star Fragment>:
+      - _Material<Star Fragment 20/36>:
          coord: [-1100, 1100, -1350]
-      - _Material<Light Dragon Claw>:
+      - _Material<Light Dragon Fang>:
          coord: [-1000, 1000, -1300]
 
    - Tal Tal Peak:
@@ -4710,9 +4710,9 @@ _route:
    - Light Dragon Farming 5:
       - _Warp::Shrine::Mayam<Warp to Mayam Shrine>:
          comment: Make night
-      - _Material<Star Fragment>:
+      - _Material<Star Fragment 21/36>:
          coord: [700, 1200, 3000]
-      - _Material<Light Dragon Claw>:
+      - _Material<Light Dragon Scale>:
          coord: [1000, 1000, 3000]
 
    - Sikukuu Shrine:
@@ -4763,7 +4763,7 @@ _route:
    - Star Fragment Farming:
       - _Warp::Shrine::Mayam<Warp to Mayam Shrine>:
          comment: Make night
-      - _Material<Star Fragment>:
+      - _Material<Star Fragment 22/36>:
          coord: [200, 1200, 2800]
 
    - Catch Dinraal:
@@ -4773,7 +4773,7 @@ _route:
       - _Korok::TR07
       - _Korok::TR09::Start
       - _Korok::TR09::End
-      - _Material<Dinraal Claw>:
+      - _Material<Dinraal Horn>:
          comment: Skip if Dinraal is not nearby
       - _Chasm::DrenanHighlands
 
@@ -4854,9 +4854,9 @@ _route:
       - _Item<Campfire>:
          coord: [2389.04, 1588.74, -1712.46]
          comment: Make night
-      - _Material<Star Fragment>:
+      - _Material<Star Fragment 23/36>:
          coord: [2500, 1500, -1690]
-      - _Material<Naydra Claw>:
+      - _Material<Naydra Horn>:
          coord: [2600, 1300, -1670]
 
    - Farosh Farming 7:
@@ -4866,22 +4866,22 @@ _route:
       - _Item<Rockets>:
          coord: [-1820.55, 1075.09, -2212.26]
          comment: Fuse rockets to shields
-      - _Material<Star Fragment>:
+      - _Material<Star Fragment 24/36>:
          coord: [-1900, 1050, -2100]
-      - _Material<Farosh Claw>:
+      - _Material<Farosh Horn>:
          coord: [-2000, 1000, -2000]
 
    - Dinraal Farming 8:
       - _Warp::Lightroot::Kawisar<Warp to Kawisar Lightroot>
-      - _Material<Dinraal Claw>:
+      - _Material<Dinraal Horn>:
          coord: [4420, -368.81, 3200]
 
    - Light Dragon Farming 6:
       - _Warp::Tower::RabellaWetlands<Warp to Rabella Wetlands Tower>:
          comment: Make night
-      - _Material<Star Fragment>:
+      - _Material<Star Fragment 25/36>:
          coord: [2420, 1100, -2450]
-      - _Material<Light Dragon Claw>:
+      - _Material<Light Dragon Horn>:
          coord: [2420, 1000, -2350]
       - _Location::MountFloria:
          hide-icon-on-map: true
@@ -5049,22 +5049,22 @@ _route:
       - _Item<Rockets>:
          coord: [-1820.55, 1075.09, -2212.26]
          comment: Fuse rockets to shields
-      - _Material<Star Fragment>:
+      - _Material<Star Fragment 26/36>:
          coord: [-1900, 1050, -2100]
-      - _Material<Farosh Claw>:
+      - _Material<Farosh Horn>:
          coord: [-2000, 1000, -2000]
 
    - Dinraal Farming 9:
       - _Warp::Lightroot::Tayamik<Warp to Tayamik Lightroot>
-      - _Material<Dinraal Claw>:
+      - _Material<Dinraal Horn>:
          coord: [2700, -500, 3650]
 
    - Naydra Farming 10:
       - _Warp::Tower::MountLanayru<Warp to Mount Lanayru Tower>:
          comment: Make night
-      - _Material<Star Fragment>:
+      - _Material<Star Fragment 27/36>:
          coord: [3750, 1000, -1350]
-      - _Material<Naydra Claw>:
+      - _Material<Naydra Horn>:
          coord: [3660, 500, -1375]
 
    - Light Dragon Farming 7:
@@ -5084,7 +5084,7 @@ _route:
          hide-icon-on-map: true
       - _Korok::RW40::Start
       - _Korok::RW35
-      - _Chest<Star Fragment>:
+      - _Chest<Star Fragment 28/36>:
          coord: [3795.07, 105.31, -3615.98]
       - _Enemy::BokoBoss::G59
       - _Korok::RW40::End
@@ -5174,7 +5174,7 @@ _route:
    - Light Dragon Farming 8:
       - _Warp::Shrine::Jinodok<Warp to Jinodok Shrine>:
          level: Sky
-      - _Material<Light Dragon Claw>:
+      - _Material<Light Dragon Horn>:
          coord: [-1000, 1000, -1300]
 
    - The Beast and the Princess:
@@ -5222,25 +5222,25 @@ _route:
       - _Item<Rockets>:
          coord: [-1820.55, 1075.09, -2212.26]
          comment: Fuse rockets to shields
-      - _Material<Star Fragment>:
+      - _Material<Star Fragment 29/36>:
          coord: [-1900, 1050, -2100]
-      - _Material<Farosh Claw>:
+      - _Material<Farosh Horn>:
          coord: [-2000, 1000, -2000]
 
    - Naydra Farming 11:
       - _Warp::Tower::MountLanayru<Warp to Mount Lanayru Tower>:
          comment: Make night
-      - _Material<Star Fragment>:
+      - _Material<Star Fragment 30/36>:
          coord: [3750, 1000, -1350]
-      - _Material<Naydra Claw>:
+      - _Material<Naydra Horn>:
          coord: [3660, 500, -1375]
 
    - Dinraal Farming 10:
       - _Warp::Shrine::Mayam<Warp to Mayam Shrine>:
          comment: Make night
-      - _Material<Star Fragment>:
+      - _Material<Star Fragment 31/36>:
          coord: [200, 1200, 3100]
-      - _Material<Dinraal Claw>:
+      - _Material<Dinraal Horn>:
          coord: [150, 1000, 3200]
 
    - Tukarok Shrine:
