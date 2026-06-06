@@ -1844,13 +1844,25 @@ _route:
 
    - Rabella Wetlands:
       - _Korok::RW16
+      - _Location::HanuPond:
+         hide-icon-on-map: true
       - _Enemy::Hinox::GL05
       - _LockedChest::G37
+      - _Location::StingerCliffs:
+         hide-icon-on-map: true
       - _Addison::A63
+      - _Location::EastNecluda:
+         hide-icon-on-map: true
+      - _Location::KotoPond:
+         hide-icon-on-map: true
       - _Korok::RW09
+      - _Location::MedaMountain:
+         hide-icon-on-map: true
       - _Chasm::MedaMountain
       - _Special<Starting Block>:
          coord: [2410.07, 363.24, -2671.19]
+      - _Location::MountTaran:
+         hide-icon-on-map: true
       - _Korok::RW17
       - _Item<Fleet-Lotus Seeds and Frogs>:
          coord: [2380.68, 320.41, -2848.58]
@@ -2508,6 +2520,8 @@ _route:
       - _Location::ScorchingColiseum:
          hide-icon-on-map: true
       - _LockedChest::D66
+      - _Chest::ZantsHelmet:
+         hide-icon-on-map: true
       - _Enemy::Hinox::DE02
       - _Lightroot::Katoij
       - _Enemy::Talus::DE02
@@ -3945,7 +3959,7 @@ _route:
       - _Korok::LL18
       - _Korok::LL24
 
-   - Royal Hidden Passage:
+   - Royal Guard Uniform:
       - _Location::DiningHall
       - _Enemy<Black Horriblin x2>:
          coord: [-254, 208.44, 818.87]
@@ -3956,8 +3970,9 @@ _route:
          comment: Ascend
       - _Location::GuardsChamber
       - _Chest::RoyalGuardUniform
-      - _Cave<Back Down into the Hidden Passage>:
-         coord: [-325.67, 159.57, 802.53]
+
+   - Soldier's Garb:
+      - _Cave::RoyalHiddenPassage02
       - _Chest::SoldiersArmor
       - _Chest::SoldiersHelm
       - _Enemy::Hinox::GC02
@@ -3965,6 +3980,8 @@ _route:
       - _SideAdv::ADealWiththeStatue:
          coord: [-233.36, 110.21, 157.28]
       - _Cave::RoyalHiddenPassage00
+
+   - Emergeny Shelter:
       - _Location::EmergencyShelter<Emergency Shelter>:
          hide-icon-on-map: True
       - _SideAdv::WhoGoesThere:
@@ -3984,7 +4001,7 @@ _route:
          coord: [-253, 126.36, 155]
       - _MainQuest::DestroyGanondorf
 
-   - Ren-iz Shrine:
+   - Castle Town Watchtower:
       - _Shop<Upgrade Bettery>:
          coord: [-219.2, 143.64, 191.85]
       - _Cave::PasseriGreenbelt00:
@@ -3995,14 +4012,26 @@ _route:
       - _Korok::LL43::Trail
       - _Korok::LL41
       - _Korok::LL38
+      - _Location::EastCastleTown:
+         hide-icon-on-map: true
       - _Chest<Red Rupee>:
          coord: [-105.23, 132.87, 334.61]
       - _Location::CastleTownWatchtower
+
+   - Ren-iz Shrine:
       - _Addison::A37
+      - _Location::MabePrairie:
+         hide-icon-on-map: true
       - _LockedChest::G21
       - _Enemy::BokoBoss::G27
+      - _Location::RomaniPlains:
+         hide-icon-on-map: true
       - _Addison::A39
+      - _Location::AppleanForest:
+         hide-icon-on-map: true
       - _Korok::LL39
+      - _Location::HyliaRiver:
+         hide-icon-on-map: true
       - _Korok::SS10
       - _Korok::SS14
       - _Cave::CrenelPeak00
@@ -4012,6 +4041,10 @@ _route:
       - _Korok::SS05::Trail
       - _Korok::SS03::Trail
       - _Shrine::Ren-iz
+
+   - Hyrule Cathedral:
+      - _Location::CrenelHills:
+         hide-icon-on-map: true
       - _Enemy<Phantom Ganon>:
          coord: [765.72, 180.67, 750.97]
          notes: Skip if you already got him in earlier segment
@@ -4136,8 +4169,8 @@ _route:
       - _Enemy::BokoBoss::D20
       - _Location::ForestColiseum
       - _Enemy::Hinox::DE04
-      - _Chest::KorokMask
-      - _LockedChest::D46:
+      - _LockedChest::D46
+      - _Chest::KorokMask:
          hide-icon-on-map: true
       - _Equipment::Weapon<Longsword>:
          coord: [4.67, -506.71, 2356.25]
@@ -4249,6 +4282,7 @@ _route:
       - _SideQuest<Finish Walton's Treasure Hunt>:
          coord: [417.59, 334.03, 2180.27]
          comment: Ascend
+         notes: Take pic of forest dweller bow
       - _Npc::Damia
       - _Shrine::Pupunke::Start
       - _Enemy<Fire Keese>:
@@ -4462,6 +4496,7 @@ _route:
       - _Shrine::Ninjis
       - _Location::LakeSaria:
          comment: Follow the silent shrooms
+         hide-icon-on-map: true
       - _Chest<Forest Dweller's Bow>:
          coord: [63.81, 282.76, 1908.01]
 
@@ -4486,6 +4521,7 @@ _route:
       - _Warp::Lightroot::Sikutamak<Warp to Sikutamak Lightroot>
       - _Material<Dinraal Claw>:
          coord: [3550, -350, 3450]
+
    - Light Dragon Farming 4:
       - _Warp::Shrine::Jinodok<Warp to Jinodok Shrine>:
          comment: Make night
@@ -4530,7 +4566,7 @@ _route:
       - _Bubbulfrog::ReservoirLakefrontCavern
       - _Item<Blue Rock>:
          coord: [3907.68, 316.91, 343.08]
-         comment: Build hoverboard and attack blue rock
+         comment: Build hoverboard and attach blue rock
 
    - Ancient Zora Waterworks:
       - _Cave::ReservoirLakefrontrn00
@@ -4755,8 +4791,8 @@ _route:
          hide-icon-on-map: true
 
    - Eldin Dark Skeleton:
-      - _Chest::CapofTwilight
-      - _LockedChest::D50:
+      - _LockedChest::D50
+      - _Chest::CapofTwilight:
          hide-icon-on-map: true
       - _YigaSchema::AerialCannon:
          movements:
@@ -4797,6 +4833,210 @@ _route:
       - _Enemy<Phantom Ganon>:
          coord: [1589.49, -445.69, 3734.69]
       - _Chest::TrousersoftheWild
+
+   - Lynel Run 6:
+      - _Warp::Lightroot::Ui-ihcoj<Warp to Ui-ihcoj Lightroot>
+      - _Enemy::Lynel<x1>:
+         coord: [4212.09, -467.54, 2721.1]
+      - _Warp::Lightroot::U-u-ujoj<Warp to U-u-ujoj Lightroot>
+      - _Enemy::Lynel<x1>:
+         coord: [1584.7, -407.09, -3496.46]
+      - _Warp::Lightroot::Kimakarut<Warp to Kimakarut Lightroot>
+      - _Enemy::Lynel<x1>:
+         coord: [-2798.87, -376.93, -2238.38]
+
+   - Naydra Farming 9:
+      - _Warp::Shrine::Yansamin<Warp to Yansamin Shrine>:
+         level: Sky
+      - _Item<Campfire>:
+         coord: [2389.04, 1588.74, -1712.46]
+         comment: Make night
+      - _Material<Star Fragment>:
+         coord: [2500, 1500, -1690]
+      - _Material<Naydra Claw>:
+         coord: [2600, 1300, -1670]
+
+   - Farosh Farming 7:
+      - _Warp::Shrine::Rakashog<Warp to Rakashog Shrine>:
+         comment: Make night
+         level: Sky
+      - _Item<Rockets>:
+         coord: [-1820.55, 1075.09, -2212.26]
+         comment: Fuse rockets to shields
+      - _Material<Star Fragment>:
+         coord: [-1900, 1050, -2100]
+      - _Material<Farosh Claw>:
+         coord: [-2000, 1000, -2000]
+
+   - Dinraal Farming 8:
+      - _Warp::Lightroot::Kawisar<Warp to Kawisar Lightroot>
+      - _Material<Dinraal Claw>:
+         coord: [4420, -368.81, 3200]
+
+   - Light Dragon Farming 6:
+      - _Warp::Tower::RabellaWetlands<Warp to Rabella Wetlands Tower>:
+         comment: Make night
+      - _Material<Star Fragment>:
+         coord: [2420, 1100, -2450]
+      - _Material<Light Dragon Claw>:
+         coord: [2420, 1000, -2350]
+      - _Location::MountFloria:
+         hide-icon-on-map: true
+      - _Korok::RW19
+
+   - Courage Steppe:
+      - _Tablet::S06:
+         notes: Take pic
+      - _LockedChest::G36
+      - _Korok::RW15
+      - _Korok::RW12:
+         comment: Ascend
+      - _Location::BremanPeak:
+         hide-icon-on-map: true
+      - _Korok::RW14
+      - _Enemy::BokoBoss::G47
+      - _Location::CourageSteppe:
+         hide-icon-on-map: true
+      - _Korok::RW23
+      - _Item<Fleet-Lotus Seeds>:
+         coord: [2369.43, 320.41, -2824.62]
+      - _Item<Fleet-Lotus Seeds and Frogs>:
+         coord: [2381.1, 320.41, -2856.94]
+      - _Korok::RW24::Start
+      - _Korok::RW20
+      - _Location::TaranPass:
+         hide-icon-on-map: true
+      - _Korok::RW22
+
+   - Uten Marsh:
+      - _Location::UtenMarsh:
+         hide-icon-on-map: true
+      - _Item<Courser Bee Honey>:
+         coord: [2701.23, 276.15, -2979.26]
+      - _Item<Courser Bee Honey>:
+         coord: [2676.93, 284.78, -2983.93]
+      - _Item<Courser Bee Honey>:
+         coord: [2671.38, 283.54, -2979.21]
+      - _Item<Courser Bee Honey>:
+         coord: [2642.85, 284.54, -2987.6]
+      - _Item<Courser Bee Honey>:
+         coord: [2624.62, 276.08, -2957.82]
+      - _Item<Courser Bee Honey>:
+         coord: [2708.92, 276.07, -2929.33]
+      - _Korok::RW24::End
+      - _Location::DunselPlateau:
+         hide-icon-on-map: true
+      - _Location::KeyaPond
+      - _Korok::RW21
+      - _Enemy::BokoBoss::G58
+
+   - Mount Dunsel:
+      - _Enemy::Talus::GL03
+      - _Cave::MountDunsel00
+      - _Shrine::Bamitok
+      - _Bubbulfrog::MountDunselCave
+      - _Cave::MountDunsel01:
+         comment: Ascend
+      - _Location::MountDunsel:
+         hide-icon-on-map: true
+      - _LockedChest::G42
+      - _Korok::RW27
+      - _Location::CapeCales:
+         hide-icon-on-map: true
+      - _Korok::RW36::Start:
+         comment: Build hoverboard, attach korok
+      - _Korok::RW25:
+         comment: Drop hoverboard to water below
+      - _Cave::CapeCalesCliffbase00:
+         comment: Get back on hoverboard, whistle to open cave
+      - _Chest::TinglesTights
+      - _Chest<Lynel Bow>:
+         coord: [3516.75, 133.81, -3220.38]
+      - _Bubbulfrog::CapeCalesCliffbaseCave
+
+   - Eventide Island:
+      - _Cave::CapeCalesCliffbase00
+      - _Korok::RW36::End
+      - _Location::ToronboBeach:
+         hide-icon-on-map: true
+      - _SideQuest::SeekingthePirateHideout:
+         coord: [4515.17, 107.01, -3501.46]
+         notes: Take pic of Sesami's shield
+      - _Korok::RW30
+      - _Chest<Bomb Flowers>:
+         coord: [4571.2, 171.11, -3526.28]
+      - _Enemy<Boko x5>:
+         coord: [4574.49, 171.11, -3523.86]
+      - _Korok::RW33
+      - _Korok::RW37
+      - _Location::EventideIsland:
+         hide-icon-on-map: true
+      - _Enemy<Moblin>:
+         coord: [4468.88, 139.7, -3750.68]
+      - _Enemy<Boko x4>:
+         coord: [4473.88, 148.49, -3761]
+      - _Chest<Arrows>:
+         coord: [4479.79, 148.44, -3764.9]
+      - _Enemy<Boko>:
+         coord: [4601.45, 161.07, -3707.58]
+      - _Enemy<Boko x2>:
+         coord: [4647.29, 162.72, -3728.03]
+      - _Enemy<Lizalfos>:
+         coord: [4646.85, 162.59, -3732.2]
+      - _Korok::RW38
+
+   - Pirate Cave:
+      - _Cave::EventideIsland00
+      - _Enemy::BokoBoss::G63
+      - _Enemy<Blue Bokoblin>:
+         coord: [4690.72, 113.49, -3754.95]
+      - _Enemy<Blue Bokoblin>:
+         coord: [4699.54, 113.49, -3742.2]
+      - _Enemy<Blue Bokoblin>:
+         coord: [4704.37, 121.94, -3718.82]
+      - _Enemy<Blue Bokoblin>:
+         coord: [4690.46, 121.97, -3716.29]
+      - _Enemy<Blue Bokoblin>:
+         coord: [4673.14, 133.2, -3735.94]
+      - _Enemy<Blue Bokoblin>:
+         coord: [4672.75, 107.77, -3766.63]
+      - _Enemy<Blue Bokoblin>:
+         coord: [4668.38, 121.94, -3761.38]
+      - _Shrine::Marari-in
+      - _Bubbulfrog::EventideIslandCave:
+         comment: Ascend
+
+   - Seeking the Pirate Hideout Completed:
+      - _Item<Steering Stick and Fans>:
+         coord: [4671.18, 166.56, -3745.79]
+         comment: Build flying machine
+      - _SideQuest<Complete Side Quest>:
+         coord: [4515.17, 107.01, -3501.46]
+      - _Chasm::EventideIsland
+
+   - Midna's Helmet:
+      - _Equipment::Weapon<Broadsword>:
+         coord: [4514.37, -340.81, -3504.06]
+      - _Location::LoneIslandColiseum:
+         hide-icon-on-map: true
+      - _LockedChest::D95
+      - _Chest::MidnasHelmet:
+         hide-icon-on-map: true
+      - _Lightroot::Ni-iraram
+      - Ascend:
+         movements:
+            - to: [4720.29, -454.81, -3786.23]
+
+   - Bird-Man Flight Research:
+      - _Npc::Branli:
+         comment: Do mini-game
+      - _Item<Steering Stick and Fans>:
+         coord: [4671.18, 166.56, -3745.79]
+         comment: Build flying machine
+
+   - Eventide Gleeok:
+      - _Enemy::Gleeok::S03
+      - _SagesWill::Eventide
 
 
 
