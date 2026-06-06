@@ -1215,7 +1215,7 @@ _route:
          notes: Take pic of garden hoe
       - _Shrine::Ishodag
 
-   - Impa:
+   - Climbing Gear:
       - _Well::MountGustaf
       - _Korok::LL40
       - _Well::CarokBridge
@@ -1226,8 +1226,11 @@ _route:
       - _Cave::NorthHyrulePlain01:
          comment: Drop flying machine near other end of cave
       - _Bubbulfrog::NorthHyrulePlainCave
+      - _Chest::ClimbingGear
       - _Cave::NorthHyrulePlain00
       - _Korok::LB35
+
+   - Impa:
       - _Korok::LB25
       - _Location::RoyalAncientLabRuins:
          hide-icon-on-map: true
@@ -1257,7 +1260,7 @@ _route:
          notes: Take pic of mop
       - _SideQuest::APictureforNewSerenneStable:
          coord: [-1362.11, 191.53, 723.07]
-      - _Shrine<Activate Sinikawak shrine>:
+      - _Shrine<Activate Sinakawak shrine>:
          coord: [-1414.62, 191.14, 756.85]
 
    - Forgotten Temple:
@@ -5162,12 +5165,339 @@ _route:
          comment: Get free food
       - _Special<Cook>:
          coord: [2894.99, 112.44, -3411.22]
-         comment: Spicy porgy curry
+         comment: Rice, Spice, Porgy
       - _SideQuest<Rattled Ralera>:
          coord: [2844.93, 110.22, -3462.89]
       - _SideQuest::LurelinResortProject:
          coord: [2859, 0, -3518]
 
+   - Light Dragon Farming 8:
+      - _Warp::Shrine::Jinodok<Warp to Jinodok Shrine>:
+         level: Sky
+      - _Material<Light Dragon Claw>:
+         coord: [-1000, 1000, -1300]
+
+   - The Beast and the Princess:
+      - _Warp::Shrine::Sinakawak<Warp to Sinakawak Shrine>
+      - _Shrine::Sinakawak
+      - _SideAdv::TheBeastandthePrincess:
+         coord: [-1349.11, 191.08, 732.73]
+      - _Npc::Beedle_03:
+         coord: [-1347.46, 191.07, 722.15]
+      - _Korok::LL33
+      - _Special<Starting Block>:
+         coord: [-947.69, 160.69, 681.73]
+      - _Korok::LL23
+      - _Enemy::Talus::GC01
+      - _LockedChest::G18
+      - _Korok::LL05::Start
+      - _Korok::LL05::End
+      - _Special<Starting Block>:
+         coord: [-1034.59, 167.12, 1083.4]
+         comment: Drop flying machine at west end of island
+      - _Korok::LL08
+
+   - Water Reservoir:
+      - _Korok::LL12
+      - _Korok::LL19
+      - _Location::CastleTownPrison:
+         hide-icon-on-map: true
+      - _Korok::LL28
+      - _Korok::LL29
+      - _Location::MoatBridge
+      - _Korok::LL35
+      - _Location::WaterReservoir
+      - _Chest<Ruby>:
+         coord: [-640.91, 128.3, 441.39]
+      - _Korok::LL34
+      - _Chasm::HyruleCastleMoatWest
+
+   - Lonely Frox:
+      - _Enemy::Frox::DC03
+
+   - Farosh Farming 9:
+      - _Warp::Shrine::Rakashog<Warp to Rakashog Shrine>:
+         comment: Make night
+         level: Sky
+      - _Item<Rockets>:
+         coord: [-1820.55, 1075.09, -2212.26]
+         comment: Fuse rockets to shields
+      - _Material<Star Fragment>:
+         coord: [-1900, 1050, -2100]
+      - _Material<Farosh Claw>:
+         coord: [-2000, 1000, -2000]
+
+   - Naydra Farming 11:
+      - _Warp::Tower::MountLanayru<Warp to Mount Lanayru Tower>:
+         comment: Make night
+      - _Material<Star Fragment>:
+         coord: [3750, 1000, -1350]
+      - _Material<Naydra Claw>:
+         coord: [3660, 500, -1375]
+
+   - Dinraal Farming 10:
+      - _Warp::Shrine::Mayam<Warp to Mayam Shrine>:
+         comment: Make night
+      - _Material<Star Fragment>:
+         coord: [200, 1200, 3100]
+      - _Material<Dinraal Claw>:
+         coord: [150, 1000, 3200]
+
+   - Tukarok Shrine:
+      - _Warp::Tower::LookoutLanding<Warp to Lookout Landing Tower>
+      - _Npc<Karson>:
+         coord: [-210, 109, 106]
+         comment: Tell Karson about the Rito rope bridge
+      - _Shop::GeneralStore:
+         comment: Buy rice, milk, and fish
+      - _Enemy::BokoBoss::G17
+      - _Well::MabeVillageRuins
+      - _Location::MabeVillageRuins:
+         hide-icon-on-map: true
+      - _Cave::RanchRuins01:
+         comment: Drop flying machine near other side of cave
+      - _Bubbulfrog::RanchRuinsCave
+      - _Cave::RanchRuins00
+      - _Korok::LL54
+      - _Korok::LL53
+      - _Korok::LL58
+      - _LockedChest::G23
+      - _Korok::LL49
+      - _Addison::A38
+      - _Korok::LL46
+      - _Well::RebonaeBridge
+      - _SideQuest::FellintoaWell:
+         coord: [778.93, 122.16, 8.4]
+      - _Special<Starting Block>:
+         coord: [808.58, 116.29, -27.23]
+      - _Korok::SS17
+      - _Location::RebonaeBridge:
+         coord: [840, 105, -20]
+      - _Cave::RebonaeBridge00
+      - _LockedChest::G58
+      - _Bubbulfrog::RebonaeBridgeCave:
+         comment: Ascend
+      - _Shrine::Tukarok
+
+   - Wetland Stable:
+      - _Korok::SS21
+      - _Korok::SS20
+      - _Enemy<Lizalfos x3>:
+         coord: [854.41, 136.5, -297.21]
+      - _Enemy<Moblin x1>:
+         coord: [867.94, 131.71, -280.38]
+      - _Well::WetlandStableSouth
+      - _Well::WetlandStable
+      - _SideQuest::AnUninvitedGuest:
+         coord: [864.73, 131.25, -172.27]
+      - _SideAdv::TheMissingFarmTools:
+         coord: [873.57, 131.26, -158.42]
+      - _Npc::Lawdon
+      - _Place::WetlandStable:
+         hide-icon-on-map: true
+      - _SideQuest::APictureforWetlandStable:
+         coord: [888, 176, -173]
+      - _Npc::Beedle_05
+
+   - Flower Blight:
+      - _Korok::SS30::Start
+      - _Npc::Izra:
+         comment: Attach korok to raft
+      - _Location::HyliaRiver:
+         hide-icon-on-map: true
+      - Ride the River:
+         comment: Rocket shield over to korok
+         movements:
+            - to: [754, 0, -180]
+            - to: [735, 0, -230]
+            - to: [795, 0, -390]
+      - _Korok::LL57
+      - _Korok::SS26::Start:
+         comment: Attach korok to raft
+      - _Chest<Rockets>:
+         coord: [891.57, 118.09, -541.65]
+      - _Korok::SS26::End
+      - _Npc::Magda:
+         comment: Place korok on pier before triggering cutscene
+      - _Location::FloretSandbar
+
+   - Lanayru Wetlands:
+      - _Item<Korok>:
+         coord: [850.59, 115.23, -787.13]
+         comment: Build flying machine with korok
+      - _Korok::SS30::End
+      - _Korok::SS32
+      - _Enemy<Phantom Ganon>:
+         coord: [1130.32, 174.87, -772.96]
+      - _Chest<Large Zonai Charge>:
+         coord: [1186.51, 241.84, -793.82]
+         comment: Use spring to get out of cage
+      - _Shrine::Morok
+      - _Korok::SS35
+      - _LockedChest::G29
+      - _Korok::SS25
+      - _Enemy<Lizalfos x2>:
+         coord: [1488.71, 115.07, -522.07]
+      - _Enemy<Lizalfos x4>:
+         coord: [1589.83, 117.23, -450.31]
+      - _Item<Fleet-Lotus Seeds>:
+         coord: [1673.63, 115.87, -381.82]
+      - _OldMap::Necluda_05:
+         comment: Use recall to ride a ruin block up to the chest
+      - _Location::GopongaVillageRuins:
+         hide-icon-on-map: true
+      - _Well::GopongaVillageRuins:
+         comment: Enter the well
+      - _Special<Cook>:
+         coord: [1511.08, 104.8, -323.96]
+         comment: Dubious food, Ascend
+      - _Korok::SS16::Start
+      - _Enemy<Lizalfos x2>:
+         coord: [1333.25, 115.52, -436.6]
+      - _Well::LanayruWetlands
+      - _Korok::SS19
+      - _Enemy::BokoBoss::G39
+      - _Well::ZauzIsland:
+         comment: Enter the well
+      - _Enemy::Hinox::GZ04:
+         comment: Ascend
+      - _Enemy<Lizalfos>:
+         coord: [1486.8, 116.5, -139.31]
+      - _Enemy<Lizalfos>:
+         coord: [1562.79, 116.29, -92]
+      - _Korok::SS16::End
+      - _Shrine::Jonsau
+
+   - The Ultimate Dish:
+      - _Item<Fleet-Lotus Seeds>:
+         coord: [1733.99, 115.87, -42.77]
+      - _Item<Fleet-Lotus Seeds>:
+         coord: [1689.69, 115.87, -45.03]
+      - _Item<Fleet-Lotus Seeds>:
+         coord: [1677.88, 115.89, -129.79]
+      - _Item<Fleet-Lotus Seeds>:
+         coord: [1698.95, 115.87, -136.74]
+      - _Enemy<Lizalfos>:
+         coord: [1697.19, 115.01, -142.59]
+      - _Item<Fleet-Lotus Seeds>:
+         coord: [1725.55, 115.88, -167.83]
+      - _Item<Fleet-Lotus Seeds>:
+         coord: [1753.38, 115.89, -163.34]
+      - _Item<Fleet-Lotus Seeds>:
+         coord: [1770.63, 115.89, -156.84]
+      - _Item<Fleet-Lotus Seeds>:
+         coord: [1782.28, 115.89, -153.09]
+      - _Item<Fleet-Lotus Seeds>:
+         coord: [1792.09, 115.89, -147.62]
+      - _Item<Fleet-Lotus Seeds>:
+         coord: [1805.7, 115.89, -132.13]
+      - _Item<Fleet-Lotus Seeds>:
+         coord: [1806.7, 115.89, -125.03]
+      - _Item<Fleet-Lotus Seeds>:
+         coord: [1788.25, 115.89, -165.05]
+      - _Item<Fleet-Lotus Seeds>:
+         coord: [1793.93, 115.89, -182.45]
+      - _Enemy<Lizalfos>:
+         coord: [1858.68, 119.43, -214.38]
+      - _Enemy<Lizalfos>:
+         coord: [1855.61, 121.13, -201.05]
+      - _Enemy<Lizalfos>:
+         coord: [1891, 120.93, -152]
+      - _Korok::SS18
+      - _Item<Fleet-Lotus Seeds>:
+         coord: [1907.08, 115.89, -238.26]
+      - _Item<Fleet-Lotus Seeds>:
+         coord: [1902.2, 115.89, -245.89]
+      - _Item<Fleet-Lotus Seeds>:
+         coord: [1922.01, 115.89, -260.23]
+      - _Item<Fleet-Lotus Seeds>:
+         coord: [1918.99, 115.89, -273.71]
+      - _Item<Fleet-Lotus Seeds>:
+         coord: [1886.31, 115.89, -307.62]
+      - _Item<Fleet-Lotus Seeds>:
+         coord: [1922.88, 115.89, -287.7]
+      - _Item<Fleet-Lotus Seeds>:
+         coord: [1930.67, 115.89, -285.01]
+      - _Item<Fleet-Lotus Seeds>:
+         coord: [1944.88, 115.89, -273.44]
+      - _Item<Fleet-Lotus Seeds>:
+         coord: [1952.72, 115.89, -281.17]
+      - _Enemy::Lynel::G09
+      - _Item<Fleet-Lotus Seeds>:
+         coord: [1930.6, 115.89, -373.2]
+      - _Item<Fleet-Lotus Seeds>:
+         coord: [1961.26, 115.89, -385.72]
+      - _Item<Fleet-Lotus Seeds>:
+         coord: [1954.99, 115.89, -390.16]
+      - _Item<Fleet-Lotus Seeds>:
+         coord: [1954.21, 115.89, -396.58]
+      - _Item<Fleet-Lotus Seeds>:
+         coord: [1966.37, 115.89, -394.99]
+      - _Item<Fleet-Lotus Seeds>:
+         coord: [1960.23, 115.89, -411.1]
+      - _Korok::SS23:
+         comment: Shoot from below
+      - _Korok::SS24
+      - _Well::RikokaHills:
+         comment: Enter the well
+      - _SideQuest::TheUltimateDish:
+         coord: [1711.09, 119.38, -652.14]
+         comment: Ascend
+
+   - Dueling Peaks:
+      - _Korok::SS33
+      - _Cave::ByroadtoLanayruWetlands01
+      - _Bubbulfrog::ByroadtoLanayruWetlands
+      - _Enemy::Talus::DK02
+      - _Cave::ByroadtoLanayruWetlands00
+      - _Korok::SS54::Trail
+      - _Korok::SS50
+      - _Enemy::Hinox::DL02
+      - _Korok::SS51
+      - _LockedChest::G31
+      - _Korok::SS59
+      - _Korok::SS64
+      - _Shrine::Eshos
+      - _Korok::SS68
+      - _SideAdv::PrincessZeldaKidnapped:
+         coord: [1759.67, 145.98, -1925.56]
+
+   - Bring Peace to Necluda:
+      - _Npc::Tasseren
+      - _Place::DuelingPeaksStable:
+         hide-icon-on-map: true
+      - _SideQuest::APictureforDuelingPeaksStable:
+         coord: [1761, 131, -1925]
+      - _Korok::SS60::Start
+      - _LockedChest::G30
+      - _Korok::SS60::End
+      - _Cave::FortHateno00
+      - _Bubbulfrog::FortHatenoCave
+      - _LockedChest::G57
+      - _Korok::SS62
+      - _Location::FortHateno:
+         hide-icon-on-map: true
+      - _SideAdv::BringPeacetoNecluda:
+         coord: [2313.98, 117.49, -1838.59]
+
+   - Barbarian Helm:
+      - _Item<Courser Bee Honey>:
+         coord: [2346.95, 123.38, -1806.98]
+      - _Item<Courser Bee Honey>:
+         coord: [2364.1, 120.67, -1879.95]
+      - _Item<Courser Bee Honey>:
+         coord: [2388.63, 122.5, -1857.16]
+      - _Korok::SS65
+      - _Korok::ML19::Start
+      - _Korok::ML16
+      - _LockedChest::G34
+      - _Korok::ML19::End
+      - _Addison::A61
+      - _Korok::SS58
+      - _Cave::RobredDropoff00
+      - _Enemy::BokoBoss::G66
+      - _Bubbulfrog::RobredDropoffCave
+      - _Chest::BarbarianHelm
 
 
 
