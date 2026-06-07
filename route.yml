@@ -6020,7 +6020,7 @@ _route:
       - _Bubbulfrog::PufferBeachOverheadCave
       - _Chest::PhantomHelmet
 
-   - Giant White Stallion:
+   - Komo Shorline Cave:
       - _Cave::PufferBeachOverhead00
       - _Korok::PF86::End
       - _Enemy<Electric Lizalfos x2>:
@@ -6029,11 +6029,11 @@ _route:
       - _Cave::KomoShoreline00
       - _Bubbulfrog::KomoShorelineCave
       - _Korok::PF79::Trail
+
+   - Giant White Stallion:
       - _Item<Giant White Stallion>:
          coord: [799.59, 186.42, -3719.61]
          notes: Take pic
-
-   - Horse God Bridge:
       - _Location::HorseGodBridge
       - _Korok::PF80
       - _Enemy::Talus::GF06
@@ -6094,9 +6094,104 @@ _route:
       - _Korok::PF63
       - _Korok::PF62::Start
       - _Korok::PF66
-      - _Korok::PF62::End
+      - _Korok::PF62::End:
+         notes: Do a lynel run to kill time if Light Dragon is not close to Jinodok Shrine
 
+   - Strade's Test of Strength:
+      - _Warp::Shrine::Jinodok<Warp to Jinodok Shrine>:
+         level: Sky
+      - _Material<Light Dragon Horn>
+      - _Npc::Strade:
+         comment: Complete mini-game
 
+   - The Great Plateau:
+      - _Shrine::Riogok
+      - _Location::GreatPlateau:
+         hide-icon-on-map: true
+      - _Enemy<Phantom Ganon>:
+         coord: [-1292.34, 191.34, -1633.19]
+      - _Korok::HF49::Trail
+      - _Enemy::Talus::GC07
+      - _LockedChest::G16
+      - _Korok::HF52
+      - _Korok::HF47
+      - _Korok::HF58::Start
+      - _Korok::HF42:
+         comment: Drop flying outside plateau wall
+      - _Special<Starting Block>:
+         coord: [-657.09, 158.02, -1389.64]
+      - _Korok::HF39
+      - _Location::GatepostTownRuins
+      - _SideAdv::ACallfromtheDepths:
+         coord: [-587.31, 134.42, -1542.53]
+         comment: Break wall and talk to statue head
+      - _Item<Flying Machine>:
+         coord: [-550, 150, -1510]
+      - _Korok::HF50::Start
+      - _Korok::HF50::End
+      - _Enemy::BokoBoss::G22
+
+   - Shrine of Resurrection Cave:
+      - _Special<Starting Block>:
+         coord: [-683.04, 199.9, -1842.77]
+      - _Korok::HF54
+      - _Korok::HF60
+      - _Korok::HF57
+      - _Korok::HF58::End
+      - Drop flying machine in snowy area above Shrine of Resurrection Cave:
+         movements:
+            - to: [-1140, 210, -1930]
+      - _Korok::HF55
+      - _Cave::ShrineofResurrection00
+      - _Bubbulfrog::ShrineofResurrection
+      - _SchemaStone::ShrineOfResurrection
+
+   - Temple of Time Ruins:
+      - Ascend:
+         comment: Burn banner and stand in covey with chest to ascend
+      - _Korok::HF67:
+         comment: Drop flying machine in water next to pier, Use rocket shield and Tulin gust to get to next korok
+      - _Korok::HF68::Start:
+         comment: Flying machine should be nearby in the water
+      - _Korok::HF68::End
+      - _Cave::RiveroftheDeadWaterfall00
+      - _Bubbulfrog::RiveroftheDeadWaterfallCave
+      - _Shrine::Tadarok:
+         comment: Ascend
+      - _Korok::HF65
+      - _Location::TempleofTimeRuins:
+         hide-icon-on-map: true
+
+   - A Call From the Depths:
+      - _Chest<Nostalgic Fabric>:
+         coord: [-811.25, 263.59, -1963.41]
+      - _Korok::HF64
+      - _GoddessStatue::Plateau:
+         notes: Take pic
+      - _Special<Statue Eye>:
+         coord: [-686.23, 169.17, -1535.72]
+         comment: Drop it into the chasm
+      - _Chasm::GreatPlateauNorth
+      - _Special<Statue Eye>:
+         coord: [-469.12, 178.74, -1990.15]
+         comment: Drop it into the chasm
+      - _Korok::HF66
+      - _Enemy::BokoBoss::G24
+      - _Korok::HF71
+
+   - Yiga Mask:
+      - _Korok::HF73
+      - _Chest::YigaMask
+      - _Chasm::GreatPlateauSouth
+      - _Special<Statue Eye>:
+         coord: [-942.47, 273.16, -2326.44]
+         comment: Drop it into the chasm
+      - _Korok::HF72
+      - _Korok::HF63
+      - _Special<Statue Eye>:
+         coord: [-1433.5, 338.23, -1981.95]
+         comment: Drop it into the chasm
+      - _Chasm::GreatPlateauWest
 
 
 
