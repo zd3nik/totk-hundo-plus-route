@@ -5405,7 +5405,8 @@ _route:
          coord: [1944.88, 115.89, -273.44]
       - _Item<Fleet-Lotus Seeds>:
          coord: [1952.72, 115.89, -281.17]
-      - _Enemy::Lynel::G09
+      - _Enemy::Lynel::G09:
+         notes: Take pic
       - _Item<Fleet-Lotus Seeds>:
          coord: [1930.6, 115.89, -373.2]
       - _Item<Fleet-Lotus Seeds>:
@@ -5719,9 +5720,64 @@ _route:
       - _SideAdv::AMonsterousCollectionIII
       - _SideAdv::AMonsterousCollectionIV
       - _SideAdv::AMonsterousCollectionV
+      - _Item<Cookset>:
+         coord: [3943.63, 233.37, 1618.7]
+         comment: Make night
       - _SideQuest::HomeonArrange:
          coord: [3933, 129, 1586]
 
+   - Rocket Reload 4:
+      - _Warp::Shrine::Rakashog<Warp to Rakashog Shrine>:
+         level: Sky
+      - _Item<Rockets>:
+         coord: [-1820.55, 1075.09, -2212.26]
+         comment: Fuse rockets to shields
+      - _Material<Optional Star Fragment>
+
+   - South Lomei Labyrnith:
+      - _Korok::GC23
+      - _Addison::A26
+      - _Korok::GC27
+      - _Korok::GC26
+      - _Enemy::Lynel::G06
+      - _Shrine::Kitawak
+      - _Korok::GC33
+      - _Korok::GC36
+      - _Korok::GC38
+      - _Korok::GC46
+      - _Location::SouthLomeiLabyrinth:
+         hide-icon-on-map: true
+      - _Enemy<Phantom Ganon>:
+         coord: [-1796.05, 177.05, -3501.8]
+      - Enter Labyrinth:
+         movements:
+            - to: [-1770, 170, -3470]
+      - _Shrine::Motsusis
+      - _SideQuest::TheSouthLomeiProhecy<The South Lomei Prophecy>:
+         coord: [-1795, 152.04, -3438.35]
+
+   - A Way to Trade:
+      - _Warp::TechLab::Hateno<Warp to Hateno Tech Lab>
+      - _Material<Naydra Horn>:
+         comment: Warp to travel medallion in Kitano Bay if Naydra is not nearby
+      - _Korok::ML46
+      - _Korok::ML47
+      - _Item<Boat>:
+         coord: [4007.13, 106.14, -3008.27]
+      - _SideQuest::AWaytoTradeWashedAway:
+         movements:
+            - to: [3850, 0, -3800]
+            - to: [3550, 0, -3930]
+            - to: [3300, 0, -3920]
+            - to: [3040, 0, -3800]
+            - to: [2959, 0, -3494]
+      - _Shop::GeneralStore16:
+         hide-icon-on-map: true
+      - _SideQuest<Complete Lurelin Resort Project>:
+         coord: [2968, 1, -3665]
+      - _Special<Lurelin Water Rally>:
+         coord: [2976, 1, -3690]
+         comment: Complete all levels of mini-game
 
 
 
