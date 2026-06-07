@@ -5489,7 +5489,7 @@ _route:
       - _Material<Star Fragment 33/36>
       - _Material<Light Dragon Horn>
 
-   - Hateno Tech Lab:
+   - Walnot Mountain:
       - _Warp::Tower::MountLanayru<Warp to Mount Lanayru Tower>
       - _Korok::ML06
       - _Material<Naydra Horn>:
@@ -5506,6 +5506,8 @@ _route:
       - _Korok::ML11::Trail
       - _Korok::ML20
       - _Shrine::Jikais
+
+   - Hateno Tech Lab:
       - _Cave::WalnotMountain01
       - _Enemy::BokoBoss::G67
       - _Bubbulfrog::WalnotMountainCave
@@ -5584,6 +5586,141 @@ _route:
       - _Bubbulfrog::MaplaPointCave
       - _SideQuest::ABottleCryforHelp:
          coord: [4515.1, 106.79, -2310.12]
+         comment: Make night
+
+   - Dinraaal Farming 11:
+      - _Warp::Shrine::Mogisari<Warp to Mogisari Shrine>:
+         level: Sky
+      - _Material<Star Fragment 34/36>
+      - _Material<Dinraal Horn>
+
+   - Light Dragon Farming 10:
+      - _Warp::Shrine::Kumamayn<Warp to Kumamayn Shrine>:
+         comment: Make night
+         level: Sky
+      - _Material<Star Fragment 35/36>
+      - _Material<Light Dragon Horn>
+
+   - Akkala Citadel Ruins Cave:
+      - _Warp::Shrine::Domizuin<Warp to Domizuin Shrine>
+      - _Shrine::Domizuin
+      - _Korok::UM38
+      - _Korok::UZ01
+      - _Location::AkkalaBridgeRuins:
+         hide-icon-on-map: true
+      - _Cave::AkkalaCitadelRuins00
+      - _LockedChest::G48
+      - _Bubbulfrog::AkkalaCitadelRuinsCave:
+         comment: Ascend
+
+   - Bring Peace to Akkala:
+      - _Item<Steering Stick and Fans>:
+         coord: [3258.99, 531.44, 1499.94]
+         comment: Build flying machine
+      - _Enemy::Talus::GA04
+      - _LockedChest::G33
+      - _Korok::UM41
+      - _Location::AkkalaSpan
+      - _SideAdv::BringPeacetoAkkala
+      - _Korok::EC51
+      - _Korok::UZ04
+      - _Location::AkkalaParadeGroundRuins
+      - _Chasm::SouthAkkalaPlains
+      - _Korok::UM40
+      - _Enemy::Gleeok::G03
+      - _Korok::UZ06
+      - _Location::WestSokkalaBridge
+      - _Location::SokkalaBridge
+      - _Korok::UZ05
+      - _Location::EastSokkalaBridge:
+         notes: Take pic of Meteo Wizzrobe
+
+   - Tarrey Town:
+      - _Enemy::Talus::GZ01:
+         notes: Take pic
+      - _LockedChest::G38
+      - _Korok::UZ03::Trail
+      - _Korok::UM42
+      - _Korok::UM39
+      - _Shrine<Activate Rasitakiwak Shrine>:
+         coord: [4166.7, 348.41, 1322.74]
+      - _Korok::UM36
+      - _Korok::UM33
+      - _Shop::GeneralStore15:
+         comment: Buy monster blood
+      - _Shop::BreakaPartShop<Star Fragment 36/36>:
+         comment: Separate Light Staff for Star Fragment
+      - _Place::TarreyTown:
+         hide-icon-on-map: true
+      - _Korok::UM34
+      - _SideAdv::MattisonsIndependence:
+         coord: [3936, 129, 1590]
+      - _Npc::Hagie:
+         comment: Buy shrine crystal from ass-hole
+      - _Cave::TarreyTownTunnel00
+      - _Bubbulfrog::TarreyTownTunnel:
+         comment: Ascend
+
+   - Help Mattison:
+      - _Npc::Hudson_01
+      - _Npc<Mattison>:
+         coord: [3936.1, 241.83, 1593.1]
+         comment: Ascend
+      - _Special<Cook>:
+         coord: [3943.63, 233.37, 1618.7]
+         comment: Speed food and money food
+         notes: Make noon
+      - _Npc::Mattison_03
+      - _Item<President Hudson Cutouts>:
+         coord: [3933.85, 235.71, 1578.56]
+         comment: Make standing partition
+      - _Npc::Hagie:
+         comment: Place partition in front of ass-hole
+      - _Npc<Mattison>:
+         coord: [3939.66, 233.65, 1611.85]
+
+   - Hudson Construction Site:
+      - _Shrine::Jochi-ihiga::Start:
+         comment: Build hoverboard to transport crystal
+      - _Shrine::Jochi-ihiga
+      - _Korok::UM37::Trail
+      - _Cave::ConstructionSite01:
+         comment: Drop flying machine near well
+      - _Bubbulfrog::ConstructionSiteCave:
+         comment: Ascend
+      - _Cave::ConstructionSite00
+      - _Dispenser::G01
+      - _SideQuest::SecretsWithin
+      - _Well::ConstructionSite
+      - _Place::HudsonConstructionSite:
+         hide-icon-on-map: true
+      - _Addison::A76
+      - _Korok::UM31
+      - _Shop::TarreyTownRace
+      - _SideQuest::MastertheVehiclePrototype:
+         comment: Complete prototype race, Reload after autosave to unlock mini-game
+      - _Special<Tarrey Town Race>:
+         comment: As with all mini-games, complete all levels, e.g. beginner and expert
+      - _Npc<Tali>:
+         coord: [3738, 198, 1680]
+         comment: Tell them about the Lurelin Village Resort Project
+      - _Npc::Hudson:
+         comment: Give sundelions
+
+   - Monster Collection:
+      - _Warp::Place::TarreyTown
+      - _GoddessStatue::TarreyTown:
+         notes: Take pic
+      - _Shop::GeneralStore15:
+         comment: Buy monster blood
+      - _Shop::MonsterGallery
+      - _SideAdv::AMonsterousCollectionI
+      - _SideAdv::AMonsterousCollectionII
+      - _SideAdv::AMonsterousCollectionIII
+      - _SideAdv::AMonsterousCollectionIV
+      - _SideAdv::AMonsterousCollectionV
+      - _SideQuest::HomeonArrange:
+         coord: [3933, 129, 1586]
 
 
 
