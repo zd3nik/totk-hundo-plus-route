@@ -5779,6 +5779,195 @@ _route:
          coord: [2976, 1, -3690]
          comment: Complete all levels of mini-game
 
+   - Tuft Mountain Perimeter:
+      - _Item<Campfire>:
+         coord: [2976, 1, -3690]
+         comment: Make night, Build flying machine
+      - _Korok::RW42::Start
+      - _Korok::RW42::End
+      - _Enemy::BokoBoss::G48
+      - _Special<Starting Block>:
+         coord: [2199.05, 188.51, -3492.52]
+      - _Korok::RW32
+      - _Korok::RW31
+      - _Special<Starting Block>:
+         coord: [2549.02, 197.44, -3208.38]
+         comment: Drop flying machine near road
+      - _Korok::RW26
+
+   - Tuft Mountain:
+      - _Cave::AtunValley00
+      - _LockedChest::G52
+      - _Bubbulfrog::AtunValleyCave
+      - _Korok::RW34:
+         notes: Take pic of sunset
+      - _Addison::A64
+      - _Korok::RW41::Start
+      - _Korok::RW41::End
+      - _Special<Starting Block>:
+         coord: [1972.99, 108.61, -3922.26]
+      - _Korok::RW43
+      - _Enemy::Hinox::GF09
+      - _Korok::PF81
+      - _Korok::PF78
+      - _Enemy<Lizalfos x3>:
+         coord: [1782.31, 271.67, -3737.78]
+      - _Cave::RasslaLake00
+
+   - Lakeside Stable:
+      - _Bubbulfrog::RasslaLakeCave:
+         comment: Ascend
+      - _Enemy<Phantom Ganon>:
+         coord: [1765.62, 252.55, -3681.43]
+      - _Npc::Anly
+      - _Place::LakesideStable:
+         hide-icon-on-map: true
+      - _SideQuest::APictureforLakesideStable:
+         coord: [1552.0227, 210.56248, -3537.839]
+
+   - Picture of Floria Falls:
+      - _Item<Campfire>:
+         coord: [1581.78, 166.02, -3473.65]
+         comment: Make noon, Repeat until clear day
+      - _Addison::A53
+      - _Korok::PF67::Start
+      - _Location::FloriaBridge:
+         notes: Take pic of Floria Falls
+      - _Korok::PF70
+      - _Korok::PF75
+      - _Enemy::Talus::GF05
+      - _Item<Courser Bee Honey>:
+         coord: [1874.42, 136.57, -3441.04]
+      - _Korok::PF61
+      - _Korok::PF52
+      - _Korok::PF64
+      - _Korok::PF67::End
+      - Drop flying machine above Calora Lake Cave entrance:
+         movements:
+            - to: [2000, 290, -3150]
+      - _Cave::CaloraLake01
+
+   - First Hinox Brother:
+      - _Bubbulfrog::CaloraLakeCave
+      - _Enemy::Hinox::GF08:
+         comment: Ascend
+      - _Cave::CaloraLake00:
+         comment: Ascend
+      - Drop Flying Machine on North Side of Riola Spring:
+         movements:
+            - to: [1760, 380, -2890]
+      - _Cave::RodaiLakefrontTunnel00
+
+   - Second Hinox Brother:
+      - _Bubbulfrog::RodaiLakefrontTunnel
+      - _Enemy::Hinox::GF06:
+         comment: Ascend
+      - _Korok::PF45
+      - _Item<Swift Violet>:
+         coord: [1811.12, 218.72, -3035.21]
+      - _Enemy<Black Bokoblin>:
+         coord: [1787.39, 188.3, -2987.64]
+      - _Korok::PF49
+
+   - Mount Floria Cave:
+      - _Cave::MountFloria00
+      - _Item<Zonai Parts>:
+         coord: [1832.01, 187.66, -2942.71]
+         comment: Build 4-wheeler
+      - _Bubbulfrog::MountFloriaCave:
+         comment: Ascend
+      - _Korok::RW18
+      - _Enemy<Electric Keese x3>:
+         coord: [1764.76, 389.13, -2808.46]
+      - _Enemy<Shock Like>:
+         coord: [1759.31, 386.58, -2810.71]
+      - _Item<Flying Machine>:
+         coord: [1760, 380, -2890]
+      - Drop Flying Machine on Plateau West of Riola Spring:
+         movements:
+            - to: [1650, 300, -2920]
+      - _Cave::CortaLake00
+
+   - Third Hinox Brother:
+      - _Bubbulfrog::CortaLakeCave
+      - _Enemy::Hinox::GF05:
+         comment: Ascend
+      - _Korok::PF44
+      - _Korok::PF38
+      - _Enemy::Lynel::G10
+      - _Enemy<Phantom Ganon>:
+         coord: [1399.01, 255.6, -3203.63]
+      - _Korok::PF59
+      - _Korok::PF53
+      - _Korok::PF54
+
+   - Rubber Helm:
+      - _Cave::SarjonWoods00
+      - _Enemy<Black Horriblin>:
+         coord: [1269.86, 138.37, -3141.17]
+      - _Enemy<Black Horriblin>:
+         coord: [1302.61, 138.47, -3113.82]
+      - _Enemy<Black Horriblin>:
+         coord: [1331.89, 139.07, -3114.68]
+      - _Enemy<Black Horriblin>:
+         coord: [1335.4, 138.33, -3110.32]
+      - _Enemy<Like Like>:
+         coord: [1523.59, 137.83, -3041.37]
+      - _Bubbulfrog::SarjonWoodsCave
+      - _Chest::RubberHelm:
+         comment: Ascend
+
+   - Don Dons:
+      - _Korok::PF50
+      - _Korok::PF57::Trail
+      - _Korok::PF58
+      - _Enemy<Treasure Octorok>:
+         coord: [1491.47, 165.07, -3332.93]
+         notes: Take pic
+      - _SideAdv<Complete the Beast and the Princess>:
+         coord: [1540.53, 166.39, -3360.56]
+      - _Item<Don Don>:
+         coord: [1556.97, 164.43, -3355.8]
+         notes: Take pic
+      - _SideQuest::OustingtheGiants:
+         coord: [1560.35, 165.97, -3520.51]
+      - _SideQuest<Finish a Picture for Lakeside Stable>:
+         coord: [1552.0227, 210.56248, -3537.839]
+         notes: Sleep in Malania bed until night
+      - _Well::LakesideStable
+      - _Shrine::Joju-u-u
+
+   - Guchini Plain:
+      - _Korok::PF74
+      - _Cave::UbotaPoint00
+      - _Bubbulfrog::UbotaPointCave:
+         comment: Ascend
+      - _Korok::PF72
+      - _Korok::PF82::Start
+      - _Enemy<Electric Lizalfos x2>:
+         coord: [1388.14, 107.14, -3725.13]
+      - _Korok::PF83
+      - _Korok::PF82::End
+      - _Enemy<Phantom Ganon>:
+         coord: [872.45, 106.84, -3849.46]
+      - _Enemy::Gleeok::G10
+      - _Enemy::BokoBoss::G32
+      - _CherryBlossom::Faron
+      - _Korok::PF71
+      - _Item<Fleet-Lotus Seeds>:
+         coord: [987.84, 127.09, -3457.72]
+      - _Location::GuchiniPlainBarrows:
+         hide-icon-on-map: true
+      - _Item<Courser Bee Honey>:
+         coord: [983.92, 136.4, -3393.18]
+      - _Enemy::Talus::GF04
+      - _Item<Courser Bee Honey>:
+         coord: [1008.69, 127.79, -3287.86]
+      - _Location::SarjonBridge
+      - _Korok::PF55
+      - _Korok::PF65
+      - _Shrine::Utsushok
+
 
 
 
