@@ -6385,6 +6385,158 @@ _route:
          coord: [-4552.42, -371.37, -3213.08]
       - _Lightroot::Gonatoyrim
 
+   - Yiga Exam:
+      - _Warp::Tower::GerudoCanyon<Warp to Gerudo Canyon>
+      - _Special<Cook>:
+         coord: [-2431.27, 407.04, -2195.22]
+         comment: Speed food
+         notes: Make morning
+      - _Cave::YigaBlademasterStation00
+      - _SideAdv::TheYigaClanExam:
+         coord: [-2479.1, 242.97, -1796.44]
+         comment: Ascend
+      - _Bubbulfrog::TaafeiHillCave
+      - _Enemy::Talus::GG04
+
+   - Exit Taafei Hill Cave:
+      - _Cave::TaafeiHill00
+      - _Korok::GC03:
+         comment: Drop flying machine east of bridge
+      - _Korok::GC02
+      - _Korok::GC01
+
+   - Koukot Plateau Cave:
+      - _Cave::KoukotPlateau00
+      - _Enemy<Horriblin x2>:
+         coord: [-2242.2, 175.57, -1814.43]
+      - _Cave::KoukotPlateau01
+      - _Item<Rockets>:
+         coord: [-2167.19, 179.99, -1841.34]
+         comment: Fuse rockets to shields, Rocket shield up to bubbulfrog
+
+   - Hawk Pic:
+      - _Bubbulfrog::KoukotPlateauCave:
+         comment: Ascend
+      - _Npc::Garill
+      - _Addison::A13:
+         notes: Take pic of Hawk
+      - _Korok::GC08
+      - _Npc::Giro_02
+      - _Enemy<Ice-Breath Lizalfos x2>:
+         coord: [-1798.56, 111.98, -2422.53]
+      - _Cave::LowerSpectacleRock00
+      - _Bubbulfrog::LowerSpectacleRockCave:
+         comment: Ascend
+
+   - Save Botrick:
+      - _Korok::GC19::Start
+      - _Korok::GC19::End
+      - _Addison::A25
+      - _Enemy<Fire-Breath Lizalfos>:
+         coord: [-1543.34, 84.6, -2210.92]
+      - _Cave::StalryPlateau00
+      - _Bubbulfrog::StalryPlateauCave
+      - _Npc::Botrick_01
+
+   - Gerudo Canyon Pass:
+      - _Cave::StalryPlateau00
+      - _Korok::HF62
+      - _Korok::HF41
+      - _LockedChest::G17
+      - _Korok::HF46
+      - _Shop::MiniStable
+      - _Location::DigdoggSuspensionBridge:
+         hide-icon-on-map: true
+      - _Korok::HF51
+      - _Korok::HF56
+      - _Dispenser::G00
+      - _SideQuest::DisasterinGerudoCanyon:
+         coord: [-1660.77, 89.65, -2013.89]
+      - _Location::GerudoCanyonPass:
+         hide-icon-on-map: true
+      - _Cave::MountNabooru01
+      - _Special<Offering Plate>:
+         coord: [-1838.75, 147.18, -1943.96]
+      - _Bubbulfrog::MountNabooruCave:
+         comment: Ascend
+
+   - Rakakudaj Shrine:
+      - _Cave::MountNabooruSouth00
+      - _Bubbulfrog::MountNabooruSouthCave:
+         comment: Ascend
+      - _Well::MountNabooru
+      - _Shrine::Rakakudaj::Start
+      - _Item<4-Wheeler>:
+         coord: [-1935.59, 104.29, -2287.18]
+         comment: Attach steering stick and shrine crystal to 4-wheeler
+      - _Cave::MountNabooru00
+      - _Korok::GC05::Start:
+         comment: Attach korok to 4-wheeler
+      - _Korok::GC05::End:
+         notes: Be sure to park 4-wheeler far away from korok camp and detach korok to deliver it
+      - _Shrine::Rakakudaj
+
+   - Spectacle Rock Cave:
+      - _Warp::Tower::GerudoCanyon<Warp to Gerudo Canyon Tower>
+      - _Korok::GC09::Start
+      - _Korok::GC09::End
+      - _Addison::A14
+      - _CherryBlossom::Gerudo
+      - _Korok::GC11
+      - _Korok::GC13
+      - _Enemy<Ice-Breath Lizalfos x2>:
+         coord: [-2245.35, 356.04, -2256.7]
+      - Drop flying machine off at top of cliff:
+         movements:
+            - to: [-2295, 462, -2410]
+      - _Special<Starting Block>:
+         coord: [-2251.93, 380.69, -2358.59]
+      - _Korok::GC16
+      - _Cave::SpectacleRock00
+      - _Bubbulfrog::SpectacleRockCave
+
+   - Gerudo Canyon Mine:
+      - _Special<Offering Plate>:
+         coord: [-2301.11, 462.97, -2426.82]
+         comment: Ascend
+      - _Enemy::Talus::GG05:
+         comment: Flying machine should be nearby
+      - _Cave::GerudoCanyonMine01:
+         comment: Drop flying machine off near other end of cave
+      - _Enemy<Like Like>:
+         coord: [-2611.17, 223.21, -2526.58]
+         comment: Climb up wall to get to like like and ore deposits
+      - _Bubbulfrog::GerudoCanyonMine
+      - _Special<Offering Plate>:
+         coord: [-2675.53, 199.38, -2496.61]
+
+   - Finish the Exam:
+      - _Enemy::BokoBoss::G62
+      - _Enemy<Ice Like>:
+         coord: [-2598.73, 190.84, -2475.32]
+      - _Cave::GerudoCanyonMine00
+      - _Korok::GC18
+      - _SideQuest::GleeokGuts:
+         coord: [-2726.13, 167.9, -2335.33]
+      - _Shrine<Activate Turakamik Shrine>:
+         coord: [-2657.25, 186.78, -2237.3]
+      - _Korok::GC12
+      - _Korok::GC06
+      - _Special<Offering Plate>:
+         coord: [-2432.61, 183.31, -2035.49]
+      - _Special<Offering Plate>:
+         coord: [-2356.15, 197.46, -1814.14]
+      - _Cave::YigaBlademasterStation00
+      - _SideQuest<Complete Yiga Exam>:
+         coord: [-2479.1, 242.97, -1796.44]
+      - _Bubbulfrog::YigaBlademasterStation
+      - _Chest<Ruby>:
+         coord: [-2504.78, 244.06, -1781.56]
+      - _Chest<Eightfold Longblade>:
+         coord: [-2508.1, 245.71, -1779.78]
+         notes: Take pic
+      - _Shrine::Suariwak
+
 
 
 
