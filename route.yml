@@ -1188,6 +1188,7 @@ _route:
    - Ancient Tree Stump:
       - _SideQuest::MiskosTreasureofAwakeningIII:
          coord: [-1160, 34, -1271]
+      - _Chest::TrousersofAwakening
       - _Bubbulfrog::ColiseumRuinsCave:
          comment: Ascend
       - _Location::AquameBridge
@@ -1358,6 +1359,8 @@ _route:
       - _Special<Sand-Seals Mminigame>:
          coord: [-1542, 106, 1794]
       - _Enemy::BokoBoss::G12
+      - _Location::MarittaExchangeRuins:
+         hide-icon-on-map: true
       - _Enemy<Phantom Ganon>:
          coord: [-1781.06, 211.97, 1682.36]
       - _Well::MarittaExchangeRuins
@@ -4007,6 +4010,7 @@ _route:
 
    - Soldier's Garb:
       - _Cave::RoyalHiddenPassage02
+      - _Bubbulfrog::RoyalHiddenPassage
       - _Chest::SoldiersArmor
       - _Chest::SoldiersHelm
       - _Enemy::Hinox::GC02
@@ -6536,6 +6540,113 @@ _route:
          coord: [-2508.1, 245.71, -1779.78]
          notes: Take pic
       - _Shrine::Suariwak
+
+   - Dalite Forest:
+      - _Warp::Tower::GerudoCanyon<Warp to Gerudo Canyon Tower>
+      - _Material<Light Dragon Horn>:
+         comment: Skip if Light Dragon is not nearby
+      - _Korok::GH43
+      - _Tear::G04
+      - _LockedChest::G06
+      - _Korok::GH35
+      - _Korok::GH42
+      - _Korok::GH36
+      - _Korok::GH39
+      - _Korok::GH34
+      - _Korok::HF44
+      - _Korok::HF40
+      - _Well::OutskirtHill
+      - _Enemy::BokoBoss::G15
+      - _Korok::HF36
+      - _Korok::HF33
+      - _Enemy::Hinox::GC06
+      - _Korok::HF29::Trail
+      - _Korok::HF24
+
+   - Sage Temple Ruins:
+      - _Korok::HF26
+      - _Korok::HF10::Start
+      - _Korok::HF19
+      - _Korok::HF20
+      - _Enemy::Talus::GC05
+      - _LockedChest::G15
+      - _Location::GleeokBridge
+      - _Korok::HF15
+      - _Well::MountDaphnes
+      - _Korok::HF10::End
+      - _Korok::HF05
+      - _Enemy<Lizalfos>:
+         coord: [-1362.5, 121.16, -241]
+      - _Enemy<Lizalfos>:
+         coord: [-1340, 119.83, -227]
+      - _Korok::LL51
+      - _Location::SageTempleRuins:
+         hide-icon-on-map: true
+      - _Item<Acorns>:
+         coord: [-1372.26, 115, -208.21]
+      - _Item<Acorns>:
+         coord: [-1364.94, 114.99, -215.86]
+      - _Item<Acorns>:
+         coord: [-1380.56, 115, -255.28]
+      - _Item<Acorns>:
+         coord: [-1387.86, 115, -250.41]
+      - _Cave::SageTemple00
+
+   - Deliver a Stalhorse:
+      - _Bubbulfrog::SageTempleCave
+      - _Enemy::BokoBoss::G14
+      - _Korok::HF02
+      - _LockedChest::G14:
+         comment: Make night
+      - _Addison::A23
+      - _Location::SanidinParkRuins:
+         hide-icon-on-map: true
+      - _Korok::HF14
+      - _Item<Stalhorse>:
+         coord: [-1688.05, 227.81, -681.89]
+      - _Location::ManhalaBridge:
+         movements:
+            - to: [-1688, 230, -780]
+            - to: [-1953, 220, -990]
+            - to: [-1920, 200, -1070]
+            - to: [-1610, 108, -1017]
+      - _Addison::A24
+      - _SideQuest::TheHorseGuardsRequest:
+         coord: [-1449.91, 137.77, -1253.55]
+      - _Item<Mountain Buck>:
+         coord: [-1409.72, 160.61, -1173.91]
+         comment: Rocket shield up and paraglide down onto buck
+
+   - Serenade to Kaysa:
+      - _SideQuest<Deliver Buck to Toffa>:
+         coord: [-1449.91, 137.77, -1253.55]
+      - _Npc::Embry
+      - _Place::OutskirtStable:
+         hide-icon-on-map: true
+      - _SideQuest::APictureforOutskirtStable:
+         coord: [-1449.4932, 181.41899, -1269.0115]
+      - _Well::OutskirtStable
+      - _Korok::HF35
+      - _SideAdv::TheBeckoningWoman:
+            coord: [-1412.67, 137.5, -1296.43]
+      - _Npc::Beedle_04
+      - _SideAdv::SerenadetoKaysa:
+         coord: [-1406, 32, -1264]
+      - _Item<Zonai Parts>:
+         coord: [-1434.21, 139.98, -1241.37]
+         comment: Build a transport for the Stable Trotters
+
+   - The Beckoning Woman:
+      - _Fairy::GreatFairyFountain02<Great Fairy Kaysa>
+      - _Shrine::Tsutsu-um
+      - _Korok::HF34
+      - _Korok::HF38::Start
+      - _Korok::HF38::End
+      - _Npc::Ralera
+      - _Npc::Ralera_01
+      - _Korok::HF37
+      - _Npc::Ralera_02
+      - _Npc::Ralera_03
 
 
 
