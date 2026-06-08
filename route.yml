@@ -680,7 +680,7 @@ _route:
          coord: [-977.93, -421.39, 248.88]
       - _Lightroot::Gadohsi
       - _Enemy::Frox::DC05:
-         comment: Take pic
+         notes: Take pic
       - _Equipment::Weapon<Weapon Pillar>:
          coord: [-399.57, -365.06, 370.8]
       - _Equipment::Weapon<Weapon Pillar>:
@@ -773,7 +773,7 @@ _route:
       - _Lightroot::Kimakarut
       - _Enemy::Lynel::D00<Lynel>
       - _Enemy::Frox::DG06:
-         comment: Take pic
+         notes: Take pic
       - _Poe::Large:
          coord: [-3190.32, -370.16, -2515.13]
          comment: On top of forge chimney
@@ -871,7 +871,7 @@ _route:
       - _LockedChest::G26:
          notes: Collect cobble crusher
       - _Enemy::Hinox::GZ01:
-         comment: Take pic
+         notes: Take pic
       - _Location::TrilbyPlain:
          hide-icon-on-map: true
       - _Tower<Activate Eldin Canyon Tower>:
@@ -1002,10 +1002,11 @@ _route:
          coord: [3416.75, 1878.94, 789.11]
       - _Enemy<Fire like>:
          coord: [3459.16, 1888.9, 776.43]
-         comment: Take pic, Ascend
+         comment: Ascend
+         notes: Take pic
       - _Enemy<Construct>:
          coord: [3512.42, 1898.4, 744.92]
-         comment: Take pic
+         notes: Take pic
       - _Enemy<Construct>:
          coord: [3485.73, 1897.9, 702.75]
       - _Special<Valve>:
@@ -1022,7 +1023,7 @@ _route:
    - Third Valve:
       - _Enemy<Construct>:
          coord: [3372.52, 1848.1, 730.18]
-         comment: Take pic
+         notes: Take pic
       - _Enemy<Construct>:
          coord: [3297.01, 1865.9, 622.45]
       - _Enemy<Construct>:
@@ -1037,7 +1038,7 @@ _route:
          coord: [3227.54, 1915.86, 712.77]
       - _Chest<Zora shield>:
          coord: [3280.32, 1894.4, 577.33]
-         comment: Take pic
+         notes: Take pic
       - _Chest<Sapphire>:
          coord: [3310.81, 1819.9, 672.06]
       - _Chest<Large Zonaite>:
@@ -2402,7 +2403,8 @@ _route:
          comment: Ascend
       - _Item<Campfire>:
          coord: [1932, 250, 1315]
-         notes: Make noon, Take pic of full moon
+         comment: Make noon
+         notes: Take pic of full moon
       - _Bubbulfrog::LakeFeronaCave
 
    - Approaching Goron City:
@@ -3276,7 +3278,7 @@ _route:
       - _Shop::Inn
       - _SideQuest::PrideoftheGerudo:
          coord: [-3828.5, 149.5, -2885]
-         comment: Take pic of shield
+         notes: Take pic of shield
       - _Shop::Canteen:
          comment: Buy Noble Persuit, Ascend
       - _Enemy<Boko x2>:
@@ -6648,6 +6650,60 @@ _route:
       - _Npc::Ralera_02
       - _Npc::Ralera_03
 
+   - Satori Mountain Cave:
+      - _Warp::Shrine::Sonapan<Warp to Sonapan Shrine>
+      - _Shrine::Sonapan
+      - _Korok::HF01::Start:
+         notes: Take pic of goat
+      - _Korok::HF01::End
+      - _Item<Stuff>:
+         coord: [-1870, 270, -370]
+         comment: Collect all the stuff
+      - _Korok::HF04
+      - _Korok::HF11
+      - Drop flying machine south of peak:
+         movements:
+            - to: [-2297, 455, -462]
+      - _Cave::SatoriMountain00
+
+   - Mount Satori:
+      - _Bubbulfrog::SatoriMountainCave:
+         comment: Ascend
+      - _Enemy::Talus::GC04
+      - _Korok::HF16:
+         comment: Drop flying machine above tunnel
+      - _Item<Boulder>:
+         coord: [-2349.77, 262.04, -844.17]
+         comment: Drop flying machine near boulder stand
+      - _Korok::HF17
+      - Drop flying machine near tent:
+         movements:
+            - to: [-2450, 306, -640]
+      - _Korok::HF12
+      - _Korok::HF09::Trail:
+         comment: Collect all the things along the way, especially beatles on the big tree next to the tent
+      - _Special<Starting Block>:
+         coord: [-2479.18, 327.36, -509.34]
+      - _Korok::HF08
+      - _Special<Place Travel Medalion>:
+         coord: [-2445, 306, -615]
+
+   - Honeyvore Bear Pic:
+      - _Korok::HF27
+      - _Item<Honeyvore Bear>:
+         coord: [-2378.83, 232.03, -1057]
+         notes: Take pic
+      - _Korok::HF30
+      - _Korok::HF18
+      - _Cave::SatoriMountainFoothill00
+      - _Enemy::Hinox::GC04
+
+   - Usazum Shrine:
+      - _Shrine::Usazum::Start:
+         comment: Build 4-wheeler to carry shrine crystal
+      - _Bubbulfrog::SatoriMountainFoothillCave
+      - _Cave::SatoriMountainFoothill00
+      - _Shrine::Usazum
 
 
 
