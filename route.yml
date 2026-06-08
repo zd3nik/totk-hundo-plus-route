@@ -1690,11 +1690,13 @@ _route:
          comment: Rocket Shield Up to Top of Hill
       - _Item<Silent Princess>:
          coord: [1879.35, 342.35, -810.05]
-         comment: Naydra should be visible to the south
          notes: Take pic
       - _Item<Blue Nightshades>:
          coord: [1874.43, 344.1, -813.61]
          notes: Take pic
+      - _Location::EastHill:
+         hide-icon-on-map: true
+         comment: Naydra should be visible to the south
       - _Special<Read Book>:
          coord: [1737.12, 305.96, -900.39]
       - _SideQuest::OutoftheInn:
@@ -6706,6 +6708,195 @@ _route:
       - _Cave::SatoriMountainFoothill00
       - _Shrine::Usazum
 
+   - Lynel Run 7:
+      - _Warp::Lightroot::Ui-ihcoj<Warp to Ui-ihcoj Lightroot>
+      - _Enemy::Lynel<x1>:
+         coord: [4212.09, -467.54, 2721.1]
+      - _Warp::Lightroot::U-u-ujoj<Warp to U-u-ujoj Lightroot>
+      - _Enemy::Lynel<x1>:
+         coord: [1584.7, -407.09, -3496.46]
+      - _Warp::Lightroot::Kimakarut<Warp to Kimakarut Lightroot>
+      - _Enemy::Lynel<x1>:
+         coord: [-2798.87, -376.93, -2238.38]
+
+   - Rocket Reload 6:
+      - _Warp::Shrine::Rakashog<Warp to Rakashog Shrine>:
+         level: Sky
+      - _Item<Rockets>:
+         coord: [-1820.55, 1075.09, -2212.26]
+         comment: Fuse rockets to shields
+
+   - Lanayru Heights:
+      - _Warp::Shrine::Yansamin<Warp to Yansamin Shrine>
+      - _Korok::ML09
+      - _Korok::ML12
+      - _Korok::ML07
+      - _Enemy<Phantom Ganon>:
+         coord: [3271.93, 267.48, -1258.93]
+      - _Location::LanayruRoadEastGate
+      - _Cave::LanayruRoadEast00
+      - _Korok::SS34
+      - _Enemy::BokoBoss::G43
+      - _Enemy::Lynel::G12
+      - _Korok::SS37
+      - _Korok::SS46
+      - _Cave::LanayruRoadSouth00
+      - _Bubbulfrog::LanayruRoadSouthCave
+
+   - Lanayru Promenade:
+      - _Shrine::O-ogim::Start
+      - _Item<Rocket>:
+         coord: [2664.55, 229.64, -1359.12]
+         comment: Fuse to crystal and send it toward shrine before leaving cave
+      - _Cave::LanayruRoadSouth00
+      - _Korok::SS48::Trail:
+         notes: Complete next korok in the middle of the trail for this korok
+      - _Location::LanayruPromenade:
+         hide-icon-on-map: true
+         comment: Shrine crystal should be somewhere near korok SS48
+      - _Korok::SS47
+      - _Shrine::O-ogim:
+         notes: Make night after completing shrine
+      - _Enemy::BokoBoss::G45
+      - _Enemy::Hinox::GL01
+      - _Enemy::BokoBoss::G44
+      - _Korok::SS43:
+         notes: Warp to Makasura Shrine and complete it if you ad to skip completing it earlier in the route
+      - _MainQuest<Secret of the Ring Ruins>:
+         coord: [1816, 113, -953]
+
+   - Messages from an Ancient Era:
+      - _SideAdv<Complete Messages from an Ancient Era>:
+         coord: [1829, 117, -956]
+      - _Shop::ArmorShop04:
+         comment: Buy radiant set
+      - _Korok::SS27::Start
+      - _LockedChest::G28
+      - _Korok::SS27::End
+      - _Korok::SS31
+      - _Location::LanayruRoadWestGate
+      - _Addison::A60
+      - _Npc::Steward Construct_02
+      - _Shrine::Kurakat
+      - _Enemy::Lynel::G11:
+         notes: Take pic
+      - _Korok::SS29
+      - _Korok::SS22
+      - _Korok::SS28::Start
+      - _Korok::SS28::End
+      - _Korok::UZ63::Trail
+      - _Korok::UZ65
+      - _Korok::UZ66
+      - _Korok::UZ70::Trail
+      - _Korok::UZ73
+      - _Addison::A70
+      - _Korok::UZ72
+      - _Cave::LanayruRoadEast01
+      - _Bubbulfrog::LanayruRoadEastCave
+      - _Enemy::BokoBoss::G65
+      - _Shrine::Jogou
+
+   - Jia Highlands:
+      - _Warp::Tower::PoplaFoothills<Warp to Popla Foothills Tower>
+      - _Npc::Calip
+      - _Korok::SS72::Start
+      - _Korok::PF24
+      - _Shrine<Activate Jiukoum Shrine>:
+         coord: [867.5, 260.5, -2278.4]
+      - _Korok::SS72::End
+      - _Enemy::Hinox::GF02
+      - _Korok::SS71
+      - _Enemy::BokoBoss::G40
+      - _Enemy::Hinox::GF03
+      - _LockedChest::G32
+      - _Cave::Tobio'sHollow00
+      - _Shrine::Utojis
+
+   - Spring of Courage:
+      - _Bubbulfrog::Tobio'sHollowCave
+      - _Warp::Shrine::Jiukoum<Warp to Jiukoum Shrine>
+      - _Shrine::Jiukoum
+      - _Addison::A42
+      - _Special<Starting Block>:
+         coord: [885.46, 170.08, -2424.92]
+      - _Korok::PF29
+      - _Location::SpringofCourage
+      - _GoddessStatue::Courage
+
+   - Secret of the Ring Ruins:
+      - _Chest::ChargedShirt
+      - _Chest::ChargedTrousers
+      - _Enemy::Hinox::GF04
+      - _Chest::ChargedHeaddress
+      - _Korok::PF39
+      - _MainQuest<Complete Secret of the Ring Ruins>:
+         coord: [651.59, 124.35, -2731.05]
+      - _Korok::PF46
+      - _Cave::FloriaRiverUpstreamExcavation00
+      - _Chest<Topaz>:
+         coord: [834.5, 102.5, -2908.57]
+      - _Bubbulfrog::FloriaRiverUpstreamExcavation:
+         comment: Ascend
+      - _Location::ZonaiRuins:
+         hide-icon-on-map: true
+
+   - Faron Woods:
+      - _Cave::PagosWoodsExcavationSite00
+      - _Chest<Large Zonai Charge>:
+         coord: [593.89, 119.64, -3120.04]
+      - _Bubbulfrog::PagosWoodsExcavationSite:
+         comment: Ascend
+      - _Location::FaronWoods:
+         coord: [440, 66, -3050]
+      - _Cave::FinraWoodsExcavationSite00
+      - _Chest<Large Zonai Charge>:
+         coord: [597.67, 110.38, -2930.65]
+      - _Bubbulfrog::FinraWoodsExcavationSite:
+         comment: Ascend
+
+   - Lake Hylia:
+      - _Korok::PF42
+      - _Korok::PF40
+      - _Korok::PF41
+      - _Korok::PF36
+      - _Addison::A43
+      - _Special<Starting Block>:
+         coord: [50.49, 185.89, -2719.21]
+      - _Korok::PF37
+      - _Korok::PF47
+      - _Korok::PF48::Trail
+      - _Enemy::BokoBoss::G23:
+         comment: Drop flying machine into north end of Cora Lakefront Cave
+      - _Korok::PF51
+      - _Cave::CoraLakefront01
+      - _Bubbulfrog::CoraLakefrontCave
+      - _Cave::CoraLakefront00:
+         comment: Flying machine should be nearby
+      - _Korok::PF43
+      - _Tear::G09
+      - _Korok::PF35
+      - _Korok::GC21::Start
+      - _Enemy<Phantom Ganon>:
+         coord: [-1240.54, 172.5, -2548.07]
+      - _Korok::GC21::End
+      - _Korok::PF30
+      - _Korok::HF74
+      - _Korok::PF27
+      - _Enemy<Phantom Ganon>:
+         coord: [-365.6, 126.84, -1902]
+      - _Korok::HF61
+      - _Addison::A34
+      - _Korok::HF70
+      - _Korok::PF34::Start
+      - _Korok::PF34::End
+      - _Korok::PF32
+      - _Chasm::LakeHylia
+
+   - Amo-ne Lightroot:
+      - _Item<Steering Stick and Fans>:
+         coord: [-422.79, -326.38, -2576.48]
+         comment: Build flying machine
+      - _Lightroot::Amo-ne
 
 
 
