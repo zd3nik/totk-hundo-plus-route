@@ -6193,6 +6193,197 @@ _route:
          comment: Drop it into the chasm
       - _Chasm::GreatPlateauWest
 
+   - Eye Delivery 1:
+      - _Special<Statue Eye>:
+         coord: [-1430.27, -570.72, -1987.28]
+      - _Item<Rockets>:
+         coord: [-1402.41, -538.43, -2036.54]
+         comment: Fuse rockets to shields
+      - _Item<Mine Cart>:
+         coord: [-1404.1, -538.5, -2053.41]
+         comment: Attach fans and statue eye, Ride the rail
+      - _Location::HyliaCanyonMine:
+         hide-icon-on-map: true
+      - _Chest::MinersTrousers
+      - _Item<Rockets>:
+         coord: [-1059.09, -550.68, -2318.27]
+         comment: Leave mine cart here, Fuse rockets to shields, Rocket shield up to next objective
+      - _Special<Statue Eye>:
+         coord: [-934.52, -430.46, -2324.29]
+         comment: Drop down to mine cart area with eye in hand, DO NOT throw it down
+      - _Item<Mine Cart>:
+         coord: [-1065, -550, -2308]
+         comment: Fuse second eye to mine cart, Ride the rail
+      - _Item<Elevator>:
+         coord: [-828.11, -555.34, -1932.82]
+      - _Shop::BargainerStatue
+
+   - Eye Delivery 2:
+      - _Warp::Lightroot::Nogukoyk<Warp to Nogukoyk Lightroot>
+      - _Special<Statue Eye>:
+         coord: [-665.66, -412.12, -1499.17]
+      - _Item<Zonai Parts>:
+         coord: [-635.05, -410.82, -1514.47]
+         comment: Build 4-wheeler, attach statue eye
+      - _Equipment::Weapon<Claymore>:
+         coord: [-752.7, -402.69, -1634.27]
+      - _Poe::Grand:
+         coord: [-648.6, -412.91, -1784.9]
+         comment: Skip if not present
+      - _Equipment::Weapon<Spear>:
+         coord: [-543.28, -402.78, -1756.48]
+      - _Equipment::Weapon<Claymore>:
+         coord: [-543.03, -408.49, -1963.11]
+      - _Equipment::Weapon<Spear>:
+         coord: [-479, -408.6, -1953.02]
+      - _Special<Statue Eye>:
+         coord: [-451.46, -418.03, -1990.32]
+         comment: Attach to 4-wheeler
+      - _Equipment::Weapon<Sword>:
+         coord: [-507.9, -408.68, -2003.1]
+      - _Item<Mine Cart>:
+         coord: [-492.07, -417.97, -2030.55]
+         comment: Attach statue eyes, steering stick, and fans
+      - Ride the rail:
+         movements:
+            - to: [-858.02, -448.4, -1973.19]
+      - _Shop::BargainerStatue:
+         notes: Talk to statue again after receiving reward, Buy next available armor piece
+
+   - Pappetto Grove:
+      - _YigaSchema::Monocycle
+      - _LockedChest::D43:
+         hide-icon-on-map: true
+      - _LockedChest::D44:
+         hide-icon-on-map: true
+      - _Chest<Large Crystallized Charge>:
+         coord: [-950.18, -501.79, -2569.11]
+      - _Location::FaloraaCanyonMine:
+         hide-icon-on-map: true
+      - _Enemy::Frox::DF01
+      - _Enemy::Frox::DF02
+      - _Location::PappettoGrove:
+         hide-icon-on-map: true
+      - _Chest<Large Crystallized Charge>:
+         coord: [-371.18, -369.81, -3560.39]
+      - _Equipment::Weapon<Sword>:
+         coord: [-382.09, -383.87, -3657.77]
+      - _Enemy::BokoBoss::D19
+      - _Equipment::Weapon<Spear>:
+         coord: [-450.4, -413.58, -3746.61]
+      - _Equipment::Weapon<Claymore>:
+         coord: [-534.96, -431.44, -3624.04]
+      - _Lightroot::Nikohsi
+      - _Equipment::Weapon<Sword>:
+         coord: [-816.61, -422.33, -3472.59]
+         notes: Take pic of Colgera
+      - _Enemy::Talus::DF01
+      - _Enemy::BokoBoss::D18
+      - _Equipment::Weapon<Claymore>:
+         coord: [-871.34, -422.55, -3123.1]
+      - _Enemy::BokoBoss::D17:
+         comment: Farosh should be nearby. If not, kill time with a lynel run before warping to Motsusis Shrine
+
+   - South Lomei Depths Labyrinth:
+      - _Warp::Shrine::Motsusis<Warp to Motsusis Shrine>:
+         level: Depths
+      - _Chasm::SouthLomei
+      - _Enemy::FluxConstruct::DG04
+      - _Special<Terminal>:
+         coord: [-1765.5, -417.53, -3462.5]
+      - _Chest::EvilSpiritMask
+      - _Lightroot::Sisustom
+      - _Location::SouthLomeiDepthsLabyrinth:
+         hide-icon-on-map: true
+      - _Material<Farosh Horn>
+      - _Enemy<Colgera>:
+         coord: [-1154.37, -529.53, -3626.16]
+      - _Chest<Huge Crystallized Charge>:
+         coord: [-1129.97, -732.76, -3608.43]
+
+   - Amakawis Lightroot:
+      - _Equipment::Weapon<Claymore>:
+         coord: [-1225.03, -721.03, -3661.71]
+      - _Chest<Large Crystallized Charge>:
+         coord: [-1422.82, -754.79, -3613.13]
+      - _Location::DavalCanyonMine:
+         hide-icon-on-map: true
+      - _Chest<Large Crystallized Charge>:
+         coord: [-1382.69, -790.21, -3400.32]
+      - _Location::GranajhCanyonMine:
+         hide-icon-on-map: true
+      - _Lightroot::Kawatik
+      - _Equipment::Weapon<Spear>:
+         coord: [-1727.02, -605.18, -3022.13]
+      - _Equipment::Weapon<Claymore>:
+         coord: [-1772.62, -528.37, -2885.02]
+      - _Equipment::Weapon<Spear>:
+         coord: [-1878.24, -451.71, -2824.78]
+      - _Enemy::Frox::DG05
+      - _Enemy::BokoBoss::D11
+      - _Equipment::Weapon<Spear>:
+         coord: [-2298.39, -380.16, -2987.59]
+      - _Enemy::Frox::DG07
+      - _Lightroot::Amakawis
+
+   - Gerudo Underground Cemetery:
+      - _YigaSchema::BeamTurret
+      - _LockedChest::D29:
+         hide-icon-on-map: true
+      - _LockedChest::D30:
+         hide-icon-on-map: true
+      - _Enemy::Frox::DG09
+      - _YigaSchema::ShockTrap
+      - _LockedChest::D27:
+         hide-icon-on-map: true
+      - _LockedChest::D28:
+         hide-icon-on-map: true
+      - _Lightroot::Mihcihc
+      - _Enemy::Frox::DG08
+      - _Equipment::Weapon<Sword>:
+         coord: [-3471.45, -356.37, -3505.42]
+      - _YigaSchema::VerticalEscape
+      - _LockedChest::D18:
+         hide-icon-on-map: true
+      - _LockedChest::D19:
+         hide-icon-on-map: true
+      - _Enemy::Hinox::DG03
+      - _Lightroot::Gataharak
+      - _Equipment::Weapon<Spear>:
+         coord: [-3866.78, -355.46, -3566.92]
+      - _Equipment::Weapon<Sword>:
+         coord: [-3928.43, -366.65, -3446.03]
+      - _Equipment::Weapon<Spear>:
+         coord: [-4052.61, -372.98, -3524.15]
+      - _Equipment::Weapon<Sword>:
+         coord: [-4205.46, -363.61, -3597.88]
+      - _Chest<Large Crystallized Charge>:
+         coord: [-4102.58, -358.71, -3738.94]
+      - _Location::GerudoUndergroundCemetery:
+         hide-icon-on-map: true
+
+   - Gerudo Dark Skeleton:
+      - _Enemy::BokoBoss::D01
+      - _Lightroot::Kasari
+      - _Location::DesertColiseum:
+         hide-icon-on-map: true
+      - _Chest::SheiksMask
+      - _Equipment::Weapon<sword>:
+         coord: [-4443.17, -372.14, -3787.26]
+      - _Enemy<Phantom Ganon>:
+         coord: [-4528.91, -375.73, -3706.88]
+      - _Location::GerudoDarkSkeleton:
+         hide-icon-on-map: true
+      - _Chest::TunicoftheWild
+      - _Enemy::Frox::DG10
+      - _Enemy::Hinox::DG02
+      - _Equipment::Weapon<Claymore>:
+         coord: [-4244.48, -360.27, -3428.66]
+      - _Equipment::Weapon<Claymore>:
+         coord: [-4360.68, -370.92, -3331.38]
+      - _Equipment::Weapon<Spear>:
+         coord: [-4552.42, -371.37, -3213.08]
+      - _Lightroot::Gonatoyrim
 
 
 
