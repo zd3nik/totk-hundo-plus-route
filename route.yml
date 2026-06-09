@@ -625,6 +625,8 @@ _route:
       - _Enemy::Lynel::D08<Lynel>:
          comment: Fuse weapons
       - _LockedChest::D42
+      - _Chest::MajorasMask:
+         hide-icon-on-map: true
 
    - Secret Spring of Revival:
       - _Enemy<Pillage Enemy Camp>:
@@ -700,7 +702,7 @@ _route:
       - _Enemy::Talus::DC01
       - _Enemy::BokoBoss::D16:
          comment: Use 1 large zonai charge for long flight to next enemy
-      - _Enemy::Talus::GC06
+      - _Enemy::Talus::DC03
       - _Enemy::Frox::DC08
       - _Shop::BargainerStatue01
       - _Location::PlainsBargainerStatue:
@@ -2230,6 +2232,7 @@ _route:
          level: Surface
       - _Enemy::Hinox::GA01:
          notes: Take pic
+      - _Cave::NorthAkkalaBeach01
       - _Bubbulfrog::NorthAkkalaBeachCave:
          comment: Ascend
       - _Chest<Battery>:
@@ -4386,8 +4389,8 @@ _route:
 
    - Shopping 1:
       - _Warp::Shrine::Marakuguc<Warp to Marakuguc Shrine>
-      - _Shop<Buy sugar and spice>:
-         coord: [1683.58, 490.82, 2463.49]
+      - _Shop::GeneralStore06:
+         comment: Buy sugar and spice
       - _Warp::Shrine::Gatakis<Warp to Gatakis Shrine>
       - _Shop<Buy Oil Butter Sugar and Wheat>:
          coord: [-3644.61, 289.88, 1820.46]
@@ -5506,7 +5509,7 @@ _route:
       - _Korok::ML05
       - _Enemy::BokoBoss::G57
       - _Korok::ML04
-      - _Enemy::Talus::DL01:
+      - _Enemy::Talus::GL01:
          notes: Take pic
       - _Addison::A79
       - _Item<Boulder>:
@@ -6306,8 +6309,7 @@ _route:
       - _Material<Farosh Horn>
       - _Enemy<Colgera>:
          coord: [-1154.37, -529.53, -3626.16]
-      - _Chest<Huge Crystallized Charge>:
-         coord: [-1129.97, -732.76, -3608.43]
+      - _LockedChest::D45
 
    - Amakawis Lightroot:
       - _Equipment::Weapon<Claymore>:
@@ -6375,7 +6377,9 @@ _route:
       - _Lightroot::Kasari
       - _Location::DesertColiseum:
          hide-icon-on-map: true
-      - _Chest::SheiksMask
+      - _LockedChest::D05
+      - _Chest::SheiksMask:
+         hide-icon-on-map: true
       - _Equipment::Weapon<sword>:
          coord: [-4443.17, -372.14, -3787.26]
       - _Enemy<Phantom Ganon>:
@@ -7723,6 +7727,28 @@ _route:
       - _Korok::RW01
       - _Addison::A52
 
+   - Rubber Armor:
+      - _Warp::Shrine::Jiosin<Warp to Jiosin Shrine>
+      - _Enemy::Talus::GC06
+      - _LockedChest::G19
+      - _Korok::HF23
+      - _Cave::WhistlingHill00
+      - _Bubbulfrog::WhistlingHillCave
+      - _Chest::RubberArmor:
+         comment: Ascend
+
+   - Outpost Ruins:
+      - _Shrine::Teniten
+      - _Korok::HF43::Start
+      - _Enemy::BokoBoss::G28
+      - _Korok::HF43::End
+      - _Shrine::Kamizun
+      - _Korok::HF45
+      - _Location::OutpostRuins
+      - _Item<Rushrooms>:
+         coord: [-173.4, 123.34, -1603.44]
+      - _Chasm::ForestofTime
+
    - Foothill Stable:
       - _Warp::Shrine::Kisinona<Warp to Kisinona Shrine>
       - _Shrine::Kisinona
@@ -7735,6 +7761,8 @@ _route:
          coord: [2610, 148, 1141]
       - _Place::FoothillStable:
          hide-icon-on-map: true
+
+   - Tabahl Woods:
       - _Addison::A57
       - _Korok::UZ13::Start
       - _Korok::EC55
@@ -7761,9 +7789,9 @@ _route:
       - _Enemy<Black Lizalfos>:
          coord: [2731.53, 207.1, 235.53]
       - _Korok::UZ41::Trail
-      - _Well::TabahlWoods
-      - _Korok::UZ50::End:
+      - _Well::TabahlWoods:
          comment: Flying machine should be nearby
+      - _Korok::UZ50::End
       - _Korok::UZ53
       - _CherryBlossom::Lanayru
       - _Korok::UZ56
@@ -7787,6 +7815,129 @@ _route:
       - _Npc::Hino_04
       - _Cave::BonéPondEast03
       - _Shrine::Maoikes
+
+   - Ember Shirt:
+      - _Warp::Shrine::Marakuguc<Warp to Marakuguc Shrine>
+      - _Shrine::Marakuguc
+      - _Shop::GeneralStore06:
+         comment: Buy sugar and spice
+      - _SideQuest::TheAncientCityGorondia?:
+         coord: [1629, 384, 2439]
+      - Ride the Rail with Dugby:
+         movements:
+            - to: [1614.5, 502, 2399]
+            - to: [1569.08, 430.4, 2054.68]
+      - _Addison::A46
+      - _Korok::EC29
+      - _Cave::GoronbiRiver00
+      - _Bubbulfrog::GoronbiRiverCave
+      - _Chest::EmberShirt
+      - _SideQuest::MiskosTreasureofAwakeningI:
+         coord: [1380, 294, 2260]
+         comment: Ascend
+
+   - Gorko Tunnel:
+      - _Korok::EC26
+      - _Korok::EC32
+      - _Korok::EC36::Start
+      - _Korok::EC36::End
+      - _Korok::EC39
+      - _Enemy::Talus::GE07
+      - _Korok::EC45
+      - _Enemy::BokoBoss::G37
+      - _Korok::EC42::Start
+      - _Korok::EC37
+      - _Korok::EC42::End
+      - _Enemy::Talus::GE06
+      - _Korok::EC34
+      - _Enemy::BokoBoss::G41
+      - _Korok::EC30
+      - _Cave::GorkoTunnel00:
+         comment: Leave flying machine near korok
+
+   - Simmerstone Springs:
+      - _SideQuest::SimmerstoneSprings:
+         coord: [2160.65, 495.5, 2086.57]
+      - _Bubbulfrog::GorkoTunnel:
+         comment: Assend
+      - _Korok::EC33::Start:
+         comment: Flying machine should be nearby
+      - _Korok::EC33::End
+      - _Shrine::Timawak
+      - _Cave::EastRestaurant00
+      - _Bubbulfrog::EastRestaurantCave
+      - _Item<Marbled Rock Roast>:
+         coord: [1953.01, 395.64, 1804.07]
+
+   - Bedrock Bistro:
+      - _Cave::EastRestaurant00
+      - _SideQuest::MeatforMeat:
+         coord: [1756, 279, 1547]
+      - _Place::BedrockBistro:
+         hide-icon-on-map: true
+      - _SideQuest::CashInonRipenedFlint:
+         coord: [1750, 278, 1536]
+      - _Korok::EC43
+
+   - West Restaraunt Cave:
+      - _Cave::WestRestaurant00
+      - _Bubbulfrog::WestRestaurantCave
+      - _Item<Marbled Rock Roast>:
+         coord: [1667.58, 369.57, 1840.22]
+
+   - Mine-Cart Land:
+      - _Cave::WestRestaurant00
+      - _SideQuest::RockRoastorDust:
+         coord: [1759, 279, 1547]
+      - _Korok::EC31
+      - _Place::SouthernMine:
+         hide-icon-on-map: true
+      - _Cave::SouthernMine00
+      - _SideQuest::MineCartLandOpenforBusiness:
+         coord: [1827, 321, 2077]
+      - _SideQuest::MineCartLandQuickshotCourse:
+         coord: [1831, 321, 2079]
+      - _Bubbulfrog::SouthernMine
+
+   - Mine-Cart Land Death Mountain:
+      - _Warp::Shrine::Sitsum<Warp to Sitsum Shrine>
+      - _Shrine::Sitsum:
+         comment: Ascend
+      - _SideQuest::MineCartLandDeathMountain:
+         coord: [2363, 827, 2596]
+      - _Korok::EC23
+      - _Korok::EC18
+      - _Addison::A55
+      - _Cave::DeathMountainEastTunnel00
+      - _Bubbulfrog::DeathMountainEastTunnel
+      - _Enemy::Talus::GE04
+
+   - South Akkala Stable:
+      - _Shrine::Momosik::Start
+      - _Shrine::Momosik
+      - _Well::ShadowHamletRuins
+      - _Korok::EC27
+      - _Location::ShadowHamletRuins:
+         hide-icon-on-map: true
+      - _Shrine::Mayachideg
+      - _SideQuest::OneHitWonder:
+         coord: [3085, 201, 1674]
+      - _Npc::Beedle_12
+      - _Addison::A67
+      - _Npc::Dmitri
+      - _Place::SouthAkkalaStable:
+         hide-icon-on-map: true
+      - _SideQuest::APictureforSouthAkkalaStable:
+         coord: [3146, 201, 1690]
+      - _SideAdv::TheAllCluckingCucco:
+         coord: [3163, 201, 1716]
+      - _Well::SouthAkkalaStable
+      - _SideAdv<The All-Clucking Cucco>:
+         coord: [3227.84, 324.6, 1785.56]
+      - _Korok::UM32
+      - _Korok::UM26::Start
+      - _Korok::UM26::End
+      - _Korok::UM27
 
 
 
