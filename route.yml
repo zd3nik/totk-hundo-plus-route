@@ -6761,7 +6761,7 @@ _route:
       - _Enemy::Hinox::GL01
       - _Enemy::BokoBoss::G44
       - _Korok::SS43:
-         notes: Warp to Makasura Shrine and complete it if you ad to skip completing it earlier in the route
+         notes: Warp to Makasura Shrine and complete it if you had to skip completing it earlier in the route
       - _MainQuest<Secret of the Ring Ruins>:
          coord: [1816, 113, -953]
 
@@ -7139,7 +7139,8 @@ _route:
 
    - Hyrule Ridge Chasm:
       - _Chest::MaskofAwakening
-      - _Bubbulfrog::ThundraPlateauCave
+      - _Bubbulfrog::ThundraPlateauCave:
+         comment: Ascend
       - _Korok::LB23
       - _Korok::LB21
       - _Korok::LB19
@@ -7149,6 +7150,123 @@ _route:
       - _Korok::LB16
       - _Enemy::Hinox::GR04
       - _Chasm::HyruleRidge
+
+   - Rhoam Canyon Mine:
+      - _Lightroot::Tikanur
+      - _Enemy::Hinox::DH04
+      - _YigaSchema::FlamethrowerBalloon
+      - _LockedChest::D23:
+         hide-icon-on-map: true
+      - _LockedChest::D24:
+         hide-icon-on-map: true
+      - _Chest<Large Crystallized Charge>:
+         coord: [-2682.22, -634.43, 805.9]
+      - _Location::RhoamCanyonMine:
+         hide-icon-on-map: true
+      - _Equipment::Weapon<Spear>:
+         coord: [-2807.21, -577.38, 688.99]
+      - _Lightroot::Sikurukam
+      - _Enemy::BokoBoss::D08
+      - _Equipment::Weapon<Sword>:
+         coord: [-2939.58, -527.79, 352.93]
+      - _Equipment::Weapon<Spear>:
+         coord: [-2792.34, -488.64, 162.23]
+      - _Enemy<Queen Gibdo>:
+         coord: [-2720.7, -546.78, -76.67]
+      - _LockedChest::D25
+
+   - Lindor Canyon Mine:
+      - _Enemy::Talus::DR04
+      - _Equipment::Weapon<Sword>:
+         coord: [-2502.33, -462.39, -67.69]
+      - _Equipment::Weapon<Claymore>:
+         coord: [-2463.77, -505.98, 65.48]
+      - _Enemy::Frox::DC04
+      - _Equipment::Weapon<Sword>:
+         coord: [-2008.6, -440.92, 385.4]
+      - _Equipment::Weapon<Sword>:
+         coord: [-1832.58, -445.91, 277.23]
+      - _YigaSchema::BombBouquet
+      - _LockedChest::D38:
+         hide-icon-on-map: true
+      - _LockedChest::D39:
+         hide-icon-on-map: true
+      - _Equipment::Weapon<Sword>:
+         coord: [-1469.41, -419.2, 419.77]
+      - _Equipment::Weapon<Sword>:
+         coord: [-1438.28, -366.74, 559.88]
+      - _Lightroot::Kawakanis
+      - _Enemy::Lynel::D02
+      - _Enemy::Frox::DC01
+      - _Lightroot::Nabahi-ikat
+      - _Chest::TunicofTime
+      - _Location::LindorCanyonMine:
+         hide-icon-on-map: true
+
+   - Fishing Trawler:
+      - _Equipment::Weapon<Spear>:
+         coord: [-2069, -587.42, 1313.83]
+      - _Equipment::Weapon<Sword>:
+         coord: [-1974.21, -544.34, 1440.22]
+      - _Equipment::Weapon<Sword>:
+         coord: [-1948.83, -442.01, 1522.7]
+      - _Equipment::Weapon<Sword>:
+         coord: [-1783.53, -445.61, 1567.74]
+      - _Equipment::Weapon<Claymore>:
+         coord: [-1670.69, -432.3, 1613.17]
+      - _Equipment::Weapon<Spear>:
+         coord: [-1665.56, -466.84, 1445.57]
+      - _YigaSchema::CargoCarrier
+      - _LockedChest::D36:
+         hide-icon-on-map: true
+      - _LockedChest::D37:
+         hide-icon-on-map: true
+      - _Enemy::FluxConstruct::DC01
+      - _Equipment::Weapon<Spear>:
+         coord: [-708.46, -454.77, 1578.89]
+      - _Lightroot::Netamnet
+      - _Equipment::Weapon<Sword>:
+         coord: [-315.13, -480.49, 1535.24]
+      - _Equipment::Weapon<Sword>:
+         coord: [-132.09, -453.57, 1472.83]
+      - _YigaSchema::FishingTrawler
+      - _LockedChest::D47:
+         hide-icon-on-map: true
+      - _LockedChest::D48:
+         hide-icon-on-map: true
+
+   - Cliff Bargainer Statue:
+      - _Equipment::Weapon<Sword>:
+         coord: [-497.21, -492.72, 1953.54]
+      - _Enemy::Frox::DE04
+      - _Enemy<Mucktorok>:
+         coord: [-1243.78, -443.65, 2014.32]
+      - _LockedChest::D35
+      - _Equipment::Weapon<Spear>:
+         coord: [-1157.66, -438.84, 1976.79]
+      - _Lightroot::Uoyoyuik
+      - _Poe::Large:
+         coord: [-1253.9, -382.84, 2303.1]
+      - _Poe::Normal:
+         coord: [-1265.62, -383.77, 2303.31]
+      - _Poe::Large:
+         coord: [-1264.11, -383.37, 2320.73]
+      - _Poe::Large:
+         coord: [-1260.3, -382.78, 2320.68]
+      - _Poe::Large:
+         coord: [-1249.68, -383.16, 2319.43]
+      - _Lightroot::Yisuayam
+      - _Shop::BargainerStatue02
+      - _Location::CliffBargainerStatue:
+         hide-icon-on-map: true
+      - _Enemy::Frox::DH02
+      - _Equipment::Weapon<Spear>:
+         coord: [-796.35, -519.92, 2755.92]
+      - _Lightroot::Nikakik
+      - _Chest<Large Crystallized Charge>:
+         coord: [-566.91, -698.31, 2569.73]
+      - _Location::DrenaCanyonMine:
+         hide-icon-on-map: true
 
 
 
