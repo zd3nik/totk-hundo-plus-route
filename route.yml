@@ -7399,6 +7399,97 @@ _route:
          comment: Complete mini-game
          notes: Take pics of shields
 
+   - Gerudo Desert Gateway:
+      - _Warp::Shrine::Turakamik<Warp to Turakamik Shrine>
+      - _Shrine::Turakamik
+      - _Addison::A15
+      - _Npc::Piaffe
+      - _Place::GerudoCanyonStable:
+         hide-icon-on-map: true
+      - _SideQuest::APicturefortheClosedStableI
+      - _SideQuest::APicturefortheClosedStableII
+      - _SideAdv::TheBlockedWell:
+         coord: [-2817, 29, -2235]
+      - _Well::GerudoCanyon:
+         comment: Kill everything in the well
+      - _Korok::GH54
+      - _Location::GerudoDesertGateway
+      - _Korok::GC22::Start
+      - _Shop::SandSealRentalShop02:
+         hide-icon-on-map: true
+      - _Enemy<Electric Lizalfos>:
+         coord: [-3037.41, 128.16, -2439.03]
+         notes: Look for random spawn electric lizalfos to kill as well. Need 18 horns
+      - _Korok::GC22::End
+      - _Korok::GH55
+      - _Korok::GH53
+      - _Enemy<Electric Lizalfos>:
+         coord: [-3382.23, 136.07, -2103.06]
+         notes: Take pic of lizalfos and black boko
+      - _Enemy<Phantom Ganon>:
+         coord: [-3212.65, 132.34, -2003.04]
+      - _Korok::GH46
+      - _LockedChest::G08
+      - _Korok::GH48
+      - _Korok::GH51
+      - _Korok::GH50
+      - _Korok::GH45
+
+   - Infiltrating the Yiga Clan Hideout:
+      - _Special<Place Travel Medallion>:
+         coord: [-3572, 361, -1853]
+      - _Korok::GH37
+      - _Korok::GH38
+      - _Enemy::Talus::GG03
+      - _Korok::GH40
+      - _Korok::GH41
+      - _Korok::GH33
+      - _SideAdv::InfiltratingtheYigaClan:
+         coord: [-3687, 331, -1365]
+      - _Place::YigaClanHideout:
+         hide-icon-on-map: true
+         notes: Take pic of Yiga Blademaster
+      - _Special<Yiga Clan Training>:
+         coord: [-3561, 347, -1333]
+         comment: Complete mini-game
+      - _Chasm::YigaClanHideout
+      - _Shrine::Rotsumamu
+      - _LockedChest::G07
+      - _Item<Grizzlemaw Bear>:
+         coord: [-3616.08, 663.16, -1025.65]
+         notes: Take pic
+      - _Korok::GH19
+      - _Korok::GH21
+      - _Korok::GH22
+      - Drop flying machine on cliffside structure:
+         movements:
+            - to: [-3010, 400, -970]
+
+   - Phantom Armor:
+      - _Korok::GH23
+      - _Korok::GH12::Start
+      - _Korok::GH12::End
+      - _Enemy::BokoBoss::G09
+      - _Cave::TamioRiverDownstream00
+      - _Bubbulfrog::TamioRiverDownstreamCave
+      - _Enemy<Phantom Ganon>:
+         coord: [-2957.53, 115.36, -957.9]
+      - _Chest::PhantomArmor:
+         comment: Ascend, Flying macine should be nearby
+      - _Korok::GH25
+      - _Enemy::Talus::GG02
+      - _Korok::GH30
+      - _Special<Starting Block>:
+         coord: [-2696.34, 647.91, -1446.21]
+      - _Korok::GH31
+      - _Korok::GH29
+      - _Item<Lots of Wood>:
+         coord: [-3105.33, 546.23, -1341.94]
+         comment: Collect it all
+      - _Enemy<Ice-Breath Lizalfos>:
+         coord: [-3234.05, 507.01, -1432.04]
+      - _Korok::GH32
+
 
 
 
