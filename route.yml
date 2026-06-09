@@ -312,8 +312,7 @@ _route:
          coord: [837.75, 1656.75, -1433.5]
       - _Enemy<Constructs x2>:
          coord: [828.6, 1670.11, -1447.48]
-      - _Chest<Opal>:
-         coord: [833.9, 1672.2, -1458]
+      - _LockedChest::S00
       - Shield Surf:
          comment: Ascend, Wing glide to next korok
          movements:
@@ -985,7 +984,7 @@ _route:
       - _Shrine<Activate Igoshon shrine>:
          coord: [3480.71, 1444.63, 665.88]
       - _Dispenser::S08:
-         comment: Get 12+ hoverstones
+         comment: Get 15+ hoverstones
       - _Enemy::FluxConstruct::SL01
       - _SagesWill::WellspringIsland<Sage's Will>
 
@@ -1925,8 +1924,8 @@ _route:
       - _Material<Naydra Claw 3/4>
       - _Npc::Nazbi
       - _Location::SpringofWisdom
-      - _SideQuest::GoddessStatueofWisdom:
-         coord: [3910.78, 574.69, -1328.3]
+      - _GoddessStatue::Wisdom
+      - _SideQuest::GoddessStatueofWisdom
       - _GoddessStatue::Wisdom:
          hide-icon-on-map: true
       - _Tower::MountLanayru
@@ -2169,8 +2168,8 @@ _route:
          coord: [4201.68, 232.8, 2766.36]
       - _Korok::UM21::End
       - _Korok::UM20
-      - _SideQuest::GoddessStatueofPower:
-         coord: [3760.55, 111.16, 2679.37]
+      - _GoddessStatue::Power
+      - _SideQuest::GoddessStatueofPower
       - _Location::SpringofPower
       - _Korok::UM22
       - _Enemy<Phantom Ganon>:
@@ -6822,6 +6821,7 @@ _route:
       - _Korok::PF29
       - _Location::SpringofCourage
       - _GoddessStatue::Courage
+      - _SideQuest::GoddessStatueofCourage
 
    - Secret of the Ring Ruins:
       - _Chest::ChargedShirt
@@ -7267,6 +7267,138 @@ _route:
          coord: [-566.91, -698.31, 2569.73]
       - _Location::DrenaCanyonMine:
          hide-icon-on-map: true
+
+   - Upgrade Battery:
+      - _Warp::Shrine::Nachoyah<Warp to Nachoyah Shrine>
+      - _Shop::CrystalRefinery:
+         comment: Buy hoverstones if have enough crystallized charges. Otherwise warp to Igoshon Shrine and get hoverstones from the dispenser there
+
+   - Mother Statue:
+      - _Warp::Shrine::Mayausiy<Warp to Mayausiy Shrine>:
+         level: Surface
+      - _SideQuest<The Mother Goddess Statue>:
+         coord: [-1058, -84, 2698]
+         notes: Take pic of White Sword of the Sky
+
+   - Zelda's Golden Horse:
+      - _Warp::Shrine::Taninoud<Warp to Taninoud Shrine>
+      - _Special<Starting Block>:
+         coord: [-2001.65, 490.19, 3147.14]
+      - _Korok::PS10
+      - _Item<Golden Horse>:
+         coord: [-1810, 341.56, 3381.87]
+         notes: Take pic
+      - _Addison::A17
+      - _Enemy::Gleeok::G01
+      - _Enemy<Boko x4>:
+         coord: [-1515.66, 347.54, 2839.6]
+      - _Enemy<Boko x2>:
+         coord: [-1570.04, 346.15, 2753.97]
+      - _Shrine::Orochium
+      - _SideAdv::ZeldasGoldenHorse:
+         coord: [-1642.11, 339.2, 2575.8]
+
+   - The Captured Tent:
+      - _Npc::Varke:
+         comment: Take out Spot with harness
+      - _Place::SnowfieldStable:
+         hide-icon-on-map: true
+      - _SideQuest::APictureforSnowfieldStable:
+         coord: [-1651, 234, 2570]
+      - _SideQuest::TheCapturedTent:
+         coord: [-1662, 233, 2542]
+      - _SideAdv::SerenadetoMija:
+         coord: [-1630, 234, 2589]
+         comment: Get everyone into the wagon
+      - _Korok::PS14::Start:
+         comment: Attach korok to the wagon
+         notes: Take pic of Ice Wizzrobe
+      - _Korok::PS14::End
+      - _Cave::MountDrenaFoothill00:
+         comment: Leave wagon outside cave entrance
+      - _Enemy<Blue Moblin>:
+         coord: [-1376.52, 281.86, 2934.06]
+      - _Enemy<Bokoblin x3>:
+         coord: [-1383.84, 281.68, 2937.02]
+      - _Bubbulfrog::MountDrenaFoothillCave
+
+   - Serenade to Mija:
+      - _Cave::MountDrenaFoothill00:
+         comment: Finish driving wagon to Mija
+      - _Fairy::GreatFairyFountain01<Mija>
+
+   - The Bird in the Mountain:
+      - _Warp::Shrine::Mayaumekis<Warp to Mayaumekis Shrine>
+      - _Cave::HebraMountainsNorthwest00
+      - _Korok::RP20
+      - _Bubbulfrog::HebraMountainsNorthwestCave
+      - _Shrine::Rutafu-um::Start
+      - _Shrine::Rutafu-um
+      - _Korok::RP27
+      - _Enemy::BokoBoss::G02
+      - _Korok::RP32:
+         notes: Take pic of bird mountain
+      - _Korok::RP25
+      - _Enemy::Gleeok::G02:
+         comment: Drop flying machine near rubble
+      - _Cave::EastBironSnowshelf00
+      - _Bubbulfrog::EastBironSnowshelfCave
+      - _SideQuest::TheDuchessWhoDissapeared:
+         coord: [-3669, 230, 3101]
+         comment: Ascend
+      - _Korok::RP24
+      - _Korok::RP22
+      - _Cave::NorthBironSnowshelf00
+      - _Bubbulfrog::NorthBironSnowshelfCave
+      - _Chest::VahMedohDivineHelm:
+         comment: Ascend
+      - _Korok::RP17::Trail
+      - _Korok::RP18
+      - _Korok::RP13::Start
+      - _Korok::RP14
+      - _Korok::RP16
+      - _Korok::RP13::End
+      - _Korok::RP15
+      - _Korok::RP23
+
+   - Bring Peace to Hebra:
+      - _Warp::Shrine::Orochium<Warp to Orochium Shrine>
+      - _SideQuest<Complete a Picture for Snowfield Stable>:
+         coord: [-1651, 234, 2570]
+      - _Well::SnowfieldStable
+      - _SideQuest::WhoFindstheHaven:
+         coord: [-1662, 233, 2542]
+      - _Korok::PS17
+      - _Korok::PS19
+      - _Npc::Canolo:
+         comment: For the food
+      - _Addison::A18
+      - _Korok::PS24
+      - _Enemy::BokoBoss::G10
+      - _SideAdv::BringPeacetoHebra
+
+   - Tabantha Village Ruins:
+      - _Korok::PS28
+      - _SideQuest::SupplyEyeingFliers:
+         coord: [-2175, 363, 2026]
+         comment: Drop flying machine on north side of the mountain
+      - _Korok::PS27
+      - _Korok::LB04
+      - _Location::TabanthaVillageRuins:
+         hide-icon-on-map: true
+      - _Well::TabanthaVillageRuins
+      - _Korok::LB05
+      - _SideQuest::OpentheDoor:
+         coord: [-2680, 256, 1676]
+      - _Korok::LB06
+
+   - Shield Surfing Mini-Game:
+      - _Warp::Shrine::Rutafu-um<Warp to Rutafu-um Shrine>:
+         comment: Ascend
+      - _Location::SelmiesSpot:
+         comment: Complete mini-game
+         notes: Take pics of shields
+
 
 
 
