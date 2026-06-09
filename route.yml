@@ -5440,11 +5440,11 @@ _route:
       - _Korok::SS33
       - _Cave::ByroadtoLanayruWetlands01
       - _Bubbulfrog::ByroadtoLanayruWetlands
-      - _Enemy::Talus::DK02
+      - _Enemy::Talus::GK03
       - _Cave::ByroadtoLanayruWetlands00
       - _Korok::SS54::Trail
       - _Korok::SS50
-      - _Enemy::Hinox::DL02
+      - _Enemy::Hinox::GL02
       - _Korok::SS51
       - _LockedChest::G31
       - _Korok::SS59
@@ -7652,6 +7652,76 @@ _route:
       - _Warp::Lightroot::Kimakarut<Warp to Kimakarut Lightroot>
       - _Enemy::Lynel<x1>:
          coord: [-2798.87, -376.93, -2238.38]
+
+   - Dueling Peaks Cave:
+      - _Warp::Shrine::Ukoojisi<Warp to Ukoojisi Shrine>:
+         level: Sky
+      - _Item<Rockets>:
+         coord: [1477.13, 628.59, -2008.65]
+         comment: Fuse rockets to shields
+      - _Special<Starting Block>:
+         coord: [1243.54, 541.58, -1941.41]
+      - _Korok::SS70
+      - _Korok::SS67
+      - _Korok::SS66
+      - _Korok::SS61:
+         comment: Shoot from high above in the air so you can paraglide to next objective
+      - _Cave::DuelingPeaksNorth00
+      - _Bubbulfrog::DuelingPeaksNorthCave:
+         comment: Ascend
+
+   - Tingle's Shirt:
+      - _Cave::DuelingPeaksSouth00
+      - _Bubbulfrog::DuelingPeaksSouthCave
+      - _Chest::TinglesShirt:
+         comment: Ascend
+      - _Npc::Zelda_01
+      - _Korok::SS69
+
+   - Honey Bee Mine:
+      - _Warp::Shrine::Josiu<Warp to Josiu Shrine>
+      - _Korok::SS49
+      - _Addison::A62
+      - _SideAdv::HoneyBeeMine:
+         coord: [2167, 109, -1380]
+      - _Korok::SS56
+      - _LockedChest::G35
+      - _Korok::SS52:
+         comment: Drop flying machine into water
+      - _Korok::SS53:
+         comment: Flying machine should be in the river below
+
+   - Great Fairy Cotera:
+      - _Korok::SS55
+      - _Location::KakarikoBridge
+      - _Korok::SS57
+      - _SideQuest<A Picture for Dueling Peaks Stable>:
+         coord: [1757, 10, -1924]
+      - _SideAdv::SerenadetoCotera:
+         coord: [1755, 10, -1958]
+      - _Well::DuelingPeaksStable
+      - _Location::BigTwinBridge:
+         coord: [1700, 3, -2010]
+         comment: Build wagon raft and transport the Stable Trotters across the river
+      - _Fairy::GreatFairyFountain<Cotera>
+      - _Location::LittleTwinBridge
+      - _Cave::MountFloria01:
+         comment: Drop flying machine at head of river
+      - Ascend:
+         movements:
+            - to: [1960, 72, -2625]
+
+   - Bubinga Forest:
+      - _Korok::RW13
+      - _Korok::RW11:
+         comment: Flying machine should be nearby in the river
+      - _Korok::RW08::Trail
+      - _Korok::RW06
+      - _Korok::RW04
+      - _Korok::RW02
+      - _Enemy::Hinox::GL03
+      - _Korok::RW01
+      - _Addison::A52
 
    - Foothill Stable:
       - _Warp::Shrine::Kisinona<Warp to Kisinona Shrine>
