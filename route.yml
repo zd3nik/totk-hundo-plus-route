@@ -7490,6 +7490,156 @@ _route:
          coord: [-3234.05, 507.01, -1432.04]
       - _Korok::GH32
 
+   - Rocket Reload 8:
+      - _Warp::Shrine::Rakashog<Warp to Rakashog Shrine>:
+         level: Sky
+      - _Item<Rockets>:
+         coord: [-1820.55, 1075.09, -2212.26]
+         comment: Fuse rockets to shields
+
+   - Deya Village Ruins:
+      - _Warp::Tower::PoplaFoothills<Warp to Popla Foothills Tower>
+      - _Korok::PF22::Start
+      - _Korok::PF22::End
+      - _Korok::PF23
+      - _Chasm::HillsofBaumer
+      - _Well::DeyaVillageRuinsSouth
+      - _Well::HillsofBaumer
+      - _Item<Rushrooms>:
+         coord: [331.65, 174.86, -2161.67]
+      - _Special<Starting Block>:
+         coord: [350.49, 167.94, -2158.33]
+      - _Korok::PF21
+      - _Enemy::BokoBoss::G31
+      - _Well::DeyaVillageRuinsEast
+      - _Item<Fleet-Lotus Seeds>:
+         coord: [453.91, 115.86, -2010.18]
+      - _Location::DeyaVillageRuins:
+         hide-icon-on-map: true
+      - _Enemy<Phantom Ganon>:
+         coord: [412.91, 114.99, -1868.65]
+      - _Korok::PF16
+      - _Korok::PF18
+      - _Well::DeyaVillageRuinsNorth
+      - _Well::DeyaVillageRuins:
+         comment: Enter the well
+      - _Enemy::Talus::SF03
+      - _Shrine::Susub:
+         comment: Ascend
+
+   - Riverside Stable:
+      - _Korok::PF20
+      - _Korok::PF19
+      - _Korok::HF69
+      - _Korok::HF59::Trail
+      - _Korok::HF53
+      - _Korok::PF12::Start
+      - _Location::EastPostRuins
+      - _Korok::HF48
+      - _Location::ProximBridge
+      - _Korok::PF13
+      - _Korok::PF12::End
+      - _Korok::PF09
+      - _Korok::PF11
+      - _Well::SouthNabiLake
+      - _Enemy::BokoBoss::G29
+      - _Korok::PF08
+      - _Korok::PF07
+      - _Enemy::Talus::GF01
+      - _LockedChest::G24
+      - _Tear::G03
+      - _Korok::PF05
+      - _Korok::PF04
+      - _SideAdv::GourmetsGoneMissing:
+         coord: [535, 16, -1195]
+         comment: Cook raw meat, rice, salt
+      - _Korok::PF02
+      - _Shrine<Activate Tajikats Shrine>:
+         coord: [343.86, 135.7, -1009.03]
+      - _Npc::Penn_15
+      - _Npc::Beedle_06
+      - _Npc::Ember
+      - _SideQuest::APictureforRiversideStable:
+         coord: [336, 10, -1092]
+      - _Place::RiversideStable:
+         hide-icon-on-map: true
+
+   - Let the Cucco Roundup Begin:
+      - _Item<Cucco Inside the Stable>:
+         coord: [344.48, 115.8, -1102.16]
+      - _Item<Cucco North of the Stable>:
+         coord: [352.15, 115.15, -1072.01]
+      - Deliever 2 Cuccos:
+         movements:
+            - to: [373.34, 115.23, -1100.14]
+
+   - Cucco on Top of the Stable:
+      - _Item<Cucco on top of the Stable>:
+         coord: [334.94, 143.31, -1091.09]
+      - Deliever Cucco:
+         movements:
+            - to: [377.37, 115.31, -1103.47]
+
+   - The Last Two Cuccos:
+      - _Well::RiversideStable
+      - _Item<Cucco Stranded on the Mini-Island>:
+         coord: [383.06, 115.75, -1147.03]
+      - _Item<Cucco in the Tree>:
+         coord: [318.08, 122.59, -1127.06]
+      - Deliever 2 Cuccos:
+         movements:
+            - to: [373.9, 115.3, -1105.62]
+      - _SideQuest::FeatheredFugitives:
+         coord: [368, 9, -1103]
+
+   - Jochisiu Shrine:
+      - _Special<Cook>:
+         coord: [318.33, 115.3, -1098.92]
+         comment: Speed food
+         notes: Make night
+      - _Korok::PF14::Start
+      - _Location::OwlanBridge
+      - _Korok::PF06
+      - _Addison::A41
+      - _Korok::PF10
+      - _Korok::PF14::End
+      - _Korok::PF15::Trail
+      - _Korok::PF17
+      - _Enemy::Talus::GF02
+      - _Enemy::Hinox::GF01
+      - _Korok::SS63::Start
+      - _Korok::SS63::End
+      - _Item<Frost Emitter>:
+         coord: [980.43, 115.29, -1833.39]
+         comment: Make a stack of 4 or 5 ice sheets fused together
+      - Place Ice Sheets Near Campfire, But Not Too Near:
+         movements:
+            - to: [938.28, 135.06, -1887.01]
+      - _Item<Campfire>:
+         coord: [943.86, 122.85, -1894.34]
+         comment: Light campfire and use it to melt ice sheets one at a time before placing them in key slots
+      - _Npc::Steward Construct_01:
+         comment: Ascend
+      - _Shrine::Jochisiu
+
+   - Horwell Bridge:
+      - _Warp::Shrine::Tajikats<Warp to Tajikats Shrine>
+      - _Shrine::Tajikats
+      - _Korok::HF21
+      - _Korok::LL62
+      - _Well::BottomlessPond
+      - _Korok::PF03::Start
+      - _Location::HorwellBridge
+      - _Enemy::Hinox::GC05
+      - _Addison::A40
+      - _Location::EagusBridge
+      - _Korok::SS39
+      - _Special<Starting Block>:
+         coord: [1086.85, 115.2, -1048.15]
+      - _Korok::PF01
+      - _Korok::PF03::End
+      - _Special<Collect the Sand-Seals>:
+         coord: [1050, 9, -1148]
 
 
 
