@@ -1358,8 +1358,9 @@ _route:
       - _Korok::PS26
       - _Location::ForgottenTemple:
          hide-icon-on-map: true
-      - _Special<Sand-Seals Mminigame>:
+      - _Special<Annoying Plushy Lady>:
          coord: [-1542, 106, 1794]
+         comment: Complete the mini-game
       - _Enemy::BokoBoss::G12
       - _Location::MarittaExchangeRuins:
          hide-icon-on-map: true
@@ -1954,7 +1955,7 @@ _route:
       - _Location::SouthLanayruSkyArchipelago:
          hide-icon-on-map: true
       - _Npc::Steward Construct_05:
-         comment: Complete mini-game
+         comment: Complete the mini-game
       - _Dispenser::S24
       - _Shrine::Sihajog
       - _Korok::MLS02
@@ -2115,9 +2116,8 @@ _route:
          comment: Fuse lynel horn to Big Goron Sword
       - _Lightroot::Ui-ihcoj
       - _Enemy::Talus::DA01
-      - _Equipment::Weapon<Sword or Boomerang>:
+      - _Equipment::Weapon<Boomerang>:
          coord: [4675.26, -339.29, 3105.11]
-         notes: Take pic
       - _Enemy::BokoBoss::D39
       - _Lightroot::Kawisar
       - _YigaSchema::HeadlightRaft
@@ -2547,9 +2547,8 @@ _route:
    - Eldin Depths:
       - _Enemy::Talus::DE03
       - _Lightroot::Kisomom
-      - _Equipment::Weapon<Longsword>:
+      - _Equipment::Weapon<Cobble Crusher>:
          coord: [2808.18, -847.37, 2807.17]
-         notes: Take pic of Cobble Crusher
       - _Warp::Lightroot::Sikutamak<Warp to Sikutamak Lightroot>
       - _YigaSchema::AssaultCart
       - _LockedChest::D81:
@@ -2575,10 +2574,8 @@ _route:
       - _Lightroot::Misisi
       - _Enemy::BokoBoss::D26:
          comment: Collect Cobble Crusher
-      - _Equipment::Weapon<Longsword>:
+      - _Equipment::Weapon<Cobble Crusher>:
          coord: [2272.94, -850.58, 2896.03]
-         comment: Skip if already have pic
-         notes: Take pic of Cobble Crusher
       - _Dispenser::D00
       - _Lightroot::Mustis
       - _MainQuest<Talk to Yunobo>:
@@ -2596,10 +2593,8 @@ _route:
          hide-icon-on-map: true
       - _Chest<Large Crystallized Charge>:
          coord: [1626.61, -718.59, 2348.13]
-      - _Equipment::Weapon<Longsword>:
+      - _Equipment::Weapon<Cobble Crusher>:
          coord: [1472.71, -718.48, 2598.79]
-         comment: Skip if already have pic
-         notes: Take pic of Cobble Crusher
       - _MainQuest<Talk to Yunobo>:
          coord: [1519.74, -727, 2847.48]
       - _Special<Terminal>:
@@ -2757,7 +2752,7 @@ _route:
       - _Location::CourageIsland:
          hide-icon-on-map: true
       - _Npc::Steward Construct_04:
-         comment: Complete mini-game
+         comment: Complete the mini-game
       - _Dispenser::S21
       - _Shrine::Taunhiy
       - _Korok::LBS04
@@ -3506,7 +3501,7 @@ _route:
          comment: Ascend
       - _Korok::GC42::End
       - _Location::SouthernOasisTrainingArea:
-         comment: Complete mini-game
+         comment: Complete the mini-game
       - _Shrine::Karahatag
 
    - Dinraal Farming 2:
@@ -3774,18 +3769,18 @@ _route:
          coord: [868.6846, -465.19604, -2174.232]
 
    - Kohsustu Lightroot:
-      - _Equipment::Weapon<Longsword>:
+      - _Equipment::Weapon<Eightfold Longblade>:
          coord: [730.16, -349.61, -2734.63]
-      - _Equipment::Weapon<Sword>:
+      - _Equipment::Weapon<Boomerang>:
          coord: [684.52, -345.57, -3052.95]
       - _Lightroot::Kohsustu
-      - _Equipment::Weapon<Spear>:
+      - _Equipment::Weapon<Knight's Halberd>:
          coord: [626.82, -384.16, -3537.49]
       - _Enemy::Lynel::D12
       - _Enemy::BokoBoss::D25
-      - _Equipment::Weapon<Longsword>:
+      - _Equipment::Weapon<Giant Boomerang>:
          coord: [565, -385.32, -3318.06]
-      - _Equipment::Weapon<Sword>:
+      - _Equipment::Weapon<Boomerang>:
          coord: [513.58, -374.43, -3152.49]
       - _Material<Farosh Claw 3/4>
 
@@ -3796,24 +3791,22 @@ _route:
       - _LockedChest::D57:
          hide-icon-on-map: true
       - _Enemy::BokoBoss::D24
-      - _Equipment::Weapon<Spear>:
+      - _Equipment::Weapon<Knight's Halberd>:
          coord: [131.79, -340.66, -3845.05]
       - _Enemy::FluxConstruct::DF01
       - _Warp::Lightroot::Kohsustu<Warp to Kohsustu Lightroot>
       - _Enemy::Frox::DF03
       - _Enemy::Talus::DF02
-      - _Equipment::Weapon<Sword>:
+      - _Equipment::Weapon<Boomerang>:
          coord: [1110.06, -361.31, -3389.09]
       - _Lightroot::U-u-ujoj
       - _Enemy::Lynel::D15
       - _Enemy::Hinox::DF07
-      - _Equipment::Weapon<Sword>:
+      - _Equipment::Weapon<Eightfold Blade>:
          coord: [2040, -340.17, -3782.74]
-      - _Equipment::Weapon<Sword>:
+      - _Equipment::Weapon<Eightfold Blade>:
          coord: [1998.39, -349.36, -3647.02]
       - _Enemy::BokoBoss::D30
-      - _Equipment::Weapon<Sword>:
-         coord: [1936.3, -352.58, -3455.04]
       - _Enemy::Frox::DL02:
          notes: Take pic
       - _Enemy::BokoBoss::D32
@@ -4204,8 +4197,14 @@ _route:
       - _Chasm::MinshiWoods
 
    - Korok Grove:
+      - _Equipment::Weapon<Forest Dweller Spear>:
+         coord: [801.27, -511.48, 1825.68]
       - _Enemy<Phantom Ganon>:
          coord: [772.71, -518.61, 1993.55]
+      - _Equipment::Weapon<Forest Dweller Spear>:
+         coord: [597.43, -515.08, 2003.76]
+      - _Equipment::Weapon<Forest Dweller Spear>:
+         coord: [587.76, -514.1, 2081.37]
       - _Lightroot::Eknupup
       - _Enemy::BokoBoss::D21
       - _Equipment::Weapon<Longsword>:
@@ -4220,7 +4219,9 @@ _route:
          coord: [4.67, -506.71, 2356.25]
       - _Lightroot::Ramobnukas
       - _Chest<Large Crystallized Charge>:
-            coord: [124.73, -518.95, 1862.4]
+         coord: [124.73, -518.95, 1862.4]
+      - _Equipment::Weapon<Forest Dweller Sword>:
+         coord: [348.32, -508.35, 1781.99]
       - _Lightroot::Sijnin
       - _Location::KorokGrove:
          hide-icon-on-map: true
@@ -4518,7 +4519,7 @@ _route:
       - _Location::BraveryIsland:
          hide-icon-on-map: true
       - _Npc::Steward Construct_03:
-         comment: Complete mini-game
+         comment: Complete the mini-game
       - _Dispenser::S15
       - _Shrine::Simosiwak
       - _Korok::TRS02
@@ -4565,7 +4566,7 @@ _route:
       - _Item<Boulder>:
          coord: [4074.69, 482.28, 459.62]
       - _Korok::UZ28
-      - _Enemy::Talus::DZ01
+      - _Enemy::Talus::GZ04
       - _Korok::UZ25
       - _Korok::UZ49
       - _Enemy::BokoBoss::G61:
@@ -4804,11 +4805,11 @@ _route:
          notes: Take pic
       - _Enemy::Frox::DE02
       - _Enemy::Talus::GT02
-      - _Equipment::Weapon<Sword>:
+      - _Equipment::Weapon<Forest Dweller Sword>:
          coord: [-455.6, -444.76, 3036.31]
-      - _Equipment::Weapon<Spear>:
+      - _Equipment::Weapon<Forest Dweller Spear>:
          coord: [-258.69, -427.64, 3184.25]
-      - _Equipment::Weapon<Claymore>:
+      - _Equipment::Weapon<Knight's Claymore>:
          coord: [-24.54, -486.08, 3169.92]
       - _Enemy::Gleeok::D01
       - _Location::GleeokDen:
@@ -4826,12 +4827,12 @@ _route:
          hide-icon-on-map: true
       - _LockedChest::D54:
          hide-icon-on-map: true
-      - _Equipment::Weapon<Claymore>:
+      - _Equipment::Weapon<Knight's Claymore>:
          coord: [452.32, -531.94, 2862.32]
-      - _Equipment::Weapon<Spear>:
+      - _Equipment::Weapon<Forest Dweller Spear>:
          coord: [657.9, -543.5, 2873.49]
       - _Lightroot::Uukukis
-      - _Equipment::Weapon<Sword>:
+      - _Equipment::Weapon<Forest Dweller Sword>:
          coord: [939.56, -584.94, 2836.8]
       - _Enemy::Hinox::DE03
       - _Enemy::Frox::DE01
@@ -4849,7 +4850,7 @@ _route:
       - _LockedChest::D52:
          hide-icon-on-map: true
       - _Enemy::Talus::DT01
-      - _Equipment::Weapon<Claymore>:
+      - _Equipment::Weapon<Cobble Crusher>:
          coord: [1156.69, -461.21, 3641.34]
       - _Lightroot::Kayam
       - _Location::EldinDarkSkeleton:
@@ -5020,7 +5021,7 @@ _route:
       - _Chasm::EventideIsland
 
    - Midna's Helmet:
-      - _Equipment::Weapon<Broadsword>:
+      - _Equipment::Weapon<Royal Guard Sword>:
          coord: [4514.37, -340.81, -3504.06]
       - _Location::LoneIslandColiseum:
          hide-icon-on-map: true
@@ -5028,13 +5029,15 @@ _route:
       - _Chest::MidnasHelmet:
          hide-icon-on-map: true
       - _Lightroot::Ni-iraram
+      - _Equipment::Weapon<Royal Guard Claymore>:
+         coord: [4536.41, -349.32, -3743.19]
       - Ascend:
          movements:
             - to: [4720.29, -454.81, -3786.23]
 
    - Bird-Man Flight Research:
       - _Npc::Branli:
-         comment: Complete mini-game
+         comment: Complete the mini-game
       - _Item<Steering Stick and Fans>:
          coord: [4671.18, 166.56, -3745.79]
          comment: Build flying machine
@@ -5637,7 +5640,6 @@ _route:
       - _Korok::EC51
       - _Korok::UZ04
       - _Location::AkkalaParadeGroundRuins
-      - _Chasm::SouthAkkalaPlains
       - _Korok::UM40
       - _Enemy::Gleeok::G03
       - _Korok::UZ06
@@ -5712,7 +5714,7 @@ _route:
       - _SideQuest::MastertheVehiclePrototype:
          comment: Complete prototype race, Reload after autosave to unlock mini-game
       - _Special<Tarrey Town Race>:
-         comment: As with all mini-games, complete all levels, e.g. beginner and expert
+         comment: Complete all levels of the mini-game
       - _Npc<Tali>:
          coord: [3738, 198, 1680]
          comment: Tell them about the Lurelin Village Resort Project
@@ -5788,7 +5790,7 @@ _route:
          coord: [2968, 1, -3665]
       - _Special<Lurelin Water Rally>:
          coord: [2976, 1, -3690]
-         comment: Complete all levels of mini-game
+         comment: Complete all levels of the mini-game
 
    - Tuft Mountain Perimeter:
       - _Item<Campfire>:
@@ -6089,7 +6091,7 @@ _route:
    - An Eerie Voice:
       - _Npc::Blynne:
          coord: [514.26, 152.72, -3449.75]
-         comment: Complete mini-game
+         comment: Complete the mini-game
       - _SideAdv::AnEerieVoice:
          coord: [504.45, 152.68, -3443.47]
       - _Korok::PF73::Start
@@ -6113,7 +6115,7 @@ _route:
          level: Sky
       - _Material<Light Dragon Horn>
       - _Npc::Strade:
-         comment: Complete mini-game
+         comment: Complete the mini-game
 
    - The Great Plateau:
       - _Shrine::Riogok
@@ -6285,12 +6287,12 @@ _route:
       - _Equipment::Weapon<Claymore>:
          coord: [-534.96, -431.44, -3624.04]
       - _Lightroot::Nikohsi
-      - _Equipment::Weapon<Sword>:
+      - _Equipment::Weapon<Gerudo Scimitar>:
          coord: [-816.61, -422.33, -3472.59]
          notes: Take pic of Colgera
       - _Enemy::Talus::DF01
       - _Enemy::BokoBoss::D18
-      - _Equipment::Weapon<Claymore>:
+      - _Equipment::Weapon<Gerudo Claymore>:
          coord: [-871.34, -422.55, -3123.1]
       - _Enemy::BokoBoss::D17:
          comment: Farosh should be nearby. If not, kill time with a lynel run before warping to Motsusis Shrine
@@ -6312,7 +6314,7 @@ _route:
       - _LockedChest::D45
 
    - Amakawis Lightroot:
-      - _Equipment::Weapon<Claymore>:
+      - _Equipment::Weapon<Gerudo Claymore>:
          coord: [-1225.03, -721.03, -3661.71]
       - _Chest<Large Crystallized Charge>:
          coord: [-1422.82, -754.79, -3613.13]
@@ -6323,15 +6325,15 @@ _route:
       - _Location::GranajhCanyonMine:
          hide-icon-on-map: true
       - _Lightroot::Kawatik
-      - _Equipment::Weapon<Spear>:
+      - _Equipment::Weapon<Gerudo Spear>:
          coord: [-1727.02, -605.18, -3022.13]
-      - _Equipment::Weapon<Claymore>:
+      - _Equipment::Weapon<Greudo Claymore>:
          coord: [-1772.62, -528.37, -2885.02]
-      - _Equipment::Weapon<Spear>:
+      - _Equipment::Weapon<Gerudo Spear>:
          coord: [-1878.24, -451.71, -2824.78]
       - _Enemy::Frox::DG05
       - _Enemy::BokoBoss::D11
-      - _Equipment::Weapon<Spear>:
+      - _Equipment::Weapon<Gerudo Spear>:
          coord: [-2298.39, -380.16, -2987.59]
       - _Enemy::Frox::DG07
       - _Lightroot::Amakawis
@@ -6350,7 +6352,7 @@ _route:
          hide-icon-on-map: true
       - _Lightroot::Mihcihc
       - _Enemy::Frox::DG08
-      - _Equipment::Weapon<Sword>:
+      - _Equipment::Weapon<Gerudo Scimitar>:
          coord: [-3471.45, -356.37, -3505.42]
       - _YigaSchema::VerticalEscape
       - _LockedChest::D18:
@@ -6359,13 +6361,13 @@ _route:
          hide-icon-on-map: true
       - _Enemy::Hinox::DG03
       - _Lightroot::Gataharak
-      - _Equipment::Weapon<Spear>:
+      - _Equipment::Weapon<Gerudo Spear>:
          coord: [-3866.78, -355.46, -3566.92]
-      - _Equipment::Weapon<Sword>:
+      - _Equipment::Weapon<Gerudo Scimitar>:
          coord: [-3928.43, -366.65, -3446.03]
-      - _Equipment::Weapon<Spear>:
+      - _Equipment::Weapon<Gerudo Spear>:
          coord: [-4052.61, -372.98, -3524.15]
-      - _Equipment::Weapon<Sword>:
+      - _Equipment::Weapon<Gerudo Scimitar>:
          coord: [-4205.46, -363.61, -3597.88]
       - _Chest<Large Crystallized Charge>:
          coord: [-4102.58, -358.71, -3738.94]
@@ -6380,7 +6382,7 @@ _route:
       - _LockedChest::D05
       - _Chest::SheiksMask:
          hide-icon-on-map: true
-      - _Equipment::Weapon<sword>:
+      - _Equipment::Weapon<Gerudo Scimitar>:
          coord: [-4443.17, -372.14, -3787.26]
       - _Enemy<Phantom Ganon>:
          coord: [-4528.91, -375.73, -3706.88]
@@ -6389,11 +6391,11 @@ _route:
       - _Chest::TunicoftheWild
       - _Enemy::Frox::DG10
       - _Enemy::Hinox::DG02
-      - _Equipment::Weapon<Claymore>:
+      - _Equipment::Weapon<Gerudo Claymore>:
          coord: [-4244.48, -360.27, -3428.66]
-      - _Equipment::Weapon<Claymore>:
+      - _Equipment::Weapon<Gerudo Claymore>:
          coord: [-4360.68, -370.92, -3331.38]
-      - _Equipment::Weapon<Spear>:
+      - _Equipment::Weapon<Gerudo Spear>:
          coord: [-4552.42, -371.37, -3213.08]
       - _Lightroot::Gonatoyrim
 
@@ -7044,7 +7046,7 @@ _route:
       - _Korok::LB45
       - _Addison::A06
       - _Npc::Ornest:
-         comment: Complete mini-game
+         comment: Complete the mini-game
          notes: Be sure you have 1 empty weapon slot before talking to Ornest. Take pic of Feather Edge sword if he gives you one.  Remember to break the sword afterward.
 
    - Ultra Ball Haul:
@@ -7053,7 +7055,7 @@ _route:
       - _Location::TabanthaGreatBridge
       - _Korok::LB38
       - _Location::UltraBallHaulCheckIn:
-         comment: Complete mini-game
+         comment: Complete all levels of the mini-game
       - _Cave::TanagarCanyonWest00
       - _Bubbulfrog::TanagarCanyonWestCave
       - _Shrine::Iun-orok
@@ -7167,13 +7169,11 @@ _route:
          coord: [-2682.22, -634.43, 805.9]
       - _Location::RhoamCanyonMine:
          hide-icon-on-map: true
-      - _Equipment::Weapon<Spear>:
+      - _Equipment::Weapon<Knight's Halberd>:
          coord: [-2807.21, -577.38, 688.99]
       - _Lightroot::Sikurukam
       - _Enemy::BokoBoss::D08
-      - _Equipment::Weapon<Sword>:
-         coord: [-2939.58, -527.79, 352.93]
-      - _Equipment::Weapon<Spear>:
+      - _Equipment::Weapon<Knight's Halberd>:
          coord: [-2792.34, -488.64, 162.23]
       - _Enemy<Queen Gibdo>:
          coord: [-2720.7, -546.78, -76.67]
@@ -7183,7 +7183,7 @@ _route:
       - _Enemy::Talus::DR04
       - _Equipment::Weapon<Sword>:
          coord: [-2502.33, -462.39, -67.69]
-      - _Equipment::Weapon<Claymore>:
+      - _Equipment::Weapon<Giant Boomerang>:
          coord: [-2463.77, -505.98, 65.48]
       - _Enemy::Frox::DC04
       - _Equipment::Weapon<Sword>:
@@ -7208,7 +7208,7 @@ _route:
          hide-icon-on-map: true
 
    - Fishing Trawler:
-      - _Equipment::Weapon<Spear>:
+      - _Equipment::Weapon<Knight's Halberd>:
          coord: [-2069, -587.42, 1313.83]
       - _Equipment::Weapon<Sword>:
          coord: [-1974.21, -544.34, 1440.22]
@@ -7216,9 +7216,9 @@ _route:
          coord: [-1948.83, -442.01, 1522.7]
       - _Equipment::Weapon<Sword>:
          coord: [-1783.53, -445.61, 1567.74]
-      - _Equipment::Weapon<Claymore>:
+      - _Equipment::Weapon<Giant Boomerang>:
          coord: [-1670.69, -432.3, 1613.17]
-      - _Equipment::Weapon<Spear>:
+      - _Equipment::Weapon<Knight's Halberd>:
          coord: [-1665.56, -466.84, 1445.57]
       - _YigaSchema::CargoCarrier
       - _LockedChest::D36:
@@ -7226,12 +7226,12 @@ _route:
       - _LockedChest::D37:
          hide-icon-on-map: true
       - _Enemy::FluxConstruct::DC01
-      - _Equipment::Weapon<Spear>:
+      - _Equipment::Weapon<Knight's Halberd>:
          coord: [-708.46, -454.77, 1578.89]
       - _Lightroot::Netamnet
-      - _Equipment::Weapon<Sword>:
+      - _Equipment::Weapon<Forest Dweller Sword>:
          coord: [-315.13, -480.49, 1535.24]
-      - _Equipment::Weapon<Sword>:
+      - _Equipment::Weapon<Forest Dweller Sword>:
          coord: [-132.09, -453.57, 1472.83]
       - _YigaSchema::FishingTrawler
       - _LockedChest::D47:
@@ -7240,15 +7240,17 @@ _route:
          hide-icon-on-map: true
 
    - Cliff Bargainer Statue:
-      - _Equipment::Weapon<Sword>:
+      - _Equipment::Weapon<Forest Dweller Sword>:
          coord: [-497.21, -492.72, 1953.54]
       - _Enemy::Frox::DE04
       - _Enemy<Mucktorok>:
          coord: [-1243.78, -443.65, 2014.32]
       - _LockedChest::D35
-      - _Equipment::Weapon<Spear>:
+      - _Equipment::Weapon<Forest Dweller Spear>:
          coord: [-1157.66, -438.84, 1976.79]
       - _Lightroot::Uoyoyuik
+      - _Equipment::Weapon<Forest Dweller Sword>:
+         coord: [-1219.29, -440.53, 2233.22]
       - _Poe::Large:
          coord: [-1253.9, -382.84, 2303.1]
       - _Poe::Normal:
@@ -7264,7 +7266,7 @@ _route:
       - _Location::CliffBargainerStatue:
          hide-icon-on-map: true
       - _Enemy::Frox::DH02
-      - _Equipment::Weapon<Spear>:
+      - _Equipment::Weapon<Forest Dweller Spear>:
          coord: [-796.35, -519.92, 2755.92]
       - _Lightroot::Nikakik
       - _Chest<Large Crystallized Charge>:
@@ -7400,7 +7402,7 @@ _route:
       - _Warp::Shrine::Rutafu-um<Warp to Rutafu-um Shrine>:
          comment: Ascend
       - _Location::SelmiesSpot:
-         comment: Complete mini-game
+         comment: Complete all levels of the mini-game
          notes: Take pics of shields
 
    - Gerudo Desert Gateway:
@@ -7455,7 +7457,7 @@ _route:
          notes: Take pic of Yiga Blademaster
       - _Special<Yiga Clan Training>:
          coord: [-3561, 347, -1333]
-         comment: Complete mini-game
+         comment: Complete all levels of the mini-game
       - _Chasm::YigaClanHideout
       - _Shrine::Rotsumamu
       - _LockedChest::G07
@@ -7938,6 +7940,135 @@ _route:
       - _Korok::UM26::Start
       - _Korok::UM26::End
       - _Korok::UM27
+
+   - South Akkala Chasm:
+      - _Warp::Shrine::Domizuin<Warp to Domizuin Shrine>
+      - _Chasm::SouthAkkalaPlains
+
+   - Ancient Underground Fortress:
+      - _Lightroot::Niuzimod
+      - _Enemy::BokoBoss::D36
+      - _Chest::TrousersofTwilight
+      - _Location::AncientUndergroundFortress:
+         hide-icon-on-map: true
+      - _Enemy::Lynel::D17
+      - _Lightroot::Gedihcayam
+      - _Lightroot::Nipahsom
+      - _Enemy::Frox::DE03
+      - _Lightroot::Kawamit
+      - _Enemy::Talus::DE04
+      - _Chest::TunicoftheSky
+      - _Lightroot::Uihcoke
+      - _Enemy::Lynel::D13
+      - _Enemy::Hinox::DE05
+      - _YigaSchema::Rainmaker
+      - _LockedChest::D59:
+         hide-icon-on-map: true
+      - _LockedChest::D60:
+         hide-icon-on-map: true
+      - _Enemy::BokoBoss::D31
+      - _Equipment::Weapon<Cobble Crusher>:
+         coord: [2468.74, -397.87, 645.36]
+      - _Equipment::Weapon<Zora Sword>:
+         coord: [2612.4, -545.73, 549.11]
+      - _Lightroot::Uinoj
+      - _Equipment::Weapon<Zora Spear>:
+         coord: [2920.29, -683.24, 559.89]
+      - _Enemy<Mucktorok>:
+         coord: [2837, -685.82, 610]
+      - _LockedChest::D69
+      - _Enemy::Frox::DA03
+      - _Enemy::Lynel::D16
+      - _Lightroot::Anonisik
+      - _YigaSchema::BigRig
+      - _LockedChest::D67:
+         hide-icon-on-map: true
+      - _LockedChest::D68:
+         hide-icon-on-map: true
+      - _Enemy::Talus::DA02
+      - _Enemy::BokoBoss::D37
+
+   - asdjksdjhfjk:
+      - _Enemy::FluxConstruct::DL01
+      - _Equipment::Weapon<Zora Sword>:
+         coord: [3318.41, -734.69, 1059.23]
+      - _Lightroot::A-nehi
+      - _Location::PloymusCanyonMine:
+         hide-icon-on-map: true
+      - _Chest<Large Crystallized Charge>:
+         coord: [3804.15, -849.12, 448.46]
+      - _Equipment::Weapon<Zora Sword>:
+         coord: [3982.75, -767.36, 602.79]
+      - _Enemy::Talus::DZ01
+      - _Equipment::Weapon<Zora Sword>:
+         coord: [4221.57, -706.65, 424.99]
+      - _YigaSchema::TripleCannon
+      - _LockedChest::D93:
+         hide-icon-on-map: true
+      - _LockedChest::D94:
+         hide-icon-on-map: true
+      - _Lightroot::Sisinatag
+      - _Equipment::Weapon<Zora Longsword>:
+         coord: [4479.83, -431.76, 923.94]
+      - _Equipment::Weapon<Zora LongSword>:
+         coord: [4410.53, -613.86, 907.66]
+      - _Equipment::Weapon<Zora Sword>:
+         coord: [4289.61, -565.21, 815.65]
+      - _Enemy::Frox::DA02
+      - _Equipment::Weapon<Zora Longsword>:
+         coord: [3927.36, -581.32, 923.11]
+      - _Equipment::Weapon<Zora Spear>:
+         coord: [3799.71, -580.34, 946.62]
+      - _Lightroot::Agihi-ihcoj
+      - _Lightroot::Kawikatisar
+
+   - Ulria Grotto:
+      - _Warp::Shrine::Ihen-a<Warp to Ihen-a Shrine>
+      - _Korok::UZ11
+      - _Korok::UZ09
+      - _Enemy::Lynel::G14
+      - _Korok::UZ12::Start
+      - _LockedChest::G47
+      - _Korok::UZ10
+      - _Korok::UZ16
+      - _Cave::UlriaGrottoSouth00
+      - _Bubbulfrog::UlriaGrottoSouthCave
+      - _Enemy::Talus::GZ03:
+         comment: Ascend
+      - _Korok::UZ27
+      - _Addison::A77
+      - _Korok::UZ19
+      - _Special<Starting Block>:
+         coord: [4697.57, 335.54, 546.61]
+      - _Korok::UZ21
+      - _Korok::UZ17
+      - _Korok::UZ12::End
+      - _Special<Annoying Plushy Lady>:
+         coord: [4280, 232, 830]
+         comment: Complete the mini-game
+
+   - Tingel Island:
+      - _Cave::UlriaGrottoEast00
+      - _Bubbulfrog::UlriaGrottoEastCave
+      - _Enemy::Hinox::GA04
+      - _Cave::UlriaGrottoEast01
+      - _Shrine::Gatanisis
+      - _Special<Starting Block>:
+         coord: [4477.16, 201.95, 937.46]
+      - _Korok::UZ07
+      - _Korok::UZ02
+      - _Chasm::TingelIsland
+
+   - Cap of the Wild:
+      - _Item<Rock Wall>:
+         coord: [4663.95, -498.22, 1169.54]
+      - _Item<Rock Wall>:
+         coord: [4659.49, -559.41, 966.65]
+      - _Item<Rock Wall>:
+         coord: [4610.64, -568.29, 730.87]
+      - _Enemy<Phantom Ganon>:
+         coord: [4650.48, -617.8, 614.56]
+      - _Chest::CapoftheWind
 
 
 
