@@ -1569,7 +1569,7 @@ _route:
          coord: [-3266.05, 224.58, 1775.64]
       - _Addison::A05
       - _Korok::LB10::Trail
-      - _Enemy::Hinox::DH03
+      - _Enemy::Hinox::GH03
       - _Korok::RP60
       - _Location::LakeTotori:
          hide-icon-on-map: true
@@ -6897,6 +6897,258 @@ _route:
          coord: [-422.79, -326.38, -2576.48]
          comment: Build flying machine
       - _Lightroot::Amo-ne
+
+   - Thunderhead Isles:
+      - _Warp::Shrine::Joku-u<Warp to Joku-u Shrine>:
+         level: Sky
+      - _Dispenser::S02:
+         comment: Refill inventory of fans and steering sticks
+      - _Item<Rockets>:
+         coord: [1403.63, 523.91, -3225.72]
+         comment: Fuse rockets to shields
+      - _Item<Steering Stick and Fans>:
+         coord: [1403.3, 523.6, -3203.46]
+         comment: Build flying machine
+      - _OldMap::ThunderheadIsles
+      - _Location::ThunderheadIsles:
+         hide-icon-on-map: true
+      - _Korok::PFS02
+      - _SagesWill::ThunderheadIsles
+      - _Dispenser::S18
+      - _Enemy::FluxConstruct::SF02
+      - _OldMap::ThunderheadIsles_01
+      - _Item<Fan>:
+         coord: [1146.22, 872.28, -3347.13]
+         comment: Fuse to T shaped board, Ride rail to get underneath shrine and ascend
+      - _Shrine::Joku-usin
+
+   - Sinatanika Shrine:
+      - _Warp::Shrine::Sinatanika<Warp to Sinatanika Shrine>
+      - _Shrine::Sinatanika
+      - _Chasm::EastAkkalaPlains
+
+   - Abandoned Tarrey Mine:
+      - _Enemy::Frox::DA01
+      - _Lightroot::Akinatanis
+      - _Location::WellspringofPower
+      - _Shop::BargainerStatue05
+      - _YigaSchema::Wagon
+      - _LockedChest::D82:
+         hide-icon-on-map: true
+      - _LockedChest::D83:
+         hide-icon-on-map: true
+      - _Chest<Large Crystallized Charge>:
+         coord: [3680.33, -497.18, 2082.46]
+      - _Location::UlriCanyonMine:
+         hide-icon-on-map: true
+      - _Enemy<Mucktorok>:
+         coord: [3671.08, -434.82, 1680.5]
+      - _LockedChest::D84
+      - _Equipment::Weapon<Spear>:
+         coord: [3745.83, -426.6, 1764.9]
+      - _Equipment::Weapon<Spear>:
+         coord: [3848.82, -427.54, 1851.87]
+      - _Equipment::Weapon<Claymore>:
+         coord: [4031.13, -430.37, 1862.38]
+      - _Equipment::Weapon<Claymore>:
+         coord: [4211.64, -441.16, 1803.2]
+      - _Equipment::Weapon<Spear>:
+         coord: [4190.29, -461.48, 1707.14]
+      - _Location::AbandonedTarreyMine
+
+   - Rist Mine:
+      - _Poe::Large:
+         coord: [3963.31, -399.37, 1549.24]
+      - _Poe::Large:
+         coord: [3960.17, -399.79, 1543.06]
+      - _Poe::Large:
+         coord: [3957.23, -399.38, 1549.24]
+      - _Shop::ForgeConstruct06
+      - _SchemaStone::TarreyMine
+      - _Chest<Large Crystallized Charge>:
+         coord: [4022.55, -476.45, 1520.35]
+      - _Equipment::Weapon<Spear>:
+         coord: [4550.3, -409.14, 1695.13]
+      - _Enemy::Hinox::DA01
+      - _Location::RistMine
+      - _Chest::TunicofTwilight
+      - _Lightroot::Kimimeg
+
+   - Rocket Reload 7:
+      - _Warp::Shrine::Rakashog<Warp to Rakashog Shrine>:
+         level: Sky
+      - _Item<Rockets>:
+         coord: [-1820.55, 1075.09, -2212.26]
+         comment: Fuse rockets to shields
+
+   - Ancient Columns:
+      - _Warp::Shrine::Ganos<Warp to Ganos Shrine>
+      - _Item<Ancient Pillar Switch>:
+         coord: [-3484.08, 397.83, 421.95]
+         notes: Take pic of sunset, Do so after some of the following objectives if it is not yet 4AM
+      - _Cave::AncientColumns00
+      - _Bubbulfrog::AncientColumnsCave
+      - _SideQuest::MiskosTreasureofAwakeningII:
+         coord: [-3528, 241, 410]
+      - _Chest::TunicofAwakening:
+         comment: Ascend
+      - _Location::AncientColumns
+
+   - Gisa Crater:
+      - _Korok::LB46::Trail:
+         comment: Kill gleeok in the middle of flower trail
+      - _Enemy::Gleeok::G05
+      - _Special<Starting Block>:
+         coord: [-3966.26, 293.96, 625.12]
+      - _Korok::LB32
+      - _Korok::LB28
+      - _Korok::LB24
+      - _Korok::LB27
+      - _Korok::LB22
+      - _Cave::GisaCrater01
+      - _Bubbulfrog::GisaCraterCave
+      - _Location::GisaCrater:
+         hide-icon-on-map: true
+      - _Enemy<Ice Like x2>:
+         coord: [-3939.44, 185.95, 1055.67]
+      - _Shrine::Ikatak::Start
+      - _Cave::GisaCrater00
+      - _Shrine::Ikatak
+
+   - Rescue the Hornist:
+      - _Special<Starting Block>:
+         coord: [-3820.74, 392.28, 1319.24]
+      - _Korok::LB12
+      - _Korok::LB14
+      - _Korok::LB11
+      - _Korok::LB09
+      - _Addison::A04
+      - _Korok::LB13
+      - _Enemy::Talus::GR01
+      - _LockedChest::G04
+      - _Korok::LB20
+      - _Enemy::Talus::GR02
+      - _Korok::LB30::Start
+      - _Korok::LB36
+      - _Korok::LB33
+      - _Korok::LB30::End
+      - _Korok::LB31
+      - _SideAdv::TheHornistsDramaticEscape:
+         coord: [-3648, 118, 756]
+      - _Korok::LB37
+      - _Korok::LB40
+      - _Korok::LB45
+      - _Addison::A06
+      - _Npc::Ornest:
+         comment: Complete mini-game
+         notes: Be sure you have 1 empty weapon slot before talking to Ornest. Take pic of Feather Edge sword if he gives you one.  Remember to break the sword afterward.
+
+   - Ultra Ball Haul:
+      - _Enemy::Talus::GR04
+      - _Korok::LB39
+      - _Location::TabanthaGreatBridge
+      - _Korok::LB38
+      - _Location::UltraBallHaulCheckIn:
+         comment: Complete mini-game
+      - _Cave::TanagarCanyonWest00
+      - _Bubbulfrog::TanagarCanyonWestCave
+      - _Shrine::Iun-orok
+      - _Warp::Shrine::Makurukis
+      - _Korok::LB41::Trail
+      - _Well::TabanthaBridgeStable
+
+   - White Goats Gone Missing:
+      - _Npc::Beedle_01:
+         coord: [-2925, 319, 580]
+      - _Npc::Dabi
+      - _Place::TabanthaBridgeStable:
+         hide-icon-on-map: true
+      - _SideQuest::APictureforTabanthaBridgeStable:
+         coord: [-2931, 319, 547]
+      - _SideAdv::WhiteGoatsGoneMissing:
+         coord: [-2910.76, 274.97, 522.58]
+      - _Korok::LB53::Start
+      - _Special<Starting Block>:
+         coord: [-2918.77, 312, 285.46]
+      - _Korok::LB49
+      - _Korok::LB54::Start
+      - _Korok::LB54::End
+      - _Tear::G05
+      - _Korok::LB60
+      - _Special<Starting Block>:
+         coord: [-2838.84, 157.52, -437.44]
+      - _Korok::GH08
+      - _Enemy::Talus::GC03
+      - _Korok::HF06
+      - _Addison::A12
+      - _Korok::LB61
+      - _Enemy::Talus::GR06
+      - _Enemy::BokoBoss::G07
+      - _Korok::LB53::End
+      - _Addison::A11
+      - _SideAdv<Complete White Goats Gone Missing>:
+         coord: [-2548.82, 256.06, 406.33]
+      - _Korok::LB44
+      - _Enemy::BokoBoss::G08
+      - _Korok::LB43::Start
+      - _Korok::LB43::End
+
+   - Jeddo Bridge:
+      - _Special<Place Travel Medallion>:
+         coord: [-2066, 139, 512]
+      - _Korok::LB47
+      - _Enemy<Phantom Ganon>:
+         coord: [-2118.93, 239.98, 338.97]
+      - _Korok::LB55
+      - _Korok::LB59
+      - _Korok::LB58
+      - _Location::JeddoBridge:
+         hide-icon-on-map: true
+      - _Korok::LB57
+      - _Korok::LB51
+      - _Enemy::Lynel::G05
+      - _Korok::LB56
+      - _Enemy::BokoBoss::G13
+      - _Korok::LB52
+
+   - Thundra Plateau:
+      - _Warp::Special<Warp to Travel Medallion>:
+         coord: [-2066, 139, 512]
+      - _Addison::A22
+      - _Chest<Large Zonai Charge>:
+         coord: [-1708.09, 251.88, 773.68]
+         comment: Skip if necessary to make it to Thundra Plateau by noon
+      - _Chest<Large Zonai Charge>:
+         coord: [-1820.41, 251.88, 748.03]
+         comment: Skip if necessary to make it to Thundra Plateau by noon
+      - _Korok::LB29
+      - _Enemy::Hinox::GR06
+      - _Location::ThundraPlateau:
+         hide-icon-on-map: true
+      - _Item<Dragonblood Tree>:
+         coord: [-2258, 217.5, 849.68]
+         comment: Cut down for log
+      - _Item<Dragonblood Tree>:
+         coord: [-2272.5, 217.5, 844.41]
+         comment: Cut down for log
+      - _Item<Dragonblood Tree>:
+         coord: [-2288.82, 217.5, 850.31]
+         comment: Cut down for log
+      - _Cave::ThundraPlateau00:
+         comment: Fuse 3 logs together and use them to cast a shadow across the entrance
+
+   - Hyrule Ridge Chasm:
+      - _Chest::MaskofAwakening
+      - _Bubbulfrog::ThundraPlateauCave
+      - _Korok::LB23
+      - _Korok::LB21
+      - _Korok::LB19
+      - _Shrine::Runakit
+      - _Special<Starting Block>:
+         coord: [-2580.2, 321.1, 1249.37]
+      - _Korok::LB16
+      - _Enemy::Hinox::GR04
+      - _Chasm::HyruleRidge
 
 
 
