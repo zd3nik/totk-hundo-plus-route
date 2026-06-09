@@ -7612,12 +7612,10 @@ _route:
       - _Item<Frost Emitter>:
          coord: [980.43, 115.29, -1833.39]
          comment: Make a stack of 4 or 5 ice sheets fused together
-      - Place Ice Sheets Near Campfire, But Not Too Near:
-         movements:
-            - to: [938.28, 135.06, -1887.01]
       - _Item<Campfire>:
          coord: [943.86, 122.85, -1894.34]
-         comment: Light campfire and use it to melt ice sheets one at a time before placing them in key slots
+         comment: Place ice sheet stack near campfire, but not so close they will melt
+         notes: Light campfire and use it to melt ice sheets one at a time to place them in key slots
       - _Npc::Steward Construct_01:
          comment: Ascend
       - _Shrine::Jochisiu
@@ -7632,7 +7630,9 @@ _route:
       - _Location::HorwellBridge
       - _Enemy::Hinox::GC05
       - _Addison::A40
-      - _Location::EagusBridge
+      - _Location::EagusBridge:
+         coord: [947, 99, -980]
+         comment: Drop flying machine in river
       - _Korok::SS39
       - _Special<Starting Block>:
          coord: [1086.85, 115.2, -1048.15]
@@ -7640,6 +7640,83 @@ _route:
       - _Korok::PF03::End
       - _Special<Collect the Sand-Seals>:
          coord: [1050, 9, -1148]
+
+   - Lynel Run 8:
+      - Skip all or part of this segment if good on arrows and weapons
+      - _Warp::Lightroot::Ui-ihcoj<Warp to Ui-ihcoj Lightroot>
+      - _Enemy::Lynel<x1>:
+         coord: [4212.09, -467.54, 2721.1]
+      - _Warp::Lightroot::U-u-ujoj<Warp to U-u-ujoj Lightroot>
+      - _Enemy::Lynel<x1>:
+         coord: [1584.7, -407.09, -3496.46]
+      - _Warp::Lightroot::Kimakarut<Warp to Kimakarut Lightroot>
+      - _Enemy::Lynel<x1>:
+         coord: [-2798.87, -376.93, -2238.38]
+
+   - Foothill Stable:
+      - _Warp::Shrine::Kisinona<Warp to Kisinona Shrine>
+      - _Shrine::Kisinona
+      - _Korok::EC52
+      - _Well::FoothillStable
+      - _Npc::Penn_23
+      - _Npc::Ozunda
+      - _Npc::Dillie
+      - _SideQuest::APictureforFoothillStable:
+         coord: [2610, 148, 1141]
+      - _Place::FoothillStable:
+         hide-icon-on-map: true
+      - _Addison::A57
+      - _Korok::UZ13::Start
+      - _Korok::EC55
+      - _Npc::Beedle_11
+      - _Korok::UZ13::End
+      - _Chest<Rockets>:
+         coord: [2751.9, 303.66, 768.36]
+      - _Korok::UZ18::Start
+      - _Korok::UZ18::End
+      - _Korok::UZ50::Start
+      - Drop Flying Machine Near Well:
+         movements:
+            - to: [2746, 115, 176]
+      - _Korok::UZ42:
+         comment: Ascend
+      - _Cave::TabahlWoods01
+      - _Cave::TabahlWoods00
+      - _Bubbulfrog::TabahlWoodsCave
+      - _Cave::TabahlWoods02
+      - _Enemy<Phantom Ganon>:
+         coord: [2551.78, 172.81, 236.39]
+
+   - Bone Pond:
+      - _Enemy<Black Lizalfos>:
+         coord: [2731.53, 207.1, 235.53]
+      - _Korok::UZ41::Trail
+      - _Well::TabahlWoods
+      - _Korok::UZ50::End:
+         comment: Flying machine should be nearby
+      - _Korok::UZ53
+      - _CherryBlossom::Lanayru
+      - _Korok::UZ56
+      - _Korok::UZ47
+      - _Korok::UZ45
+      - _Korok::UZ36
+      - _Location::InogoBridge
+      - _Korok::UZ44::Start
+      - _Addison::A58
+      - _Korok::UZ44::End
+      - _Cave::BonéPondEast02
+      - _Bubbulfrog::BonéPondEastCave
+      - _Cave::BonéPondEast01:
+         comment: Ascend
+      - _Korok::UZ52
+
+   - Maoikes Shrine:
+      - _Korok::UZ51
+      - _Cave::BonéPondEast00
+      - _Enemy::BokoBoss::G69
+      - _Npc::Hino_04
+      - _Cave::BonéPondEast03
+      - _Shrine::Maoikes
 
 
 
