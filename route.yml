@@ -6569,7 +6569,7 @@ _route:
       - _Cave::SpectacleRock00
       - _Bubbulfrog::SpectacleRockCave
 
-   - Gerudo Canyon Mine:
+   - Gerudo Canyon Mine Cave:
       - _Special<Offering Plate>:
          coord: [-2301.11, 462.97, -2426.82]
          comment: Ascend
@@ -8144,6 +8144,288 @@ _route:
       - _Enemy<Phantom Ganon>:
          coord: [4650.48, -617.8, 614.56]
       - _Chest::CapoftheWind
+
+   - Birida Lookout Chasm:
+      - _Warp::Tower::GerudoHighlands<Warp to Gerudo Highlands Tower>:
+         notes: If Light Dragon is not nearby warp to the travel medallion at Birida Lookout instead
+      - _Material<Light Dragon Horn>:
+         comment: Skip if Light Dragon is not nearby
+      - _Chasm::BiridaLookout
+
+   - Pristine Weapon Hunt:
+      - _Item<Steering Stick and Fans>:
+         coord: [-3691.55, -243.03, -1881.09]
+         comment: Build flying machine
+      - _Enemy::BokoBoss::D06
+      - _Equipment::Weapon<Gerudo Spear>:
+         coord: [-3641.23, -500.5, -1995.92]
+      - _Equipment::Weapon<Gerudo Claymore>:
+         coord: [-4062.75, -463.98, -1922.55]
+      - _Equipment::Weapon<Gerudo Claymore>:
+         coord: [-4040.63, -384.3, -2035.15]
+      - _Lightroot::Rasinaduk
+      - _YigaSchema::RaidingPlane
+      - _LockedChest::D03:
+         hide-icon-on-map: true
+      - _LockedChest::D04:
+         hide-icon-on-map: true
+      - _Equipment::Weapon<Gerudo Scimitar>:
+         coord: [-4312.83, -405.73, -1840.95]
+      - _Equipment::Weapon<Gerudo Spear>:
+         coord: [-4284.55, -437.31, -1656.26]
+      - _Enemy::Talus::DG02
+      - _Equipment::Weapon<Gerudo Scimitar>:
+         coord: [-3902.63, -621.18, -1628.86]
+      - _Enemy::Frox::DG02
+      - _Enemy::BokoBoss::D05
+      - _Equipment::Weapon<Gerudo Claymore>:
+         coord: [-3772.26, -690.55, -1381.21]
+      - _Equipment::Weapon<Royal Guard Spear>:
+         coord: [-3987.53, -753.91, -1354.97]
+      - _Enemy::Hinox::DG01
+      - _Enemy::BokoBoss::D00
+      - _YigaSchema::SmokeRocket
+      - _LockedChest::D01:
+         hide-icon-on-map: true
+      - _LockedChest::D02:
+         hide-icon-on-map: true
+      - _Equipment::Weapon<Royal Guard Claymore>:
+         coord: [-4507.39, -783.24, -1436.42]
+      - _Lightroot::Stamayam
+
+   - Gerudo Canyon Mine:
+      - _Equipment::Weapon<Gerudo Claymore>:
+         coord: [-4912.79, -741.79, -1321.61]
+      - _Enemy::Frox::DG01
+      - _Equipment::Weapon<Royal Guard Sword>:
+         coord: [-4873.78, -846.75, -1148.84]
+      - _Equipment::Weapon<Royal Guard Spear>:
+         coord: [-4900, -987.96, -1033.06]
+      - _Equipment::Weapon<Royal Guard Spear>:
+         coord: [-4769.11, -939.89, -985.7]
+      - _Equipment::Weapon<Royal Guard Sword>:
+         coord: [-4814.9, -986.56, -710.3]
+      - _Chest<Large Crystallized Charge>:
+         coord: [-4727.76, -997.72, -602.18]
+      - _Location::AgaatCanyonMine:
+         hide-icon-on-map: true
+      - _Equipment::Weapon<Royal Guard Spear>:
+         coord: [-4714.3, -977.68, -499.72]
+      - _Enemy::Talus::DG01
+      - _Equipment::Weapon<Royal Guard Claymore>:
+         coord: [-4596.4, -958.99, -376.1]
+      - _Lightroot::Mustuto
+      - _Equipment::Weapon<Royal Guard Spear>:
+         coord: [-4370.88, -730.49, -514.59]
+      - _Equipment::Weapon<Royal Guard Sword>:
+         coord: [-4236.76, -998.22, -628.56]
+      - _Chest::TrousersofTime
+      - _Location::GerudoCanyonMine:
+         hide-icon-on-map: true
+      - _Equipment::Weapon<Royal Guard Claymore>:
+         coord: [-4067.8, -1012.08, -728.75]
+      - _Equipment::Weapon<Royal Guard Claymore>:
+         coord: [-3949.51, -1013.96, -875.37]
+      - _Equipment::Weapon<Royal Guard Spear>:
+         coord: [-4144.84, -1009.46, -855.14]
+      - _Enemy::FluxConstruct::DG01
+      - _Equipment::Weapon<Royal Guard Spear>:
+         coord: [-3982.4, -999.62, -1053.43]
+      - _Equipment::Weapon<Royal Guard Sword>:
+         coord: [-3805.74, -894.73, -1026.06]
+      - _Enemy<Queen Gibdo>:
+         coord: [-3635.72, -926.63, -837.64]
+      - _LockedChest::D12
+      - _Equipment::Weapon<Royal Guard Sword>:
+         coord: [-3506.81, -927.33, -867.47]
+      - _Equipment::Weapon<Royal Guard Sword>:
+         coord: [-3366.35, -920.92, -944.42]
+      - _Equipment::Weapon<Royal Guard Sword>:
+         coord: [-3424.61, -846.49, -1153.97]
+      - _Equipment::Weapon<Royal Guard Claymore>:
+         coord: [-3665, -824.13, -1194.27]
+      - _Equipment::Weapon<Gerudo Scimitar>:
+         coord: [-3483.7, -733.72, -1317.42]
+      - _Lightroot::Umamustor
+
+   - Bluepee Burrow:
+      - _Equipment::Weapon<Royal Guard Sword>:
+         coord: [-3444.07, -712.68, -1680.13]
+      - _YigaSchema::Fanboat
+      - _LockedChest::D15:
+         hide-icon-on-map: true
+      - _LockedChest::D16:
+         hide-icon-on-map: true
+      - _Equipment::Weapon<Royal Guard Claymore>:
+         coord: [-2658.08, -755.95, -1754.54]
+      - _Lightroot::Kawiraus
+      - _Equipment::Weapon<Gerudo Scimitar>:
+         coord: [-2552.07, -515.27, -1949.44]
+      - _Enemy::FluxConstruct::DG02
+      - _Enemy::BokoBoss::D10
+      - _Chest<Sword of the Hero>:
+         coord: [-2048.12, -440.85, -1128.88]
+         notes: Take pic
+      - _Location::DaliteGrove:
+         hide-icon-on-map: true
+      - _Lightroot::Muzasu
+      - _YigaSchema::ThreeWheeler
+      - _LockedChest::D40:
+         hide-icon-on-map: true
+      - _LockedChest::D41:
+         hide-icon-on-map: true
+      - _Enemy::Frox::DC07
+      - _Enemy::BokoBoss::D14
+      - _Lightroot::Napanos
+      - _Chest<Large Crystallized Charge>:
+         coord: [-2286.16, -694.26, -411.1]
+      - _Location::BlupeeBurrow:
+         hide-icon-on-map: true
+      - _Enemy::Talus::DC02
+      - _Enemy::BokoBoss::D09
+      - _Enemy<Marbled Gohma>:
+         coord: [-2792.86, -440.27, -759.01]
+      - _LockedChest::D26
+
+   - Cuho Canyon Mine:
+      - _Equipment::Weapon<Gerudo Scimitar>:
+         coord: [-3122.4, -528.8, -643.14]
+      - _Enemy::BokoBoss::D04
+      - _YigaSchema::InstantScaffold
+      - _LockedChest::D13:
+         hide-icon-on-map: true
+      - _LockedChest::D14:
+         hide-icon-on-map: true
+      - _Lightroot::Kawakarut
+      - _Equipment::Weapon<Giant Boomerang>:
+         coord: [-3458.47, -426.8, 42.43]
+      - _Enemy::BokoBoss::D03
+      - _Lightroot::Sasag
+      - _Equipment::Weapon<Feathered Spear>:
+         coord: [-4094.87, -437.39, 445.65]
+      - _Enemy::Frox::DH08
+      - _Equipment::Weapon<Feathered Spear>:
+         coord: [-3563, -504.47, 628.48]
+      - _YigaSchema::AllPurposeRaft
+      - _LockedChest::D10:
+         hide-icon-on-map: true
+      - _LockedChest::D11:
+         hide-icon-on-map: true
+      - _Lightroot::Koro-nui
+      - _Equipment::Weapon<Feathered Egde>:
+         coord: [-3241.77, -483.68, 979.98]
+      - _Enemy::Talus::DR03
+      - _Enemy::Frox::DH07
+      - _Equipment::Weapon<Feathered Edge>:
+         coord: [-3921.88, -440.59, 898.78]
+      - _Equipment::Weapon<Feathered Spear>:
+         coord: [-3947.36, -435.54, 1002.17]
+      - _Lightroot::Kataki
+      - _Equipment::Weapon<Feathered Spear>:
+         coord: [-3828.8, -441.43, 1199.54]
+      - _Chest::TunicoftheWind
+      - _Location::CuhoCanyonMine:
+         hide-icon-on-map: true
+      - _Equipment::Weapon<Feathered Spear>:
+         coord: [-3863.81, -528.04, 1470.79]
+      - _Enemy::Hinox::DH03
+      - _Equipment::Weapon<Feathered Spear>:
+         coord: [-4098.48, -475.32, 1764.85]
+      - _Lightroot::So-oaw
+
+   - Sturnida Lavafalls:
+      - _Equipment::Weapon<Royal Broadsword>:
+         coord: [-4165.59, -446.23, 2079.25]
+      - _Equipment::Weapon<Royal Claymore>:
+         coord: [-4257.46, -495.21, 1890.29]
+      - _Equipment::Weapon<Feathered Spear>:
+         coord: [-4360.64, -445.98, 1929.68]
+      - _Enemy::Talus::DH04
+      - _Equipment::Weapon<Royal Halberd>:
+         coord: [-4269.65, -357.68, 2148.07]
+      - _Enemy::FluxConstruct::DH02
+      - _Equipment::Weapon<Royal Halberd>:
+         coord: [-4526.4, -446.84, 2240.97]
+      - _Enemy::Talus::DH02
+      - _Equipment::Weapon<Royal Halberd>:
+         coord: [-4267.8, -447.3, 2364.5]
+      - _Equipment::Weapon<Royal Broadsword>:
+         coord: [-4068.77, -357.46, 2506.64]
+      - _Chest::CapofTime
+      - _Location::SturnidaLavafalls:
+         hide-icon-on-map: true
+      - _Equipment::Weapon<Royal Broadsword>:
+         coord: [-4240.5, -528.01, 2834.62]
+      - _Enemy::Frox::DH04
+      - _Equipment::Weapon<Royal Claymore>:
+         coord: [-4593.21, -559.72, 2782.28]
+      - _Lightroot::Nupisoyuat
+      - _Equipment::Weapon<Royal halberd>:
+         coord: [-4587.16, -561.69, 2980.19]
+      - _Enemy<Colgera>:
+         coord: [-4370.9, -530.17, 3046.45]
+      - _LockedChest::D00
+
+   - Hebra Dark Skeleton:
+      - _Equipment::Weapon<Royal Halberd>:
+         coord: [-4265.43, -733, 3235.05]
+      - _Equipment::Weapon<Royal Claymore>:
+         coord: [-4260.77, -733.12, 2979.71]
+      - _Equipment::Weapon<Royal Claymore>:
+         coord: [-4411.87, -734.26, 3000.41]
+      - _Equipment::Weapon<Royal Broadsword>:
+         coord: [-4425.88, -698.5, 2920.01]
+      - _Equipment::Weapon<Royal Broadsword>:
+         coord: [-4542.95, -626.28, 3326.43]
+      - _Enemy::Talus::DH01
+      - _Chest<large Crystallized Charge>:
+         coord: [-4250.2, -687.93, 3490.89]
+      - _Location::SherfinsLavafalls:
+         hide-icon-on-map: true
+      - _Lightroot::Kato
+      - _Chest::CapoftheWild
+      - _Equipment::Weapon<Royal Claymore>:
+         coord: [-3891.96, -761.85, 3679.84]
+      - _Enemy<Phantom Ganon>:
+         coord: [-3823.82, -781.07, 3612.3]
+      - _Location::HebraDarkSkeleton:
+         hide-icon-on-map: true
+      - _Enemy::Hinox::DH01
+      - _Equipment::Weapon<Royal Halberd>:
+         coord: [-3678.53, -656.01, 3738.19]
+      - _Equipment::Weapon<Royal Claymore>:
+         coord: [-3646.84, -765.3, 3475.16]
+      - _Lightroot::Muotue
+      - _Chest<Large Crystallized Charge>:
+         coord: [-3393.44, -676.84, 3572.14]
+      - _Location::GoflamsLavafalls:
+         hide-icon-on-map: true
+      - _YigaSchema::Excavator
+      - _LockedChest::D06:
+         hide-icon-on-map: true
+      - _LockedChest::D07:
+         hide-icon-on-map: true
+      - _Equipment::Weapon<Royal CLaymore>:
+         coord: [-3144.62, -845.97, 3164.03]
+      - _Lightroot::Mu-ufatur
+      - _Equipment::Weapon<Royal Broadsword>:
+         coord: [-2940.17, -898.09, 3072.55]
+      - _YigaSchema::Floodlights
+      - _LockedChest::D21:
+         hide-icon-on-map: true
+      - _LockedChest::D22:
+         hide-icon-on-map: true
+      - _Chest<Sea-Breeze Boomerang>:
+         coord: [-2736.66, -1014.63, 2918]
+         notes: Take pic
+      - _Location::HebraCanyonMine:
+         hide-icon-on-map: true
+      - _Lightroot::Narusis
+      - _Enemy<Colgera>:
+         coord: [-2266.56, -710.87, 3266.33]
+      - _LockedChest::D20
+      - _Equipment::Weapon<Royal Claymore>:
+         coord: [-2292.64, -910.96, 3190.04]
 
 
 
