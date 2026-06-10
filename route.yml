@@ -4443,8 +4443,9 @@ _route:
       - _Shop::GeneralStore06:
          comment: Buy sugar and spice
       - _Warp::Shrine::Gatakis<Warp to Gatakis Shrine>
-      - _Shop<Buy Oil Butter Sugar and Wheat>:
-         coord: [-3644.61, 289.88, 1820.46]
+      - _Shop::GeneralStore14:
+         comment: Buy oil, butter, sugar, and wheat
+
    - Sparrow Pic:
       - _Warp::Tower::RabellaWetlands<Warp to Rabella Wetlands Tower>
       - _Item<Wood>:
@@ -8145,6 +8146,225 @@ _route:
          coord: [4650.48, -617.8, 614.56]
       - _Chest::CapoftheWind
 
+   - Feathered Edge Sword:
+      - _Warp::Shrine::Sahirow<Warp to Sahirow Shrine>
+      - _Shrine::Sahirow
+      - _Korok::RP36
+      - _Cave::TalontoPeak00
+      - _Bubbulfrog::TalontoPeakCave:
+         comment: Ascend
+      - _Addison::A03
+      - _Cave::HebraSouthSummit01
+      - _Bubbulfrog::HebraSouthSummitCave:
+         comment: Ascend
+      - _Enemy::BokoBoss::G01
+      - _Cave::HebraSouthSummit00:
+         comment: Just get the cave entrance
+      - _Enemy<Boko x1>:
+         coord: [-3385.09, 378.51, 2418.6]
+      - _Enemy<Boko x3>:
+         coord: [-3417.17, 370.91, 2382.5]
+         notes: Take pic of Feathered Edge then break it on nearby trees
+      - _Cave::RosproPass00
+      - _Bubbulfrog::RosproPassCave:
+         comment: Ascend
+
+   - Flight Range:
+      - _Enemy<Ice-Breath Lizalfos>:
+         coord: [-3478.2, 420.28, 2472.87]
+      - _Korok::RP35
+      - _Korok::RP40::Trail
+      - _SideQuest::KanelisFlightTraining:
+         coord: [-3794, 161, 2318]
+      - _Item<Swallow Bow>:
+         coord: [-3793.13, 268.29, 2324.26]
+         notes: Take pic
+      - _Place::FlightRange:
+         comment: Complete all levels of the mini-game
+      - _Well::Dronoc'sPass
+      - _Korok::RP52
+      - _Korok::RP51:
+         comment: Drop flying machine in the lake
+      - _SideQuest::FishforFletching:
+         coord: [-3654, 214, 1763]
+      - _SideQuest::MollitheFletchersQuest:
+         coord: [-3616, 214, 1790]
+      - _SideQuest::TreasureoftheSecretSprings:
+         coord: [-3610, 218, 1822]
+      - _SideQuest::LegacyoftheRito:
+         coord: [-3609, 218, 1824]
+
+   - Frostbite Trousers:
+      - _Npc::Laissa_01
+      - _Shop::GeneralStore14:
+         comment: Buy oil, butter, sugar, and wheat
+      - _Item<Flying Machine>:
+         coord: [-3620, 0, 1900]
+         comment: Should be in the lake
+      - _LockedChest::G03
+      - _Korok::RP44
+      - _Korok::RP43
+      - _Item<Voltfin Trout>:
+         coord: [-3058.83, 218, 2283.27]
+         notes: Take pic
+      - _Korok::RP39
+      - _Cave::HebraHeadspring00:
+         comment: Drop flying machine near trees above cave
+      - _Bubbulfrog::HebraHeadspringCave
+      - _Chest::FrostbiteTrousers:
+         comment: Ascend, Flying machine should be nearby
+      - _Enemy::Hinox::GH02
+      - _Korok::PS23:
+         comment: Drop flying machine near backpack korok, Shoot balloon from mid-air
+      - _Korok::PS21::Start
+      - _Korok::PS21::End
+      - _LockedChest::G09
+      - _Korok::RP48
+      - _Korok::PS29
+      - _Korok::PS25
+      - _Korok::PS22
+      - _Cave::KopeekiDrifts00
+      - _Bubbulfrog::KopeekiDriftsCave
+      - _Shrine::Nouda
+
+   - Pikida Stongrove Cave:
+      - _Warp::Tower::PikidaStonegrove<Warp to Pikida Stonegrove Tower>
+      - _Cave::PikidaStonegroveNorthwest00
+      - _Bubbulfrog::PikidaStonegroveNorthwestCave
+      - _Enemy::BokoBoss::G64
+      - _Cave::PikidaStonegroveNorthwest01
+      - Ascend:
+         movements:
+            - to: [-2615, 200, 3230]
+
+   - North Lomei Labyrinth:
+      - _Korok::RP19
+      - _Enemy::Talus::GH02
+      - _Shrine::Sisuran::Start
+      - _Shrine::Sisuran
+      - _Korok::PS03
+      - _Korok::PS01
+      - _Tear::G07
+      - _Korok::PS05
+      - _Korok::PS02
+      - _Shrine::Oshozan-u
+      - _Korok::PS07
+      - _Korok::PS04
+      - _Korok::PS08
+      - _Korok::PS11
+      - _Korok::PS12
+      - _Korok::PS09
+      - _Enemy<Phantom Ganon>:
+         coord: [-830, 345, 3560]
+      - _Location::NorthLomeiLabyrinth:
+         hide-icon-on-map: true
+      - _Special<Terminal>:
+         coord: [-796.69, 340.47, 3534.96]
+      - _Shrine::Mayaotaki
+
+   - North Lomei Castle Top Floor:
+      - _Warp::Shrine::Tenbez<Warp to Tenbez Shrine>:
+         level: Sky
+      - _Shrine::Tenbez
+      - _Special<Terminal>:
+         coord: [-936.41, 1120.94, 3535]
+      - _Special<Terminal>:
+         coord: [-825.58, 1169.96, 3535]
+      - _Special<Terminal>:
+         coord: [-825.13, 1169.94, 3417.5]
+      - _Special<Terminal>:
+         coord: [-709.76, 1169.97, 3535]
+      - _Special<Terminal>:
+         coord: [-825.06, 1169.98, 3652.5]
+      - _Special<Terminal>:
+         coord: [-836.5, 1285.48, 3535]
+      - _Korok::PSS02
+
+   - North Lomei Chasm:
+      - _Korok::PS06
+      - _Chasm::NorthLomei
+
+   - North Lomei Depths Labyrinth:
+      - _Enemy::FluxConstruct::DH01
+      - _Special<Terminal>:
+         coord: [-844.25, -576.78, 3554.4]
+      - _Chest::EvilSpiritGreaves
+      - _Lightroot::Ikatoayam
+      - _Location::NorthLomeiDepthsLabyrinth:
+         hide-icon-on-map: true
+      - _Lightroot::U-nazohso
+      - _Equipment::Weapon<Feathered Edge>:
+         coord: [-1541.88, -570.13, 3524.21]
+      - _Enemy::Frox::DH01
+      - _Enemy::BokoBoss::D12
+      - _YigaSchema::WhirlingBasher
+      - _LockedChest::D31:
+         hide-icon-on-map: true
+      - _LockedChest::D32:
+         hide-icon-on-map: true
+      - _Enemy::BokoBoss::D13
+      - _Equipment::Weapon<Feathered Edge>:
+         coord: [-1563.95, -585.03, 2955.48]
+      - _Lightroot::Muihcoro
+      - _Enemy::Lynel::D01
+      - _Equipment::Weapon<Feathered Edge>:
+         coord: [-1624.28, -577.36, 2339.27]
+      - _Enemy::Frox::DH05
+      - _Equipment::Weapon<Feathered Spear>:
+         coord: [-2070.68, -579.49, 2378.01]
+      - _YigaSchema::SprinklerSystem
+      - _LockedChest::D33:
+         hide-icon-on-map: true
+      - _LockedChest::D34:
+         hide-icon-on-map: true
+      - _Lightroot::Aduon
+
+   - Corvash Canyon Mine:
+      - _Equipment::Weapon<Feathered Edge>:
+         coord: [-2402.64, -561.63, 2247.33]
+      - _Enemy::Frox::DH06
+      - _Enemy::FluxConstruct::DH03
+      - _Equipment::Weapon<Feathered Edge>:
+         coord: [-2471.16, -523.68, 1625.61]
+      - _Enemy::Talus::DR01
+      - _Equipment::Weapon<Giant Boomerang>:
+         coord: [-2869.28, -293.44, 1431.09]
+      - _Enemy::Talus::DR02
+      - _Equipment::Weapon<Feathered Spear>:
+         coord: [-2981.59, -583.06, 1574.1]
+      - _Lightroot::Kawumoro
+      - _Enemy::BokoBoss::D07
+      - _Poe::Grand:
+         coord: [-3274.99, -463.83, 1776.24]
+      - _Poe::Grand:
+         coord: [-3277.88, -463.92, 1780]
+      - _Equipment::Weapon<Feathered Edge>:
+         coord: [-3191.14, -484.09, 1859.54]
+      - _Enemy::BokoBoss::D02
+      - _Equipment::Weapon<Royal Halberd>:
+         coord: [-3609.47, -480.34, 2152.99]
+      - _Enemy::Talus::DH03
+      - _Equipment::Weapon<Royal Claymore>:
+         coord: [-3331.89, -571.66, 2143.34]
+      - _Chest::TrousersoftheHero
+      - _Location::CorvashCanyonMine:
+         hide-icon-on-map: true
+      - _Lightroot::Worihas
+      - _Equipment::Weapon<Royal Claymore>:
+         coord: [-3483.3, -746.48, 2624.82]
+      - _Equipment::Weapon<Royal Broadsword>:
+         coord: [-3354.23, -751.59, 2899.69]
+      - _Equipment::Weapon<Royal Halberd>:
+         coord: [-3139.57, -742.75, 2977.97]
+      - _Equipment::Weapon<Royal Claymore>:
+         coord: [-3170.66, -747.23, 2897.14]
+      - _Enemy::Frox::DH03
+      - _Equipment::Weapon<Royal Claymore>:
+         coord: [-2952.72, -745.77, 2696.29]
+      - _Equipment::Weapon<Royal Broadsword>:
+         coord: [-2816.52, -680.79, 2282.08]
+      - _Enemy::Hinox::DH02
+
    - Birida Lookout Chasm:
       - _Warp::Tower::GerudoHighlands<Warp to Gerudo Highlands Tower>:
          notes: If Light Dragon is not nearby warp to the travel medallion at Birida Lookout instead
@@ -8426,8 +8646,49 @@ _route:
       - _LockedChest::D20
       - _Equipment::Weapon<Royal Claymore>:
          coord: [-2292.64, -910.96, 3190.04]
+         notes: Do lynel run if getting low on arrows or bows
 
+   - Rocket Reload 9:
+      - _Warp::Shrine::Ukoojisi<Warp to Ukoojisi Shrine>:
+         level: Sky
+      - _Item<Rockets>:
+         coord: [1477.13, 628.59, -2008.65]
+         comment: Fuse rockets to shields
 
+   - Horon Lagoon:
+      - _Warp::Shrine::Apogek<Warp to Apogek Shrine>
+      - _Shrine::Apogek
+      - _Korok::UZ71::Start
+      - _Addison::A69
+      - _Korok::UZ64
+      - _Korok::UZ69
+      - _Special<Starting Block>:
+         coord: [4185, 129.84, -443.75]
+      - _Korok::UZ60:
+         comment: Leav flying machine here
+      - _Cave::HoronLagoon00
+      - _Bubbulfrog::HoronLagoonCave
+
+   - Tarm Point:
+      - _Chest::RubberTights:
+         comment: Ascend, Flying machine should be nearby
+      - _Korok::UZ59
+      - _Tear::G08
+      - _Korok::UZ61
+      - _Korok::UZ68:
+         comment: Drop flying machine on top of tunnel
+      - _Korok::UZ67:
+         comment: Flying machine should be nearby
+      - _Addison::A78
+      - _Korok::UZ71::End
+      - _Korok::ML01
+      - _Korok::ML03
+      - _Korok::ML02::Trail
+
+   - Pedophile:
+      - _Cave::TarmPoint00
+      - _Bubbulfrog::TarmPointCave
+      - _Shrine::Yomizuk
 
 
 
