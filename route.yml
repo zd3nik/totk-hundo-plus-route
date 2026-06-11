@@ -43,7 +43,7 @@ _project:
    ]
 _route:
    - Great Sky Island:
-      - _Warp::ROA:
+      - _Special::StartPos Sky:
          line-color: dodgerblue
          notes:
             - Collect all the things along the route
@@ -576,14 +576,14 @@ _route:
       - _Warp::Shrine::In-isa<Warp to In-isa Shrine>:
          level: Depths
       - _Chasm::GreatPlateauEast
-      - _Location::GreatAbandonedCentralMine
-      - _KeyItem::Autobuild:
-         coord: [-808.44, -415.18, -1928.65]
+      - _Special::StartPos Depths
+      - _Location::GreatAbandonedCentralMine:
+         hide-icon-on-map: true
       - _SideAdv::MasterKohgaoftheYigaClan
       - _LockedChest::D49
-      - _SchemaStone::CentralMine
 
    - Flying Machines:
+      - _SchemaStone::CentralMine
       - Ascend:
          movements:
             - to: [-808.44, -361.24, -1908.48]
@@ -8880,6 +8880,150 @@ _route:
       - _Bubbulfrog::AncientPrisonRuins
       - _Shrine::Chichim
 
+   - Hateno Village:
+      - _Warp::Shrine::Yansamin<Warp to Yansamin Shrine>:
+         level: Surface
+      - _Korok::ML18
+      - _Korok::ML17
+      - _Korok::ML26::Start
+      - _Enemy<Phantom Ganon>:
+         coord: [2867.36, 122.18, -2071.5]
+      - _Korok::ML27
+      - _Chest<Phrenic Box>:
+         coord: [2823.23, 119.38, -2126.71]
+         notes: Take pic
+      - _Korok::ML32
+      - _Special<Starting Block>:
+         coord: [3017.92, 155.38, -2033.4]
+      - _Korok::ML23
+      - _Enemy::Talus::GL02
+      - _Addison::A71
+      - _LockedChest::G40
+      - _Addison::A72
+      - _Korok::ML26::End
+      - _Korok::ML31
+      - _Korok::ML34
+      - _Well::Zelda'sSecret:
+         comment: Enter the well
+      - _SideQuest::ANewChampionsTunic:
+         coord: [3305, 112, -2298]
+      - _Chest::WellWornHairBand:
+         comment: Ascend
+      - _Well::HatenoVillageSouth
+      - _SideQuest::MannysBeloved:
+         coord: [3373, 120, -2131]
+      - _Npc::Sophie
+      - _Shop::ArmorShop03
+      - _SideAdv::TeamCeceorTeamReede
+
+   - Help Symin Teach Some Brats:
+      - _SideAdv::CecesSecret:
+         coord: [3357, 120, -2139]
+      - _Npc::Ivee
+      - _Shop::GeneralStore07:
+         comment: Buy stuff
+      - _Npc::Leop:
+         coord: [3324, 150, -2152]
+         comment: Give shroom
+      - _Npc::Tamana_01:
+         comment: Give shroom
+      - _Special<Cook>:
+         coord: [3357.76, 215.82, -2095.69]
+         comment: Monster curry
+         notes: Make noon
+      - _Npc::Medda:
+         comment: Give shroom
+      - _Shop::HatenoSchool
+      - _SideQuest::TeachMeaLessonI
+      - _SideQuest::TeachMeaLessonII:
+         comment: Ascend
+
+   - Reede's Diary:
+      - _Korok::ML22
+      - _Npc::Uma_01:
+         comment: Start side quest, Give shroom
+      - _Well::HatenoVillageWest
+      - _Well::HatenoVillageNorth:
+         comment: Enter the well
+      - _Item<Reede's Diary>:
+         coord: [3415.07, 238.58, -2085.43]
+         comment: Ascend, Read diary
+      - _SideAdv::ANewSignatureFood:
+         coord: [3429, 131, -2082]
+      - _SideAdv::ReedesSecret:
+         coord: [3443, 236.83, -2091.19]
+      - _GoddessStatue::HatenoVillage
+      - _Npc::Worten_01:
+         comment: Give shroom
+
+   - Spy on Cece:
+      - _Warp::TechLab::Hateno<Warp to Hateno Tech Lab>
+      - _Npc::Tokk:
+         coord: [3790, 230, -2115]
+         comment: Give shroom
+      - _Npc::Koyin_01:
+         comment: Give shroom, Buy cheese
+      - _Npc::Dantz_01:
+         comment: Give shroom
+      - _Item<CookSet>:
+         coord: [3619.52, 282.05, -2112.88]
+         comment: Make night
+      - _Well::HatenoVillageEast
+      - _Shrine::Zanmik
+      - _Shop::DyeShop:
+         comment: Dye something, Rework the paraglider
+      - _Special<Spy on Cece>:
+         coord: [3383.26, 236.78, -2161.62]
+
+   - The Mayoral Election:
+      - _SideQuest::PhotographingaChuchu:
+         coord: [3408, 121, -2150]
+         notes: Give a reference pic for all fabrics
+      - _Npc::Manny
+      - _Npc::Cece
+      - _Npc::Sophie
+      - _SideAdv::TheMayoralElection
+
+   - Rescue Hino One Last Time:
+      - _SideAdv<Team Cece or Team Reede>:
+         coord: [3354.76, 226.56, -2125.24]
+      - _Item<Hylian Tunic>:
+         coord: [3356.84, 226.87, -2125.97]
+      - _Item<Hylian Hood>:
+         coord: [3356.77, 227.2, -2121.8]
+      - _Item<Hylian Trousers>:
+         coord: [3351.03, 227.2, -2124.14]
+      - _SideQuest::HomegrowninHateno:
+         coord: [3298, 109, -2121]
+      - _Item<Sun Pumpkin>:
+         coord: [3303.74, 215.36, -2127.53]
+         notes: Take pic
+      - _Shop::GeneralStore07:
+         comment: Buy stuff
+      - _Korok::ML39::Start
+      - _Korok::ML39::End
+      - _Korok::ML38
+      - _Korok::ML43
+      - _CherryBlossom::Necluda
+      - _Enemy::Hinox::GL04
+      - _Korok::RW10
+      - _LockedChest::G41
+      - _Korok::ML35
+      - _Enemy::BokoBoss::G46
+      - _Npc::Hino_02
+      - _Korok::RW03
+      - _Korok::ML24::Start
+      - _Korok::RW05
+      - _Korok::ML28
+      - _Korok::ML24::End
+
+   - Oakle's Navel:
+      - _Cave::Oakle'sNavel00
+      - _Bubbulfrog::Oakle'sNavelCave
+      - _Shrine::Tokiy:
+         comment: Ascend
+      - _Korok::RW07
+
    - Horon Lagoon:
       - _Warp::Shrine::Apogek<Warp to Apogek Shrine>
       - _Shrine::Apogek
@@ -9293,150 +9437,6 @@ _route:
       - _Location::GutCheckRock:
          hide-icon-on-map: true
       - _Shrine::Kimayat
-
-   - Hateno Village:
-      - _Warp::Shrine::Yansamin<Warp to Yansamin Shrine>:
-         level: Surface
-      - _Korok::ML18
-      - _Korok::ML17
-      - _Korok::ML26::Start
-      - _Enemy<Phantom Ganon>:
-         coord: [2867.36, 122.18, -2071.5]
-      - _Korok::ML27
-      - _Chest<Phrenic Box>:
-         coord: [2823.23, 119.38, -2126.71]
-         notes: Take pic
-      - _Korok::ML32
-      - _Special<Starting Block>:
-         coord: [3017.92, 155.38, -2033.4]
-      - _Korok::ML23
-      - _Enemy::Talus::GL02
-      - _Addison::A71
-      - _LockedChest::G40
-      - _Addison::A72
-      - _Korok::ML26::End
-      - _Korok::ML31
-      - _Korok::ML34
-      - _Well::Zelda'sSecret:
-         comment: Enter the well
-      - _SideQuest::ANewChampionsTunic:
-         coord: [3305, 112, -2298]
-      - _Chest::WellWornHairBand:
-         comment: Ascend
-      - _Well::HatenoVillageSouth
-      - _SideQuest::MannysBeloved:
-         coord: [3373, 120, -2131]
-      - _Npc::Sophie
-      - _Shop::ArmorShop03
-      - _SideAdv::TeamCeceorTeamReede
-
-   - Help Symin Teach Some Brats:
-      - _SideAdv::CecesSecret:
-         coord: [3357, 120, -2139]
-      - _Npc::Ivee
-      - _Shop::GeneralStore07:
-         comment: Buy stuff
-      - _Npc::Leop:
-         coord: [3324, 150, -2152]
-         comment: Give shroom
-      - _Npc::Tamana_01:
-         comment: Give shroom
-      - _Special<Cook>:
-         coord: [3357.76, 215.82, -2095.69]
-         comment: Monster curry
-         notes: Make noon
-      - _Npc::Medda:
-         comment: Give shroom
-      - _Shop::HatenoSchool
-      - _SideQuest::TeachMeaLessonI
-      - _SideQuest::TeachMeaLessonII:
-         comment: Ascend
-
-   - Reede's Diary:
-      - _Korok::ML22
-      - _Npc::Uma_01:
-         comment: Start side quest, Give shroom
-      - _Well::HatenoVillageWest
-      - _Well::HatenoVillageNorth:
-         comment: Enter the well
-      - _Item<Reede's Diary>:
-         coord: [3415.07, 238.58, -2085.43]
-         comment: Ascend, Read diary
-      - _SideAdv::ANewSignatureFood:
-         coord: [3429, 131, -2082]
-      - _SideAdv::ReedesSecret:
-         coord: [3443, 236.83, -2091.19]
-      - _GoddessStatue::HatenoVillage
-      - _Npc::Worten_01:
-         comment: Give shroom
-
-   - Spy on Cece:
-      - _Warp::TechLab::Hateno<Warp to Hateno Tech Lab>
-      - _Npc::Tokk:
-         coord: [3790, 230, -2115]
-         comment: Give shroom
-      - _Npc::Koyin_01:
-         comment: Give shroom, Buy cheese
-      - _Npc::Dantz_01:
-         comment: Give shroom
-      - _Item<CookSet>:
-         coord: [3619.52, 282.05, -2112.88]
-         comment: Make night
-      - _Well::HatenoVillageEast
-      - _Shrine::Zanmik
-      - _Shop::DyeShop:
-         comment: Dye something, Rework the paraglider
-      - _Special<Spy on Cece>:
-         coord: [3383.26, 236.78, -2161.62]
-
-   - The Mayoral Election:
-      - _SideQuest::PhotographingaChuchu:
-         coord: [3408, 121, -2150]
-         notes: Give a reference pic for all fabrics
-      - _Npc::Manny
-      - _Npc::Cece
-      - _Npc::Sophie
-      - _SideAdv::TheMayoralElection
-
-   - Rescue Hino One Last Time:
-      - _SideAdv<Team Cece or Team Reede>:
-         coord: [3354.76, 226.56, -2125.24]
-      - _Item<Hylian Tunic>:
-         coord: [3356.84, 226.87, -2125.97]
-      - _Item<Hylian Hood>:
-         coord: [3356.77, 227.2, -2121.8]
-      - _Item<Hylian Trousers>:
-         coord: [3351.03, 227.2, -2124.14]
-      - _SideQuest::HomegrowninHateno:
-         coord: [3298, 109, -2121]
-      - _Item<Sun Pumpkin>:
-         coord: [3303.74, 215.36, -2127.53]
-         notes: Take pic
-      - _Shop::GeneralStore07:
-         comment: Buy stuff
-      - _Korok::ML39::Start
-      - _Korok::ML39::End
-      - _Korok::ML38
-      - _Korok::ML43
-      - _CherryBlossom::Necluda
-      - _Enemy::Hinox::GL04
-      - _Korok::RW10
-      - _LockedChest::G41
-      - _Korok::ML35
-      - _Enemy::BokoBoss::G46
-      - _Npc::Hino_02
-      - _Korok::RW03
-      - _Korok::ML24::Start
-      - _Korok::RW05
-      - _Korok::ML28
-      - _Korok::ML24::End
-
-   - Oakle's Navel:
-      - _Cave::Oakle'sNavel00
-      - _Bubbulfrog::Oakle'sNavelCave
-      - _Shrine::Tokiy:
-         comment: Ascend
-      - _Korok::RW07
 
    - Final Dragon Tear:
       - _Warp::Shrine::Rasitakiwak<Warp to Rasitakiwak Shrine>
