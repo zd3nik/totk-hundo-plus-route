@@ -7476,6 +7476,7 @@ _route:
       - _Location::SelmiesSpot:
          comment: Complete all levels of the mini-game
          notes: Take pics of shields
+      - _Cave::EastBironSnowshelf01
 
    - Gerudo Desert Gateway:
       - _Warp::Shrine::Turakamik<Warp to Turakamik Shrine>
@@ -8648,12 +8649,224 @@ _route:
          coord: [-2292.64, -910.96, 3190.04]
          notes: Do lynel run if getting low on arrows or bows
 
-   - Rocket Reload 9:
-      - _Warp::Shrine::Ukoojisi<Warp to Ukoojisi Shrine>:
-         level: Sky
-      - _Item<Rockets>:
-         coord: [1477.13, 628.59, -2008.65]
-         comment: Fuse rockets to shields
+   - Goflram's Secret Hot Spring:
+      - _Warp::Shrine::Kahatanaum<Warp to Kahatanaum Shrine>
+      - _Korok::RP11
+      - _Korok::RP09
+      - _Enemy<Ice-Breath Lizalfos>:
+         coord: [-3417.72, 505.34, 3547.73]
+      - _Enemy<Ice-Breath Lizalfosx2>:
+         coord: [-3447.72, 498.22, 3560.71]
+      - _Location::GoflamsSecretHotSpring
+      - _Item<Sizzlefin Trout x2>:
+         coord: [-3455.21, 472.78, 3554.22]
+      - _Item<Sizzlefin Trout x2>:
+         coord: [-3479.39, 472.78, 3581.06]
+      - _Shrine::Eutoum:
+         comment: Ascend
+
+   - Hebra's Colossal Fossil:
+      - _Korok::RP06::Start
+      - _Korok::RP06::End
+      - _Special<Starting Block>:
+         coord: [-3428.24, 350.17, 3799.82]
+      - _Korok::RP02
+      - _Enemy::Hinox::GH01
+      - _Korok::RP01
+      - _Cave::HebraGreatSkeleton00
+      - _Korok::RP05
+      - _Korok::RP04
+      - _SideQuest::HebrasColossalFossil:
+         coord: [-3882, 223, 3691]
+
+   - The Mushroom Haven:
+      - _Bubbulfrog::HebraGreatSkeleton
+      - _Cave::HebraGreatSkeleton00
+      - _Korok::RP08
+      - _Special<Starting Block>:
+         coord: [-3992.95, 325.28, 3836.32]
+      - _Korok::RP03
+      - _Cave::IcefallFoothills00
+      - _Bubbulfrog::IcefallFoothillsCave
+      - _Shrine::Otak:
+         comment: Ascend
+      - _Korok::RP07
+      - _Korok::RP12
+      - _Enemy::Talus::GH01
+      - _Korok::RP10
+      - _Item<Sizzlefin Trout x3>:
+         coord: [-4310.84, 473.24, 3487.63]
+      - _Location::SherfinsSecretHotSpring:
+         hide-icon-on-map: true
+      - _Special<Starting Block>:
+         coord: [-4422.64, 496.87, 3216.01]
+      - _Korok::RP21
+      - _Shrine::Tauyosipun
+      - _Korok::RP28
+      - _Enemy::Lynel::G00
+      - _Korok::RP33
+      - _Enemy::Talus::GH03
+      - _Korok::RP42
+      - _Korok::RP38::Start
+      - _Korok::RP38::End
+      - _Korok::RP34
+      - _Addison::A00
+      - _Item<Sizzlefin Trout x3>:
+         coord: [-4094.58, 129.53, 2727.77]
+      - _Location::SturnidaSecretHotSpring:
+         hide-icon-on-map: true
+      - _Cave::SturnidaSprings00
+      - _Bubbulfrog::SturnidaSpringsCave
+      - _Special<Mushroom Haven>:
+         coord: [-4064.66, 100.62, 2580.05]
+         comment: Ascend
+
+   - Frostbite Headdress:
+      - _Korok::RP29
+      - _Korok::RP31
+      - _Cave::LakeKilsie00
+      - _Bubbulfrog::LakeKilsieCave
+      - _Chest::FrostbiteHeaddress
+
+   - Statue of the Eighth Heroine:
+      - _Warp::Tower::GerudoHighlands<Warp to Gerudo Highlands Tower>:
+         comment: Ascend
+      - _Addison::A01
+      - _Enemy::Hinox::GG01
+      - _Enemy::Talus::GG01
+      - _Korok::GH24
+      - _Shrine::Mayamats
+      - _Korok::GH28
+      - _LockedChest::G02
+      - _Korok::GH27
+      - _Korok::GH10::Start
+      - _Enemy<Blizzrobe>:
+         coord: [-4571.51, 634.63, -1199.26]
+         notes: Take pic
+      - _Enemy::Lynel::G01
+      - _Korok::GH13
+      - _Korok::GH10::End
+      - _Korok::GH06
+      - _Chest<Mirros>:
+         coord: [-4361.49, 575.92, -453.5]
+         comment: Make noon if needed
+      - _Korok::GH09
+      - _Location::StatueoftheEighthHeroine:
+         hide-icon-on-map: true
+      - _Cave::StatueoftheEighthHeroine00
+      - _Enemy<Gibdo>:
+         coord: [-4400.75, 571.32, -566.01]
+      - _Enemy<Gibdo>:
+         coord: [-4420.49, 560.94, -589.56]
+      - _Enemy<Gibdo x3>:
+         coord: [-4427.63, 558.63, -615.58]
+      - _Enemy<Gibdo x3>:
+         coord: [-4447.41, 560.32, -625.22]
+      - _Chest::TinglesHood
+      - _Bubbulfrog::StatueoftheEighthHeroineCave:
+         comment: Ascend
+
+   - Tanagar Canyon:
+      - _Shrine::Otutsum
+      - _Chasm::GerudoSummit
+      - _Korok::GH11
+      - _Cave::Mystathi'sShelf00
+      - _Chest<Large Zonaite>:
+         coord: [-3931, 683.04, -745.63]
+      - _Bubbulfrog::Mystathi'sShelfCave
+      - _Korok::GH15
+      - _Special<Starting Block>:
+         coord: [-3721.92, 746.8, -803.17]
+      - _Korok::GH16
+      - _Enemy::BokoBoss::G03
+      - _Korok::GH14
+      - _Enemy::BokoBoss::G04
+      - _Korok::GH05
+      - _Special<Starting Block>:
+         coord: [-3621.37, 344.82, -403.03]
+      - _Korok::GH07
+      - _Shrine::Turakawak
+      - _Korok::GH04
+      - _Addison::A07
+      - _Enemy::Lynel::G02
+      - _Korok::LB50::Trail
+      - _Special<Starting Block>:
+         coord: [-3206.92, 5.8, 333.76]
+      - _Korok::LB48
+      - _Enemy::Talus::GR05
+      - _Korok::GH02
+      - _Korok::GH03
+      - _Korok::GH01
+      - _LockedChest::G05
+      - _Shrine::Gasas
+
+   - Vah Naboris Helm:
+      - _Warp::Shrine::Soryotanog<Warp to Soryotanog Shrine>
+      - _Npc::Isha_01:
+         comment: Get a new Sword of the Seven
+      - _Enemy::Molduga::SG01
+      - _Korok::GC24
+      - _Shrine::Kudanisar
+      - _Korok::GH47::Start
+      - _Korok::GH49
+      - _Korok::GH47::End
+      - _Korok::GH44
+      - _Korok::GH52
+      - _Special<Starting Block>:
+         coord: [-4482.4, 173.76, -2133.92]
+      - _Korok::GC07
+      - _Korok::GC14::Trail
+      - _Korok::GC17
+      - _Korok::GC10
+      - _Korok::GC04
+      - _Cave::WestGerudoUndergroundRuins00
+      - _Bubbulfrog::WestGerudoUndergroundRuins
+      - _Chest::VahNaborisDivineHelm
+
+   - Gerudo's Colossol Fossil:
+      - _Warp::Shrine::Miryotanog<Warp to Miryotanog Shrine>
+      - _Shrine::Miryotanog
+      - _Korok::GC45::Start
+      - _Korok::GC45::End
+      - _Cave::GerudoGreatSkeleton00
+      - _Korok::GC49
+      - _Bubbulfrog::GerudoGreatSkeleton
+
+   - Arbiter's Grounds:
+      - _SideQuest::GerudosColossalFossil:
+         coord: [-4874, 0, -3770]
+      - _Cave::GerudoGreatSkeleton00
+      - _Shrine::Irasak
+      - _Location::ArbitersGrounds:
+         hide-icon-on-map: true
+
+   - To the Ruins!:
+      - _Warp::Shrine::Soryotanog<Warp to Soryotanog Shrine>
+      - _Shrine::Soryotanog
+      - _SideQuest::TreasureoftheGerudoDesert:
+         coord: [-3888, 51, -2967]
+      - _SideQuest<TheMysteriousEighth>:
+         coord: [-3828, 30, -2970]
+         comment: Ascend
+      - _SideQuest::TotheRuins:
+         coord: [-3768, 43, -2927]
+      - _Korok::GC35::Start
+      - _Korok::GC35::End
+      - _Special<Starting Block>:
+         coord: [-2731.97, 140.68, -2820.41]
+      - _Korok::GC28
+
+   - East Gerudo Ruins:
+      - _Cave::EastGerudoRuins00
+      - _Location::EastGerudoRuins:
+         hide-icon-on-map: true
+      - _Bubbulfrog::EastGerudoRuinsCave:
+         comment: Ascend
+      - _Cave::QuicksandLake00
+      - _Bubbulfrog::QuicksandLakeCave
+      - _Cave::AncientPrisonRuins00
+      - _Bubbulfrog::AncientPrisonRuins
+      - _Shrine::Chichim
 
    - Horon Lagoon:
       - _Warp::Shrine::Apogek<Warp to Apogek Shrine>
@@ -8689,6 +8902,275 @@ _route:
       - _Cave::TarmPoint00
       - _Bubbulfrog::TarmPointCave
       - _Shrine::Yomizuk
+
+   - Abandoned Hateno Mine:
+      - _Warp::Tower::MountLanayru<Warp to Mount Lanayru Tower>:
+         level: Depths
+      - _Chasm::NaydraSnowfield
+      - _Enemy::FluxConstruct::DL04
+      - _Lightroot::Usukaz
+      - _YigaSchema::Tank
+      - _LockedChest::D88:
+         hide-icon-on-map: true
+      - _LockedChest::D89:
+         hide-icon-on-map: true
+      - _Chest<Large Crystallized Charge>:
+         coord: [2965.43, -659.57, -1399.68]
+      - _Location::CanyonofAwakeningMine:
+         hide-icon-on-map: true
+      - _Equipment::Weapon<Eightfold Blade>:
+         coord: [2794.04, -594.85, -1377.04]
+      - _Enemy::Talus::DL02
+      - _Equipment::Weapon<Eightfold Blade>:
+         coord: [3203.84, -406.35, -1870.45]
+      - _Chest<Large Crystallized Charge>:
+         coord: [3197.78, -415.71, -2047.03]
+      - _Location::GinnerGrove:
+         hide-icon-on-map: true
+      - _Chest<Large Crystallized Charge>:
+         coord: [3135.38, -401.33, -2200.96]
+      - _Location::MidlaGrove:
+         hide-icon-on-map: true
+      - _Chest<Large Crystallized Charge>:
+         coord: [3318.83, -605.25, -2497.02]
+      - _Location::EbonCanyonMine:
+         hide-icon-on-map: true
+      - _Lightroot::Kimnaz
+      - _Shop::ForgeConstruct08
+      - _Location::AbandonedHatenoMine:
+         hide-icon-on-map: true
+      - _LockedChest::D90
+      - _SchemaStone::HatenoMine
+      - _Chest<Large Crystallized Charge>:
+         coord: [3564.48, -469.13, -2085.79]
+      - _Equipment::Weapon<Eightfold Blade>:
+         coord: [3673.83, -533.13, -2136.07]
+      - _Lightroot::Kisihayam
+
+   - Wellspring of Wisdom:
+      - _Chest::CapoftheSky
+      - _Lightroot::Kimimadena
+      - _Chest<Large Crystallized Charge>:
+         coord: [4248.09, -645.44, -1959.93]
+      - _Location::WalnotCanyonMine:
+         hide-icon-on-map: true
+      - _Equipment::Weapon<Zora Longsword>:
+         coord: [4466.42, -385.43, -1740.83]
+      - _Equipment::Weapon<Zora Sword>:
+         coord: [4376.53, -407.97, -1666.23]
+      - _Lightroot::Siakij
+      - _Chest<Large Crystallized Charge>:
+         coord: [3856, -674.44, -1682.01]
+      - _Location::MadornaCanyonMine:
+         hide-icon-on-map: true
+      - _Shop::BargainerStatue03
+      - _Location::WellspringofWisdom
+      - _Chest<Large Crystallized Charge>:
+         coord: [3967.44, -794.24, -1364.63]
+      - _Location::LanayruCanyonMine:
+         hide-icon-on-map: true
+      - _Enemy::Talus::DL01
+      - _Enemy::BokoBoss::D38
+      - _Lightroot::Uogoj
+      - _Equipment::Weapon<Zora Sword>:
+         coord: [3083.68, -415.01, -973.31]
+      - _Enemy::Frox::DL01
+      - _Lightroot::Migo-o
+
+   - Secluded Colesium:
+      - _Equipment::Weapon<Zora Longsword>:
+         coord: [2758.6, -574.64, -939.43]
+      - _Enemy::FluxConstruct::DL02
+      - _Equipment::Weapon<Zora Sword>:
+         coord: [2504.03, -539.19, -812.81]
+      - _YigaSchema::SuperSpring
+      - _LockedChest::D70:
+         hide-icon-on-map: true
+      - _LockedChest::D71:
+         hide-icon-on-map: true
+      - _Lightroot::Takaruk
+      - _Enemy<Marbled Gohma>:
+         coord: [2145.3, -489.22, -627.77]
+      - _LockedChest::D72
+      - _Equipment::Weapon<Zora Longsword>:
+         coord: [2230.74, -484.2, -666.34]
+      - _Enemy::Hinox::DL01
+      - _Enemy::FluxConstruct::DL03
+      - _Equipment::Weapon<Eightfold Blade>:
+         coord: [2380.6, -435.76, -1560.34]
+      - _YigaSchema::ScatterTrap
+      - _LockedChest::D74
+      - _LockedChest::D75
+      - _Equipment::Weapon<Eightfold Blade>:
+         coord: [2074.18, -356.6, -1735.36]
+      - _Equipment::Weapon<Eightfold Blade>:
+         coord: [2305.15, -350.79, -1750.4]
+      - _Equipment::Weapon<Eightfold Blade>:
+         coord: [2319.9, -333.43, -1808.05]
+      - _LockedChest::D73
+      - _Chest::RaviosHood:
+         hide-icon-on-map: true
+      - _Location::SecludedColiseum:
+         hide-icon-on-map: true
+
+   - Abandoned Kakariko Mine:
+      - _Chest<Large Crystallized Charge>:
+         coord: [2157.52, -374.33, -2177.61]
+      - _Location::BubingaGrove:
+         hide-icon-on-map: true
+      - _Enemy::Hinox::DL03
+      - _Enemy::Lynel::D14
+      - _Lightroot::Sohse
+      - _Chest::TunicoftheHero
+      - _Location::DuelingCanyonsMine:
+         hide-icon-on-map: true
+      - _Enemy::BokoBoss::D28
+      - _Enemy::Hinox::DL02
+      - _Lightroot::Arusakam
+      - _LockedChest::D65
+      - _Location::AbandonedKakarikoMine:
+         hide-icon-on-map: true
+      - _Shop::ForgeConstruct07
+      - _SchemaStone::KakarikoMine
+      - _Chest<Large Crystallized Charge>:
+         coord: [1827.42, -510.36, -1297.86]
+
+   - Crenel Canyon Mine:
+      - _Enemy::Talus::DK02
+      - _Equipment::Weapon<Royal Guard Sword>:
+         coord: [1417.64, -443.92, -815.26]
+      - _Lightroot::Korom
+      - _Equipment::Weapon<Royal Guard Claymore>:
+         coord: [972.06, -376.22, -799.7]
+      - _Equipment::Weapon<Royal Guard Sword>:
+         coord: [985.04, -369.32, -592.39]
+      - _Enemy<Queen Gibdo>:
+         coord: [949.46, -364.23, -461.06]
+      - _LockedChest::D64
+      - _Equipment::Weapon<Royal Guard Sword>:
+         coord: [1198.55, -348.94, -400.82]
+      - _Equipment::Weapon<Royal Guard Spear>:
+         coord: [1165.96, -348.21, -272.75]
+      - _Enemy::Lynel::D10
+      - _Lightroot::Korakut
+      - _Enemy::Frox::DC06
+      - _Enemy::BokoBoss::D27
+      - _Equipment::Weapon<Royal Guard Spear>:
+         coord: [1430.35, -348.94, 262.73]
+      - _Equipment::Weapon<Royal Guard Sword>:
+         coord: [1303.46, -408.51, 260.44]
+      - _Lightroot::Nojoj
+      - _Chest::TrousersoftheSky
+      - _Location::CrenelCanyonMine:
+         hide-icon-on-map: true
+      - _YigaSchema::InstantKitchen
+      - _LockedChest::D61:
+         hide-icon-on-map: true
+      - _LockedChest::D62:
+         hide-icon-on-map: true
+      - _Equipment::Weapon<Royal Guard Sword>:
+         coord: [952.27, -430.22, 529.3]
+      - _Equipment::Weapon<Royal Guard Spear>:
+         coord: [782.4, -384.05, 505.31]
+      - _Enemy::Talus::DK01
+      - _Enemy::FluxConstruct::DC02
+      - _Lightroot::Zi-ner
+
+   - Hickaly Grove:
+      - _Warp::Temple::Spirit<Warp to the Spirit Temple>
+      - _Equipment::Weapon<Eightfold Blade>:
+         coord: [1117.82, -372.79, -2979.27]
+      - _Enemy::Hinox::DF05
+      - _Enemy::Hinox::DF04
+      - _Lightroot::Sijotu
+      - _Enemy::Hinox::DF03
+      - _Chest<Large Crystallized Charge>:
+         movements:
+            - to: [1960, -380, -2600]
+            - to: [1945.03, -386.05, -2385.5]
+      - _Location::HickalyGrove:
+         hide-icon-on-map: true
+      - _Lightroot::Yikot
+      - _Location::MedaLavafalls:
+         hide-icon-on-map: true
+      - _Chest<Large Crystallized Charge>:
+         coord: [2302.16, -475.45, -2328.06]
+      - _Chest<Large Crystallized Charge>:
+         coord: [2390.76, -450.58, -2196.71]
+      - _Location::RozudoCanyonMine:
+         hide-icon-on-map: true
+      - _Equipment::Weapon<Eightfold Blade>:
+         coord: [2357.66, -420.79, -2101.97]
+      - _Enemy::Talus::DL03
+      - _Equipment::Weapon<Eightfold Blade>:
+         coord: [2643.67, -458.54, -2175.18]
+      - _Equipment::Weapon<Eightfold Blade>:
+         coord: [2666.37, -450.74, -2346.7]
+      - _Enemy::Hinox::DL04
+      - _YigaSchema::LiftoffGlider
+      - _LockedChest::D76:
+         hide-icon-on-map: true
+      - _LockedChest::D77:
+         hide-icon-on-map: true
+      - _Chest<Large Crystallized Charge>:
+         coord: [2510.93, -543.62, -2485.59]
+      - _Location::MedaCanyonMine:
+         hide-icon-on-map: true
+      - _Chest<Large Crystallized Charge>:
+         movements:
+            - to: [2610, -555, -2590]
+            - to: [2501.24, -557.6, -2678.1]
+      - _Location::TaranCanyonMine:
+         hide-icon-on-map: true
+
+   - Ancient Observation Deck:
+      - _Equipment::Weapon<Claymore>:
+         coord: [2313.38, -546.47, -2708.75]
+      - _Enemy::BokoBoss::D33
+      - _Equipment::Weapon<Eightfold Blade>:
+         coord: [2338.2, -530.69, -3094.12]
+      - _Equipment::Weapon<Eightfold Blade>:
+         coord: [2533.88, -412.42, -3315.12]
+      - _Chest<Large Crystallized Charge>:
+         coord: [2550.02, -460.94, -3552.47]
+      - _Location::AncientObservationDeck:
+         hide-icon-on-map: true
+      - _Chest::CapoftheHero
+      - _Location::TuftCanyonMine:
+         hide-icon-on-map: true
+      - _Equipment::Weapon<Eightfold Blade>:
+         coord: [2847.78, -339.21, -3544.6]
+      - _Chest<Large Crystallized Charge>:
+         movements:
+            - to: [2870, -320, -3400]
+            - to: [2959.82, -299.75, -3362.49]
+      - _Location::AbandonedLurelinMine:
+         hide-icon-on-map: true
+      - _LockedChest::D78
+
+   - Trousers of the Wind:
+      - _Shop::ForgeConstruct09
+      - _SchemaStone::LurelinMine
+      - _Lightroot::Mimufis
+      - _Lightroot::Kotimab
+      - _Chest<Large Crystallized Charge>:
+         coord: [3122.14, -530.57, -3318.54]
+      - _Location::DunselCanyonMine:
+         hide-icon-on-map: true
+      - _Equipment::Weapon<Eightfold Blade>:
+         coord: [3164.58, -396.8, -3422.09]
+      - _Enemy::Talus::DL04
+      - _Equipment::Weapon<Spear>:
+         coord: [3230.22, -345.27, -3594.52]
+      - _Enemy::FluxConstruct::DL05
+      - _Chest::TrousersoftheWind:
+         movements:
+            - to: [3450, -350, -3785]
+            - to: [3700, -350, -3785]
+            - to: [3790, -350, -3700]
+            - to: [3794.24, -340.39, -3613.24]
+      - _Location::CresiaPitMine:
+         hide-icon-on-map: true
 
 
 
