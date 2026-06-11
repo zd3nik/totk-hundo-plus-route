@@ -579,8 +579,7 @@ _route:
       - _Location::GreatAbandonedCentralMine
       - _KeyItem::Autobuild:
          coord: [-808.44, -415.18, -1928.65]
-      - _Npc::Master_Kohga_Central_Mine:
-         hide-icon-on-map: true
+      - _SideAdv::MasterKohgaoftheYigaClan
       - _LockedChest::D49
       - _SchemaStone::CentralMine
 
@@ -968,6 +967,7 @@ _route:
          notes: Take lots of pics
       - _MainQuest::TheBrokenSlate:
          coord: [3405, 400, 883]
+      - _MainQuest::CluestotheSky
       - _Cave::PloymusMountain00:
          comment: Drop flying machine at bottom of waterfall
       - _Bubbulfrog::PloymusMountainCave
@@ -1087,6 +1087,8 @@ _route:
    - Zora's Domain:
       - _Warp::Place<Zora's Domain>:
          coord: [3333, 269.46, 542]
+      - _SideQuest::SecretTreasureundertheGreatFish:
+         coord: [3342.75, 269.46, 543.89]
       - _SideQuest::TheNeverEndingLecture:
          coord: [3321, 163, 549]
       - _SideQuest::TheMoonlitPrincess:
@@ -1285,10 +1287,12 @@ _route:
          comment: Freeze meat and fuse to 2 shields
          hide-icon-on-map: true
       - _Tear::G00
+      - _MainQuest::TheDragonsTears:
+         coord: [-1418.56, 230.54, 963.29]
       - _Location::NorthHyrulePlain:
          hide-icon-on-map: true
          comment: Shield surf to Impa
-      - _MainQuest::TheDragonsTears:
+      - _MainQuest::ImpaandtheGeoglyphs:
          coord: [-1313.14, 201.35, 823.5]
          comment: Use hover stone while falling from balloon to get pic of geoglyph
 
@@ -2302,7 +2306,7 @@ _route:
          movements:
             - to: [4635, 195.1, 3687.5]
       - _Shrine::Igashuk
-      - _Special<Terminal>:
+      - _SideQuest::TheLomeiLabyrinthIslandProphecy:
          coord: [4655.02, 235.09, 3680.97]
          comment: If you can see Dinaraal from here you are running behind
 
@@ -4520,7 +4524,7 @@ _route:
       - _SideAdv::InvestigatetheThyphloRuins:
          coord: [372.69, 280.02, 3095.62]
       - _Korok::TR08
-      - _Special<Use Sidon Water Attack to Reveal Chest>:
+      - _SideAdv::TheSixDragons:
          coord: [185.32, 279.56, 3181.31]
       - _Chest<Opal x5>:
          coord: [167.64, 274.4, 3212.75]
@@ -4530,12 +4534,12 @@ _route:
 
    - Dusk Claymore:
       - _Korok::TR05
-      - _Special<Use Yunobo Attack to Reveal Chest>:
+      - _SideAdv::TheCorridorbetweenTwoDragons:
          coord: [138.45, 280.39, 3123.85]
       - _Chest<Ruby x3>:
          coord: [247.97, 274.48, 3121.14]
       - _Korok::TR11
-      - _Special<Use Tulin Gust to Reveal Chest>:
+      - _SideAdv::TheOwlProtectedbyDragons:
          coord: [364.26, 280.43, 3066.18]
       - _Chest<Sapphire x3>:
          coord: [364.1, 275.12, 3053.5]
@@ -4546,7 +4550,7 @@ _route:
          coord: [536.48, 297.95, 3241.8]
       - _Enemy<Soldier Construct II>:
          coord: [524.25, 299.97, 3242.31]
-      - _Special<Use Riju Lightning Attack to Reveal Chest>:
+      - _SideAdv::TheLongDragon:
          coord: [463.25, 280.52, 3084.3]
       - _Chest<Topaz x3>:
          coord: [450.3, 275.44, 3084.5]
@@ -5177,7 +5181,7 @@ _route:
          coord: [2850.69, 109.99, -3447.92]
 
    - Gathering Wood:
-      - _SideAdv::LurelinVillageRestorationProject:
+      - _SideAdv::RuffianInfestedVillage:
          coord: [2875, 0, -3443]
       - _Chest::IslandLobsterShirt
       - _Shrine::Sifumim
@@ -5192,7 +5196,7 @@ _route:
          comment: Collect logs
 
    - Lurelin Village Restoration Project:
-      - _SideAdv<Give Wood to Bolson>:
+      - _SideAdv::LurelinVillageRestorationProject:
          coord: [2875, 0, -3443]
          comment: Complete village restoration
 
@@ -5218,7 +5222,7 @@ _route:
          comment: Rice, Spice, Porgy
 
    - Lurelin Resort Project:
-      - _SideQuest<Rattled Ralera>:
+      - _SideQuest::RattledRalera:
          coord: [2844.93, 110.22, -3462.89]
       - _SideQuest::LurelinResortProject:
          coord: [2859, 0, -3518]
@@ -5763,9 +5767,11 @@ _route:
       - _Korok::UM31
       - _SideQuest::MastertheVehiclePrototype:
          coord: [3753.24, 198.19, 1675.51]
-         comment: Complete prototype race, Reload after autosave to unlock mini-game
-      - _Shop::TarreyTownRace:
+         comment: Complete prototype race, Reload after autosave to next side quest
+      - _SideQuest::TheTarreyTownRaceIsOn:
          comment: Complete all levels of the mini-game
+      - _Shop::TarreyTownRace:
+         hide-icon-on-map: true
       - _Npc<Tali>:
          coord: [3738, 198, 1680]
          comment: Tell them about the Lurelin Village Resort Project
@@ -5779,6 +5785,8 @@ _route:
       - _GoddessStatue::TarreyTown
       - _Shop::GeneralStore15:
          comment: Buy monster blood
+      - _Special<Place Travel Medallion>:
+         coord: [3962, 233, 1635]
       - _Shop::MonsterGallery
       - _SideAdv::AMonsterousCollectionI
       - _SideAdv::AMonsterousCollectionII
@@ -7482,7 +7490,8 @@ _route:
       - _Warp::Shrine::Turakamik<Warp to Turakamik Shrine>
       - _Shrine::Turakamik
       - _Addison::A15
-      - _Npc::Piaffe
+      - _SideQuest::PiaffePackedAway:
+         coord: [-2802.75, 135.44, -2225]
       - _Place::GerudoCanyonStable:
          hide-icon-on-map: true
       - _SideQuest::APicturefortheClosedStableI
@@ -8151,6 +8160,8 @@ _route:
       - _Warp::Shrine::Sahirow<Warp to Sahirow Shrine>
       - _Shrine::Sahirow
       - _Korok::RP36
+      - _SideQuest::CrossingtheColdPool:
+         coord: [-3216.98, 453.59, 2457.41]
       - _Cave::TalontoPeak00
       - _Bubbulfrog::TalontoPeakCave:
          comment: Ascend
@@ -8166,6 +8177,8 @@ _route:
       - _Enemy<Boko x3>:
          coord: [-3417.17, 370.91, 2382.5]
          notes: Take pic of Feathered Edge then break it on nearby trees
+      - _SideQuest::TheBlockedCave:
+         coord: [-3582.5, 334.57, 2475.69]
       - _Cave::RosproPass00
       - _Bubbulfrog::RosproPassCave:
          comment: Ascend
@@ -8259,7 +8272,7 @@ _route:
          coord: [-830, 345, 3560]
       - _Location::NorthLomeiLabyrinth:
          hide-icon-on-map: true
-      - _Special<Terminal>:
+      - _SideQuest::TheNorthLomeiProphecy:
          coord: [-796.69, 340.47, 3534.96]
       - _Shrine::Mayaotaki
 
@@ -9171,6 +9184,318 @@ _route:
             - to: [3794.24, -340.39, -3613.24]
       - _Location::CresiaPitMine:
          hide-icon-on-map: true
+
+   - Moor Garrison Ruins:
+      - _Warp::Shrine::Jonsau<Warp to Jonsau Shrine>
+      - _Addison::A49
+      - _Korok::SS15
+      - _Cave::CrenelPeak01
+      - _Bubbulfrog::CrenelPeakCave
+      - _Shrine::Jojon:
+         comment: Ascend
+      - _Korok::SS11
+      - _Location::ThimsBridge
+      - _Korok::EC59
+      - _Addison::A50
+      - _Korok::EC60
+      - _Korok::EC58
+      - _Enemy::BokoBoss::G38
+      - _LockedChest::G27
+      - _Korok::SS13::Start
+      - _Korok::SS09
+      - _Korok::SS12
+      - _Well::MoorGarrisonRuins
+      - _Location::MoorGarrisonRuins:
+         hide-icon-on-map: true
+      - _Korok::SS13::End
+      - _Chasm::LanayruWetlands
+
+   - Ruto Canyon Mine:
+      - _Lightroot::Uasnoj
+      - _Enemy<Marbled Gohma>:
+         coord: [1607.1, -354.04, -62.11]
+      - _LockedChest::D63
+      - _Equipment::Weapon<Zora Longsword>:
+         coord: [1717.12, -347.65, -39.52]
+      - _Equipment::Weapon<Zora Spear>:
+         coord: [1895.66, -344.51, -48.76]
+      - _Lightroot::Sekioam
+      - _Chest<Sea-Breeze Shield>:
+         coord: [2667.56, -453.72, 253.65]
+         notes: Take pic
+      - _Location::TabahlGrove:
+         hide-icon-on-map: true
+      - _Equipment::Weapon<Zora Sword>:
+         coord: [2803.81, -458.55, -233.64]
+      - _Chest<Large crystallized Charge>:
+         coord: [3308.4, -592.83, -58.22]
+      - _Location::RutoCanyonMine:
+         hide-icon-on-map: true
+      - _Equipment::Weapon<Zora Spear>:
+         movements:
+            - to: [3550, -390, -160]
+            - to: [3442.62, -387.66, -424.76]
+      - _Equipment::Weapon<Zora Sword>:
+         coord: [3345.98, -350.42, -380.67]
+      - _Equipment::Weapon<Zora Longsword>:
+         coord: [3336.55, -351.21, -493.73]
+      - _Equipment::Weapon<Zora Spear>:
+         coord: [3348.89, -352.19, -633.39]
+      - _YigaSchema::Icebreaker
+      - _LockedChest::D86
+      - _LockedChest::D87
+      - _Equipment::Weapon<Zora Longsword>:
+         coord: [3739.79, -552.22, -265.41]
+      - _Lightroot::Kegopa
+      - _Equipment::Weapon<Zora Sword>:
+         coord: [3933.74, -467.53, -254.23]
+      - _Equipment::Weapon<Zora Longsword>:
+         coord: [4143.71, -366.28, -221.36]
+      - _Equipment::Weapon<Zora Spear>:
+         movements:
+            - to: [4210, -400, -180]
+            - to: [4295, -400, -180]
+            - to: [4430.96, -441.47, -466.73]
+      - _Lightroot::Kuzimoy
+      - _Equipment::Weapon<Zora Spear>:
+         coord: [4325.76, -390.3, -614.77]
+
+   - White Horse:
+      - _Warp::Shrine::Kamatukis<Warp to Kamatukis Shrine>
+      - _Shrine::Kamatukis
+      - _Korok::UM05
+      - _Enemy::BokoBoss::G50
+      - _Korok::UM09::Start
+      - _Enemy::Lynel::G13
+      - _Special<Starting Block>:
+         coord: [3575.36, 215.1, 3046.11]
+      - _Korok::UM15
+      - _Korok::UM09::End
+      - _Korok::UM14
+      - _Korok::UM13
+      - _Enemy<Phantom Ganon>:
+         coord: [3288.98, 106.53, 3228.81]
+      - _Special<Starting Block>:
+         coord: [3152.96, 241.97, 3430.86]
+      - _Korok::UM03
+      - _Addison::A65
+      - _Korok::UM02
+      - _Korok::EC03::Start
+      - _Item<White Horse>:
+         coord: [3244.38, 326.97, 3741.95]
+         notes: Take pic
+      - _Korok::EC01
+      - _Korok::EC03::End
+      - _Addison::A54
+      - _Enemy::Talus::GE02
+      - _Korok::EC04
+      - _Chest<Silver Rupee>:
+         coord: [2667.63, 468.97, 3460.01]
+      - _Location::GutCheckRock:
+         hide-icon-on-map: true
+      - _Shrine::Kimayat
+
+   - Hateno Village:
+      - _Warp::Shrine::Yansamin<Warp to Yansamin Shrine>:
+         level: Surface
+      - _Korok::ML18
+      - _Korok::ML17
+      - _Korok::ML26::Start
+      - _Enemy<Phantom Ganon>:
+         coord: [2867.36, 122.18, -2071.5]
+      - _Korok::ML27
+      - _Chest<Phrenic Box>:
+         coord: [2823.23, 119.38, -2126.71]
+         notes: Take pic
+      - _Korok::ML32
+      - _Special<Starting Block>:
+         coord: [3017.92, 155.38, -2033.4]
+      - _Korok::ML23
+      - _Enemy::Talus::GL02
+      - _Addison::A71
+      - _LockedChest::G40
+      - _Addison::A72
+      - _Korok::ML26::End
+      - _Korok::ML31
+      - _Korok::ML34
+      - _Well::Zelda'sSecret:
+         comment: Enter the well
+      - _SideQuest::ANewChampionsTunic:
+         coord: [3305, 112, -2298]
+      - _Chest::WellWornHairBand:
+         comment: Ascend
+      - _Well::HatenoVillageSouth
+      - _SideQuest::MannysBeloved:
+         coord: [3373, 120, -2131]
+      - _Npc::Sophie
+      - _Shop::ArmorShop03
+      - _SideAdv::TeamCeceorTeamReede
+
+   - Help Symin Teach Some Brats:
+      - _SideAdv::CecesSecret:
+         coord: [3357, 120, -2139]
+      - _Npc::Ivee
+      - _Shop::GeneralStore07:
+         comment: Buy stuff
+      - _Npc::Leop:
+         coord: [3324, 150, -2152]
+         comment: Give shroom
+      - _Npc::Tamana_01:
+         comment: Give shroom
+      - _Special<Cook>:
+         coord: [3357.76, 215.82, -2095.69]
+         comment: Monster curry
+         notes: Make noon
+      - _Npc::Medda:
+         comment: Give shroom
+      - _Shop::HatenoSchool
+      - _SideQuest::TeachMeaLessonI
+      - _SideQuest::TeachMeaLessonII:
+         comment: Ascend
+
+   - Reede's Diary:
+      - _Korok::ML22
+      - _Npc::Uma_01:
+         comment: Start side quest, Give shroom
+      - _Well::HatenoVillageWest
+      - _Well::HatenoVillageNorth:
+         comment: Enter the well
+      - _Item<Reede's Diary>:
+         coord: [3415.07, 238.58, -2085.43]
+         comment: Ascend, Read diary
+      - _SideAdv::ANewSignatureFood:
+         coord: [3429, 131, -2082]
+      - _SideAdv::ReedesSecret:
+         coord: [3443, 236.83, -2091.19]
+      - _GoddessStatue::HatenoVillage
+      - _Npc::Worten_01:
+         comment: Give shroom
+
+   - Spy on Cece:
+      - _Warp::TechLab::Hateno<Warp to Hateno Tech Lab>
+      - _Npc::Tokk:
+         coord: [3790, 230, -2115]
+         comment: Give shroom
+      - _Npc::Koyin_01:
+         comment: Give shroom, Buy cheese
+      - _Npc::Dantz_01:
+         comment: Give shroom
+      - _Item<CookSet>:
+         coord: [3619.52, 282.05, -2112.88]
+         comment: Make night
+      - _Well::HatenoVillageEast
+      - _Shrine::Zanmik
+      - _Shop::DyeShop:
+         comment: Dye something, Rework the paraglider
+      - _Special<Spy on Cece>:
+         coord: [3383.26, 236.78, -2161.62]
+
+   - The Mayoral Election:
+      - _SideQuest::PhotographingaChuchu:
+         coord: [3408, 121, -2150]
+         notes: Give a reference pic for all fabrics
+      - _Npc::Manny
+      - _Npc::Cece
+      - _Npc::Sophie
+      - _SideAdv::TheMayoralElection
+
+   - Rescue Hino One Last Time:
+      - _SideAdv<Team Cece or Team Reede>:
+         coord: [3354.76, 226.56, -2125.24]
+      - _Item<Hylian Tunic>:
+         coord: [3356.84, 226.87, -2125.97]
+      - _Item<Hylian Hood>:
+         coord: [3356.77, 227.2, -2121.8]
+      - _Item<Hylian Trousers>:
+         coord: [3351.03, 227.2, -2124.14]
+      - _SideQuest::HomegrowninHateno:
+         coord: [3298, 109, -2121]
+      - _Item<Sun Pumpkin>:
+         coord: [3303.74, 215.36, -2127.53]
+         notes: Take pic
+      - _Shop::GeneralStore07:
+         comment: Buy stuff
+      - _Korok::ML39::Start
+      - _Korok::ML39::End
+      - _Korok::ML38
+      - _Korok::ML43
+      - _CherryBlossom::Necluda
+      - _Enemy::Hinox::GL04
+      - _Korok::RW10
+      - _LockedChest::G41
+      - _Korok::ML35
+      - _Enemy::BokoBoss::G46
+      - _Npc::Hino_02
+      - _Korok::RW03
+      - _Korok::ML24::Start
+      - _Korok::RW05
+      - _Korok::ML28
+      - _Korok::ML24::End
+
+   - Oakle's Navel:
+      - _Cave::Oakle'sNavel00
+      - _Bubbulfrog::Oakle'sNavelCave
+      - _Shrine::Tokiy:
+         comment: Ascend
+      - _Korok::RW07
+
+   - Final Dragon Tear:
+      - _Warp::Shrine::Rasitakiwak<Warp to Rasitakiwak Shrine>
+      - _Shrine::Rasitakiwak
+      - _Place::LinksHouse:
+         comment: Build house
+      - _Korok::UM29::Start
+      - _Enemy::Hinox::GA03
+      - _Korok::UM30
+      - _Korok::UM29::End
+      - _Korok::UM28
+      - _Shrine::Gemimik
+      - _Tear::G11
+
+   - Return to Great Sky Island:
+      - _Warp::Shrine::Gikaku<Warp to Gikaku Shrine>:
+         level: Sky
+      - _Equipment::Weapon<Master Sword>:
+         coord: [4200, 1000, 1700]
+         comment: Pull master sword from Zelda's head
+         notes: Take pic
+      - _Warp::Place<Temple of Time>:
+         coord: [454, 1500, -630]
+      - _Chest::AncientHerosAspect
+      - _SideQuest::TheShrineExplorer
+      - _GoddessStatue::TempleofTime
+      - Ascend:
+         movements:
+            - to: [460, 1572, -758]
+      - _SideAdv::LegendoftheGreatSkyIsland:
+         coord: [453, 1540, -802]
+      - _Warp::ROA<Warp to Room of Awakening>
+      - _Korok::GSI16
+      - _Shop::CrystalRefinery:
+         notes: Skip if battery already fully upgraded
+
+   - Surface Cleanup:
+      - _Warp::Tower::LookoutLanding<Warp to Lookout Landing Tower>
+      - _Well::LookoutLanding:
+         comment: Enter the well
+      - _SideQuest<Where Are the Wells>:
+         coord: [-212.68, 124.64, 131.08]
+      - _Item<Cookset>:
+         coord: [-269.4, 113.5, 101.9]
+         comment: Make night
+      - _Npc::Gralens:
+         comment: Collect all the medals
+      - _Shop<Koltin>:
+         coord: [-324, 23, -162]
+         comment: Trade in all bubbulfrog hearts
+      - _Warp::Special<Warp to Travel Medallion at Tarrey Town>:
+         coord: [3962, 233, 1635]
+      - _Npc::Kilton_01:
+         comment: Tell Kilton about Koltin, Receive Fabric
+      - _Warp::Shrine::Musanokir<Warp to Musanokir Shrine>
+      - _Npc::Hestu_02:
+         comment: Fully expand all inventories, Trade remaining korok poop for Hestu poop
+
 
 
 
