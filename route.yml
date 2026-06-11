@@ -4090,7 +4090,6 @@ _route:
          comment: Ascend
       - _MainQuest::FindtheFifthSage:
          coord: [-253, 126.36, 155]
-      - _MainQuest::DestroyGanondorf
 
    - Castle Town Watchtower:
       - _Shop::CrystalRefinery01
@@ -9495,28 +9494,29 @@ _route:
       - _Warp::Shrine::Musanokir<Warp to Musanokir Shrine>
       - _Npc::Hestu_02:
          comment: Fully expand all inventories, Trade remaining korok poop for Hestu poop
+      - _Warp::Shrine::Serutabomac<Warp to Serutabomac Shrine>
 
+   - Destroy Ganondorf:
+      - _Chasm::HyruleCastle
+      - _Lightroot::Camobatures
+      - _Enemy::Lynel::D09
+      - _Enemy::BokoBoss::D15
+      - _MainQuest::DestroyGanondorf:
+         notes: TAKE PICS!!!
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+   - The Stuff that Makes it All Not Worth it:
+      - Reload From Autosave
+      - _Warp::TechLab::Hateno
+      - _SideAdv::FillingouttheCompendium:
+         coord: [3768.92, 356.4, -2121.82]
+      - _SideQuest::UmasGarden:
+         coord: [3346.54, 223.24, -2035.39]
+      - _Warp::Shrine::Eshos<Warp to Eshos Shrine>
+      - _Fairy::GreatFairyFountain<Cotera>:
+         comment: Unlock all armor set abilities
+      - _Warp::Shrine::Marakuguc<Warp to Marakuguc Shrine>
+      - _Special<Cook>:
+         coord: [1652.27, 489.92, 2461.24]
+         comment: Cook all missing recipes
+         notes: Use blizzard rod to make frozen items
 
