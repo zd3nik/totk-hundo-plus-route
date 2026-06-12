@@ -56,10 +56,13 @@ _route:
       - _Npc::Steward Construct_07
       - _MainQuest::FindPrincessZelda:
          coord: [457.5, 1640, -1310]
-      - _Item<Hot-Footed Frog>:
+      - _Item<Frogs>:
          coord: [462.14, 1521.67, -1230.19]
       - _Enemy<Construct>:
          coord: [431.96, 1523.61, -1199.08]
+      - _Item<Boulder>:
+         coord: [457.69, 1536.73, -1106.94]
+         comment: Push the boulder down the hill to kill the 2 constructs below
       - _Enemy<Constructs x2>:
          coord: [452.12, 1520.48, -1092.24]
       - _Enemy<Construct>:
@@ -89,7 +92,7 @@ _route:
          comment: Ultrahand boulder over to platform
       - _Chest<Wings>:
          coord: [513.34, 1540.64, -1100.15]
-      - _Item<Hot-Footed Frog x3>:
+      - _Item<Frogs>:
          coord: [522.35, 1530.25, -1203.7]
       - _Enemy<Construct>:
          coord: [568.48, 1522.16, -1169.92]
@@ -144,8 +147,7 @@ _route:
          comment: Speed food
       - _Enemy<Constructs x4>:
          coord: [128.86, 1521.3, -1264.05]
-      - _Chest<Opal>:
-         coord: [121.2, 1522.36, -1272.49]
+      - _LockedChest::S05
       - _Korok::GSI04::Start
       - _Korok::GSI04::End
       - Shield Surf the Rail:
@@ -156,14 +158,6 @@ _route:
          movements:
             - to: [168, 1521.26, -1336]
             - to: [185.5, 1521.26, -1379]
-      - _Item<Rushroom>:
-         coord: [167.94, 1482.32, -1385.35]
-      - _Item<Rushroom>:
-         coord: [163.35, 1483.3, -1392.88]
-      - _Item<Rushroom>:
-         coord: [149.18, 1483.87, -1412.98]
-      - _Item<Rushroom>:
-         coord: [131.76, 1483.06, -1437.04]
       - _Chest<Amber>:
          coord: [130.65, 1480.4, -1450.24]
       - Ascend:
@@ -174,38 +168,23 @@ _route:
       - _Chest<Arrows>:
          coord: [24.3, 1513.76, -1527.69]
          comment: Ascend
-      - _Korok::GSI11:
-         comment: Collect shrooms around tree
+      - _Korok::GSI11
       - _Enemy<Construct>:
          coord: [83.71, 1498.03, -1527.29]
       - _Enemy<Constructs x2>:
          coord: [80.77, 1489.19, -1586.9]
-      - _Item<Stamella Shroom>:
-         coord: [94.22, 1489.25, -1616.34]
-      - _Item<Stamella Shroom>:
-         coord: [119.47, 1489.11, -1600.81]
-      - _Item<Stamella Shroom>:
-         coord: [127.77, 1485.45, -1609.1]
       - _Enemy<Constructs x3>:
          coord: [137.58, 1482.84, -1599.97]
       - _Chest<Weapon>:
          coord: [141.79, 1484.95, -1586.4]
-      - _Item<Stamella Shroom>:
-         coord: [155.77, 1483.52, -1591.53]
-      - _Item<Stamella Shroom>:
-         coord: [156.36, 1482.91, -1609.01]
-      - _Item<Stamella Shroom>:
-         coord: [151.23, 1483.41, -1610.91]
-      - _Item<Ancient Arowana x2>:
-         coord: [152.84, 1482.16, -1616.95]
       - _Cave::Pondside01
       - _Bubbulfrog::PondsideCave:
          comment: Break nearby wall and ore to get ruby
-
-   - Archaic Tunic:
       - _Chest::ArchaicTunic
       - _Cave::Pondside00:
          comment: Ascend
+
+   - Archaic Tunic:
       - _Korok::GSI13
       - _Chest<Amber>:
          coord: [275.43, 1460.65, -1716.12]
@@ -232,25 +211,18 @@ _route:
             - to: [462.75, 1554.57, -1665]
       - _Enemy<Constructs x3>:
          coord: [462.75, 1514.09, -1605.19]
-      - _Chest<Opal>:
-         coord: [472.06, 1516.06, -1605.33]
-      - _Item<Collect Frogs>:
+      - _LockedChest::S06
+      - _Item<Frogs>:
          coord: [484.1, 1495.96, -1577.72]
-      -  _Korok::GSI09
-      - _Item<Rushrooms x3>:
-         coord: [458.36, 1467.53, -1548.66]
+      - _Korok::GSI09:
          comment: Ascend
       - _Special<Cook>:
          notes: Shoot rushshrooms high up on cliff to collect them before cooking
          comment: Speed food
          coord: [424.33, 1470.34, -1544.17]
-      - _Item<Rushroom>:
-         coord: [419.96, 1472.96, -1575.84]
-      - _Item<Rushroom>:
-         coord: [417.12, 1473.25, -1586.6]
-      - _Item<Rushroom>:
-         coord: [414.36, 1471.52, -1590.99]
-         comment: Ascend
+      - Ascend:
+         movements:
+            - to: [414.36, 1471.52, -1590.99]
 
    - Mining Cave:
       - _Cave::Mining00:
@@ -312,7 +284,7 @@ _route:
          coord: [837.75, 1656.75, -1433.5]
       - _Enemy<Constructs x2>:
          coord: [828.6, 1670.11, -1447.48]
-      - _LockedChest::S00
+      - _LockedChest::S07
       - Shield Surf:
          comment: Ascend, Wing glide to next korok
          movements:
@@ -378,9 +350,9 @@ _route:
             - to: [176, 128, -520]
       - _Korok::LL56
       - _Shrine::Jiosin
-      - _Special<Get a Horse>:
-         comment: Tame the lead horse
+      - _Item<Horse>:
          coord: [-381.53, 128.69, -271.44]
+         comment: Tame the lead horse
       - _Korok::LL50
       - _Place::LookoutLanding:
          comment: Ascend
@@ -391,12 +363,12 @@ _route:
             - to: [-255, 123, 150]
       - _MainQuest::CrisisatHyruleCastle:
          coord: [-238.97, 132.32, 147.92]
+      - _Addison::A30
       - _Location::HyruleCastleTownRuins:
          hide-icon-on-map: true
-      - _Addison::A30
+      - _Korok::LL37
       - _Location::CentralSquare:
          hide-icon-on-map: true
-      - _Korok::LL37
       - _Shrine::Kyononis
       - _Korok::LL25
       - _Korok::LL20
@@ -539,10 +511,11 @@ _route:
          coord: [-210.02, 443.86, 968.16]
       - _Korok::LL13:
          comment: Ascend
-      - _Location::SecondGatehouse
       - _Chest<Halberd>:
          coord: [-153.5, 388.78, 895.37]
          comment: Ascend
+      - _Location::SecondGatehouse:
+         hide-icon-on-map: true
       - _Chest<Shield>:
          coord: [-96, 400.63, 932.87]
          comment: Ascend
@@ -577,9 +550,9 @@ _route:
          level: Depths
       - _Chasm::GreatPlateauEast
       - _Special::StartPos Depths
+      - _SideAdv::MasterKohgaoftheYigaClan
       - _Location::GreatAbandonedCentralMine:
          hide-icon-on-map: true
-      - _SideAdv::MasterKohgaoftheYigaClan
       - _LockedChest::D49
 
    - Flying Machines:
@@ -702,7 +675,7 @@ _route:
       - _Lightroot::Sinonoyk
       - _Equipment::Weapon<Weapon Pillar>:
          coord: [-237.87, -341, 358.39]
-         comment: Add or skip weapon pillars along the route as needed
+         notes: Skip weapon pillars along the route that you know you don't need
       - _Enemy::BokoBoss::D22
       - _Lightroot::Oyimay
       - _Chest<Large Crystallized Charge>:
@@ -874,13 +847,14 @@ _route:
          coord: [1062.65, 164.78, 1280.46]
       - _Enemy::BokoBoss::G36
       - _Korok::EC48
-      - _Location::PicoPond:
-         comment: Drop off flying machine near Addison
-
-   - Kotlin:
       - _SideAdv::TheHuntforBubbulGems:
          coord: [1222, 130.46, 1207]
+         comment: Drop off flying machine near Addison
       - _SideAdv::TheSearchforKoltin
+      - _Location::PicoPond:
+         hide-icon-on-map: true
+
+   - Kotlin:
       - _Cave::PicoPond00
       - _Bubbulfrog::PicoPondCave:
          comment: Ascend
@@ -909,12 +883,9 @@ _route:
       - _Cave::UplandZoranaMountainside00
       - _Bubbulfrog::UplandZoranaMountainsideCave
       - _Cave::UplandZoranaMountainside01
-      - _Item<Splash Fruit>:
-         coord: [2825.9, 495.51, 590.43]
-         comment: Drop flying machine near tower
-         notes: Take pic
       - _Chest<Opal>:
          coord: [2818, 489.75, 554]
+         comment: Drop flying machine near tower
       - _Enemy<Chuchu>:
          coord: [2838.24, 483.63, 539.35]
          comment: Break Zora longsword
@@ -930,9 +901,9 @@ _route:
       - _MainQuest::TheSludgeCoveredStatue:
          coord: [3300, 139, 463]
 
-   - Mogawak Shrine:
+   - We Need at Least 10 Bright-Eyed Crabs:
       - _Place::ZorasDomain:
-         coord: [3320, 239, 513]
+         coord: [3305, 239, 480]
          comment: Collect fleet-lotus seeds and crabs
       - _Special<Cook>:
          coord: [3303.9, 245.31, 496.23]
@@ -945,10 +916,10 @@ _route:
          movements:
             - to: [3350, 240, 500]
             - to: [3329.76, 217.88, 532.85]
-      - _Shrine::Mogawak:
-         comment: It should be about 9 or 10 PM when you exit
 
    - Sidon:
+      - _Shrine::Mogawak:
+         comment: It should be about 9 or 10 PM when you exit
       - _Enemy::Hinox::GZ02
       - _Special<Pic of moonlit princess>:
          coord: [3758.86, 654.62, 417.38]
@@ -1024,8 +995,6 @@ _route:
       - _Korok::UZS01:
          comment: Ascend
       - _Temple::Water
-      - _Special<Terminal>:
-         coord: [3355.08, 1848.71, 778.11]
 
    - First Valve:
       - Swim up Waterfall:
@@ -1291,7 +1260,6 @@ _route:
          coord: [-1418.56, 230.54, 963.29]
       - _Location::NorthHyrulePlain:
          hide-icon-on-map: true
-         comment: Shield surf to Impa
       - _MainQuest::ImpaandtheGeoglyphs:
          coord: [-1313.14, 201.35, 823.5]
          comment: Use hover stone while falling from balloon to get pic of geoglyph
@@ -1363,7 +1331,7 @@ _route:
       - _Location::AldorFoothills:
          hide-icon-on-map: true
       - _Cave::YigaClanMarittaBranch00:
-         comment: Break forest dweller spear fighting yiga
+         comment: Break forest dweller spear
       - _Bubbulfrog::YigaClanMarittaBranch
       - _Chest::YigaTights:
          notes: Ascend
@@ -1510,8 +1478,6 @@ _route:
          coord: [-3296.01, 1459.85, 3431.51]
       - _Korok::RPS01
       - _Temple::Wind
-      - _Special<Terminal>:
-         coord: [-2859.5, 1564.93, 2982]
 
    - First Turbine:
       - _Item<Door>:
@@ -1908,25 +1874,13 @@ _route:
 
    - Rabella Wetlands:
       - _Korok::RW16
-      - _Location::HanuPond:
-         hide-icon-on-map: true
       - _Enemy::Hinox::GL05
       - _LockedChest::G37
-      - _Location::StingerCliffs:
-         hide-icon-on-map: true
       - _Addison::A63
-      - _Location::EastNecluda:
-         hide-icon-on-map: true
-      - _Location::KotoPond:
-         hide-icon-on-map: true
       - _Korok::RW09
-      - _Location::MedaMountain:
-         hide-icon-on-map: true
       - _Chasm::MedaMountain
       - _Special<Starting Block>:
          coord: [2410.07, 363.24, -2671.19]
-      - _Location::MountTaran:
-         hide-icon-on-map: true
       - _Korok::RW17
       - _Item<Fleet-Lotus Seeds and Frogs>:
          coord: [2380.68, 320.41, -2848.58]
@@ -1973,11 +1927,9 @@ _route:
          coord: [4030.14, 505.57, -1411.35]
       - _Material<Naydra Claw 3/4>
       - _Npc::Nazbi
-      - _Location::SpringofWisdom:
-         hide-icon-on-map: true
       - _GoddessStatue::Wisdom
       - _SideQuest::GoddessStatueofWisdom
-      - _GoddessStatue::Wisdom:
+      - _Location::SpringofWisdom:
          hide-icon-on-map: true
       - _Tower::MountLanayru
 
@@ -2008,7 +1960,7 @@ _route:
       - _Shrine::Sihajog
       - _Korok::MLS02
 
-   - Wellspring Island:
+   - A Floating Place:
       - _Warp::Tower::UplandZorana<Warp to Upland Zora Tower>:
          level: Sky
       - _Tower::UplandZorana
@@ -2024,6 +1976,7 @@ _route:
       - _SagesWill::Lanayru_01
       - _Warp::Shrine::Igoshon<Warp to Igoshon Shrine>
       - _Shrine::Igoshon
+      - _LockedChest::S01
       - _Chest<Hover Stones>:
          coord: [3613.16, 1401.69, 757.73]
       - _OldMap::WellspringIsland
@@ -2031,24 +1984,8 @@ _route:
          coord: [3674.12, 1355.51, 572.46]
          notes: Take pic
       - _Npc::Mei_05
-      - _Enemy<Construct x2>:
-         coord: [3631.26, 1353.69, 552.37]
-         notes: Take pic
-      - _Chest<Battery>:
-         coord: [3877.16, 1285, 566.73]
-      - _Enemy<Construct>:
-         coord: [3853.7, 1264.06, 540.31]
-         notes: Take pic
-      - _Enemy<Construct>:
-         coord: [3775.41, 1289.71, 533.23]
-      - _Enemy<Construct>:
-         coord: [3739.66, 1289.71, 527.98]
-      - _Enemy<Construct>:
-         coord: [3650.91, 1295.6, 526.48]
-      - _Enemy<Construct x2>:
-         coord: [3624.46, 1295.71, 522.31]
-         comment: Build flying machine
       - _Korok::UZS02
+      - _LockedChest::S00
       - _Enemy<Construct>:
          coord: [3335.57, 1458.7, 541.76]
       - _Equipment::Weapon<Zonaite Spear>:
@@ -2264,7 +2201,8 @@ _route:
          coord: [4234.08, 231.92, 2738.65]
       - _SideQuest<A Picture for East Akkala Stable>:
          coord: [4230.52, 275.28, 2745.64]
-      - _Well::EastAkkalaStable
+      - _Well::EastAkkalaStable:
+         comment: Enter the well
       - _SideQuest::WhereAretheWells:
          coord: [4245.58, 211.74, 2787.89]
       - _GoddessStatue::EastAkkala:
@@ -2846,6 +2784,8 @@ _route:
       - _Enemy::Gleeok::S01:
          notes: Take pic
       - _SagesWill::Hebra
+      - _LockedChest::S02:
+         hide-icon-on-map: true
       - _SagesWill::Tabantha_01
       - _Location::NorthTabanthaSkyArchipelago:
          hide-icon-on-map: true
@@ -3000,6 +2940,8 @@ _route:
       - _Enemy::Gleeok::S02:
          comment: Break Gerudo Claymore
       - _SagesWill::Gerudo
+      - _LockedChest::S03:
+         hide-icon-on-map: true
 
    - Gerudo Town:
       - _Enemy::Molduga::SG04
@@ -3040,18 +2982,8 @@ _route:
          movements:
             - to: [-3794.48, 148.59, -2906.16]
             - to: [-3793, 149.36, -2920]
-      - _Npc::Greta
-      - _Item<Sand Boots>:
-         coord: [-3787.04, 149.57, -2918.65]
-      - _Item<Snow Boots>:
-         coord: [-3788.32, 149.57, -2917.33]
-      - _Item<Desert Voe Spaulder>:
-         coord: [-3794.3, 149.57, -2924.6]
-      - _Item<Desert Voe Trousers>:
-         coord: [-3792.6, 149.57, -2926.2]
-         comment: Ascend
-
-   - The Heroine's Secret:
+      - _Npc::Greta:
+         comment: Buy all garb, Ascend
       - Secret Entrance:
          comment: Under sand-seal statue
          movements:
@@ -3175,7 +3107,7 @@ _route:
       - _Chest<Topaz>:
          coord: [-3867.6, 149.37, -2986.64]
          comment: Fuse thunder gleeok horn to gerudo spear
-      - _Special<Electric Lizalfos Horn>:
+      - _Item<Electric Lizalfos Horn>:
          coord: [-3909.62, 149.68, -2933.82]
          notes: Take pic
       - _Npc::Teake_01:
@@ -3187,7 +3119,7 @@ _route:
    - Battle at Gerudo Town:
       - _MainQuest<Start the Battle>:
          coord: [-3887.35, 157.48, -2968]
-      - _Special<Farosh Horn>:
+      - _Item<Farosh Horn>:
          coord: [-3846.63, 149.68, -2925.29]
          notes: Take pic
       - _Enemy<Gibdo Nest>:
@@ -3327,10 +3259,6 @@ _route:
          coord: [-3851.66, 149.18, -2989.89]
       - _Shop::GeneralStore01:
          comment: Buy wheat and rice
-      - _Shop::GeneralStore05
-      - _Shop::GeneralStore03
-      - _Shop::GeneralStore02
-      - _Shop::Inn
       - _SideQuest::PrideoftheGerudo:
          coord: [-3828.5, 149.5, -2885]
          notes: Take pic of shield
@@ -3353,7 +3281,6 @@ _route:
 
    - Hide and Seek:
       - _Warp::Shrine::Soryotanog<Warp to Soryotanog Shrine>
-      - _Shop::GeneralStore04
       - _SideQuest::DaliasGame:
          coord: [-3813.5, 149.5, -2872.5]
       - _SideQuest<Dalia's Game>:
@@ -3473,9 +3400,8 @@ _route:
    - Farosh:
       - _SagesWill::SouthHyrule_01:
          comment: Ascend
-      - Rocket Shield Up and Tulin Gust Over to Flying Machine:
-         movements:
-            - to: [-1829.72, 1305.17, -1917.68]
+      - _Item<Flying Machine>:
+         coord: [-1829.72, 1305.17, -1917.68]
       - _Dispenser::S16
       - _Special<Take Pic of Smiling Spectacle Rock>:
          coord: [-1845, 1254, -2111]
@@ -4090,6 +4016,7 @@ _route:
          comment: Ascend
       - _MainQuest::FindtheFifthSage:
          coord: [-253, 126.36, 155]
+      - _MainQuest::DestroyGanondorf
 
    - Castle Town Watchtower:
       - _Shop::CrystalRefinery01
@@ -4635,9 +4562,8 @@ _route:
       - _Enemy::BokoBoss::G55
       - _Korok::UZ62
       - _ZoraMonument::Z08
-      - _Item<Board>:
+      - _KeyItem<Add hoverboard to autobuild>:
          coord: [3511, 317.47, -68.5]
-         comment: Create hoverboard autobuild
       - _Korok::UZ37::Start
       - _Korok::UZ48
       - _Enemy::BokoBoss::G52
@@ -4958,8 +4884,6 @@ _route:
       - _Material<Star Fragment 25/36>
       - _Material<Light Dragon Horn>
       - _Korok::RW19
-      - _Location::MountFloria:
-         hide-icon-on-map: true
 
    - Courage Steppe:
       - _Tablet::S06:
@@ -4968,12 +4892,8 @@ _route:
       - _Korok::RW15
       - _Korok::RW12:
          comment: Ascend
-      - _Location::BremanPeak:
-         hide-icon-on-map: true
       - _Korok::RW14
       - _Enemy::BokoBoss::G47
-      - _Location::CourageSteppe:
-         hide-icon-on-map: true
       - _Korok::RW23
       - _Item<Fleet-Lotus Seeds>:
          coord: [2369.43, 320.41, -2824.62]
@@ -4981,13 +4901,9 @@ _route:
          coord: [2381.1, 320.41, -2856.94]
       - _Korok::RW24::Start
       - _Korok::RW20
-      - _Location::TaranPass:
-         hide-icon-on-map: true
       - _Korok::RW22
 
    - Uten Marsh:
-      - _Location::UtenMarsh:
-         hide-icon-on-map: true
       - _Item<Courser Bee Honey>:
          coord: [2701.23, 276.15, -2979.26]
       - _Item<Courser Bee Honey>:
@@ -5001,9 +4917,6 @@ _route:
       - _Item<Courser Bee Honey>:
          coord: [2708.92, 276.07, -2929.33]
       - _Korok::RW24::End
-      - _Location::DunselPlateau:
-         hide-icon-on-map: true
-      - _Location::KeyaPond
       - _Korok::RW21
       - _Enemy::BokoBoss::G58
 
@@ -5014,12 +4927,8 @@ _route:
       - _Bubbulfrog::MountDunselCave
       - _Cave::MountDunsel01:
          comment: Ascend
-      - _Location::MountDunsel:
-         hide-icon-on-map: true
       - _LockedChest::G42
       - _Korok::RW27
-      - _Location::CapeCales:
-         hide-icon-on-map: true
       - _Korok::RW36::Start:
          comment: Build hoverboard, attach korok
       - _Korok::RW25:
@@ -5034,7 +4943,7 @@ _route:
    - Eventide Island:
       - _Cave::CapeCalesCliffbase00
       - _Korok::RW36::End
-      - _Location::ToronboBeach:
+      - _Location::EventideIsland:
          hide-icon-on-map: true
       - _SideQuest::SeekingthePirateHideout:
          coord: [4515.17, 107.01, -3501.46]
@@ -5046,8 +4955,6 @@ _route:
          coord: [4574.49, 171.11, -3523.86]
       - _Korok::RW33
       - _Korok::RW37
-      - _Location::EventideIsland:
-         hide-icon-on-map: true
       - _Enemy<Moblin>:
          coord: [4468.88, 139.7, -3750.68]
       - _Enemy<Boko x4>:
@@ -5080,10 +4987,10 @@ _route:
    - Midna's Helmet:
       - _Equipment::Weapon<Royal Guard Sword>:
          coord: [4514.37, -340.81, -3504.06]
-      - _Location::LoneIslandColiseum:
-         hide-icon-on-map: true
       - _LockedChest::D95
       - _Chest::MidnasHelmet:
+         hide-icon-on-map: true
+      - _Location::LoneIslandColiseum:
          hide-icon-on-map: true
       - _Lightroot::Ni-iraram
       - _Equipment::Weapon<Royal Guard Claymore>:
@@ -5102,6 +5009,8 @@ _route:
    - Eventide Gleeok:
       - _Enemy::Gleeok::S03
       - _SagesWill::Eventide
+      - _LockedChest::S04:
+         hide-icon-on-map: true
       - _Item<Campfire>:
          coord: [4655, 1171, -3825]
          comment: Make night
@@ -5206,8 +5115,6 @@ _route:
          hide-icon-on-map: true
       - _Shop::LuckyTreasureShop:
          comment: Open all chests, Take Rewards
-      - _Shop::Inn08:
-         hide-icon-on-map: true
       - _GoddessStatue::Lurelin
       - _SideQuest::DadsBlueShirt:
          coord: [2892, 0, -3435]
@@ -5610,10 +5517,6 @@ _route:
       - _Item<Restless Cricket>:
          coord: [3795.09, 355.83, -2134.51]
          notes: Take pic
-      - _Item<Sunshroom>:
-         coord: [3777.1, 356.42, -2136.88]
-      - _Item<Hightail Lizard>:
-         coord: [3765.43, 356, -2136.75]
       - _Item<Farmer's Pitchfork>:
          coord: [3764.83, 356.67, -2130.5]
          notes: Take pic
@@ -7208,15 +7111,9 @@ _route:
       - _Enemy::Hinox::GR06
       - _Location::ThundraPlateau:
          hide-icon-on-map: true
-      - _Item<Dragonblood Tree>:
-         coord: [-2258, 217.5, 849.68]
-         comment: Cut down for log
-      - _Item<Dragonblood Tree>:
+      - _Item<Dragonblood Tree x3>:
          coord: [-2272.5, 217.5, 844.41]
-         comment: Cut down for log
-      - _Item<Dragonblood Tree>:
-         coord: [-2288.82, 217.5, 850.31]
-         comment: Cut down for log
+         comment: Cut down for logs
       - _Cave::ThundraPlateau00:
          comment: Fuse 3 logs together and use them to cast a shadow across the entrance
 
@@ -7923,7 +7820,7 @@ _route:
          coord: [1380, 294, 2260]
          comment: Ascend
 
-   - Gorko Tunnel:
+   - Timawak Shrine:
       - _Korok::EC26
       - _Korok::EC32
       - _Korok::EC36::Start
@@ -7935,22 +7832,9 @@ _route:
       - _Korok::EC42::Start
       - _Korok::EC37
       - _Korok::EC42::End
-      - _Enemy::Talus::GE06
-      - _Korok::EC34
-      - _Enemy::BokoBoss::G41
-      - _Korok::EC30
-      - _Cave::GorkoTunnel00:
-         comment: Leave flying machine near korok
-
-   - Simmerstone Springs:
-      - _SideQuest::SimmerstoneSprings:
-         coord: [2160.65, 495.5, 2086.57]
-      - _Bubbulfrog::GorkoTunnel:
-         comment: Assend
-      - _Korok::EC33::Start:
-         comment: Flying machine should be nearby
-      - _Korok::EC33::End
       - _Shrine::Timawak
+
+   - First Marbled Rock Roast:
       - _Cave::EastRestaurant00
       - _Bubbulfrog::EastRestaurantCave
       - _Item<Marbled Rock Roast>:
@@ -7966,16 +7850,31 @@ _route:
          coord: [1750, 278, 1536]
       - _Korok::EC43
 
-   - West Restaraunt Cave:
+   - Second Marbled Rock Roast:
       - _Cave::WestRestaurant00
       - _Bubbulfrog::WestRestaurantCave
       - _Item<Marbled Rock Roast>:
          coord: [1667.58, 369.57, 1840.22]
 
-   - Mine-Cart Land:
+   - Gorko Tunnel:
       - _Cave::WestRestaurant00
       - _SideQuest::RockRoastorDust:
          coord: [1759, 279, 1547]
+      - _Enemy::Talus::GE06
+      - _Korok::EC34
+      - _Enemy::BokoBoss::G41
+      - _Korok::EC30
+      - _Cave::GorkoTunnel00:
+         comment: Leave flying machine near korok
+
+   - Mine-Cart Land:
+      - _SideQuest::SimmerstoneSprings:
+         coord: [2160.65, 495.5, 2086.57]
+      - _Bubbulfrog::GorkoTunnel:
+         comment: Assend
+      - _Korok::EC33::Start:
+         comment: Flying machine should be nearby
+      - _Korok::EC33::End
       - _Korok::EC31
       - _Place::SouthernMine:
          hide-icon-on-map: true
@@ -8987,12 +8886,7 @@ _route:
    - Rescue Hino One Last Time:
       - _SideAdv<Team Cece or Team Reede>:
          coord: [3354.76, 226.56, -2125.24]
-      - _Item<Hylian Tunic>:
-         coord: [3356.84, 226.87, -2125.97]
-      - _Item<Hylian Hood>:
-         coord: [3356.77, 227.2, -2121.8]
-      - _Item<Hylian Trousers>:
-         coord: [3351.03, 227.2, -2124.14]
+         comment: Buy hylian set
       - _SideQuest::HomegrowninHateno:
          coord: [3298, 109, -2121]
       - _Item<Sun Pumpkin>:
@@ -9155,8 +9049,10 @@ _route:
       - _Equipment::Weapon<Eightfold Blade>:
          coord: [2380.6, -435.76, -1560.34]
       - _YigaSchema::ScatterTrap
-      - _LockedChest::D74
-      - _LockedChest::D75
+      - _LockedChest::D74:
+         hide-icon-on-map: true
+      - _LockedChest::D75:
+         hide-icon-on-map: true
       - _Equipment::Weapon<Eightfold Blade>:
          coord: [2074.18, -356.6, -1735.36]
       - _Equipment::Weapon<Eightfold Blade>:
@@ -9385,8 +9281,10 @@ _route:
       - _Equipment::Weapon<Zora Spear>:
          coord: [3348.89, -352.19, -633.39]
       - _YigaSchema::Icebreaker
-      - _LockedChest::D86
-      - _LockedChest::D87
+      - _LockedChest::D86:
+         hide-icon-on-map: true
+      - _LockedChest::D87:
+         hide-icon-on-map: true
       - _Equipment::Weapon<Zora Longsword>:
          coord: [3739.79, -552.22, -265.41]
       - _Lightroot::Kegopa
@@ -9501,7 +9399,7 @@ _route:
       - _Lightroot::Camobatures
       - _Enemy::Lynel::D09
       - _Enemy::BokoBoss::D15
-      - _MainQuest::DestroyGanondorf:
+      - _MainQuest<Destroy Ganondorf>:
          notes: TAKE PICS!!!
 
    - The Stuff that Makes it All Not Worth it:
