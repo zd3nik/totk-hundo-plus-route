@@ -845,7 +845,8 @@ _route:
          coord: [1038.57, 177.68, 1253.27]
       - _Shrine<Activate Ekochiu shrine>:
          coord: [1062.65, 164.78, 1280.46]
-      - _Enemy::BokoBoss::G36
+      - _Enemy::BokoBoss::G36:
+         notes: Take pic
       - _Korok::EC48
       - _SideAdv::TheHuntforBubbulGems:
          coord: [1222, 130.46, 1207]
@@ -863,6 +864,7 @@ _route:
       - _LockedChest::G26:
          notes: Collect cobble crusher
       - _Enemy::Hinox::GZ01:
+         comment: Break cobble crusher
          notes: Take pic
       - _Location::TrilbyPlain:
          hide-icon-on-map: true
@@ -873,7 +875,6 @@ _route:
       - _Korok::EC57
       - _Tear::G02
       - _Enemy::BokoBoss::G42:
-         comment: Break cobble crusher
          notes: Collect Zora longsword
       - _Korok::UZ32
       - _Special<Starting Block>:
