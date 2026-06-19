@@ -1139,10 +1139,10 @@ _route:
 
    - Coliseum Gleeok:
       - _Warp::Shrine::Jiosin<Warp to Jiosin Shrine>:
-         notes:
-            - Find Parga the merchant between here and Hyrule Field Tower
-            - Buy milk, butter, etc
-      - _Npc::Suzuna
+         notes: Find Parga the merchant between here and Hyrule Field Tower
+      - _Npc::Suzuna:
+         comment: Cook attack up food and llynel horn elixir if you forgot to do so earlier
+         notes: Take pic of ladle
       - _Korok::HF07:
          comment: Farosh should be visible to the south east
       - _SideAdv::BringPeacetoHyruleField:
@@ -1180,6 +1180,7 @@ _route:
       - _Addison::A32
       - _Enemy::BokoBoss::G19:
          comment: Fuse lynel horn to thick stick
+         notes: Take pic
       - _Tower<Activate Hyrule Field Tower>:
          coord: [-761.28, 163.42, -1019.23]
       - _Enemy<Blue Moblin>:
@@ -1187,8 +1188,8 @@ _route:
          notes: Take pic
       - _Well::AquameLake
       - _Enemy::Gleeok::G07:
+         comment: Drop flying mchine outside of colesium, Eat attack up food
          notes: Take pic
-         comment: Drop flying mchine outside of colesium
       - _Location::ColiseumRuins:
          hide-icon-on-map: true
       - _Cave::ColiseumRuins00
