@@ -5870,7 +5870,13 @@ _route:
       - _Location::SarjonBridge
       - _Korok::PF55
       - _Korok::PF65
-      - _Shrine::Utsushok
+      - _Shrine<Activate Utsushok Shrine>:
+         coord: [670, 184.03, -3358.39]
+
+   - Farosh Farming N:
+      - _Warp::Tower::PoplaFoothills<Warp to Popla Foothills Tower>
+      - _Item<Farosh Horn>
+      - _Korok::HF69
 
    - Rocket Reload 5:
       - _Warp::Shrine::Rakashog<Warp to Rakashog Shrine>:
@@ -5931,7 +5937,8 @@ _route:
          coord: [549.94, 106.47, -3933.04]
       - _Korok::PF85
       - _Cave::KomoShoreline00
-      - _Bubbulfrog::KomoShorelineCave
+      - _Bubbulfrog::KomoShorelineCave:
+         comment: Ascend
       - _Korok::PF79::Trail
 
    - Giant White Stallion:
@@ -5960,6 +5967,7 @@ _route:
 
    - Pyper:
       - _Warp::Shrine::Utsushok<Warp to Utsushok Shrine>
+      - _Shrine::Utsushok
       - _SideAdv::TheFlutePlayersPlan:
          coord: [527.76, 153.69, -3398.91]
       - _Well::HighlandStable
@@ -6006,10 +6014,10 @@ _route:
       - _Warp::Shrine::Jinodok<Warp to Jinodok Shrine>:
          level: Sky
       - _Material<Light Dragon Horn>
-      - _Npc::Strade:
-         comment: Complete the mini-game
 
    - The Great Plateau:
+      - _Npc::Strade:
+         comment: Complete the mini-game
       - _Shrine::Riogok
       - _Location::GreatPlateau:
          hide-icon-on-map: true
@@ -7444,7 +7452,6 @@ _route:
    - Riverside Stable:
       - _Korok::PF20
       - _Korok::PF19
-      - _Korok::HF69
       - _Korok::HF59::Trail
       - _Korok::HF53
       - _Korok::PF12::Start
