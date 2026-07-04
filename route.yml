@@ -6706,9 +6706,10 @@ _route:
       - _Korok::UZ65
       - _Korok::UZ66
       - _Korok::UZ70::Trail
-      - _Korok::UZ73
+      - _Korok::UZ73::Start
       - _Addison::A70
       - _Korok::UZ72
+      - _Korok::UZ73::End
       - _Cave::LanayruRoadEast01
       - _Bubbulfrog::LanayruRoadEastCave
       - _Enemy::BokoBoss::G65
