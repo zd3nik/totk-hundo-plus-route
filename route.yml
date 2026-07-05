@@ -6904,10 +6904,11 @@ _route:
          comment: Fuse rockets to shields
 
    - Ancient Columns:
-      - _Warp::Shrine::Ganos<Warp to Ganos Shrine>
+      - _Warp::Shrine::Ganos<Warp to Ganos Shrine>:
+         notes: We want to arive at the anceint columns at about 4 AM. If needed, do some lynel farming to kill time before warping here
       - _Item<Ancient Pillar Switch>:
          coord: [-3484.08, 397.83, 421.95]
-         notes: Take pic of sunset. Or do so after some of the following objectives if it is not yet 4AM
+         notes: Take pic of sunrise
       - _Cave::AncientColumns00
       - _Bubbulfrog::AncientColumnsCave
       - _SideQuest::MiskosTreasureofAwakeningII:
@@ -7040,19 +7041,13 @@ _route:
       - _Warp::Special<Warp to Travel Medallion>:
          coord: [-2066, 139, 512]
       - _Addison::A22
-      - _Chest<Large Zonai Charge>:
-         coord: [-1708.09, 251.88, 773.68]
-         comment: Skip if necessary to make it to Thundra Plateau by noon
-      - _Chest<Large Zonai Charge>:
-         coord: [-1820.41, 251.88, 748.03]
-         comment: Skip if necessary to make it to Thundra Plateau by noon
       - _Korok::LB29
       - _Enemy::Hinox::GR06
       - _Location::ThundraPlateau:
          hide-icon-on-map: true
       - _Item<Dragonblood Tree x3>:
          coord: [-2272.5, 217.5, 844.41]
-         comment: Cut down for logs
+         comment: Cut down for logs, Make noon
       - _Cave::ThundraPlateau00:
          comment: Fuse 3 logs together and use them to cast a shadow across the entrance
 
