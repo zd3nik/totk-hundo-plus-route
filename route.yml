@@ -8093,8 +8093,9 @@ _route:
       - _Korok::PS05
       - _Korok::PS02
       - _Shrine::Oshozan-u
-      - _Korok::PS07
+      - _Korok::PS07::Start
       - _Korok::PS04
+      - _Korok::PS07::End
       - _Korok::PS08
       - _Korok::PS11
       - _Korok::PS12
@@ -8639,9 +8640,10 @@ _route:
       - _Korok::LB48
       - _Enemy::Talus::GR05
       - _Korok::GH02
-      - _Korok::GH03
+      - _Korok::GH03::Start
       - _Korok::GH01
       - _LockedChest::G05
+      - _Korok::GH03::End
       - _Shrine::Gasas
 
    - Vah Naboris Helm:
@@ -8861,7 +8863,7 @@ _route:
       - _Special<Starting Block>:
          coord: [4185, 129.84, -443.75]
       - _Korok::UZ60:
-         comment: Leav flying machine here
+         comment: Leave flying machine here
       - _Cave::HoronLagoon00
       - _Bubbulfrog::HoronLagoonCave
 
