@@ -8212,10 +8212,8 @@ _route:
       - _Enemy::Hinox::DH02
 
    - Birida Lookout Chasm:
-      - _Warp::Tower::GerudoHighlands<Warp to Gerudo Highlands Tower>:
-         notes: If Light Dragon is not nearby warp to the travel medallion at Birida Lookout instead
-      - _Material<Light Dragon Horn>:
-         comment: Skip if Light Dragon is not nearby
+      - _Warp::Special<Warp to medalion>:
+         coord: [-3572, 361, -1853]
       - _Chasm::BiridaLookout
 
    - Pristine Weapon Hunt:
