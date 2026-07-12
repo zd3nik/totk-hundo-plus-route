@@ -8431,14 +8431,14 @@ _route:
       - _LockedChest::D00
 
    - Hebra Dark Skeleton:
-      - _Equipment::Weapon<Royal Halberd>:
-         coord: [-4265.43, -733, 3235.05]
-      - _Equipment::Weapon<Royal Claymore>:
-         coord: [-4260.77, -733.12, 2979.71]
       - _Equipment::Weapon<Royal Claymore>:
          coord: [-4411.87, -734.26, 3000.41]
       - _Equipment::Weapon<Royal Broadsword>:
          coord: [-4425.88, -698.5, 2920.01]
+      - _Equipment::Weapon<Royal Claymore>:
+         coord: [-4260.77, -733.12, 2979.71]
+      - _Equipment::Weapon<Royal Halberd>:
+         coord: [-4265.43, -733, 3235.05]
       - _Equipment::Weapon<Royal Broadsword>:
          coord: [-4542.95, -626.28, 3326.43]
       - _Enemy::Talus::DH01
@@ -8754,6 +8754,7 @@ _route:
       - _Npc::Ivee
       - _Shop::GeneralStore07:
          comment: Buy stuff
+         notes: Make noon
       - _Npc::Leop:
          coord: [3324, 150, -2152]
          comment: Give shroom
@@ -8762,7 +8763,6 @@ _route:
       - _Special<Cook>:
          coord: [3357.76, 215.82, -2095.69]
          comment: Monster curry
-         notes: Make noon
       - _Npc::Medda:
          comment: Give shroom
       - _Shop::HatenoSchool
@@ -8793,13 +8793,13 @@ _route:
       - _Npc::Tokk:
          coord: [3790, 230, -2115]
          comment: Give shroom
+      - _Item<CookSet>:
+         coord: [3619.52, 282.05, -2112.88]
+         comment: Make night
       - _Npc::Koyin_01:
          comment: Give shroom, Buy cheese
       - _Npc::Dantz_01:
          comment: Give shroom
-      - _Item<CookSet>:
-         coord: [3619.52, 282.05, -2112.88]
-         comment: Make night
       - _Well::HatenoVillageEast
       - _Shrine::Zanmik
       - _Shop::DyeShop:
