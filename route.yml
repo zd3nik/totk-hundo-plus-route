@@ -8782,8 +8782,6 @@ _route:
          comment: Ascend, Read diary
       - _SideAdv::ANewSignatureFood:
          coord: [3429, 131, -2082]
-      - _SideAdv::ReedesSecret:
-         coord: [3443, 236.83, -2091.19]
       - _GoddessStatue::HatenoVillage
       - _Npc::Worten_01:
          comment: Give shroom
@@ -8802,6 +8800,8 @@ _route:
          comment: Give shroom
       - _Well::HatenoVillageEast
       - _Shrine::Zanmik
+      - _SideAdv::ReedesSecret:
+         coord: [3443, 236.83, -2091.19]
       - _Shop::DyeShop:
          comment: Dye something, Rework the paraglider
       - _Special<Spy on Cece>:
