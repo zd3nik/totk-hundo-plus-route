@@ -1069,10 +1069,9 @@ _route:
       - _SideQuest::AWifeWaftedAway:
          coord: [3290, 139, 441]
       - _Location::GreatZoraBridge
-      - _Korok::UZ35
+      - _Cave::UnderZora'sDomain00
 
    - Chasm Under Zora's Domain:
-      - _Cave::UnderZora'sDomain00
       - _Chest::VahRutaDivineHelm
       - _Bubbulfrog::CaveUnderZora'sDomain
       - _Chasm::UnderZorasDomain
@@ -4581,6 +4580,7 @@ _route:
          coord: [3482.48, 261.25, 484.99]
       - _Korok::UZ34
       - _Korok::UZ39
+      - _Korok::UZ35
       - _ZoraMonument::Z05
       - _ZoraMonument::Z04
       - _Item<Hot-Footed Frogs>:
