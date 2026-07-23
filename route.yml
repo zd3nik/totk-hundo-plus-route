@@ -2717,13 +2717,6 @@ _route:
       - _Material<Star Fragment 3/36>
       - _Material<Naydra Claw 4/4>
 
-   - Rocket Reload 1:
-      - _Warp::Shrine::Ukoojisi<Warp to Ukoojisi Shrine>:
-         level: Sky
-      - _Item<Rockets>:
-         coord: [1477.13, 628.59, -2008.65]
-         comment: Fuse rockets to shields
-
    - GSI Crystal Refinery:
       - _Warp::Shrine::Nachoyah<Warp to Nachoyah Shrine>
       - _Shop::CrystalRefinery
@@ -3516,7 +3509,7 @@ _route:
       - _Enemy::Lynel<x1>:
          coord: [-2798.87, -376.93, -2238.38]
 
-   - Rocket Reload 2:
+   - Rocket Reload 1:
       - _Warp::Shrine::Rakashog<Warp to Rakashog Shrine>:
          level: Sky
       - _Item<Rockets>:
@@ -4241,7 +4234,7 @@ _route:
       - _Material<Star Fragment 13/36>
       - _Material<Naydra Horn>
 
-   - Rocket Reload 3:
+   - Rocket Reload 2:
       - _Warp::Shrine::Ukoojisi<Warp to Ukoojisi Shrine>:
          level: Sky
       - _Item<Rockets>:
@@ -5631,7 +5624,7 @@ _route:
       - _SideQuest::HomeonArrange:
          coord: [3933, 129, 1586]
 
-   - Rocket Reload 4:
+   - Rocket Reload 3:
       - _Warp::Shrine::Rakashog<Warp to Rakashog Shrine>:
          level: Sky
       - _Item<Rockets>:
@@ -5878,7 +5871,7 @@ _route:
       - _Item<Farosh Horn>
       - _Korok::HF69
 
-   - Rocket Reload 5:
+   - Rocket Reload 4:
       - _Warp::Shrine::Rakashog<Warp to Rakashog Shrine>:
          level: Sky
       - _Item<Rockets>:
@@ -6634,7 +6627,7 @@ _route:
       - _Enemy::Lynel<x1>:
          coord: [-2798.87, -376.93, -2238.38]
 
-   - Rocket Reload 6:
+   - Rocket Reload 5:
       - _Warp::Shrine::Rakashog<Warp to Rakashog Shrine>:
          level: Sky
       - _Item<Rockets>:
@@ -6896,7 +6889,7 @@ _route:
       - _Chest::TunicofTwilight
       - _Lightroot::Kimimeg
 
-   - Rocket Reload 7:
+   - Rocket Reload 6:
       - _Warp::Shrine::Rakashog<Warp to Rakashog Shrine>:
          level: Sky
       - _Item<Rockets>:
@@ -7408,7 +7401,7 @@ _route:
          coord: [-3234.05, 507.01, -1432.04]
       - _Korok::GH32
 
-   - Rocket Reload 8:
+   - Rocket Reload 7:
       - _Warp::Shrine::Rakashog<Warp to Rakashog Shrine>:
          level: Sky
       - _Item<Rockets>:
