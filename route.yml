@@ -3533,11 +3533,8 @@ _route:
       - _Material<Light Dragon Claw>
 
    - Faron Sky Archipelago:
-      - _Warp::Shrine::Nachoyah<Warp to Nachoyah Shrine>
-      - _Shop::CrystalRefinery:
-         comment: Ascend
-      - _Item<Energetic Rhino Beetle>:
-         coord: [362.29, 2430.58, -1631.77]
+      - _Warp::Shrine::In-isa:
+         level: Sky
       - _Enemy::FluxConstruct::SC04
       - _SagesWill::Faron_01
       - _Location::FaronSkyArchipelago:
