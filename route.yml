@@ -6821,14 +6821,15 @@ _route:
       - _Item<Steering Stick and Fans>:
          coord: [1403.3, 523.6, -3203.46]
          comment: Build flying machine
+      - _Korok::PFS02
       - _OldMap::ThunderheadIsles
       - _Location::ThunderheadIsles:
          hide-icon-on-map: true
-      - _Korok::PFS02
       - _SagesWill::ThunderheadIsles
       - _Dispenser::S18
       - _Enemy::FluxConstruct::SF02
-      - _OldMap::ThunderheadIsles_01
+      - _OldMap::ThunderheadIsles_01:
+         notes: Take pics and collect electric darners and thuderwing butterflies
       - _Item<Fan>:
          coord: [1146.22, 872.28, -3347.13]
          comment: Fuse to T shaped board, Ride rail to get underneath shrine and ascend
@@ -6886,19 +6887,12 @@ _route:
       - _Chest::TunicofTwilight
       - _Lightroot::Kimimeg
 
-   - Rocket Reload 6:
-      - _Warp::Shrine::Rakashog<Warp to Rakashog Shrine>:
-         level: Sky
-      - _Item<Rockets>:
-         coord: [-1820.55, 1075.09, -2212.26]
-         comment: Fuse rockets to shields
-
    - Ancient Columns:
       - _Warp::Shrine::Ganos<Warp to Ganos Shrine>:
-         notes: We want to arive at the anceint columns at about 4 AM. If needed, do some lynel farming to kill time before warping here
+         notes: We want to arive at the anceint columns at about 4 AM. If needed, do some farming to pass time before warping here
       - _Item<Ancient Pillar Switch>:
          coord: [-3484.08, 397.83, 421.95]
-         notes: Take pic of sunrise
+         notes: Take pic of sunrise, clear sky required
       - _Cave::AncientColumns00
       - _Bubbulfrog::AncientColumnsCave
       - _SideQuest::MiskosTreasureofAwakeningII:
@@ -6907,6 +6901,7 @@ _route:
          comment: Ascend
       - _Location::AncientColumns:
          hide-icon-on-map: true
+         notes: Make morning if needed to get pic of sunrise with a clear sky
 
    - Gisa Crater:
       - _Korok::LB46::Trail:
@@ -6957,7 +6952,6 @@ _route:
          comment: Cut grass around the area to obtain wheat, frogs are just a bonus
       - _Npc::Ornest:
          comment: Complete the mini-game
-         notes: Be sure you have 1 empty weapon slot before talking to Ornest. Take pic of Feather Edge sword if he gives you one.  Remember to break the sword afterward
 
    - Ultra Ball Haul:
       - _Enemy::Talus::GR04
@@ -6993,8 +6987,10 @@ _route:
       - _Korok::LB60
       - _Special<Starting Block>:
          coord: [-2838.84, 157.52, -437.44]
+         comment: Drop flying machine near talus
       - _Korok::GH08
-      - _Enemy::Talus::GC03
+      - _Enemy::Talus::GC03:
+         comment: Flying machine should be nearby
       - _Korok::HF06
       - _Addison::A12
       - _Korok::LB61
@@ -7037,7 +7033,7 @@ _route:
          hide-icon-on-map: true
       - _Item<Dragonblood Tree x3>:
          coord: [-2272.5, 217.5, 844.41]
-         comment: Cut down for logs, Make noon
+         comment: Cut down for logs, Make noon if needed
       - _Cave::ThundraPlateau00:
          comment: Fuse 3 logs together and use them to cast a shadow across the entrance
 
@@ -7198,15 +7194,16 @@ _route:
          coord: [-1515.66, 347.54, 2839.6]
       - _Enemy<Boko x2>:
          coord: [-1570.04, 346.15, 2753.97]
-      - _Shrine::Orochium
+      - _Shrine<Activate Orochium Shrine>:
+         coord: [-1636.76, 358.28, 2641.82]
       - _SideAdv::ZeldasGoldenHorse:
          coord: [-1642.11, 339.2, 2575.8]
-
-   - The Captured Tent:
-      - _Npc::Varke:
-         comment: Take out Spot with harness
       - _Place::SnowfieldStable:
          hide-icon-on-map: true
+      - _Npc::Varke:
+         comment: Take out Spot with harness
+
+   - The Captured Tent:
       - _SideQuest::APictureforSnowfieldStable:
          coord: [-1651, 234, 2570]
       - _SideQuest::TheCapturedTent:
@@ -7250,7 +7247,7 @@ _route:
       - _Bubbulfrog::EastBironSnowshelfCave
       - _SideQuest::TheDuchessWhoDissapeared:
          coord: [-3669, 230, 3101]
-         comment: Ascend
+         comment: Ascend, flying machine should be nearby
       - _Korok::RP24
       - _Korok::RP22
       - _Cave::NorthBironSnowshelf00
@@ -7270,6 +7267,7 @@ _route:
 
    - Bring Peace to Hebra:
       - _Warp::Shrine::Orochium<Warp to Orochium Shrine>
+      - _Shrine::Orochium
       - _SideQuest<A Picture for Snowfield Stable>:
          coord: [-1651, 234, 2570]
       - _Well::SnowfieldStable
@@ -7302,9 +7300,10 @@ _route:
       - _Warp::Shrine::Rutafu-um<Warp to Rutafu-um Shrine>:
          comment: Ascend
       - _Location::SelmiesSpot:
-         comment: Complete all levels of the mini-game
+         comment: Make sure you have 1 empty shield slot before starting mini-game. Complete all levels of the mini-game
          notes: Take pics of shields
-      - _Cave::EastBironSnowshelf01
+      - _Cave::EastBironSnowshelf01:
+         comment: This cave entrance is discovered during the shield surfing mini-game
 
    - Gerudo Desert Gateway:
       - _Warp::Shrine::Turakamik<Warp to Turakamik Shrine>
@@ -7337,10 +7336,10 @@ _route:
       - _Enemy<Phantom Ganon>:
          coord: [-3212.65, 132.34, -2003.04]
       - _Korok::GH46
-      - _LockedChest::G08
-      - _Korok::GH48
       - _Korok::GH51
       - _Korok::GH50
+      - _LockedChest::G08
+      - _Korok::GH48
       - _Korok::GH45
 
    - Infiltrating the Yiga Clan Hideout:
@@ -7398,17 +7397,11 @@ _route:
          coord: [-3234.05, 507.01, -1432.04]
       - _Korok::GH32
 
-   - Rocket Reload 7:
-      - _Warp::Shrine::Rakashog<Warp to Rakashog Shrine>:
-         level: Sky
-      - _Item<Rockets>:
-         coord: [-1820.55, 1075.09, -2212.26]
-         comment: Fuse rockets to shields
-
    - Deya Village Ruins:
       - _Warp::Tower::PoplaFoothills<Warp to Popla Foothills Tower>
       - _Korok::PF22::Start
-      - _Korok::PF22::End
+      - _Korok::PF22::End:
+         comment: Drop flying machine near bottom of fallen tree after delivering korok
       - _Korok::PF23
       - _Chasm::HillsofBaumer
       - _Well::DeyaVillageRuinsSouth
@@ -7417,7 +7410,8 @@ _route:
          coord: [331.65, 174.86, -2161.67]
       - _Special<Starting Block>:
          coord: [350.49, 167.94, -2158.33]
-      - _Korok::PF21
+      - _Korok::PF21:
+         comment: Flying machine should be nearby
       - _Enemy::BokoBoss::G31
       - _Well::DeyaVillageRuinsEast
       - _Item<Fleet-Lotus Seeds>:
@@ -7461,9 +7455,9 @@ _route:
          coord: [535, 16, -1195]
          comment: Cook raw meat, rice, salt
       - _Korok::PF02
+      - _Npc::Penn_15
       - _Shrine<Activate Tajikats Shrine>:
          coord: [343.86, 135.7, -1009.03]
-      - _Npc::Penn_15
       - _Npc::Beedle_06
       - _Npc::Ember
       - _Place::RiversideStable:
@@ -7503,7 +7497,7 @@ _route:
       - _Special<Cook>:
          coord: [318.33, 115.3, -1098.92]
          comment: Speed food
-         notes: Make night
+         notes: Make night if needed
       - _Korok::PF14::Start
       - _Location::OwlanBridge
       - _Korok::PF06
@@ -7648,12 +7642,12 @@ _route:
       - _Korok::HF43::Start
       - _Enemy::BokoBoss::G28
       - _Korok::HF43::End
-      - _Shrine::Kamizun
-      - _Korok::HF45
-      - _Location::OutpostRuins
+      - _Chasm::ForestofTime
       - _Item<Rushrooms>:
          coord: [-173.4, 123.34, -1603.44]
-      - _Chasm::ForestofTime
+      - _Location::OutpostRuins
+      - _Korok::HF45
+      - _Shrine::Kamizun
 
    - Foothill Stable:
       - _Warp::Shrine::Kisinona<Warp to Kisinona Shrine>
@@ -7838,12 +7832,12 @@ _route:
          hide-icon-on-map: true
       - _SideQuest::APictureforSouthAkkalaStable:
          coord: [3146, 201, 1690]
-      - _SideAdv::TheAllCluckingCucco:
+      - _Npc::Penn_24:
          coord: [3163, 201, 1716]
       - _Well::SouthAkkalaStable
-      - _SideAdv<The All-Clucking Cucco>:
-         coord: [3227.84, 324.6, 1785.56]
       - _Korok::UM32
+      - _SideAdv::TheAllCluckingCucco:
+         coord: [3227.84, 324.6, 1785.56]
       - _Korok::UM26::Start
       - _Korok::UM26::End
       - _Korok::UM27
@@ -8188,12 +8182,6 @@ _route:
       - _Lightroot::Worihas
       - _Equipment::Weapon<Royal Claymore>:
          coord: [-3483.3, -746.48, 2624.82]
-      - _Equipment::Weapon<Royal Broadsword>:
-         coord: [-3354.23, -751.59, 2899.69]
-      - _Equipment::Weapon<Royal Halberd>:
-         coord: [-3139.57, -742.75, 2977.97]
-      - _Equipment::Weapon<Royal Claymore>:
-         coord: [-3170.66, -747.23, 2897.14]
       - _Enemy::Frox::DH03
       - _Equipment::Weapon<Royal Claymore>:
          coord: [-2952.72, -745.77, 2696.29]
@@ -8408,8 +8396,6 @@ _route:
       - _Chest::CapofTime
       - _Location::SturnidaLavafalls:
          hide-icon-on-map: true
-      - _Equipment::Weapon<Royal Broadsword>:
-         coord: [-4240.5, -528.01, 2834.62]
       - _Enemy::Frox::DH04
       - _Equipment::Weapon<Royal Claymore>:
          coord: [-4593.21, -559.72, 2782.28]
@@ -8425,6 +8411,8 @@ _route:
          coord: [-4411.87, -734.26, 3000.41]
       - _Equipment::Weapon<Royal Broadsword>:
          coord: [-4425.88, -698.5, 2920.01]
+      - _Equipment::Weapon<Royal Broadsword>:
+         coord: [-4240.5, -528.01, 2834.62]
       - _Equipment::Weapon<Royal Claymore>:
          coord: [-4260.77, -733.12, 2979.71]
       - _Equipment::Weapon<Royal Halberd>:
@@ -8444,9 +8432,9 @@ _route:
          coord: [-3823.82, -781.07, 3612.3]
       - _Location::HebraDarkSkeleton:
          hide-icon-on-map: true
-      - _Enemy::Hinox::DH01
       - _Equipment::Weapon<Royal Halberd>:
          coord: [-3678.53, -656.01, 3738.19]
+      - _Enemy::Hinox::DH01
       - _Equipment::Weapon<Royal Claymore>:
          coord: [-3646.84, -765.3, 3475.16]
       - _Lightroot::Muotue
@@ -8561,13 +8549,12 @@ _route:
       - _Bubbulfrog::LakeKilsieCave
       - _Chest::FrostbiteHeaddress
 
-   - Statue of the Eighth Heroine:
+   - Risoka Snowfield:
       - _Warp::Tower::GerudoHighlands<Warp to Gerudo Highlands Tower>:
          comment: Ascend
       - _Addison::A01
       - _Enemy::Hinox::GG01
       - _Enemy::Talus::GG01
-      - _Korok::GH24
       - _Shrine::Mayamats
       - _Korok::GH28
       - _LockedChest::G02
@@ -8576,10 +8563,13 @@ _route:
       - _Enemy<Blizzrobe>:
          coord: [-4571.51, 634.63, -1199.26]
          notes: Take pic
+      - _Korok::GH24
       - _Enemy::Lynel::G01
       - _Korok::GH13
       - _Korok::GH10::End
       - _Korok::GH06
+
+   - Statue of the Eighth Heroine:
       - _Chest<Mirros>:
          coord: [-4361.49, 575.92, -453.5]
          comment: Make noon if needed
@@ -8587,19 +8577,9 @@ _route:
       - _Location::StatueoftheEighthHeroine:
          hide-icon-on-map: true
       - _Cave::StatueoftheEighthHeroine00
-      - _Enemy<Gibdo>:
-         coord: [-4400.75, 571.32, -566.01]
-      - _Enemy<Gibdo>:
-         coord: [-4420.49, 560.94, -589.56]
-      - _Enemy<Gibdo x3>:
-         coord: [-4427.63, 558.63, -615.58]
-      - _Enemy<Gibdo x3>:
-         coord: [-4447.41, 560.32, -625.22]
       - _Chest::TinglesHood
       - _Bubbulfrog::StatueoftheEighthHeroineCave:
          comment: Ascend
-
-   - Tanagar Canyon:
       - _Shrine::Otutsum
       - _Chasm::GerudoSummit
       - _Korok::GH11
@@ -8617,6 +8597,8 @@ _route:
       - _Korok::GH05
       - _Special<Starting Block>:
          coord: [-3621.37, 344.82, -403.03]
+
+   - Tanagar Canyon:
       - _Korok::GH07
       - _Shrine::Turakawak
       - _Korok::GH04
@@ -8636,6 +8618,8 @@ _route:
 
    - Vah Naboris Helm:
       - _Warp::Shrine::Soryotanog<Warp to Soryotanog Shrine>
+      - _Shop::GeneralStore01:
+         comment: Buy wheat and rice
       - _Npc::Isha_01:
          comment: Get a new Sword of the Seven
       - _Enemy::Molduga::SG01
@@ -8732,8 +8716,6 @@ _route:
       - _Chest::WellWornHairBand:
          comment: Ascend
       - _Well::HatenoVillageSouth
-      - _SideQuest::MannysBeloved:
-         coord: [3373, 120, -2131]
       - _Npc::Sophie
       - _Shop::ArmorShop03
       - _SideAdv::TeamCeceorTeamReede
@@ -8741,18 +8723,20 @@ _route:
    - Help Symin Teach Some Brats:
       - _SideAdv::CecesSecret:
          coord: [3357, 120, -2139]
-      - _Npc::Ivee
-      - _Shop::GeneralStore07:
-         comment: Buy stuff
-         notes: Make noon
+      - _SideQuest::MannysBeloved:
+         coord: [3369, 120, -2132]
+      - _Special<Cook>:
+         coord: [3357.76, 215.82, -2095.69]
+         comment: Monster curry, make noon
+      - _Npc::Tamana_01:
+         comment: Give shroom
       - _Npc::Leop:
          coord: [3324, 150, -2152]
          comment: Give shroom
-      - _Npc::Tamana_01:
-         comment: Give shroom
-      - _Special<Cook>:
-         coord: [3357.76, 215.82, -2095.69]
-         comment: Monster curry
+      - _Npc::Ivee
+      - _Shop::GeneralStore07:
+         comment: Buy stuff
+      - _Npc::Manny
       - _Npc::Medda:
          comment: Give shroom
       - _Shop::HatenoSchool
@@ -8784,10 +8768,11 @@ _route:
       - _Item<CookSet>:
          coord: [3619.52, 282.05, -2112.88]
          comment: Make night
+      - _Npc::Dantz_01:
+         coord: [3640, 283.81, -2100]
+         comment: Give shroom
       - _Npc::Koyin_01:
          comment: Give shroom, Buy cheese
-      - _Npc::Dantz_01:
-         comment: Give shroom
       - _Well::HatenoVillageEast
       - _Shrine::Zanmik
       - _SideAdv::ReedesSecret:
@@ -8801,7 +8786,6 @@ _route:
       - _SideQuest::PhotographingaChuchu:
          coord: [3408, 121, -2150]
          notes: Give a reference pic for all fabrics
-      - _Npc::Manny
       - _Npc::Cece
       - _Npc::Sophie
       - _SideAdv::TheMayoralElection
@@ -8836,6 +8820,7 @@ _route:
 
    - Oakle's Navel:
       - _Cave::Oakle'sNavel00
+      - _Shrine::Tokiy::Start
       - _Bubbulfrog::Oakle'sNavelCave
       - _Shrine::Tokiy:
          comment: Ascend
@@ -9150,6 +9135,7 @@ _route:
    - Moor Garrison Ruins:
       - _Warp::Shrine::Jonsau<Warp to Jonsau Shrine>
       - _Addison::A49
+      - _Well::MoorGarrisonRuins
       - _Korok::SS15
       - _Cave::CrenelPeak01
       - _Bubbulfrog::CrenelPeakCave
@@ -9166,7 +9152,6 @@ _route:
       - _Korok::SS13::Start
       - _Korok::SS09
       - _Korok::SS12
-      - _Well::MoorGarrisonRuins
       - _Location::MoorGarrisonRuins:
          hide-icon-on-map: true
       - _Korok::SS13::End
