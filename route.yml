@@ -9276,11 +9276,11 @@ _route:
          coord: [453, 1540, -802]
       - _Warp::ROA<Warp to Room of Awakening>
       - _Korok::GSI16
-      - _Shop::CrystalRefinery:
-         notes: Skip if battery already fully upgraded
 
    - Surface Cleanup:
       - _Warp::Tower::LookoutLanding<Warp to Lookout Landing Tower>
+      - _Shop::CrystalRefinery01:
+         notes: Skip if battery already fully upgraded
       - _Well::LookoutLanding:
          comment: Enter the well
       - _SideQuest<Where Are the Wells>:
