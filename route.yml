@@ -550,7 +550,6 @@ _route:
       - _LockedChest::D49
 
    - Flying Machines:
-      - _SchemaStone::CentralMine
       - Ascend:
          movements:
             - to: [-808.44, -361.24, -1908.48]
@@ -683,6 +682,16 @@ _route:
          comment: Use 1 large zonai charge for long flight to next enemy
       - _Enemy::Talus::DC03
       - _Enemy::Frox::DC08
+      - _Poe::Normal:
+         coord: [316.75, -376.09, -809.89]
+      - _Poe::Normal:
+         coord: [302.95, -374.11, -775.15]
+      - _Poe::Normal:
+         coord: [268.12, -376.89, -671.82]
+      - _Poe::Normal:
+         coord: [288.57, -382.95, -665.91]
+      - _Poe::Normal:
+         coord: [470.34, -387.96, -764.53]
       - _Shop::BargainerStatue01
       - _Location::PlainsBargainerStatue:
          hide-icon-on-map: true
@@ -705,16 +714,14 @@ _route:
       - _Enemy::Frox::DC10
       - _Warp::Special<Warp to Central Mine>:
          coord: [-821.82, -417.75, -1940.61]
+      - _SchemaStone::CentralMine
       - _Shop::ForgeConstruct10:
          comment: Purchase crystallized charges
-      - _Poe::Grand:
-         coord: [-658, -410.28, -1794.7]
-         comment: Skip if not present
-      - _Poe::Grand:
-         coord: [-648.6, -412.91, -1784.9]
-         comment: Skip if not present
+      - _Warp::Lightroot::Nogukoyk<Warp to Nogukoyk Lightroot>
       - _Equipment::Weapon<Weapon Pillar>:
          coord: [-577.72, -339.73, -1498.67]
+      - _Poe::Normal:
+         coord: [-570.12, -368, -1460.82]
       - _Equipment::Bow<Duplex Bow>:
          coord: [-565.54, -367.44, -1403.5]
          comment: Break wooden crate for bow
@@ -881,13 +888,10 @@ _route:
       - _Cave::UplandZoranaMountainside00
       - _Bubbulfrog::UplandZoranaMountainsideCave
       - _Cave::UplandZoranaMountainside01
-      - _Chest<Opal>:
-         coord: [2818, 489.75, 554]
-         comment: Drop flying machine near tower
       - _Enemy<Chuchu>:
          coord: [2838.24, 483.63, 539.35]
-         comment: Break Zora longsword
-         notes: Take pic
+         comment: Drop flying machine near tower, Break Zora longsword
+         notes: Take pic of chuchu and chuchu jelly
       - _SideQuest::MiredinMuck:
          coord: [2840, 483.63, 590]
          comment: Fuse opal to Zora spear
@@ -903,10 +907,6 @@ _route:
       - _Place::ZorasDomain:
          coord: [3305, 239, 480]
          comment: Collect fleet-lotus seeds and crabs
-      - _Special<Cook>:
-         coord: [3303.9, 245.31, 496.23]
-         comment: Speed food, attack food, lynel horn elixir
-         notes: Take pic of torch
       - _Shop::GeneralStore17:
          comment: Buy rice and swift violet
          notes: Take pic of swift violet
@@ -1064,6 +1064,10 @@ _route:
          coord: [3310, 150, 488]
       - _SideQuest::TrueTreasure:
          coord: [3295, 140, 512]
+      - _Special<Cook>:
+         coord: [3303.9, 245.31, 496.23]
+         comment: Speed food, attack food, lynel horn elixir
+         notes: Take pic of torch
       - _SideQuest::ACrabulousDeal:
          coord: [3323, 139, 492]
       - _SideQuest::AWifeWaftedAway:
@@ -1277,6 +1281,8 @@ _route:
          notes: Take pic of mop
       - _SideQuest::APictureforNewSerenneStable:
          coord: [-1362.11, 191.53, 723.07]
+      - _Special<Cook speed food>:
+         coord: [-1363.33, 191.05, 741.21]
       - _Shrine<Activate Sinakawak shrine>:
          coord: [-1414.62, 191.14, 756.85]
       - _Enemy::Talus::GR03
@@ -1658,6 +1664,7 @@ _route:
 
    - Cucco Hideaway:
       - _Npc::Koko:
+         coord: [1825, 220, -1000]
          comment: Buy Garland, Fuse it to a Shield
       - _Special<Take Pic of Calamity Scene>:
          coord: [1773.18, 235.31, -981.2]
@@ -1875,9 +1882,9 @@ _route:
       - _Material<Naydra Claw 2/4>
 
    - Rabella Wetlands:
+      - _LockedChest::G37
       - _Korok::RW16
       - _Enemy::Hinox::GL05
-      - _LockedChest::G37
       - _Addison::A63
       - _Korok::RW09
       - _Chasm::MedaMountain
@@ -1998,17 +2005,18 @@ _route:
       - _Korok::UZS03:
          comment: Wing glide to next korok
 
-   - Fierce Deity Armor:
+   - Akkala Citadel Ruins:
       - _Korok::UM35
       - _Enemy<Phantom Ganon>:
          coord: [3332.34, 518.57, 1521.81]
       - _Location::AkkalaCitadelRuins:
          hide-icon-on-map: true
+
+   - Fierce Deity Armor:
       - _Cave::AkkalaCitadelRuinsSummit00
       - _Chest::FierceDeityArmor
-
-   - Ulri Mountain Tower:
       - _Bubbulfrog::AkkalaCitadelRuinsSummitCave:
+         coord: [3298, 500, 1465]
          comment: Ascend
       - _Shrine<Activate Domizuin Shrine>:
          coord: [3304.88, 538.2, 1442.98]
@@ -3678,8 +3686,6 @@ _route:
             - to: [450, -370, -1800]
             - to: [200, -370, -1830]
             - to: [236.8, -351.29, -2144.02]
-      - _Poe::Grand:
-         coord: [236.8, -351.29, -2144.02]
       - _YigaSchema::BeamSpinner
       - _LockedChest::D56:
          hide-icon-on-map: true
@@ -4015,8 +4021,6 @@ _route:
       - _Chest<Red Rupee>:
          coord: [-105.23, 132.87, 334.61]
       - _Location::CastleTownWatchtower
-
-   - Ren-iz Shrine:
       - _Addison::A37
       - _Location::MabePrairie:
          hide-icon-on-map: true
@@ -4159,6 +4163,8 @@ _route:
    - Korok Grove:
       - _Equipment::Weapon<Forest Dweller Spear>:
          coord: [801.27, -511.48, 1825.68]
+      - _Poe::Normal:
+         coord: [805.33, -518.42, 1992.56]
       - _Enemy<Phantom Ganon>:
          coord: [772.71, -518.61, 1993.55]
       - _Equipment::Weapon<Forest Dweller Spear>:
@@ -4765,6 +4771,8 @@ _route:
       - _Tablet::S09:
          level: Depths
          notes: Take pic
+      - _Poe::Normal:
+         coord: [-57.94, -515.06, 3018.36]
       - _Enemy::Frox::DE02
       - _Enemy::Talus::GT02
       - _Equipment::Weapon<Forest Dweller Sword>:
@@ -4819,6 +4827,8 @@ _route:
          hide-icon-on-map: true
       - _Enemy<Phantom Ganon>:
          coord: [1589.49, -445.69, 3734.69]
+      - _Poe::Normal:
+         coord: [1650.29, -448.39, 3757.01]
       - _Chest::TrousersoftheWild
 
    - Lynel Run 6:
