@@ -15,6 +15,7 @@ Standard hundo speedrun (glitchless, no amiibo) plus:
 * All static spawn Phantom Ganons (the 2 in castle town, the 1 on Mekar island, and the 1 near Susuyai shrine are not static)
 * Buy from all Beedles
 * Read all Zora stone monuments
+* Interact with all goddess statues
 * Capture All compendium pics yourself (no pic purchases)
 * Get a diamond from Hino (by rescuing him from all locations)
 * Attend both Ashai classes in Gerudo town (get a smiling face in the adult class)
