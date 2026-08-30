@@ -16,13 +16,14 @@ _project:
       - All lynels
       - All armor
       - All armor set abilities unlocked
+      - Buy from all Beedles
       - Read all Zora stone monuments
       - Capture All compendium pics yourself (no pic purchases)
       - Get a diamond from Hino (by rescuing him from all locations)
       - Attend both Ashai classes (get a smiling face in the adult class)
       - All static spawn Phantom Ganons (the 2 in castle town, the 1 on Mekar island, and the 1 near Susuyai shrine are not static)
       - Dog treasures are intentionally excluded
-      - Micro-management of weapons, health, armor, how to defeat enemies, etc is not detailed in this route doc. Dragon farming is highly time sensitive, but there are more dragon farming encounters than are strictly necessary so you can skip some if you don't make it to them in time. Just don't skip any star fragment farming (which is typically routed to happen in tandem with dragon farming)
+      - Micro-management of weapons, health, armor, how to defeat enemies, etc is not detailed in this route doc. Dragon farming is highly time sensitive.  There are lynel and rocket shield farming segments, some of which can be skipped or done out of order to help ensure you arrive at dragons at the correct time.
    version: 1.1.0
    progress: [
       "Tower", "Shrine", "Lightroot", "Korok",
@@ -3249,6 +3250,7 @@ _route:
          comment: Stand in empty voe spot wearing voe garb, Ascend
       - _Item<Gibdo Parts>:
          coord: [-3851.66, 149.18, -2989.89]
+         notes: Take pic of Patricia
       - _Shop::GeneralStore01:
          comment: Buy wheat and rice
       - _SideQuest::PrideoftheGerudo:
@@ -3286,6 +3288,7 @@ _route:
       - _Item<Orb>:
          coord: [-3800.5, 164.5, -2970.5]
          comment: Under sand pile above kitchen
+         notes: Take pic of sand sparrow
       - _Item<Orb>:
          comment: In cubby above beds
          movements:
@@ -3295,7 +3298,7 @@ _route:
       - _Item<Orb>:
          coord: [-3903.8, 136.08, -2914.92]
          comment: In lounge area
-      - _Item<Monument to Seven Heroines>:
+      - _Special<Monument to Seven Heroines>:
          coord: [-3885, 139.95, -2925]
          comment: Ascend into prison from underneath
          notes: Take pic
