@@ -4695,7 +4695,8 @@ _route:
       - _Addison::A33
       - _Cave::GreatPlateauFoothill00
       - _Bubbulfrog::GreatPlateauFoothillCave
-      - _Shrine::Kyokugon
+      - _Shrine::Kyokugon:
+         notes: Do some farming before warping to next segment if Light Dragon is still west of Mayam shrine
 
    - Light Dragon Farming 5:
       - _Warp::Shrine::Mayam<Warp to Mayam Shrine>:
@@ -4752,7 +4753,8 @@ _route:
       - _Shrine::Minetak:
          comment: Ascend
       - _Korok::TR03::Start
-      - _Korok::TR03::End
+      - _Korok::TR03::End:
+         notes: Do some farming before warping to next segment if Dinraal is still far away from Thypio tower
 
    - Star Fragment Farming:
       - _Warp::Shrine::Mayam<Warp to Mayam Shrine>:
@@ -5387,18 +5389,9 @@ _route:
       - _Bubbulfrog::RobredDropoffCave
       - _Chest::BarbarianHelm
 
-   - Light Dragon Farming 9:
-      - _Warp::Tower::UlriMountain<Warp to Ulri Mountain Tower>:
-         comment: Make night
-         notes: If light dragon is not close to this tower choose a closer warp point, or skip
-      - _Material<Star Fragment 33/36>
-      - _Material<Light Dragon Horn>
-
    - Walnot Mountain:
       - _Warp::Tower::MountLanayru<Warp to Mount Lanayru Tower>
       - _Korok::ML06
-      - _Material<Naydra Horn>:
-         comment: Skip if Naydra is not nearby
       - _Korok::ML05
       - _Enemy::BokoBoss::G57
       - _Korok::ML04
@@ -5412,7 +5405,7 @@ _route:
       - _Korok::ML20
       - _Shrine::Jikais
 
-   - Hateno Tech Lab:
+   - Hateno Pasture:
       - _Cave::WalnotMountain01
       - _Enemy::BokoBoss::G67
       - _Bubbulfrog::WalnotMountainCave
@@ -5444,6 +5437,11 @@ _route:
          comment: Ascend
       - _Cave::RetsamForest00:
          comment: Ascend
+      - _Material<Naydra Horn>:
+         comment: Skip if Naydra is not nearby
+
+   - Hateno Tech Lab:
+      - _Korok::ML29
       - _TechLab::Hateno
       - _SideAdv::PresentingTheTravelMedallion
       - _SideAdv::PresentingHerosPathMode
@@ -5456,11 +5454,11 @@ _route:
          notes: Take pic
 
    - Kitano Bay:
-      - _Korok::ML29
-      - _Korok::ML33
       - _Korok::ML42::Start
-      - _Korok::ML45:
-         comment: Place travel medallion
+      - _Korok::ML33
+      - _Special<Place Travel Medallion>:
+         coord: [3745, 126.55, -2630]
+      - _Korok::ML45
       - _Korok::ML41
       - _Tablet::S07:
          notes: Take pic
@@ -5492,16 +5490,25 @@ _route:
          coord: [4515.1, 106.79, -2310.12]
          comment: Make night
 
+   - Farosh Farming 10:
+      - _Warp::Shrine::Rakashog<Warp to Rakashog Shrine>:
+         comment: Make night
+         level: Sky
+      - _Item<Rockets>:
+         coord: [-1820.55, 1075.09, -2212.26]
+         comment: Fuse rockets to shields
+      - _Material<Star Fragment 33/36>
+      - _Material<Farosh Horn>
+
    - Dinraaal Farming 11:
-      - _Warp::Shrine::Mogisari<Warp to Mogisari Shrine>:
+      - _Warp::Shrine::Gikaku<Warp to Gikaku Shrine>:
          level: Sky
       - _Material<Star Fragment 34/36>
       - _Material<Dinraal Horn>
 
    - Light Dragon Farming 10:
-      - _Warp::Shrine::Kumamayn<Warp to Kumamayn Shrine>:
+      - _Warp::Tower::MountLanayru<Warp to Mount Lanayru Tower>:
          comment: Make night
-         level: Sky
       - _Material<Star Fragment 35/36>
       - _Material<Light Dragon Horn>
 
@@ -5666,9 +5673,8 @@ _route:
          coord: [-1795, 152.04, -3438.35]
 
    - A Way to Trade:
-      - _Warp::TechLab::Hateno<Warp to Hateno Tech Lab>
-      - _Material<Naydra Horn>:
-         comment: Warp to travel medallion in Kitano Bay if Naydra is not nearby
+      - _Warp::Special<Warp to Travel Medallion South of Hateno Tech Lab>:
+         coord: [3745, 126.55, -2630]
       - _Korok::ML46
       - _Korok::ML47
       - _Item<Boat>:
@@ -5690,7 +5696,7 @@ _route:
    - Tuft Mountain Perimeter:
       - _Item<Campfire>:
          coord: [2976, 1, -3690]
-         comment: Make night, Build flying machine
+         comment: Make night until all upcoming weather is sunny, Build flying machine
       - _Korok::RW42::Start
       - _Korok::RW42::End
       - _Enemy::BokoBoss::G48
@@ -5874,13 +5880,7 @@ _route:
       - _Location::SarjonBridge
       - _Korok::PF55
       - _Korok::PF65
-      - _Shrine<Activate Utsushok Shrine>:
-         coord: [670, 184.03, -3358.39]
-
-   - Farosh Farming N:
-      - _Warp::Tower::PoplaFoothills<Warp to Popla Foothills Tower>
-      - _Item<Farosh Horn>
-      - _Korok::HF69
+      - _Shrine::Utsushok
 
    - Rocket Reload 4:
       - _Warp::Shrine::Rakashog<Warp to Rakashog Shrine>:
@@ -5971,7 +5971,6 @@ _route:
 
    - Pyper:
       - _Warp::Shrine::Utsushok<Warp to Utsushok Shrine>
-      - _Shrine::Utsushok
       - _SideAdv::TheFlutePlayersPlan:
          coord: [527.76, 153.69, -3398.91]
       - _Well::HighlandStable
@@ -6607,7 +6606,7 @@ _route:
       - _Special<Starting Block>:
          coord: [-2479.18, 327.36, -509.34]
       - _Korok::HF08
-      - _Special<Place Travel Medalion>:
+      - _Special<Place Travel Medallion>:
          coord: [-2445, 306, -615]
 
    - Honeyvore Bear Pic:
@@ -7446,6 +7445,7 @@ _route:
    - Riverside Stable:
       - _Korok::PF20
       - _Korok::PF19
+      - _Korok::HF69
       - _Korok::HF59::Trail
       - _Korok::HF53
       - _Korok::PF12::Start
@@ -8204,7 +8204,7 @@ _route:
       - _Enemy::Hinox::DH02
 
    - Birida Lookout Chasm:
-      - _Warp::Special<Warp to medalion>:
+      - _Warp::Special<Warp to medallion>:
          coord: [-3572, 361, -1853]
       - _Chasm::BiridaLookout
 
