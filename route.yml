@@ -6467,14 +6467,16 @@ _route:
       - _Shrine::Suariwak
 
    - Dalite Forest:
-      - _Warp::Tower::GerudoCanyon<Warp to Gerudo Canyon Tower>
-      - _Material<Light Dragon Horn>:
-         comment: Skip if Light Dragon is not nearby
+      - Ascend:
+         comment: Build flying machine
+         movements:
+            - to: [-2512, 250, -1770]
+      - _Cave::TaafeiHill00
+      - _Korok::GH42
       - _Korok::GH43
       - _Tear::G04
       - _LockedChest::G06
       - _Korok::GH35
-      - _Korok::GH42
       - _Korok::GH36
       - _Korok::GH39
       - _Korok::GH34
