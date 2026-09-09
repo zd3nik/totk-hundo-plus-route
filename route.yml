@@ -6314,7 +6314,7 @@ _route:
       - _Lightroot::Gonatoyrim
 
    - Yiga Exam:
-      - _Warp::Tower::GerudoCanyon<Warp to Gerudo Canyon>
+      - _Warp::Tower::GerudoCanyon<Warp to Gerudo Canyon Tower>
       - _Special<Cook>:
          coord: [-2431.27, 407.04, -2195.22]
          comment: Speed food
@@ -6630,22 +6630,11 @@ _route:
       - _Cave::SatoriMountainFoothill00
       - _Shrine::Usazum
 
-   - Lynel Run 7:
-      - _Warp::Lightroot::Ui-ihcoj<Warp to Ui-ihcoj Lightroot>
-      - _Enemy::Lynel<x1>:
-         coord: [4212.09, -467.54, 2721.1]
-      - _Warp::Lightroot::U-u-ujoj<Warp to U-u-ujoj Lightroot>
-      - _Enemy::Lynel<x1>:
-         coord: [1584.7, -407.09, -3496.46]
-      - _Warp::Lightroot::Kimakarut<Warp to Kimakarut Lightroot>
-      - _Enemy::Lynel<x1>:
-         coord: [-2798.87, -376.93, -2238.38]
-
    - Rocket Reload 5:
-      - _Warp::Shrine::Rakashog<Warp to Rakashog Shrine>:
+      - _Warp::Shrine::Ukoojisi<Warp to Ukoojisi Shrine>:
          level: Sky
       - _Item<Rockets>:
-         coord: [-1820.55, 1075.09, -2212.26]
+         coord: [1477.13, 628.59, -2008.65]
          comment: Fuse rockets to shields
 
    - Lanayru Heights:
@@ -6657,8 +6646,8 @@ _route:
          coord: [3271.93, 267.48, -1258.93]
       - _Location::LanayruRoadEastGate
       - _Cave::LanayruRoadEast00
-      - _Korok::SS34
       - _Enemy::BokoBoss::G43
+      - _Korok::SS34
       - _Enemy::Lynel::G12
       - _Korok::SS37
       - _Korok::SS46
@@ -7561,7 +7550,7 @@ _route:
          coord: [1050, 9, -1148]
          comment: Complete the mini-game
 
-   - Lynel Run 8:
+   - Lynel Run 7:
       - Skip all or part of this segment if you are good on arrows and weapons
       - _Warp::Lightroot::Ui-ihcoj<Warp to Ui-ihcoj Lightroot>
       - _Enemy::Lynel<x1>:
