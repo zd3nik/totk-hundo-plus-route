@@ -5769,13 +5769,16 @@ _route:
          comment: Ascend
       - Drop Flying Machine on North Side of Riola Spring:
          movements:
-            - to: [1760, 380, -2890]
+            - to: [1870, 380, -2948]
       - _Cave::RodaiLakefrontTunnel00
 
    - Second Hinox Brother:
       - _Bubbulfrog::RodaiLakefrontTunnel
       - _Enemy::Hinox::GF06:
-         comment: Ascend
+         comment: Ascend, Flying machine should be nearby
+      - Drop Flying Machine on North Side of Riola Spring:
+         movements:
+            - to: [1760, 380, -2890]
       - _Korok::PF45
       - _Item<Swift Violet>:
          coord: [1811.12, 218.72, -3035.21]
@@ -6010,17 +6013,14 @@ _route:
       - _Korok::PF63
       - _Korok::PF62::Start
       - _Korok::PF66
-      - _Korok::PF62::End:
-         notes: Do a lynel run to kill time if Light Dragon is not close to Jinodok Shrine
+      - _Korok::PF62::End
 
    - Strade's Test of Strength:
-      - _Warp::Shrine::Jinodok<Warp to Jinodok Shrine>:
-         level: Sky
-      - _Material<Light Dragon Horn>
-
-   - The Great Plateau:
+      - _Warp::Shrine::Jinodok<Warp to Jinodok Shrine>
       - _Npc::Strade:
          comment: Complete the mini-game
+
+   - The Great Plateau:
       - _Shrine::Riogok
       - _Location::GreatPlateau:
          hide-icon-on-map: true
@@ -6201,8 +6201,7 @@ _route:
       - _Enemy::BokoBoss::D18
       - _Equipment::Weapon<Gerudo Claymore>:
          coord: [-871.34, -422.55, -3123.1]
-      - _Enemy::BokoBoss::D17:
-         comment: Farosh should be nearby. If not, kill time with a lynel run before warping to Motsusis Shrine
+      - _Enemy::BokoBoss::D17
 
    - South Lomei Depths Labyrinth:
       - _Warp::Shrine::Motsusis<Warp to Motsusis Shrine>:
@@ -6213,6 +6212,8 @@ _route:
          coord: [-1765.5, -417.53, -3462.5]
       - _Chest::EvilSpiritMask
       - _Lightroot::Sisustom
+      - _Equipment::Weapon<Gerudo Claymore>:
+         coord: [-1687.64, -417.2, -3402.36]
       - _Location::SouthLomeiDepthsLabyrinth:
          hide-icon-on-map: true
       - _Material<Farosh Horn>
@@ -6266,6 +6267,8 @@ _route:
          hide-icon-on-map: true
       - _LockedChest::D19:
          hide-icon-on-map: true
+      - _Equipment::Weapon<Gerudo Spear>:
+         coord: [-3528.18, -363.82, -3813.66]
       - _Enemy::Hinox::DG03
       - _Lightroot::Gataharak
       - _Equipment::Weapon<Gerudo Spear>:
@@ -6278,7 +6281,6 @@ _route:
          coord: [-4205.46, -363.61, -3597.88]
       - _Chest<Large Crystallized Charge>:
          coord: [-4102.58, -358.71, -3738.94]
-         comment: Drop flying machine next to lightroot
       - _Location::GerudoUndergroundCemetery:
          hide-icon-on-map: true
       - _Poe::Large:
