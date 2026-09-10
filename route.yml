@@ -6882,7 +6882,8 @@ _route:
          coord: [3960.17, -399.79, 1543.06]
       - _Poe::Large:
          coord: [3957.23, -399.38, 1549.24]
-      - _Shop::ForgeConstruct06
+      - _Shop::ForgeConstruct06:
+         comment: Buy crystallized charges
       - _SchemaStone::TarreyMine
       - _Chest<Large Crystallized Charge>:
          coord: [4022.55, -476.45, 1520.35]
@@ -6894,11 +6895,9 @@ _route:
       - _Lightroot::Kimimeg
 
    - Ancient Columns:
-      - _Warp::Shrine::Ganos<Warp to Ganos Shrine>:
-         notes: We want to arive at the anceint columns at about 4 AM. If needed, do some farming to pass time before warping here
+      - _Warp::Shrine::Ganos<Warp to Ganos Shrine>
       - _Item<Ancient Pillar Switch>:
          coord: [-3484.08, 397.83, 421.95]
-         notes: Take pic of sunrise, clear sky required
       - _Cave::AncientColumns00
       - _Bubbulfrog::AncientColumnsCave
       - _SideQuest::MiskosTreasureofAwakeningII:
@@ -6907,12 +6906,11 @@ _route:
          comment: Ascend
       - _Location::AncientColumns:
          hide-icon-on-map: true
-         notes: Make morning if needed to get pic of sunrise with a clear sky
+         notes: Make morning with clear sky, if needed. Take pic of sunrise with columns in foreground
 
    - Gisa Crater:
-      - _Korok::LB46::Trail:
-         comment: Kill gleeok in the middle of flower trail
       - _Enemy::Gleeok::G05
+      - _Korok::LB46::Trail
       - _Special<Starting Block>:
          coord: [-3966.26, 293.96, 625.12]
       - _Korok::LB32
@@ -7039,9 +7037,9 @@ _route:
          hide-icon-on-map: true
       - _Item<Dragonblood Tree x3>:
          coord: [-2272.5, 217.5, 844.41]
-         comment: Cut down for logs, Make noon if needed
+         comment: Fuse 3 logs together in series, Make noon with clear sky
       - _Cave::ThundraPlateau00:
-         comment: Fuse 3 logs together and use them to cast a shadow across the entrance
+         comment: Use fused logs to cast shadow across cave entrance
 
    - Hyrule Ridge Chasm:
       - _Chest::MaskofAwakening
@@ -7152,15 +7150,7 @@ _route:
       - _Equipment::Weapon<Forest Dweller Sword>:
          coord: [-1219.29, -440.53, 2233.22]
       - _Poe::Large:
-         coord: [-1253.9, -382.84, 2303.1]
-      - _Poe::Normal:
-         coord: [-1265.62, -383.77, 2303.31]
-      - _Poe::Large:
          coord: [-1264.11, -383.37, 2320.73]
-      - _Poe::Large:
-         coord: [-1260.3, -382.78, 2320.68]
-      - _Poe::Large:
-         coord: [-1249.68, -383.16, 2319.43]
       - _Lightroot::Yisuayam
       - _Shop::BargainerStatue02
       - _Location::CliffBargainerStatue:
@@ -7173,11 +7163,12 @@ _route:
          coord: [-566.91, -698.31, 2569.73]
       - _Location::DrenaCanyonMine:
          hide-icon-on-map: true
+         notes: Warp to forge construct(s) to buy enough crystallized charges to complete battery belt, plus some extra to buy hover stones
 
    - Get More Hover Stones:
       - _Warp::Shrine::Nachoyah<Warp to Nachoyah Shrine>
       - _Shop::CrystalRefinery:
-         comment: Buy hover stones if have enough crystallized charges. Otherwise warp to Igoshon Shrine and get hover stones from the dispenser there
+         comment: Fully upgrade battery belt, Buy hover stones
 
    - Mother Statue:
       - _Warp::Shrine::Mayausiy<Warp to Mayausiy Shrine>:
@@ -7549,18 +7540,6 @@ _route:
       - _Special<Annoying Plushy Lady>:
          coord: [1050, 9, -1148]
          comment: Complete the mini-game
-
-   - Lynel Run 7:
-      - Skip all or part of this segment if you are good on arrows and weapons
-      - _Warp::Lightroot::Ui-ihcoj<Warp to Ui-ihcoj Lightroot>
-      - _Enemy::Lynel<x1>:
-         coord: [4212.09, -467.54, 2721.1]
-      - _Warp::Lightroot::U-u-ujoj<Warp to U-u-ujoj Lightroot>
-      - _Enemy::Lynel<x1>:
-         coord: [1584.7, -407.09, -3496.46]
-      - _Warp::Lightroot::Kimakarut<Warp to Kimakarut Lightroot>
-      - _Enemy::Lynel<x1>:
-         coord: [-2798.87, -376.93, -2238.38]
 
    - Dueling Peaks Rocket Reload:
       - _Warp::Shrine::Ukoojisi<Warp to Ukoojisi Shrine>:
@@ -9286,8 +9265,6 @@ _route:
 
    - Surface Cleanup:
       - _Warp::Tower::LookoutLanding<Warp to Lookout Landing Tower>
-      - _Shop::CrystalRefinery01:
-         notes: Skip if battery already fully upgraded
       - _Well::LookoutLanding:
          comment: Enter the well
       - _SideQuest<Where Are the Wells>:
@@ -9308,16 +9285,16 @@ _route:
       - _Npc::Hestu_02:
          comment: Fully expand all inventories, Trade remaining korok poop for Hestu poop
       - _Warp::Shrine::Serutabomac<Warp to Serutabomac Shrine>
+      - _Chasm::HyruleCastle
 
    - Destroy Ganondorf:
-      - _Chasm::HyruleCastle
       - _Lightroot::Camobatures
       - _Enemy::Lynel::D09
       - _Enemy::BokoBoss::D15
       - _MainQuest<Destroy Ganondorf>:
          notes: TAKE PICS!!!
 
-   - The Stuff that Makes it All Not Worth it:
+   - Armor Upgrades and Recipes:
       - Reload From Autosave
       - _Warp::TechLab::Hateno
       - _SideAdv::FillingouttheCompendium:
