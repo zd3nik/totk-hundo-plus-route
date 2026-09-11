@@ -7267,9 +7267,11 @@ _route:
       - _Shrine::Orochium
       - _SideQuest<A Picture for Snowfield Stable>:
          coord: [-1651, 234, 2570]
-      - _Well::SnowfieldStable
+      - _Npc::Beedle_02:
+         coord: [-1661, 234, 2576]
       - _SideQuest::WhoFindstheHaven:
          coord: [-1662, 233, 2542]
+      - _Well::SnowfieldStable
       - _Korok::PS17
       - _Korok::PS19
       - _Npc::Canolo
@@ -7316,7 +7318,7 @@ _route:
          coord: [-2817, 29, -2235]
       - _Well::GerudoCanyon:
          comment: Kill everything in the well
-      - _Korok::GH54
+      - _Korok::GH54::Trail
       - _Location::GerudoDesertGateway
       - _Korok::GC22::Start
       - _Shop::SandSealRentalShop02:
