@@ -8814,6 +8814,12 @@ _route:
          comment: Ascend
       - _Korok::RW07
 
+   - Buy Hover Stones:
+      - _Warp::Shrine::Nachoyah<Warp to Nachoyah Shrine>
+      - _Shop::CrystalRefinery:
+         comment: Buy hover stones
+      - _Korok::GSI16
+
    - Horon Lagoon:
       - _Warp::Shrine::Apogek<Warp to Apogek Shrine>
       - _Shrine::Apogek
@@ -9262,8 +9268,6 @@ _route:
             - to: [460, 1572, -758]
       - _SideAdv::LegendoftheGreatSkyIsland:
          coord: [453, 1540, -802]
-      - _Warp::ROA<Warp to Room of Awakening>
-      - _Korok::GSI16
 
    - Surface Cleanup:
       - _Warp::Tower::LookoutLanding<Warp to Lookout Landing Tower>
