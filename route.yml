@@ -8435,7 +8435,7 @@ _route:
          hide-icon-on-map: true
       - _LockedChest::D07:
          hide-icon-on-map: true
-      - _Equipment::Weapon<Royal CLaymore>:
+      - _Equipment::Weapon<Royal Claymore>:
          coord: [-3144.62, -845.97, 3164.03]
       - _Lightroot::Mu-ufatur
       - _Equipment::Weapon<Royal Broadsword>:
