@@ -8020,6 +8020,12 @@ _route:
          comment: Should be in the lake
       - _LockedChest::G03
       - _Korok::RP44
+      - _SideQuest<The Rito Rope Bridge>:
+         coord: [-3296.8, 227.18, 1807.36]
+         comment: Give Karson wood
+      - _SideAdv<Potential Princess Sightings>:
+         coord: [-3255.8406, 256.60178, 1757.5853]
+         comment: Get last piece of Froggy armor
       - _Korok::RP43
       - _Item<Voltfin Trout>:
          coord: [-3058.83, 218, 2283.27]
@@ -8610,6 +8616,8 @@ _route:
          comment: Buy wheat and rice
       - _Npc::Isha_01:
          comment: Get a new Sword of the Seven
+      - _Shop::JewelryShop:
+         notes: Buy all the jewelry
       - _Enemy::Molduga::SG01
       - _Korok::GC24
       - _Shrine::Kudanisar
@@ -9277,19 +9285,23 @@ _route:
          coord: [-212.68, 124.64, 131.08]
       - _Item<Cookset>:
          coord: [-269.4, 113.5, 101.9]
-         comment: Make night
+         comment: Cook speed food. Make night
       - _Npc::Gralens:
-         comment: Collect all the medals
+         comment: Collect all the medals, Ascend
+      - _Shop::GeneralStore:
+         comment: Buy cooking ingredients
       - _Shop<Koltin>:
          coord: [-324, 23, -162]
          comment: Trade in all bubbulfrog hearts
       - _Warp::Special<Warp to Travel Medallion at Tarrey Town>:
          coord: [3962, 233, 1635]
       - _Npc::Kilton_01:
-         comment: Tell Kilton about Koltin, Receive Fabric
+         comment: Tell Kilton about Koltin
       - _Warp::Shrine::Musanokir<Warp to Musanokir Shrine>
       - _Npc::Hestu_02:
          comment: Fully expand all inventories, Trade remaining korok poop for Hestu poop
+      - _Shop::GeneralStore10:
+         comment: Buy cooking ingredients
       - _Warp::Shrine::Serutabomac<Warp to Serutabomac Shrine>
       - _Chasm::HyruleCastle
 
