@@ -7,7 +7,7 @@ Standard hundo speedrun (glitchless, no amiibo) plus:
 * All GSI chests & constructs
 * All old maps
 * All locked chests
-* All mini-games
+* All mini-games (All levels)
 * All boss bokos
 * All lynels
 * All armor

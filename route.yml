@@ -6,25 +6,25 @@ _project:
    name: Glitchless No Amiibo TOTK Hundo+ (Turkey Leg Route)
    description:
       - Standard TOTK hundo (glitchless, no amiibo) plus
+      - Clear all ??? from all device dispensers
       - All chests within shrines (chest icon must appear next to shrine on map)
       - All GSI chests & constructs
-      - Clear all ??? from all device dispensers
       - All old maps
       - All locked chests
-      - All mini-games
+      - All mini-games (All levels)
       - All boss bokos
       - All lynels
       - All armor
       - All armor set abilities unlocked
+      - All static spawn Phantom Ganons (the 2 in castle town, the 1 on Mekar island, and the 1 near Susuyai shrine are not static)
       - Buy from all Beedles
       - Read all Zora stone monuments
       - Interact with all goddess statues
       - Capture All compendium pics yourself (no pic purchases)
       - Get a diamond from Hino (by rescuing him from all locations)
       - Attend both Ashai classes (get a smiling face in the adult class)
-      - All static spawn Phantom Ganons (the 2 in castle town, the 1 on Mekar island, and the 1 near Susuyai shrine are not static)
       - Dog treasures are intentionally excluded
-      - Micro-management of weapons, health, armor, how to defeat enemies, etc is not detailed in this route doc. Dragon farming is highly time sensitive.  There are lynel and rocket shield farming segments, some of which can be skipped or done out of order to help ensure you arrive at dragons at the correct time.
+      - Micro-management of weapons, health, armor, how to defeat enemies, etc is not detailed in this route doc. Dragon farming is highly time sensitive. There are lynel and rocket shield farming segments, some of which can be skipped or done out of order to help ensure you arrive at dragons at the correct time.
    version: 1.1.0
    progress: [
       "Tower", "Shrine", "Lightroot", "Korok",
@@ -48,6 +48,8 @@ _route:
       - _Special::StartPos Sky:
          line-color: dodgerblue
          notes: Collect all the things along the route
+      - _Special<Terminal>:
+         coord: [376.51, 2386.35, -1751.88]
       - _Chest::ArchaicLegwear
       - _Location::GreatSkyIsland:
          hide-icon-on-map: true
