@@ -48,8 +48,6 @@ _route:
       - _Special::StartPos Sky:
          line-color: dodgerblue
          notes: Collect all the things along the route
-      - _Special<Terminal>:
-         coord: [376.51, 2386.35, -1751.88]
       - _Chest::ArchaicLegwear
       - _Location::GreatSkyIsland:
          hide-icon-on-map: true
@@ -909,8 +907,9 @@ _route:
 
    - We Need at Least 10 Bright-Eyed Crabs:
       - _Place::ZorasDomain:
-         coord: [3305, 239, 480]
-         comment: Collect fleet-lotus seeds and crabs
+         hide-icon-on-map: true
+      - _Item<Fleet-Lotus Seeds and Crabs>:
+         coord: [3314.55, 239.92, 512.59]
       - _Shop::GeneralStore17:
          comment: Buy rice and swift violet
          notes: Take pic of swift violet
@@ -925,7 +924,6 @@ _route:
       - _Enemy::Hinox::GZ02
       - _Special<Pic of moonlit princess>:
          coord: [3758.86, 654.62, 417.38]
-         comment: Traverse stairs to collect crabs and frogs
       - _Korok::UZ22::Start
       - _Korok::UZ22::End
       - _MainQuest::SidonoftheZora:
@@ -987,7 +985,7 @@ _route:
       - _Shrine<Activate Igoshon shrine>:
          coord: [3480.71, 1444.63, 665.88]
       - _Dispenser::S08:
-         comment: Get 15+ hoverstones
+         comment: Get 20+ hoverstones
       - _Enemy::FluxConstruct::SL01
       - _SagesWill::WellspringIsland<Sage's Will>
 
@@ -1021,6 +1019,8 @@ _route:
          coord: [3444.95, 1896.9, 882.51]
 
    - Third Valve:
+      - _Chest<Arrows>:
+         coord: [3441.74, 1880.84, 819.23]
       - _Enemy<Construct>:
          coord: [3372.52, 1848.1, 730.18]
          notes: Take pic
@@ -1066,14 +1066,17 @@ _route:
          comment: Break Zora sword
       - _SideQuest::ATokenofFriendship:
          coord: [3310, 150, 488]
-      - _SideQuest::TrueTreasure:
-         coord: [3295, 140, 512]
+
+   - A Wife Wafted Away:
       - _Special<Cook>:
          coord: [3303.9, 245.31, 496.23]
-         comment: Speed food, attack food, lynel horn elixir
+         comment: Speed food, attack food, money food
          notes: Take pic of torch
-      - _SideQuest::ACrabulousDeal:
-         coord: [3323, 139, 492]
+      - _SideQuest::TrueTreasure:
+         coord: [3295, 140, 512]
+      - _Shop::GeneralStore17:
+         notes: Take pics of fish
+         comment: Buy rice and swift violet
       - _SideQuest::AWifeWaftedAway:
          coord: [3290, 139, 441]
       - _Location::GreatZoraBridge
@@ -4675,9 +4678,10 @@ _route:
          coord: [3105.06, 278.17, 461.8]
       - _Korok::UZ29
       - _GoddessStatue::ZorasDomain
-      - _Shop<Buy Stuff>:
-         coord: [3322.85, 245.46, 490.74]
-         notes: Take pics of fish
+      - _Shop::GeneralStore17:
+         comment: Buy rice and swift violet
+      - _SideQuest::ACrabulousDeal:
+         coord: [3323, 139, 492]
       - _SideQuest::GloryoftheZora:
          coord: [3336.38, 245.86, 489.25]
       - _SideQuest<A Wife Wafted Away>:
