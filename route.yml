@@ -1138,8 +1138,6 @@ _route:
       - _Enemy::Lynel<x1>:
          coord: [-2798.87, -376.93, -2238.38]
       - _Warp::Lightroot::Mu-ustust<Warp to Mu-ustust Lightroot>
-      - _Enemy::Lynel<x1>:
-         coord: [-1438.63, -379.5, -1261.72]
       - _Enemy::Lynel<x5>:
          coord: [-1151.85, -393.54, -1263.46]
 
@@ -2303,8 +2301,6 @@ _route:
       - _Enemy::Lynel<x1>:
          coord: [-2798.87, -376.93, -2238.38]
       - _Warp::Lightroot::Mu-ustust<Warp to Mu-ustust Lightroot>
-      - _Enemy::Lynel<x1>:
-         coord: [-1438.63, -379.5, -1261.72]
       - _Enemy::Lynel<x5>:
          coord: [-1151.85, -393.54, -1263.46]
 
@@ -2718,8 +2714,6 @@ _route:
       - _Enemy::Lynel<x1>:
          coord: [-2798.87, -376.93, -2238.38]
       - _Warp::Lightroot::Mu-ustust<Warp to Mu-ustust Lightroot>
-      - _Enemy::Lynel<x1>:
-         coord: [-1438.63, -379.5, -1261.72]
       - _Enemy::Lynel<x5>:
          coord: [-1151.85, -393.54, -1263.46]
 
@@ -3518,8 +3512,6 @@ _route:
       - _Enemy::Lynel<x1>:
          coord: [4212.09, -467.54, 2721.1]
       - _Warp::Lightroot::Mu-ustust<Warp to Mu-ustust Lightroot>
-      - _Enemy::Lynel<x1>:
-         coord: [-1438.63, -379.5, -1261.72]
       - _Enemy::Lynel<x5>:
          coord: [-1151.85, -393.54, -1263.46]
       - _Warp::Lightroot::Kimakarut<Warp to Kimakarut Lightroot>
@@ -4225,8 +4217,6 @@ _route:
       - _Enemy::Lynel<x1>:
          coord: [-2798.87, -376.93, -2238.38]
       - _Warp::Lightroot::Mu-ustust<Warp to Mu-ustust Lightroot>
-      - _Enemy::Lynel<x1>:
-         coord: [-1438.63, -379.5, -1261.72]
       - _Enemy::Lynel<x5>:
          coord: [-1151.85, -393.54, -1263.46]
       - _Warp::Lightroot::Ui-ihcoj<Warp to Ui-ihcoj Lightroot>
