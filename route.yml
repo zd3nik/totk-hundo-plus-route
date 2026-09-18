@@ -2756,7 +2756,8 @@ _route:
          hide-icon-on-map: true
       - _Npc::Steward Construct_04:
          comment: Complete the mini-game
-      - _Dispenser::S21
+      - _Dispenser::S21:
+         comment: Replenish fans
       - _Shrine::Taunhiy
       - _Korok::LBS04
 
@@ -2790,7 +2791,8 @@ _route:
       - _Dispenser::S11
       - _Enemy::FluxConstruct::SH02
       - _OldMap::Hebra_03
-      - _Shrine::Ijo-o
+      - _Shrine::Ijo-o:
+         comment: Fuse rockets to shields
 
    - King Gleeok:
       - _Enemy::Gleeok::S01:
