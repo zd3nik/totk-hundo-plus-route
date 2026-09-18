@@ -1407,7 +1407,7 @@ _route:
       - _Cave::TanagarCanyonEast00
       - _Enemy::Hinox::GR03
 
-   - Lucky Clover Gazette:
+   - Mushroom Hunters:
       - _Bubbulfrog::TanagarCanyonEastCave:
          comment: Ascend
       - _Korok::PS30:
@@ -1421,17 +1421,25 @@ _route:
       - _LockedChest::G53:
          comment: Ascend, Flying machine should be nearby
          notes: Take pic of feather spear
+      - _Special<Drop Flying Machine>:
+         coord: [-3032, 300, 1595]
       - _Enemy::BokoBoss::G06:
-         comment: Drop flying machine in canyon east of boko camp
-         notes:
-            - Break feather spear
-            - Cut grass for frogs and wheat
+         notes: Break feather spear
+      - _Item<Cut Grass>:
+         coord: [-2970, 400, 1595]
+         comment: For wheat and frogs
       - _Special<Cook>:
          coord: [-2970.82, 304.03, 1689.29]
-         comment: Speed food
+         notes:
+            - 4+ lynel hoof elixir
+            - 1+ lynel guts elixir
+            - Sunflower poridge
+            - Lots of speed food
       - _SideQuest::CaveMushroomsThatGlow:
          coord: [-2985, 199, 1657]
       - _Cave::Brightcap00
+
+   - Lucky Clover Gazette:
       - _Chest::FrostbiteShirt
       - _Bubbulfrog::BrightcapCave:
          comment: Ascend, Flying machine should be nearby
@@ -1446,20 +1454,13 @@ _route:
          coord: [-3258.5, 224.96, 1762.5]
       - _Place::LuckyCloverGazette:
          hide-icon-on-map: true
-      - _Special<Cook>:
-         coord: [-3589.07, 296.55, 1805.50]
-         comment: Drop flying machine on level near Teba
-         notes:
-            - 4+ lynel hoof elixir
-            - 1+ lynel guts elixir
-            - Sunflower poridge
-            - Lots of speed food
       - _Place::RitoVillage:
-         hide-icon-on-map: true
+         coord: [-3595, 300, 1800]
+         comment: Drop flying machine on walkway west of the platform Tulin is on
       - _Shop::ArmorShop05:
          comment: Buy featherquill set
 
-   - Tulin Surface:
+   - Tulin:
       - _MainQuest::TulinofRitoVillage:
          coord: [-3594.84, 318.5, 1805.23]
          notes: Take pic of Great Eagle Bow before triggering cut scene
@@ -1482,7 +1483,7 @@ _route:
          coord: [-3036, 800, 2742]
          notes: Take pic of falcon bow
 
-   - Tulin Sky:
+   - Ascend to Wind Temple:
       - _Shrine<Activate Mayaumekis Shrine>:
          coord: [-2947.92, 1008.97, 3050.67]
       - _Location::RisingIslandChain:
@@ -1560,6 +1561,7 @@ _route:
          notes: 2x Stamina
       - _SideQuest::GenlisHomeCooking:
          coord: [-3644.61, 289.88, 1820.46]
+         comment: Buy cooking ingredients
       - _Korok::RP53
       - _Shrine::Gatakis
       - _Chasm::RitoVillage:
@@ -1581,11 +1583,16 @@ _route:
       - _SchemaStone::HebraMine
       - _Chest<Large Crystallized Charge>:
          coord: [-3466.66, -243.36, 1918.63]
+
+   - Collect Stuff:
       - _Poe::Grand:
          coord: [-3517.18, -265.7, 1844.93]
       - _Poe::Large:
          coord: [-3465.53, -293.82, 1886.04]
-      - _Shop::ForgeConstruct04
+      - _Shop::ForgeConstruct04:
+         coord: [-3460, -311, 1910]
+      - _Item<Bananas, Crates, and Bomb Flower>:
+         coord: [-3421.05, -309.36, 1856.47]
 
    - Lake Tatori:
       - _Warp::Shrine::Oromuwak<Warp to Oromuwak Shrine>
@@ -1640,14 +1647,18 @@ _route:
          hide-icon-on-map: true
       - _OldMap::Necluda_03
       - _Shrine::Josiu::Start
+
+   - Lots of Pics:
       - _Shrine::Josiu
       - _Dispenser::S14
       - _Special<Launcher>:
          coord: [1823.35, 1043.8, -1129.39]
       - _SagesWill::Necluda
-      - _OldMap::Necluda_04:
-         comment: Ascend
-         notes: Take lots of pics
+      - _OldMap::Necluda_04
+      - Ascend:
+         movements:
+            - to: [1850, 1070, -1000]
+         notes: Take lots of pics!!!
       - _Korok::SSS01
 
    - Kakariko:
@@ -1682,9 +1693,8 @@ _route:
       - _Item<Cucco>:
          coord: [1805.57, 218.48, -1018.59]
          notes: Take pic
-      - _Shop::GeneralStore09
-      - _Shop::Inn03:
-         hide-icon-on-map: true
+      - _Shop::GeneralStore09:
+         comment: Talk to Trissa for quests
       - _Well::KakarikoVillage:
          comment: Enter the well
       - _Npc::Cottla_01:
@@ -1740,15 +1750,12 @@ _route:
       - _Location::RingRuins
       - _MainQuest::SecretoftheRingRuins:
          coord: [1816.5, 218.5, -949]
-      - _Npc::Wortsworth_01
       - _Shop::ZonaiSurveyTeamBase:
-         hide-icon-on-map: true
+         comment: Talk to Wortsworth to start quest
       - _GoddessStatue::Kakariko:
          notes: 1x Stamina
       - _SideQuest::ATripthroughhistory:
          coord: [1823.87, 223.11, -1011.98]
-      - _Shop::Inn03:
-         hide-icon-on-map: true
       - _SideQuest<Out of the Inn>:
          coord: [1835.5686, 240, -1021.7721]
          notes: Take pic of shield
@@ -1771,8 +1778,7 @@ _route:
          notes: Take pic of Naydra
       - Ascend Waterfall:
          coord: [2667.8, 275.85, -1390.83]
-         comment: While gliding toward waterfall Zelda should be visible to the east
-         notes: Shoot construct before landing
+         notes: Shoot construct before landing to avoid scaring away fairies
       - _OldMap::Necluda_02:
          notes: Take pic of fairy
       - _Special<Platform>:
@@ -1919,7 +1925,8 @@ _route:
       - _Enemy::FluxConstruct::SF01
       - _Shrine::Kumamayn::Start
       - Launch Crystal with Aparatus:
-         coord: [3034.23, 1313.38, -2907.69]
+         movements:
+            - to: [3034.23, 1313.38, -2907.69]
       - _Shrine::Kumamayn
 
    - Zakusu Shrine:
@@ -1948,11 +1955,9 @@ _route:
       - _Tower::MountLanayru
 
    - Valor Island:
-      - _Item<Steering Stick and Fans>:
+      - _Location::ValorIsland:
          coord: [4165.08, 1724.69, -1084.63]
          comment: Build flying machine
-      - _Location::ValorIsland:
-         hide-icon-on-map: true
       - _Dispenser::S07
       - _Item<Frogs>:
          coord: [4722.8, 1898.71, -866.25]
@@ -1981,7 +1986,8 @@ _route:
       - _SagesWill::Lanayru:
          comment: Ascend
       - _Shrine::Jirutagumac
-      - _Dispenser::S22
+      - _Dispenser::S22:
+         comment: Replenish fans
       - _Tablet<Drop Tablet>:
          coord: [2914.96, 901.6, 203.16]
       - _Enemy::FluxConstruct::SL02
@@ -2002,6 +2008,7 @@ _route:
       - _LockedChest::S00
       - _Enemy<Construct>:
          coord: [3335.57, 1458.7, 541.76]
+         comment: On platform below locked chest
       - _Equipment::Weapon<Zonaite Spear>:
          coord: [3330.69, 1458.79, 527.19]
          notes: Take pic
@@ -2048,11 +2055,11 @@ _route:
       - _Korok::UMS03
       - _Enemy::FluxConstruct::SA02
       - _OldMap::Akkala
-      - _Special<Terminal>:
-         coord: [4494.03, 1260.67, 2104.8]
       - _Location::SkyMine:
-         hide-icon-on-map: true
-      - _Dispenser::S12
+         coord: [4494.03, 1260.67, 2104.8]
+         comment: Activate terminal
+      - _Dispenser::S12:
+         comment: Replenish hover stones
 
    - Zonaite Shin Guards:
       - _Special<Launcher>:
@@ -2082,8 +2089,11 @@ _route:
          hide-icon-on-map: true
       - _Enemy::FluxConstruct::SA01
       - _OldMap::Akkala_02
+      - _Special<Drop Flying Machine>:
+         movements:
+            - to: [3431.07, 189.97, 3356.72]
       - _Material<Dinraal Claw 1/4>:
-         comment: Drop flying machine next to Kamatukis shrine below
+         notes: Take pic of Dinraal
 
    - Fierce Diety Mask:
       - _Cave::SkullLake00:
@@ -2096,13 +2106,14 @@ _route:
          comment: Ascend
       - _Shrine<Activate Kamatukis Shrine>:
          coord: [3431.07, 183.07, 3356.72]
+         comment: Flying machine should be nearby
       - _Korok::UM04
       - _Chasm::SkullLake
 
    - Big Goron Sword:
-      - _Enemy::Hinox::DE01
       - _Location::AkkalaHouseofBones:
          hide-icon-on-map: true
+      - _Enemy::Hinox::DE01
       - _LockedChest::D79:
          notes: Take pic of Big Goron Sword
       - _Lightroot::Sikutamak
@@ -2127,7 +2138,6 @@ _route:
          hide-icon-on-map: true
       - Ascend:
          movements:
-            - to: [4272, -312, 3100]
             - to: [4514.68, -311.7, 3159.75]
 
    - Travel Medallion Prototype:
@@ -2137,31 +2147,33 @@ _route:
          coord: [4502.12, 351.39, 3148.26]
       - _Korok::UM12
       - _Chest::YigaArmor
+      - _Special<Cook and Eat 30 Minute Speedfood>:
+         comment: Light Dragon Horn + 4 Fleet Lotus Seeds
+         coord: [4518, 352, 3167]
       - _Chest<Travel Medallion Prototype>:
          coord: [4523.45, 352.99, 3163.68]
          comment: Ascend
       - _Korok::UM11
 
-   - Akkala:
+   - East Akkal Stable:
       - _Korok::UM08::Trail
       - _Addison::A74
       - _Shrine::Jochi-iu
       - _SideQuest::EldinsColossalFossil:
          coord: [4339.78, 247.76, 2815.68]
-      - _Special<Cook>:
-         coord: [4249.96, 231.44, 2757.39]
-         comment: Speed food
       - _Npc::Rudi
       - _Place::EastAkkalaStable:
          hide-icon-on-map: true
+      - _Npc::Beedle_13:
+         coord: [4230, 126, 2755]
+
+   - Akkala:
       - _SideQuest::APictureforEastAkkalaStable:
          coord: [4230, 126, 2746]
       - _Npc::Khini:
          coord: [4223.61, 231.32, 2724.5]
          comment: Buy a bun
       - _Npc::Penn_26
-      - _Npc::Beedle_13:
-         coord: [4237.41, 228.91, 2712.26]
       - _Addison::A75:
          comment: Build flying machine
       - _Korok::UM21::Start
@@ -2199,12 +2211,12 @@ _route:
       - _Enemy::BokoBoss::G60
       - _Chest<Sapphire>:
          coord: [4830.84, 113.48, 2757.21]
-      - _Equipment::Weapon<Long Stick>:
-         coord: [4811.44, 110.46, 2804.63]
-         comment: Fuse lynel mace
-         notes: Take pic
       - _LockedChest::G46:
          hide-icon-on-map: true
+      - _Equipment::Weapon<Long Stick>:
+         coord: [4811.44, 110.46, 2804.63]
+         comment: Fuse a blunt horn for upcoming butt talus fight
+         notes: Take pic
 
    - Melania:
       - _Warp::Shrine::Jochi-iu<Warp to Jochi-iu Shrine>
@@ -2276,25 +2288,28 @@ _route:
          coord: [4527.77, 1167.59, 3739.93]
       - _Special<Terminal>:
          coord: [4655, 1285.48, 3698.5]
-      - _Korok::UMS01
+
+   - Dinraal Claw:
+      - _Korok::UMS01:
+         level: Sky
       - _Korok::UM01
       - _Warp::Shrine::Mogisari<Warp to Mogisari Shrine>
       - _Material<Dinraal Claw 2/4>
-
-   - Lomei Depths Lanyrinth:
-      - _Warp::Shrine::Igashuk<Warp to Igashuk Shrine>:
-         level: Depths
       - _Chasm::LomeiLabyrinth
+
+   - Lomei Labyrinth Chasm:
+      - _Location::LomeiDepthsLabyrinth:
+         hide-icon-on-map: true
       - _Enemy::FluxConstruct::DA01
       - _Special<Terminal>:
          coord: [4684.4, -340.47, 3697]
+
+   - Lomei Depths Lanyrinth:
       - _Chest::EvilSpiritArmor
       - Ascend:
          movements:
             - to: [4655, -295.47, 3720]
       - _Lightroot::Kuhsagi
-      - _Location::LomeiDepthsLabyrinth:
-         hide-icon-on-map: true
 
    - Lynel Run 2:
       - _Warp::Lightroot::Kimakarut<Warp to Kimakarut Lightroot>
@@ -2494,12 +2509,14 @@ _route:
       - _Location::DeathMountainWestSite:
          hide-icon-on-map: true
       - _Cave::DeathMountainWestTunnel00
-      - _Npc::Mota
-      - _Bubbulfrog::DeathMountainWestTunnel
-      - _Item<Rocket>:
-         coord: [2400.12, 616.79, 2688.99]
       - _SideQuest::TheAbandonedLaborer:
-         coord: [2350, 620, 2682]
+         coord: [2345, 620, 2682]
+      - _Bubbulfrog::DeathMountainWestTunnel
+      - _Item<Rockets>:
+         coord: [2400.12, 616.79, 2688.99]
+      - _Item<Mine Cart>:
+         coord: [2355, 620, 2682]
+         comment: Take Mota out of the cave via rocket powered mine cart
 
    - Bring Peace to Eldin:
       - _Warp::Cave<West Tunnel>:
@@ -2530,7 +2547,6 @@ _route:
       - _Cave::LakeDarmanMonsterDen00
       - _Material<Dinraal Claw 3/4>:
          comment: Ride flying machine up to Dinraal
-         notes: Take pic of Dinraal
 
    - Moragia:
       - _Warp::Shrine::Sitsum<Warp to Sitsum Shrine>:
@@ -2652,7 +2668,7 @@ _route:
          comment: Buy sugar and spice
       - _SideQuest::AmberDealer:
          coord: [1660, 385, 2468]
-         comment: Sell everything except diamonds, If short on anything will need to cook money food between here and gerudo town to afford gerudo garb
+         comment: Sell 10 of everything except diamonds. If short on anything will need to cook extra money food between here and gerudo town to afford all garb in secret shop
       - _SideQuest::SouloftheGorons:
          coord: [1687.56, 502.14, 2497.22]
          notes: Take pic of Boulder Breaker
@@ -2786,7 +2802,8 @@ _route:
       - _Location::NorthTabanthaSkyArchipelago:
          hide-icon-on-map: true
       - _OldMap::Tabantha
-      - _Dispenser::S00
+      - _Dispenser::S00:
+         comment: Replenish hover stones
 
    - Lightcast Island:
       - _Special<Starting Block>:
@@ -3033,11 +3050,9 @@ _route:
          coord: [-3809.97, 105.35, -2746.82]
       - _Bubbulfrog::ValleyofSilentStatues
       - _Cave::ValleyofSilentStatues00
-      - _Special<Take Pics>:
-         coord: [-3793.48, 137.72, -2641.96]
-         notes: Take pic of Patricia and Riju's Sword
       - _MainQuest::RijuofGerudoTown:
          coord: [-3782.48, 137.99, -2639.96]
+         notes: Take pic of Sword before triggering cutscene
       - _Location::NorthGerudoRuins:
          hide-icon-on-map: true
          comment: Flying machine should be nearby
@@ -3055,8 +3070,6 @@ _route:
       - _SideQuest::DecoratewithPassion:
          coord: [-3226.39, 129.06, -2517.8]
       - _Npc::Beedle
-      - _Shop::GeneralStore11:
-         comment: Rocket shield up to platform
       - _Korok::GC25
       - _Cave::OasisSource00
 
@@ -3088,18 +3101,12 @@ _route:
          comment: Collect all the stuff
       - _Equipment::Bow<Gerudo Bow>:
          coord: [-3860.02, 150.55, -2979.17]
+         comment: Fuse thunder gleeok horn to gerudo spear
          notes: Take pic
       - _Equipment::Weapon<Gerudo Scimitar>:
          coord: [-3862.2, 150.33, -2981.21]
          comment: Collect but DO NOT USE
          notes: Take pic
-      - _Chest<Silver Rupee>:
-         coord: [-3864.97, 149.37, -2984.06]
-      - _Chest<Electric Lizalfos Horn>:
-         coord: [-3866.27, 149.37, -2985.35]
-      - _Chest<Topaz>:
-         coord: [-3867.6, 149.37, -2986.64]
-         comment: Fuse thunder gleeok horn to gerudo spear
       - _Item<Electric Lizalfos Horn>:
          coord: [-3909.62, 149.68, -2933.82]
          notes: Take pic
@@ -3277,8 +3284,6 @@ _route:
       - _Warp::Shrine::Soryotanog<Warp to Soryotanog Shrine>
       - _SideQuest::DaliasGame:
          coord: [-3813.5, 149.5, -2872.5]
-      - _SideQuest<Dalia's Game>:
-         coord: [-3879.5, 139.75, -2950.5]
 
    - Orb Collector:
       - _Item<Orb>:
@@ -3318,7 +3323,7 @@ _route:
             - to: [-3846.76, 137.86, -2962.07]
             - to: [-3865, 139.26, -2975]
       - _Npc::Ashai<Attend Adult Class>:
-         comment: Complete all lectures + 1 to get smiling face
+         comment: Complete all lectures +1 to get smiling face
 
    - The Eighth Heroine:
       - _GoddessStatue::GerudoTown
@@ -3389,6 +3394,8 @@ _route:
          comment: Leave flying machine here
       - _Korok::GCS01:
          comment: Place mirror in sunlight
+      - _Special<Shine Light on Panel>:
+         coord: [-1955.26, 1256.73, -1804.14]
       - _OldMap::SouthHyrule_04:
          comment: Ascend
 
@@ -3562,16 +3569,17 @@ _route:
          notes: Take pic of whirlpool
       - _Korok::PF31
       - _Korok::PF33
-      - _Location::LakeHylia03:
-         hide-icon-on-map: true
+      - _Location::LakeHylia:
+         coord: [125.75, 15.91, -2501.45]
       - _Cave::LakeHyliaWhirlpool00
-      - _Shrine::En-oma
 
    - Popla Foothills:
-      - _Bubbulfrog::LakeHyliaWhirlpoolCave
+      - _Shrine::En-oma
+      - _Bubbulfrog::LakeHyliaWhirlpoolCave:
+         coord: [150, 17, -2500]
       - Swim up Waterfall:
          movements:
-            - to: [125.75, 15.91, -2501.45]
+            - to: [135, 16, -2495]
       - _Item<Boulder>:
          coord: [282.21, 95.93, -2404.09]
       - _Korok::PF26
