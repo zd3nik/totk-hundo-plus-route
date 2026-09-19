@@ -214,7 +214,7 @@ _route:
       - _Korok::GSI09:
          comment: Ascend
       - _Special<Cook>:
-         notes: Shoot rushshrooms high up on cliff to collect them before cooking
+         notes: Shoot rushrooms high up on cliff to collect them before cooking
          comment: Speed food
          coord: [424.33, 1470.34, -1544.17]
       - Ascend:
@@ -242,7 +242,7 @@ _route:
          coord: [547, 1554.48, -1658.5]
       - _Cave::Pit00
       - _Special<Cook>:
-         comment: Speed and stamina food
+         comment: Speed food and stamina food
          coord: [600.7, 1550.19, -1627.08]
       - _Bubbulfrog::PitCave
       - _Cave::Pit01
@@ -631,7 +631,8 @@ _route:
       - _Warp::Tower::LookoutLanding<Warp to Lookout Landing Tower>
       - _MainQuest<Regional Phenomena>:
          coord: [-248.72, 126.36, 148.83]
-      - _Shop::CrystalRefinery01
+      - _Shop::CrystalRefinery01:
+         comment: Upgrade battery belt
       - _Shop::BargainerStatue06
       - _MainQuest::CameraWorkintheDepths:
          coord: [-253.5, 144, 145.5]
@@ -741,7 +742,8 @@ _route:
          coord: [-249.72, 125.2, 170.51]
       - _Special<Pic of horse>:
          coord: [-255, 125, 198]
-      - _Shop::CrystalRefinery01
+      - _Shop::CrystalRefinery01:
+         comment: Upgrade battery belt
 
    - Kara Kara Mine:
       - _Warp::Special<Warp to Central Mine>:
@@ -842,6 +844,7 @@ _route:
          comment: Flying machine should be nearby
       - _Enemy<Phantom Ganon>:
          coord: [682.28, 179.01, 753.88]
+         comment: Will be in 1 of the 2 tree stumps containing water
          notes:
             - Should be about 11 PM
             - Skip if running behind, we come back here later
@@ -1126,7 +1129,8 @@ _route:
          comment: Buy rice
       - _Well::LookoutLanding:
          notes: Take pic
-      - _Shop::CrystalRefinery01
+      - _Shop::CrystalRefinery01:
+         comment: Upgrade battery belt
       - _MainQuest<Mystery In The Depths>:
          coord: [-255, 18, 150]
       - _SchemaStone::Josha
@@ -1145,7 +1149,6 @@ _route:
       - _Warp::Shrine::Jiosin<Warp to Jiosin Shrine>:
          notes: Find Parga the merchant between here and Hyrule Field Tower
       - _Npc::Suzuna:
-         comment: Cook attack up food and llynel horn elixir if you forgot to do so earlier
          notes: Take pic of ladle
       - _Korok::HF07:
          comment: Farosh should be visible to the south east
@@ -1286,8 +1289,9 @@ _route:
          notes: Take pic of mop
       - _SideQuest::APictureforNewSerenneStable:
          coord: [-1362.11, 191.53, 723.07]
-      - _Special<Cook speed food>:
+      - _Special<Cook>:
          coord: [-1363.33, 191.05, 741.21]
+         comment: Speed food
       - _Shrine<Activate Sinakawak shrine>:
          coord: [-1414.62, 191.14, 756.85]
       - _Enemy::Talus::GR03
@@ -1360,7 +1364,6 @@ _route:
       - _Place::ForgottenTemple
       - _Korok::PS18:
          notes: Take pic of ice fruit
-         comment: Cook speed food if needed
       - _Korok::LB01
       - _Shrine::Mayausiy
       - _SideQuest::TheMotherGoddessStatue:
@@ -1773,7 +1776,7 @@ _route:
       - _Warp::Shrine::Josiu<Warp to Josiu Shrine>
       - _Special<Baloon Platform>:
          coord: [1936.91, 1284.44, -1204.89]
-      - _Material<Naydra Claw 1/4>:
+      - _Material<Naydra Claw For Goddess Statue>:
          comment: After collecting Naydra claw continue to waterfall if raining, otherwise warp back to Josiu and use the balloon platform to get the height needed to reach the waterfall
          notes: Take pic of Naydra
       - Ascend Waterfall:
@@ -1890,7 +1893,7 @@ _route:
          coord: [2389.04, 1588.74, -1712.46]
          comment: Make night
       - _Material<Star Fragment 1/36>
-      - _Material<Naydra Claw 2/4>
+      - _Material<Naydra Horn>
 
    - Rabella Wetlands:
       - _LockedChest::G37
@@ -1947,7 +1950,7 @@ _route:
       - _Enemy<Phantom Ganon>:
          coord: [4030.14, 505.57, -1411.35]
       - _Npc::Nazbi
-      - _Material<Naydra Claw 3/4>
+      - _Material<Naydra Horn>
       - _GoddessStatue::Wisdom
       - _SideQuest::GoddessStatueofWisdom
       - _Location::SpringofWisdom:
@@ -2092,7 +2095,7 @@ _route:
       - _Special<Drop Flying Machine>:
          movements:
             - to: [3431.07, 189.97, 3356.72]
-      - _Material<Dinraal Claw 1/4>:
+      - _Material<Dinraal Claw for Goddess Statue>:
          notes: Take pic of Dinraal
 
    - Fierce Diety Mask:
@@ -2148,8 +2151,8 @@ _route:
       - _Korok::UM12
       - _Chest::YigaArmor
       - _Special<Cook and Eat 30 Minute Speedfood>:
-         comment: Light Dragon Horn + 4 Fleet Lotus Seeds
          coord: [4518, 352, 3167]
+         comment: Dragon Horn + 4 Fleet Lotus Seeds
       - _Chest<Travel Medallion Prototype>:
          coord: [4523.45, 352.99, 3163.68]
          comment: Ascend
@@ -2294,7 +2297,7 @@ _route:
          level: Sky
       - _Korok::UM01
       - _Warp::Shrine::Mogisari<Warp to Mogisari Shrine>
-      - _Material<Dinraal Claw 2/4>
+      - _Material<Dinraal Horn>
       - _Chasm::LomeiLabyrinth
 
    - Lomei Labyrinth Chasm:
@@ -2545,7 +2548,7 @@ _route:
    - Dinraal Pic:
       - _Bubbulfrog::LakeDarmanMonsterDen
       - _Cave::LakeDarmanMonsterDen00
-      - _Material<Dinraal Claw 3/4>:
+      - _Material<Dinraal Horn>:
          comment: Ride flying machine up to Dinraal
 
    - Moragia:
@@ -2720,7 +2723,7 @@ _route:
          comment: Make night if needed, in which case you are running behind and should skip one or more lynels in the next segment
          level: Sky
       - _Material<Star Fragment 2/36>
-      - _Material<Dinraal Claw 4/4>
+      - _Material<Dinraal Horn>
 
    - Lynel Run 3:
       - _Warp::Lightroot::Ui-ihcoj<Warp to Ui-ihcoj Lightroot>
@@ -2740,11 +2743,13 @@ _route:
          coord: [2389.04, 1588.74, -1712.46]
          comment: Make night
       - _Material<Star Fragment 3/36>
-      - _Material<Naydra Claw 4/4>
+      - _Material<Naydra Horn>
 
-   - GSI Crystal Refinery:
+   - Upgrade Battery:
       - _Warp::Shrine::Nachoyah<Warp to Nachoyah Shrine>
-      - _Shop::CrystalRefinery
+      - _Shop::CrystalRefinery:
+         comment: Upgrade battery belt
+      - _Korok::GSI16
 
    - Courage Island:
       - _Warp::Tower::Lindor'sBrow<Warp to Lindor's Brow Tower>:
@@ -2927,9 +2932,9 @@ _route:
          hide-icon-on-map: true
 
    - Heroine's Sword:
-      - _Special<Take Pic of Giant Sword>:
+      - _Special<Take Pics>:
          coord: [-3980, 820.09, -1050]
-         notes: Also take pic of frost gleeok
+         notes: Take pic of giant sword and frost gleeok
       - _Korok::GH18
       - _Enemy::Gleeok::G06
 
@@ -2970,6 +2975,7 @@ _route:
       - _Korok::GC32
       - _Chest<Gerudo Shield>:
          coord: [-3940.91, 191.46, -2934.61]
+         notes: COLLECT AND KEEP for Pride of the Gerudo quest
       - _Shrine<Activate Soryotanog Shrine>:
          coord: [-3882.2, 242.2, -2962.55]
       - _Place::GerudoTown:
@@ -3063,7 +3069,12 @@ _route:
    - Kara Kara Bazaar:
       - _Equipment::Weapon<Gerudo Spear>:
          coord: [-3268.34, 131.97, -2599.84]
-         comment: Fuse ruby
+         comment: Fuse ruby to gerudo spear
+      - _Special<Cook>:
+         coord: [-3278.02, 129.01, -2569.66]
+         comment: Speed food and money food
+      - _Shop::GeneralStore12:
+         comment: Buy electric safflina and melons
       - _Shop::ArmorShop01:
          comment: Buy voe headband
       - _Shrine::Mayatat
@@ -3071,6 +3082,7 @@ _route:
          coord: [-3232.4, 128.88, -2518.94]
       - _SideQuest::DecoratewithPassion:
          coord: [-3226.39, 129.06, -2517.8]
+         comment: After completing quest, replace ruby on spear with thunder gleeok horn
       - _Npc::Beedle
       - _Korok::GC25
       - _Cave::OasisSource00
@@ -3103,12 +3115,10 @@ _route:
          comment: Collect all the stuff
       - _Equipment::Bow<Gerudo Bow>:
          coord: [-3860.02, 150.55, -2979.17]
-         comment: Fuse thunder gleeok horn to gerudo spear
          notes: Take pic
       - _Equipment::Weapon<Gerudo Scimitar>:
          coord: [-3862.2, 150.33, -2981.21]
-         comment: Collect but DO NOT USE
-         notes: Take pic
+         notes: Take pic. COLLECT AND KEEP for Pride of the Gerudo quest
       - _Item<Electric Lizalfos Horn>:
          coord: [-3909.62, 149.68, -2933.82]
          notes: Take pic
@@ -3130,7 +3140,7 @@ _route:
          coord: [-3758.63, 146.48, -2837.29]
       - _Enemy<Gibdo Nest>:
          coord: [-3946.63, 146.48, -2850.29]
-      - Drop flaying machine behind throne room:
+      - Drop flying machine behind throne room:
          movements:
             - to: [-3920, 140, -2990]
 
@@ -3165,7 +3175,7 @@ _route:
          notes: Take pic
       - _Item<Floor Switch>:
          coord: [-4415.32, 132.67, -3508.32]
-         comment: Use Tulin to clear the sand off
+         comment: Use Tulin to clear off the sand
       - _Chest<Large Zonai Charge>:
          coord: [-4513.95, 88.66, -3613.3]
          comment: Ascend
@@ -3253,8 +3263,7 @@ _route:
    - Pride of the Gerudo:
       - _Warp::Place<Gerudo Town>:
          coord: [-3887.35, 157.48, -2968]
-      - Reload From Autosave:
-         comment: This rounds all the kids up for class
+         comment: Reload from autosave. This rounds all the kids up for class
       - _Npc::Ashai<Attend Child Class>:
          comment: Stand in empty voe spot wearing voe garb, Ascend
       - _Item<Gibdo Parts>:
@@ -3296,22 +3305,24 @@ _route:
          coord: [-3800.5, 164.5, -2970.5]
          comment: Under sand pile above kitchen
          notes: Take pic of sand sparrow
+      - Underground Entrance:
+         comment: Take orbs with you
+         movements:
+            - to: [-3853.58, 149.44, -2932.08]
+            - to: [-3876.5, 139.43, -2957]
       - _Item<Orb>:
          comment: In cubby above beds
-         movements:
-            - to: [-3866.94, 139.28, -2945.45]
-            - to: [-3876.5, 139.43, -2957]
-            - to: [-3910.88, 143.03, -2929.15]
+         coord: [-3910.88, 143.03, -2929.15]
       - _Item<Orb>:
          coord: [-3903.8, 136.08, -2914.92]
          comment: In lounge area
-      - _Special<Monument to Seven Heroines>:
+      - _Special<Monument to Seven Heroines Inside the Prison>:
          coord: [-3885, 139.95, -2925]
-         comment: Ascend into prison from underneath
+         comment: Ascend into prison from underneath. Entrance to area beneath prison is behind two amphora next to lounge area
          notes: Take pic
       - _Item<Orb>:
          coord: [-3887.75, 139.87, -2973.25]
-         comment: Show Rotana your pics
+         comment: Show Rotana your pics to get last orb
       - _Npc::Rotana:
          coord: [-3834.19, 136.98, -2974.76]
          comment: Place orbs on statues
@@ -3340,19 +3351,18 @@ _route:
       - _Cave::GerudoSanctuary01
       - _SideQuest<The Mysterious Eighth>:
          coord: [-3763.38, 113.11, -2534.08]
-      - _Chest<Gold Rupee>:
-         coord: [-3762.92, 114.62, -2531.73]
       - _Item<Gerudo Scimitar>:
          coord: [-3768.98, 115.29, -2537.41]
-         comment: Ascend
+         comment: Collect and break
 
    - Ice House:
+      - _Chest<Gold Rupee>:
+         coord: [-3762.92, 114.62, -2531.73]
+         comment: Ascend
       - _Korok::GC20
-      - _Item<Torch>:
-         coord: [-3751.87, 146.37, -2304.39]
-         comment: Use ultrahand to light it and move it inside
       - _Location::NorthernIcehouse:
-         hide-icon-on-map: true
+         coord: [-3751.87, 146.37, -2304.39]
+         comment: Use ultrahand to light torch and move it inside
       - _SideQuest::TheIcelessIcehouse:
          coord: [-3752, 139.5, -2277.5]
          comment: Ascend
@@ -3406,15 +3416,16 @@ _route:
          comment: Ascend
       - _Item<Flying Machine>:
          coord: [-1829.72, 1305.17, -1917.68]
+      - _Location::EastGerudoSkyArchipelago:
+         hide-icon-on-map: true
       - _Dispenser::S16
       - _Special<Take Pic of Smiling Spectacle Rock>:
          coord: [-1845, 1254, -2111]
       - _Shrine::Rakashog
       - _Item<Rockets>:
          coord: [-1820.33, 1075.18, -2213.3]
-         comment: Fuse rockets to shields
-      - _Location::EastGerudoSkyArchipelago:
-         hide-icon-on-map: true
+         comment: Fuse rockets to shields. Make night
+      - _Material<Star Fragment 5/36>
       - _Material<Farosh Claw 1/4>:
          notes: Take pic of Farosh
 
@@ -3445,7 +3456,6 @@ _route:
          notes: Take pic
       - _Cave::AncientAltarRuins04:
          comment: Drop flying machine near south-west sand pit
-         notes: Take pic of sand pit
       - _Bubbulfrog::AncientAltarRuins
       - _Chest::PhantomGreaves:
          comment: Ascend
@@ -3469,7 +3479,8 @@ _route:
    - Desert Race:
       - _Korok::GC50::End
       - _Korok::GC51
-      - _Addison::A16
+      - _Addison::A16:
+         notes: Take pic of sand pit
       - _Cave::SouthGerudo00
       - _LockedChest::G51
       - _Bubbulfrog::SouthGerudoCave:
@@ -3483,7 +3494,7 @@ _route:
       - _Cave::CentralGerudo00:
          comment: Drop flying machine south of sand pit
       - _Bubbulfrog::CentralGerudoCave:
-         comment: Ascend
+         comment: Ascend, Flying machine should be nearby
       - _Korok::GC42::End
       - _Location::SouthernOasisTrainingArea:
          comment: Complete the mini-game
@@ -3493,10 +3504,10 @@ _route:
       - _Warp::Shrine::Mogisari<Warp to Mogisari Shrine>:
          comment: Make night
          level: Sky
-      - _Material<Star Fragment 5/36>
+      - _Material<Star Fragment 6/36>
       - _Material<Dinraal Scale 1/3>
 
-   - Lotus Farming 1:
+   - Naydra Farming 3:
       - _Warp::Tower::RabellaWetlands<Warp to Rabella Wetlands Tower>
       - _Item<Wood>:
          coord: [2437.92, 323.02, -2789.97]
@@ -3506,14 +3517,11 @@ _route:
          coord: [2368.33, 320.42, -2821.39]
       - _Item<Fleet-Lotus Seeds and Frogs>:
          coord: [2381.1, 320.41, -2856.94]
-
-   - Naydra Farming 3:
-      - _Warp::Shrine::Yansamin<Warp to Yansamin Shrine>:
-         level: Sky
-      - _Item<Campfire>:
-         coord: [2389.04, 1588.74, -1712.46]
-         comment: Make night
-      - _Material<Star Fragment 6/36>
+      - _Special<Cook>:
+         coord: [2417.06, 321.57, -2871.03]
+         comment: Speed food. Make night. Check position of Naydra
+      - _Warp::Shrine<Warp to Sky Shrine Closest to Naydra>
+      - _Material<Star Fragment 7/36>
       - _Material<Naydra Scale 1/3>
 
    - Lynel Run 4:
@@ -3539,8 +3547,9 @@ _route:
          level: Surface
       - _Special<Cook>:
          coord: [-2431.27, 407.04, -2195.22]
-         comment: Speed food, Make night
-      - _Material<Star Fragment 7/36>
+         comment: Speed food. Make night
+      - _Material<Star Fragment 8/36>:
+         comment: Use tower
       - _Material<Farosh Claw 2/4>
 
    - Light Dragon Farming 2:
@@ -3569,7 +3578,8 @@ _route:
       - _Location::BridgeofHylia:
          hide-icon-on-map: true
          notes: Take pic of whirlpool
-      - _Korok::PF31
+      - _Korok::PF31:
+         comment: Ascend
       - _Korok::PF33
       - _Location::LakeHylia:
          coord: [125.75, 15.91, -2501.45]
@@ -3806,22 +3816,23 @@ _route:
       - _Shop::SmithingConstruct
       - _SideQuest::AncientBladesBelow:
          coord: [1334, -632, -3367.41]
+         comment: Make night
 
    - Farosh Farming 2:
       - _Warp::Shrine::Rakashog<Warp to Rakashog Shrine>:
-         comment: Make night
+         comment: Make night (yes, again)
          level: Sky
       - _Item<Rockets>:
          coord: [-1820.55, 1075.09, -2212.26]
          comment: Fuse rockets to shields
-      - _Material<Star Fragment 8/36>
+      - _Material<Star Fragment 9/36>
       - _Material<Farosh Claw 4/4>
 
    - Dinraal Farming 3:
       - _Warp::Lightroot::Kawisar<Warp to Kawisar Lightroot>
       - _Material<Dinraal Scale 2/3>
 
-   - Lotus Farming 2:
+   - Naydra Farming 4:
       - _Warp::Tower::RabellaWetlands<Warp to Rabella Wetlands Tower>
       - _Item<Wood>:
          coord: [2437.92, 323.02, -2789.97]
@@ -3833,13 +3844,9 @@ _route:
          coord: [2381.1, 320.41, -2856.94]
       - _Special<Cook>:
          coord: [2417.06, 321.57, -2871.03]
-         comment: Speed food
-         notes: Make night
-
-   - Naydra Farming 4:
-      - _Warp::Shrine::Kumamayn<Warp to Kumamayn Shrine>:
-         level: Sky
-      - _Material<Star Fragment 9/36>
+         comment: Speed food. Make night. Check position of Naydra
+      - _Warp::Shrine<Warp to Sky Shrine Closest to Naydra>
+      - _Material<Star Fragment 10/36>
       - _Material<Naydra Scale 2/3>
 
    - Register Spot:
@@ -3876,7 +3883,7 @@ _route:
          coord: [-162.07, 331.24, 1143.98]
       - _Enemy<Gibdo x3>:
          coord: [-171.7, 344.24, 1163.46]
-         comment: Ascend
+         comment: Ascend, Flying machine should be nearby
 
    - Zelda Chase Fire Lizalfos:
       - Drop Lying Machine Near Base of Tower:
@@ -3901,7 +3908,7 @@ _route:
          coord: [-352.82, 334.71, 991.82]
       - _Enemy<Silver Moblin>:
          coord: [-377.37, 345.44, 983.09]
-         comment: Ascend
+         comment: Ascend, Flying machine should be nearby
 
    - Zelda Chase Shock Likes:
       - Fly to Hallway Entrance:
@@ -3948,7 +3955,7 @@ _route:
       - _Enemy<Shock Like x2>:
          coord: [-425, 140.5, 1087]
       - _Korok::LL04:
-         comment: Ascend
+         comment: Ascend, Flying machine should be nearby
       - _Enemy<Phantom Ganon>:
          coord: [-501.49, 126.08, 1013.53]
       - _Chest<Fabric>:
@@ -3962,7 +3969,7 @@ _route:
             - to: [-500, 120, 800]
             - to: [-448.9934, 118.28906, 858.28]
       - _Enemy::BokoBoss::G16:
-         comment: Ascend
+         comment: Ascend, Flying machine should be nearby
       - Drop Flying Machine in Moat:
          movements:
             - to: [-350, 100, 650]
@@ -4023,7 +4030,7 @@ _route:
       - _Cave::PasseriGreenbelt00
       - _LockedChest::G49
       - _Bubbulfrog::PasseriGreenbeltCave:
-         comment: Ascend
+         comment: Ascend, Flying machine should be nearby
       - _Korok::LL43::Trail
       - _Korok::LL41
       - _Korok::LL38
@@ -4059,6 +4066,7 @@ _route:
          hide-icon-on-map: true
       - _Enemy<Phantom Ganon>:
          coord: [682.28, 179.01, 753.88]
+         comment: Will be in 1 of the 2 tree stumps containing water
          notes: Skip if you already got him in earlier segment
       - _Korok::SS06
       - _Enemy::Talus::GK02
@@ -4083,14 +4091,14 @@ _route:
    - Naydra Farming 5:
       - _Warp::Tower::MountLanayru<Warp to Mount Lanayru Tower>:
          comment: Make night
-      - _Material<Star Fragment 10/36>
+      - _Material<Star Fragment 11/36>
       - _Material<Naydra Scale 3/3>
 
    - Dinraal Farming 4:
       - _Warp::Shrine::Mogisari<Warp to Mogisari Shrine>:
          comment: Make night
          level: Sky
-      - _Material<Star Fragment 11/36>
+      - _Material<Star Fragment 12/36>
       - _Material<Dinraal Scale 3/3>
 
    - Farosh Farming 3:
@@ -4100,9 +4108,9 @@ _route:
       - _Item<Rockets>:
          coord: [-1820.55, 1075.09, -2212.26]
          comment: Fuse rockets to shields
-      - _Material<Star Fragment 12/36>
+      - _Material<Star Fragment 13/36>
       - _Enemy::Gleeok::G09
-      - _Material<Farosh Scale 1/3>
+      - _Material<Farosh Horn>
 
    - The Treasure Hunters:
       - _Warp::Shrine::Sepapa<Warp to Sepapa Shrine>
@@ -4215,10 +4223,6 @@ _route:
       - _Enemy<Phantom Ganon>:
          coord: [411.39, -481.78, 2192.07]
 
-   - Farosh Farming 4:
-      - _Warp::Lightroot::Kohsustu<Warp to Kohsustu Lightroot>
-      - _Material<Farosh Scale 2/3>
-
    - Lynel Run 5:
       - _Warp::Lightroot::U-u-ujoj<Warp to U-u-ujoj Lightroot>
       - _Enemy::Lynel<x1>:
@@ -4235,7 +4239,7 @@ _route:
 
    - Dinraal Farming 5:
       - _Warp::Lightroot::Tayamik<Warp to Tayamik Lightroot>
-      - _Material<Dinraal Fang>
+      - _Material<Dinraal Claw 1/3>
 
    - Naydra Farming 6:
       - _Warp::Shrine::Yansamin<Warp to Yansamin Shrine>:
@@ -4243,8 +4247,8 @@ _route:
       - _Item<Campfire>:
          coord: [2389.04, 1588.74, -1712.46]
          comment: Make night
-      - _Material<Star Fragment 13/36>
-      - _Material<Naydra Fang>
+      - _Material<Star Fragment 14/36>
+      - _Material<Naydra Claw 1/3>
 
    - Rocket Reload 2:
       - _Warp::Shrine::Ukoojisi<Warp to Ukoojisi Shrine>:
@@ -4263,7 +4267,7 @@ _route:
          coord: [417.15, 258.87, 2172.98]
          comment: Buy
       - _Shop::GeneralStore10:
-         comment: Buy wheat and sugar
+         comment: Buy cooking ingredients
       - _GoddessStatue::KorokForest:
          comment: Ascend
       - _SideQuest::TheSecretRoom:
@@ -4338,34 +4342,34 @@ _route:
       - _Shrine::Sakunbomar::Start
       - _Shrine::Sakunbomar
 
-   - Farosh Farming 5:
+   - Farosh Farming 4:
       - _Warp::Shrine::Rakashog<Warp to Rakashog Shrine>:
          comment: Make night
          level: Sky
-      - _Material<Star Fragment 14/36>
-      - _Material<Farosh Scale 3/3>
+      - _Material<Star Fragment 15/36>
+      - _Material<Farosh Scale 1/3>
 
    - Light Dragon Farming 3:
       - _Warp::Shrine::Kadaunar<Warp to Kadaunar Shrine>:
          comment: Make night
          level: Sky
-      - _Material<Star Fragment 15/36>
+      - _Material<Star Fragment 16/36>
       - _Material<Light Dragon Scale>
 
    - Dinraal Farming 6:
       - _Warp::Shrine::Gikaku<Warp to Gikaku Shrine>:
          comment: Make night
          level: Sky
-      - _Material<Star Fragment 16/36>
-      - _Material<Dinraal Horn>
+      - _Material<Star Fragment 17/36>
+      - _Material<Dinraal Claw 2/3>
 
    - Shopping 1:
       - _Warp::Shrine::Marakuguc<Warp to Marakuguc Shrine>
       - _Shop::GeneralStore06:
-         comment: Buy sugar and spice
+         comment: Buy cooking ingredients
       - _Warp::Shrine::Gatakis<Warp to Gatakis Shrine>
       - _Shop::GeneralStore14:
-         comment: Buy oil, butter, sugar, and wheat
+         comment: Buy cooking ingredients
 
    - Sparrow Pic:
       - _Warp::Tower::RabellaWetlands<Warp to Rabella Wetlands Tower>
@@ -4381,13 +4385,12 @@ _route:
          coord: [2381.1, 320.41, -2856.94]
       - _Special<Cook>:
          coord: [2417.06, 321.57, -2871.03]
-         comment: Speed food and money food
-         notes: Make night
+         comment: Speed food and money food. Make night
 
    - Naydra Farming 7:
       - _Warp::Tower::MountLanayru<Warp to Mount Lanayru Tower>
-      - _Material<Star Fragment 17/36>
-      - _Material<Naydra Horn>
+      - _Material<Star Fragment 18/36>
+      - _Material<Naydra Claw 2/3>
 
    - Mayaumekis Shrine:
       - _Warp::Shrine::Mayaumekis<Warp to Mayaumekis Shrine>:
@@ -4431,7 +4434,7 @@ _route:
       - _Location::NorthLomeiCastleTopFloor
       - _Tablet<Drop Tablet>:
          coord: [-44.98025, 1607.83, 2991.7605]
-      - _Material<Dinraal Horn>
+      - _Material<Dinraal Claw 3/3>
       - _Tower<Activate Thyphlo Ruins Tower>:
          coord: [343.67, 278.56, 3141.65]
 
@@ -4504,28 +4507,28 @@ _route:
       - _Chest<Forest Dweller's Bow>:
          coord: [63.81, 282.76, 1908.01]
 
-   - Farosh Farming 6:
+   - Farosh Farming 5:
       - _Warp::Shrine::Rakashog<Warp to Rakashog Shrine>:
          comment: Make night
          level: Sky
-      - _Material<Star Fragment 18/36>
-      - _Material<Farosh Fang>
+      - _Material<Star Fragment 19/36>
+      - _Material<Farosh Scale 2/3>
 
    - Naydra Farming 8:
       - _Warp::Tower::MountLanayru<Warp to Mount Lanayru Tower>:
          comment: Make night
-      - _Material<Star Fragment 19/36>
-      - _Material<Naydra Horn>
+      - _Material<Star Fragment 20/36>
+      - _Material<Naydra Claw 3/3>
 
    - Dinraal Farming 7:
       - _Warp::Lightroot::Sikutamak<Warp to Sikutamak Lightroot>
-      - _Material<Dinraal Horn>
+      - _Material<Dinraal Fang>
 
    - Light Dragon Farming 4:
       - _Warp::Shrine::Jinodok<Warp to Jinodok Shrine>:
          comment: Make night
          level: Sky
-      - _Material<Star Fragment 20/36>
+      - _Material<Star Fragment 21/36>
       - _Material<Light Dragon Horn>
 
    - Tal Tal Peak:
@@ -4708,7 +4711,7 @@ _route:
       - _Warp::Shrine::Mayam<Warp to Mayam Shrine>:
          comment: Make night
          level: Sky
-      - _Material<Star Fragment 21/36>
+      - _Material<Star Fragment 22/36>
       - _Material<Light Dragon Horn>
       - _CherryBlossom::Eldin
 
@@ -4766,7 +4769,7 @@ _route:
       - _Warp::Shrine::Mayam<Warp to Mayam Shrine>:
          comment: Make night
          level: Sky
-      - _Material<Star Fragment 22/36>
+      - _Material<Star Fragment 23/36>
 
    - Catch Dinraal:
       - _Shrine::Kikakin
@@ -4860,18 +4863,18 @@ _route:
       - _Item<Campfire>:
          coord: [2389.04, 1588.74, -1712.46]
          comment: Make night
-      - _Material<Star Fragment 23/36>
-      - _Material<Naydra Horn>
+      - _Material<Star Fragment 24/36>
+      - _Material<Naydra Fang>
 
-   - Farosh Farming 7:
+   - Farosh Farming 6:
       - _Warp::Shrine::Rakashog<Warp to Rakashog Shrine>:
          comment: Make night
          level: Sky
       - _Item<Rockets>:
          coord: [-1820.55, 1075.09, -2212.26]
          comment: Fuse rockets to shields
-      - _Material<Star Fragment 24/36>
-      - _Material<Farosh Horn>
+      - _Material<Star Fragment 25/36>
+      - _Material<Farosh Scale 3/3>
 
    - Dinraal Farming 8:
       - _Warp::Lightroot::Kawisar<Warp to Kawisar Lightroot>
@@ -4880,7 +4883,7 @@ _route:
    - Light Dragon Farming 6:
       - _Warp::Tower::RabellaWetlands<Warp to Rabella Wetlands Tower>:
          comment: Make night
-      - _Material<Star Fragment 25/36>
+      - _Material<Star Fragment 26/36>
       - _Material<Light Dragon Horn>
       - _Tablet::S06:
          notes: Take pic
@@ -5014,15 +5017,15 @@ _route:
          coord: [4655, 1171, -3825]
          comment: Make night
 
-   - Farosh Farming 8:
+   - Farosh Farming 7:
       - _Warp::Shrine::Rakashog<Warp to Rakashog Shrine>:
-         comment: Make night
+         comment: Make night (yes, again)
          level: Sky
       - _Item<Rockets>:
          coord: [-1820.55, 1075.09, -2212.26]
          comment: Fuse rockets to shields
-      - _Material<Star Fragment 26/36>
-      - _Material<Farosh Horn>
+      - _Material<Star Fragment 27/36>
+      - _Material<Farosh Fang>
 
    - Dinraal Farming 9:
       - _Warp::Lightroot::Tayamik<Warp to Tayamik Lightroot>
@@ -5031,7 +5034,7 @@ _route:
    - Naydra Farming 10:
       - _Warp::Tower::MountLanayru<Warp to Mount Lanayru Tower>:
          comment: Make night
-      - _Material<Star Fragment 27/36>
+      - _Material<Star Fragment 28/36>
       - _Material<Naydra Horn>
 
    - Light Dragon Farming 7:
@@ -5050,7 +5053,7 @@ _route:
          hide-icon-on-map: true
       - _Korok::RW40::Start
       - _Korok::RW35
-      - _Chest<Star Fragment 28/36>:
+      - _Chest<Star Fragment 29/36>:
          coord: [3795.07, 105.31, -3615.98]
       - _Enemy::BokoBoss::G59
       - _Korok::RW40::End
@@ -5132,7 +5135,7 @@ _route:
       - _Warp::Shrine::Jinodok<Warp to Jinodok Shrine>:
          comment: Make night
          level: Sky
-      - _Material<Star Fragment 29/36>
+      - _Material<Star Fragment 30/36>
       - _Material<Light Dragon Horn>
 
    - The Beast and the Princess:
@@ -5173,27 +5176,27 @@ _route:
    - Lonely Frox:
       - _Enemy::Frox::DC03
 
-   - Farosh Farming 9:
+   - Farosh Farming 8:
       - _Warp::Shrine::Rakashog<Warp to Rakashog Shrine>:
          comment: Make night
          level: Sky
       - _Item<Rockets>:
          coord: [-1820.55, 1075.09, -2212.26]
          comment: Fuse rockets to shields
-      - _Material<Star Fragment 30/36>
+      - _Material<Star Fragment 31/36>
       - _Material<Farosh Horn>
 
    - Naydra Farming 11:
       - _Warp::Tower::MountLanayru<Warp to Mount Lanayru Tower>:
          comment: Make night
-      - _Material<Star Fragment 31/36>
+      - _Material<Star Fragment 32/36>
       - _Material<Naydra Horn>
 
    - Dinraal Farming 10:
       - _Warp::Shrine::Mayam<Warp to Mayam Shrine>:
          comment: Make night
          level: Sky
-      - _Material<Star Fragment 32/36>
+      - _Material<Star Fragment 33/36>
       - _Material<Dinraal Horn>
 
    - Tukarok Shrine:
@@ -5496,26 +5499,26 @@ _route:
          coord: [4515.1, 106.79, -2310.12]
          comment: Make night
 
-   - Farosh Farming 10:
+   - Farosh Farming 9:
       - _Warp::Shrine::Rakashog<Warp to Rakashog Shrine>:
          comment: Make night
          level: Sky
       - _Item<Rockets>:
          coord: [-1820.55, 1075.09, -2212.26]
          comment: Fuse rockets to shields
-      - _Material<Star Fragment 33/36>
+      - _Material<Star Fragment 34/36>
       - _Material<Farosh Horn>
 
    - Dinraaal Farming 11:
       - _Warp::Shrine::Gikaku<Warp to Gikaku Shrine>:
          level: Sky
-      - _Material<Star Fragment 34/36>
+      - _Material<Star Fragment 35/36>
       - _Material<Dinraal Horn>
 
    - Light Dragon Farming 10:
       - _Warp::Tower::MountLanayru<Warp to Mount Lanayru Tower>:
          comment: Make night
-      - _Material<Star Fragment 35/36>
+      - _Material<Star Fragment 36/36>
       - _Material<Light Dragon Horn>
 
    - Akkala Citadel Ruins Cave:
@@ -5565,9 +5568,7 @@ _route:
       - _Korok::UM36
       - _Korok::UM33
       - _Shop::GeneralStore15:
-         comment: Buy monster blood
-      - _Shop::BreakaPartShop<Star Fragment 36/36>:
-         comment: Separate Light Staff for Star Fragment
+         comment: Buy monster extract
       - _Place::TarreyTown:
          hide-icon-on-map: true
       - _Korok::UM34
@@ -5633,7 +5634,7 @@ _route:
          notes: Take pic of goddess statue
       - _GoddessStatue::TarreyTown
       - _Shop::GeneralStore15:
-         comment: Buy monster blood
+         comment: Buy monster extract
       - _Special<Place Travel Medallion>:
          coord: [3962, 233, 1635]
       - _Shop::MonsterGallery
@@ -6650,6 +6651,7 @@ _route:
       - _Korok::ML07
       - _Enemy<Phantom Ganon>:
          coord: [3271.93, 267.48, -1258.93]
+         comment: Can be in 1 of 3 locations in this area
       - _Location::LanayruRoadEastGate
       - _Cave::LanayruRoadEast00
       - _Enemy::BokoBoss::G43
@@ -6809,6 +6811,7 @@ _route:
       - _Enemy<Phantom Ganon>:
          coord: [-365.6, 126.84, -1902]
       - _Korok::HF61
+      - _Korok::HF69
       - _Addison::A34
       - _Korok::HF70
       - _Korok::PF34::Start
@@ -7021,6 +7024,7 @@ _route:
       - _Korok::LB47
       - _Enemy<Phantom Ganon>:
          coord: [-2118.93, 239.98, 338.97]
+         comment: Can be in 1 of 2 locations in this area
       - _Korok::LB55
       - _Korok::LB59
       - _Korok::LB58
@@ -7169,12 +7173,6 @@ _route:
          coord: [-566.91, -698.31, 2569.73]
       - _Location::DrenaCanyonMine:
          hide-icon-on-map: true
-         notes: Warp to forge construct(s) to buy enough crystallized charges to complete battery belt, plus some extra to buy hover stones
-
-   - Get More Hover Stones:
-      - _Warp::Shrine::Nachoyah<Warp to Nachoyah Shrine>
-      - _Shop::CrystalRefinery:
-         comment: Fully upgrade battery belt, Buy hover stones
 
    - Mother Statue:
       - _Warp::Shrine::Mayausiy<Warp to Mayausiy Shrine>:
@@ -7271,10 +7269,10 @@ _route:
    - Bring Peace to Hebra:
       - _Warp::Shrine::Orochium<Warp to Orochium Shrine>
       - _Shrine::Orochium
-      - _SideQuest<A Picture for Snowfield Stable>:
-         coord: [-1651, 234, 2570]
       - _Npc::Beedle_02:
          coord: [-1661, 234, 2576]
+      - _SideQuest<A Picture for Snowfield Stable>:
+         coord: [-1651, 234, 2570]
       - _SideQuest::WhoFindstheHaven:
          coord: [-1662, 233, 2542]
       - _Well::SnowfieldStable
@@ -7340,6 +7338,7 @@ _route:
          notes: Take pic of lizalfos and black boko
       - _Enemy<Phantom Ganon>:
          coord: [-3212.65, 132.34, -2003.04]
+         comment: Can be in 1 of 3 locations in this area
       - _Korok::GH46
       - _Korok::GH51
       - _Korok::GH50
@@ -7425,6 +7424,7 @@ _route:
          hide-icon-on-map: true
       - _Enemy<Phantom Ganon>:
          coord: [412.91, 114.99, -1868.65]
+         comment: Can be in 1 of 3 locaions in this area
       - _Korok::PF16
       - _Korok::PF18
       - _Well::DeyaVillageRuinsNorth
@@ -7437,7 +7437,6 @@ _route:
    - Riverside Stable:
       - _Korok::PF20
       - _Korok::PF19
-      - _Korok::HF69
       - _Korok::HF59::Trail
       - _Korok::HF53
       - _Korok::PF12::Start
@@ -8020,7 +8019,7 @@ _route:
    - Frostbite Trousers:
       - _Npc::Laissa_01
       - _Shop::GeneralStore14:
-         comment: Buy oil, butter, sugar, and wheat
+         comment: Buy cooking ingredients
       - _Item<Flying Machine>:
          coord: [-3620, 0, 1900]
          comment: Should be in the lake
@@ -8622,6 +8621,7 @@ _route:
          comment: Buy wheat and rice
       - _Npc::Isha_01:
          comment: Get a new Sword of the Seven
+         notes: Take pics of dragon parts
       - _Shop::JewelryShop:
          notes: Buy all the jewelry
       - _Enemy::Molduga::SG01
@@ -8729,7 +8729,7 @@ _route:
          coord: [3369, 120, -2132]
       - _Special<Cook>:
          coord: [3357.76, 215.82, -2095.69]
-         comment: Monster curry, make noon
+         comment: Monster curry. Make noon
       - _Npc::Tamana_01:
          comment: Give shroom
       - _Npc::Leop:
@@ -8737,7 +8737,7 @@ _route:
          comment: Give shroom
       - _Npc::Ivee
       - _Shop::GeneralStore07:
-         comment: Buy stuff
+         comment: Buy cooking ingredients
       - _Npc::Manny
       - _Npc::Medda:
          comment: Give shroom
@@ -8802,7 +8802,7 @@ _route:
          coord: [3303.74, 215.36, -2127.53]
          notes: Take pic
       - _Shop::GeneralStore07:
-         comment: Buy stuff
+         comment: Buy cooking ingredients
       - _Korok::ML39::Start
       - _Korok::ML39::End
       - _Korok::ML38
@@ -8827,12 +8827,6 @@ _route:
       - _Shrine::Tokiy:
          comment: Ascend
       - _Korok::RW07
-
-   - Buy Hover Stones:
-      - _Warp::Shrine::Nachoyah<Warp to Nachoyah Shrine>
-      - _Shop::CrystalRefinery:
-         comment: Buy hover stones
-      - _Korok::GSI16
 
    - Horon Lagoon:
       - _Warp::Shrine::Apogek<Warp to Apogek Shrine>
@@ -9285,13 +9279,15 @@ _route:
 
    - Surface Cleanup:
       - _Warp::Tower::LookoutLanding<Warp to Lookout Landing Tower>
+      - _Shop::CrystalRefinery01:
+         comment: Upgrade battery belt
       - _Well::LookoutLanding:
          comment: Enter the well
       - _SideQuest<Where Are the Wells>:
          coord: [-212.68, 124.64, 131.08]
-      - _Item<Cookset>:
+      - _Special<Cook>:
          coord: [-269.4, 113.5, 101.9]
-         comment: Cook speed food. Make night
+         comment: Speed food. Make night
       - _Npc::Gralens:
          comment: Collect all the medals, Ascend
       - _Shop::GeneralStore:
@@ -9317,10 +9313,10 @@ _route:
       - _Enemy::BokoBoss::D15
       - _MainQuest<Destroy Ganondorf>:
          notes: TAKE PICS!!!
+      - Reload From Autosave
 
    - Compendium:
-      - Reload From Autosave
-      - _Warp::TechLab::Hateno
+      - _Warp::TechLab::Hateno<Warp to Hateno Tech Lab>
       - _SideAdv::FillingouttheCompendium:
          coord: [3768.92, 356.4, -2121.82]
       - _SideQuest::UmasGarden:
