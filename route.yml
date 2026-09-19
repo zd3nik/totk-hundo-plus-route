@@ -4019,6 +4019,11 @@ _route:
       - _SideQuest::UnknownHugeSilhouette
       - _GoddessStatue::LookoutLanding:
          comment: Ascend
+      - _Shop::GeneralStore:
+         comment: Buy cooking ingredients
+      - _Npc::Karson:
+         coord: [-218.73, 124.66, 93.56]
+         comment: Tell Karson about the Rito rope bridge
       - _MainQuest::FindtheFifthSage:
          coord: [-253, 126.36, 155]
       - _MainQuest::DestroyGanondorf
@@ -5201,9 +5206,6 @@ _route:
 
    - Tukarok Shrine:
       - _Warp::Tower::LookoutLanding<Warp to Lookout Landing Tower>
-      - _Npc<Karson>:
-         coord: [-210, 109, 106]
-         comment: Tell Karson about the Rito rope bridge
       - _Shop::GeneralStore:
          comment: Buy rice, milk, and fish
       - _Enemy::BokoBoss::G17
