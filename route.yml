@@ -1163,13 +1163,8 @@ _route:
          hide-icon-on-map: true
       - _Chest<Purple rupee>:
          coord: [-630.93, 129.6, -571.73]
-      - _Enemy<Bokoblin x3>:
-         coord: [-675.5, 127.55, -420.12]
       - _Item<Courser Bee Honey>:
          coord: [-700, 131.98, -390.09]
-         notes: Take pic
-      - _Item<Dazzlefruit>:
-         coord: [-713.04, 134.58, -307.55]
          notes: Take pic
       - _Shrine::Susuyai
       - _Korok::HF22::Start
@@ -1594,7 +1589,11 @@ _route:
          coord: [-3465.53, -293.82, 1886.04]
       - _Shop::ForgeConstruct04:
          coord: [-3460, -311, 1910]
-      - _Item<Bananas, Crates, and Bomb Flower>:
+      - _Item<Sundelions and Crates>:
+         coord: [-3427.22, -311.34, 1879.37]
+      - _Item<Bomb Flower>:
+         coord: [-3428.69, -311.57, 1861.1]
+      - _Item<Bananas and Crates>:
          coord: [-3421.05, -309.36, 1856.47]
 
    - Lake Tatori:
@@ -1712,7 +1711,7 @@ _route:
          coord: [1937.84, 272.63, -1080.23]
          comment: Ascend
       - _Cave::KakarikoVillage00
-      - _Item<Fairy>:
+      - _Item<Fairies>:
          coord: [1991.88, 244.16, -961.2]
          comment: Collect no more than 2
       - _Item<Hearty Truffle>:
@@ -1730,9 +1729,6 @@ _route:
       - _Special<Read Book>:
          coord: [1901.46, 305.32, -810.25]
          comment: Rocket Shield Up to Top of Hill
-      - _Item<Silent Princess>:
-         coord: [1879.35, 342.35, -810.05]
-         notes: Take pic
       - _Item<Blue Nightshades>:
          coord: [1874.43, 344.1, -813.61]
          notes: Take pic
@@ -1905,10 +1901,13 @@ _route:
       - _Special<Starting Block>:
          coord: [2410.07, 363.24, -2671.19]
       - _Korok::RW17
-      - _Item<Fleet-Lotus Seeds and Frogs>:
-         coord: [2380.68, 320.41, -2848.58]
       - _Item<Fleet-Lotus Seeds>:
          coord: [2369.43, 320.41, -2824.62]
+      - _Item<Fleet-Lotus Seeds and Frogs>:
+         coord: [2380.68, 320.41, -2848.58]
+      - _Special<Cook>:
+         coord: [2417.06, 321.57, -2871.03]
+         comment: Speed food
       - _Item<Wood>:
          coord: [2436.76, 323.03, -2789.73]
       - _Tower::RabellaWetlands
@@ -1917,22 +1916,18 @@ _route:
       - _Korok::RWS01
       - _Location::NecludaSkyArchipelago:
          hide-icon-on-map: true
+      - _Dispenser::S17
       - _Special<Launcher>:
          coord: [2854.5, 1337.71, -2902.88]
       - _Korok::RWS02
-      - _Dispenser::S17
-
-   - Kumamayn Shrine:
-      - _Special<Launcher>:
-         coord: [2854.5, 1337.71, -2902.88]
       - _Enemy::FluxConstruct::SF01
       - _Shrine::Kumamayn::Start
       - Launch Crystal with Aparatus:
          movements:
             - to: [3034.23, 1313.38, -2907.69]
-      - _Shrine::Kumamayn
 
-   - Zakusu Shrine:
+   - The High Spring and the Light Rings:
+      - _Shrine::Kumamayn
       - _Tablet<Drop Tablet>:
          coord: [3918.64, 1301.6, -2471.2]
          level: Sky
@@ -1962,7 +1957,7 @@ _route:
          coord: [4165.08, 1724.69, -1084.63]
          comment: Build flying machine
       - _Dispenser::S07
-      - _Item<Frogs>:
+      - _Item<Frogs and Fire Flies>:
          coord: [4722.8, 1898.71, -866.25]
       - _OldMap::ValorIsland_01
       - _Korok::MLS01
