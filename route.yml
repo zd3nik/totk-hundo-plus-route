@@ -1678,12 +1678,13 @@ _route:
          coord: [1738.07, 300.08, -1117.63]
       - _Shrine<Activate Makasura Shrine>:
          coord: [1769.9, 278.15, -1051.93]
-      - _Place::KakarikoVillage
-
-   - Cucco Hideaway:
       - _Npc::Koko:
          coord: [1825, 220, -1000]
          comment: Buy Garland, Fuse it to a Shield
+      - _Place::KakarikoVillage:
+         hide-icon-on-map: true
+
+   - Cucco Hideaway:
       - _Special<Take Pic of Calamity Scene>:
          coord: [1773.18, 235.31, -981.2]
          comment: Ascend
@@ -1784,9 +1785,9 @@ _route:
          coord: [2612.1, 1586.72, -1455.05]
          comment: Fuse rockets to platform to reach forge island
       - _Location::ZonaiteForgeIsland
+      - _Korok::SSS05::Trail
 
    - Zonaite Forge:
-      - _Korok::SSS05::Trail
       - _Special<Starting Block>:
          coord: [2409.12, 1675.16, -1821.48]
       - _Korok::SSS04
@@ -1837,7 +1838,8 @@ _route:
          coord: [1388.84, 241.41, -1142.45]
          notes: Take pic
       - _Bubbulfrog::SahasraSlopeCave
-      - _Tower::SahasraSlope
+      - _Tower::SahasraSlope:
+         comment: Ascend into tower from below
 
    - West Necluda Sky Archipelago:
       - _Item<Shock Fruit>:
@@ -1917,8 +1919,6 @@ _route:
       - _Location::NecludaSkyArchipelago:
          hide-icon-on-map: true
       - _Dispenser::S17
-      - _Special<Launcher>:
-         coord: [2854.5, 1337.71, -2902.88]
       - _Korok::RWS02
       - _Enemy::FluxConstruct::SF01
       - _Shrine::Kumamayn::Start
@@ -2145,9 +2145,6 @@ _route:
          coord: [4502.12, 351.39, 3148.26]
       - _Korok::UM12
       - _Chest::YigaArmor
-      - _Special<Cook and Eat 30 Minute Speedfood>:
-         coord: [4518, 352, 3167]
-         comment: Dragon Horn + 4 Fleet Lotus Seeds
       - _Chest<Travel Medallion Prototype>:
          coord: [4523.45, 352.99, 3163.68]
          comment: Ascend
