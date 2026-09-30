@@ -2714,7 +2714,8 @@ _route:
       - _Warp::Shrine::Mogisari<Warp to Mogisari Shrine>:
          comment: Make night if needed, in which case you are running behind and should skip one or more lynels in the next segment
          level: Sky
-      - _Material<Star Fragment 2/36>
+      - _Material<Star Fragment 2/36>:
+         comment: If star fragment doesn't appear warp to Gikaku and try from there
       - _Material<Dinraal Horn>
 
    - Lynel Run 3:
@@ -2755,7 +2756,8 @@ _route:
          comment: Complete the mini-game
       - _Dispenser::S21:
          comment: Replenish fans
-      - _Shrine::Taunhiy
+      - _Shrine::Taunhiy:
+         notes: Take pic of construct in shrine
       - _Korok::LBS04
 
    - Mount Rhoam:
@@ -3066,7 +3068,7 @@ _route:
          coord: [-3278.02, 129.01, -2569.66]
          comment: Speed food and money food
       - _Shop::GeneralStore12:
-         comment: Buy electric safflina and melons
+         comment: Buy stuff
       - _Shop::ArmorShop01:
          comment: Buy voe headband
       - _Shrine::Mayatat
