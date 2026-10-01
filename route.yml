@@ -1060,6 +1060,7 @@ _route:
    - Zora's Domain:
       - _Warp::Place<Zora's Domain>:
          coord: [3333, 269.46, 542]
+         comment: Reload after autosave
       - _SideQuest::SecretTreasureundertheGreatFish:
          coord: [3342.75, 269.46, 543.89]
       - _SideQuest::TheNeverEndingLecture:
