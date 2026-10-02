@@ -3666,6 +3666,8 @@ _route:
          coord: [854.5, -435.74, -2098.73]
       - _Poe::Large:
          coord: [880, -435.31, -2093.73]
+      - _Poe::Grand:
+         coord: [881.27, -435.06, -2116.9]
       - _Poe::Large:
          coord: [894.24, -419.43, -2128.13]
       - _Enemy<Soldier Construct II>:
@@ -3686,8 +3688,6 @@ _route:
          coord: [868.01, -368.34, -2124.73]
       - _Poe::Grand:
          coord: [859, -368.18, -2115.73]
-      - _Poe::Grand:
-         coord: [881.27, -435.06, -2116.9]
 
    - Wellspring of Courage:
       - _Lightroot::Uisihcoj
@@ -3939,7 +3939,8 @@ _route:
       - _Equipment::Shield<Royal Guard's Shield>:
          coord: [-223.73, 462.63, 1056.89]
          notes: Take pic
-      - _Location::EastPassage
+      - _Location::EastPassage:
+         coord: [-70, 132, 1120]
 
    - West Passage:
       - _Korok::LL01
