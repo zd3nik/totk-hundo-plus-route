@@ -908,7 +908,7 @@ _route:
       - _MainQuest::TheSludgeCoveredStatue:
          coord: [3300, 139, 463]
 
-   - We Need at Least 10 Bright-Eyed Crabs:
+   - Zora's Domain:
       - _Place::ZorasDomain:
          hide-icon-on-map: true
       - _Item<Fleet-Lotus Seeds and Crabs>:
@@ -1057,7 +1057,7 @@ _route:
          coord: [3365, 1848.1, 750]
          notes: Take pic
 
-   - Zora's Domain:
+   - The Moonlit Princess:
       - _Warp::Place<Zora's Domain>:
          coord: [3333, 269.46, 542]
          comment: Reload after autosave
@@ -5673,9 +5673,9 @@ _route:
       - Enter Labyrinth:
          movements:
             - to: [-1770, 170, -3470]
-      - _Shrine::Motsusis
       - _SideQuest::TheSouthLomeiProhecy<The South Lomei Prophecy>:
          coord: [-1795, 152.04, -3438.35]
+      - _Shrine::Motsusis
 
    - A Way to Trade:
       - _Warp::Special<Warp to Travel Medallion South of Hateno Tech Lab>:
