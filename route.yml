@@ -6695,7 +6695,8 @@ _route:
       - _Korok::SS27::End
       - _Korok::SS31
       - _Location::LanayruRoadWestGate
-      - _Addison::A60
+      - _Addison::A60:
+         notes: Make morning with clear sky, if needed
       - _Npc::Steward Construct_02
       - _Shrine::Kurakat
       - _Enemy::Lynel::G11:
