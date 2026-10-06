@@ -2934,6 +2934,10 @@ _route:
       - _Enemy::Gleeok::G06
 
    - Gerudo Highlands:
+      - _Enemy<Blizzrobe>:
+         coord: [-3895.8, 686.83, -1088.13]
+         comment: Replace Blizzard Wand
+         notes: Take pic
       - _Korok::GH20::Trail
       - _Korok::GH17
       - _Tablet::S08:
@@ -5445,7 +5449,7 @@ _route:
       - _Cave::RetsamForest00:
          comment: Ascend
       - _Material<Naydra Horn>:
-         comment: Skip if Naydra is not nearby
+         coord: [3960, 450, -2180]
 
    - Hateno Tech Lab:
       - _Korok::ML29
@@ -5453,14 +5457,6 @@ _route:
       - _SideAdv::PresentingTheTravelMedallion
       - _SideAdv::PresentingHerosPathMode
       - _SideAdv::PresentingSensor+
-      - _Item<Restless Cricket>:
-         coord: [3795.09, 355.83, -2134.51]
-         notes: Take pic
-      - _Item<Farmer's Pitchfork>:
-         coord: [3764.83, 356.67, -2130.5]
-         notes: Take pic
-
-   - Kitano Bay:
       - _Korok::ML42::Start
       - _Korok::ML33
       - _Special<Place Travel Medallion>:
@@ -5594,7 +5590,7 @@ _route:
       - _Npc::Hagie:
          comment: Place partition in front of ass-hole
       - _Npc<Mattison>:
-         coord: [3939.66, 233.65, 1611.85]
+         coord: [3935, 233.65, 1611.85]
 
    - Hudson Construction Site:
       - _Shrine::Jochi-ihiga::Start:
@@ -5647,15 +5643,8 @@ _route:
       - _SideQuest::HomeonArrange:
          coord: [3933, 129, 1586]
 
-   - Rocket Reload 3:
-      - _Warp::Shrine::Rakashog<Warp to Rakashog Shrine>:
-         level: Sky
-      - _Item<Rockets>:
-         coord: [-1820.55, 1075.09, -2212.26]
-         comment: Fuse rockets to shields
-      - _Material<Optional Star Fragment>
-
    - South Lomei Labyrnith:
+      - _Warp::Shrine::Rakashog<Warp to Rakashog Sky Shrine>
       - _Korok::GC23
       - _Addison::A26
       - _Korok::GC27
@@ -5685,14 +5674,7 @@ _route:
       - _Item<Boat>:
          coord: [4007.13, 106.14, -3008.27]
       - _SideQuest::AWaytoTradeWashedAway:
-         movements:
-            - to: [3850, 0, -3800]
-            - to: [3550, 0, -3930]
-            - to: [3300, 0, -3920]
-            - to: [3040, 0, -3800]
-            - to: [2959, 0, -3494]
-      - _Shop::GeneralStore16:
-         hide-icon-on-map: true
+         coord: [2959, 106, -3493]
       - _SideQuest<Lurelin Resort Project>:
          coord: [2968, 1, -3665]
       - _Shop::LurelinWaterRally:
@@ -5785,8 +5767,6 @@ _route:
          movements:
             - to: [1760, 380, -2890]
       - _Korok::PF45
-      - _Item<Swift Violet>:
-         coord: [1811.12, 218.72, -3035.21]
       - _Enemy<Black Bokoblin>:
          coord: [1787.39, 188.3, -2987.64]
       - _Korok::PF49
@@ -5890,7 +5870,7 @@ _route:
       - _Korok::PF65
       - _Shrine::Utsushok
 
-   - Rocket Reload 4:
+   - Rocket Reload 3:
       - _Warp::Shrine::Rakashog<Warp to Rakashog Shrine>:
          level: Sky
       - _Item<Rockets>:
@@ -6021,7 +6001,7 @@ _route:
       - _Korok::PF62::End
 
    - Strade's Test of Strength:
-      - _Warp::Shrine::Jinodok<Warp to Jinodok Shrine>
+      - _Warp::Shrine::Jinodok<Warp to Jinodok Sky Shrine>
       - _Npc::Strade:
          comment: Complete the mini-game
 
@@ -6117,9 +6097,6 @@ _route:
    - Eye Delivery 1:
       - _Special<Statue Eye>:
          coord: [-1430.27, -570.72, -1987.28]
-      - _Item<Rockets>:
-         coord: [-1402.41, -538.43, -2036.54]
-         comment: Fuse rockets to shields
       - _Item<Mine Cart>:
          coord: [-1404.1, -538.5, -2053.41]
          comment: Attach fans and statue eye, Ride the rail
@@ -6131,9 +6108,12 @@ _route:
          comment: Leave mine cart here, Fuse rockets to shields, Rocket shield up to next objective
       - _Special<Statue Eye>:
          coord: [-934.52, -430.46, -2324.29]
-         comment: Drop down to mine cart area with eye in hand, DO NOT throw it down
+      - Drop Down With Eye in Hand:
+         comment: DO NOT throw it down
+         movements:
+            - to: [-1000, -580, -2312]
       - _Item<Mine Cart>:
-         coord: [-1065, -550, -2308]
+         coord: [-1062, -550, -2300]
          comment: Fuse second eye to mine cart, Ride the rail
       - _Item<Elevator>:
          coord: [-828.11, -555.34, -1932.82]
@@ -6515,11 +6495,7 @@ _route:
       - _Location::SageTempleRuins:
          hide-icon-on-map: true
       - _Item<Acorns>:
-         coord: [-1372.26, 115, -208.21]
-      - _Item<Acorns>:
          coord: [-1364.94, 114.99, -215.86]
-      - _Item<Acorns>:
-         coord: [-1380.56, 115, -255.28]
       - _Item<Acorns>:
          coord: [-1387.86, 115, -250.41]
       - _Cave::SageTemple00
@@ -6625,6 +6601,8 @@ _route:
          notes: Take pic
       - _Korok::HF30
       - _Korok::HF18
+
+   - Satori Mountain Foothill Cave:
       - _Cave::SatoriMountainFoothill00
       - _Enemy::Hinox::GC04
 
@@ -6635,7 +6613,7 @@ _route:
       - _Cave::SatoriMountainFoothill00
       - _Shrine::Usazum
 
-   - Rocket Reload 5:
+   - Rocket Reload 4:
       - _Warp::Shrine::Ukoojisi<Warp to Ukoojisi Shrine>:
          level: Sky
       - _Item<Rockets>:
@@ -6643,7 +6621,7 @@ _route:
          comment: Fuse rockets to shields
 
    - Lanayru Heights:
-      - _Warp::Shrine::Yansamin<Warp to Yansamin Shrine>
+      - _Warp::Shrine::Yansamin<Warp to Yansamin Sky Shrine>
       - _Korok::ML09
       - _Korok::ML12
       - _Korok::ML07
@@ -6662,17 +6640,13 @@ _route:
 
    - Lanayru Promenade:
       - _Shrine::O-ogim::Start
-      - _Item<Rocket>:
-         coord: [2664.55, 229.64, -1359.12]
-         comment: Fuse to crystal and send it toward shrine before leaving cave
       - _Cave::LanayruRoadSouth00
       - _Korok::SS48::Trail:
-         notes: Complete next korok in the middle of the trail for this korok
-      - _Location::LanayruPromenade:
-         hide-icon-on-map: true
-         comment: Shrine crystal should be somewhere nearby
+         comment: Complete next korok in the middle of the trail for this korok
       - _Korok::SS47:
          comment: You should have already gotten this korok in the middle of the flower trail for the previous korok
+      - _Location::LanayruPromenade:
+         hide-icon-on-map: true
       - _Shrine::O-ogim:
          notes: Make night after completing shrine
       - _Enemy::BokoBoss::G45
@@ -6903,7 +6877,7 @@ _route:
       - _Lightroot::Kimimeg
 
    - Ancient Columns:
-      - _Warp::Shrine::Ganos<Warp to Ganos Shrine>
+      - _Warp::Shrine::Ganos<Warp to Ganos Sky Shrine>
       - _Item<Ancient Pillar Switch>:
          coord: [-3484.08, 397.83, 421.95]
       - _Cave::AncientColumns00
@@ -6936,7 +6910,7 @@ _route:
       - _Cave::GisaCrater00
       - _Shrine::Ikatak
 
-   - Rescue the Hornist:
+   - Strock Lake:
       - _Special<Starting Block>:
          coord: [-3820.74, 392.28, 1319.24]
       - _Korok::LB12
@@ -6951,6 +6925,8 @@ _route:
       - _Enemy::Talus::GR02
       - _Korok::LB30::Start
       - _Korok::LB36
+
+   - Rescue Ornest the Hornist:
       - _Korok::LB33
       - _Korok::LB30::End
       - _Korok::LB31
@@ -6975,16 +6951,18 @@ _route:
       - _Cave::TanagarCanyonWest00
       - _Bubbulfrog::TanagarCanyonWestCave
       - _Shrine::Iun-orok
+
+   - Tabantha Bridge Stable:
       - _Warp::Shrine::Makurukis
       - _Korok::LB41::Trail
-      - _Well::TabanthaBridgeStable
-
-   - White Goats Gone Missing:
-      - _Npc::Beedle_01:
-         coord: [-2925, 319, 580]
-      - _Npc::Dabi
       - _Place::TabanthaBridgeStable:
          hide-icon-on-map: true
+      - _Well::TabanthaBridgeStable
+      - _Npc::Beedle_01:
+         coord: [-2925, 319, 580]
+
+   - White Goats Gone Missing:
+      - _Npc::Dabi
       - _SideQuest::APictureforTabanthaBridgeStable:
          coord: [-2931, 319, 547]
       - _SideAdv::WhiteGoatsGoneMissing:
@@ -7027,8 +7005,7 @@ _route:
       - _Korok::LB55
       - _Korok::LB59
       - _Korok::LB58
-      - _Location::JeddoBridge:
-         hide-icon-on-map: true
+      - _Location::JeddoBridge
       - _Korok::LB57
       - _Korok::LB51
       - _Enemy::Lynel::G05
@@ -7043,10 +7020,8 @@ _route:
       - _Korok::LB29
       - _Enemy::Hinox::GR06
       - _Location::ThundraPlateau:
-         hide-icon-on-map: true
-      - _Item<Dragonblood Tree x3>:
          coord: [-2272.5, 217.5, 844.41]
-         comment: Fuse 3 logs together in series, Make noon with clear sky
+         comment: Fuse 3 logs together in series. Make noon with clear sky
       - _Cave::ThundraPlateau00:
          comment: Use fused logs to cast shadow across cave entrance
 
@@ -7093,19 +7068,11 @@ _route:
       - _Equipment::Weapon<Giant Boomerang>:
          coord: [-2463.77, -505.98, 65.48]
       - _Enemy::Frox::DC04
-      - _Equipment::Weapon<Sword>:
-         coord: [-2008.6, -440.92, 385.4]
-      - _Equipment::Weapon<Sword>:
-         coord: [-1832.58, -445.91, 277.23]
       - _YigaSchema::BombBouquet
       - _LockedChest::D38:
          hide-icon-on-map: true
       - _LockedChest::D39:
          hide-icon-on-map: true
-      - _Equipment::Weapon<Sword>:
-         coord: [-1469.41, -419.2, 419.77]
-      - _Equipment::Weapon<Sword>:
-         coord: [-1438.28, -366.74, 559.88]
       - _Lightroot::Kawakanis
       - _Enemy::Lynel::D02
       - _Enemy::Frox::DC01
@@ -7241,8 +7208,13 @@ _route:
       - _Korok::RP32:
          notes: Take pic of bird mountain
       - _Korok::RP25
+      - Drop Flying Machine Near Rubble:
+         movements:
+            - to: [-3675, 200, 3060]
       - _Enemy::Gleeok::G02:
          comment: Drop flying machine near rubble
+
+   - The Duchess Who Dissapeared:
       - _Cave::EastBironSnowshelf00
       - _Bubbulfrog::EastBironSnowshelfCave
       - _SideQuest::TheDuchessWhoDissapeared:
@@ -7304,8 +7276,10 @@ _route:
       - _Location::SelmiesSpot:
          comment: Make sure you have 1 empty shield slot before starting mini-game. Complete all levels of the mini-game
          notes: Take pics of shields
+      - _Cave::EastBironSnowshelf00:
+         comment: Enter here during advanced shield surfing course
       - _Cave::EastBironSnowshelf01:
-         comment: This cave entrance is discovered during the shield surfing mini-game
+         comment: Exit here during advanced shield surfing course
 
    - Gerudo Desert Gateway:
       - _Warp::Shrine::Turakamik<Warp to Turakamik Shrine>
@@ -8475,12 +8449,9 @@ _route:
       - _Enemy<Ice-Breath Lizalfos>:
          coord: [-3417.72, 505.34, 3547.73]
       - _Enemy<Ice-Breath Lizalfosx2>:
-         coord: [-3447.72, 498.22, 3560.71]
-      - _Location::GoflamsSecretHotSpring
-      - _Item<Sizzlefin Trout x2>:
-         coord: [-3455.21, 472.78, 3554.22]
-      - _Item<Sizzlefin Trout x2>:
-         coord: [-3479.39, 472.78, 3581.06]
+         coord: [-3457.27, 494.99, 3583.47]
+      - _Location::GoflamsSecretHotSpring:
+         comment: Collect sizzlefin trout
       - _Shrine::Eutoum:
          comment: Ascend
 
@@ -8498,7 +8469,7 @@ _route:
       - _SideQuest::HebrasColossalFossil:
          coord: [-3882, 223, 3691]
 
-   - The Mushroom Haven:
+   - Sherfins Secret Hot Spring:
       - _Bubbulfrog::HebraGreatSkeleton
       - _Cave::HebraGreatSkeleton00
       - _Korok::RP08
@@ -8513,10 +8484,10 @@ _route:
       - _Korok::RP12
       - _Enemy::Talus::GH01
       - _Korok::RP10
-      - _Item<Sizzlefin Trout x3>:
-         coord: [-4310.84, 473.24, 3487.63]
       - _Location::SherfinsSecretHotSpring:
-         hide-icon-on-map: true
+         comment: Collect sizzlefin trout
+
+   - The Mushroom Haven:
       - _Special<Starting Block>:
          coord: [-4422.64, 496.87, 3216.01]
       - _Korok::RP21
@@ -8541,8 +8512,8 @@ _route:
          comment: Ascend
 
    - Frostbite Headdress:
-      - _Korok::RP29
       - _Korok::RP31
+      - _Korok::RP29
       - _Cave::LakeKilsie00
       - _Bubbulfrog::LakeKilsieCave
       - _Chest::FrostbiteHeaddress
@@ -8560,7 +8531,7 @@ _route:
       - _Korok::GH10::Start
       - _Enemy<Blizzrobe>:
          coord: [-4571.51, 634.63, -1199.26]
-         notes: Take pic
+         comment: Replace Blizzard Wand
       - _Korok::GH24
       - _Enemy::Lynel::G01
       - _Korok::GH13
@@ -8620,7 +8591,6 @@ _route:
          comment: Buy wheat and rice
       - _Npc::Isha_01:
          comment: Get a new Sword of the Seven
-         notes: Take pics of dragon parts
       - _Shop::JewelryShop:
          notes: Buy all the jewelry
       - _Enemy::Molduga::SG01
