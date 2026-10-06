@@ -8647,6 +8647,8 @@ _route:
          coord: [-3768, 43, -2927]
       - _Korok::GC35::Start
       - _Korok::GC35::End
+      - _Special<Place Travel Medalion Near Sand Pit>:
+         coord: [-3075, 120, -3080]
       - _Special<Starting Block>:
          coord: [-2731.97, 140.68, -2820.41]
       - _Korok::GC28
@@ -8655,16 +8657,18 @@ _route:
       - _Cave::EastGerudoRuins00
       - _Location::EastGerudoRuins:
          hide-icon-on-map: true
-      - _Bubbulfrog::EastGerudoRuinsCave:
+      - _Bubbulfrog::EastGerudoRuinsCave
+      - _Warp::Special<Warp to Travel Medalion Near Sand Pit>:
+         coord: [-3075, 120, -3080]
+      - _Cave::AncientPrisonRuins00
+      - _Bubbulfrog::AncientPrisonRuins
+      - _Shrine::Chichim:
          comment: Ascend
       - _Cave::QuicksandLake00
       - _Bubbulfrog::QuicksandLakeCave
-      - _Cave::AncientPrisonRuins00
-      - _Bubbulfrog::AncientPrisonRuins
-      - _Shrine::Chichim
 
    - Hateno Village:
-      - _Warp::Shrine::Yansamin<Warp to Yansamin Shrine>:
+      - _Warp::Shrine::Yansamin<Warp to Yansamin Sky Shrine>:
          level: Surface
       - _Korok::ML18
       - _Korok::ML17
