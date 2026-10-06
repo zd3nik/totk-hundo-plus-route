@@ -4146,6 +4146,9 @@ _route:
       - _Item<White Goat>:
          coord: [1071.75, 127.58, 1163.16]
          notes: Take pic
+      - _Item<Farmer's Pitchfork>:
+         coord: [1069.29, 128.17, 1161.95]
+         notes: Take pic
       - _Well::WoodlandStable
       - _Place::WoodlandStable:
          comment: Receive harness reward from Kish
@@ -5457,6 +5460,9 @@ _route:
       - _SideAdv::PresentingTheTravelMedallion
       - _SideAdv::PresentingHerosPathMode
       - _SideAdv::PresentingSensor+
+      - _Item<Restless Cricket>:
+         coord: [3795.09, 355.83, -2134.51]
+         notes: Take pic
       - _Korok::ML42::Start
       - _Korok::ML33
       - _Special<Place Travel Medallion>:
