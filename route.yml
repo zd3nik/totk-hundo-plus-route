@@ -4,6 +4,7 @@ _project:
    authors:
       - Shawn Chidester
    name: Glitchless No Amiibo TOTK Hundo+ (Turkey Leg Route)
+   version: 1.3.0
    description:
       - Standard TOTK hundo (glitchless, no amiibo) plus
       - Clear all ??? from all device dispensers
@@ -25,7 +26,6 @@ _project:
       - Attend both Ashai classes (get a smiling face in the adult class)
       - Dog treasures are intentionally excluded
       - Micro-management of weapons, health, armor, how to defeat enemies, etc is not detailed in this route doc. Dragon farming is highly time sensitive. There are lynel and rocket shield farming segments, some of which can be skipped or done out of order to help ensure you arrive at dragons at the correct time.
-   version: 1.2.0
    progress: [
       "Tower", "Shrine", "Lightroot", "Korok",
       "Bubbulfrog", "Addison",
