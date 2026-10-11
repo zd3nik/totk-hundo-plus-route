@@ -4,7 +4,7 @@ _project:
    authors:
       - Shawn Chidester
    name: Glitchless No Amiibo TOTK Hundo+ (Turkey Leg Route)
-   version: 1.3.0
+   version: 1.4.0
    description:
       - Standard TOTK hundo (glitchless, no amiibo) plus
       - Clear all ??? from all device dispensers
@@ -643,7 +643,7 @@ _route:
       - _Warp::Shrine::Jiosin<Warp to Jiosin Shrine>
       - _Chasm::HyruleField
 
-   - Hyrule Field Depths:
+   - North Hyrule Field Depths:
       - _Lightroot::Nisoij
       - _Lightroot::Iayusus
       - _Npc::Robbie_02
@@ -667,47 +667,66 @@ _route:
       - _Lightroot::Gadohsi
       - _Enemy::Frox::DC05:
          notes: Take pic
-      - _Equipment::Weapon<Weapon Pillar>:
-         coord: [-399.57, -365.06, 370.8]
-      - _Equipment::Weapon<Weapon Pillar>:
-         coord: [-405.9, -365.02, 435.64]
-      - _Equipment::Weapon<Weapon Pillar>:
-         coord: [-361.87, -361.56, 400.84]
-      - _Lightroot::Sinonoyk
+      - _Poe::Normal:
+         coord: [-204.83, -367.35, -6.84]
+      - _Enemy::BokoBoss::D16
+      - _Poe::Large:
+         coord: [-150.5, -338.9, -9.12]
+      - _Poe::Large:
+         coord: [-140.24, -339.37, -5.02]
+      - _Poe::Large:
+         coord: [-132.9, -339.24, -26.28]
+      - _Poe::Large:
+         coord: [-135.08, -285.5, -46.98]
+      - _Enemy::Talus::DC01
       - _Equipment::Weapon<Weapon Pillar>:
          coord: [-237.87, -341, 358.39]
          notes: Skip weapon pillars along the route that you know you don't need
+      - _Lightroot::Sinonoyk
+      - _Poe::Large:
+         coord: [-119.3, -323.72, 384.23]
+      - _Poe::Large:
+         coord: [-105.8, -320.93, 348.03]
+      - _Poe::Large:
+         coord: [-88.75, -321.12, 348.35]
       - _Enemy::BokoBoss::D22
       - _Lightroot::Oyimay
+      - Drop Flying Machine:
+         movements:
+            - to: [494.34, -365.65, 251.19]
+      - _Poe::Large:
+         coord: [529.66, -296.1, 207.94]
+      - _Poe::Large:
+         coord: [529.6, -296.68, 200.44]
+      - _Poe::Large:
+         coord: [482.5, -314.87, 169.5]
+      - _Poe::Large:
+         coord: [495.77, -315.48, 187.61]
+
+   - South Hyrule Field Depths:
       - _Chest<Large Crystallized Charge>:
          coord: [555.21, -365.97, 281.18]
       - _Location::AppleanGrove:
          hide-icon-on-map: true
+      - _Poe::Normal:
+         coord: [494.34, -365.65, 251.19]
+         comment: Flying machine should be nearby
       - _Enemy::Hinox::DC02
-      - _Enemy::Talus::DC01
-      - _Enemy::BokoBoss::D16:
-         comment: Use 1 large zonai charge for long flight to next enemy
-      - _Enemy::Talus::DC03
-      - _Enemy::Frox::DC08
+      - _Enemy::FluxConstruct::DC03
       - _Poe::Normal:
-         coord: [316.75, -376.09, -809.89]
-      - _Poe::Normal:
-         coord: [302.95, -374.11, -775.15]
-      - _Poe::Normal:
-         coord: [268.12, -376.89, -671.82]
-      - _Poe::Normal:
-         coord: [288.57, -382.95, -665.91]
+         coord: [651.81, -360.9, -620.53]
       - _Poe::Normal:
          coord: [470.34, -387.96, -764.53]
       - _Shop::BargainerStatue01
       - _Location::PlainsBargainerStatue:
          hide-icon-on-map: true
-      - _Enemy::FluxConstruct::DC03
       - _Equipment::Weapon<Spear>:
          coord: [392.31, -364.67, -914.27]
       - _Lightroot::Stakijat
-      - _Enemy::Lynel::D11<Lynel>
+      - _Enemy::Frox::DC08
+      - _Enemy::Talus::DC03
       - _Lightroot::Netinet
+      - _Enemy::Lynel::D11<Lynel>
       - _Enemy::Hinox::DC05
       - _Lightroot::Nuzimak
       - _Enemy<Yiga Footsoldier>:
@@ -721,10 +740,12 @@ _route:
       - _Enemy::Frox::DC10
       - _Warp::Special<Warp to Central Mine>:
          coord: [-821.82, -417.75, -1940.61]
-      - _SchemaStone::CentralMine
       - _Shop::ForgeConstruct10:
          comment: Purchase crystallized charges
       - _Warp::Lightroot::Nogukoyk<Warp to Nogukoyk Lightroot>
+      - _Item<Steering Stick and Fans>:
+         coord: [-635.05, -410.82, -1514.47]
+         comment: Build flying machine
       - _Equipment::Weapon<Weapon Pillar>:
          coord: [-577.72, -339.73, -1498.67]
       - _Poe::Normal:
@@ -752,11 +773,15 @@ _route:
    - Kara Kara Mine:
       - _Warp::Special<Warp to Central Mine>:
          coord: [-821.82, -417.75, -1940.61]
+      - _SchemaStone::CentralMine:
+         comment: Build flying machine
       - _Lightroot::Koradat
-      - _Enemy::Hinox::DF02:
-         comment: Farosh should be visible to the south
       - _Equipment::Weapon<Sword>:
          coord: [-1402.08, -441.76, -2393.61]
+      - _Poe::Normal:
+         coord: [-1423.35, -450.66, -2378.7]
+      - _Enemy::Hinox::DF02:
+         comment: Farosh should be visible to the south
       - _Equipment::Weapon<Claymore>:
          coord: [-1671.26, -325.84, -2143.42]
       - _Chest<Large Crystallized Charge>:
