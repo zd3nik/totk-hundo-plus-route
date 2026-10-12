@@ -545,11 +545,12 @@ _route:
          hide-icon-on-map: true
          comment: Wing glide to Great Plateau Chasm
       - _Chasm::GreatPlateauEast
-      - _Special::StartPos Depths
       - _Location::GreatAbandonedCentralMine:
          hide-icon-on-map: true
       - _SideAdv::MasterKohgaoftheYigaClan
       - _LockedChest::D49
+      - _Special::StartPos Depths:
+         hide-icon-on-map: true
 
    - Flying Machines:
       - Ascend:
@@ -643,7 +644,7 @@ _route:
       - _Warp::Shrine::Jiosin<Warp to Jiosin Shrine>
       - _Chasm::HyruleField
 
-   - Hyrule Field Depths:
+   - Hyrule Field Depths 1:
       - _Lightroot::Nisoij
       - _Lightroot::Iayusus
       - _Npc::Robbie_02
@@ -677,14 +678,40 @@ _route:
       - _Equipment::Weapon<Weapon Pillar>:
          coord: [-237.87, -341, 358.39]
          notes: Skip weapon pillars along the route that you know you don't need
+      - _Poe::Large:
+         coord: [-119.3, -323.72, 384.23]
+      - _Poe::Large:
+         coord: [-105.8, -320.93, 348.03]
+      - _Poe::Large:
+         coord: [-88.75, -321.12, 348.35]
       - _Enemy::BokoBoss::D22
       - _Lightroot::Oyimay
+      - Drop Flying Machine:
+         movements:
+            - to: [495.24, -365.66, 251.67]
+      - _Poe::Large:
+         coord: [529.66, -296.1, 207.94]
+      - _Poe::Large:
+         coord: [529.6, -296.68, 200.44]
+      - _Poe::Large:
+         coord: [482.5, -314.87, 169.5]
+      - _Poe::Large:
+         coord: [495.77, -315.48, 187.61]
+
+   - Hyrule Field Depths 2:
       - _Chest<Large Crystallized Charge>:
          coord: [555.21, -365.97, 281.18]
       - _Location::AppleanGrove:
-         hide-icon-on-map: true
+         coord: [529.28, -367.35, 198.7]
+         comment: Retrieve flying machine
       - _Enemy::Hinox::DC02
       - _Enemy::Talus::DC01
+      - _Poe::Large:
+         coord: [-132.9, -339.24, -26.28]
+      - _Poe::Large:
+         coord: [-140.24, -339.37, -5.02]
+      - _Poe::Large:
+         coord: [-150.5, -338.9, -9.12]
       - _Enemy::BokoBoss::D16:
          comment: Use 1 large zonai charge for long flight to next enemy
       - _Enemy::Talus::DC03
@@ -719,12 +746,16 @@ _route:
       - _Location::GroveofTime:
          hide-icon-on-map: true
       - _Enemy::Frox::DC10
+
+   - Hyrule Field Depths 3:
       - _Warp::Special<Warp to Central Mine>:
          coord: [-821.82, -417.75, -1940.61]
-      - _SchemaStone::CentralMine
       - _Shop::ForgeConstruct10:
          comment: Purchase crystallized charges
       - _Warp::Lightroot::Nogukoyk<Warp to Nogukoyk Lightroot>
+      - _Item<Steering Stick and Fans>:
+         coord: [-635.05, -410.82, -1514.47]
+         comment: Build flying machine
       - _Equipment::Weapon<Weapon Pillar>:
          coord: [-577.72, -339.73, -1498.67]
       - _Poe::Normal:
@@ -752,11 +783,15 @@ _route:
    - Kara Kara Mine:
       - _Warp::Special<Warp to Central Mine>:
          coord: [-821.82, -417.75, -1940.61]
+      - _SchemaStone::CentralMine:
+         comment: Build flying machine
       - _Lightroot::Koradat
-      - _Enemy::Hinox::DF02:
-         comment: Farosh should be visible to the south
       - _Equipment::Weapon<Sword>:
          coord: [-1402.08, -441.76, -2393.61]
+      - _Poe::Normal:
+         coord: [-1423.35, -450.66, -2378.7]
+      - _Enemy::Hinox::DF02:
+         comment: Farosh should be visible to the south
       - _Equipment::Weapon<Claymore>:
          coord: [-1671.26, -325.84, -2143.42]
       - _Chest<Large Crystallized Charge>:
@@ -794,6 +829,8 @@ _route:
          coord: [-3177.13, -357.14, -2533.32]
       - _Lightroot::Tatayam
       - _Enemy::Talus::DG03
+      - _Poe::Normal:
+         coord: [-3580.96, -380.07, -2444.58]
       - _Equipment::Weapon<Claymore>:
          coord: [-3592.32, -371.85, -2422.74]
       - _Equipment::Weapon<Sword>:
@@ -817,9 +854,9 @@ _route:
          coord: [-3664.74, -376.83, -2965.63]
       - _Poe::Grand:
          coord: [-3708.42, -383.13, -2958.77]
+      - _Npc::Master Kohga_01
       - _Location::AbandonedGerudoMine:
          hide-icon-on-map: true
-      - _Npc::Master Kohga_01
       - _LockedChest::D17
       - _SchemaStone::GerudoMine
       - _Shop::ForgeConstruct01
