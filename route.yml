@@ -906,7 +906,7 @@ _route:
       - _Addison::A48:
          comment: Flying machine should be nearby
       - _LockedChest::G26:
-         notes: Collect cobble crusher
+         comment: Collect cobble crusher
       - _Enemy::Hinox::GZ01:
          comment: Break cobble crusher
          notes: Take pic
@@ -919,7 +919,7 @@ _route:
       - _Korok::EC57
       - _Tear::G02
       - _Enemy::BokoBoss::G42:
-         notes: Collect Zora longsword
+         comment: Collect Zora longsword
       - _Korok::UZ32
       - _Special<Starting Block>:
          coord: [2565.43, 289.57, 467.49]
@@ -930,8 +930,8 @@ _route:
       - _Cave::UplandZoranaMountainside01
       - _Enemy<Chuchu>:
          coord: [2838.24, 483.63, 539.35]
-         comment: Drop flying machine near tower, Break Zora longsword on chuchu after taking pic of chuchu
-         notes: Take pic of chuchu and chuchu jelly
+         comment: Drop flying machine near tower
+         notes: Take pic of chuchu. Break Zora longsword on chuchu. Take pic of chuchu jelly
       - _SideQuest::MiredinMuck:
          coord: [2840, 483.63, 590]
          comment: Fuse opal to Zora spear
@@ -1160,7 +1160,7 @@ _route:
          coord: [-248.7, 124.51, 52.31]
       - _Npc<Buy From Parga>:
          coord: [-242.54, 124.95, 18.46]
-         comment: Skip if she is not near the bridge. Then remember to find her in upcoming segment along the road between here and Teniten Shrine (south of Lookout Landing).
+         comment: Skip if she is not near the bridge. Then remember to find her in upcoming segment along the road between here and Teniten Shrine (south of Hyrule Field Chasm).
       - _SideAdv::HestusConcerns:
          coord: [-229.49, 127.2, 60]
          comment: Weapon x3, Bow x4, Shield x7
@@ -1186,7 +1186,7 @@ _route:
 
    - Coliseum Gleeok:
       - _Warp::Shrine::Jiosin<Warp to Jiosin Shrine>:
-         comment: If Parga wasn't at Lookout Landing in previous segment, find her along the road between Lookout Landing and Teniten Shrine. Do this after completing Bring Peace to Hyrule if she's not visible before then.
+         comment: If Parga wasn't at Lookout Landing in previous segment, find her along the road between Lookout Landing and Teniten Shrine (south of Hyrule Field Chasm). Do this after completing Bring Peace to Hyrule if she's not visible before then.
       - _Npc::Suzuna:
          notes: Take pic of ladle
       - _Korok::HF07:
@@ -1258,7 +1258,7 @@ _route:
 
    - Fierce Deity Boots:
       - _Chest::FierceDeityBoots:
-         comment: Ascend
+         comment: Ascend. Flying machine should be nearby
       - _Special<Starting Block>:
          coord: [-1109.67, 167.7, -420.47]
       - _Korok::LL55:
@@ -1307,7 +1307,8 @@ _route:
       - _Location::RoyalAncientLabRuins:
          comment: Fuse frozen meat to 2 shields
          hide-icon-on-map: true
-      - _Tear::G00
+      - _Tear::G00:
+         comment: Shield surf to next objective
       - _MainQuest::ImpaandtheGeoglyphs:
          coord: [-1313.14, 201.35, 823.5]
          comment: Use hover stone while falling from balloon to get pic of geoglyph
@@ -1386,7 +1387,7 @@ _route:
          hide-icon-on-map: true
       - _Location::AldorFoothills:
          coord: [-650, 250, 2120]
-         notes: Drop flying machine next to rock. Shield surf to next objective
+         comment: Drop flying machine next to rock. Shield surf to next objective
       - _Korok::LB03
 
    - Forgotten Temple:
@@ -1420,9 +1421,7 @@ _route:
       - _Addison::A19
       - _Korok::PS15
       - _LockedChest::G11:
-         notes:
-            - It should be close to midnight
-            - Sit at campfire to make it night
+         comment: It should be about midnight. Make night
       - _Korok::PS20
       - _Korok::PS26
       - _Location::ForgottenTemple:
@@ -1653,8 +1652,7 @@ _route:
          comment: Fuse rockets to shields
       - _SideQuest::TheRitoRopeBridge:
          coord: [-3296.8, 227.18, 1807.36]
-      - _Special<Make Night>:
-         coord: [-3266.05, 224.58, 1775.64]
+         comment: Make night
       - _Addison::A05
       - _Korok::LB10::Trail
       - _Enemy::Hinox::GH03
@@ -1843,7 +1841,7 @@ _route:
       - _Special<Terminal>:
          coord: [2420.1, 1580.78, -1680.22]
       - _Shrine::Yansamin:
-         notes: If running behind go get Light Dragon pic immediately after activating shrine then warp back to finish shrine
+         notes: If running behind go up and get the korok and Light Dragon immediately after activating shrine then warp back to finish shrine
          movements:
             - to: [2377.87, 1587.95, -1670.76]
             - to: [2315.6, 1669.45, -1670.05]
@@ -1855,23 +1853,24 @@ _route:
       - _Chest::ZonaiteWaistguard
       - _Equipment::Weapon<Zonaite Longsword>:
          coord: [2377.56, 1590.92, -1791.81]
-         notes: Get Pic
+         notes: Take Pic
       - _Equipment::Weapon<Zonaite Sword>:
          coord: [2374.63, 1590.87, -1793.45]
-         notes: Get Pic
+         notes: Take Pic
       - _Equipment::Shield<Zonaite Shield>:
          coord: [2366.99, 1590.82, -1794.78]
-         notes: Get Pic
+         notes: Take Pic
       - _Equipment::Weapon<Zonaite Spear>:
          coord: [2315.12, 1580.97, -1753.01]
-         notes: Get Pic
+         notes: Take Pic
       - _Dispenser::S01
-      - _Korok::SSS03
+      - _Korok::SSS03:
+         notes: Skip if already done
       - _Material<Light Dragon Horn>:
-         notes: Take pic of light dragon
+         notes: Take pic of light dragon. Skip if already done
 
    - Sahasra Slope:
-      - _Warp::Shrine::Makasura<Warp to Wakasura Shrine>
+      - _Warp::Shrine::Makasura<Warp to Makasura Shrine>
       - _Shrine::Makasura:
          notes:
             - Skip completing shrine if running behind
@@ -2343,14 +2342,12 @@ _route:
       - _Material<Dinraal Horn>
       - _Chasm::LomeiLabyrinth
 
-   - Lomei Labyrinth Chasm:
+   - Lomei Depths Lanyrinth:
+      - _Enemy::FluxConstruct::DA01
       - _Location::LomeiDepthsLabyrinth:
          hide-icon-on-map: true
-      - _Enemy::FluxConstruct::DA01
       - _Special<Terminal>:
          coord: [4684.4, -340.47, 3697]
-
-   - Lomei Depths Lanyrinth:
       - _Chest::EvilSpiritArmor
       - Ascend:
          movements:
@@ -2462,9 +2459,9 @@ _route:
       - _Korok::EC54::Start
       - _Korok::EC54::End
       - _Korok::EC50
-      - _Cave::LakeFerona00
-      - _Cave::LakeFerona01:
+      - _Cave::LakeFerona00:
          comment: Ascend
+      - _Cave::LakeFerona01
       - _Item<Campfire>:
          coord: [1932, 250, 1315]
          comment: Make noon
@@ -2493,7 +2490,7 @@ _route:
       - _Korok::EC21
       - _Location::StolockBridge
       - _Korok::EC19:
-         comment: Ascend, Rocket Shield
+         comment: Ascend. Rocket shield to next korok
       - _Korok::EC16
       - _Korok::EC20
       - _Shop::GeneralStore06:
@@ -2589,7 +2586,8 @@ _route:
 
    - Dinraal Pic:
       - _Bubbulfrog::LakeDarmanMonsterDen
-      - _Cave::LakeDarmanMonsterDen00
+      - _Cave::LakeDarmanMonsterDen00:
+         comment: Flying machine should be nearby
       - _Material<Dinraal Horn>:
          comment: Ride flying machine up to Dinraal
 
@@ -2921,21 +2919,15 @@ _route:
       - _Special<Fuse Crystal to Flying Machine>:
          coord: [-3553.72, 1543.97, 594.77]
       - _Location::TabanthaSkyArchipelago:
-         hide-icon-on-map: true
+         coord: [-3615, 1798, 443]
+         comment: Drop flying machine
       - _OldMap::Tabantha_02:
-         comment: Drop flying machine near pillars
+         comment: Ascend
       - _Item<Frogs>:
          coord: [-3617.96, 1800.85, 404.6]
-      - Get Back on Flying Machine:
-         movements:
-            - to: [-3615, 1798, 443]
-      - _Dispenser::S13:
-         comment: Drop flying machine near launcher
-      - Get Back on Flying Machine:
-         movements:
-            - to: [-3477, 1820, 448]
-      - _Shrine::Ganos:
-         comment: Drop flying machine at shrine
+         comment: Flying machine should be nearby
+      - _Dispenser::S13
+      - _Shrine::Ganos
 
    - North Gerudo Sky Archipelago:
       - _Special<Starting Block>:
@@ -3065,7 +3057,7 @@ _route:
          coord: [-3873.77, 139.43, -2965]
       - _SideQuest::TheHeroinesSecret:
          coord: [-3886, 33, -2980]
-      - Bomb Wall:
+      - Bomb the Wall:
          movements:
             - to: [-3892.04, 137.4, -2995.5]
       - _Special<Monument to Seven Heroines>:
