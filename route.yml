@@ -1158,6 +1158,9 @@ _route:
          coord: [-270.35, 124, 66.24]
       - _SideQuest::TheIncompleteStable:
          coord: [-248.7, 124.51, 52.31]
+      - _Npc<Buy From Parga>:
+         coord: [-242.54, 124.95, 18.46]
+         comment: Skip if she is not near the bridge. Then remember to find her in upcoming segment along the road between here and Teniten Shrine (south of Lookout Landing).
       - _SideAdv::HestusConcerns:
          coord: [-229.49, 127.2, 60]
          comment: Weapon x3, Bow x4, Shield x7
@@ -1183,7 +1186,7 @@ _route:
 
    - Coliseum Gleeok:
       - _Warp::Shrine::Jiosin<Warp to Jiosin Shrine>:
-         notes: Find Parga the merchant between here and Hyrule Field Tower
+         comment: If Parga wasn't at Lookout Landing in previous segment, find her along the road between Lookout Landing and Teniten Shrine. Do this after completing Bring Peace to Hyrule if she's not visible before then.
       - _Npc::Suzuna:
          notes: Take pic of ladle
       - _Korok::HF07:
@@ -1208,10 +1211,10 @@ _route:
       - _Item<Courser Bee Honey>:
          coord: [-806.31, 126.09, -682.7]
       - _Korok::HF22::End
-      - _Location::ExchangeRuins:
-         hide-icon-on-map: true
       - _Chest<Large Zonai Charge>:
          coord: [-719.32, 139.29, -889.84]
+      - _Location::ExchangeRuins:
+         hide-icon-on-map: true
       - _Shrine<Activate Mayachin shrine>:
          coord: [-705.5, 150.61, -868.5]
       - _Addison::A32
@@ -1224,11 +1227,12 @@ _route:
          coord: [-871, 127.06, -1098.5]
          notes: Take pic
       - _Well::AquameLake
-      - _Enemy::Gleeok::G07:
-         comment: Drop flying mchine outside of colesium, Eat attack up food
-         notes: Take pic
       - _Location::ColiseumRuins:
-         hide-icon-on-map: true
+         coord: [-1135, 50, -1200]
+         comment: Drop flying machine. Be sure it doesn't land inside coliseum.
+      - _Enemy::Gleeok::G07:
+         comment: Eat attack up food
+         notes: Take pic
       - _Cave::ColiseumRuins00
 
    - Ancient Tree Stump:
@@ -1257,7 +1261,8 @@ _route:
          comment: Ascend
       - _Special<Starting Block>:
          coord: [-1109.67, 167.7, -420.47]
-      - _Korok::LL55
+      - _Korok::LL55:
+         comment: Make night if needed
       - _Korok::LL52
       - _Enemy::Hinox::GC03:
          notes: Take pic
@@ -1282,7 +1287,7 @@ _route:
       - _Korok::LB42
       - Drop Flying Machine:
          movements:
-            - to: [-1220, 200, 660]
+            - to: [-1200, 200, 605]
       - _Cave::NorthHyrulePlain01
       - _Bubbulfrog::NorthHyrulePlainCave
       - _Chest::ClimbingGear
@@ -1290,16 +1295,19 @@ _route:
       - _Korok::LB35
 
    - Impa:
+      - Retrieve Flying Machine:
+         movements:
+            - to: [-1200, 200, 605]
       - _Korok::LB25
+      - _Location::NorthHyrulePlain:
+         hide-icon-on-map: true
       - _Item<Courser Bee Honey>:
          coord: [-1258.03, 209.53, 1032.09]
       - _Enemy::BokoBoss::G11
       - _Location::RoyalAncientLabRuins:
-         comment: Freeze meat and fuse to 2 shields
+         comment: Fuse frozen meat to 2 shields
          hide-icon-on-map: true
       - _Tear::G00
-      - _Location::NorthHyrulePlain:
-         hide-icon-on-map: true
       - _MainQuest::ImpaandtheGeoglyphs:
          coord: [-1313.14, 201.35, 823.5]
          comment: Use hover stone while falling from balloon to get pic of geoglyph
@@ -1307,12 +1315,17 @@ _route:
    - New Serrene Stable:
       - _Item<Horse>:
          coord: [-1205.09, 207.43, 753.37]
+      - _SideQuest::HorseDrawnDreams:
+         coord: [-1327.81, 190.99, 724.63]
+         comment: Give horse to Zummie
       - _PonyPoint<Talk to Stable Owner>:
          coord: [-1354.77, 191.56, 730.96]
       - _Place::NewSerenneStable:
          hide-icon-on-map: true
          notes: Take pic of dog and donkey
-      - _SideQuest::HorseDrawnDreams:
+
+   - Irch Plain:
+      - _SideQuest<Fix Zummie's Wagon>:
          coord: [-1327.81, 190.99, 724.63]
          comment: Reload after autosave, this unwraps picture boards in the stables
       - _Npc::Beedle_03:
@@ -1349,12 +1362,13 @@ _route:
          coord: [-1144.91, 216.75, 1207.31]
       - _Item<Courser Bee Honey>:
          coord: [-1078.32, 220.3, 1207.45]
-      - _Korok::LB17
+      - _Korok::LB17:
+         comment: Flying machine should be nearby
       - _Korok::TR17::End
       - _Enemy::Hinox::GR05
       - _Korok::TR19
       - _Well::ElmaKnolls:
-         comment: Drop flying machine into well, Enter the well
+         comment: Drop flying machine into the well. Enter the well
       - _Shrine::Tenmaten:
          comment: Ascend near giant brightbloom seeds
       - _Chasm::ElmaKnolls
