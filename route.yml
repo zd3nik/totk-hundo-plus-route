@@ -4,7 +4,7 @@ _project:
    authors:
       - Shawn Chidester
    name: Glitchless No Amiibo TOTK Hundo+ (Turkey Leg Route)
-   version: 1.3.0
+   version: 1.4.0
    description:
       - Standard TOTK hundo (glitchless, no amiibo) plus
       - Clear all ??? from all device dispensers
@@ -2094,11 +2094,9 @@ _route:
          comment: Ascend
       - _Dispenser::S20
       - _Shrine::Natak
+      - _Korok::UMS03
 
    - Sky Mine:
-      - _Special<Launcher>:
-         coord: [3709.68, 1283.58, 1510.77]
-      - _Korok::UMS03
       - _Enemy::FluxConstruct::SA02:
          notes: Take pic
       - _OldMap::Akkala
@@ -2107,8 +2105,6 @@ _route:
          comment: Activate terminal
       - _Dispenser::S12:
          comment: Replenish hover stones
-
-   - Zonaite Shin Guards:
       - _Special<Launcher>:
          coord: [4529.51, 1265.52, 2125.29]
       - _Special<Starting Block>:
@@ -2121,10 +2117,10 @@ _route:
       - _Special<Launcher>:
          coord: [4645.9, 1459.46, 2056.85]
       - _Chest::ZonaiteShinGuards
-      - _Shrine::Gikaku::Start
-      - _Shrine::Gikaku
 
    - Dinraal:
+      - _Shrine::Gikaku::Start
+      - _Shrine::Gikaku
       - _OldMap::Akkala_01:
          level: Sky
       - _Location::NorthAkkalaSkyArchipelago:
@@ -2797,16 +2793,15 @@ _route:
       - _Warp::Tower::Lindor'sBrow<Warp to Lindor's Brow Tower>:
          level: Sky
       - _Tower::Lindor'sBrow
-      - _Special<Terminal>:
-         coord: [-2215.91, 1746.12, 933.67]
       - _Location::CourageIsland:
-         hide-icon-on-map: true
+         coord: [-2215.91, 1746.12, 933.67]
+         comment: Activate terminal
       - _Npc::Steward Construct_04:
          comment: Complete the mini-game
       - _Dispenser::S21:
          comment: Replenish fans
       - _Shrine::Taunhiy:
-         notes: Take pic of construct in shrine
+         notes: Take pic of the construct inside the shrine
       - _Korok::LBS04
 
    - Mount Rhoam:
@@ -2900,11 +2895,11 @@ _route:
       - _Item<Mirror>:
          coord: [-3607.11, 1858.67, 1030.6]
       - _Chest::ZonaiteHelm
+
+   - Tabantha Sky Archipelago:
       - _Enemy<Soldier Construct II>:
          coord: [-3593.03, 1829.36, 940.96]
          comment: Use construct mirror shield to charge plate
-
-   - Tabantha Sky Archipelago:
       - _Shrine::Ga-ahisas
       - _Korok::LBS02
       - _Enemy<Soldier Construct I>:
@@ -3483,28 +3478,28 @@ _route:
       - _Tablet<Drop Tablet>:
          coord: [-2446.8015, 1107.847, -3256.551]
 
-   - Siwakama Shrine:
+   - Molduga:
       - _Chasm::EastGerudo
       - _Tablet::S05:
          level: Surface
          notes: Take pic
       - _Korok::GC40
       - _Shrine::Siwakama
-
-   - Phantom Greaves:
       - _Korok::GC50::Start
       - _Enemy::Molduga::SG03:
          coord: [-2401, 128.08, -3400]
       - Drop flying machine:
          movements:
             - to: [-2617.82, 78.42, -3748.01]
-      - _Cave::AncientAltarRuins04
+      - _Cave::AncientAltarRuins04:
+         comment: Enter the sand pit
+
+   - Sand Pits:
       - _Bubbulfrog::AncientAltarRuins
       - _Chest::PhantomGreaves:
          comment: Ascend
-
-   - Sand Pits:
-      - _Cave::AncientAltarRuins09
+      - _Cave::AncientAltarRuins09:
+         comment: Enter the sand pit
       - _Cave::AncientAltarRuins03
       - _Cave::AncientAltarRuins05
       - _Cave::AncientAltarRuins01
@@ -3630,12 +3625,13 @@ _route:
       - Swim up Waterfall:
          movements:
             - to: [135, 16, -2495]
-      - _Item<Boulder>:
-         coord: [282.21, 95.93, -2404.09]
-      - _Korok::PF26
       - _Location::FaroshHills:
-         hide-icon-on-map: true
+         coord: [282.21, 95.93, -2404.09]
+         comment: Carry boulder up hill
+      - _Korok::PF26
       - _Korok::PF28
+
+   - Popla Foothills Tower:
       - _Enemy::BokoBoss::G30
       - _Npc::Hino_01
       - _Korok::PF25
@@ -4583,15 +4579,16 @@ _route:
          hide-icon-on-map: true
       - _Item<Boulder>:
          coord: [4074.69, 482.28, 459.62]
-      - _Korok::UZ28
+      - _Korok::UZ28:
+         comment: Flying machine should be nearby
       - _Enemy::Talus::GZ04
       - _Korok::UZ25
       - _Korok::UZ49
+
+   - Hoverboard:
       - _Enemy::BokoBoss::G61:
          comment: Be sure to kill all enemies in and around the fort
       - _Npc::Hino_03
-
-   - Hoverboard:
       - _Korok::UZ43
       - _Korok::UZ46
       - _Shrine<Activate Apogek Shrine>:
@@ -4929,10 +4926,10 @@ _route:
       - _Material<Light Dragon Horn>
       - _Tablet::S06:
          notes: Take pic
-
-   - Courage Steppe:
       - _LockedChest::G36
       - _Korok::RW19
+
+   - Courage Steppe:
       - _Korok::RW15
       - _Korok::RW12:
          comment: Ascend
@@ -6060,8 +6057,6 @@ _route:
       - _Korok::HF50::Start
       - _Korok::HF50::End
       - _Enemy::BokoBoss::G22
-
-   - Shrine of Resurrection Cave:
       - _Special<Starting Block>:
          coord: [-683.04, 199.9, -1842.77]
       - _Korok::HF54
@@ -6304,10 +6299,10 @@ _route:
          coord: [-4079.55, -342.3, -3757.13]
       - _Poe::Large:
          coord: [-4100.27, -363.18, -3798.96]
-
-   - Gerudo Dark Skeleton:
       - _Enemy::BokoBoss::D01
       - _Lightroot::Kasari
+
+   - Gerudo Dark Skeleton:
       - _LockedChest::D05
       - _Chest::SheiksMask:
          hide-icon-on-map: true
@@ -6886,14 +6881,14 @@ _route:
       - _Equipment::Weapon<Spear>:
          coord: [4190.29, -461.48, 1707.14]
       - _Location::AbandonedTarreyMine
-
-   - Rist Mine:
       - _Poe::Large:
          coord: [3963.31, -399.37, 1549.24]
       - _Poe::Large:
          coord: [3960.17, -399.79, 1543.06]
       - _Poe::Large:
          coord: [3957.23, -399.38, 1549.24]
+
+   - Rist Mine:
       - _Shop::ForgeConstruct06:
          comment: Buy crystallized charges
       - _SchemaStone::TarreyMine
@@ -7194,8 +7189,7 @@ _route:
          coord: [-1515.66, 347.54, 2839.6]
       - _Enemy<Boko x2>:
          coord: [-1570.04, 346.15, 2753.97]
-      - _Shrine<Activate Orochium Shrine>:
-         coord: [-1636.76, 358.28, 2641.82]
+      - _Shrine::Orochium
       - _SideAdv::ZeldasGoldenHorse:
          coord: [-1642.11, 339.2, 2575.8]
 
@@ -7218,10 +7212,8 @@ _route:
       - _Korok::PS14::End
       - _Cave::MountDrenaFoothill00:
          comment: Leave wagon outside cave entrance
-      - _Enemy<Blue Moblin>:
+      - _Enemy<Moblin x1 and Boko x2>:
          coord: [-1376.52, 281.86, 2934.06]
-      - _Enemy<Bokoblin x3>:
-         coord: [-1383.84, 281.68, 2937.02]
       - _Bubbulfrog::MountDrenaFoothillCave
 
    - Serenade to Mija:
@@ -7270,9 +7262,8 @@ _route:
       - _Korok::RP15
       - _Korok::RP23
 
-   - Bring Peace to Hebra:
+   - Who Finds the Haven:
       - _Warp::Shrine::Orochium<Warp to Orochium Shrine>
-      - _Shrine::Orochium
       - _Npc::Beedle_02:
          coord: [-1661, 234, 2576]
       - _SideQuest<A Picture for Snowfield Stable>:
@@ -7285,10 +7276,10 @@ _route:
       - _Npc::Canolo
       - _Addison::A18
       - _Korok::PS24
+
+   - Bring Peace to Hebra:
       - _Enemy::BokoBoss::G10
       - _SideAdv::BringPeacetoHebra
-
-   - Tabantha Village Ruins:
       - _Korok::PS28
       - _SideQuest::SupplyEyeingFliers:
          coord: [-2175, 363, 2026]
@@ -8836,9 +8827,9 @@ _route:
       - _Korok::RW10
       - _LockedChest::G41
       - _Korok::ML35
-      - _Enemy::BokoBoss::G46
 
    - Final Hino Rescue:
+      - _Enemy::BokoBoss::G46
       - _Npc::Hino_02
       - _Korok::RW03
       - _Korok::ML24::Start
