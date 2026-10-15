@@ -1649,7 +1649,7 @@ _route:
    - Lake Tatori:
       - _Warp::Shrine::Oromuwak<Warp to Oromuwak Shrine>
       - _Shrine::Oromuwak:
-         comment: Fuse rockets to shields
+         comment: Fuse rockets to shields inside shrine
       - _SideQuest::TheRitoRopeBridge:
          coord: [-3296.8, 227.18, 1807.36]
          comment: Make night
@@ -2764,12 +2764,12 @@ _route:
       - _Material<Dinraal Horn>
 
    - Lynel Run 3:
-      - _Warp::Lightroot::Mu-ustust<Warp to Mu-ustust Lightroot>
-      - _Enemy::Lynel<x5>:
-         coord: [-1151.85, -393.54, -1263.46]
       - _Warp::Lightroot::Ui-ihcoj<Warp to Ui-ihcoj Lightroot>
       - _Enemy::Lynel<x1>:
          coord: [4212.09, -467.54, 2721.1]
+      - _Warp::Lightroot::Mu-ustust<Warp to Mu-ustust Lightroot>
+      - _Enemy::Lynel<x5>:
+         coord: [-1151.85, -393.54, -1263.46]
       - _Warp::Lightroot::Kimakarut<Warp to Kimakarut Lightroot>
       - _Enemy::Lynel<x1>:
          coord: [-2798.87, -376.93, -2238.38]
@@ -2835,7 +2835,7 @@ _route:
       - _Enemy::FluxConstruct::SH02
       - _OldMap::Hebra_03
       - _Shrine::Ijo-o:
-         comment: Fuse rockets to shields
+         comment: Fuse rockets to shields inside shrine
 
    - King Gleeok:
       - _Enemy::Gleeok::S01:
@@ -2933,7 +2933,7 @@ _route:
       - _SagesWill::Tabantha_02
       - _Shrine::Mayasiar
       - _Location::StarviewIsland:
-         comment: Ascend, Light dragon should be approaching from the south
+         comment: Ascend. Light dragon should be approaching from the south. If she is very far away go ahead and complete the upcoming shrine on Satori Mountain to pass some extra time
 
    - West Hyrul Sky Arhipelago:
       - _Enemy::FluxConstruct::SC01:
@@ -2948,9 +2948,10 @@ _route:
          notes: Take pic
       - _Shrine<Activate Sonapan Shrine>:
          coord: [-1921.5, 347.5, -358.5]
+         comment: Go ahead and complete the shrine now if light dragon was very far away from Starview Island
       - _Special<Red Sparrow Pic>:
          coord: [-1948.16, 330.28, -338.34]
-         notes: Take pics of other things if convenient
+         notes: Take pics of other things if time permits
 
    - Light Dragon Farming 1:
       - _Warp::Shrine::Mayasiar<Warp to Mayasiar Shrine>
@@ -3194,7 +3195,7 @@ _route:
             - to: [-3824.25, 135.26, -2971.25]
       - _MainQuest<Talk to Riju>:
          coord: [-3900.08, 140.73, -2978.17]
-         comment: Ascend, Flying machine should be nearby
+         comment: Ascend. Flying machine should be nearby
       - _Special<Mirror Pillar>:
          coord: [-4056.82, 167.5, -3149.83]
       - _Special<Mirror Pillar>:
@@ -3299,9 +3300,9 @@ _route:
    - Pride of the Gerudo:
       - _Warp::Place<Gerudo Town>:
          coord: [-3887.35, 157.48, -2968]
-         comment: Reload from autosave. This rounds all the kids up for class
+         comment: Reload from autosave. This rounds all the kids up for class. Equip voe garb
       - _Npc::Ashai<Attend Child Class>:
-         comment: Stand in empty voe spot wearing voe garb, Ascend
+         comment: Stand in empty voe spot. Ascend
       - _Item<Gibdo Parts>:
          coord: [-3851.66, 149.18, -2989.89]
          notes: Take pic of Patricia
@@ -3311,7 +3312,7 @@ _route:
          coord: [-3828.5, 149.5, -2885]
          notes: Take pic of shield
       - _Shop::Canteen:
-         comment: Acquire Noble Persuit, Ascend
+         comment: Acquire Noble Pursuit. Ascend
       - _Enemy<Electric Chuchu>:
          coord: [-3662.35, 145.61, -2854.38]
          notes: Take pic
@@ -3384,7 +3385,7 @@ _route:
       - _Cave::GerudoSanctuary00:
          comment: Leave ball somewhere north of cave
       - _Bubbulfrog::GerudoSanctuary:
-         comment: Ascend, Retrieve ball
+         comment: Ascend. Retrieve ball
       - _Cave::GerudoSanctuary01
       - _SideQuest<The Mysterious Eighth>:
          coord: [-3763.38, 113.11, -2534.08]
@@ -3453,11 +3454,10 @@ _route:
          comment: Ascend
       - _Item<Flying Machine>:
          coord: [-1829.72, 1305.17, -1917.68]
-      - _Location::EastGerudoSkyArchipelago:
-         hide-icon-on-map: true
       - _Dispenser::S16
-      - _Special<Take Pic of Smiling Spectacle Rock>:
+      - _Location::EastGerudoSkyArchipelago:
          coord: [-1845, 1254, -2111]
+         notes: Take pic of smiling spectacle rock
       - _Shrine::Rakashog
       - _Item<Rockets>:
          coord: [-1820.33, 1075.18, -2213.3]
@@ -6131,7 +6131,7 @@ _route:
          hide-icon-on-map: true
       - _Item<Rockets>:
          coord: [-1059.09, -550.68, -2318.27]
-         comment: Leave mine cart here, Fuse rockets to shields, Rocket shield up to next objective
+         comment: Leave mine cart here. Fuse rockets to shields. Rocket shield up to next objective
       - _Special<Statue Eye>:
          coord: [-934.52, -430.46, -2324.29]
       - Drop Down With Eye in Hand:
@@ -6352,7 +6352,7 @@ _route:
       - _Cave::KoukotPlateau01
       - _Item<Rockets>:
          coord: [-2167.19, 179.99, -1841.34]
-         comment: Fuse rockets to shields, Rocket shield up to bubbulfrog
+         comment: Fuse rockets to shields. Rocket shield up to bubbulfrog
       - _Bubbulfrog::KoukotPlateauCave:
          comment: Ascend
 
