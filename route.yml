@@ -4,7 +4,7 @@ _project:
    authors:
       - Shawn Chidester
    name: Glitchless No Amiibo TOTK Hundo+ (Turkey Leg Route)
-   version: 1.4.0
+   version: 1.5.0
    description:
       - Standard TOTK hundo (glitchless, no amiibo) plus
       - Clear all ??? from all device dispensers
@@ -278,7 +278,7 @@ _route:
             - to: [837.75, 1656.75, -1433.5]
       - _LockedChest::S07
       - Shield Surf:
-         comment: Ascend, Wing glide to next korok
+         comment: Ascend. Wing glide to next korok
          movements:
             - to: [733.25, 1600, -1455.25]
             - to: [733.25, 1600, -1396.75]
@@ -1395,7 +1395,7 @@ _route:
          comment: Break forest dweller spear
       - _Bubbulfrog::YigaClanMarittaBranch
       - _Chest::YigaTights:
-         comment: Ascend, Flying machine should be nearby
+         comment: Ascend. Flying machine should be nearby
       - _Korok::LB02::Start
       - _Korok::TR14
       - _Location::MountDrena:
@@ -1455,7 +1455,7 @@ _route:
 
    - Mushroom Hunters:
       - _Bubbulfrog::TanagarCanyonEastCave:
-         comment: Ascend, Flying machine should be nearby
+         comment: Ascend. Flying machine should be nearby
       - _Korok::PS30:
          comment: Shoot from air while approaching dragon tear
       - _Tear::G01
@@ -1465,7 +1465,7 @@ _route:
          comment: Leave flying machine above cave
       - _Bubbulfrog::TabanthaHillsCave
       - _LockedChest::G53:
-         comment: Ascend, Flying machine should be nearby
+         comment: Ascend. Flying machine should be nearby
          notes: Take pic of feather spear
       - _Special<Drop Flying Machine>:
          coord: [-3032, 300, 1595]
@@ -1488,7 +1488,7 @@ _route:
    - Lucky Clover Gazette:
       - _Chest::FrostbiteShirt
       - _Bubbulfrog::BrightcapCave:
-         comment: Ascend, Flying machine should be nearby
+         comment: Ascend. Flying machine should be nearby
       - _Chest<Shield>:
          coord: [-3063.5, 387.48, 1582.11]
       - _Item<Rockets>:
@@ -2543,7 +2543,7 @@ _route:
    - The Abandoned Laborer:
       - _LockedChest::G50
       - _Bubbulfrog::DeathMountainFoothillCave:
-         comment: Ascend, Flying machine should be nearby
+         comment: Ascend. Flying machine should be nearby
       - _Location::DeathMountainWestSite:
          hide-icon-on-map: true
       - _Cave::DeathMountainWestTunnel00
@@ -3122,7 +3122,8 @@ _route:
          comment: After completing quest, replace ruby on spear with thunder gleeok horn
       - _Npc::Beedle
       - _Korok::GC25
-      - _Cave::OasisSource00
+      - _Cave::OasisSource00:
+         comment: Enter the sand pit
 
    - Lost in the Dunes:
       - _SideQuest::LostintheDunes:
@@ -3496,6 +3497,8 @@ _route:
 
    - Sand Pits:
       - _Bubbulfrog::AncientAltarRuins
+      - _Chest<Topaz>:
+         coord: [-2530.07, 65.19, -3723.03]
       - _Chest::PhantomGreaves:
          comment: Ascend
       - _Cave::AncientAltarRuins09:
@@ -3512,7 +3515,7 @@ _route:
       - _Cave::AncientAltarRuins02
       - _Enemy<Shock Like>:
          coord: [-2617.82, 78.42, -3748.01]
-         comment: Ascend, Flying machine with korok should be nearby
+         comment: Ascend. Flying machine with korok should be nearby
 
    - Desert Race:
       - _Korok::GC50::End
@@ -3520,10 +3523,11 @@ _route:
       - _Addison::A16:
          comment: Drop flying machine on shelf west of Addison
          notes: Take pic of sand pit
-      - _Cave::SouthGerudo00
+      - _Cave::SouthGerudo00:
+         comment: Enter the sand pit
       - _LockedChest::G51
       - _Bubbulfrog::SouthGerudoCave:
-         comment: Ascend, Flying machine should be nearby
+         comment: Ascend. Flying machine should be nearby
       - _Enemy::Molduga::SG02:
          notes: Take pic
       - _Special<Starting Block>:
@@ -3532,9 +3536,9 @@ _route:
       - _Addison::A08
       - _Korok::GC42::Start
       - _Cave::CentralGerudo00:
-         comment: Drop flying machine south of sand pit
+         comment: Drop flying machine south of sand pit. Enter the sand pit
       - _Bubbulfrog::CentralGerudoCave:
-         comment: Ascend, Flying machine should be nearby
+         comment: Ascend. Flying machine should be nearby
       - _Korok::GC42::End
       - _Location::SouthernOasisTrainingArea:
          comment: Complete the mini-game
@@ -3542,10 +3546,15 @@ _route:
 
    - Dinraal Farming 2:
       - _Warp::Shrine::Mogisari<Warp to Mogisari Shrine>:
-         comment: Make night
+         comment: Make night if needed, in which case you are running behind
          level: Sky
       - _Material<Star Fragment 6/36>
       - _Material<Dinraal Scale 1/3>
+
+   - Light Dragon Farming 2:
+      - _Warp::Shrine::Jinodok<Warp to Jinodok Shrine>:
+         level: Sky
+      - _Material<Light Dragon Scale>
 
    - Naydra Farming 3:
       - _Warp::Tower::RabellaWetlands<Warp to Rabella Wetlands Tower>
@@ -3580,20 +3589,13 @@ _route:
          level: Surface
       - _Special<Cook>:
          coord: [-2431.27, 407.04, -2195.22]
-         comment: Speed food. Make night
+         comment: Money food. Make night
       - _Material<Star Fragment 8/36>:
          comment: Use tower
-      - _Material<Farosh Claw 2/4>
-
-   - Light Dragon Farming 2:
-      - _Warp::Shrine::Mayasiar<Warp to Mayasiar Shrine>
-      - Ascend:
-         movements:
-            - to: [-3488.5, 2011.7151, -317]
-      - _Material<Light Dragon Claw>
+      - _Material<Farosh Scale 1/3>
 
    - Faron Sky Archipelago:
-      - _Warp::Shrine::In-isa:
+      - _Warp::Shrine::In-isa<Warp to In-isa Shrine>:
          level: Sky
       - _Enemy::FluxConstruct::SC04
       - _SagesWill::Faron_01
@@ -3653,9 +3655,9 @@ _route:
       - _Item<Fans>:
          coord: [928.82, 665.44, -2134.68]
          comment: Build flying machine
-      - _Shrine::Joku-u
       - _Location::DragonheadIsland:
-         hide-icon-on-map: true
+         coord: [1374, 548, -3315]
+      - _Shrine::Joku-u
 
    - Guidance from Ages Past:
       - _GoddessStatue::DragonHead:
@@ -3747,11 +3749,10 @@ _route:
       - _LockedChest::D55:
          hide-icon-on-map: true
       - _Lightroot::Busus
-      - Fly to Bargainer Statue:
+      - _Shop::BargainerStatue04:
          movements:
             - to: [342.02, -362.13, -2361.88]
             - to: [883.0049, -281.0164, -2398.976]
-      - _Shop::BargainerStatue04
       - _Location::DracozuAltar:
          comment: Drop flying machine in wellspring
 
@@ -3802,7 +3803,7 @@ _route:
          coord: [565, -385.32, -3318.06]
       - _Equipment::Weapon<Boomerang>:
          coord: [513.58, -374.43, -3152.49]
-      - _Material<Farosh Claw 3/4>
+      - _Material<Farosh Horn>
 
    - Spirit Temple:
       - _YigaSchema::WaterFreezer
@@ -3860,7 +3861,7 @@ _route:
          coord: [-1820.55, 1075.09, -2212.26]
          comment: Fuse rockets to shields
       - _Material<Star Fragment 9/36>
-      - _Material<Farosh Claw 4/4>
+      - _Material<Farosh Claw 2/4>
 
    - Dinraal Farming 3:
       - _Warp::Lightroot::Kawisar<Warp to Kawisar Lightroot>
@@ -3917,7 +3918,7 @@ _route:
          coord: [-162.07, 331.24, 1143.98]
       - _Enemy<Gibdo x3>:
          coord: [-171.7, 344.24, 1163.46]
-         comment: Ascend, Flying machine should be nearby
+         comment: Ascend. Flying machine should be nearby
 
    - Zelda Chase Fire Lizalfos:
       - Drop Lying Machine Near Base of Tower:
@@ -3942,7 +3943,7 @@ _route:
          coord: [-352.82, 334.71, 991.82]
       - _Enemy<Silver Moblin>:
          coord: [-377.37, 345.44, 983.09]
-         comment: Ascend, Flying machine should be nearby
+         comment: Ascend. Flying machine should be nearby
 
    - Zelda Chase Shock Likes:
       - Fly to Hallway Entrance:
@@ -3990,7 +3991,7 @@ _route:
       - _Enemy<Shock Like x2>:
          coord: [-425, 140.5, 1087]
       - _Korok::LL04:
-         comment: Ascend, Flying machine should be nearby
+         comment: Ascend. Flying machine should be nearby
       - _Enemy<Phantom Ganon>:
          coord: [-501.49, 126.08, 1013.53]
       - _Chest<Fabric>:
@@ -4004,13 +4005,13 @@ _route:
             - to: [-500, 120, 800]
             - to: [-448.9934, 118.28906, 858.28]
       - _Enemy::BokoBoss::G16:
-         comment: Ascend, Flying machine should be nearby
+         comment: Ascend. Flying machine should be nearby
       - Drop Flying Machine in Moat:
          movements:
             - to: [-350, 100, 650]
       - _Korok::LL30
       - _Korok::LL31:
-         comment: Get back on flying machine
+         comment: Flying machine should be nearby
 
    - Royal Guard Uniform:
       - _Korok::LL18
@@ -4070,7 +4071,7 @@ _route:
       - _Cave::PasseriGreenbelt00
       - _LockedChest::G49
       - _Bubbulfrog::PasseriGreenbeltCave:
-         comment: Ascend, Flying machine should be nearby
+         comment: Ascend. Flying machine should be nearby
       - _Korok::LL43::Trail
       - _Korok::LL41
       - _Korok::LL38
@@ -4150,7 +4151,7 @@ _route:
          comment: Fuse rockets to shields
       - _Material<Star Fragment 13/36>
       - _Enemy::Gleeok::G09
-      - _Material<Farosh Horn>
+      - _Material<Farosh Claw 3/4>
 
    - The Treasure Hunters:
       - _Warp::Shrine::Sepapa<Warp to Sepapa Shrine>
@@ -4386,7 +4387,7 @@ _route:
          comment: Make night
          level: Sky
       - _Material<Star Fragment 15/36>
-      - _Material<Farosh Scale 1/3>
+      - _Material<Farosh Claw 4/4>
 
    - Light Dragon Farming 3:
       - _Warp::Shrine::Kadaunar<Warp to Kadaunar Shrine>:
@@ -5799,7 +5800,7 @@ _route:
    - Second Hinox Brother:
       - _Bubbulfrog::RodaiLakefrontTunnel
       - _Enemy::Hinox::GF06:
-         comment: Ascend, Flying machine should be nearby
+         comment: Ascend. Flying machine should be nearby
       - Drop Flying Machine:
          movements:
             - to: [1760, 380, -2890]
@@ -5854,7 +5855,7 @@ _route:
          coord: [1523.59, 137.83, -3041.37]
       - _Bubbulfrog::SarjonWoodsCave
       - _Chest::RubberHelm:
-         comment: Ascend, Flying machine should be nearby
+         comment: Ascend. Flying machine should be nearby
 
    - Don Dons:
       - _Korok::PF50
@@ -6073,7 +6074,7 @@ _route:
 
    - Temple of Time Ruins:
       - Ascend:
-         comment: Burn banner and stand in covey next to chest to ascend, Flying machine should be nearby
+         comment: Burn banner and stand in covey next to chest to ascend. Flying machine should be nearby
          movements:
             - to: [-1135, 207, -1925]
       - _Korok::HF67:
@@ -6602,7 +6603,7 @@ _route:
 
    - Mount Satori:
       - _Bubbulfrog::SatoriMountainCave:
-         comment: Ascend, Flying machine should be nearby
+         comment: Ascend. Flying machine should be nearby
       - _Enemy::Talus::GC04
       - _Korok::HF16:
          comment: Drop flying machine above tunnel
@@ -7244,7 +7245,7 @@ _route:
       - _Bubbulfrog::EastBironSnowshelfCave
       - _SideQuest::TheDuchessWhoDissapeared:
          coord: [-3669, 230, 3101]
-         comment: Ascend, flying machine should be nearby
+         comment: Ascend. flying machine should be nearby
       - _Korok::RP24
       - _Korok::RP22
       - _Cave::NorthBironSnowshelf00
@@ -7386,7 +7387,7 @@ _route:
       - _Enemy<Phantom Ganon>:
          coord: [-2957.53, 115.36, -957.9]
       - _Chest::PhantomArmor:
-         comment: Ascend, Flying macine should be nearby
+         comment: Ascend. Flying machine should be nearby
       - _Korok::GH25
       - _Enemy::Talus::GG02
       - _Korok::GH30
@@ -8050,7 +8051,7 @@ _route:
    - Frostbite Trousers:
       - _Bubbulfrog::HebraHeadspringCave
       - _Chest::FrostbiteTrousers:
-         comment: Ascend, Flying machine should be nearby
+         comment: Ascend. Flying machine should be nearby
       - _Enemy::Hinox::GH02
       - _Korok::PS23:
          comment: Drop flying machine near backpack korok, Shoot balloon from mid-air
@@ -8551,7 +8552,7 @@ _route:
       - _Bubbulfrog::SturnidaSpringsCave
       - _Special<Mushroom Haven>:
          coord: [-4064.66, 100.62, 2580.05]
-         comment: Ascend, Flying machine should be nearby
+         comment: Ascend. Flying machine should be nearby
 
    - Frostbite Headdress:
       - _Korok::RP31
@@ -8770,7 +8771,7 @@ _route:
          comment: Enter the well
       - _Item<Reede's Diary>:
          coord: [3415.07, 238.58, -2085.43]
-         comment: Ascend, Read diary
+         comment: Ascend. Read diary
       - _SideAdv::ANewSignatureFood:
          coord: [3429, 131, -2082]
       - _GoddessStatue::HatenoVillage
@@ -8861,7 +8862,7 @@ _route:
 
    - Tarm Point:
       - _Chest::RubberTights:
-         comment: Ascend, Flying machine should be nearby
+         comment: Ascend. Flying machine should be nearby
       - _Korok::UZ59
       - _Tear::G08
       - _Korok::UZ61
