@@ -3737,9 +3737,7 @@ _route:
       - _Item<Steering Stick and Fans>:
          coord: [868.11, -352.63, -1828.44]
          comment: Build flying machine
-      - _Enemy::Hinox::DF01:
-         notes: Take pic of giant boomerang
-         comment: Collect giant boomerang
+      - _Enemy::Hinox::DF01
       - Fly to Yiga Hideout:
          movements:
             - to: [450, -370, -1800]
@@ -3767,8 +3765,7 @@ _route:
          coord: [868.6846, -465.19604, -2174.232]
 
    - Right Arm Depot:
-      - _Enemy::BokoBoss::D23:
-         comment: Break giant boomerang
+      - _Enemy::BokoBoss::D23
       - _Location::RightArmDepot:
          comment: Drop flying machine near depot exit
       - _Special<Deliver Right Arm>:
@@ -3888,10 +3885,15 @@ _route:
 
    - Register Spot:
       - _Warp::Tower::LookoutLanding<Warp to Lookout Landing Tower>
-      - _MainQuest<CompletRegional Phenomena>:
+      - _MainQuest<Regional Phenomena>:
          coord: [-229.67, 155.57, 150.25]
+         comment: Talk to Pura on the telescope tower
+      - _Npc::Karson:
+         coord: [-218.73, 124.66, 93.56]
+         comment: Tell Karson about the Rito rope bridge
       - _SideQuest::VillageAttackedbyPirates:
          coord: [-208.31, 124.75, 81.6]
+         comment: Buy cooking ingredients
       - _Special<Hestu Upgrades>:
          coord: [-229.49, 127.2, 80.14]
       - _Item<Bird Eggs>:
@@ -4057,11 +4059,6 @@ _route:
       - _SideQuest::UnknownHugeSilhouette
       - _GoddessStatue::LookoutLanding:
          comment: Ascend
-      - _Shop::GeneralStore:
-         comment: Buy cooking ingredients
-      - _Npc::Karson:
-         coord: [-218.73, 124.66, 93.56]
-         comment: Tell Karson about the Rito rope bridge
       - _MainQuest::FindtheFifthSage:
          coord: [-253, 126.36, 155]
       - _MainQuest::DestroyGanondorf
