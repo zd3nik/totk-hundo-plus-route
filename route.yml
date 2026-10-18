@@ -4763,9 +4763,6 @@ _route:
       - _CherryBlossom::Eldin
 
    - Sikukuu Shrine:
-      - _Item<Campfire>:
-         coord: [1250, 525, 2960]
-         comment: Make night
       - _Korok::TR13::Start
       - _Addison::A45
       - _Enemy::BokoBoss::G33
@@ -4812,13 +4809,8 @@ _route:
       - _Korok::TR03::End:
          notes: Do some farming before warping to next segment if Dinraal is still far away from Thypio tower
 
-   - Star Fragment Farming:
-      - _Warp::Shrine::Mayam<Warp to Mayam Shrine>:
-         comment: Make night
-         level: Sky
-      - _Material<Star Fragment 23/36>
-
    - Catch Dinraal:
+      - _Warp::Shrine::Mayam<Warp to Mayam Sky Shrine>
       - _Shrine::Kikakin
       - _Enemy::Talus::DT02
       - _Addison::A28
@@ -4909,7 +4901,7 @@ _route:
       - _Item<Campfire>:
          coord: [2389.04, 1588.74, -1712.46]
          comment: Make night
-      - _Material<Star Fragment 24/36>
+      - _Material<Star Fragment 23/36>
       - _Material<Naydra Fang>
 
    - Farosh Farming 6:
@@ -4919,7 +4911,7 @@ _route:
       - _Item<Rockets>:
          coord: [-1820.55, 1075.09, -2212.26]
          comment: Fuse rockets to shields
-      - _Material<Star Fragment 25/36>
+      - _Material<Star Fragment 24/36>
       - _Material<Farosh Scale 3/3>
 
    - Dinraal Farming 8:
@@ -4929,7 +4921,7 @@ _route:
    - Light Dragon Farming 6:
       - _Warp::Tower::RabellaWetlands<Warp to Rabella Wetlands Tower>:
          comment: Make night
-      - _Material<Star Fragment 26/36>
+      - _Material<Star Fragment 25/36>
       - _Material<Light Dragon Horn>
       - _Tablet::S06:
          notes: Take pic
@@ -5070,7 +5062,7 @@ _route:
       - _Item<Rockets>:
          coord: [-1820.55, 1075.09, -2212.26]
          comment: Fuse rockets to shields
-      - _Material<Star Fragment 27/36>
+      - _Material<Star Fragment 26/36>
       - _Material<Farosh Fang>
 
    - Dinraal Farming 9:
@@ -5080,7 +5072,7 @@ _route:
    - Naydra Farming 10:
       - _Warp::Tower::MountLanayru<Warp to Mount Lanayru Tower>:
          comment: Make night
-      - _Material<Star Fragment 28/36>
+      - _Material<Star Fragment 27/36>
       - _Material<Naydra Horn>
 
    - Light Dragon Farming 7:
@@ -5099,7 +5091,7 @@ _route:
          hide-icon-on-map: true
       - _Korok::RW40::Start
       - _Korok::RW35
-      - _Chest<Star Fragment 29/36>:
+      - _Chest<Star Fragment 28/36>:
          coord: [3795.07, 105.31, -3615.98]
       - _Enemy::BokoBoss::G59
       - _Korok::RW40::End
@@ -5176,7 +5168,7 @@ _route:
       - _Warp::Shrine::Jinodok<Warp to Jinodok Shrine>:
          comment: Make night
          level: Sky
-      - _Material<Star Fragment 30/36>
+      - _Material<Star Fragment 29/36>
       - _Material<Light Dragon Horn>
 
    - The Beast and the Princess:
@@ -5224,20 +5216,20 @@ _route:
       - _Item<Rockets>:
          coord: [-1820.55, 1075.09, -2212.26]
          comment: Fuse rockets to shields
-      - _Material<Star Fragment 31/36>
+      - _Material<Star Fragment 30/36>
       - _Material<Farosh Horn>
 
    - Naydra Farming 11:
       - _Warp::Tower::MountLanayru<Warp to Mount Lanayru Tower>:
          comment: Make night
-      - _Material<Star Fragment 32/36>
+      - _Material<Star Fragment 31/36>
       - _Material<Naydra Horn>
 
    - Dinraal Farming 10:
       - _Warp::Shrine::Mayam<Warp to Mayam Shrine>:
          comment: Make night
          level: Sky
-      - _Material<Star Fragment 33/36>
+      - _Material<Star Fragment 32/36>
       - _Material<Dinraal Horn>
 
    - Tukarok Shrine:
@@ -5538,19 +5530,19 @@ _route:
       - _Item<Rockets>:
          coord: [-1820.55, 1075.09, -2212.26]
          comment: Fuse rockets to shields
-      - _Material<Star Fragment 34/36>
+      - _Material<Star Fragment 33/36>
       - _Material<Farosh Horn>
 
    - Dinraaal Farming 11:
       - _Warp::Shrine::Gikaku<Warp to Gikaku Shrine>:
          level: Sky
-      - _Material<Star Fragment 35/36>
+      - _Material<Star Fragment 34/36>
       - _Material<Dinraal Horn>
 
    - Light Dragon Farming 10:
       - _Warp::Tower::MountLanayru<Warp to Mount Lanayru Tower>:
          comment: Make night
-      - _Material<Star Fragment 36/36>
+      - _Material<Star Fragment 35/36>
       - _Material<Light Dragon Horn>
 
    - Akkala Citadel Ruins Cave:
@@ -5815,6 +5807,8 @@ _route:
       - _Item<Zonai Parts>:
          coord: [1832.01, 187.66, -2942.71]
          comment: Build 4-wheeler
+      - _Chest<Star Fragment 36/36>:
+         coord: [1889.26, 216.67, -2684.32]
       - _Bubbulfrog::MountFloriaCave:
          comment: Ascend
       - _Korok::RW18
