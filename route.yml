@@ -5051,13 +5051,10 @@ _route:
       - _SagesWill::Eventide
       - _LockedChest::S04:
          hide-icon-on-map: true
-      - _Item<Campfire>:
-         coord: [4655, 1171, -3825]
-         comment: Make night
 
    - Farosh Farming 7:
       - _Warp::Shrine::Rakashog<Warp to Rakashog Shrine>:
-         comment: Make night (yes, again)
+         comment: Make night
          level: Sky
       - _Item<Rockets>:
          coord: [-1820.55, 1075.09, -2212.26]
@@ -5105,7 +5102,7 @@ _route:
          coord: [2981.12, 106.84, -3448.28]
       - _Equipment::Weapon<Fishing Harpoon>:
          coord: [2981.87, 106.65, -3452.63]
-         comment: Collect Roasted Porgies
+         comment: Collect roasted porgies for use at Lucky Treasure Shop
          notes: Take pic
       - _Enemy<Boko x2>:
          coord: [2978.19, 116.47, -3386.94]
@@ -5130,6 +5127,8 @@ _route:
          coord: [2850.69, 109.99, -3447.92]
       - _SideAdv::RuffianInfestedVillage:
          coord: [2875, 0, -3443]
+      - _Place::LurelinVillage:
+         hide-icon-on-map: true
       - _Shrine::Sifumim
 
    - Lurelin Village Restoration Project:
@@ -5147,7 +5146,7 @@ _route:
          comment: Complete village restoration
 
    - Lurelin Village:
-      - _Place::LurelinVillage:
+      - _Warp::Place::LurelinVillage:
          coord: [2927, 106.25, -3415]
       - _Shop::LuckyTreasureShop:
          comment: Open all chests, Take Rewards
@@ -5477,9 +5476,9 @@ _route:
          comment: Ascend
       - _Material<Naydra Horn>:
          coord: [3960, 450, -2180]
+      - _Korok::ML29
 
    - Hateno Tech Lab:
-      - _Korok::ML29
       - _TechLab::Hateno
       - _SideAdv::PresentingTheTravelMedallion
       - _SideAdv::PresentingHerosPathMode
@@ -5525,7 +5524,6 @@ _route:
 
    - Farosh Farming 9:
       - _Warp::Shrine::Rakashog<Warp to Rakashog Shrine>:
-         comment: Make night
          level: Sky
       - _Item<Rockets>:
          coord: [-1820.55, 1075.09, -2212.26]
@@ -5536,6 +5534,7 @@ _route:
    - Dinraaal Farming 11:
       - _Warp::Shrine::Gikaku<Warp to Gikaku Shrine>:
          level: Sky
+         comment: Make night
       - _Material<Star Fragment 34/36>
       - _Material<Dinraal Horn>
 
