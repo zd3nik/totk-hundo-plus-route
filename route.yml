@@ -4,7 +4,7 @@ _project:
    authors:
       - Shawn Chidester
    name: Glitchless No Amiibo TOTK Hundo+ (Turkey Leg Route)
-   version: 1.5.1
+   version: 1.5.2
    description:
       - Standard TOTK hundo (glitchless, no amiibo) plus
       - Clear all ??? from all device dispensers
@@ -7190,13 +7190,15 @@ _route:
       - _Shrine::Orochium
       - _SideAdv::ZeldasGoldenHorse:
          coord: [-1642.11, 339.2, 2575.8]
-
-   - The Captured Tent:
       - _PonyPoint<Talk to Stable Owner>:
          coord: [-1648.72, 339.78, 2569.43]
          comment: Take out Spot with harness
       - _Place::SnowfieldStable:
          hide-icon-on-map: true
+      - _Npc::Beedle_02:
+         coord: [-1661, 234, 2576]
+
+   - The Captured Tent:
       - _SideQuest::APictureforSnowfieldStable:
          coord: [-1650.2, 341.84, 2582.21]
       - _SideQuest::TheCapturedTent:
@@ -7262,8 +7264,6 @@ _route:
 
    - Who Finds the Haven:
       - _Warp::Shrine::Orochium<Warp to Orochium Shrine>
-      - _Npc::Beedle_02:
-         coord: [-1661, 234, 2576]
       - _SideQuest<A Picture for Snowfield Stable>:
          coord: [-1651, 234, 2570]
       - _SideQuest::WhoFindstheHaven:
