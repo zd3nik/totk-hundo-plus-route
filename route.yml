@@ -2740,14 +2740,18 @@ _route:
       - _Korok::EC06::End
       - _Cave::IsleofRabacGallery00
 
-   - Rudania Helm:
+   - Lake Darman:
       - _Bubbulfrog::IsleofRabacGallery
       - _Shrine::Jiotak:
          comment: Ascend
       - _Enemy::Talus::GE03:
          notes: Take pic
       - _Enemy::BokoBoss::G34
+      - _Special<Korok Starting Block>:
+         coord: [2194.43, 613.08, 3008.75]
       - _Korok::EC07
+
+   - Rudania Helm:
       - _Korok::EC09
       - _Enemy::Hinox::GE02
       - _Korok::EC08
@@ -7207,7 +7211,7 @@ _route:
       - _Korok::PS14::End
       - _Cave::MountDrenaFoothill00:
          comment: Leave wagon outside cave entrance
-      - _Enemy<Moblin x1 and Boko x2>:
+      - _Enemy<Moblin x1 and Boko x3>:
          coord: [-1376.52, 281.86, 2934.06]
       - _Bubbulfrog::MountDrenaFoothillCave
 
