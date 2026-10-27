@@ -1376,6 +1376,8 @@ _route:
       - _Enemy::Talus::GR03
       - _LockedChest::G13
       - _Addison::A21
+      - _Enemy<Captain Construct I>:
+         coord: [-1456.79, 245.04, 1277.72]
       - _LockedChest::G12
       - _Korok::TR17::Start
       - _Korok::LB08
@@ -2855,11 +2857,12 @@ _route:
       - _Korok::RPS03
       - _Dispenser::S11:
          comment: Drop flying machine to platform below
-      - _Enemy::FluxConstruct::SH02:
+      - _Enemy::FluxConstruct::SH02
+      - _OldMap::Hebra_03:
          comment: Flying machine should be nearby
-      - _OldMap::Hebra_03
       - _Shrine::Ijo-o:
          comment: Fuse rockets to shields inside shrine
+         notes: Equip Zonai garb for long flight to next objective
 
    - King Gleeok:
       - _Enemy::Gleeok::S01:
@@ -2882,8 +2885,6 @@ _route:
          coord: [-3684.8, 1902.41, 1060.34]
          comment: Activate terminal
       - _Korok::LBS03
-      - _Enemy<Soldier Construct II>:
-         coord: [-3607, 1896.18, 1008.73]
 
    - Zonaite Helm:
       - _Item<Mirror>:
@@ -2895,11 +2896,11 @@ _route:
          comment: Ascend
       - _Chest<Star Fragment 3/36>:
          coord: [-3633.06, 1874.85, 1049.88]
+
+   - Tabantha Sky Archipelago:
       - _Item<Mirror>:
          coord: [-3607.11, 1858.67, 1030.6]
       - _Chest::ZonaiteHelm
-
-   - Tabantha Sky Archipelago:
       - _Enemy<Soldier Construct II>:
          coord: [-3593.03, 1829.36, 940.96]
          comment: Use construct mirror shield to charge plate
