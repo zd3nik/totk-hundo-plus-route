@@ -4,7 +4,7 @@ _project:
    authors:
       - Shawn Chidester
    name: Glitchless No Amiibo TOTK Hundo+ (Turkey Leg Route)
-   version: 2.1.1
+   version: 2.2.1
    description:
       - Standard TOTK hundo (glitchless, no amiibo) plus
       - Clear all ??? from all device dispensers
@@ -5173,12 +5173,7 @@ _route:
 
    - Farosh Farming 7:
       - _Warp::Shrine::Rakashog<Warp to Rakashog Shrine>:
-         comment: Make night
          level: Sky
-      - _Item<Rockets>:
-         coord: [-1820.55, 1075.09, -2212.26]
-         comment: Fuse rockets to shields
-      - _Material<Star Fragment 26/36>
       - _Material<Farosh Fang>
 
    - Dinraal Farming 9:
@@ -5188,7 +5183,7 @@ _route:
    - Naydra Farming 10:
       - _Warp::Tower::MountLanayru<Warp to Mount Lanayru Tower>:
          comment: Make night
-      - _Material<Star Fragment 27/36>
+      - _Material<Star Fragment 26/36>
       - _Material<Naydra Horn>
 
    - Light Dragon Farming 7:
@@ -5207,7 +5202,7 @@ _route:
          hide-icon-on-map: true
       - _Korok::RW40::Start
       - _Korok::RW35
-      - _Chest<Star Fragment 28/36>:
+      - _Chest<Star Fragment 27/36>:
          coord: [3795.07, 105.31, -3615.98]
       - _Enemy::BokoBoss::G59
       - _Korok::RW40::End
@@ -5277,7 +5272,7 @@ _route:
       - _Warp::Shrine::Jinodok<Warp to Jinodok Shrine>:
          comment: Make night
          level: Sky
-      - _Material<Star Fragment 29/36>
+      - _Material<Star Fragment 28/36>
       - _Material<Light Dragon Horn>
 
    - The Beast and the Princess:
@@ -5326,20 +5321,20 @@ _route:
       - _Item<Rockets>:
          coord: [-1820.55, 1075.09, -2212.26]
          comment: Fuse rockets to shields
-      - _Material<Star Fragment 30/36>
+      - _Material<Star Fragment 29/36>
       - _Material<Farosh Horn>
 
    - Naydra Farming 11:
       - _Warp::Tower::MountLanayru<Warp to Mount Lanayru Tower>:
          comment: Make night
-      - _Material<Star Fragment 31/36>
+      - _Material<Star Fragment 30/36>
       - _Material<Naydra Horn>
 
    - Dinraal Farming 10:
       - _Warp::Shrine::Mayam<Warp to Mayam Shrine>:
          comment: Make night
          level: Sky
-      - _Material<Star Fragment 32/36>
+      - _Material<Star Fragment 31/36>
       - _Material<Dinraal Horn>
 
    - Tukarok Shrine:
@@ -5593,6 +5588,7 @@ _route:
          comment: Enter the cave. Ascend
       - _Material<Naydra Horn>:
          coord: [3960, 450, -2180]
+         comment: Skip if Naydra is not nearby
       - _Korok::ML29
 
    - Hateno Tech Lab:
@@ -5647,18 +5643,20 @@ _route:
       - _Item<Rockets>:
          coord: [-1820.55, 1075.09, -2212.26]
          comment: Fuse rockets to shields
-      - _Material<Star Fragment 33/36>
+      - _Material<Star Fragment 32/36>
       - _Material<Farosh Horn>
 
    - Dinraaal Farming 11:
       - _Warp::Shrine::Gikaku<Warp to Gikaku Shrine>:
          level: Sky
          comment: Make night
-      - _Material<Star Fragment 34/36>
+      - _Material<Star Fragment 33/36>
       - _Material<Dinraal Horn>
 
    - Light Dragon Farming 10:
-      - _Warp::Tower::MountLanayru<Warp to Mount Lanayru Tower>
+      - _Warp::Tower::MountLanayru<Warp to Mount Lanayru Tower>:
+         comment: Make night
+      - _Material<Star Fragment 34/36>
       - _Material<Light Dragon Horn>
       - _Chasm::NaydraSnowfield:
          comment: Enter the chasm
@@ -6274,17 +6272,30 @@ _route:
       - _Korok::PF55
       - _Korok::PF65
       - _Shrine::Utsushok
-      - Do a rocket reload if needed
+
+   - Rocket Reload:
+      - _Warp::Shrine::Rakashog<Warp to Rakashog Sky Shrine>:
+         level: Sky
+      - _Item<Rockets>:
+         coord: [-1820.55, 1075.09, -2212.26]
+         comment: Fuse rockets to shields
 
    - South Lomei Labyrnith:
-      - _Warp::Shrine::Rakashog<Warp to Rakashog Sky Shrine>
       - _Korok::GC23
+      - _Enemy<Fire-Breath Lizalfos>:
+         coord: [-1839.88, 250.9, -2512.92]
       - _Addison::A26
       - _Korok::GC27
+      - _Enemy<Fire-Breath Lizalfos>:
+         coord: [-1920.12, 225.22, -2819.44]
+      - _Enemy<Fire-Breath Lizalfos>:
+         coord: [-1784, 225.89, -2816.96]
       - _Korok::GC26
       - _Enemy::Lynel::G06
       - _Shrine::Kitawak
       - _Korok::GC33
+      - _Enemy<Fire-Breath Lizalfos>:
+         coord: [-1663.33, 376.8, -2995.98]
       - _Korok::GC36
       - _Korok::GC38
       - _Korok::GC46
@@ -6972,9 +6983,13 @@ _route:
       - _Addison::A13:
          notes: Take pic of Hawk
       - _Korok::GC08
+      - _Enemy<Fire-Breath Lizalfos>:
+         coord: [-1896.82, 129.19, -2168.74]
       - _Npc::Giro_02
-      - _Enemy<Ice-Breath Lizalfos x2>:
+      - _Enemy<Fire-Breath Lizalfos>:
          coord: [-1798.56, 111.98, -2422.53]
+      - _Enemy<Fire-Breath Lizalfos>:
+         coord: [-1739.3, 96.4, -2387.37]
       - _Cave::LowerSpectacleRock00:
          comment: Enter the cave
       - _Bubbulfrog::LowerSpectacleRockCave:
@@ -7015,6 +7030,10 @@ _route:
          comment: Ascend
 
    - Rakakudaj Shrine:
+      - _Enemy<Fire-Breath Lizalfos>:
+         coord: [-1886.88, 200.96, -2046.59]
+      - _Enemy<Fire-Breath Lizalfos>:
+         coord: [-1721.97, 112.95, -2176.62]
       - _Cave::MountNabooruSouth00:
          comment: Enter the cave
       - _Bubbulfrog::MountNabooruSouthCave:
@@ -7039,7 +7058,7 @@ _route:
       - _CherryBlossom::Gerudo
       - _Korok::GC11
       - _Korok::GC13
-      - _Enemy<Ice-Breath Lizalfos x2>:
+      - _Enemy<Ice-Breath Lizalfos>:
          coord: [-2245.35, 356.04, -2256.7]
       - Drop flying machine off at top of cliff:
          movements:
@@ -7047,11 +7066,11 @@ _route:
       - _Special<Starting Block>:
          coord: [-2251.93, 380.69, -2358.59]
       - _Korok::GC16
+
+   - Gerudo Canyon Mine Cave:
       - _Cave::SpectacleRock00:
          comment: Enter the cave
       - _Bubbulfrog::SpectacleRockCave
-
-   - Gerudo Canyon Mine Cave:
       - _Special<Offering Plate>:
          coord: [-2301.11, 462.97, -2426.82]
          comment: Ascend
@@ -7060,6 +7079,8 @@ _route:
       - Drop Flying Machine:
          movements:
             - to: [-2675, 170, -2380]
+      - _Enemy<Fire-Breath Lizalfos>:
+         coord: [-2597.24, 213.16, -2629.47]
       - _Cave::GerudoCanyonMine01:
          comment: Enter the cave
       - _Enemy<Like Like>:
