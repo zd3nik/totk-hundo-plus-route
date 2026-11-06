@@ -4,7 +4,7 @@ _project:
    authors:
       - Shawn Chidester
    name: Glitchless No Amiibo TOTK Hundo+ (Turkey Leg Route)
-   version: 2.4.1
+   version: 2.4.2
    description:
       - Standard TOTK hundo (glitchless, no amiibo) plus
       - Clear all ??? from all device dispensers
@@ -401,7 +401,8 @@ _route:
          comment: Not too close to water
       - _MainQuest::RegionalPhenomena:
          coord: [-253.42, 132.01, 156.0]
-      - _Tower::LookoutLanding
+      - _Tower::LookoutLanding:
+         comment: Launch from tower
 
    - Castle Spire:
       - _Place::HyruleCastle:
@@ -913,7 +914,7 @@ _route:
 
    - Barbarian Armor:
       - _Warp::Shrine::Serutabomac<Warp to Serutabomac Shrine>
-      - _Shrine<Activate Sepapa shrine>:
+      - _Shrine<Unlock Sepapa Shrine>:
          coord: [221.75, 147.03, 1085.05]
       - _Enemy<Phantom Ganon>:
          coord: [126.58, 136.86, 953.94]
@@ -937,7 +938,7 @@ _route:
       - _Korok::SS01
       - _Chest<Rockets>:
          coord: [1038.57, 177.68, 1253.27]
-      - _Shrine<Activate Ekochiu shrine>:
+      - _Shrine<Unlock Ekochiu Shrine>:
          coord: [1062.65, 164.78, 1280.46]
       - _Enemy::BokoBoss::G36:
          notes: Take pic
@@ -964,7 +965,7 @@ _route:
          notes: Take pics
       - _Location::TrilbyPlain:
          hide-icon-on-map: true
-      - _Tower<Activate Eldin Canyon Tower>:
+      - _Tower<Unlock Eldin Canyon Tower>:
          coord: [1641.81, 324.42, 1190.82]
 
    - Mineru's Counsel:
@@ -991,7 +992,7 @@ _route:
       - _SideQuest::MiredinMuck:
          coord: [2840, 483.63, 590]
          notes: Take pic of Zora spear. Fuse opal to Zora spear
-      - _Tower<Activate Upland Zorana Tower>:
+      - _Tower<Unlock Upland Zorana Tower>:
          coord: [2866.06, 478.33, 581.19]
          comment: Flying machine should be nearby
       - _Korok::UZ24
@@ -1024,7 +1025,7 @@ _route:
          notes: Take pic of Trident
       - _Location::MiphaCourt:
          hide-icon-on-map: true
-      - _Shrine<Activate Ihen-a shrine>:
+      - _Shrine<Unlock Ihen-a Shrine>:
          coord: [3786.22, 597.97, 577.78]
       - _LockedChest::G39:
          comment: Break a boomerang
@@ -1094,7 +1095,7 @@ _route:
             - to: [3652.77, 1288.77, 280.7]
       - _Chest<Large zonai charge>:
          coord: [3559.66, 1396.85, 481.48]
-      - _Shrine<Activate Igoshon shrine>:
+      - _Shrine<Unlock Igoshon Shrine>:
          coord: [3480.71, 1444.63, 665.88]
       - _Dispenser::S08:
          comment: Get 20+ hoverstones
@@ -1296,14 +1297,14 @@ _route:
          coord: [-719.32, 139.29, -889.84]
       - _Location::ExchangeRuins:
          hide-icon-on-map: true
-      - _Shrine<Activate Mayachin shrine>:
+      - _Shrine<Unlock Mayachin Shrine>:
          coord: [-705.5, 150.61, -868.5]
       - _Addison::A32:
          comment: Check road to the east for Parga if you haven't found her already
       - _Enemy::BokoBoss::G19:
          comment: Fuse lynel horn to thick stick
          notes: Take pic
-      - _Tower<Activate Hyrule Field Tower>:
+      - _Tower<Unlock Hyrule Field Tower>:
          coord: [-761.28, 163.42, -1019.23]
       - _Enemy<Blue Moblin>:
          coord: [-871, 127.06, -1098.5]
@@ -1428,7 +1429,7 @@ _route:
       - _Special<Cook>:
          coord: [-1363.33, 191.05, 741.21]
          comment: Speed food
-      - _Shrine<Activate Sinakawak shrine>:
+      - _Shrine<Unlock Sinakawak Shrine>:
          coord: [-1414.62, 191.14, 756.85]
       - _Enemy::Talus::GR03
       - _LockedChest::G13
@@ -1535,7 +1536,7 @@ _route:
       - _Shrine::Taki-ihaban
       - _Bubbulfrog::Lindor'sBrowCave:
          comment: Ascend
-      - _Tower<Activate Lindor's Brow Tower>:
+      - _Tower<Unlock Lindor's Brow Tower>:
          coord: [-1909.59, 395.71, 1245.3]
       - _Korok::LB15
       - _LockedChest::G10
@@ -1590,7 +1591,7 @@ _route:
       - _Item<Rockets>:
          coord: [-3089.67, 357.78, 1562.97]
          comment: Fuse rockets to shields
-      - _Shrine<Activate Oromuwak shrine>:
+      - _Shrine<Unlock Oromuwak Shrine>:
          coord: [-3078.52, 355.06, 1617.27]
       - _SideAdv::PotentialPrincessSightings:
          coord: [-3258.5, 224.96, 1762.5]
@@ -1611,9 +1612,9 @@ _route:
       - _Npc::Harth
       - _Location::HebraTrailheadLodge:
          hide-icon-on-map: true
-      - _Tower<Activate Rspro Pass Tower>:
+      - _Tower<Unlock Rspro Pass Tower>:
          coord: [-3679.58, 331.74, 2346.4]
-      - _Shrine<Activate Sahirow Shrine>:
+      - _Shrine<Unlock Sahirow Shrine>:
          coord: [-3354.12, 473, 2386.29]
       - _Location::CorvashPeak:
          coord: [-3328.79, 508.49, 2301.97]
@@ -1625,11 +1626,11 @@ _route:
          notes: Take pic of falcon bow
 
    - Ascend to Wind Temple:
-      - _Shrine<Activate Mayaumekis Shrine>:
+      - _Shrine<Unlock Mayaumekis Shrine>:
          coord: [-2947.92, 1008.97, 3050.67]
       - _Location::RisingIslandChain:
          hide-icon-on-map: true
-      - _Shrine<Activate Kahatanaum Shrine>:
+      - _Shrine<Unlock Kahatanaum Shrine>:
          coord: [-3296.01, 1459.85, 3431.51]
       - _Korok::RPS01
       - _Temple::Wind
@@ -1817,7 +1818,7 @@ _route:
          coord: [1649.09, 317.91, -1123.84]
       - _Special<Take Pic of Ring Ruins>:
          coord: [1738.07, 300.08, -1117.63]
-      - _Shrine<Activate Makasura Shrine>:
+      - _Shrine<Unlock Makasura Shrine>:
          coord: [1769.9, 278.15, -1051.93]
       - _Npc::Koko:
          coord: [1825, 220, -1000]
@@ -2180,7 +2181,7 @@ _route:
       - _Bubbulfrog::AkkalaCitadelRuinsSummitCave:
          coord: [3298, 500, 1465]
          comment: Ascend
-      - _Shrine<Activate Domizuin Shrine>:
+      - _Shrine<Unlock Domizuin Shrine>:
          coord: [3304.88, 538.2, 1442.98]
       - _Item<Steering Stick and Fans>:
          coord: [3258.99, 531.44, 1499.94]
@@ -2234,7 +2235,7 @@ _route:
       - _Location::NorthAkkalaSkyArchipelago:
          hide-icon-on-map: true
          comment: Dinraal should be flying by Akkala Tech Lab
-      - _Shrine<Activate Mogisari Shrine>:
+      - _Shrine<Unlock Mogisari Shrine>:
          coord: [4655, 1122.87, 3499.54]
       - _Location::LomeiSkyLabyrinth:
          hide-icon-on-map: true
@@ -2257,7 +2258,7 @@ _route:
    - Skull Lake Chasm:
       - _Bubbulfrog::SkullLakeCave:
          comment: Ascend
-      - _Shrine<Activate Kamatukis Shrine>:
+      - _Shrine<Unlock Kamatukis Shrine>:
          coord: [3431.07, 183.07, 3356.72]
          comment: Flying machine should be nearby
       - _Korok::UM04
@@ -2343,7 +2344,7 @@ _route:
          coord: [3646.56, 107.32, 2513.18]
       - _Enemy::BokoBoss::G51
       - _Korok::UM25::Start
-      - _Shrine<Activate Sinatanika Shrine>:
+      - _Shrine<Unlock Sinatanika Shrine>:
          coord: [3841.97, 160.5, 2300.29]
       - _Addison::A66
       - _Korok::UM24
@@ -2519,7 +2520,7 @@ _route:
       - _SideAdv::ForOurPrincess:
          coord: [2594, 253.8, 1164.15]
          notes: Take pic of rainbow sparrow
-      - _Shrine<Activate Kisinona Shrine>:
+      - _Shrine<Unlock Kisinona Shrine>:
          coord: [2567.85, 285.17, 1245.94]
       - _SideQuest::MiskosCaveofChests:
          coord: [2603.96, 255.83, 1325.47]
@@ -2614,7 +2615,7 @@ _route:
          coord: [1648.01, 487.5, 2439.43]
       - _Shop::ArmorShop02:
          comment: Buy Armor
-      - _Shrine<Activate Marakuguc Shrine>:
+      - _Shrine<Unlock Marakuguc Shrine>:
          coord: [1762.49, 549, 2509.65]
       - _SideQuest::TheAncientCityGorondia!:
          coord: [1744, 531.5, 2585]
@@ -2677,7 +2678,7 @@ _route:
       - _Warp::Cave<West Tunnel>:
          coord: [2238.61, 626.02, 2682.38]
       - _Korok::EC10::Start
-      - _Shrine<Activate Sitsum Shrine>:
+      - _Shrine<Unlock Sitsum Shrine>:
          coord: [2369.07, 902.5, 2596.35]
          comment: Ascend
          notes: Leave flying machine here
@@ -2687,7 +2688,7 @@ _route:
             - DO NOT FOLLOW HIM TO NEXT TRIGGER
             - Drop back down to flying machine
       - _Korok::EC10::End
-      - _Shrine<Activate Sibajitak Shrine>:
+      - _Shrine<Unlock Sibajitak Shrine>:
          coord: [2400.27, 514.8, 3275.07]
       - _Enemy<Fire Lizalfos>:
          coord: [2369.68, 502.08, 3232.66]
@@ -3107,7 +3108,7 @@ _route:
       - _Location::TorumaDunes:
          hide-icon-on-map: true
       - _Npc::Isha
-      - _Shrine<Activate Miryotanog Shrine>:
+      - _Shrine<Unlock Miryotanog Shrine>:
          coord: [-4680.1, 173.72, -3086.44]
       - _Place::GerudoTown:
          coord: [-3859.3, 190.19, -3017.55]
@@ -3116,7 +3117,7 @@ _route:
       - _Chest<Gerudo Shield>:
          coord: [-3940.91, 191.46, -2934.61]
          notes: COLLECT AND KEEP for Pride of the Gerudo quest
-      - _Shrine<Activate Soryotanog Shrine>:
+      - _Shrine<Unlock Soryotanog Shrine>:
          coord: [-3882.2, 242.2, -2962.55]
       - Drop Flying Machine:
          comment: Then paraglide back to next objective
@@ -3553,7 +3554,7 @@ _route:
       - _Item<Fans>:
          coord: [-2232.34, 1227, -2398.13]
          comment: Build flying machine
-      - _Shrine<Activate Siyamotsus Shrine>:
+      - _Shrine<Unlock Siyamotsus Shrine>:
          coord: [-1795, 1130.29, -3294.6]
       - _Location::SouthLomeiCastleTopFloor:
          hide-icon-on-map: true
@@ -3735,7 +3736,8 @@ _route:
       - _Npc::Elmerson_02
       - _Well::PoplaFoothillsNorth:
          comment: Ascend
-      - _Tower::PoplaFoothills
+      - _Tower::PoplaFoothills:
+         comment: Use tower
 
    - Dragonhead Isle:
       - _Enemy<Soldier Construct I>:
@@ -4359,7 +4361,7 @@ _route:
    - Korok Forest:
       - _Place::KorokForest:
          coord: [436.7, -427.58, 2094.57]
-      - _Shrine<Activate Musanokir Shrine>:
+      - _Shrine<Unlock Musanokir Shrine>:
          coord: [407.76, 263.24, 2133.73]
          level: Surface
       - _Chasm::DekuTree:
@@ -4565,7 +4567,7 @@ _route:
       - _Shrine::Taninoud
       - _Tablet::S03:
          notes: Take pic
-      - _Shrine<Activate Tenbez Shrine>:
+      - _Shrine<Unlock Tenbez Shrine>:
          coord: [-970.18, 1130.75, 3535]
       - _Location::NorthLomeiCastleTopFloor:
          hide-icon-on-map: true
@@ -4578,7 +4580,7 @@ _route:
          comment: Paraglide to top of tower after getting claw
 
    - Thyphlo Ruins:
-      - _Tower<Activate Thyphlo Ruins Tower>:
+      - _Tower<Unlock Thyphlo Ruins Tower>:
          coord: [343.67, 278.56, 3141.65]
       - _SideAdv::InvestigatetheThyphloRuins:
          coord: [372.69, 280.02, 3095.62]
@@ -4689,7 +4691,7 @@ _route:
       - _Npc::Hino_03
       - _Korok::UZ43
       - _Korok::UZ46
-      - _Shrine<Activate Apogek Shrine>:
+      - _Shrine<Unlock Apogek Shrine>:
          coord: [3886.69, 283.2, -216.77]
       - _Enemy::BokoBoss::G55
       - _Korok::UZ62
@@ -5876,7 +5878,7 @@ _route:
       - _Korok::UZ03::Trail
       - _Korok::UM42
       - _Korok::UM39
-      - _Shrine<Activate Rasitakiwak Shrine>:
+      - _Shrine<Unlock Rasitakiwak Shrine>:
          coord: [4166.7, 348.41, 1322.74]
       - _Korok::UM36
       - _Korok::UM33
@@ -6665,7 +6667,7 @@ _route:
       - _Npc::Calip
       - _Korok::SS72::Start
       - _Korok::PF24
-      - _Shrine<Activate Jiukoum Shrine>:
+      - _Shrine<Unlock Jiukoum Shrine>:
          coord: [867.5, 260.5, -2278.4]
          comment: Skip if you would rather not use warp to get here in next segment
       - _Korok::SS72::End
@@ -6949,7 +6951,8 @@ _route:
          notes: Talk to statue again after receiving reward. Buy next available armor piece
 
    - Yiga Exam:
-      - _Warp::Tower::GerudoCanyon<Warp to Gerudo Canyon Tower>
+      - _Warp::Tower::GerudoCanyon<Warp to Gerudo Canyon Tower>:
+         comment: Use tower
       - _Material<Farosh Horn>:
          comment: Paraglide or warp back to tower
       - _Special<Cook>:
@@ -7103,7 +7106,7 @@ _route:
       - _SideQuest::GleeokGuts:
          coord: [-2726.13, 167.9, -2335.33]
          comment: Flying machine should be nearby
-      - _Shrine<Activate Turakamik Shrine>:
+      - _Shrine<Unlock Turakamik Shrine>:
          coord: [-2657.25, 186.78, -2237.3]
       - _Korok::GC12
       - _Korok::GC06
@@ -7121,11 +7124,12 @@ _route:
       - _Chest<Eightfold Longblade>:
          coord: [-2508.1, 245.71, -1779.78]
          notes: Take pic
-      - _Shrine::Suariwak:
-         comment: Ascend
+      - _Shrine::Suariwak
 
    - Outskirt Hill:
-      - _Cave::TaafeiHill00
+      - _Warp::Tower::GerudoCanyon:
+         comment: Use tower
+      - _Material<Farosh Horn>
       - _Korok::GH42
       - _Korok::GH43
       - _Tear::G04
@@ -8127,7 +8131,7 @@ _route:
          comment: Cook raw meat + rice + salt
       - _Korok::PF02
       - _Npc::Penn_15
-      - _Shrine<Activate Tajikats Shrine>:
+      - _Shrine<Unlock Tajikats Shrine>:
          coord: [343.86, 135.7, -1009.03]
       - _Npc::Beedle_06
       - _PonyPoint<Talk to Stable Owner>:
