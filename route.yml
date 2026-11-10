@@ -4,7 +4,7 @@ _project:
    authors:
       - Shawn Chidester
    name: Glitchless No Amiibo TOTK Hundo+ (Turkey Leg Route)
-   version: 2.7.0
+   version: 2.8.0
    description:
       - Standard TOTK hundo (glitchless, no amiibo) plus
       - Clear all ??? from all device dispensers
@@ -8604,7 +8604,7 @@ _route:
       - _Npc::Worten_01:
          comment: Give shroom
 
-   - Spy on Cece:
+   - The Mayoral Election:
       - _Warp::TechLab::Hateno<Warp to Hateno Tech Lab>
       - _Npc::Tokk:
          coord: [3790, 230, -2115]
@@ -8625,16 +8625,14 @@ _route:
          comment: Dye something, Rework the paraglider
       - _Special<Spy on Cece>:
          coord: [3383.26, 236.78, -2161.62]
-
-   - The Mayoral Election:
-      - _SideQuest::PhotographingaChuchu:
-         coord: [3408, 121, -2150]
-         notes: Give a reference pic for all fabrics
       - _Npc::Cece
       - _Npc::Sophie
       - _SideAdv::TheMayoralElection
 
    - Sun Pumpkin:
+      - _SideQuest::PhotographingaChuchu:
+         coord: [3408, 121, -2150]
+         notes: Give a reference pic for all fabrics
       - _SideAdv<Team Cece or Team Reede>:
          coord: [3354.76, 226.56, -2125.24]
          comment: Buy hylian set
@@ -8736,6 +8734,10 @@ _route:
          coord: [1700, 3, -2010]
          comment: Build wagon raft and transport the Stable Trotters across the river
       - _Fairy::GreatFairyFountain<Cotera>
+
+   - Little Twin Bridge:
+      - _Special<Place Travel Medallion>:
+         coord: [1765, 115, -2160]
       - _Location::LittleTwinBridge
       - _Korok::RW02
       - _Enemy::Hinox::GL03
