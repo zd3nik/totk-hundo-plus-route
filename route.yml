@@ -4,7 +4,7 @@ _project:
    authors:
       - Shawn Chidester
    name: Glitchless No Amiibo TOTK Hundo+ (Turkey Leg Route)
-   version: 2.6.0
+   version: 2.7.0
    description:
       - Standard TOTK hundo (glitchless, no amiibo) plus
       - Clear all ??? from all device dispensers
@@ -8344,7 +8344,7 @@ _route:
       - _Korok::EC42::End
       - _Shrine::Timawak
 
-   - First Marbled Rock Roast:
+   - First Rock Roast Delivery:
       - _Cave::EastRestaurant00:
          comment: Enter the cave
       - _Bubbulfrog::EastRestaurantCave
@@ -8361,7 +8361,7 @@ _route:
          coord: [1750, 278, 1536]
       - _Korok::EC43
 
-   - Second Marbled Rock Roast:
+   - Second Rock Roast Delivery:
       - _Cave::WestRestaurant00:
          comment: Enter the cave
       - _Bubbulfrog::WestRestaurantCave
@@ -8492,6 +8492,505 @@ _route:
       - _Location::RistMine
       - _Chest::TunicofTwilight
       - _Lightroot::Kimimeg
+
+   - White Horse:
+      - _Warp::Shrine::Kamatukis<Warp to Kamatukis Shrine>
+      - _Shrine::Kamatukis
+      - _Korok::UM05
+      - _Enemy::BokoBoss::G50
+      - _Korok::UM09::Start
+      - _Enemy::Lynel::G13
+      - _Special<Starting Block>:
+         coord: [3575.36, 215.1, 3046.11]
+      - _Korok::UM15
+      - _Korok::UM09::End
+      - _Korok::UM14
+      - _Korok::UM13
+      - _Enemy<Phantom Ganon>:
+         coord: [3288.98, 106.53, 3228.81]
+      - _Special<Starting Block>:
+         coord: [3152.96, 241.97, 3430.86]
+      - _Korok::UM03
+      - _Addison::A65
+      - _Korok::UM02
+      - _Korok::EC03::Start
+      - _Item<White Horse>:
+         coord: [3244.38, 326.97, 3741.95]
+         notes: Take pic
+      - _Korok::EC01
+      - _Korok::EC03::End
+      - _Addison::A54
+      - _Enemy::Talus::GE02
+      - _Korok::EC04
+      - _Chest<Silver Rupee>:
+         coord: [2667.63, 468.97, 3460.01]
+      - _Location::GutCheckRock:
+         hide-icon-on-map: true
+      - _Shrine::Kimayat
+
+   - Hateno Village:
+      - _Warp::Shrine::Yansamin<Warp to Yansamin Sky Shrine>:
+         level: Surface
+      - _Korok::ML18
+      - _Korok::ML17
+      - _Korok::ML26::Start
+      - _Enemy<Phantom Ganon>:
+         coord: [2867.36, 122.18, -2071.5]
+      - _Korok::ML27
+      - _Chest<Phrenic Box>:
+         coord: [2823.23, 119.38, -2126.71]
+         notes: Take pic
+      - _Korok::ML32
+      - _Special<Starting Block>:
+         coord: [3017.92, 155.38, -2033.4]
+      - _Korok::ML23
+      - _Enemy::Talus::GL02
+      - _Addison::A71
+      - _LockedChest::G40
+      - _Addison::A72
+      - _Korok::ML26::End
+      - _Korok::ML31
+      - _Korok::ML34
+      - _Well::Zelda'sSecret:
+         comment: Enter the well
+      - _SideQuest::ANewChampionsTunic:
+         coord: [3305, 112, -2298]
+      - _Chest::WellWornHairBand:
+         comment: Ascend
+      - _Well::HatenoVillageSouth:
+         comment: Collect frogs around the well
+      - _Npc::Sophie
+      - _Shop::ArmorShop03
+      - _SideAdv::TeamCeceorTeamReede
+
+   - Help Symin Teach Some Brats:
+      - _SideAdv::CecesSecret:
+         coord: [3357, 120, -2139]
+      - _SideQuest::MannysBeloved:
+         coord: [3369, 120, -2132]
+      - _Special<Cook>:
+         coord: [3357.76, 215.82, -2095.69]
+         comment: Monster curry. Make noon
+      - _Npc::Tamana_01:
+         comment: Give shroom
+      - _Npc::Leop:
+         coord: [3324, 150, -2152]
+         comment: Give shroom
+      - _Npc::Ivee
+      - _Shop::GeneralStore07:
+         comment: Buy cooking ingredients
+      - _Npc::Manny:
+         comment: Complete the quest
+      - _Npc::Medda:
+         comment: Give shroom. Collect frogs around the pond
+      - _Shop::HatenoSchool
+      - _SideQuest::TeachMeaLessonI
+      - _SideQuest::TeachMeaLessonII:
+         comment: Ascend
+
+   - Reede's Diary:
+      - _Korok::ML22
+      - _Npc::Uma_01:
+         comment: Start side quest, Give shroom
+      - _Well::HatenoVillageWest
+      - _Well::HatenoVillageNorth:
+         comment: Enter the well
+      - _Item<Reede's Diary>:
+         coord: [3415.07, 238.58, -2085.43]
+         comment: Ascend. Read diary
+      - _SideAdv::ANewSignatureFood:
+         coord: [3429, 131, -2082]
+      - _GoddessStatue::HatenoVillage
+      - _Npc::Worten_01:
+         comment: Give shroom
+
+   - Spy on Cece:
+      - _Warp::TechLab::Hateno<Warp to Hateno Tech Lab>
+      - _Npc::Tokk:
+         coord: [3790, 230, -2115]
+         comment: Give shroom
+      - _Item<CookSet>:
+         coord: [3619.52, 282.05, -2112.88]
+         comment: Make night
+      - _Npc::Dantz_01:
+         coord: [3640, 283.81, -2100]
+         comment: Give shroom
+      - _Npc::Koyin_01:
+         comment: Give shroom, Buy cheese
+      - _Well::HatenoVillageEast
+      - _Shrine::Zanmik
+      - _SideAdv::ReedesSecret:
+         coord: [3443, 236.83, -2091.19]
+      - _Shop::DyeShop:
+         comment: Dye something, Rework the paraglider
+      - _Special<Spy on Cece>:
+         coord: [3383.26, 236.78, -2161.62]
+
+   - The Mayoral Election:
+      - _SideQuest::PhotographingaChuchu:
+         coord: [3408, 121, -2150]
+         notes: Give a reference pic for all fabrics
+      - _Npc::Cece
+      - _Npc::Sophie
+      - _SideAdv::TheMayoralElection
+
+   - Sun Pumpkin:
+      - _SideAdv<Team Cece or Team Reede>:
+         coord: [3354.76, 226.56, -2125.24]
+         comment: Buy hylian set
+      - _SideQuest::HomegrowninHateno:
+         coord: [3298, 109, -2121]
+      - _Item<Sun Pumpkin>:
+         coord: [3303.74, 215.36, -2127.53]
+         notes: Take pic
+      - _Shop::GeneralStore07:
+         comment: Buy cooking ingredients
+      - _Korok::ML39::Start
+      - _Korok::ML39::End
+      - _Korok::ML38
+      - _Korok::ML43
+      - _CherryBlossom::Necluda
+      - _Enemy::Hinox::GL04
+      - _Korok::RW10
+      - _LockedChest::G41
+      - _Korok::ML35
+
+   - Final Hino Rescue:
+      - _Enemy::BokoBoss::G46
+      - _Npc::Hino_02
+      - _Korok::RW03
+      - _Korok::ML24::Start
+      - _Korok::RW05
+      - _Korok::ML28
+      - _Korok::ML24::End
+
+   - Oakle's Navel:
+      - _Cave::Oakle'sNavel00:
+         comment: Enter the cave
+      - _Shrine::Tokiy::Start
+      - _Bubbulfrog::Oakle'sNavelCave
+      - _Shrine::Tokiy:
+         comment: Ascend
+      - _Korok::RW07
+      - _Korok::RW04
+      - _Korok::RW06
+      - _Korok::RW08::Trail
+      - _Korok::RW11
+      - _Cave::MountFloria01:
+         comment: Enter the cave. Ascend
+      - _Korok::RW13
+
+   - Dueling Peaks:
+      - _Warp::Shrine::Ukoojisi<Warp to Ukoojisi Shrine>:
+         level: Sky
+      - _Item<Rockets>:
+         coord: [1477.13, 628.59, -2008.65]
+         comment: Fuse rockets to shields
+      - _Special<Starting Block>:
+         coord: [1243.54, 541.58, -1941.41]
+      - _Korok::SS70
+
+   - Dueling Peaks Cave:
+      - _Korok::SS67
+      - _Korok::SS66
+      - _Korok::SS61:
+         comment: Shoot from high above in the air so you can paraglide to next objective
+      - _Cave::DuelingPeaksNorth00:
+         comment: Enter the cave
+      - _Bubbulfrog::DuelingPeaksNorthCave:
+         comment: Ascend
+
+   - Tingle's Shirt:
+      - _Cave::DuelingPeaksSouth00:
+         comment: Enter the cave
+      - _Bubbulfrog::DuelingPeaksSouthCave
+      - _Chest::TinglesShirt:
+         comment: Ascend
+      - _Npc::Zelda_01
+      - _Korok::SS69
+
+   - Honey Bee Mine:
+      - _Warp::Shrine::Josiu<Warp to Josiu Sky Shrine>
+      - _Korok::SS49
+      - _Addison::A62
+      - _SideAdv::HoneyBeeMine:
+         coord: [2167, 109, -1380]
+      - _Korok::SS56
+      - _LockedChest::G35
+      - _Korok::SS52:
+         comment: Drop flying machine into water
+      - _Korok::SS53:
+         comment: Flying machine should be in the river below
+
+   - Great Fairy Cotera:
+      - _Korok::SS55
+      - _Location::KakarikoBridge
+      - _Korok::SS57
+      - _SideQuest<A Picture for Dueling Peaks Stable>:
+         coord: [1757, 10, -1924]
+         comment: Ascend
+      - _Well::DuelingPeaksStable
+      - _SideAdv::SerenadetoCotera:
+         coord: [1755, 10, -1958]
+      - _Location::BigTwinBridge:
+         coord: [1700, 3, -2010]
+         comment: Build wagon raft and transport the Stable Trotters across the river
+      - _Fairy::GreatFairyFountain<Cotera>
+      - _Location::LittleTwinBridge
+      - _Korok::RW02
+      - _Enemy::Hinox::GL03
+      - _Korok::RW01
+      - _Addison::A52
+
+   - Moor Garrison Ruins:
+      - _Warp::Shrine::Jonsau<Warp to Jonsau Shrine>
+      - _Addison::A49
+      - _Well::MoorGarrisonRuins
+      - _Korok::SS15
+      - _Cave::CrenelPeak01:
+         comment: Enter the cave
+      - _Bubbulfrog::CrenelPeakCave
+      - _Shrine::Jojon:
+         comment: Ascend
+      - _Korok::SS11
+      - _Location::ThimsBridge
+      - _Korok::EC59
+      - _Addison::A50
+      - _Korok::EC60
+      - _Korok::EC58
+      - _Enemy::BokoBoss::G38
+      - _LockedChest::G27
+      - _Korok::SS13::Start
+      - _Korok::SS09
+      - _Korok::SS12
+      - _Location::MoorGarrisonRuins:
+         hide-icon-on-map: true
+      - _Korok::SS13::End
+      - _Chasm::LanayruWetlands:
+         comment: Enter the chasm
+
+   - Ruto Canyon Mine:
+      - _Lightroot::Uasnoj
+      - _Enemy<Marbled Gohma>:
+         coord: [1607.1, -354.04, -62.11]
+      - _LockedChest::D63
+      - _Equipment::Weapon<Zora Longsword>:
+         coord: [1717.12, -347.65, -39.52]
+      - _Equipment::Weapon<Zora Spear>:
+         coord: [1895.66, -344.51, -48.76]
+      - _Lightroot::Sekioam
+      - _Chest<Sea-Breeze Shield>:
+         coord: [2667.56, -453.72, 253.65]
+         notes: Take pic
+      - _Location::TabahlGrove:
+         hide-icon-on-map: true
+      - _Equipment::Weapon<Zora Sword>:
+         coord: [2803.81, -458.55, -233.64]
+      - _Chest<Large crystallized Charge>:
+         coord: [3308.4, -592.83, -58.22]
+      - _Location::RutoCanyonMine:
+         hide-icon-on-map: true
+      - _Equipment::Weapon<Zora Spear>:
+         movements:
+            - to: [3550, -390, -160]
+            - to: [3442.62, -387.66, -424.76]
+      - _Equipment::Weapon<Zora Sword>:
+         coord: [3345.98, -350.42, -380.67]
+      - _Equipment::Weapon<Zora Longsword>:
+         coord: [3336.55, -351.21, -493.73]
+      - _Equipment::Weapon<Zora Spear>:
+         coord: [3348.89, -352.19, -633.39]
+      - _YigaSchema::Icebreaker
+      - _LockedChest::D86:
+         hide-icon-on-map: true
+      - _LockedChest::D87:
+         hide-icon-on-map: true
+      - _Equipment::Weapon<Zora Longsword>:
+         coord: [3739.79, -552.22, -265.41]
+      - _Lightroot::Kegopa
+      - _Equipment::Weapon<Zora Sword>:
+         coord: [3933.74, -467.53, -254.23]
+      - _Equipment::Weapon<Zora Longsword>:
+         coord: [4143.71, -366.28, -221.36]
+      - _Equipment::Weapon<Zora Spear>:
+         movements:
+            - to: [4210, -400, -180]
+            - to: [4295, -400, -180]
+            - to: [4430.96, -441.47, -466.73]
+      - _Lightroot::Kuzimoy
+      - _Equipment::Weapon<Zora Spear>:
+         coord: [4325.76, -390.3, -614.77]
+
+   - South Akkala Chasm:
+      - _Warp::Shrine::Domizuin<Warp to Domizuin Shrine>
+      - _Chasm::SouthAkkalaPlains:
+         comment: Enter the chasm
+
+   - Ancient Underground Fortress:
+      - _Lightroot::Niuzimod
+      - _Enemy::BokoBoss::D36
+      - _Chest::TrousersofTwilight
+      - _Location::AncientUndergroundFortress:
+         hide-icon-on-map: true
+      - _Enemy::Lynel::D17
+      - _Lightroot::Gedihcayam
+      - _Lightroot::Nipahsom
+      - _Enemy::Frox::DE03
+      - _Lightroot::Kawamit
+      - _Enemy::Talus::DE04
+      - _Chest::TunicoftheSky
+      - _Lightroot::Uihcoke
+      - _Enemy::Lynel::D13
+      - _Enemy::Hinox::DE05
+      - _YigaSchema::Rainmaker
+      - _LockedChest::D59:
+         hide-icon-on-map: true
+      - _LockedChest::D60:
+         hide-icon-on-map: true
+      - _Enemy::BokoBoss::D31
+      - _Equipment::Weapon<Cobble Crusher>:
+         coord: [2468.74, -397.87, 645.36]
+      - _Equipment::Weapon<Zora Sword>:
+         coord: [2612.4, -545.73, 549.11]
+      - _Lightroot::Uinoj
+      - _Equipment::Weapon<Zora Spear>:
+         coord: [2920.29, -683.24, 559.89]
+      - _Enemy<Mucktorok>:
+         coord: [2837, -685.82, 610]
+      - _LockedChest::D69
+      - _Enemy::Frox::DA03
+      - _Enemy::Lynel::D16
+      - _Lightroot::Anonisik
+      - _YigaSchema::BigRig
+      - _LockedChest::D67:
+         hide-icon-on-map: true
+      - _LockedChest::D68:
+         hide-icon-on-map: true
+      - _Enemy::Talus::DA02
+      - _Enemy::BokoBoss::D37
+
+   - Zora Depths:
+      - _Enemy::FluxConstruct::DL01
+      - _Equipment::Weapon<Zora Sword>:
+         coord: [3318.41, -734.69, 1059.23]
+      - _Lightroot::A-nehi
+      - _Chest<Large Crystallized Charge>:
+         coord: [3804.15, -849.12, 448.46]
+      - _Location::PloymusCanyonMine:
+         hide-icon-on-map: true
+      - _Equipment::Weapon<Zora Sword>:
+         coord: [3982.75, -767.36, 602.79]
+      - _Enemy::Talus::DZ01
+      - _Equipment::Weapon<Zora Sword>:
+         coord: [4221.57, -706.65, 424.99]
+      - _YigaSchema::TripleCannon
+      - _LockedChest::D93:
+         hide-icon-on-map: true
+      - _LockedChest::D94:
+         hide-icon-on-map: true
+      - _Lightroot::Sisinatag
+      - _Equipment::Weapon<Zora Longsword>:
+         coord: [4479.83, -431.76, 923.94]
+      - _Equipment::Weapon<Zora LongSword>:
+         coord: [4410.53, -613.86, 907.66]
+      - _Equipment::Weapon<Zora Sword>:
+         coord: [4289.61, -565.21, 815.65]
+      - _Enemy::Frox::DA02
+      - _Equipment::Weapon<Zora Longsword>:
+         coord: [3927.36, -581.32, 923.11]
+      - _Equipment::Weapon<Zora Spear>:
+         coord: [3799.71, -580.34, 946.62]
+      - _Lightroot::Agihi-ihcoj
+      - _Lightroot::Kawikatisar
+
+   - Ulria Grotto:
+      - _Warp::Shrine::Ihen-a<Warp to Ihen-a Shrine>
+      - _Korok::UZ11
+      - _Korok::UZ09
+      - _Enemy::Lynel::G14
+      - _Korok::UZ12::Start
+      - _LockedChest::G47
+      - _Korok::UZ10
+      - _Korok::UZ16
+      - _Cave::UlriaGrottoSouth00:
+         comment: Enter the cave
+      - _Bubbulfrog::UlriaGrottoSouthCave
+      - _Enemy::Talus::GZ03:
+         comment: Ascend
+      - _Korok::UZ27
+      - _Addison::A77
+      - _Korok::UZ19
+      - _Special<Starting Block>:
+         coord: [4697.57, 335.54, 546.61]
+      - _Korok::UZ21
+      - _Korok::UZ17
+      - _Korok::UZ12::End
+      - _Special<Annoying Plushy Lady>:
+         coord: [4280, 232, 830]
+         comment: Complete the mini-game
+
+   - Tingel Island:
+      - _Cave::UlriaGrottoEast00:
+         comment: Enter the cave
+      - _Bubbulfrog::UlriaGrottoEastCave
+      - _Enemy::Hinox::GA04
+      - _Cave::UlriaGrottoEast01
+      - _Shrine::Gatanisis
+      - _Special<Starting Block>:
+         coord: [4477.16, 201.95, 937.46]
+      - _Korok::UZ07
+      - _Korok::UZ02
+      - _Chasm::TingelIsland:
+         comment: Enter the chasm
+
+   - Cap of the Wild:
+      - _Item<Rock Wall>:
+         coord: [4663.95, -498.22, 1169.54]
+      - _Item<Rock Wall>:
+         coord: [4659.49, -559.41, 966.65]
+      - _Item<Rock Wall>:
+         coord: [4610.64, -568.29, 730.87]
+      - _Enemy<Phantom Ganon>:
+         coord: [4650.48, -617.8, 614.56]
+      - _Chest::CapoftheWind
+
+   - Horon Lagoon:
+      - _Warp::Shrine::Apogek<Warp to Apogek Shrine>
+      - _Shrine::Apogek
+      - _Korok::UZ71::Start
+      - _Addison::A69
+      - _Korok::UZ64
+      - _Korok::UZ69
+      - _Special<Starting Block>:
+         coord: [4185, 129.84, -443.75]
+      - _Korok::UZ60:
+         comment: Leave flying machine here
+      - _Cave::HoronLagoon00:
+         comment: Enter the cave
+
+   - Tarm Point:
+      - _Bubbulfrog::HoronLagoonCave
+      - _Chest::RubberTights:
+         comment: Ascend. Flying machine should be nearby
+      - _Korok::UZ59
+      - _Tear::G08
+      - _Korok::UZ61
+      - _Korok::UZ68:
+         comment: Drop flying machine on top of tunnel
+      - _Korok::UZ67:
+         comment: Flying machine should be nearby
+      - _Addison::A78
+      - _Korok::UZ71::End
+      - _Korok::ML01
+      - _Korok::ML03
+      - _Korok::ML02::Trail
+
+   - Pedophile:
+      - _Cave::TarmPoint00:
+         comment: Enter the cave
+      - _Npc::Sasan_04
+      - _Bubbulfrog::TarmPointCave
+      - _Shrine::Yomizuk
 
    - Feathered Edge Sword:
       - _Warp::Shrine::Sahirow<Warp to Sahirow Shrine>
@@ -8968,505 +9467,6 @@ _route:
       - _Cave::QuicksandLake00:
          comment: Enter the sand pit
       - _Bubbulfrog::QuicksandLakeCave
-
-   - Moor Garrison Ruins:
-      - _Warp::Shrine::Jonsau<Warp to Jonsau Shrine>
-      - _Addison::A49
-      - _Well::MoorGarrisonRuins
-      - _Korok::SS15
-      - _Cave::CrenelPeak01:
-         comment: Enter the cave
-      - _Bubbulfrog::CrenelPeakCave
-      - _Shrine::Jojon:
-         comment: Ascend
-      - _Korok::SS11
-      - _Location::ThimsBridge
-      - _Korok::EC59
-      - _Addison::A50
-      - _Korok::EC60
-      - _Korok::EC58
-      - _Enemy::BokoBoss::G38
-      - _LockedChest::G27
-      - _Korok::SS13::Start
-      - _Korok::SS09
-      - _Korok::SS12
-      - _Location::MoorGarrisonRuins:
-         hide-icon-on-map: true
-      - _Korok::SS13::End
-      - _Chasm::LanayruWetlands:
-         comment: Enter the chasm
-
-   - Ruto Canyon Mine:
-      - _Lightroot::Uasnoj
-      - _Enemy<Marbled Gohma>:
-         coord: [1607.1, -354.04, -62.11]
-      - _LockedChest::D63
-      - _Equipment::Weapon<Zora Longsword>:
-         coord: [1717.12, -347.65, -39.52]
-      - _Equipment::Weapon<Zora Spear>:
-         coord: [1895.66, -344.51, -48.76]
-      - _Lightroot::Sekioam
-      - _Chest<Sea-Breeze Shield>:
-         coord: [2667.56, -453.72, 253.65]
-         notes: Take pic
-      - _Location::TabahlGrove:
-         hide-icon-on-map: true
-      - _Equipment::Weapon<Zora Sword>:
-         coord: [2803.81, -458.55, -233.64]
-      - _Chest<Large crystallized Charge>:
-         coord: [3308.4, -592.83, -58.22]
-      - _Location::RutoCanyonMine:
-         hide-icon-on-map: true
-      - _Equipment::Weapon<Zora Spear>:
-         movements:
-            - to: [3550, -390, -160]
-            - to: [3442.62, -387.66, -424.76]
-      - _Equipment::Weapon<Zora Sword>:
-         coord: [3345.98, -350.42, -380.67]
-      - _Equipment::Weapon<Zora Longsword>:
-         coord: [3336.55, -351.21, -493.73]
-      - _Equipment::Weapon<Zora Spear>:
-         coord: [3348.89, -352.19, -633.39]
-      - _YigaSchema::Icebreaker
-      - _LockedChest::D86:
-         hide-icon-on-map: true
-      - _LockedChest::D87:
-         hide-icon-on-map: true
-      - _Equipment::Weapon<Zora Longsword>:
-         coord: [3739.79, -552.22, -265.41]
-      - _Lightroot::Kegopa
-      - _Equipment::Weapon<Zora Sword>:
-         coord: [3933.74, -467.53, -254.23]
-      - _Equipment::Weapon<Zora Longsword>:
-         coord: [4143.71, -366.28, -221.36]
-      - _Equipment::Weapon<Zora Spear>:
-         movements:
-            - to: [4210, -400, -180]
-            - to: [4295, -400, -180]
-            - to: [4430.96, -441.47, -466.73]
-      - _Lightroot::Kuzimoy
-      - _Equipment::Weapon<Zora Spear>:
-         coord: [4325.76, -390.3, -614.77]
-
-   - South Akkala Chasm:
-      - _Warp::Shrine::Domizuin<Warp to Domizuin Shrine>
-      - _Chasm::SouthAkkalaPlains:
-         comment: Enter the chasm
-
-   - Ancient Underground Fortress:
-      - _Lightroot::Niuzimod
-      - _Enemy::BokoBoss::D36
-      - _Chest::TrousersofTwilight
-      - _Location::AncientUndergroundFortress:
-         hide-icon-on-map: true
-      - _Enemy::Lynel::D17
-      - _Lightroot::Gedihcayam
-      - _Lightroot::Nipahsom
-      - _Enemy::Frox::DE03
-      - _Lightroot::Kawamit
-      - _Enemy::Talus::DE04
-      - _Chest::TunicoftheSky
-      - _Lightroot::Uihcoke
-      - _Enemy::Lynel::D13
-      - _Enemy::Hinox::DE05
-      - _YigaSchema::Rainmaker
-      - _LockedChest::D59:
-         hide-icon-on-map: true
-      - _LockedChest::D60:
-         hide-icon-on-map: true
-      - _Enemy::BokoBoss::D31
-      - _Equipment::Weapon<Cobble Crusher>:
-         coord: [2468.74, -397.87, 645.36]
-      - _Equipment::Weapon<Zora Sword>:
-         coord: [2612.4, -545.73, 549.11]
-      - _Lightroot::Uinoj
-      - _Equipment::Weapon<Zora Spear>:
-         coord: [2920.29, -683.24, 559.89]
-      - _Enemy<Mucktorok>:
-         coord: [2837, -685.82, 610]
-      - _LockedChest::D69
-      - _Enemy::Frox::DA03
-      - _Enemy::Lynel::D16
-      - _Lightroot::Anonisik
-      - _YigaSchema::BigRig
-      - _LockedChest::D67:
-         hide-icon-on-map: true
-      - _LockedChest::D68:
-         hide-icon-on-map: true
-      - _Enemy::Talus::DA02
-      - _Enemy::BokoBoss::D37
-
-   - Hunt for Pristine Zora Weapons:
-      - _Enemy::FluxConstruct::DL01
-      - _Equipment::Weapon<Zora Sword>:
-         coord: [3318.41, -734.69, 1059.23]
-      - _Lightroot::A-nehi
-      - _Chest<Large Crystallized Charge>:
-         coord: [3804.15, -849.12, 448.46]
-      - _Location::PloymusCanyonMine:
-         hide-icon-on-map: true
-      - _Equipment::Weapon<Zora Sword>:
-         coord: [3982.75, -767.36, 602.79]
-      - _Enemy::Talus::DZ01
-      - _Equipment::Weapon<Zora Sword>:
-         coord: [4221.57, -706.65, 424.99]
-      - _YigaSchema::TripleCannon
-      - _LockedChest::D93:
-         hide-icon-on-map: true
-      - _LockedChest::D94:
-         hide-icon-on-map: true
-      - _Lightroot::Sisinatag
-      - _Equipment::Weapon<Zora Longsword>:
-         coord: [4479.83, -431.76, 923.94]
-      - _Equipment::Weapon<Zora LongSword>:
-         coord: [4410.53, -613.86, 907.66]
-      - _Equipment::Weapon<Zora Sword>:
-         coord: [4289.61, -565.21, 815.65]
-      - _Enemy::Frox::DA02
-      - _Equipment::Weapon<Zora Longsword>:
-         coord: [3927.36, -581.32, 923.11]
-      - _Equipment::Weapon<Zora Spear>:
-         coord: [3799.71, -580.34, 946.62]
-      - _Lightroot::Agihi-ihcoj
-      - _Lightroot::Kawikatisar
-
-   - Ulria Grotto:
-      - _Warp::Shrine::Ihen-a<Warp to Ihen-a Shrine>
-      - _Korok::UZ11
-      - _Korok::UZ09
-      - _Enemy::Lynel::G14
-      - _Korok::UZ12::Start
-      - _LockedChest::G47
-      - _Korok::UZ10
-      - _Korok::UZ16
-      - _Cave::UlriaGrottoSouth00:
-         comment: Enter the cave
-      - _Bubbulfrog::UlriaGrottoSouthCave
-      - _Enemy::Talus::GZ03:
-         comment: Ascend
-      - _Korok::UZ27
-      - _Addison::A77
-      - _Korok::UZ19
-      - _Special<Starting Block>:
-         coord: [4697.57, 335.54, 546.61]
-      - _Korok::UZ21
-      - _Korok::UZ17
-      - _Korok::UZ12::End
-      - _Special<Annoying Plushy Lady>:
-         coord: [4280, 232, 830]
-         comment: Complete the mini-game
-
-   - Tingel Island:
-      - _Cave::UlriaGrottoEast00:
-         comment: Enter the cave
-      - _Bubbulfrog::UlriaGrottoEastCave
-      - _Enemy::Hinox::GA04
-      - _Cave::UlriaGrottoEast01
-      - _Shrine::Gatanisis
-      - _Special<Starting Block>:
-         coord: [4477.16, 201.95, 937.46]
-      - _Korok::UZ07
-      - _Korok::UZ02
-      - _Chasm::TingelIsland:
-         comment: Enter the chasm
-
-   - Cap of the Wild:
-      - _Item<Rock Wall>:
-         coord: [4663.95, -498.22, 1169.54]
-      - _Item<Rock Wall>:
-         coord: [4659.49, -559.41, 966.65]
-      - _Item<Rock Wall>:
-         coord: [4610.64, -568.29, 730.87]
-      - _Enemy<Phantom Ganon>:
-         coord: [4650.48, -617.8, 614.56]
-      - _Chest::CapoftheWind
-
-   - Horon Lagoon:
-      - _Warp::Shrine::Apogek<Warp to Apogek Shrine>
-      - _Shrine::Apogek
-      - _Korok::UZ71::Start
-      - _Addison::A69
-      - _Korok::UZ64
-      - _Korok::UZ69
-      - _Special<Starting Block>:
-         coord: [4185, 129.84, -443.75]
-      - _Korok::UZ60:
-         comment: Leave flying machine here
-      - _Cave::HoronLagoon00:
-         comment: Enter the cave
-
-   - Tarm Point:
-      - _Bubbulfrog::HoronLagoonCave
-      - _Chest::RubberTights:
-         comment: Ascend. Flying machine should be nearby
-      - _Korok::UZ59
-      - _Tear::G08
-      - _Korok::UZ61
-      - _Korok::UZ68:
-         comment: Drop flying machine on top of tunnel
-      - _Korok::UZ67:
-         comment: Flying machine should be nearby
-      - _Addison::A78
-      - _Korok::UZ71::End
-      - _Korok::ML01
-      - _Korok::ML03
-      - _Korok::ML02::Trail
-
-   - Pedophile:
-      - _Cave::TarmPoint00:
-         comment: Enter the cave
-      - _Npc::Sasan_04
-      - _Bubbulfrog::TarmPointCave
-      - _Shrine::Yomizuk
-
-   - White Horse:
-      - _Warp::Shrine::Kamatukis<Warp to Kamatukis Shrine>
-      - _Shrine::Kamatukis
-      - _Korok::UM05
-      - _Enemy::BokoBoss::G50
-      - _Korok::UM09::Start
-      - _Enemy::Lynel::G13
-      - _Special<Starting Block>:
-         coord: [3575.36, 215.1, 3046.11]
-      - _Korok::UM15
-      - _Korok::UM09::End
-      - _Korok::UM14
-      - _Korok::UM13
-      - _Enemy<Phantom Ganon>:
-         coord: [3288.98, 106.53, 3228.81]
-      - _Special<Starting Block>:
-         coord: [3152.96, 241.97, 3430.86]
-      - _Korok::UM03
-      - _Addison::A65
-      - _Korok::UM02
-      - _Korok::EC03::Start
-      - _Item<White Horse>:
-         coord: [3244.38, 326.97, 3741.95]
-         notes: Take pic
-      - _Korok::EC01
-      - _Korok::EC03::End
-      - _Addison::A54
-      - _Enemy::Talus::GE02
-      - _Korok::EC04
-      - _Chest<Silver Rupee>:
-         coord: [2667.63, 468.97, 3460.01]
-      - _Location::GutCheckRock:
-         hide-icon-on-map: true
-      - _Shrine::Kimayat
-
-   - Hateno Village:
-      - _Warp::Shrine::Yansamin<Warp to Yansamin Sky Shrine>:
-         level: Surface
-      - _Korok::ML18
-      - _Korok::ML17
-      - _Korok::ML26::Start
-      - _Enemy<Phantom Ganon>:
-         coord: [2867.36, 122.18, -2071.5]
-      - _Korok::ML27
-      - _Chest<Phrenic Box>:
-         coord: [2823.23, 119.38, -2126.71]
-         notes: Take pic
-      - _Korok::ML32
-      - _Special<Starting Block>:
-         coord: [3017.92, 155.38, -2033.4]
-      - _Korok::ML23
-      - _Enemy::Talus::GL02
-      - _Addison::A71
-      - _LockedChest::G40
-      - _Addison::A72
-      - _Korok::ML26::End
-      - _Korok::ML31
-      - _Korok::ML34
-      - _Well::Zelda'sSecret:
-         comment: Enter the well
-      - _SideQuest::ANewChampionsTunic:
-         coord: [3305, 112, -2298]
-      - _Chest::WellWornHairBand:
-         comment: Ascend
-      - _Well::HatenoVillageSouth:
-         comment: Collect frogs around the well
-      - _Npc::Sophie
-      - _Shop::ArmorShop03
-      - _SideAdv::TeamCeceorTeamReede
-
-   - Help Symin Teach Some Brats:
-      - _SideAdv::CecesSecret:
-         coord: [3357, 120, -2139]
-      - _SideQuest::MannysBeloved:
-         coord: [3369, 120, -2132]
-      - _Special<Cook>:
-         coord: [3357.76, 215.82, -2095.69]
-         comment: Monster curry. Make noon
-      - _Npc::Tamana_01:
-         comment: Give shroom
-      - _Npc::Leop:
-         coord: [3324, 150, -2152]
-         comment: Give shroom
-      - _Npc::Ivee
-      - _Shop::GeneralStore07:
-         comment: Buy cooking ingredients
-      - _Npc::Manny:
-         comment: Complete the quest
-      - _Npc::Medda:
-         comment: Give shroom. Collect frogs around the pond
-      - _Shop::HatenoSchool
-      - _SideQuest::TeachMeaLessonI
-      - _SideQuest::TeachMeaLessonII:
-         comment: Ascend
-
-   - Reede's Diary:
-      - _Korok::ML22
-      - _Npc::Uma_01:
-         comment: Start side quest, Give shroom
-      - _Well::HatenoVillageWest
-      - _Well::HatenoVillageNorth:
-         comment: Enter the well
-      - _Item<Reede's Diary>:
-         coord: [3415.07, 238.58, -2085.43]
-         comment: Ascend. Read diary
-      - _SideAdv::ANewSignatureFood:
-         coord: [3429, 131, -2082]
-      - _GoddessStatue::HatenoVillage
-      - _Npc::Worten_01:
-         comment: Give shroom
-
-   - Spy on Cece:
-      - _Warp::TechLab::Hateno<Warp to Hateno Tech Lab>
-      - _Npc::Tokk:
-         coord: [3790, 230, -2115]
-         comment: Give shroom
-      - _Item<CookSet>:
-         coord: [3619.52, 282.05, -2112.88]
-         comment: Make night
-      - _Npc::Dantz_01:
-         coord: [3640, 283.81, -2100]
-         comment: Give shroom
-      - _Npc::Koyin_01:
-         comment: Give shroom, Buy cheese
-      - _Well::HatenoVillageEast
-      - _Shrine::Zanmik
-      - _SideAdv::ReedesSecret:
-         coord: [3443, 236.83, -2091.19]
-      - _Shop::DyeShop:
-         comment: Dye something, Rework the paraglider
-      - _Special<Spy on Cece>:
-         coord: [3383.26, 236.78, -2161.62]
-
-   - The Mayoral Election:
-      - _SideQuest::PhotographingaChuchu:
-         coord: [3408, 121, -2150]
-         notes: Give a reference pic for all fabrics
-      - _Npc::Cece
-      - _Npc::Sophie
-      - _SideAdv::TheMayoralElection
-
-   - Rescue Hino One Last Time:
-      - _SideAdv<Team Cece or Team Reede>:
-         coord: [3354.76, 226.56, -2125.24]
-         comment: Buy hylian set
-      - _SideQuest::HomegrowninHateno:
-         coord: [3298, 109, -2121]
-      - _Item<Sun Pumpkin>:
-         coord: [3303.74, 215.36, -2127.53]
-         notes: Take pic
-      - _Shop::GeneralStore07:
-         comment: Buy cooking ingredients
-      - _Korok::ML39::Start
-      - _Korok::ML39::End
-      - _Korok::ML38
-      - _Korok::ML43
-      - _CherryBlossom::Necluda
-      - _Enemy::Hinox::GL04
-      - _Korok::RW10
-      - _LockedChest::G41
-      - _Korok::ML35
-
-   - Final Hino Rescue:
-      - _Enemy::BokoBoss::G46
-      - _Npc::Hino_02
-      - _Korok::RW03
-      - _Korok::ML24::Start
-      - _Korok::RW05
-      - _Korok::ML28
-      - _Korok::ML24::End
-
-   - Oakle's Navel:
-      - _Cave::Oakle'sNavel00:
-         comment: Enter the cave
-      - _Shrine::Tokiy::Start
-      - _Bubbulfrog::Oakle'sNavelCave
-      - _Shrine::Tokiy:
-         comment: Ascend
-      - _Korok::RW07
-      - _Korok::RW04
-      - _Korok::RW06
-      - _Korok::RW08::Trail
-      - _Korok::RW11
-      - _Cave::MountFloria01:
-         comment: Enter the cave. Ascend
-      - _Korok::RW13
-
-   - Dueling Peaks:
-      - _Warp::Shrine::Ukoojisi<Warp to Ukoojisi Shrine>:
-         level: Sky
-      - _Item<Rockets>:
-         coord: [1477.13, 628.59, -2008.65]
-         comment: Fuse rockets to shields
-      - _Special<Starting Block>:
-         coord: [1243.54, 541.58, -1941.41]
-      - _Korok::SS70
-
-   - Dueling Peaks Cave:
-      - _Korok::SS67
-      - _Korok::SS66
-      - _Korok::SS61:
-         comment: Shoot from high above in the air so you can paraglide to next objective
-      - _Cave::DuelingPeaksNorth00:
-         comment: Enter the cave
-      - _Bubbulfrog::DuelingPeaksNorthCave:
-         comment: Ascend
-
-   - Tingle's Shirt:
-      - _Cave::DuelingPeaksSouth00:
-         comment: Enter the cave
-      - _Bubbulfrog::DuelingPeaksSouthCave
-      - _Chest::TinglesShirt:
-         comment: Ascend
-      - _Npc::Zelda_01
-      - _Korok::SS69
-
-   - Honey Bee Mine:
-      - _Warp::Shrine::Josiu<Warp to Josiu Sky Shrine>
-      - _Korok::SS49
-      - _Addison::A62
-      - _SideAdv::HoneyBeeMine:
-         coord: [2167, 109, -1380]
-      - _Korok::SS56
-      - _LockedChest::G35
-      - _Korok::SS52:
-         comment: Drop flying machine into water
-      - _Korok::SS53:
-         comment: Flying machine should be in the river below
-
-   - Great Fairy Cotera:
-      - _Korok::SS55
-      - _Location::KakarikoBridge
-      - _Korok::SS57
-      - _SideQuest<A Picture for Dueling Peaks Stable>:
-         coord: [1757, 10, -1924]
-         comment: Ascend
-      - _Well::DuelingPeaksStable
-      - _SideAdv::SerenadetoCotera:
-         coord: [1755, 10, -1958]
-      - _Location::BigTwinBridge:
-         coord: [1700, 3, -2010]
-         comment: Build wagon raft and transport the Stable Trotters across the river
-      - _Fairy::GreatFairyFountain<Cotera>
-      - _Location::LittleTwinBridge
-      - _Korok::RW02
-      - _Enemy::Hinox::GL03
-      - _Korok::RW01
-      - _Addison::A52
 
    - Final Dragon Tear:
       - _Warp::Shrine::Rasitakiwak<Warp to Rasitakiwak Shrine>
