@@ -4,7 +4,7 @@ _project:
    authors:
       - Shawn Chidester
    name: Glitchless No Amiibo TOTK Hundo+ (Turkey Leg Route)
-   version: 2.8.0
+   version: 2.8.1
    description:
       - Standard TOTK hundo (glitchless, no amiibo) plus
       - Clear all ??? from all device dispensers
@@ -9228,7 +9228,7 @@ _route:
       - _Enemy::Hinox::DH02
 
    - Goflram's Secret Hot Spring:
-      - _Warp::Shrine::Kahatanaum<Warp to Kahatanaum Shrine>
+      - _Warp::Shrine::Kahatanaum<Warp to Kahatanaum Sky Shrine>
       - _Korok::RP11
       - _Korok::RP09
       - _Enemy<Ice-Breath Lizalfos>:
