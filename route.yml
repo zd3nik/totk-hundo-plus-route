@@ -4572,33 +4572,35 @@ _route:
          coord: [-44.98025, 1607.83, 2991.7605]
       - _Location::ThyphloRuins:
          coord: [325, 278, 3125]
-         comment: Drop flying machine near tower
-      - _Material<Dinraal Claw 3/3>:
-         comment: Paraglide to top of tower after getting claw
+         comment: Drop flying machine near tower. Move platform away from tower top
 
    - Thyphlo Ruins:
       - _Tower<Unlock Thyphlo Ruins Tower>:
          coord: [343.67, 278.56, 3141.65]
-      - _SideAdv::InvestigatetheThyphloRuins:
-         coord: [372.69, 280.02, 3095.62]
+      - _Npc::Kazul:
+         comment: Read all 4 tablets. Flying machine should be nearby
       - _Korok::TR08
       - _SideAdv::TheSixDragons:
          coord: [185.32, 279.56, 3181.31]
+         comment: Demonstrate Sidon ability
       - _Chest<Opal x5>:
          coord: [167.64, 274.4, 3212.75]
       - _Special<Starting Block>:
          coord: [60.64, 295.65, 3113.63]
       - _Korok::TR06
+      - _Material<Dinraal Claw 3/3>
 
    - Dusk Claymore:
       - _Korok::TR05
       - _SideAdv::TheCorridorbetweenTwoDragons:
          coord: [138.45, 280.39, 3123.85]
+         comment: Demonstrate Yunobo ability
       - _Chest<Ruby x3>:
          coord: [247.97, 274.48, 3121.14]
       - _Korok::TR11
       - _SideAdv::TheOwlProtectedbyDragons:
          coord: [364.26, 280.43, 3066.18]
+         comment: Demonstrate Tulin ability
       - _Chest<Sapphire x3>:
          coord: [364.1, 275.12, 3053.5]
       - _Addison::A36
@@ -4610,9 +4612,13 @@ _route:
          coord: [524.25, 299.97, 3242.31]
       - _SideAdv::TheLongDragon:
          coord: [463.25, 280.52, 3084.3]
+         comment: Demonstrate Riju ability
       - _Chest<Topaz x3>:
          coord: [450.3, 275.44, 3084.5]
-      - _Npc::Kazul_01
+      - _Cave<Secret Entrance>:
+         coord: [417.41, 280.34, 3159.21]
+      - _SideAdv::InvestigatetheThyphloRuins:
+         coord: [377, 270, 3159]
       - _Chest<Dusk Claymore>:
          coord: [386.03, 270.38, 3170.75]
          notes: Take pic
