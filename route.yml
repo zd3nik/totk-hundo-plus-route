@@ -4465,28 +4465,7 @@ _route:
       - _Shrine::Sakunbomar::Start
       - _Shrine::Sakunbomar
 
-   - Farosh Farming 4:
-      - _Warp::Shrine::Rakashog<Warp to Rakashog Shrine>:
-         comment: Make night
-         level: Sky
-      - _Material<Star Fragment 15/36>
-      - _Material<Farosh Claw 4/4>
-
-   - Light Dragon Farming 3:
-      - _Warp::Shrine::Kadaunar<Warp to Kadaunar Shrine>:
-         comment: Make night
-         level: Sky
-      - _Material<Star Fragment 16/36>
-      - _Material<Light Dragon Claw>
-
-   - Dinraal Farming 6:
-      - _Warp::Shrine::Gikaku<Warp to Gikaku Shrine>:
-         comment: Make night
-         level: Sky
-      - _Material<Star Fragment 17/36>
-      - _Material<Dinraal Claw 2/3>
-
-   - Shopping:
+   - Shopping 1:
       - _Warp::Shrine::Marakuguc<Warp to Marakuguc Shrine>
       - _Shop::GeneralStore06:
          comment: Buy cooking ingredients
@@ -4508,14 +4487,46 @@ _route:
          coord: [2381.1, 320.41, -2856.94]
       - _Special<Cook>:
          coord: [2417.06, 321.57, -2871.03]
-         comment: Speed food and money food. Make night
+         comment: Speed food and money food. Make night twice
+
+   - Shopping 2:
+      - _Warp::Shrine::Marakuguc<Warp to Marakuguc Shrine>
+      - _Shop::GeneralStore06:
+         comment: Buy cooking ingredients
+      - _Warp::Shrine::Gatakis
+      - _Shop::GeneralStore14:
+         comment: Buy cooking ingredients
+
+   - Farosh Farming 4:
+      - _Warp::Shrine::Rakashog<Warp to Rakashog Shrine>:
+         comment: It should still be night
+         level: Sky
+      - _Item<Rockets>:
+         coord: [-1820.55, 1075.09, -2212.26]
+         comment: Fuse rockets to shields
+      - _Material<Star Fragment 15/36>
+      - _Material<Farosh Claw 4/4>
+
+   - Dinraal Farming 6:
+      - _Warp::Shrine::Gikaku<Warp to Gikaku Shrine>:
+         comment: Make night
+         level: Sky
+      - _Material<Star Fragment 17/36>
+      - _Material<Dinraal Claw 2/3>
+
+   - Light Dragon Farming 3:
+      - _Warp::Shrine::Kadaunar<Warp to Kadaunar Shrine>:
+         comment: Make night
+         level: Sky
+      - _Material<Star Fragment 16/36>
+      - _Material<Light Dragon Claw>
 
    - Naydra Farming 7:
       - _Warp::Tower::MountLanayru<Warp to Mount Lanayru Tower>:
          comment: Launch from tower
       - _Material<Star Fragment 18/36>
       - _Material<Naydra Claw 2/3>:
-         comment: Naydra might still be in the depths. If so enter through Snowfield chasm to get to her
+         comment: Naydra might still be in the depths. If so, enter through Snowfield chasm to get to her
 
    - Mayaumekis Shrine:
       - _Warp::Shrine::Mayaumekis<Warp to Mayaumekis Shrine>:
@@ -9523,12 +9534,6 @@ _route:
          coord: [3346.54, 223.24, -2035.39]
       - _Shop::GeneralStore07:
          comment: Buy cooking ingredients
-      - _Warp::Shrine::Marakuguc<Warp to Marakuguc Shrine>
-      - _Shop::GeneralStore06:
-         comment: Buy cooking ingredients
-      - _Warp::Shrine::Gatakis
-      - _Shop::GeneralStore14:
-         comment: Buy cooking ingredients, Sit at fire until next day
 
    - Recipes and Armor Upgrades:
       - _Warp::Shrine::Marakuguc<Warp to Marakuguc Shrine>
