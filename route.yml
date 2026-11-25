@@ -4,7 +4,7 @@ _project:
    authors:
       - Shawn Chidester
    name: Glitchless No Amiibo TOTK Hundo+ (Turkey Leg Route)
-   version: 2.9.1
+   version: 2.10.0
    description:
       - Standard TOTK hundo (glitchless, no amiibo) plus
       - Clear all ??? from all device dispensers
@@ -1434,8 +1434,6 @@ _route:
       - _Enemy::Talus::GR03
       - _LockedChest::G13
       - _Addison::A21
-      - _Enemy<Captain Construct I>:
-         coord: [-1456.79, 245.04, 1277.72]
       - _LockedChest::G12
       - _Korok::TR17::Start
       - _Korok::LB08
@@ -3698,6 +3696,8 @@ _route:
          coord: [816.21, 1670.1, -1455.54]
       - _Enemy<Keese Swarm>:
          coord: [634.02, 1598.2, -1601.16]
+      - _Enemy<Captain Construct I>:
+         coord: [278.35, 1453.82, -1699.25]
       - _Enemy::FluxConstruct::SC04
       - _SagesWill::Faron_01
       - _Location::FaronSkyArchipelago:
@@ -4456,32 +4456,6 @@ _route:
       - _Enemy<Fire Keese>:
          coord: [611.54, 276.59, 2225.5]
       - _Shrine::Pupunke
-      - _Enemy<Evermean x2>:
-         coord: [630.57, 277.24, 2264.8]
-         comment: Break forest dweller sword
-      - _Enemy<Stalkoblin x2>:
-         coord: [668.78, 280.27, 2262.03]
-      - _Enemy<Stalmoblin>:
-         coord: [685.5, 280.03, 2270.5]
-      - _Enemy<Keese>:
-         coord: [725.86, 287.11, 2314.21]
-      - _Enemy<Fire Like>:
-         coord: [723.18, 295.68, 2332.44]
-      - _Enemy<Fire Chuchu>:
-         coord: [708.44, 287.07, 2354.13]
-      - _Chest<Bomb Flowers>:
-         coord: [721.02, 284.69, 2393.94]
-      - _Enemy<Stalmoblin>:
-         coord: [731.91, 284.97, 2390.56]
-      - _Enemy<Stalkoblin>:
-         coord: [740.44, 285, 2394.96]
-      - _Enemy<Stalkoblin>:
-         coord: [747.41, 285.96, 2383.18]
-      - _Enemy<Stalkoblin>:
-         coord: [761.64, 288.31, 2374.36]
-      - _Location::MidoSwamp:
-         coord: [825.97, 283.49, 2407.51]
-         comment: Collect golden apples
 
    - Great Hyrule Forest:
       - _Warp::Shrine::Musanokir<Wafrp to Musanokir Shrine>
