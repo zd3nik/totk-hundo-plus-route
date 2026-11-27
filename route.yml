@@ -5351,7 +5351,7 @@ _route:
    - Tukarok Shrine:
       - _Warp::Tower::LookoutLanding<Warp to Lookout Landing Tower>
       - _Shop::GeneralStore:
-         comment: Buy cooking ingredients
+         comment: Tell them about the pirates. Buy cooking ingredients
       - _Enemy::BokoBoss::G17
       - _Well::MabeVillageRuins
       - _Location::MabeVillageRuins:
