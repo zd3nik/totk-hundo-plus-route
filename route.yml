@@ -5321,14 +5321,18 @@ _route:
    - Lonely Frox:
       - _Enemy::Frox::DC03
 
+   - Light Dragon Farming 9:
+      - _Warp::Tower::GerudoHighlands<Warp to Gerudo Highlands Tower>:
+         comment: Make night. Launch from tower
+      - _Material<Star Fragment 29/36>
+      - _Material<Light Dragon Horn>
+
    - Farosh Farming 8:
       - _Warp::Shrine::Rakashog<Warp to Rakashog Shrine>:
-         comment: Make night
          level: Sky
       - _Item<Rockets>:
          coord: [-1820.55, 1075.09, -2212.26]
          comment: Fuse rockets to shields
-      - _Material<Star Fragment 29/36>
       - _Material<Farosh Horn>
 
    - Naydra Farming 11:
